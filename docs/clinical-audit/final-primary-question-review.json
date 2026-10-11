@@ -1,0 +1,261 @@
+{
+  "status": "fifteen_whole_questions_source_reconciled_build_native_public_pending",
+  "questionIds": [
+    "genitourinary-medchem-123",
+    "acute-bacterial-meningitis-095",
+    "hospital-ventilator-associated-pneumonia-157",
+    "rickettsial-079",
+    "rickettsial-085",
+    "rickettsial-087",
+    "lyme-062",
+    "lyme-063",
+    "tularemia-079",
+    "tularemia-091",
+    "cytomegalovirus-pharmacotherapy-155",
+    "parkinson-disease-081",
+    "parkinson-disease-082",
+    "parkinson-disease-083",
+    "parkinson-disease-084"
+  ],
+  "wholeQuestionsReviewed": 15,
+  "choicesReviewed": 60,
+  "sourceFiles": {
+    "src/data/questionBanks/genitourinaryMedicinalChemistry.js": "e74137edb3c093cce02da673f3bb499143b8030bec2c20ad754852da14717021",
+    "src/data/questionBanks/acuteBacterialMeningitis.js": "005214bf4f6ba06269dbde9194eff4d72c074ddb18216b3161795520d2fb2edd",
+    "src/data/questionBanks/hospitalVentilatorAssociatedPneumonia.js": "86e4c1fa71b89a885dfe0c4a76e68248de6102de2792541997c3f5602d12ab8b",
+    "src/data/questionBanks/rickettsialEhrlichialAnaplasma.js": "c54e99374d9dd4d38730c37f4db896c1be8a5d9bf4dc81238d88b6b2bc46dff1",
+    "src/data/questionBanks/lymeDisease.js": "b88463b48b2ae094b3e44179aec56e2a85533d0d0770651eba40684dff100126",
+    "src/data/questionBanks/tularemia.js": "cc53eed3ecb46b81d73e45af48813a9bbcf0bca9880694478c7daf29acffd2c4",
+    "src/data/questionBanks/cytomegalovirusPharmacotherapy.js": "2a02b4e1e0fa4f09fe33564097ceac1fb7b59e1a73ae2ad466a581be0a84314d",
+    "src/data/questionBanks/parkinsonDisease.js": "c685c48ed874337a31a11a2a04e0918751b0bf8329eb6d59d6635ca7ff05644a"
+  },
+  "overrides": {
+    "genitourinary-medchem-123": {
+      "id": "genitourinary-medchem-123",
+      "concept": "extended-release dosage form integrity",
+      "difficulty": "Advanced",
+      "prompt": "A patient prescribed oxybutynin extended-release tablets develops difficulty swallowing and needs medication through a nasogastric tube. Which formulation decision is appropriate?",
+      "choices": [
+        "Review an appropriate alternative formulation and regimen; do not crush, chew, or divide the oxybutynin ER tablet.",
+        "Crush the oxybutynin ER tablet because an enteral tube preserves its extended-release behavior.",
+        "Divide the oxybutynin ER tablet into quarters because every ER tablet may be split.",
+        "Replace it with the same milligram dose and frequency of any immediate-release product without reviewing the regimen."
+      ],
+      "answer": 0,
+      "explanation": "The reviewed oxybutynin ER label requires swallowing the tablet whole with liquids and prohibits chewing, dividing, or crushing. A swallowing or tube-access problem therefore requires product-specific formulation and regimen review. Tube delivery does not preserve an altered tablet's release design, and ER instructions cannot be generalized across products. An alternative formulation also requires review of its dose and frequency rather than an automatic substitution.",
+      "reviewHref": "#product-engineering"
+    },
+    "acute-bacterial-meningitis-095": {
+      "id": "acute-bacterial-meningitis-095",
+      "lesson": "dexamethasone",
+      "question": "A hospitalized adult receiving adjunctive dexamethasone for bacterial meningitis has diabetes, a prior peptic ulcer, and concurrent warfarin and NSAID use. Which medication-safety assessment is appropriate?",
+      "choices": [
+        "Review glucose control, gastrointestinal bleeding risk, and anticoagulation monitoring while assessing mental-status changes in clinical context.",
+        "Assume a short corticosteroid course cannot affect glucose and omit glucose review.",
+        "Ignore the NSAID and ulcer history because corticosteroids cannot contribute to gastrointestinal bleeding risk.",
+        "Assume warfarin monitoring is unnecessary during corticosteroid therapy."
+      ],
+      "answer": 0,
+      "rationale": "Systemic dexamethasone can increase glucose and antidiabetic treatment requirements. Its label reports peptic ulceration with hemorrhage or perforation, increased gastrointestinal adverse effects with NSAIDs, and variable effects with warfarin that warrant coagulation monitoring. Psychiatric effects are also possible, but new agitation or altered mental status requires clinical assessment rather than automatic attribution to the steroid. This safety review does not establish a new meningitis dose, route, or timing recommendation.",
+      "reviewHref": "#dexamethasone"
+    },
+    "hospital-ventilator-associated-pneumonia-157": {
+      "id": "hospital-ventilator-associated-pneumonia-157",
+      "lesson": "prevention-system",
+      "question": "A mechanically ventilated adult is eligible for enteral nutrition. The ventilator circuit is clean and functioning, and its manufacturer does not require a scheduled change. Which prevention plan is supported?",
+      "choices": [
+        "Use early enteral nutrition rather than default parenteral nutrition, and change the circuit when visibly soiled or malfunctioning or as the manufacturer instructs.",
+        "Use parenteral nutrition solely because mechanical ventilation makes enteral nutrition inappropriate.",
+        "Replace a clean functioning circuit every day because fixed daily changes lower VAP rates.",
+        "Delay tolerated enteral nutrition solely until mechanical ventilation ends."
+      ],
+      "answer": 0,
+      "rationale": "The 2022 SHEA guidance supports early enteral rather than parenteral nutrition in eligible adults; early enteral nutrition is associated with less nosocomial pneumonia. Circuit changes only when visibly soiled or malfunctioning reduce costs compared with fixed scheduled changes, without a demonstrated difference in VAP rates or outcomes. Follow different manufacturer instructions when applicable. Enteral eligibility still requires clinical assessment; this is not a directive to feed despite a contraindication.",
+      "reviewHref": "#prevention-system"
+    },
+    "rickettsial-079": {
+      "id": "rickettsial-079",
+      "lesson": "empiric-doxycycline",
+      "question": "An adult with suspected severe rickettsial infection is repeatedly vomiting and cannot reliably retain oral doxycycline. Which treatment-delivery decision is appropriate?",
+      "choices": [
+        "Arrange prompt treatment using IV doxycycline when oral delivery is unreliable; do not wait for laboratory confirmation.",
+        "Wait for a positive laboratory result before starting doxycycline despite severe suspected infection.",
+        "Continue relying on oral doses even when every dose is vomited, without reassessing delivery.",
+        "Withhold doxycycline until vomiting resolves even though IV delivery is available."
+      ],
+      "answer": 0,
+      "rationale": "CDC guidance recommends prompt doxycycline for suspected tickborne rickettsial disease rather than waiting for laboratory confirmation. Oral treatment can be suitable for early outpatient disease, while IV treatment may be indicated in severe illness, particularly with vomiting or obtundation. The decision here concerns reliable delivery in a severely ill adult; continued vomiting cannot be assumed to preserve an administered oral dose.",
+      "reviewHref": "#empiric-doxycycline"
+    },
+    "rickettsial-085": {
+      "id": "rickettsial-085",
+      "lesson": "empiric-doxycycline",
+      "question": "Which mechanism explains doxycycline's antibacterial activity in rickettsial infection?",
+      "choices": [
+        "Inhibition of bacterial protein synthesis through binding to the 30S ribosomal subunit.",
+        "Inhibition of bacterial cell-wall synthesis through binding to penicillin-binding proteins.",
+        "Inhibition of bacterial DNA gyrase as its principal antibacterial mechanism.",
+        "Inhibition of bacterial folate synthesis as its principal antibacterial mechanism."
+      ],
+      "answer": 0,
+      "rationale": "Doxycycline inhibits bacterial protein synthesis at the 30S ribosomal subunit and is primarily bacteriostatic. The supplied book describes reversible 30S binding, consistent with the reviewed label. Cell-wall synthesis, DNA gyrase, and folate synthesis are not doxycycline's principal antibacterial targets. Chelation with minerals is an administration interaction, not its antibacterial mechanism.",
+      "reviewHref": "#empiric-doxycycline"
+    },
+    "rickettsial-087": {
+      "id": "rickettsial-087",
+      "lesson": "empiric-doxycycline",
+      "question": "An adult taking oral doxycycline also takes an aluminum/magnesium antacid and iron supplement with each dose. Which administration issue should be corrected?",
+      "choices": [
+        "Concurrent antacid and iron use can impair doxycycline absorption; review product-specific dose separation.",
+        "Iron increases doxycycline absorption, so taking both together improves treatment reliability.",
+        "Aluminum and magnesium antacids cannot affect doxycycline absorption.",
+        "The interaction can be corrected only by stopping all food and milk throughout treatment."
+      ],
+      "answer": 0,
+      "rationale": "The doxycycline label identifies impaired absorption with aluminum-, calcium-, or magnesium-containing antacids and iron preparations. Review the exact products and an appropriate separation schedule. This interaction does not justify a blanket food or milk prohibition: the reviewed label permits food or milk for gastric irritation and states absorption is not markedly affected by them. No universal enteral-feed hold interval is established by this question.",
+      "reviewHref": "#empiric-doxycycline"
+    },
+    "lyme-062": {
+      "id": "lyme-062",
+      "lesson": "localized-treatment",
+      "question": "An adult prescribed oral doxycycline for localized Lyme disease routinely takes it together with an iron supplement and a calcium-containing antacid. Which counseling action is appropriate?",
+      "choices": [
+        "Review the exact products and arrange appropriate separation from doxycycline to limit impaired absorption.",
+        "Encourage simultaneous iron and antacid dosing because both enhance doxycycline absorption.",
+        "Advise that only prescription medicines need interaction review; supplements are irrelevant.",
+        "Stop all nutrition during the doxycycline course instead of reviewing the interacting products."
+      ],
+      "answer": 0,
+      "rationale": "Iron and calcium-containing antacids can impair doxycycline absorption. Product-specific separation and a complete medication/supplement review address the interaction. Supplements are clinically relevant, and stopping food is not an appropriate substitute for scheduling interacting products. This question does not prescribe a universal hold interval for every tube feed or ban ordinary food and milk.",
+      "reviewHref": "#localized-treatment"
+    },
+    "lyme-063": {
+      "id": "lyme-063",
+      "lesson": "localized-treatment",
+      "question": "A patient prescribed doxycycline tablets for localized Lyme disease swallows each dose with a sip of water immediately before lying down. Which counseling is appropriate?",
+      "choices": [
+        "Take the tablet with adequate water and remain upright after the dose to reduce esophageal irritation.",
+        "Continue taking the tablet immediately before lying down because posture cannot affect esophageal injury risk.",
+        "Avoid water with the tablet to improve absorption.",
+        "Stop all food during treatment because fasting prevents tablet-related esophageal injury."
+      ],
+      "answer": 0,
+      "rationale": "Doxycycline tablets and capsules can cause esophagitis and esophageal ulceration, particularly when taken immediately before bed. The reviewed label advises adequate fluids; the supplied book advises 8 ounces of water and remaining upright for at least 30 minutes. This is an esophageal-safety intervention, distinct from mineral interactions. Fasting or avoiding water does not address the risk.",
+      "reviewHref": "#localized-treatment"
+    },
+    "tularemia-079": {
+      "id": "tularemia-079",
+      "lesson": "first-line-treatment",
+      "question": "The treating team selects oral doxycycline for a nonpregnant adult with early, uncomplicated tularemia. The patient is now repeatedly vomiting each dose. Which assessment is appropriate?",
+      "choices": [
+        "Reassess the ability to retain oral therapy and coordinate a reliable treatment route with the treating team.",
+        "Assume the full oral dose was absorbed despite immediate repeated vomiting.",
+        "Wait until the prescribed course ends before discussing failed oral delivery.",
+        "Continue the same administration plan solely because doxycycline was initially selected."
+      ],
+      "answer": 0,
+      "rationale": "An appropriate drug choice still requires reliable administration. CDC tularemia guidance allows oral or IV treatment according to clinical circumstances; repeated vomiting makes oral delivery unreliable and warrants reassessment. The case specifies early uncomplicated disease and a team-selected regimen. It does not establish doxycycline as preferred for every severe, delayed-treatment, pregnant, or neonatal case.",
+      "reviewHref": "#first-line-treatment"
+    },
+    "tularemia-091": {
+      "id": "tularemia-091",
+      "lesson": "dosing-administration-monitoring",
+      "question": "An adult receiving oral doxycycline for tularemia takes an iron supplement and magnesium antacid with the dose, then lies down immediately. Which counseling plan addresses these administration risks?",
+      "choices": [
+        "Review separation from the iron and antacid, use adequate water, and remain upright after the tablet or capsule dose.",
+        "Take iron and magnesium with doxycycline to improve absorption and lie down immediately.",
+        "Avoid water and continue taking all mineral products at the same time.",
+        "Stop all nutrition for the course rather than review products and tablet administration."
+      ],
+      "answer": 0,
+      "rationale": "Iron and magnesium-containing antacids can impair doxycycline absorption. Adequate water and remaining upright address tablet/capsule-related esophageal irritation; the supplied book advises at least 30 minutes upright. Product review should establish an appropriate separation schedule. These measures do not require stopping all food or applying an unverified universal tube-feed interruption interval.",
+      "reviewHref": "#dosing-administration-monitoring"
+    },
+    "cytomegalovirus-pharmacotherapy-155": {
+      "id": "cytomegalovirus-pharmacotherapy-155",
+      "lesson": "maribavir-refractory-cmv",
+      "question": "An adult transplant recipient receiving maribavir for refractory CMV needs a nasogastric route. Which administration review follows the current product instructions?",
+      "choices": [
+        "Confirm an NG or OG tube of at least 10 French, use the labeled tablet-dispersion and flush procedure, and review concomitant enzyme inducers.",
+        "Assume every feeding-tube type and size has been studied with crushed maribavir.",
+        "Use the oral crushing instructions unchanged for any jejunal tube without checking route-specific evidence.",
+        "Keep the usual maribavir dose unchanged with every CYP3A inducer because inducer identity never matters."
+      ],
+      "answer": 0,
+      "rationale": "The reviewed maribavir label permits dispersed tablets through NG or OG tubes of at least 10 French and provides a specific water-dispersion and flush procedure. It permits a prepared suspension at room temperature for up to 8 hours. Oral whole/dispersed/crushed instructions do not establish the same method for every tube. Inducer recommendations differ: some require a labeled dose increase, while rifampin and St John's wort are not recommended because they can reduce efficacy. Check the exact medication list and current label rather than treating all inducers identically.",
+      "reviewHref": "#maribavir-refractory-cmv"
+    },
+    "parkinson-disease-081": {
+      "id": "parkinson-disease-081",
+      "question": "A person with Parkinson disease reports coughing during meals, reduced intake, and difficulty swallowing tablets. Which interpretation is appropriate?",
+      "choices": [
+        "Possible dysphagia threatens swallowing safety, nutrition, and medication delivery and needs assessment.",
+        "Swallowing difficulty is irrelevant to medication delivery if the prescribed dose has not changed.",
+        "Coughing during meals proves that nutrition and aspiration risk need no review.",
+        "All extended-release tablets should be crushed automatically to solve swallowing difficulty."
+      ],
+      "answer": 0,
+      "rationale": "Dysphagia is a recognized Parkinson symptom in the supplied book. Swallowing problems can compromise eating and safe medication administration; NICE recommends speech and language therapy for people with Parkinson disease experiencing swallowing difficulty. Assessment should connect swallowing safety, nutritional intake, and the exact dosage form. A prescribed dose alone does not prove reliable delivery, and ER products cannot all be crushed.",
+      "reviewHref": "#autonomic",
+      "difficulty": "foundational"
+    },
+    "parkinson-disease-082": {
+      "id": "parkinson-disease-082",
+      "question": "A person with Parkinson disease develops persistent difficulty swallowing food and medicines. Which care plan is appropriate?",
+      "choices": [
+        "Offer assessment and therapy by a speech and language therapist experienced in Parkinson disease, with nutrition and medication-formulation review.",
+        "Wait for substantial weight loss before addressing the reported swallowing difficulty.",
+        "Crush every medicine without reviewing its formulation or the swallowing assessment.",
+        "Treat swallowing difficulty only by increasing dopaminergic doses without evaluating the symptom."
+      ],
+      "answer": 0,
+      "rationale": "NICE recommends offering speech and language therapy to people with Parkinson disease experiencing swallowing problems, including strategies to improve swallowing safety and efficiency. Nutrition and product-specific medication review connect the symptom to intake and delivery. Waiting for marked weight loss, indiscriminate crushing, or reflexive dose escalation does not replace that assessment.",
+      "reviewHref": "#autonomic",
+      "difficulty": "foundational"
+    },
+    "parkinson-disease-083": {
+      "id": "parkinson-disease-083",
+      "question": "A person with Parkinson disease and swallowing difficulty is eating less and asks whether eliminating dietary protein will improve medication response. Which nutrition advice is appropriate?",
+      "choices": [
+        "Consider specialist dietitian review and protect total daily protein intake while individualizing the nutrition and medication plan.",
+        "Eliminate total daily protein as a routine recommendation for every person with Parkinson disease.",
+        "Assume reduced intake is harmless and defer nutrition review until medication is stopped.",
+        "Use a protein-redistribution diet for every person with Parkinson disease regardless of levodopa use or motor fluctuations."
+      ],
+      "answer": 0,
+      "rationale": "NICE advises considering specialist dietitian referral and avoiding a reduction in total daily protein consumption. A protein-redistribution diet is a separate discussion for people taking levodopa who experience motor fluctuations; it is not a routine instruction for everyone, and the guideline notes low-quality evidence for protein diets. The swallowing problem also requires appropriate assessment so the nutrition plan is feasible and safe.",
+      "reviewHref": "#autonomic",
+      "difficulty": "advanced"
+    },
+    "parkinson-disease-084": {
+      "id": "parkinson-disease-084",
+      "question": "A patient with swallowing difficulty takes the reviewed carbidopa/levodopa extended-release tablet product, whose label permits whole or half tablets. Which proposed action should be corrected?",
+      "choices": [
+        "Crush the extended-release tablet into powder to bypass the swallowing problem.",
+        "If appropriate for the prescribed dose and swallowing plan, use a label-permitted half tablet without chewing or crushing.",
+        "Ask the pharmacist and treating team to review an appropriate alternative formulation if the tablet cannot be swallowed safely.",
+        "Arrange assessment of the swallowing difficulty before choosing the medication-delivery plan."
+      ],
+      "answer": 0,
+      "rationale": "This carbidopa/levodopa ER tablet label permits whole or half tablets to be swallowed without chewing or crushing; the supplied book gives the same distinction. Crushing is therefore the inappropriate action. Permission to halve this product does not mean every ER tablet can be divided. A half tablet still requires a suitable prescribed dose and safe swallowing, and an alternative formulation needs an individualized regimen review.",
+      "reviewHref": "#autonomic",
+      "difficulty": "advanced"
+    }
+  },
+  "associatedPoolAliasesUpdated": [],
+  "sourceNativeImagesActuallyInspected": 34,
+  "clinicalReview": "All 15 stems, 60 choices and explanations reviewed for a single defensible answer and product/route/population boundaries. Broad competing assessments replaced with specific cases. Doxycycline mechanism rationale corrected. ER tablet splitting restrictions distinguished by product. Source exceptions previously authorized.",
+  "invariants": {
+    "allIdsOrderKeysAnchorsPreserved": true,
+    "allTeachingFiguresChecksReferencesExact": true,
+    "allOtherQuestionsExact": true,
+    "selected30WholeObjectsExact": true,
+    "allOtherPoolObjectsExact": true
+  },
+  "actualRenderedQuestionReviewPassed": false,
+  "productionLiveVerified": false,
+  "wholeModuleVerified": false,
+  "wholeChapterVerified": false,
+  "wholeGoalComplete": false,
+  "remainingPrimaryRows": 15
+}

@@ -120,4 +120,22 @@ const sourceReviewedAdministrationQuestions = {
     "rationale": "The book separates valganciclovir treatment at 900 mg orally twice daily from maintenance or prophylaxis at 900 mg orally daily and requires renal adjustment below its stated clearance threshold. Using the maintenance interval during active induction confuses the phases. Checking the treatment phase and kidney function preserves that dosing distinction."
   }
 };
-export const cytomegalovirusPharmacotherapyQuestionBank = [...generated, ...caseQuestions].map((question) => sourceReviewedAdministrationQuestions[question.id] ? { ...question, ...sourceReviewedAdministrationQuestions[question.id] } : question);
+const beforeFinalPrimaryQuestionBank = [...generated, ...caseQuestions].map((question) => sourceReviewedAdministrationQuestions[question.id] ? { ...question, ...sourceReviewedAdministrationQuestions[question.id] } : question);
+
+const finalPrimaryQuestionOverrides = {
+  "cytomegalovirus-pharmacotherapy-155": {
+    "id": "cytomegalovirus-pharmacotherapy-155",
+    "lesson": "maribavir-refractory-cmv",
+    "question": "An adult transplant recipient receiving maribavir for refractory CMV needs a nasogastric route. Which administration review follows the current product instructions?",
+    "choices": [
+      "Confirm an NG or OG tube of at least 10 French, use the labeled tablet-dispersion and flush procedure, and review concomitant enzyme inducers.",
+      "Assume every feeding-tube type and size has been studied with crushed maribavir.",
+      "Use the oral crushing instructions unchanged for any jejunal tube without checking route-specific evidence.",
+      "Keep the usual maribavir dose unchanged with every CYP3A inducer because inducer identity never matters."
+    ],
+    "answer": 0,
+    "rationale": "The reviewed maribavir label permits dispersed tablets through NG or OG tubes of at least 10 French and provides a specific water-dispersion and flush procedure. It permits a prepared suspension at room temperature for up to 8 hours. Oral whole/dispersed/crushed instructions do not establish the same method for every tube. Inducer recommendations differ: some require a labeled dose increase, while rifampin and St John's wort are not recommended because they can reduce efficacy. Check the exact medication list and current label rather than treating all inducers identically.",
+    "reviewHref": "#maribavir-refractory-cmv"
+  }
+};
+export const cytomegalovirusPharmacotherapyQuestionBank = beforeFinalPrimaryQuestionBank.map(q => finalPrimaryQuestionOverrides[q.id] ?? q);

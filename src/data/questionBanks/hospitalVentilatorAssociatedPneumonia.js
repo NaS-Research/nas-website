@@ -78,5 +78,23 @@ const bookAdministrationRepairs = {
   }
 };
 
-export const hospitalVentilatorAssociatedPneumoniaQuestionBank=[...generated,...cases].map(question => bookAdministrationRepairs[question.id] ? { ...question, ...bookAdministrationRepairs[question.id] } : question);
+const beforeFinalPrimaryQuestionBank =[...generated,...cases].map(question => bookAdministrationRepairs[question.id] ? { ...question, ...bookAdministrationRepairs[question.id] } : question);
+
+const finalPrimaryQuestionOverrides = {
+  "hospital-ventilator-associated-pneumonia-157": {
+    "id": "hospital-ventilator-associated-pneumonia-157",
+    "lesson": "prevention-system",
+    "question": "A mechanically ventilated adult is eligible for enteral nutrition. The ventilator circuit is clean and functioning, and its manufacturer does not require a scheduled change. Which prevention plan is supported?",
+    "choices": [
+      "Use early enteral nutrition rather than default parenteral nutrition, and change the circuit when visibly soiled or malfunctioning or as the manufacturer instructs.",
+      "Use parenteral nutrition solely because mechanical ventilation makes enteral nutrition inappropriate.",
+      "Replace a clean functioning circuit every day because fixed daily changes lower VAP rates.",
+      "Delay tolerated enteral nutrition solely until mechanical ventilation ends."
+    ],
+    "answer": 0,
+    "rationale": "The 2022 SHEA guidance supports early enteral rather than parenteral nutrition in eligible adults; early enteral nutrition is associated with less nosocomial pneumonia. Circuit changes only when visibly soiled or malfunctioning reduce costs compared with fixed scheduled changes, without a demonstrated difference in VAP rates or outcomes. Follow different manufacturer instructions when applicable. Enteral eligibility still requires clinical assessment; this is not a directive to feed despite a contraindication.",
+    "reviewHref": "#prevention-system"
+  }
+};
+export const hospitalVentilatorAssociatedPneumoniaQuestionBank = beforeFinalPrimaryQuestionBank.map(q => finalPrimaryQuestionOverrides[q.id] ?? q);
 if(hospitalVentilatorAssociatedPneumoniaQuestionBank.length<100)throw new Error(`Hospital and ventilator-associated pneumonia question bank must contain at least 100 questions, found ${hospitalVentilatorAssociatedPneumoniaQuestionBank.length}.`);

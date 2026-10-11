@@ -71,5 +71,51 @@ const bookAdministrationRepairs = {
   }
 };
 
-export const rickettsialEhrlichialAnaplasmaQuestionBank = [...generated, ...cases].map(question => bookAdministrationRepairs[question.id] ? { ...question, ...bookAdministrationRepairs[question.id] } : question);
+const beforeFinalPrimaryQuestionBank = [...generated, ...cases].map(question => bookAdministrationRepairs[question.id] ? { ...question, ...bookAdministrationRepairs[question.id] } : question);
+
+const finalPrimaryQuestionOverrides = {
+  "rickettsial-079": {
+    "id": "rickettsial-079",
+    "lesson": "empiric-doxycycline",
+    "question": "An adult with suspected severe rickettsial infection is repeatedly vomiting and cannot reliably retain oral doxycycline. Which treatment-delivery decision is appropriate?",
+    "choices": [
+      "Arrange prompt treatment using IV doxycycline when oral delivery is unreliable; do not wait for laboratory confirmation.",
+      "Wait for a positive laboratory result before starting doxycycline despite severe suspected infection.",
+      "Continue relying on oral doses even when every dose is vomited, without reassessing delivery.",
+      "Withhold doxycycline until vomiting resolves even though IV delivery is available."
+    ],
+    "answer": 0,
+    "rationale": "CDC guidance recommends prompt doxycycline for suspected tickborne rickettsial disease rather than waiting for laboratory confirmation. Oral treatment can be suitable for early outpatient disease, while IV treatment may be indicated in severe illness, particularly with vomiting or obtundation. The decision here concerns reliable delivery in a severely ill adult; continued vomiting cannot be assumed to preserve an administered oral dose.",
+    "reviewHref": "#empiric-doxycycline"
+  },
+  "rickettsial-085": {
+    "id": "rickettsial-085",
+    "lesson": "empiric-doxycycline",
+    "question": "Which mechanism explains doxycycline's antibacterial activity in rickettsial infection?",
+    "choices": [
+      "Inhibition of bacterial protein synthesis through binding to the 30S ribosomal subunit.",
+      "Inhibition of bacterial cell-wall synthesis through binding to penicillin-binding proteins.",
+      "Inhibition of bacterial DNA gyrase as its principal antibacterial mechanism.",
+      "Inhibition of bacterial folate synthesis as its principal antibacterial mechanism."
+    ],
+    "answer": 0,
+    "rationale": "Doxycycline inhibits bacterial protein synthesis at the 30S ribosomal subunit and is primarily bacteriostatic. The supplied book describes reversible 30S binding, consistent with the reviewed label. Cell-wall synthesis, DNA gyrase, and folate synthesis are not doxycycline's principal antibacterial targets. Chelation with minerals is an administration interaction, not its antibacterial mechanism.",
+    "reviewHref": "#empiric-doxycycline"
+  },
+  "rickettsial-087": {
+    "id": "rickettsial-087",
+    "lesson": "empiric-doxycycline",
+    "question": "An adult taking oral doxycycline also takes an aluminum/magnesium antacid and iron supplement with each dose. Which administration issue should be corrected?",
+    "choices": [
+      "Concurrent antacid and iron use can impair doxycycline absorption; review product-specific dose separation.",
+      "Iron increases doxycycline absorption, so taking both together improves treatment reliability.",
+      "Aluminum and magnesium antacids cannot affect doxycycline absorption.",
+      "The interaction can be corrected only by stopping all food and milk throughout treatment."
+    ],
+    "answer": 0,
+    "rationale": "The doxycycline label identifies impaired absorption with aluminum-, calcium-, or magnesium-containing antacids and iron preparations. Review the exact products and an appropriate separation schedule. This interaction does not justify a blanket food or milk prohibition: the reviewed label permits food or milk for gastric irritation and states absorption is not markedly affected by them. No universal enteral-feed hold interval is established by this question.",
+    "reviewHref": "#empiric-doxycycline"
+  }
+};
+export const rickettsialEhrlichialAnaplasmaQuestionBank = beforeFinalPrimaryQuestionBank.map(q => finalPrimaryQuestionOverrides[q.id] ?? q);
 if (rickettsialEhrlichialAnaplasmaQuestionBank.length < 100) throw new Error(`Rickettsial question bank must contain at least 100 questions, found ${rickettsialEhrlichialAnaplasmaQuestionBank.length}.`);

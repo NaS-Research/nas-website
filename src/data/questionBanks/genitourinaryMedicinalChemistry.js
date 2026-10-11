@@ -99,4 +99,23 @@ const sourceReviewedReleaseQuestions = {
     "explanation": "The book links long-acting dosage forms with controlled release and warns that crushing or chewing can release drug at once. Ditropan XL is its urinary example of an osmotic system that can leave an empty shell. Preserving the active molecule does not preserve the designed release process."
   }
 };
-export const genitourinaryMedicinalChemistryQuestionBank = originalGenitourinaryMedicinalChemistryQuestionBank.map((question) => sourceReviewedReleaseQuestions[question.id] ? { ...question, ...sourceReviewedReleaseQuestions[question.id] } : question);
+const beforeFinalPrimaryQuestionBank = originalGenitourinaryMedicinalChemistryQuestionBank.map((question) => sourceReviewedReleaseQuestions[question.id] ? { ...question, ...sourceReviewedReleaseQuestions[question.id] } : question);
+
+const finalPrimaryQuestionOverrides = {
+  "genitourinary-medchem-123": {
+    "id": "genitourinary-medchem-123",
+    "concept": "extended-release dosage form integrity",
+    "difficulty": "Advanced",
+    "prompt": "A patient prescribed oxybutynin extended-release tablets develops difficulty swallowing and needs medication through a nasogastric tube. Which formulation decision is appropriate?",
+    "choices": [
+      "Review an appropriate alternative formulation and regimen; do not crush, chew, or divide the oxybutynin ER tablet.",
+      "Crush the oxybutynin ER tablet because an enteral tube preserves its extended-release behavior.",
+      "Divide the oxybutynin ER tablet into quarters because every ER tablet may be split.",
+      "Replace it with the same milligram dose and frequency of any immediate-release product without reviewing the regimen."
+    ],
+    "answer": 0,
+    "explanation": "The reviewed oxybutynin ER label requires swallowing the tablet whole with liquids and prohibits chewing, dividing, or crushing. A swallowing or tube-access problem therefore requires product-specific formulation and regimen review. Tube delivery does not preserve an altered tablet's release design, and ER instructions cannot be generalized across products. An alternative formulation also requires review of its dose and frequency rather than an automatic substitution.",
+    "reviewHref": "#product-engineering"
+  }
+};
+export const genitourinaryMedicinalChemistryQuestionBank = beforeFinalPrimaryQuestionBank.map(q => finalPrimaryQuestionOverrides[q.id] ?? q);

@@ -177,5 +177,37 @@ const bookAdministrationRepairs = {
   }
 };
 
-export const tularemiaQuestionBank = [...generated, ...cases].map(question => bookAdministrationRepairs[question.id] ? { ...question, ...bookAdministrationRepairs[question.id] } : question);
+const beforeFinalPrimaryQuestionBank = [...generated, ...cases].map(question => bookAdministrationRepairs[question.id] ? { ...question, ...bookAdministrationRepairs[question.id] } : question);
+
+const finalPrimaryQuestionOverrides = {
+  "tularemia-079": {
+    "id": "tularemia-079",
+    "lesson": "first-line-treatment",
+    "question": "The treating team selects oral doxycycline for a nonpregnant adult with early, uncomplicated tularemia. The patient is now repeatedly vomiting each dose. Which assessment is appropriate?",
+    "choices": [
+      "Reassess the ability to retain oral therapy and coordinate a reliable treatment route with the treating team.",
+      "Assume the full oral dose was absorbed despite immediate repeated vomiting.",
+      "Wait until the prescribed course ends before discussing failed oral delivery.",
+      "Continue the same administration plan solely because doxycycline was initially selected."
+    ],
+    "answer": 0,
+    "rationale": "An appropriate drug choice still requires reliable administration. CDC tularemia guidance allows oral or IV treatment according to clinical circumstances; repeated vomiting makes oral delivery unreliable and warrants reassessment. The case specifies early uncomplicated disease and a team-selected regimen. It does not establish doxycycline as preferred for every severe, delayed-treatment, pregnant, or neonatal case.",
+    "reviewHref": "#first-line-treatment"
+  },
+  "tularemia-091": {
+    "id": "tularemia-091",
+    "lesson": "dosing-administration-monitoring",
+    "question": "An adult receiving oral doxycycline for tularemia takes an iron supplement and magnesium antacid with the dose, then lies down immediately. Which counseling plan addresses these administration risks?",
+    "choices": [
+      "Review separation from the iron and antacid, use adequate water, and remain upright after the tablet or capsule dose.",
+      "Take iron and magnesium with doxycycline to improve absorption and lie down immediately.",
+      "Avoid water and continue taking all mineral products at the same time.",
+      "Stop all nutrition for the course rather than review products and tablet administration."
+    ],
+    "answer": 0,
+    "rationale": "Iron and magnesium-containing antacids can impair doxycycline absorption. Adequate water and remaining upright address tablet/capsule-related esophageal irritation; the supplied book advises at least 30 minutes upright. Product review should establish an appropriate separation schedule. These measures do not require stopping all food or applying an unverified universal tube-feed interruption interval.",
+    "reviewHref": "#dosing-administration-monitoring"
+  }
+};
+export const tularemiaQuestionBank = beforeFinalPrimaryQuestionBank.map(q => finalPrimaryQuestionOverrides[q.id] ?? q);
 if (tularemiaQuestionBank.length < 100) throw new Error(`Tularemia question bank must contain at least 100 questions, found ${tularemiaQuestionBank.length}.`);
