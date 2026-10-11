@@ -1,5 +1,5 @@
 {
-  "status": "source_reviewed_candidate_structural_pass_fresh_build_native_public_pending",
+  "status": "verified_scoped_public_release",
   "checkedUTC": "2026-10-11T10:28:55.883746+00:00",
   "scope": "Four continued-feeding questions, one teaching body and one source reference only",
   "module": "diarrhea-assessment-pharmacotherapy",
@@ -61,12 +61,15 @@
   },
   "wholeModuleVerified": false,
   "wholeChapterVerified": false,
-  "productionLiveVerified": false,
+  "productionLiveVerified": true,
   "wholeGoalComplete": false,
   "precedingAttempt": {
     "sourceReceipt": "diarrhea-feeding-source-review-v1.json",
     "browserReceipt": "browser-feeding-main-v2.json",
     "result": "Owner native review rejected the safety stem despite passing automated DOM checks; accurate harm statement was incompatible with instruction prompt. Original attempt preserved.",
     "repair": "Change only the safety stem to ask which statement identifies nutritional risk; same keyed answer text and all stable fields preserved."
-  }
+  },
+  "mainCommit": "03d29e240dd5c6e7e1a30b15cca63c002fb09b94",
+  "actualNativeCapturesReviewed": 24,
+  "publicCapturesIdenticalToReviewedMain": 24
 }

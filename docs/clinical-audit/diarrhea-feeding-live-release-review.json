@@ -1,6 +1,6 @@
 {
-  "status": "source_build_and_actual_native_passed_public_pending",
-  "checkedUTC": "2026-10-11T10:47:21.381573+00:00",
+  "status": "verified_scoped_public_release",
+  "checkedUTC": "2026-10-11T10:51:54.238897+00:00",
   "module": "diarrhea-assessment-pharmacotherapy",
   "questionIds": [
     "diarrhea-13-principle",
@@ -31,6 +31,24 @@
   "remainingPrimaryLocatingRowsReleasePending": 48,
   "wholeModuleVerified": false,
   "wholeChapterVerified": false,
-  "productionLiveVerified": false,
-  "wholeGoalComplete": false
+  "productionLiveVerified": true,
+  "wholeGoalComplete": false,
+  "release": {
+    "mainCommit": "03d29e240dd5c6e7e1a30b15cca63c002fb09b94",
+    "exactRemoteMainVerified": true,
+    "auditReviewCommit": "06b17f56796f5dca58e70453d6382d96ebe8ed74",
+    "liveBrowserPassed": true,
+    "publicCapturesRGBIdenticalToActuallyInspectedMain": 24,
+    "extraPublicDifferences": 0,
+    "newestFirstAndSearchRelevanceVerified": true
+  },
+  "remainingPrimaryLocatingRowsAfterScopedRelease": 44,
+  "limits": "Only these four whole questions, one teaching body and one source reference are verified in this unit. Other teaching, figures, checks, questions, whole-module/chapter coverage and secondary/historical feeding inventories remain open. Whole counts68/232 modules and7/82 chapters unchanged.",
+  "evidenceHashes": {
+    "browser-feeding-live-v3.json": "8d6850e2db47fd7d93c0ccde257d7dab4ba2546b9ea3d14a0977766d2bbcdc3e",
+    "public-pixel-comparison-feeding-v1.json": "e91d18527d3b822e88b63350dddb8678f6368f5cf1432a26d4c03003da38a1c4",
+    "actual-native-feeding-complete-v1.json": "ec02b7d52865be96b13e844d0decd95dd184a0f66f1d50e5bcb862923100657f",
+    "diarrhea-feeding-source-review-v2.json": "1dd9c0fb591b1cfadfdddd3076b2ac944e98748a46c40d8daa760f3f41364eb8",
+    "main-integration-feeding-v2.json": "8bf09272a087d1d3036a695cfa114bc20dbc91a64563f01cd046e75ed824704a"
+  }
 }
