@@ -1,0 +1,72 @@
+{
+  "status": "source_reviewed_candidate_structural_pass_fresh_build_native_public_pending",
+  "checkedUTC": "2026-10-11T10:28:55.883746+00:00",
+  "scope": "Four continued-feeding questions, one teaching body and one source reference only",
+  "module": "diarrhea-assessment-pharmacotherapy",
+  "questionIds": [
+    "diarrhea-13-principle",
+    "diarrhea-13-application",
+    "diarrhea-13-safety",
+    "diarrhea-13-case"
+  ],
+  "wholeQuestionsIndividuallyReviewed": 4,
+  "allChoicesReviewed": 16,
+  "teachingBodyHeading": "Continue appropriate nutrition",
+  "sourcePolicy": "Supplied book plus user-approved official primary clinical sources. Source files remain private external evidence.",
+  "sourceReview": {
+    "bookSHA256": "5e60f0b3ce20601985515c259c9503bd7ee2681836efecf03906a7da3dddf6ef",
+    "bookActualNativePDFPages": [
+      927,
+      930
+    ],
+    "bookClaimsLimit": "Hydration and escalation context only; book pages do not establish detailed pediatric feeding timing. Printed917/920 corresponding to PDF927/930. No copied source text/pixels in public output.",
+    "idsaActualNativePDFPages": [
+      7,
+      27
+    ],
+    "idsaRecommendations": [
+      44,
+      45
+    ],
+    "idsaLimit": "Strong recommendation, low-quality evidence. No claim of guaranteed shorter diarrhea, universal lactose-free feeding or fixed caloric dosing.",
+    "cdcSections": [
+      "Dietary Therapy",
+      "breastfeeding and usual full-strength formula after rehydration",
+      "restriction and juice-only diet limitations"
+    ],
+    "sourceHashes": {
+      "idsa-diarrhea-2017.pdf": "a9ab146a0867a6cf1edc3f39160629512369b8311727372e282224551bd7b77c",
+      "idsa-07.png": "d2328160853db21591a01fb40f06de3393b19c01f80d894483f484cbe674a449",
+      "idsa-27.png": "d05a1af9738108c2e54a79cc19e4e0fc9d9c16e4df2beeb1fbb38782e7df3acf",
+      "book-0927.png": "5b7bc581483e773a74bc92c4c9bcb55d007184b45cb454db53044b0cda294b28",
+      "book-0930.png": "84e90789f9f93fa16a472b4b3d870bd4cfdd7ad02ff0add90c79c311f7d806a6",
+      "cdc-pediatric-gastroenteritis-2003.html": "d75c5ace3d65b31e4a12103024dd7dbf981ee3f05f125f8add51d4b785b960dc"
+    }
+  },
+  "discrepancies": [
+    "Existing case offered both feeding/hydration and hydration/selected symptom care, permitting two reasonable answers.",
+    "Existing cross-topic distractors made feeding decisions vague; all four now test feeding within uncomplicated illness.",
+    "Existing feeding body did not clearly distinguish breastfeeding throughout illness from usual formula after rehydration."
+  ],
+  "invariants": {
+    "allIdsOrderKeysCorrectAnswerTextsAndAnchorsPreserved": true,
+    "otherWholeQuestionObjectsExact": true,
+    "other231ModulesExact": true,
+    "existingPool1184AndSelected30Exact": true,
+    "allOtherTeachingMetadataChecksAndFiguresExact": true
+  },
+  "sourceFiles": {
+    "src/data/modules/diarrheaAssessmentPharmacotherapy.js": "dc64f616defe709bf99701f8fdf14198439135c86fb926e29ea3e7da939f4c4e",
+    "src/data/questionBanks/diarrheaAssessmentPharmacotherapy.js": "56873beb991475275074cc987a3f85c0d8048a8ba0eec73b0297276ab8b617b1"
+  },
+  "wholeModuleVerified": false,
+  "wholeChapterVerified": false,
+  "productionLiveVerified": false,
+  "wholeGoalComplete": false,
+  "precedingAttempt": {
+    "sourceReceipt": "diarrhea-feeding-source-review-v1.json",
+    "browserReceipt": "browser-feeding-main-v2.json",
+    "result": "Owner native review rejected the safety stem despite passing automated DOM checks; accurate harm statement was incompatible with instruction prompt. Original attempt preserved.",
+    "repair": "Change only the safety stem to ask which statement identifies nutritional risk; same keyed answer text and all stable fields preserved."
+  }
+}

@@ -57,7 +57,7 @@ const dimensions = [
 
 const offsets = [7, 13, 19];
 
-export const diarrheaAssessmentPharmacotherapyQuestionBank = concepts.flatMap((concept, conceptIndex) => dimensions.map((dimension, dimensionIndex) => ({
+const generatedDiarrheaAssessmentPharmacotherapyQuestionBank = concepts.flatMap((concept, conceptIndex) => dimensions.map((dimension, dimensionIndex) => ({
   id: `diarrhea-${String(conceptIndex + 1).padStart(2, "0")}-${dimension.key}`,
   question: dimension.prompt(concept),
   choices: [concept[dimension.field], ...offsets.map(offset => concepts[(conceptIndex + offset) % concepts.length][dimension.field])],
@@ -66,6 +66,67 @@ export const diarrheaAssessmentPharmacotherapyQuestionBank = concepts.flatMap((c
   reviewHref: `#${concept.lesson}`,
   difficulty: ["foundational", "application", "advanced", "clinical"][dimensionIndex],
 })));
+
+const continuedFeedingQuestionOverrides = {
+  "diarrhea-13-principle": {
+    "id": "diarrhea-13-principle",
+    "question": "After rehydration in uncomplicated acute diarrhea, which principle best guides feeding?",
+    "choices": [
+      "Once hydration is addressed, most patients should resume tolerable age-appropriate nutrition rather than prolong fasting.",
+      "Withhold food until every loose stool has stopped.",
+      "Use juice alone as the diet throughout the illness.",
+      "Restrict all meals to a BRAT diet until recovery."
+    ],
+    "answer": 0,
+    "rationale": "Rehydration and nutrition address different needs. Resume an age-appropriate usual diet during or promptly after rehydration; routine fasting and restrictive diets are unnecessary.",
+    "reviewHref": "#diarrhea-rehydration",
+    "difficulty": "foundational"
+  },
+  "diarrhea-13-application": {
+    "id": "diarrhea-13-application",
+    "question": "A breastfed infant and a formula-fed infant can tolerate feeding during uncomplicated acute diarrhea. Which feeding approach is appropriate?",
+    "choices": [
+      "Continue breastfeeding, use usual formula when appropriate, and advance a tolerable regular diet while monitoring hydration.",
+      "Stop breastfeeding until the last loose stool.",
+      "Routinely dilute the usual formula after rehydration.",
+      "Replace every infant feeding with sweetened juice."
+    ],
+    "answer": 0,
+    "rationale": "Continue breastfeeding throughout the episode. Formula-fed infants generally resume their usual full-strength formula after rehydration; routine dilution and juice-only feeding are inappropriate.",
+    "reviewHref": "#diarrhea-rehydration",
+    "difficulty": "application"
+  },
+  "diarrhea-13-safety": {
+    "id": "diarrhea-13-safety",
+    "question": "For a stable child with uncomplicated diarrhea who tolerates feeding, which statement identifies the nutritional risk of withholding all food?",
+    "choices": [
+      "Prolonged fasting can worsen nutrition without shortening most uncomplicated diarrheal illnesses.",
+      "Continue breastfeeding during the diarrheal episode.",
+      "Resume the usual age-appropriate diet after rehydration.",
+      "Use the usual full-strength formula after rehydration when tolerated."
+    ],
+    "answer": 0,
+    "rationale": "Prolonged fasting deprives a feeding-tolerant child of nutrition. Continued breastfeeding, usual formula after rehydration, and an age-appropriate diet are appropriate alternatives.",
+    "reviewHref": "#diarrhea-rehydration",
+    "difficulty": "advanced"
+  },
+  "diarrhea-13-case": {
+    "id": "diarrhea-13-case",
+    "question": "A five-year-old with uncomplicated, nonbloody diarrhea is alert, rehydrated, hungry, and able to eat. Which feeding plan is best?",
+    "choices": [
+      "Continue appropriate feeding and hydration rather than withholding all food.",
+      "Withhold all solid food until diarrhea resolves.",
+      "Use juice alone instead of age-appropriate meals.",
+      "Limit every meal to bananas, rice, applesauce, and toast until recovery."
+    ],
+    "answer": 0,
+    "rationale": "This child can resume a usual age-appropriate diet with hydration support. Waiting for every loose stool, juice-only feeding, and a restrictive BRAT-only diet are unnecessary.",
+    "reviewHref": "#diarrhea-rehydration",
+    "difficulty": "clinical"
+  }
+};
+
+export const diarrheaAssessmentPharmacotherapyQuestionBank = generatedDiarrheaAssessmentPharmacotherapyQuestionBank.map(question => continuedFeedingQuestionOverrides[question.id] || question);
 
 if (diarrheaAssessmentPharmacotherapyQuestionBank.length < 100) {
   throw new Error(`Diarrhea assessment and pharmacotherapy question bank must contain at least 100 questions, found ${diarrheaAssessmentPharmacotherapyQuestionBank.length}.`);
