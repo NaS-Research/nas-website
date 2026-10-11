@@ -153,4 +153,204 @@ const primaryFeedingQuestionOverrides = {
     "reviewHref": "#route-selection"
   }
 };
-export const vancomycinPharmacologyQuestionBank = beforePrimaryFeedingReviewQuestionBank.map(q => primaryFeedingQuestionOverrides[q.id] ?? q);
+const beforeHistoricalVancomycinQuestionBank = beforePrimaryFeedingReviewQuestionBank.map(q => primaryFeedingQuestionOverrides[q.id] ?? q);
+
+const historicalVancomycinQuestionOverrides = {
+  "vancomycin-pharmacology-006": {
+    "id": "vancomycin-pharmacology-006",
+    "lesson": "structure-mechanism",
+    "question": "Which action correctly applies vancomycin binding to D-Ala-D-Ala?",
+    "choices": [
+      "Explain how binding the cell-wall precursor inhibits peptidoglycan synthesis in susceptible gram-positive bacteria.",
+      "Explain its activity as inhibition of bacterial DNA gyrase.",
+      "Use the binding target as proof of reliable gram-negative coverage.",
+      "Use the binding target as proof that oral capsules provide reliable treatment of bacteremia."
+    ],
+    "answer": 0,
+    "rationale": "Vancomycin binds the D-alanyl-D-alanine cell-wall precursor and inhibits cell-wall synthesis. That mechanism does not establish gram-negative activity or adequate systemic exposure from an oral product. Match organism, infection site and route separately.",
+    "reviewHref": "#structure-mechanism"
+  },
+  "vancomycin-pharmacology-007": {
+    "id": "vancomycin-pharmacology-007",
+    "lesson": "structure-mechanism",
+    "question": "Which assessment best connects vancomycin mechanism with a treatment decision?",
+    "choices": [
+      "Review the actual organism, susceptibility, infection site, route, exposure and clinical response.",
+      "Assume every gram-positive isolate is susceptible without reviewing its result.",
+      "Assume a cell-wall target makes vancomycin suitable for every infection site and route.",
+      "Assume target binding removes the need to assess kidney function and drug exposure."
+    ],
+    "answer": 0,
+    "rationale": "A mechanism explains how vancomycin can act, but does not establish that the actual organism is susceptible or that the intended compartment receives effective exposure. The book distinguishes resistant enterococci and oral versus IV roles; the label requires exposure and renal monitoring.",
+    "reviewHref": "#structure-mechanism"
+  },
+  "vancomycin-pharmacology-013": {
+    "id": "vancomycin-pharmacology-013",
+    "lesson": "spectrum-resistance",
+    "question": "Which principle is appropriate when considering vancomycin for a serious susceptible MRSA infection?",
+    "choices": [
+      "Use an appropriate IV regimen and monitoring plan for the systemic infection, then reassess clinical and microbiologic response.",
+      "Use oral vancomycin alone because MRSA susceptibility guarantees systemic oral exposure.",
+      "Assume any dose is effective once the organism is reported susceptible.",
+      "Continue unchanged despite worsening infection without reassessing therapy."
+    ],
+    "answer": 0,
+    "rationale": "Vancomycin has a role in serious infections caused by susceptible MRSA, but systemic treatment requires an appropriate IV regimen. Susceptibility alone does not establish effective exposure or adequate response. Route, patient physiology, monitoring and clinical reassessment remain necessary.",
+    "reviewHref": "#spectrum-resistance"
+  },
+  "vancomycin-pharmacology-046": {
+    "id": "vancomycin-pharmacology-046",
+    "lesson": "pk-dosing",
+    "question": "When a vancomycin loading dose is appropriate, which plan best supports prompt and safe delivery?",
+    "choices": [
+      "Use actual body weight and the applicable loading guidance, with a feasible dilution and infusion plan.",
+      "Choose the loading dose solely from the future maintenance interval.",
+      "Give every loading dose as a rapid undiluted IV push.",
+      "Use an oral capsule loading dose to substitute for IV treatment of a systemic infection."
+    ],
+    "answer": 0,
+    "rationale": "Loading uses actual weight and applicable patient guidance to support early exposure; subsequent maintenance depends on clearance. Delivery must address dilution and infusion tolerability.",
+    "reviewHref": "#pk-dosing"
+  },
+  "vancomycin-pharmacology-047": {
+    "id": "vancomycin-pharmacology-047",
+    "lesson": "pk-dosing",
+    "question": "Which review is most appropriate before a vancomycin loading dose?",
+    "choices": [
+      "Check actual weight, illness severity, fluid status, relevant patient-specific guidance, renal trajectory and the planned infusion.",
+      "Check only the future maintenance interval and ignore body weight.",
+      "Assume renal impairment automatically means loading is unnecessary in every patient.",
+      "Assume a loading dose removes the need for subsequent concentration and kidney-function monitoring."
+    ],
+    "answer": 0,
+    "rationale": "Loading and maintenance address different pharmacokinetic tasks. Evaluate the patient and infusion plan; renal impairment still informs maintenance and monitoring.",
+    "reviewHref": "#pk-dosing"
+  },
+  "vancomycin-pharmacology-070": {
+    "id": "vancomycin-pharmacology-070",
+    "lesson": "auc-monitoring",
+    "question": "Which action best supports a credible Bayesian vancomycin AUC estimate?",
+    "choices": [
+      "Enter verified dose, infusion and sample times with measured concentrations into an appropriate model.",
+      "Replace actual sample times with the planned times even when sampling was delayed.",
+      "Assume software eliminates errors in the dose history.",
+      "Treat one concentration as universally sufficient for every patient population."
+    ],
+    "answer": 0,
+    "rationale": "Bayesian estimates combine a population model with individual dosing and concentration data. Incorrect inputs and unsuitable sampling can distort the estimate.",
+    "reviewHref": "#auc-monitoring"
+  },
+  "vancomycin-pharmacology-071": {
+    "id": "vancomycin-pharmacology-071",
+    "lesson": "auc-monitoring",
+    "question": "Which assessment best evaluates a Bayesian vancomycin AUC result?",
+    "choices": [
+      "Review model suitability, actual dose and sample history, concentration credibility and changing renal function.",
+      "Accept every result without checking whether the model fits the patient.",
+      "Ignore a missed dose because the prescribed dose was entered.",
+      "Assume one trough alone is established as sufficient in all special populations."
+    ],
+    "answer": 0,
+    "rationale": "The guideline describes population and sampling limitations. Review the individual data and physiology rather than treating the estimate as independent of its inputs.",
+    "reviewHref": "#auc-monitoring"
+  },
+  "vancomycin-pharmacology-090": {
+    "id": "vancomycin-pharmacology-090",
+    "lesson": "infusion-administration",
+    "question": "A patient develops flushing and pruritus during a vancomycin infusion. What is the most appropriate immediate response?",
+    "choices": [
+      "Stop the infusion, promptly assess severity and stabilize the patient; evaluate for anaphylaxis when indicated.",
+      "Increase the rate to finish the dose sooner.",
+      "Continue at the same rate because every infusion reaction is harmless.",
+      "Assume all symptoms prove the same mechanism and omit clinical assessment."
+    ],
+    "answer": 0,
+    "rationale": "The product label instructs stopping the infusion if a reaction occurs. Rapid administration increases risk, but a reaction can occur at any rate. Assess hemodynamic and respiratory findings promptly; slowing a future infusion does not replace assessment of the current event.",
+    "reviewHref": "#infusion-administration"
+  },
+  "vancomycin-pharmacology-091": {
+    "id": "vancomycin-pharmacology-091",
+    "lesson": "infusion-administration",
+    "question": "Which assessment is most appropriate when symptoms develop during a vancomycin infusion?",
+    "choices": [
+      "Assess timing, dose, rate, concentration, blood pressure, breathing and skin findings while addressing the reaction.",
+      "Assess only whether the bag contains the correct drug, then continue without examining the patient.",
+      "Exclude an infusion reaction whenever the planned infusion duration was met.",
+      "Assume hypotension and breathing difficulty require no urgent assessment if flushing is present."
+    ],
+    "answer": 0,
+    "rationale": "Vancomycin infusion reactions relate to rate and concentration but can occur at any rate. Hypotension, wheezing, dyspnea and urticaria are reported. Review delivery and the patient immediately; a planned duration or flushing does not establish a harmless event.",
+    "reviewHref": "#infusion-administration"
+  },
+  "vancomycin-pharmacology-094": {
+    "id": "vancomycin-pharmacology-094",
+    "lesson": "infusion-administration",
+    "question": "Vancomycin and another IV medicine are scheduled through one line. Which action best addresses compatibility?",
+    "choices": [
+      "Check compatibility for the exact medicines, concentrations and diluents, and arrange separation or flushing as indicated.",
+      "Combine them whenever both solutions look clear before mixing.",
+      "Assume all beta-lactam mixtures are compatible with vancomycin at every concentration.",
+      "Ignore administration sequence because dilution proves all mixtures are compatible."
+    ],
+    "answer": 0,
+    "rationale": "The label describes vancomycin solution incompatibilities, including beta-lactam mixtures and a greater precipitation risk at higher concentrations. Review the exact combination and delivery plan; adequate line flushing may be needed. Appearance alone does not establish compatibility.",
+    "reviewHref": "#infusion-administration"
+  },
+  "vancomycin-pharmacology-095": {
+    "id": "vancomycin-pharmacology-095",
+    "lesson": "infusion-administration",
+    "question": "Which review best supports a vancomycin IV-line compatibility decision?",
+    "choices": [
+      "Identify the exact partner medicine, concentration, diluent, shared-line arrangement, sequence and required flushes; monitor the site.",
+      "Identify only the brand names and assume concentrations are irrelevant.",
+      "Use absence of visible precipitate as the sole evidence of compatibility.",
+      "Ignore pain or phlebitis once the dose starts."
+    ],
+    "answer": 0,
+    "rationale": "Compatibility depends on the particular solutions and administration conditions. The label describes concentration-related precipitation and line-flushing considerations. Site monitoring also matters because vancomycin can irritate veins; visible clarity is not the complete assessment.",
+    "reviewHref": "#infusion-administration"
+  },
+  "vancomycin-pharmacology-097": {
+    "id": "vancomycin-pharmacology-097",
+    "lesson": "nephrotoxicity",
+    "question": "Which statement accurately describes vancomycin-associated kidney-injury risk?",
+    "choices": [
+      "Risk can increase with high serum exposure, prolonged treatment, nephrotoxins, volume depletion, renal impairment and critical illness.",
+      "Kidney injury is impossible when the isolate is vancomycin susceptible.",
+      "High serum exposure becomes harmless once the planned duration is entered.",
+      "Concurrent nephrotoxins and changing renal function do not affect monitoring needs."
+    ],
+    "answer": 0,
+    "rationale": "The label identifies these risk factors and calls for serum-concentration and renal-function monitoring. Susceptibility does not prevent toxicity. Rising injury signals require reassessment of exposure, concurrent contributors and continued treatment; AKI may require dose reduction or discontinuation.",
+    "reviewHref": "#nephrotoxicity"
+  },
+  "vancomycin-pharmacology-114": {
+    "id": "vancomycin-pharmacology-114",
+    "lesson": "other-safety",
+    "question": "A patient receiving vancomycin develops blisters and mucosal lesions. Which action is most appropriate?",
+    "choices": [
+      "Discontinue vancomycin and urgently assess the suspected severe dermatologic reaction and systemic involvement.",
+      "Continue unchanged because every vancomycin rash is only an infusion-rate reaction.",
+      "Only slow the next infusion without evaluating the lesions.",
+      "Ignore mucosal findings until the entire antibiotic course is completed."
+    ],
+    "answer": 0,
+    "rationale": "The label reports SJS, TEN, DRESS, AGEP and linear IgA bullous dermatosis and instructs discontinuation at the first signs of these reactions. Blisters and mucosal lesions require urgent assessment; changing the infusion rate is not an adequate response to a suspected severe dermatologic reaction.",
+    "reviewHref": "#other-safety"
+  },
+  "vancomycin-pharmacology-115": {
+    "id": "vancomycin-pharmacology-115",
+    "lesson": "other-safety",
+    "question": "Which assessment best evaluates a suspected severe dermatologic reaction during vancomycin treatment?",
+    "choices": [
+      "Review rash morphology, blisters, mucosa, timing, fever and possible systemic involvement while stopping the suspected medicine.",
+      "Check only the infusion rate and assume that excludes all severe skin reactions.",
+      "Treat mucosal lesions as irrelevant to the severity assessment.",
+      "Use absence of an immediate reaction as proof that a later severe rash is unrelated."
+    ],
+    "answer": 0,
+    "rationale": "Vancomycin labeling reports several severe dermatologic syndromes and identifies rashes, mucosal lesions and blisters as warning findings. Evaluate the pattern and clinical course, including systemic involvement. A delayed presentation or acceptable infusion rate does not remove the need to assess a suspected severe reaction.",
+    "reviewHref": "#other-safety"
+  }
+};
+export const vancomycinPharmacologyQuestionBank = beforeHistoricalVancomycinQuestionBank.map(q => historicalVancomycinQuestionOverrides[q.id] ?? q);
