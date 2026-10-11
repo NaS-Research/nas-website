@@ -34951,7 +34951,8 @@
       "status": "reviewing",
       "evidence": [
         "enteral-nutrition-broader-cdi-vancomycin-review.json",
-        "cdi-primary-live-release-review.json"
+        "cdi-primary-live-release-review.json",
+        "vancomycin-historical-live-release-review.json"
       ],
       "broaderEnteralBowelDeliveryReview": {
         "evidence": "enteral-nutrition-broader-cdi-vancomycin-review.json",
@@ -35012,6 +35013,28 @@
         "mainCommit": "24ceff056ae52f4862cf47afc3e5dedff28357f8",
         "wholeModuleVerified": false,
         "allOtherContentRequiresItsExistingAuditStatus": true
+      },
+      "historicalVancomycinScopedReview": {
+        "evidence": "vancomycin-historical-live-release-review.json",
+        "verifiedQuestionIds": [
+          "vancomycin-pharmacology-006",
+          "vancomycin-pharmacology-007",
+          "vancomycin-pharmacology-013",
+          "vancomycin-pharmacology-046",
+          "vancomycin-pharmacology-047",
+          "vancomycin-pharmacology-070",
+          "vancomycin-pharmacology-071",
+          "vancomycin-pharmacology-090",
+          "vancomycin-pharmacology-091",
+          "vancomycin-pharmacology-094",
+          "vancomycin-pharmacology-095",
+          "vancomycin-pharmacology-097",
+          "vancomycin-pharmacology-114",
+          "vancomycin-pharmacology-115"
+        ],
+        "productionLiveVerified": true,
+        "mainCommit": "0c04552dc27101a70c8f99ed302ca65a1de9b617",
+        "wholeModuleVerified": false
       }
     },
     {

@@ -1,6 +1,6 @@
 {
-  "status": "source_build_actual_native_passed_public_pending",
-  "checkedUTC": "2026-10-11T21:07:44.492921+00:00",
+  "status": "verified_scoped_public_release",
+  "checkedUTC": "2026-10-11T21:12:32.115273+00:00",
   "questionIds": [
     "vancomycin-pharmacology-006",
     "vancomycin-pharmacology-007",
@@ -26,7 +26,10 @@
     "vancomycin-question-review-v1.json": "65767ea2b3a1f6021a047d673567c8c84484c25ee88b76b4ebd770470620446e",
     "main-integration-vancomycin-v1.json": "39737c7ab211d106cb9804b6ff27bd2a414d34d02927159c9470d96966a3daed",
     "browser-vancomycin-main-v1.json": "8bed46bf53e068b3f936741e7c588c9ffa7985d7936e61c81c7becc9cf1031e9",
-    "actual-native-vancomycin-complete-v1.json": "231878c110abcd3f4c0af0485d81678b033c246676849453af4179b34400c293"
+    "actual-native-vancomycin-complete-v1.json": "231878c110abcd3f4c0af0485d81678b033c246676849453af4179b34400c293",
+    "browser-vancomycin-live-v1.json": "724294449a9ffe719a86e2f030b944a74c22a8d967d907c90172826ef64eb3eb",
+    "public-pixel-comparison-vancomycin-v1.json": "411d74e917d41fd80bcc25d95f204e341bfff4f3ef68a66dcd760472c036e51f",
+    "original-preservation-vancomycin-v1.json": "00548e75e48cdd5f5ea606d9a5e7ea2922349ed74542fb1fa70e87b804e66aa4"
   },
   "selected30WholeObjectsExact": true,
   "entireCumulativePoolExact": true,
@@ -35,6 +38,67 @@
   "chaptersVerified": 7,
   "wholeModuleVerified": false,
   "wholeChapterVerified": false,
-  "productionLiveVerified": false,
-  "wholeGoalComplete": false
+  "productionLiveVerified": true,
+  "wholeGoalComplete": false,
+  "release": {
+    "mainCommit": "0c04552dc27101a70c8f99ed302ca65a1de9b617",
+    "auditReviewCommit": "51a893194f29bf4111c7d476f2f21b04cd0d0599",
+    "exactRemoteMainVerified": true,
+    "liveBrowserPassed": true,
+    "publicCapturesRGBIdenticalToActuallyInspectedMain": 62,
+    "extraPublicDifferences": 0,
+    "newestFirstAndSearchRelevanceVerified": true
+  },
+  "olderAuditDifferencesPreserved": [
+    {
+      "module": "vancomycin-pharmacology",
+      "id": "vancomycin-pharmacology-034",
+      "status": "older_audit_difference_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "module": "vancomycin-pharmacology",
+      "id": "vancomycin-pharmacology-036",
+      "status": "older_audit_difference_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "module": "vancomycin-pharmacology",
+      "id": "vancomycin-pharmacology-042",
+      "status": "older_audit_difference_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "module": "vancomycin-pharmacology",
+      "id": "vancomycin-pharmacology-044",
+      "status": "older_audit_difference_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "module": "vancomycin-pharmacology",
+      "id": "vancomycin-pharmacology-121",
+      "status": "older_audit_difference_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "module": "vancomycin-pharmacology",
+      "id": "vancomycin-pharmacology-122",
+      "status": "older_audit_difference_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "module": "vancomycin-pharmacology",
+      "id": "vancomycin-pharmacology-123",
+      "status": "older_audit_difference_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "module": "vancomycin-pharmacology",
+      "id": "vancomycin-pharmacology-124",
+      "status": "older_audit_difference_not_published_here",
+      "absentFromMain": false
+    }
+  ],
+  "remainingHistoricalQuestions": 64,
+  "limits": "Fourteen whole questions/56 choices and one matching lesson paragraph only. No whole module or chapter closure. Older Audit differences remain preserved and are not published here. The selected30remain exact; no cumulative pool objects changed; all1184pool objects remain exact."
 }

@@ -1,14 +1,14 @@
 {
-  "status": "fifteen_antibiotic_historical_questions_live_qualified_remaining78_open",
-  "checkedUTC": "2026-10-11T20:25:53.258546+00:00",
+  "status": "fourteen_vancomycin_historical_questions_live_qualified_remaining64_open",
+  "checkedUTC": "2026-10-11T21:12:32.115273+00:00",
   "sourceHEAD": "a403e8e2da7679186f4244847635a73c400d7633",
   "scope": "All current232 modules and whole bank fields, historical233 rows, focused416 and secondary2046 retained rows. Rebuild locating inventory, compare exact whole objects and bind48 completed source/render/live releases. Keyword results and retained ID labels are not clinical qualification.",
   "modules": 232,
   "wholeBankObjects": 28012,
   "selectedCumulativeWholeObjectsExact": true,
   "priorRegistryIds": 1510,
-  "retainedExactPublishedWholeQuestionBindings": 290,
-  "registryIdsAfter": 1798,
+  "retainedExactPublishedWholeQuestionBindings": 304,
+  "registryIdsAfter": 1812,
   "archives": [
     {
       "path": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/archives/feeding-primary-nutrition-question-review-20261011",
@@ -716,9 +716,9 @@
     "retainedSecondaryRows": 2046,
     "currentFocusedRows": 405,
     "currentSecondaryLocatingRows": 1881,
-    "priorUnregisteredHistoricalStillPending": 78,
-    "historicalCurrentExactReleaseBindings": 54,
-    "historicalPriorUnregisteredNowExactBound": 52,
+    "priorUnregisteredHistoricalStillPending": 64,
+    "historicalCurrentExactReleaseBindings": 68,
+    "historicalPriorUnregisteredNowExactBound": 66,
     "changedWholeObjectsWithoutCurrentExactReleaseBinding": 36
   },
   "currentPrimaryQuestionInventory": {
@@ -739,9 +739,9 @@
   "newWholeModuleOrChapterClosures": 0,
   "wholeGoalComplete": false,
   "additionalArchivedQuestionBindings": 111,
-  "newRegistryIdsAddedThisPhase": 15,
+  "newRegistryIdsAddedThisPhase": 14,
   "ownEnteralQuestionHashesReconciled": 108,
-  "newClinicalQuestionCertifications": 15,
+  "newClinicalQuestionCertifications": 14,
   "additionalProof": [
     {
       "path": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/archives/fluid-parent-closure-reconciliation-20261011",
@@ -770,7 +770,6 @@
     }
   ],
   "remainingHistoricalUnregisteredPendingByModule": {
-    "vancomycin-pharmacology": 14,
     "lefamulin-pharmacology": 9,
     "acute-bacterial-meningitis": 3,
     "hospital-ventilator-associated-pneumonia": 3,
@@ -1606,5 +1605,109 @@
     ],
     "remainingHistoricalQuestions": 78,
     "limits": "Fifteen whole questions/60 choices and one matching lesson paragraph only. No whole module or chapter closure. Older Audit differences remain preserved and are not published here. The selected30remain exact; one derived pool alias follows its reviewed parent and the other1183pool objects remain exact."
+  },
+  "latestHistoricalVancomycinRelease": {
+    "status": "verified_scoped_public_release",
+    "checkedUTC": "2026-10-11T21:12:32.115273+00:00",
+    "questionIds": [
+      "vancomycin-pharmacology-006",
+      "vancomycin-pharmacology-007",
+      "vancomycin-pharmacology-013",
+      "vancomycin-pharmacology-046",
+      "vancomycin-pharmacology-047",
+      "vancomycin-pharmacology-070",
+      "vancomycin-pharmacology-071",
+      "vancomycin-pharmacology-090",
+      "vancomycin-pharmacology-091",
+      "vancomycin-pharmacology-094",
+      "vancomycin-pharmacology-095",
+      "vancomycin-pharmacology-097",
+      "vancomycin-pharmacology-114",
+      "vancomycin-pharmacology-115"
+    ],
+    "wholeQuestionsReviewed": 14,
+    "individualChoicesReviewed": 56,
+    "sourceNativePagesActuallyInspected": 7,
+    "mainBase": "0fcbce5f6dd992d367faf3f3ba2a5800c0367757",
+    "nativeCapturesActuallyInspected": 62,
+    "evidenceSHA256": {
+      "vancomycin-question-review-v1.json": "65767ea2b3a1f6021a047d673567c8c84484c25ee88b76b4ebd770470620446e",
+      "main-integration-vancomycin-v1.json": "39737c7ab211d106cb9804b6ff27bd2a414d34d02927159c9470d96966a3daed",
+      "browser-vancomycin-main-v1.json": "8bed46bf53e068b3f936741e7c588c9ffa7985d7936e61c81c7becc9cf1031e9",
+      "actual-native-vancomycin-complete-v1.json": "231878c110abcd3f4c0af0485d81678b033c246676849453af4179b34400c293",
+      "browser-vancomycin-live-v1.json": "724294449a9ffe719a86e2f030b944a74c22a8d967d907c90172826ef64eb3eb",
+      "public-pixel-comparison-vancomycin-v1.json": "411d74e917d41fd80bcc25d95f204e341bfff4f3ef68a66dcd760472c036e51f",
+      "original-preservation-vancomycin-v1.json": "00548e75e48cdd5f5ea606d9a5e7ea2922349ed74542fb1fa70e87b804e66aa4"
+    },
+    "selected30WholeObjectsExact": true,
+    "entireCumulativePoolExact": true,
+    "other231ModulesExact": true,
+    "wholeModulesVerified": 69,
+    "chaptersVerified": 7,
+    "wholeModuleVerified": false,
+    "wholeChapterVerified": false,
+    "productionLiveVerified": true,
+    "wholeGoalComplete": false,
+    "release": {
+      "mainCommit": "0c04552dc27101a70c8f99ed302ca65a1de9b617",
+      "auditReviewCommit": "51a893194f29bf4111c7d476f2f21b04cd0d0599",
+      "exactRemoteMainVerified": true,
+      "liveBrowserPassed": true,
+      "publicCapturesRGBIdenticalToActuallyInspectedMain": 62,
+      "extraPublicDifferences": 0,
+      "newestFirstAndSearchRelevanceVerified": true
+    },
+    "olderAuditDifferencesPreserved": [
+      {
+        "module": "vancomycin-pharmacology",
+        "id": "vancomycin-pharmacology-034",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "vancomycin-pharmacology",
+        "id": "vancomycin-pharmacology-036",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "vancomycin-pharmacology",
+        "id": "vancomycin-pharmacology-042",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "vancomycin-pharmacology",
+        "id": "vancomycin-pharmacology-044",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "vancomycin-pharmacology",
+        "id": "vancomycin-pharmacology-121",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "vancomycin-pharmacology",
+        "id": "vancomycin-pharmacology-122",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "vancomycin-pharmacology",
+        "id": "vancomycin-pharmacology-123",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "vancomycin-pharmacology",
+        "id": "vancomycin-pharmacology-124",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      }
+    ],
+    "remainingHistoricalQuestions": 64,
+    "limits": "Fourteen whole questions/56 choices and one matching lesson paragraph only. No whole module or chapter closure. Older Audit differences remain preserved and are not published here. The selected30remain exact; no cumulative pool objects changed; all1184pool objects remain exact."
   }
 }
