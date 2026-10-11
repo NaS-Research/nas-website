@@ -1,0 +1,1058 @@
+{
+  "status": "current48primary110fluid1ALFand108ownEN_exact_evidence_bindings_reconciled_semantic_classification_pending",
+  "checkedUTC": "2026-10-11T15:34:03.306631+00:00",
+  "sourceHEAD": "a403e8e2da7679186f4244847635a73c400d7633",
+  "scope": "All current232 modules and whole bank fields, historical233 rows, focused416 and secondary2046 retained rows. Rebuild locating inventory, compare exact whole objects and bind48 completed source/render/live releases. Keyword results and retained ID labels are not clinical qualification.",
+  "modules": 232,
+  "wholeBankObjects": 28012,
+  "selectedCumulativeWholeObjectsExact": true,
+  "priorRegistryIds": 1510,
+  "retainedExactPublishedWholeQuestionBindings": 48,
+  "registryIdsAfter": 1667,
+  "archives": [
+    {
+      "path": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/archives/feeding-primary-nutrition-question-review-20261011",
+      "manifestSHA256": "51350a7d1ebb4f8a7fa0adf4ed8f657ca280daf9575339a129cb4f3605617e21",
+      "publishedSnapshot": "main-after-feeding-v2.json",
+      "questionIds": [
+        "diarrhea-13-principle",
+        "diarrhea-13-application",
+        "diarrhea-13-safety",
+        "diarrhea-13-case"
+      ],
+      "productionLiveVerifiedAtRelease": true
+    },
+    {
+      "path": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/archives/feeding-liver-medication-review-20261011",
+      "manifestSHA256": "0869f4a3e3061803afae490abd9a9f6fcf918d717484d4598172506679a125fd",
+      "publishedSnapshot": "main-after-liver-medication-v1.json",
+      "questionIds": [
+        "acute-liver-failure-062",
+        "acute-liver-failure-063",
+        "acute-liver-failure-064",
+        "acute-liver-failure-105",
+        "acute-liver-failure-106",
+        "acute-liver-failure-107",
+        "acute-liver-failure-108"
+      ],
+      "productionLiveVerifiedAtRelease": true
+    },
+    {
+      "path": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/archives/feeding-candida-risk-device-review-20261011",
+      "manifestSHA256": "0d680c9a8d9431f8a63203d648f2fcc5a6cae42128454519ee096c572de1c214",
+      "publishedSnapshot": "main-after-candida-risk-v1.json",
+      "questionIds": [
+        "invasive-candidiasis-005",
+        "invasive-candidiasis-006",
+        "invasive-candidiasis-007",
+        "invasive-candidiasis-008",
+        "invasive-candidiasis-105",
+        "invasive-candidiasis-106",
+        "invasive-candidiasis-107",
+        "invasive-candidiasis-108"
+      ],
+      "productionLiveVerifiedAtRelease": true
+    },
+    {
+      "path": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/archives/feeding-cdi-primary-question-review-20261011",
+      "manifestSHA256": "5df9322427fecdd2bcf3695911dad5de69e870ea185594f06510a258e99fa7c4",
+      "publishedSnapshot": "main-after-cdi-primary-v2.json",
+      "questionIds": [
+        "vancomycin-pharmacology-035",
+        "vancomycin-pharmacology-041",
+        "fidaxomicin-pharmacology-041",
+        "fidaxomicin-pharmacology-043",
+        "fidaxomicin-pharmacology-044",
+        "clostridioides-difficile-infection-055",
+        "clostridioides-difficile-infection-123"
+      ],
+      "productionLiveVerifiedAtRelease": true
+    },
+    {
+      "path": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/archives/feeding-ceftriaxone-neonatal-review-20261011",
+      "manifestSHA256": "3c5ba7fad6beabf1f70a434bb5eb75ba3c8289e824ce650a6f1cfd19cc279bdd",
+      "publishedSnapshot": "main-after-ceftriaxone-neonatal-v1.json",
+      "questionIds": [
+        "beta-lactam-pharmacology-115",
+        "beta-lactam-pharmacology-116",
+        "acute-bacterial-meningitis-169"
+      ],
+      "productionLiveVerifiedAtRelease": true
+    },
+    {
+      "path": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/archives/feeding-primary-remaining-question-review-20261011",
+      "manifestSHA256": "e48f9ad1af67ceb69d5a5013b9aeb3ecf9b10010eef018c83b1ab894e3d7bcdd",
+      "publishedSnapshot": "main-after-travelers-feeding-v1.json",
+      "questionIds": [
+        "travelers-diarrhea-045",
+        "travelers-diarrhea-046",
+        "travelers-diarrhea-047",
+        "travelers-diarrhea-048"
+      ],
+      "productionLiveVerifiedAtRelease": true
+    },
+    {
+      "path": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/archives/feeding-final-primary-question-review-20261011",
+      "manifestSHA256": "60a10e45cf77cf677446fe6450d4b06c21490ec18b17afe3bcd18eb069e8b4ef",
+      "publishedSnapshot": "main-after-final-primary-v1.json",
+      "questionIds": [
+        "genitourinary-medchem-123",
+        "acute-bacterial-meningitis-095",
+        "hospital-ventilator-associated-pneumonia-157",
+        "rickettsial-079",
+        "rickettsial-085",
+        "rickettsial-087",
+        "lyme-062",
+        "lyme-063",
+        "tularemia-079",
+        "tularemia-091",
+        "cytomegalovirus-pharmacotherapy-155",
+        "parkinson-disease-081",
+        "parkinson-disease-082",
+        "parkinson-disease-083",
+        "parkinson-disease-084"
+      ],
+      "productionLiveVerifiedAtRelease": true
+    }
+  ],
+  "changedSinceOldInventory": [
+    {
+      "module": "nutrition-screening-assessment",
+      "id": "nutrition-assessment-102",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "fluid-electrolyte-therapy",
+      "id": "fluid-electrolyte-017",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "diarrhea-assessment-pharmacotherapy",
+      "id": "diarrhea-13-principle",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "diarrhea-assessment-pharmacotherapy",
+      "id": "diarrhea-13-application",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "diarrhea-assessment-pharmacotherapy",
+      "id": "diarrhea-13-safety",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "diarrhea-assessment-pharmacotherapy",
+      "id": "diarrhea-13-case",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "genitourinary-medicinal-chemistry",
+      "id": "genitourinary-medchem-123",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "beta-lactam-pharmacology",
+      "id": "beta-lactam-pharmacology-115",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "beta-lactam-pharmacology",
+      "id": "beta-lactam-pharmacology-116",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "vancomycin-pharmacology",
+      "id": "vancomycin-pharmacology-035",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "vancomycin-pharmacology",
+      "id": "vancomycin-pharmacology-041",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "fidaxomicin-pharmacology",
+      "id": "fidaxomicin-pharmacology-041",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "fidaxomicin-pharmacology",
+      "id": "fidaxomicin-pharmacology-043",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "fidaxomicin-pharmacology",
+      "id": "fidaxomicin-pharmacology-044",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "acute-bacterial-meningitis",
+      "id": "acute-bacterial-meningitis-095",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "acute-bacterial-meningitis",
+      "id": "acute-bacterial-meningitis-143",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "acute-bacterial-meningitis",
+      "id": "acute-bacterial-meningitis-169",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "hospital-ventilator-associated-pneumonia",
+      "id": "hospital-ventilator-associated-pneumonia-157",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "clostridioides-difficile-infection",
+      "id": "clostridioides-difficile-infection-055",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "clostridioides-difficile-infection",
+      "id": "clostridioides-difficile-infection-123",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "travelers-diarrhea",
+      "id": "travelers-diarrhea-045",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "travelers-diarrhea",
+      "id": "travelers-diarrhea-046",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "travelers-diarrhea",
+      "id": "travelers-diarrhea-047",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "travelers-diarrhea",
+      "id": "travelers-diarrhea-048",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "rickettsial-ehrlichial-anaplasma-infections",
+      "id": "rickettsial-079",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "rickettsial-ehrlichial-anaplasma-infections",
+      "id": "rickettsial-085",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "rickettsial-ehrlichial-anaplasma-infections",
+      "id": "rickettsial-087",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "lyme-disease",
+      "id": "lyme-062",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "lyme-disease",
+      "id": "lyme-063",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "clinical-drug-interactions",
+      "id": "clinical-drug-interactions-017",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "clinical-drug-interactions",
+      "id": "clinical-drug-interactions-018",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "tularemia",
+      "id": "tularemia-079",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "tularemia",
+      "id": "tularemia-091",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "cytomegalovirus-pharmacotherapy",
+      "id": "cytomegalovirus-pharmacotherapy-155",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "candidemia-invasive-candidiasis",
+      "id": "invasive-candidiasis-005",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "candidemia-invasive-candidiasis",
+      "id": "invasive-candidiasis-006",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "candidemia-invasive-candidiasis",
+      "id": "invasive-candidiasis-007",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "candidemia-invasive-candidiasis",
+      "id": "invasive-candidiasis-008",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "candidemia-invasive-candidiasis",
+      "id": "invasive-candidiasis-105",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "candidemia-invasive-candidiasis",
+      "id": "invasive-candidiasis-106",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "candidemia-invasive-candidiasis",
+      "id": "invasive-candidiasis-107",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "candidemia-invasive-candidiasis",
+      "id": "invasive-candidiasis-108",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "acute-liver-failure",
+      "id": "acute-liver-failure-061",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "acute-liver-failure",
+      "id": "acute-liver-failure-062",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "acute-liver-failure",
+      "id": "acute-liver-failure-063",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "acute-liver-failure",
+      "id": "acute-liver-failure-064",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "acute-liver-failure",
+      "id": "acute-liver-failure-105",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "acute-liver-failure",
+      "id": "acute-liver-failure-106",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "acute-liver-failure",
+      "id": "acute-liver-failure-107",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "acute-liver-failure",
+      "id": "acute-liver-failure-108",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "parkinson-disease",
+      "id": "parkinson-disease-081",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "parkinson-disease",
+      "id": "parkinson-disease-082",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "parkinson-disease",
+      "id": "parkinson-disease-083",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "parkinson-disease",
+      "id": "parkinson-disease-084",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": true
+    },
+    {
+      "module": "nutrition-screening-assessment",
+      "id": "nutrition-assessment-091",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "nutrition-screening-assessment",
+      "id": "nutrition-assessment-095",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "nutrition-screening-assessment",
+      "id": "nutrition-assessment-096",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "nutrition-screening-assessment",
+      "id": "nutrition-assessment-097",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "nutrition-screening-assessment",
+      "id": "nutrition-assessment-100",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "nutrition-screening-assessment",
+      "id": "nutrition-assessment-101",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "nutrition-screening-assessment",
+      "id": "nutrition-assessment-103",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "fluid-electrolyte-therapy",
+      "id": "fluid-electrolyte-051",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "acid-base-interpretation",
+      "id": "acid-base-061",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "acid-base-interpretation",
+      "id": "acid-base-062",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "acid-base-interpretation",
+      "id": "acid-base-063",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "acid-base-interpretation",
+      "id": "acid-base-064",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "acid-base-interpretation",
+      "id": "acid-base-065",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "acid-base-interpretation",
+      "id": "acid-base-066",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "acid-base-interpretation",
+      "id": "acid-base-067",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "acid-base-interpretation",
+      "id": "acid-base-068",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "acid-base-interpretation",
+      "id": "acid-base-069",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "acid-base-interpretation",
+      "id": "acid-base-0610",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "chronic-heart-failure-pharmacotherapy",
+      "id": "chronic-heart-failure-019",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "acute-kidney-injury",
+      "id": "acute-kidney-injury-109",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "acute-kidney-injury",
+      "id": "acute-kidney-injury-110",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "acute-kidney-injury",
+      "id": "acute-kidney-injury-111",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "acute-kidney-injury",
+      "id": "acute-kidney-injury-112",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "chronic-kidney-disease",
+      "id": "chronic-kidney-disease-114",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "chronic-kidney-disease",
+      "id": "chronic-kidney-disease-116",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "ckd-complications",
+      "id": "ckd-complications-063",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "ckd-complications",
+      "id": "ckd-complications-065",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "ckd-complications",
+      "id": "ckd-complications-069",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "ckd-complications",
+      "id": "ckd-complications-070",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "ckd-complications",
+      "id": "ckd-complications-071",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "ckd-complications",
+      "id": "ckd-complications-072",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "ckd-complications",
+      "id": "ckd-complications-074",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "ckd-complications",
+      "id": "ckd-complications-075",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "ckd-complications",
+      "id": "ckd-complications-077",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "hyperosmolar-hyperglycemic-state",
+      "id": "hhs-13-principle",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "hyperosmolar-hyperglycemic-state",
+      "id": "hhs-14-application",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "hyperosmolar-hyperglycemic-state",
+      "id": "hhs-27-principle",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "hyperosmolar-hyperglycemic-state",
+      "id": "hhs-27-application",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "urinary-incontinence",
+      "id": "urinary-incontinence-27-safety",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "sulfonamide-trimethoprim-pharmacology",
+      "id": "sulfonamide-trimethoprim-pharmacology-070",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "clinical-drug-interactions",
+      "id": "clinical-drug-interactions-020",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    }
+  ],
+  "previousInventoryCounts": {
+    "modules": 232,
+    "moduleQuestions": 27996,
+    "primaryPatternOrHistoricalBankCandidates": 416,
+    "secondaryBankCandidates": 2046,
+    "lessonLocatingCandidates": 85,
+    "cumulativeLocatingCandidates": 30,
+    "historicalCandidates": 233,
+    "historicalStatuses": {
+      "retained whole-question review ID; not newly certified": 79,
+      "retained verified parent; not newly certified": 24,
+      "whole-question review not registered; requires source review": 130
+    },
+    "historicalUnregisteredWholeQuestions": 130,
+    "currentUnregisteredWholeQuestions": 213,
+    "currentUnregisteredPrimaryFieldQuestions": 66,
+    "offTopicPEGQuestions": 39,
+    "currentUnregisteredFeedingCandidates": 174,
+    "currentUnregisteredPrimaryFieldFeedingCandidates": 51,
+    "broaderUniquePreviouslyReviewedWholeQuestionIds": 1510
+  },
+  "counts": {
+    "historicalRows": 233,
+    "historicalChangedWholeObjects": 27,
+    "historicalNewlyBoundToQualifiedReleases": 25,
+    "retainedFocusedRows": 416,
+    "retainedSecondaryRows": 2046,
+    "currentFocusedRows": 405,
+    "currentSecondaryLocatingRows": 1881,
+    "priorUnregisteredHistoricalStillPending": 104,
+    "historicalCurrentExactReleaseBindings": 28,
+    "historicalPriorUnregisteredNowExactBound": 26,
+    "changedWholeObjectsWithoutCurrentExactReleaseBinding": 44
+  },
+  "currentPrimaryQuestionInventory": {
+    "originalRows": 48,
+    "all48CurrentObjectsExactToQualifiedPublishedSnapshots": true,
+    "remainingRows": 0,
+    "notSemanticExhaustiveness": true
+  },
+  "openRequirements": [
+    "individually classify secondary signals and historical candidates using full objects",
+    "reconcile current differences from older source-qualified objects before counting continuity",
+    "whole lesson and chapter nutrition assessment coverage",
+    "older41bank and31CDI public reconciliation plus4vancomycin bodies",
+    "complete all82chapters/232whole modules"
+  ],
+  "wholeModulesVerified": 68,
+  "chaptersVerified": 7,
+  "newWholeModuleOrChapterClosures": 0,
+  "wholeGoalComplete": false,
+  "additionalArchivedQuestionBindings": 111,
+  "newRegistryIdsAddedThisPhase": 109,
+  "ownEnteralQuestionHashesReconciled": 108,
+  "newClinicalQuestionCertifications": 0,
+  "additionalProof": [
+    {
+      "path": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/archives/fluid-parent-closure-reconciliation-20261011",
+      "manifestSHA256": "ef164378238c1b39ec2c86071d55f234c4e5fe62ecb010048463c88e999e63ba",
+      "completionReceiptSHA256": "e6a690948033a9eb648b5904a16d358a2fab48bf4205634057dde7312670a552",
+      "snapshot": "main-after-fluid-v3.json",
+      "snapshotSHA256": "4f07b5ebf4a0c49779d17f022768e9c420d95e125190a7f53f3382c6456e54cf",
+      "scope": "whole fluid parent exact: all110question objects and full teaching/check/figure/metadata objects retained",
+      "wholeModuleSourceQualificationRetained": true
+    },
+    {
+      "path": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/archives/enteral-feeding-current-reconciliation-20261011",
+      "manifestSHA256": "dcd497cab873c0fbdc3317a80a3abd12e148d97d229dbd7bb60b6ec611fc5d7a",
+      "completionReceiptSHA256": "329d3d1136eb9961590cd72771cfdb07a4ce6166536dfe41a0f5d99bf112bfc5",
+      "snapshot": "main-after-enteral-v2.json",
+      "snapshotSHA256": "7e4d636bbd681e8bedd3fa785f18f13d923525a807302b6845f7be610bcef4ca",
+      "scope": "one whole ALF061question; no whole ALF closure"
+    },
+    {
+      "path": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/archives/enteral-feeding-current-reconciliation-20261011",
+      "manifestSHA256": "dcd497cab873c0fbdc3317a80a3abd12e148d97d229dbd7bb60b6ec611fc5d7a",
+      "completionReceiptSHA256": "329d3d1136eb9961590cd72771cfdb07a4ce6166536dfe41a0f5d99bf112bfc5",
+      "snapshot": "main-after-enteral-v2.json",
+      "snapshotSHA256": "7e4d636bbd681e8bedd3fa785f18f13d923525a807302b6845f7be610bcef4ca",
+      "scope": "108whole ENquestion hashes match retained own-content clinical records and published snapshot; no new certification or whole EN closure"
+    }
+  ],
+  "remainingHistoricalUnregisteredPendingByModule": {
+    "warfarin-management": 3,
+    "direct-oral-anticoagulants": 2,
+    "thyroid-medicinal-chemistry": 3,
+    "genitourinary-medicinal-chemistry": 3,
+    "fluoroquinolone-pharmacology": 9,
+    "tetracycline-pharmacology": 6,
+    "vancomycin-pharmacology": 14,
+    "lefamulin-pharmacology": 9,
+    "acute-bacterial-meningitis": 3,
+    "hospital-ventilator-associated-pneumonia": 3,
+    "clostridioides-difficile-infection": 12,
+    "rickettsial-ehrlichial-anaplasma-infections": 6,
+    "lyme-disease": 6,
+    "clinical-drug-interactions": 3,
+    "tularemia": 9,
+    "systemic-antifungal-foundations": 6,
+    "triazole-antifungal-pharmacology": 4,
+    "cytomegalovirus-pharmacotherapy": 3
+  },
+  "changedWithoutCurrentExactReleaseBinding": [
+    {
+      "module": "nutrition-screening-assessment",
+      "id": "nutrition-assessment-102",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "acute-bacterial-meningitis",
+      "id": "acute-bacterial-meningitis-143",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "clinical-drug-interactions",
+      "id": "clinical-drug-interactions-017",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "clinical-drug-interactions",
+      "id": "clinical-drug-interactions-018",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "nutrition-screening-assessment",
+      "id": "nutrition-assessment-091",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "nutrition-screening-assessment",
+      "id": "nutrition-assessment-095",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "nutrition-screening-assessment",
+      "id": "nutrition-assessment-096",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "nutrition-screening-assessment",
+      "id": "nutrition-assessment-097",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "nutrition-screening-assessment",
+      "id": "nutrition-assessment-100",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "nutrition-screening-assessment",
+      "id": "nutrition-assessment-101",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "nutrition-screening-assessment",
+      "id": "nutrition-assessment-103",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "acid-base-interpretation",
+      "id": "acid-base-061",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "acid-base-interpretation",
+      "id": "acid-base-062",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "acid-base-interpretation",
+      "id": "acid-base-063",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "acid-base-interpretation",
+      "id": "acid-base-064",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "acid-base-interpretation",
+      "id": "acid-base-065",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "acid-base-interpretation",
+      "id": "acid-base-066",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "acid-base-interpretation",
+      "id": "acid-base-067",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "acid-base-interpretation",
+      "id": "acid-base-068",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "acid-base-interpretation",
+      "id": "acid-base-069",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "acid-base-interpretation",
+      "id": "acid-base-0610",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "chronic-heart-failure-pharmacotherapy",
+      "id": "chronic-heart-failure-019",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "acute-kidney-injury",
+      "id": "acute-kidney-injury-109",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "acute-kidney-injury",
+      "id": "acute-kidney-injury-110",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "acute-kidney-injury",
+      "id": "acute-kidney-injury-111",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "acute-kidney-injury",
+      "id": "acute-kidney-injury-112",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "chronic-kidney-disease",
+      "id": "chronic-kidney-disease-114",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "chronic-kidney-disease",
+      "id": "chronic-kidney-disease-116",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "ckd-complications",
+      "id": "ckd-complications-063",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "ckd-complications",
+      "id": "ckd-complications-065",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "ckd-complications",
+      "id": "ckd-complications-069",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "ckd-complications",
+      "id": "ckd-complications-070",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "ckd-complications",
+      "id": "ckd-complications-071",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "ckd-complications",
+      "id": "ckd-complications-072",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "ckd-complications",
+      "id": "ckd-complications-074",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "ckd-complications",
+      "id": "ckd-complications-075",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "ckd-complications",
+      "id": "ckd-complications-077",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "hyperosmolar-hyperglycemic-state",
+      "id": "hhs-13-principle",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "hyperosmolar-hyperglycemic-state",
+      "id": "hhs-14-application",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "hyperosmolar-hyperglycemic-state",
+      "id": "hhs-27-principle",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "hyperosmolar-hyperglycemic-state",
+      "id": "hhs-27-application",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "urinary-incontinence",
+      "id": "urinary-incontinence-27-safety",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "sulfonamide-trimethoprim-pharmacology",
+      "id": "sulfonamide-trimethoprim-pharmacology-070",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    },
+    {
+      "module": "clinical-drug-interactions",
+      "id": "clinical-drug-interactions-020",
+      "priorStatus": "whole-question review not registered; requires source review",
+      "newReleaseExactBinding": false
+    }
+  ]
+}
