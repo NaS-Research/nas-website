@@ -39,7 +39,7 @@ const dimensions = [
 
 const offsets = [7, 13, 19];
 
-export const urinaryIncontinenceQuestionBank = concepts.flatMap((concept, conceptIndex) => dimensions.map((dimension, dimensionIndex) => ({
+const preservedBeforeDesmopressinQuestionBank = concepts.flatMap((concept, conceptIndex) => dimensions.map((dimension, dimensionIndex) => ({
   id: `urinary-incontinence-${String(conceptIndex + 1).padStart(2, "0")}-${dimension.key}`,
   question: dimension.prompt(concept),
   choices: [concept[dimension.field], ...offsets.map(offset => concepts[(conceptIndex + offset) % concepts.length][dimension.field])],
@@ -48,3 +48,35 @@ export const urinaryIncontinenceQuestionBank = concepts.flatMap((concept, concep
   reviewHref: `#${concept.lesson}`,
   difficulty: ["foundational", "application", "advanced", "clinical"][dimensionIndex],
 })));
+
+// Source-bound NOCDURNA safety review; retain existing IDs, prompts, keys and lesson links.
+const reviewedDesmopressinHyponatremia = {
+  "urinary-incontinence-27-application": {
+    "choices": [
+      "Confirm normal sodium, repeat within seven days and at one month, monitor periodically, and restrict fluid for the labeled interval.",
+      "Check sodium only after symptoms develop; early measurements are unnecessary.",
+      "Allow unrestricted evening fluid intake because desmopressin increases urine output.",
+      "Use serum potassium monitoring instead of serum sodium after starting treatment."
+    ],
+    "rationale": "For NOCDURNA, confirm normal serum sodium before starting or resuming treatment. Check it within the first week, at about one month, and periodically; monitor more often at age 65 or with other hyponatremia risks. Minimize fluid from one hour before to eight hours after a dose. Sodium surveillance and fluid restriction work together."
+  },
+  "urinary-incontinence-27-principle": {
+    "choices": [
+      "NOCDURNA can cause severe life-threatening hyponatremia and carries a boxed warning.",
+      "NOCDURNA increases urine volume and protects against dilutional hyponatremia.",
+      "Only symptomatic hyponatremia prevents initiation; a low sodium level without symptoms is acceptable.",
+      "A previous hyponatremia episode is irrelevant when selecting NOCDURNA."
+    ],
+    "rationale": "Desmopressin increases renal water reabsorption and reduces urine production. Severe hyponatremia can cause seizures, coma, respiratory arrest or death. NOCDURNA carries a boxed warning and requires normal baseline sodium, fluid restriction and follow-up testing; hyponatremia or its history is a contraindication."
+  },
+  "urinary-incontinence-27-safety": {
+    "choices": [
+      "Starting NOCDURNA during loop-diuretic or systemic/inhaled glucocorticoid use conflicts with contraindications and raises severe hyponatremia risk.",
+      "Reviewing an SSRI and arranging more frequent sodium monitoring when treatment remains appropriate.",
+      "Checking sodium again after treatment is resumed.",
+      "Minimizing fluid from one hour before to eight hours after a dose."
+    ],
+    "rationale": "Concomitant loop diuretics and systemic or inhaled glucocorticoids are contraindicated with NOCDURNA because of severe hyponatremia risk. Extra laboratory checks do not remove that contraindication. SSRIs and thiazides are examples of medicines that instead require more frequent sodium monitoring when NOCDURNA is otherwise appropriate."
+  }
+};
+export const urinaryIncontinenceQuestionBank = preservedBeforeDesmopressinQuestionBank.map(question => reviewedDesmopressinHyponatremia[question.id] ? {...question,...reviewedDesmopressinHyponatremia[question.id]} : question);
