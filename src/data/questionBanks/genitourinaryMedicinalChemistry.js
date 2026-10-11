@@ -87,4 +87,53 @@ const finalPrimaryQuestionOverrides = {
     "reviewHref": "#product-engineering"
   }
 };
-export const genitourinaryMedicinalChemistryQuestionBank = beforeFinalPrimaryQuestionBank.map(q => finalPrimaryQuestionOverrides[q.id] ?? q);
+const beforeHistoricalMedchemQuestionBank = beforeFinalPrimaryQuestionBank.map(q => finalPrimaryQuestionOverrides[q.id] ?? q);
+
+const historicalMedchemQuestionOverrides = {
+  "genitourinary-medchem-039": {
+    "id": "genitourinary-medchem-039",
+    "concept": "levonorgestrel stereochemical identity",
+    "difficulty": "Advanced",
+    "prompt": "Which comparison correctly distinguishes levonorgestrel from racemic norgestrel?",
+    "choices": [
+      "Distinguish biologically active levonorgestrel from norgestrel, a mixture of two enantiomers.",
+      "Assume both enantiomers in norgestrel have equal progestogenic activity.",
+      "Identify levonorgestrel as the hormonally inactive enantiomer of norgestrel.",
+      "Identify norgestrel and levonorgestrel as identical single-enantiomer molecules."
+    ],
+    "answer": 0,
+    "explanation": "Norgestrel is a racemic mixture of levonorgestrel and dexonorgestrel; levonorgestrel is the biologically active component. Enantiomer composition is part of molecular identity. This chemical relationship does not establish dose or product interchangeability.",
+    "reviewHref": "#progestin-families"
+  },
+  "genitourinary-medchem-071": {
+    "id": "genitourinary-medchem-071",
+    "concept": "sildenafil and vardenafil scaffold similarity",
+    "difficulty": "Advanced",
+    "prompt": "Sildenafil and vardenafil have related heterocyclic scaffolds. Which comparison is most appropriate before interpreting their clinical use?",
+    "choices": [
+      "Review each product's PDE selectivity, food-related exposure, CYP interactions, QT considerations, and labeled dose.",
+      "Assume related scaffolds guarantee identical QT warnings and identical product instructions.",
+      "Treat both molecules as direct nitric oxide donors rather than inhibitors of cGMP breakdown.",
+      "Assume the same dose in milligrams produces interchangeable exposure because both inhibit PDE5."
+    ],
+    "answer": 0,
+    "explanation": "Related scaffolds do not establish clinical equivalence. Both inhibit PDE5 and preserve nitric oxide-dependent cGMP signaling; they do not directly donate nitric oxide. Their labels address PDE6 activity, food-related exposure and CYP3A interactions, and vardenafil has specific QT precautions. Use the instructions for the particular product rather than inferring a dose conversion from structural similarity.",
+    "reviewHref": "#pde5-inhibitor-chemistry"
+  },
+  "genitourinary-medchem-103": {
+    "id": "genitourinary-medchem-103",
+    "concept": "muscarinic subtype preference",
+    "difficulty": "Advanced",
+    "prompt": "A person taking darifenacin develops dry mouth and constipation despite its M3 receptor preference. Which reassessment best interprets this finding?",
+    "choices": [
+      "Review antimuscarinic adverse effects, urinary retention and CNS symptoms, dose, exposure, interacting medicines, and treatment response.",
+      "Exclude darifenacin as a possible cause because M3 preference confines its activity to the bladder.",
+      "Assume dry mouth proves that darifenacin has no M3 receptor affinity.",
+      "Assume receptor preference guarantees freedom from antimuscarinic adverse effects at every dose and exposure."
+    ],
+    "answer": 0,
+    "explanation": "Darifenacin has greater affinity for M3 than for several other muscarinic subtypes in vitro, but its labeling still identifies dry mouth and constipation, urinary retention risk, CNS effects and exposure-related drug interactions. Receptor preference does not guarantee bladder-only activity or freedom from adverse effects. Reassess the actual medicine and clinical response.",
+    "reviewHref": "#bladder-antimuscarinic-chemistry"
+  }
+};
+export const genitourinaryMedicinalChemistryQuestionBank = beforeHistoricalMedchemQuestionBank.map(q => historicalMedchemQuestionOverrides[q.id] ?? q);
