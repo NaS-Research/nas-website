@@ -34215,7 +34215,19 @@
       ],
       "questions": 132,
       "status": "unreviewed",
-      "evidence": []
+      "evidence": [
+        "ceftriaxone-neonatal-live-release-review.json"
+      ],
+      "primaryFeedingCeftriaxoneScopedReview": {
+        "evidence": "ceftriaxone-neonatal-live-release-review.json",
+        "verifiedQuestionIds": [
+          "beta-lactam-pharmacology-115",
+          "beta-lactam-pharmacology-116"
+        ],
+        "productionLiveVerified": true,
+        "mainCommit": "6a23925cc8464108873554e325bd07d24a74c7e5",
+        "wholeModuleVerified": false
+      }
     },
     {
       "slug": "aminoglycoside-pharmacology",
@@ -35959,7 +35971,8 @@
       "status": "reviewing",
       "evidence": [
         "enteral-nutrition-broader-meningitis-hap-review.json",
-        "fluid-broader-meningitis-support-review.json"
+        "fluid-broader-meningitis-support-review.json",
+        "ceftriaxone-neonatal-live-release-review.json"
       ],
       "broaderEnteralAdministrationReview": {
         "evidence": "enteral-nutrition-broader-meningitis-hap-review.json",
@@ -36154,6 +36167,15 @@
           "exactRemoteObservedByTool": true,
           "remoteVerifiedAt": "2026-10-08T14:25:32.166634+00:00"
         }
+      },
+      "primaryFeedingCeftriaxoneScopedReview": {
+        "evidence": "ceftriaxone-neonatal-live-release-review.json",
+        "verifiedQuestionIds": [
+          "acute-bacterial-meningitis-169"
+        ],
+        "productionLiveVerified": true,
+        "mainCommit": "6a23925cc8464108873554e325bd07d24a74c7e5",
+        "wholeModuleVerified": false
       }
     },
     {

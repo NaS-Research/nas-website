@@ -1,6 +1,6 @@
 {
-  "status": "source_build_and_actual_native_passed_public_pending",
-  "checkedUTC": "2026-10-11T13:46:14.927864+00:00",
+  "status": "verified_scoped_public_release",
+  "checkedUTC": "2026-10-11T13:49:42.303555+00:00",
   "modules": [
     "beta-lactam-pharmacology",
     "acute-bacterial-meningitis"
@@ -143,6 +143,24 @@
   ],
   "wholeModuleVerified": false,
   "wholeChapterVerified": false,
-  "productionLiveVerified": false,
-  "wholeGoalComplete": false
+  "productionLiveVerified": true,
+  "wholeGoalComplete": false,
+  "release": {
+    "mainCommit": "6a23925cc8464108873554e325bd07d24a74c7e5",
+    "exactRemoteMainVerified": true,
+    "auditReviewCommit": "485500694608b23bcad1bf1df87c8ee61f555c40",
+    "liveBrowserPassed": true,
+    "publicCapturesRGBIdenticalToActuallyInspectedMain": 18,
+    "extraPublicDifferences": 0,
+    "newestFirstAndSearchRelevanceVerified": true
+  },
+  "remainingPrimaryRowsAfterScopedRelease": 19,
+  "limits": "Three whole questions only. Full parent modules and chapters remain open. Whole counts68/232 and7/82 unchanged. Older21meningitis question differences and prior31CDI question/4body differences remain separately pending public reconciliation.",
+  "evidenceHashes": {
+    "browser-ceftriaxone-neonatal-live-v1.json": "c4171cc97d81d92ed1268cff341ae6b74a2bbe67797d9a8f922be6b29b21998c",
+    "public-pixel-comparison-ceftriaxone-neonatal-v1.json": "3a1e2c1727a192a0c2d6edfdcd0d55938e675f3e3defde308247e14b72adfe5d",
+    "owner-native-review-ceftriaxone-neonatal-v1.json": "6eda7d7d6b5022c96f9cf90d8225bc2c47921df1d0991a7e1b6c95e2db6fb48b",
+    "ceftriaxone-neonatal-question-review-qualified-v1.json": "e410da2047f7b2d428f30ed5c7db400e55bf4dfb69f0fd8e4b3e0b1e26cac04c",
+    "main-integration-ceftriaxone-neonatal-v1.json": "cfec6b093930d44653fb72b80985fcfc453a2c8b7cc6d9dd4e398d57bb940585"
+  }
 }
