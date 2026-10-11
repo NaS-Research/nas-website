@@ -46,4 +46,92 @@ const cases = [
   ["132", "agent-differences", "A legacy note says omadacycline carries a CABP mortality-imbalance warning. What should the learner do?", ["Use the current May 2026 label, which removed that warning, while retaining all current labeled precautions", "Keep the old warning forever", "Ignore all safety information", "Substitute eravacycline orally"], "Educational content must reconcile historical warnings with the current label."],
 ].map(([id, lesson, question, choices, rationale]) => ({ id: `tetracycline-pharmacology-${id}`, lesson, question, choices, answer: 0, rationale, reviewHref: `#${lesson}` }));
 
-export const tetracyclinePharmacologyQuestionBank = [...generated, ...cases];
+const beforeHistoricalAntibioticQuestionBank = [...generated, ...cases];
+
+const historicalAntibioticQuestionOverrides = {
+  "tetracycline-pharmacology-011": {
+    "id": "tetracycline-pharmacology-011",
+    "lesson": "structure-mechanism",
+    "question": "How should the primarily bacteriostatic action of tetracyclines be interpreted clinically?",
+    "choices": [
+      "Interpret inhibition of bacterial growth together with organism susceptibility, infection site, host factors, exposure, and response.",
+      "Conclude that inhibition of bacterial growth guarantees treatment failure in every patient.",
+      "Describe tetracyclines as inhibitors of DNA gyrase rather than bacterial protein synthesis.",
+      "Assume the bacteriostatic label establishes a suitable regimen for every infection site."
+    ],
+    "answer": 0,
+    "rationale": "Tetracyclines inhibit bacterial protein synthesis, and doxycycline binds the 30S ribosomal subunit. Primarily bacteriostatic action describes an antimicrobial effect; it does not alone predict clinical success or failure. Organism, site, host factors, effective exposure, and response remain part of the assessment.",
+    "reviewHref": "#structure-mechanism"
+  },
+  "tetracycline-pharmacology-017": {
+    "id": "tetracycline-pharmacology-017",
+    "lesson": "agent-differences",
+    "question": "Which safety assessment is specifically important when considering minocycline?",
+    "choices": [
+      "Review dizziness or vertigo, pigmentation changes, and reported autoimmune or serious hypersensitivity reactions alongside the exact product and patient risks.",
+      "Assume minocycline cannot cause vestibular symptoms because it belongs to the tetracycline class.",
+      "Dismiss new rash, fever, and systemic symptoms because only mild gastrointestinal effects are possible.",
+      "Assume minocycline and doxycycline have identical adverse-effect profiles and product instructions."
+    ],
+    "answer": 0,
+    "rationale": "Minocycline labeling reports dizziness and vertigo, pigmentation changes, lupus-like syndromes, autoimmune hepatitis, and serious hypersensitivity reactions. These reports warrant product-specific assessment and appropriate action when symptoms emerge; they do not establish that every listed reaction is common or that all tetracyclines share identical risks.",
+    "reviewHref": "#agent-differences"
+  },
+  "tetracycline-pharmacology-035": {
+    "id": "tetracycline-pharmacology-035",
+    "lesson": "clinical-selection",
+    "question": "Which assessment best supports a complete chlamydial-infection plan when doxycycline is being considered?",
+    "choices": [
+      "Review the infection site, pregnancy, adherence, partner management, coinfection testing, and appropriate follow-up.",
+      "Ignore pregnancy because one antibiotic regimen fits every patient.",
+      "Treat the patient while omitting partner evaluation and reinfection prevention.",
+      "Use symptom resolution as the only reason to omit all follow-up considerations."
+    ],
+    "answer": 0,
+    "rationale": "Chlamydia care includes effective treatment and prevention of reinfection and transmission. The CDC guidance distinguishes pregnancy-related treatment and follow-up, addresses anatomic sites and adherence, and includes partner management and testing for other sexually transmitted infections. Symptom improvement alone does not complete that plan.",
+    "reviewHref": "#clinical-selection"
+  },
+  "tetracycline-pharmacology-041": {
+    "id": "tetracycline-pharmacology-041",
+    "lesson": "clinical-selection",
+    "question": "Which principle correctly distinguishes doxycycline treatment from Lyme-disease prophylaxis?",
+    "choices": [
+      "Choose treatment for the actual Lyme presentation; consider prophylaxis only for an eligible high-risk tick exposure under current guidance.",
+      "Give prophylaxis automatically after every tick bite regardless of risk or eligibility.",
+      "Use a prophylaxis regimen as complete treatment for every established Lyme manifestation.",
+      "Assume one oral regimen is appropriate for every neurologic or cardiac presentation."
+    ],
+    "answer": 0,
+    "rationale": "Treatment depends on the Lyme manifestation and patient context. The AAN/ACR/IDSA guideline limits prophylaxis to defined high-risk exposures and distinguishes treatment by presentation, including circumstances requiring intravenous therapy. A prophylaxis decision does not substitute for treatment of established disease.",
+    "reviewHref": "#clinical-selection"
+  },
+  "tetracycline-pharmacology-115": {
+    "id": "tetracycline-pharmacology-115",
+    "lesson": "resistance-stewardship",
+    "question": "How should ribosomal-protection resistance be assessed when a tetracycline-class agent is considered?",
+    "choices": [
+      "Use organism- and agent-specific susceptibility evidence and the infection site; interpret mechanism data within its stated evidence limits.",
+      "Assume a newer tetracycline is clinically active against every ribosomal-protection mechanism.",
+      "Assume in-vitro activity proves clinical efficacy at every infection site.",
+      "Ignore agent-specific susceptibility because all tetracyclines have the same resistance pattern."
+    ],
+    "answer": 0,
+    "rationale": "Ribosomal protection can reduce the activity of tetracyclines, and individual agents differ in resistance patterns. NUZYRA labeling reports omadacycline activity in vitro against organisms expressing TetM but explicitly states that the clinical significance of these resistance data is unknown. Mechanism information does not replace organism-specific susceptibility and evidence for the intended site.",
+    "reviewHref": "#resistance-stewardship"
+  },
+  "tetracycline-pharmacology-121": {
+    "id": "tetracycline-pharmacology-121",
+    "lesson": "clinical-integration",
+    "question": "Which plan best coordinates tetracycline selection, administration, and follow-up?",
+    "choices": [
+      "Define the diagnosis and site, choose an active agent and exact product, specify an appropriate regimen and administration instructions, and set monitoring and reassessment criteria.",
+      "Write a drug name without checking the infection, product, or administration requirements.",
+      "Apply one food and mineral-spacing rule to every tetracycline formulation.",
+      "Continue indefinitely without reviewing response, toxicity, or the ongoing indication."
+    ],
+    "answer": 0,
+    "rationale": "A complete plan connects the treatable infection and active agent with the exact product and regimen. Product-specific absorption and administration instructions, cation interactions, esophageal precautions, adverse effects, clinical response, and ongoing need require coordinated review. A class name alone is not an executable prescription.",
+    "reviewHref": "#clinical-integration"
+  }
+};
+export const tetracyclinePharmacologyQuestionBank = beforeHistoricalAntibioticQuestionBank.map(q => historicalAntibioticQuestionOverrides[q.id] ?? q);
