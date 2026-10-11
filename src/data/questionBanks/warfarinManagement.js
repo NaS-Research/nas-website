@@ -32,4 +32,47 @@ const concepts = [
 
 const dimensions = [["principle", "Which principle best characterizes"], ["action", "Which clinical action best applies to"], ["assessment", "Which assessment is most appropriate for"], ["hazard", "Which reasoning hazard is most important to prevent with"]];
 function distractors(index, field) { return [5, 11, 17].map((offset) => concepts[(index + offset) % concepts.length][field]); }
-export const warfarinManagementQuestionBank = concepts.flatMap((concept, conceptIndex) => dimensions.map(([field, prefix], dimensionIndex) => ({ id: `warfarin-management-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`, question: `${prefix} ${concept.name}?`, choices: [concept[field], ...distractors(conceptIndex, field)], answer: 0, rationale: concept.why, reviewHref: `#${concept.lesson}` })));
+const beforeHistoricalAnticoagulantQuestionBank = concepts.flatMap((concept, conceptIndex) => dimensions.map(([field, prefix], dimensionIndex) => ({ id: `warfarin-management-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`, question: `${prefix} ${concept.name}?`, choices: [concept[field], ...distractors(conceptIndex, field)], answer: 0, rationale: concept.why, reviewHref: `#${concept.lesson}` })));
+
+const historicalAnticoagulantQuestionOverrides = {
+  "warfarin-management-011": {
+    "id": "warfarin-management-011",
+    "question": "An adult develops painful, purpuric skin lesions shortly after starting warfarin. Which assessment most directly addresses suspected warfarin-associated skin necrosis?",
+    "choices": [
+      "Review timing after initiation, protein C or S deficiency, dose and overlap history, skin pain or discoloration, and thrombosis.",
+      "Review VTE date, parenteral start, warfarin start, INR sequence, bleeding, platelets, kidney function, adherence, and discharge access.",
+      "Review greens, oils, nutrition shakes, enteral feeds, supplements, appetite, weight loss, diarrhea, alcohol, and INR trend.",
+      "Review hemodynamics, site, INR, hemoglobin, platelets, fibrinogen, last dose, indication, thrombosis risk, imaging, and procedural control."
+    ],
+    "answer": 0,
+    "rationale": "Early reduction of protein C before slower procoagulant factors are fully reduced can contribute to a transient prothrombotic state. Protein C or S deficiency and initiation history are relevant to suspected skin necrosis. These lesions require urgent clinical assessment; labeling calls for discontinuing warfarin if necrosis occurs and considering alternative anticoagulation when needed.",
+    "reviewHref": "#vitamin-k-cycle-and-pharmacology"
+  },
+  "warfarin-management-035": {
+    "id": "warfarin-management-035",
+    "question": "An adult with acute heparin-induced thrombocytopenia (HIT) has recently received warfarin. Which reassessment most directly addresses this dangerous initiation setting?",
+    "choices": [
+      "Review 4Ts probability, platelets, thrombosis, skin findings, INR, warfarin exposure, kidney and liver function, bleeding, and alternative agent.",
+      "Review greens, oils, nutrition shakes, enteral feeds, supplements, appetite, weight loss, diarrhea, alcohol, and INR trend.",
+      "Review hemodynamics, site, INR, hemoglobin, platelets, fibrinogen, last dose, indication, thrombosis risk, imaging, and procedural control.",
+      "Review CYP2C9 and VKORC1 results, tested alleles, ancestry, age, interacting drugs, liver function, nutrition, indication, initial dose, and INR trajectory."
+    ],
+    "answer": 0,
+    "rationale": "Warfarin initiation during acute HIT can worsen thrombosis through early protein C depletion. Warfarin should not be initiated before platelet recovery; acute HIT requires an appropriate non-heparin anticoagulation plan. Review the probability and severity of HIT, platelet recovery, thrombosis, recent warfarin exposure, organ function and bleeding when selecting and reassessing that plan.",
+    "reviewHref": "#warfarin-indications-and-initiation"
+  },
+  "warfarin-management-103": {
+    "id": "warfarin-management-103",
+    "question": "An adult has CYP2C9 and VKORC1 results already available before starting warfarin. Which assessment most directly integrates these results into dose planning?",
+    "choices": [
+      "Review CYP2C9 and VKORC1 results, tested alleles, ancestry, age, interacting drugs, liver function, nutrition, indication, initial dose, and INR trajectory.",
+      "Review indication, start date, INR, overlap duration, factor-turnover timing, thrombosis status, bleeding, and adherence.",
+      "Review VTE date, parenteral start, warfarin start, INR sequence, bleeding, platelets, kidney function, adherence, and discharge access.",
+      "Review greens, oils, nutrition shakes, enteral feeds, supplements, appetite, weight loss, diarrhea, alcohol, and INR trend."
+    ],
+    "answer": 0,
+    "rationale": "CYP2C9 variants can affect warfarin clearance, while VKORC1 variation can affect dose sensitivity. Interpret the tested alleles and ancestry-related coverage with clinical factors and serial INR measurements. Available genotype results do not replace INR-guided management, guarantee better outcomes, or by themselves establish a need for routine genetic testing.",
+    "reviewHref": "#warfarin-indications-and-initiation"
+  }
+};
+export const warfarinManagementQuestionBank = beforeHistoricalAnticoagulantQuestionBank.map(q => historicalAnticoagulantQuestionOverrides[q.id] ?? q);
