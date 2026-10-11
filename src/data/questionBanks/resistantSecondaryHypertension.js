@@ -41,7 +41,7 @@ function distractors(index, field) {
   return [4, 9, 16].map((offset) => concepts[(index + offset) % concepts.length][field]);
 }
 
-export const resistantSecondaryHypertensionQuestionBank = concepts.flatMap((concept, conceptIndex) =>
+const retainedResistantSecondaryHypertensionQuestionBank = concepts.flatMap((concept, conceptIndex) =>
   dimensions.map(([field, prefix], dimensionIndex) => ({
     id: `resistant-secondary-hypertension-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`,
     question: `${prefix} ${concept.name}?`,
@@ -51,3 +51,44 @@ export const resistantSecondaryHypertensionQuestionBank = concepts.flatMap((conc
     reviewHref: `#${concept.lesson}`,
   })),
 );
+
+// Focused MRA monitoring review; preserve stable prompts, IDs, keys and lesson links.
+const mraMonitoringCorrections = {
+  "resistant-secondary-hypertension-061": {
+    "choices": [
+      "Spironolactone and eplerenone reduce aldosterone signaling but can raise potassium and alter kidney function.",
+      "Receptor selectivity makes eplerenone free of hyperkalemia risk.",
+      "MRA therapy lowers potassium by increasing its renal excretion.",
+      "A normal baseline potassium guarantees that kidney function cannot worsen during MRA therapy."
+    ],
+    "rationale": "Blocking aldosterone signaling promotes sodium and water excretion while conserving potassium. Both spironolactone and eplerenone can cause hyperkalemia, especially with kidney dysfunction or potassium-raising medicines. A normal baseline result does not replace follow-up potassium and kidney assessment."
+  },
+  "resistant-secondary-hypertension-062": {
+    "choices": [
+      "Use a monitored dose with pregnancy, kidney, potassium, endocrine adverse-effect, and interaction review.",
+      "Wait a month after starting spironolactone before checking potassium, regardless of kidney function.",
+      "Use one heart-failure eligibility rule for every eplerenone hypertension prescription.",
+      "Add spironolactone to eplerenone to improve blockade without reviewing the combination."
+    ],
+    "rationale": "Select the medicine and indication, review pregnancy, kidney function, potassium, adverse effects and interactions, and arrange follow-up. Spironolactone calls for potassium monitoring within one week of starting or titration; eplerenone specifies baseline, first-week and one-month checks after starting or dose adjustment. Spironolactone with eplerenone is contraindicated, and eplerenone has additional hypertension-specific exclusions."
+  },
+  "resistant-secondary-hypertension-063": {
+    "choices": [
+      "Check potassium, creatinine, pressure, volume, pregnancy context, concomitant RAAS therapy, and product-specific effects.",
+      "Check only blood pressure because good pressure control rules out hyperkalemia.",
+      "Check potassium only once before treatment and ignore subsequent dose or medicine changes.",
+      "Replace potassium and creatinine measurements with a symptom check because potassium toxicity is always obvious."
+    ],
+    "rationale": "Potassium and renal function must be assessed alongside blood pressure, volume, pregnancy context, interacting therapy and product-specific adverse effects. Monitoring continues after initiation and titration; new interacting medicines can trigger earlier checks. Blood pressure improvement or absent symptoms does not establish potassium safety."
+  },
+  "resistant-secondary-hypertension-064": {
+    "choices": [
+      "Unmonitored therapy can cause severe hyperkalemia, especially with CKD or other potassium-raising drugs.",
+      "Severe hypokalemia from increased potassium excretion caused by MRA blockade.",
+      "Complete loss of blood-pressure effect whenever an MRA is used with an ACE inhibitor or ARB.",
+      "Inevitable gynecomastia in every patient taking eplerenone."
+    ],
+    "rationale": "Severe hyperkalemia is a preventable treatment hazard. Kidney dysfunction and other potassium-raising exposures increase risk, so selection, dose review and scheduled laboratory follow-up matter even when pressure improves. Avoid contraindicated combinations and use product- and indication-specific exclusions."
+  }
+};
+export const resistantSecondaryHypertensionQuestionBank = retainedResistantSecondaryHypertensionQuestionBank.map(question => mraMonitoringCorrections[question.id] ? { ...question, ...mraMonitoringCorrections[question.id] } : question);
