@@ -38145,5 +38145,68 @@
       "ceftriaxone-neonatal-question-review-qualified-v1.json": "e410da2047f7b2d428f30ed5c7db400e55bf4dfb69f0fd8e4b3e0b1e26cac04c",
       "main-integration-ceftriaxone-neonatal-v1.json": "cfec6b093930d44653fb72b80985fcfc453a2c8b7cc6d9dd4e398d57bb940585"
     }
+  },
+  "currentRemainingPrimaryFeedingReview": {
+    "managedModule": "feeding-primary-remaining-question-review-20261011",
+    "status": "nineteen_question_sources_acquired_native_and_clinical_review_pending",
+    "externalReceipt": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-primary-remaining-question-review-20261011/evidence/remaining-primary-source-intake-v1.json",
+    "targetQuestionIds": [
+      "genitourinary-medchem-123",
+      "acute-bacterial-meningitis-095",
+      "hospital-ventilator-associated-pneumonia-157",
+      "travelers-diarrhea-045",
+      "travelers-diarrhea-046",
+      "travelers-diarrhea-047",
+      "travelers-diarrhea-048",
+      "rickettsial-079",
+      "rickettsial-085",
+      "rickettsial-087",
+      "lyme-062",
+      "lyme-063",
+      "tularemia-079",
+      "tularemia-091",
+      "cytomegalovirus-pharmacotherapy-155",
+      "parkinson-disease-081",
+      "parkinson-disease-082",
+      "parkinson-disease-083",
+      "parkinson-disease-084"
+    ],
+    "gatesPending": [
+      "native source inspection",
+      "individual whole-question clinical qualification",
+      "structural and guarded build",
+      "actual desktop/mobile verification",
+      "scoped publication and production verification"
+    ],
+    "wholeGoalComplete": false
+  },
+  "latestCeftriaxoneNeonatalScopedReleaseReviewArchive": {
+    "status": "passed_controller_finish",
+    "path": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/archives/feeding-ceftriaxone-neonatal-review-20261011",
+    "manifestSHA256": "3c5ba7fad6beabf1f70a434bb5eb75ba3c8289e824ce650a6f1cfd19cc279bdd"
+  },
+  "currentTravelersFeedingReview": {
+    "status": "source_build_and_actual_native_passed_public_pending",
+    "externalReceipt": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-primary-remaining-question-review-20261011/evidence/travelers-feeding-question-review-qualified-v1.json",
+    "questionIds": [
+      "travelers-diarrhea-045",
+      "travelers-diarrhea-046",
+      "travelers-diarrhea-047",
+      "travelers-diarrhea-048"
+    ],
+    "gatesPending": [
+      "production publication verification"
+    ],
+    "wholeModuleVerified": false,
+    "wholeGoalComplete": false,
+    "actualNativeReceipt": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-primary-remaining-question-review-20261011/evidence/owner-native-review-travelers-feeding-v1.json",
+    "allNativeCapturesActuallyViewed": true,
+    "mainIntegrationReceipt": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-primary-remaining-question-review-20261011/evidence/main-integration-travelers-feeding-v1.json"
+  },
+  "pendingTravelersOlderAuditPublicReconciliation": {
+    "status": "older_edits_not_requalified_or_published_in_this_unit",
+    "questionDifferences": [],
+    "notEvidenceOfClinicalError": true,
+    "requiredAction": "Reconcile existing source qualification and required responsive/public release evidence before claiming older edits live."
   }
 }

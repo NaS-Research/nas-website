@@ -46,5 +46,66 @@ const cases=[
 ["resistance-invasive","Why is routine antibiotic treatment avoided in mild TD?",["Benefit is small while adverse effects, CDI, and resistant colonization remain","Bacterial TD never responds","ORS is contraindicated","All mild disease is viral"],"Functional severity should determine whether antibiotic benefit outweighs harm."],
 ["travel-kit-stewardship","What makes a standby prescription usable?",["A written trigger, exact regimen, limits, warning signs, and care threshold","Tablets without instructions","A drug selected without itinerary review","No plan for fever or blood"],"Safe self-treatment depends on decisions made before illness begins."],
 ].map((item,index)=>({id:`travelers-diarrhea-${String(generated.length+index+1).padStart(3,"0")}`,lesson:item[0],question:item[1],choices:item[2],answer:0,rationale:item[3],reviewHref:`#${item[0]}`}));
-export const travelersDiarrheaQuestionBank=[...generated,...cases];
+const beforeTravelersFeedingQuestionBank=[...generated,...cases];
+
+const travelersFeedingQuestionOverrides = {
+  "travelers-diarrhea-045": {
+    "id": "travelers-diarrhea-045",
+    "lesson": "rehydration-nutrition",
+    "question": "A breastfed infant has mild travelers' diarrhea, remains alert, and tolerates oral intake. Which feeding advice is appropriate while caregivers replace fluid losses?",
+    "choices": [
+      "Continue breastfeeding on demand and use appropriate oral rehydration solution to replace losses.",
+      "Stop breastfeeding until every loose stool has resolved.",
+      "Replace breastfeeding with a juice-only diet until the infant recovers.",
+      "Withhold all nutrition solely because the infant has diarrhea."
+    ],
+    "answer": 0,
+    "rationale": "CDC guidance recommends continued breastfeeding during travelers' diarrhea and oral rehydration solution (ORS) in addition to the infant's usual food. Diarrhea alone is not a reason to stop breastfeeding or impose fasting or a juice-only diet. Persistent vomiting that prevents oral hydration, lethargy, or markedly decreased urine output requires prompt medical assessment; the ability to tolerate intake does not remove the need to monitor hydration.",
+    "reviewHref": "#rehydration-nutrition"
+  },
+  "travelers-diarrhea-046": {
+    "id": "travelers-diarrhea-046",
+    "lesson": "rehydration-nutrition",
+    "question": "A school-age child with travelers' diarrhea is alert, can drink oral rehydration solution, and tolerates usual foods. Which nutrition plan best supports recovery?",
+    "choices": [
+      "Continue the usual age-appropriate diet as tolerated while replacing ongoing fluid losses with oral rehydration solution.",
+      "Use only bananas, rice, applesauce, and toast until stools return to normal, even though usual foods are tolerated.",
+      "Restrict the child to clear fluids and delay normal foods until the diarrhea has ended.",
+      "Fast the child for a day to rest the bowel despite continued tolerance of food."
+    ],
+    "answer": 0,
+    "rationale": "For older infants and children who tolerate oral intake, CDC guidance recommends continuing the usual diet during diarrhea and replacing fluid losses with ORS. Purposefully restrictive BRAT or clear-fluid diets delay resumption of normal intake and should be avoided. Fasting is not justified by diarrhea alone. Food tolerance and hydration must be reassessed as symptoms change.",
+    "reviewHref": "#rehydration-nutrition"
+  },
+  "travelers-diarrhea-047": {
+    "id": "travelers-diarrhea-047",
+    "lesson": "rehydration-nutrition",
+    "question": "A child with travelers' diarrhea has persistent vomiting, becomes lethargic, and urinates much less than usual. Which assessment and action take priority over routine advice to continue food?",
+    "choices": [
+      "Assess dehydration and seek prompt medical attention because the child may be unable to maintain oral hydration.",
+      "Treat the reduced urine output as reassurance and continue routine home feeding advice without assessment.",
+      "Assume lethargy is a normal consequence of diarrhea and delay assessment until the stool frequency improves.",
+      "Replace oral rehydration solution with undiluted juice and use dietary restriction as the only response."
+    ],
+    "answer": 0,
+    "rationale": "CDC guidance identifies lethargy, markedly decreased urine output, and persistent vomiting that prevents oral hydration as reasons to seek medical attention in a child with diarrhea. Continued usual food and ORS are appropriate when intake is tolerated, but they do not replace assessment of possible moderate or severe dehydration. Severe dehydration is a medical emergency and may require IV or intraosseous fluids. Undiluted juice is not an equivalent substitute for ORS.",
+    "reviewHref": "#rehydration-nutrition"
+  },
+  "travelers-diarrhea-048": {
+    "id": "travelers-diarrhea-048",
+    "lesson": "rehydration-nutrition",
+    "question": "A child with mild travelers' diarrhea can tolerate oral rehydration solution and usual age-appropriate food. Which proposed feeding plan should be corrected?",
+    "choices": [
+      "Withhold food until all diarrhea has stopped despite the child tolerating intake.",
+      "Continue the usual diet as tolerated while replacing fluid losses with oral rehydration solution.",
+      "Reassess oral intake, alertness, and urine output as the illness evolves.",
+      "Seek medical attention if persistent vomiting prevents oral hydration or signs of dehydration develop."
+    ],
+    "answer": 0,
+    "rationale": "Withholding food solely until diarrhea stops is unnecessary when the child tolerates oral intake. CDC guidance supports the usual age-appropriate diet and ORS rather than prolonged fasting or restrictive clear-fluid diets. The other options support nutrition, hydration monitoring, or timely escalation. Advice to continue food applies to tolerated intake and does not override warning signs requiring assessment.",
+    "reviewHref": "#rehydration-nutrition"
+  }
+};
+export const travelersDiarrheaQuestionBank = beforeTravelersFeedingQuestionBank.map(q => travelersFeedingQuestionOverrides[q.id] ?? q);
+
 if(travelersDiarrheaQuestionBank.length<100)throw new Error(`Travelers' diarrhea question bank must contain at least 100 questions, found ${travelersDiarrheaQuestionBank.length}.`);
