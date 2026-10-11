@@ -1,0 +1,824 @@
+{
+  "status": "six_question_candidate_structural_pass_build_native_public_pending",
+  "questionIds": [
+    "thychem-05-application",
+    "thychem-11-application",
+    "thychem-17-application",
+    "genitourinary-medchem-039",
+    "genitourinary-medchem-071",
+    "genitourinary-medchem-103"
+  ],
+  "wholeQuestionsReviewed": 6,
+  "choicesReviewed": 24,
+  "wholeQuestionBindings": [
+    {
+      "id": "thychem-05-application",
+      "wholeQuestion": {
+        "id": "thychem-05-application",
+        "question": "Which structural assessment correctly distinguishes T4 from T3?",
+        "choices": [
+          "Locate the additional outer-ring iodine in T4; T4 has four iodine atoms and T3 has three.",
+          "Identify T4 and T3 as molecules with the same iodine count and positions.",
+          "Identify T4 as having one fewer iodine atom than T3.",
+          "Distinguish T4 from T3 only by brand name because their chemical structures are identical."
+        ],
+        "answer": 0,
+        "rationale": "T4 is 3,5,3-prime,5-prime-tetraiodothyronine, whereas T3 is 3,5,3-prime-triiodothyronine. The additional iodine in T4 is at the outer-ring 5-prime position. The iodine pattern is part of molecular identity, not merely a difference in product name.",
+        "reviewHref": "#thyronine-scaffold",
+        "difficulty": "application"
+      },
+      "wholeObjectSHA256": "60838b769917de6400557babba4a35607b998aa1c07b4567e4416b69f300b322",
+      "semanticSHA256": "60838b769917de6400557babba4a35607b998aa1c07b4567e4416b69f300b322",
+      "sourcePages": [
+        "book PDF635,637",
+        "t4-label PDF17",
+        "t3-label PDF14"
+      ],
+      "choiceReview": [
+        {
+          "index": 0,
+          "text": "Locate the additional outer-ring iodine in T4; T4 has four iodine atoms and T3 has three.",
+          "isKeyed": true,
+          "assessment": "Correct: independently counted four iodines in T4 versus three in T3; the extra outer position distinguishes them.",
+          "sourcePages": [
+            "book PDF635,637",
+            "t4-label PDF17",
+            "t3-label PDF14"
+          ]
+        },
+        {
+          "index": 1,
+          "text": "Identify T4 and T3 as molecules with the same iodine count and positions.",
+          "isKeyed": false,
+          "assessment": "Incorrect: the native structures show different iodine counts.",
+          "sourcePages": [
+            "book PDF635,637",
+            "t4-label PDF17",
+            "t3-label PDF14"
+          ]
+        },
+        {
+          "index": 2,
+          "text": "Identify T4 as having one fewer iodine atom than T3.",
+          "isKeyed": false,
+          "assessment": "Incorrect: this reverses the independently observed count.",
+          "sourcePages": [
+            "book PDF635,637",
+            "t4-label PDF17",
+            "t3-label PDF14"
+          ]
+        },
+        {
+          "index": 3,
+          "text": "Distinguish T4 from T3 only by brand name because their chemical structures are identical.",
+          "isKeyed": false,
+          "assessment": "Incorrect: structural identity differs, regardless of brand.",
+          "sourcePages": [
+            "book PDF635,637",
+            "t4-label PDF17",
+            "t3-label PDF14"
+          ]
+        }
+      ],
+      "stableIdOrderKeyAndReviewHrefPreserved": true
+    },
+    {
+      "id": "thychem-11-application",
+      "wholeQuestion": {
+        "id": "thychem-11-application",
+        "question": "Which assessment correctly classifies inner-ring deiodination of thyroid hormones?",
+        "choices": [
+          "Classify inner-ring iodine removal as an inactivating direction, such as T4 to reverse T3.",
+          "Classify every loss of iodine as activation, regardless of its ring position.",
+          "Classify inner-ring removal from T4 as the same activating pathway that produces T3 by outer-ring removal.",
+          "Predict metabolic direction from iodine count alone without identifying the ring involved."
+        ],
+        "answer": 0,
+        "rationale": "Inner-ring deiodination can convert T4 to reverse T3 and T3 to inactive downstream metabolites. In contrast, outer-ring removal from T4 produces active T3. Substrate and ring position determine the direction; losing an iodine does not by itself establish activation.",
+        "reviewHref": "#deiodination-metabolism",
+        "difficulty": "application"
+      },
+      "wholeObjectSHA256": "2a4f8cf5df296b2b3a94b92a4e4d6a82a1e416815ad00dfce65329d6ee05406c",
+      "semanticSHA256": "2a4f8cf5df296b2b3a94b92a4e4d6a82a1e416815ad00dfce65329d6ee05406c",
+      "sourcePages": [
+        "book PDF635",
+        "deiodination-jci-cdn-1985 PDF1 introduction",
+        "t4-label PDF17,18",
+        "t3-label PDF14"
+      ],
+      "choiceReview": [
+        {
+          "index": 0,
+          "text": "Classify inner-ring iodine removal as an inactivating direction, such as T4 to reverse T3.",
+          "isKeyed": true,
+          "assessment": "Correct: ring-specific inactivation is supported by the primary introduction; no animal treatment inference.",
+          "sourcePages": [
+            "book PDF635",
+            "deiodination-jci-cdn-1985 PDF1 introduction",
+            "t4-label PDF17,18",
+            "t3-label PDF14"
+          ]
+        },
+        {
+          "index": 1,
+          "text": "Classify every loss of iodine as activation, regardless of its ring position.",
+          "isKeyed": false,
+          "assessment": "Incorrect: T4 to T3 outer-ring activation and inner-ring inactivation are different directions.",
+          "sourcePages": [
+            "book PDF635",
+            "deiodination-jci-cdn-1985 PDF1 introduction",
+            "t4-label PDF17,18",
+            "t3-label PDF14"
+          ]
+        },
+        {
+          "index": 2,
+          "text": "Classify inner-ring removal from T4 as the same activating pathway that produces T3 by outer-ring removal.",
+          "isKeyed": false,
+          "assessment": "Incorrect: the two ring pathways yield different products.",
+          "sourcePages": [
+            "book PDF635",
+            "deiodination-jci-cdn-1985 PDF1 introduction",
+            "t4-label PDF17,18",
+            "t3-label PDF14"
+          ]
+        },
+        {
+          "index": 3,
+          "text": "Predict metabolic direction from iodine count alone without identifying the ring involved.",
+          "isKeyed": false,
+          "assessment": "Incorrect: iodine position and substrate must be identified, not only the total count.",
+          "sourcePages": [
+            "book PDF635",
+            "deiodination-jci-cdn-1985 PDF1 introduction",
+            "t4-label PDF17,18",
+            "t3-label PDF14"
+          ]
+        }
+      ],
+      "stableIdOrderKeyAndReviewHrefPreserved": true
+    },
+    {
+      "id": "thychem-17-application",
+      "wholeQuestion": {
+        "id": "thychem-17-application",
+        "question": "Which structural feature correctly identifies propylthiouracil (PTU)?",
+        "choices": [
+          "A propyl substituent on a thiouracil ring.",
+          "A tetraiodinated thyronine scaffold with two aromatic rings joined by an ether.",
+          "An Se atom as a ring atom in the PTU molecule.",
+          "An inorganic iodide ion without a carbon-containing ring."
+        ],
+        "answer": 0,
+        "rationale": "PTU is a propyl-substituted thiouracil, with a sulfur-containing heterocyclic scaffold. It is structurally distinct from thyroid hormones and inorganic iodide. Recognizing its scaffold does not by itself determine whether PTU is appropriate for a patient.",
+        "reviewHref": "#thionamide-chemistry",
+        "difficulty": "application"
+      },
+      "wholeObjectSHA256": "fca9f511c29de57c3f9122e53ceaae0dd57e329849d45bd36e0a22b656515e97",
+      "semanticSHA256": "fca9f511c29de57c3f9122e53ceaae0dd57e329849d45bd36e0a22b656515e97",
+      "sourcePages": [
+        "book PDF638,639",
+        "ptu-label PDF1,2"
+      ],
+      "choiceReview": [
+        {
+          "index": 0,
+          "text": "A propyl substituent on a thiouracil ring.",
+          "isKeyed": true,
+          "assessment": "Correct: native labeled PTU structure shows propyl substitution and thiouracil ring.",
+          "sourcePages": [
+            "book PDF638,639",
+            "ptu-label PDF1,2"
+          ]
+        },
+        {
+          "index": 1,
+          "text": "A tetraiodinated thyronine scaffold with two aromatic rings joined by an ether.",
+          "isKeyed": false,
+          "assessment": "Incorrect: this is the thyroid-hormone framework, not PTU.",
+          "sourcePages": [
+            "book PDF638,639",
+            "ptu-label PDF1,2"
+          ]
+        },
+        {
+          "index": 2,
+          "text": "An Se atom as a ring atom in the PTU molecule.",
+          "isKeyed": false,
+          "assessment": "Incorrect: the PTU native formula and structure contain sulfur but no Se.",
+          "sourcePages": [
+            "book PDF638,639",
+            "ptu-label PDF1,2"
+          ]
+        },
+        {
+          "index": 3,
+          "text": "An inorganic iodide ion without a carbon-containing ring.",
+          "isKeyed": false,
+          "assessment": "Incorrect: PTU is an organic heterocycle, not just iodide.",
+          "sourcePages": [
+            "book PDF638,639",
+            "ptu-label PDF1,2"
+          ]
+        }
+      ],
+      "stableIdOrderKeyAndReviewHrefPreserved": true
+    },
+    {
+      "id": "genitourinary-medchem-039",
+      "wholeQuestion": {
+        "id": "genitourinary-medchem-039",
+        "concept": "levonorgestrel stereochemical identity",
+        "difficulty": "Advanced",
+        "prompt": "Which comparison correctly distinguishes levonorgestrel from racemic norgestrel?",
+        "choices": [
+          "Distinguish biologically active levonorgestrel from norgestrel, a mixture of two enantiomers.",
+          "Assume both enantiomers in norgestrel have equal progestogenic activity.",
+          "Identify levonorgestrel as the hormonally inactive enantiomer of norgestrel.",
+          "Identify norgestrel and levonorgestrel as identical single-enantiomer molecules."
+        ],
+        "answer": 0,
+        "explanation": "Norgestrel is a racemic mixture of levonorgestrel and dexonorgestrel; levonorgestrel is the biologically active component. Enantiomer composition is part of molecular identity. This chemical relationship does not establish dose or product interchangeability.",
+        "reviewHref": "#progestin-families"
+      },
+      "wholeObjectSHA256": "3855e8acefca19dedc1ddf8836223500589632daf27517db5d7850b20fc5eca3",
+      "semanticSHA256": "3855e8acefca19dedc1ddf8836223500589632daf27517db5d7850b20fc5eca3",
+      "sourcePages": [
+        "book PDF669 product context only",
+        "levonorgestrel-fda-2024 PDF9,11,13 chemical identity only"
+      ],
+      "choiceReview": [
+        {
+          "index": 0,
+          "text": "Distinguish biologically active levonorgestrel from norgestrel, a mixture of two enantiomers.",
+          "isKeyed": true,
+          "assessment": "Correct: FDA-hosted chemical description distinguishes active LNG from racemic norgestrel.",
+          "sourcePages": [
+            "book PDF669 product context only",
+            "levonorgestrel-fda-2024 PDF9,11,13 chemical identity only"
+          ]
+        },
+        {
+          "index": 1,
+          "text": "Assume both enantiomers in norgestrel have equal progestogenic activity.",
+          "isKeyed": false,
+          "assessment": "Incorrect: the report distinguishes active LNG from hormonally inactive dexonorgestrel.",
+          "sourcePages": [
+            "book PDF669 product context only",
+            "levonorgestrel-fda-2024 PDF9,11,13 chemical identity only"
+          ]
+        },
+        {
+          "index": 2,
+          "text": "Identify levonorgestrel as the hormonally inactive enantiomer of norgestrel.",
+          "isKeyed": false,
+          "assessment": "Incorrect: this reverses the active component.",
+          "sourcePages": [
+            "book PDF669 product context only",
+            "levonorgestrel-fda-2024 PDF9,11,13 chemical identity only"
+          ]
+        },
+        {
+          "index": 3,
+          "text": "Identify norgestrel and levonorgestrel as identical single-enantiomer molecules.",
+          "isKeyed": false,
+          "assessment": "Incorrect: racemate and single active enantiomer are distinct compositions.",
+          "sourcePages": [
+            "book PDF669 product context only",
+            "levonorgestrel-fda-2024 PDF9,11,13 chemical identity only"
+          ]
+        }
+      ],
+      "stableIdOrderKeyAndReviewHrefPreserved": true
+    },
+    {
+      "id": "genitourinary-medchem-071",
+      "wholeQuestion": {
+        "id": "genitourinary-medchem-071",
+        "concept": "sildenafil and vardenafil scaffold similarity",
+        "difficulty": "Advanced",
+        "prompt": "Sildenafil and vardenafil have related heterocyclic scaffolds. Which comparison is most appropriate before interpreting their clinical use?",
+        "choices": [
+          "Review each product's PDE selectivity, food-related exposure, CYP interactions, QT considerations, and labeled dose.",
+          "Assume related scaffolds guarantee identical QT warnings and identical product instructions.",
+          "Treat both molecules as direct nitric oxide donors rather than inhibitors of cGMP breakdown.",
+          "Assume the same dose in milligrams produces interchangeable exposure because both inhibit PDE5."
+        ],
+        "answer": 0,
+        "explanation": "Related scaffolds do not establish clinical equivalence. Both inhibit PDE5 and preserve nitric oxide-dependent cGMP signaling; they do not directly donate nitric oxide. Their labels address PDE6 activity, food-related exposure and CYP3A interactions, and vardenafil has specific QT precautions. Use the instructions for the particular product rather than inferring a dose conversion from structural similarity.",
+        "reviewHref": "#pde5-inhibitor-chemistry"
+      },
+      "wholeObjectSHA256": "7d5c8dcc0a0c8ded8be86dd4dbf0450787403c2131d98528e246bf1068b6eba5",
+      "semanticSHA256": "7d5c8dcc0a0c8ded8be86dd4dbf0450787403c2131d98528e246bf1068b6eba5",
+      "sourcePages": [
+        "book PDF698,699,700",
+        "sildenafil-label PDF12,18,19",
+        "vardenafil-label PDF6,8,16,17,29"
+      ],
+      "choiceReview": [
+        {
+          "index": 0,
+          "text": "Review each product's PDE selectivity, food-related exposure, CYP interactions, QT considerations, and labeled dose.",
+          "isKeyed": true,
+          "assessment": "Correct: product-specific selectivity, exposure and warnings must be reviewed; no inferred dose conversion.",
+          "sourcePages": [
+            "book PDF698,699,700",
+            "sildenafil-label PDF12,18,19",
+            "vardenafil-label PDF6,8,16,17,29"
+          ]
+        },
+        {
+          "index": 1,
+          "text": "Assume related scaffolds guarantee identical QT warnings and identical product instructions.",
+          "isKeyed": false,
+          "assessment": "Incorrect: vardenafil labeling has specific QT precautions; related scaffolds do not erase instructions.",
+          "sourcePages": [
+            "book PDF698,699,700",
+            "sildenafil-label PDF12,18,19",
+            "vardenafil-label PDF6,8,16,17,29"
+          ]
+        },
+        {
+          "index": 2,
+          "text": "Treat both molecules as direct nitric oxide donors rather than inhibitors of cGMP breakdown.",
+          "isKeyed": false,
+          "assessment": "Incorrect: PDE5 inhibition preserves cGMP signaling rather than donating NO.",
+          "sourcePages": [
+            "book PDF698,699,700",
+            "sildenafil-label PDF12,18,19",
+            "vardenafil-label PDF6,8,16,17,29"
+          ]
+        },
+        {
+          "index": 3,
+          "text": "Assume the same dose in milligrams produces interchangeable exposure because both inhibit PDE5.",
+          "isKeyed": false,
+          "assessment": "Incorrect: shared target is not proof of mass-dose or exposure interchangeability.",
+          "sourcePages": [
+            "book PDF698,699,700",
+            "sildenafil-label PDF12,18,19",
+            "vardenafil-label PDF6,8,16,17,29"
+          ]
+        }
+      ],
+      "stableIdOrderKeyAndReviewHrefPreserved": true
+    },
+    {
+      "id": "genitourinary-medchem-103",
+      "wholeQuestion": {
+        "id": "genitourinary-medchem-103",
+        "concept": "muscarinic subtype preference",
+        "difficulty": "Advanced",
+        "prompt": "A person taking darifenacin develops dry mouth and constipation despite its M3 receptor preference. Which reassessment best interprets this finding?",
+        "choices": [
+          "Review antimuscarinic adverse effects, urinary retention and CNS symptoms, dose, exposure, interacting medicines, and treatment response.",
+          "Exclude darifenacin as a possible cause because M3 preference confines its activity to the bladder.",
+          "Assume dry mouth proves that darifenacin has no M3 receptor affinity.",
+          "Assume receptor preference guarantees freedom from antimuscarinic adverse effects at every dose and exposure."
+        ],
+        "answer": 0,
+        "explanation": "Darifenacin has greater affinity for M3 than for several other muscarinic subtypes in vitro, but its labeling still identifies dry mouth and constipation, urinary retention risk, CNS effects and exposure-related drug interactions. Receptor preference does not guarantee bladder-only activity or freedom from adverse effects. Reassess the actual medicine and clinical response.",
+        "reviewHref": "#bladder-antimuscarinic-chemistry"
+      },
+      "wholeObjectSHA256": "71d1e7ddcb15f4a5b5c13314ed59b11ad262ddebf4b9ceb6d8505a3979fee76a",
+      "semanticSHA256": "71d1e7ddcb15f4a5b5c13314ed59b11ad262ddebf4b9ceb6d8505a3979fee76a",
+      "sourcePages": [
+        "book PDF709,710",
+        "darifenacin-label PDF3,4,5,6,9,10"
+      ],
+      "choiceReview": [
+        {
+          "index": 0,
+          "text": "Review antimuscarinic adverse effects, urinary retention and CNS symptoms, dose, exposure, interacting medicines, and treatment response.",
+          "isKeyed": true,
+          "assessment": "Correct: native label supports actual adverse effects, retention, CNS and CYP exposure review despite M3 preference.",
+          "sourcePages": [
+            "book PDF709,710",
+            "darifenacin-label PDF3,4,5,6,9,10"
+          ]
+        },
+        {
+          "index": 1,
+          "text": "Exclude darifenacin as a possible cause because M3 preference confines its activity to the bladder.",
+          "isKeyed": false,
+          "assessment": "Incorrect: label includes systemic antimuscarinic adverse effects.",
+          "sourcePages": [
+            "book PDF709,710",
+            "darifenacin-label PDF3,4,5,6,9,10"
+          ]
+        },
+        {
+          "index": 2,
+          "text": "Assume dry mouth proves that darifenacin has no M3 receptor affinity.",
+          "isKeyed": false,
+          "assessment": "Incorrect: native pharmacology documents M3 preference alongside dry-mouth adverse events.",
+          "sourcePages": [
+            "book PDF709,710",
+            "darifenacin-label PDF3,4,5,6,9,10"
+          ]
+        },
+        {
+          "index": 3,
+          "text": "Assume receptor preference guarantees freedom from antimuscarinic adverse effects at every dose and exposure.",
+          "isKeyed": false,
+          "assessment": "Incorrect: in-vitro preference provides no guarantee of adverse-effect immunity.",
+          "sourcePages": [
+            "book PDF709,710",
+            "darifenacin-label PDF3,4,5,6,9,10"
+          ]
+        }
+      ],
+      "stableIdOrderKeyAndReviewHrefPreserved": true
+    }
+  ],
+  "sourceNativeReview": [
+    {
+      "source": "book",
+      "PDFPage": 635,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-medchem-historical-review-20261011/evidence/private-medchem-sources-v1/book-0635.png",
+      "SHA256": "142191da0a5bf651051cc9cceff5316780973ec8c312fdf890661cff36b45cf6",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "book",
+      "PDFPage": 637,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-medchem-historical-review-20261011/evidence/private-medchem-sources-v1/book-0637.png",
+      "SHA256": "115a433e0ddc650cba5c6d83f0e1827ee9f8765609072b6f6197978739bdbc04",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "book",
+      "PDFPage": 638,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-medchem-historical-review-20261011/evidence/private-medchem-sources-v1/book-0638.png",
+      "SHA256": "f15f57dd4be95868e043c36eee44f1af4f939e7dc369d7f27c6a26234e5e6952",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "book",
+      "PDFPage": 639,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-medchem-historical-review-20261011/evidence/private-medchem-sources-v1/book-0639.png",
+      "SHA256": "5b7c283a17229934d787c810eba30168a2dbe0a0873d99a45bde348cdac95e1e",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "book",
+      "PDFPage": 669,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-medchem-historical-review-20261011/evidence/private-medchem-sources-v1/book-0669.png",
+      "SHA256": "60425bf52cf9ded99a772cdb33ab3fe2e1bb1f99a1a2259e43c5d8ce2d450250",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "book",
+      "PDFPage": 698,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-medchem-historical-review-20261011/evidence/private-medchem-sources-v1/book-0698.png",
+      "SHA256": "0222d3227e912aa74a44dac5d2e71981c9aa9f17492cc09a4a0b9411aefb72b9",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "book",
+      "PDFPage": 699,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-medchem-historical-review-20261011/evidence/private-medchem-sources-v1/book-0699.png",
+      "SHA256": "4cc082ab4b09ff2ebe87ef36fef22989a10c31bd60ccbd01bdcae4bae9557bc8",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "book",
+      "PDFPage": 700,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-medchem-historical-review-20261011/evidence/private-medchem-sources-v1/book-0700.png",
+      "SHA256": "79bde568c1633a7cce2d1f27a335cb9b7ffec9f386de27eae33f248e791f7802",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "book",
+      "PDFPage": 709,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-medchem-historical-review-20261011/evidence/private-medchem-sources-v1/book-0709.png",
+      "SHA256": "849144718a09040e9af5c1a07560525ec8a2b6b3c0c73aa8d4edd24d3e375fe8",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "book",
+      "PDFPage": 710,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-medchem-historical-review-20261011/evidence/private-medchem-sources-v1/book-0710.png",
+      "SHA256": "a2955897770cb33be4ea06c93fd7619f93dd163890ae65eed12171ecfc9d27b6",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "ptu-label",
+      "PDFPage": 1,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-medchem-historical-review-20261011/evidence/private-medchem-sources-v1/ptu-label-01.png",
+      "SHA256": "0b79d9f9aa4c1855f16f6127abc4307af5652687ff4d10c9d0c732dccbc02370",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "ptu-label",
+      "PDFPage": 2,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-medchem-historical-review-20261011/evidence/private-medchem-sources-v1/ptu-label-02.png",
+      "SHA256": "ea8e3192d7009db5f3d3de09127e8c3f2993c68be89f146be315713cca8e5767",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "t4-label",
+      "PDFPage": 17,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-medchem-historical-review-20261011/evidence/private-medchem-sources-v1/t4-label-17.png",
+      "SHA256": "bfe5b4d8e6d0e7cbeb1b8042aef3a539fc33735c03711780be35f914f3647113",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "t4-label",
+      "PDFPage": 18,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-medchem-historical-review-20261011/evidence/private-medchem-sources-v1/t4-label-18.png",
+      "SHA256": "330b75c619961218280c1f65d012bda5a78399ab65625a5074fe0a983ef50df8",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "t3-label",
+      "PDFPage": 14,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-medchem-historical-review-20261011/evidence/private-medchem-sources-v1/t3-label-14.png",
+      "SHA256": "fce20946c695d8a8639b595e08b35f88f51089ef5ca0b500da59224be2f364a1",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "levonorgestrel-fda-2024",
+      "PDFPage": 9,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-medchem-historical-review-20261011/evidence/private-medchem-sources-v1/levonorgestrel-fda-2024-09.png",
+      "SHA256": "41439ced1ff91d72e224c63e90c0f255e7a8eb92aed521735f3665906ba341d3",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "levonorgestrel-fda-2024",
+      "PDFPage": 11,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-medchem-historical-review-20261011/evidence/private-medchem-sources-v1/levonorgestrel-fda-2024-11.png",
+      "SHA256": "ce452d1a7b2e3610f0283fbb0e9b5d012d7fc92637eba7c30ae469486bf33465",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "levonorgestrel-fda-2024",
+      "PDFPage": 13,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-medchem-historical-review-20261011/evidence/private-medchem-sources-v1/levonorgestrel-fda-2024-13.png",
+      "SHA256": "deeceb0a723a6b6e79be960edb282c6a3bd29f7e4572dec9f547794ee4c069fa",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "deiodination-jci-cdn-1985",
+      "PDFPage": 1,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-medchem-historical-review-20261011/evidence/private-medchem-sources-v1/deiodination-jci-cdn-1985-1.png",
+      "SHA256": "f7b44c74b687a09f93bf5e8edf1d1a874ddc144e653c252fa4745ccf68ece65e",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "sildenafil-label",
+      "PDFPage": 12,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-medchem-historical-review-20261011/evidence/private-medchem-sources-v1/sildenafil-label-12.png",
+      "SHA256": "a5d9eaeccb4fa2eac7e21d2ce88f8015ff28399439d8929213f577df425f2dc0",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "sildenafil-label",
+      "PDFPage": 18,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-medchem-historical-review-20261011/evidence/private-medchem-sources-v1/sildenafil-label-18.png",
+      "SHA256": "7ecf98d5875c6a5822b85cad5bd80df80c37636b3a0fbf5fae2e25e74908c90d",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "sildenafil-label",
+      "PDFPage": 19,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-medchem-historical-review-20261011/evidence/private-medchem-sources-v1/sildenafil-label-supplement-19.png",
+      "SHA256": "7b5660e4ff72d95aa63afdf1d62c9ba8b29bec992e9b1033441f8042c949a46a",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "vardenafil-label",
+      "PDFPage": 6,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-medchem-historical-review-20261011/evidence/private-medchem-sources-v1/vardenafil-label-supplement-06.png",
+      "SHA256": "d72c697bd28f159f9d2fc362dc8ce80a72a0df535d1d41f168eb47021f42ae3a",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "vardenafil-label",
+      "PDFPage": 7,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-medchem-historical-review-20261011/evidence/private-medchem-sources-v1/vardenafil-label-supplement-07.png",
+      "SHA256": "4aace0eba68a482b81fc15c70250dd9f0dddee26014cb0d2ef8372da61281715",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "vardenafil-label",
+      "PDFPage": 8,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-medchem-historical-review-20261011/evidence/private-medchem-sources-v1/vardenafil-label-08.png",
+      "SHA256": "8c3ea468b60bf2e34b8a2a20bff495ab21befd462125b588fe66ee5a2bbfe28b",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "vardenafil-label",
+      "PDFPage": 16,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-medchem-historical-review-20261011/evidence/private-medchem-sources-v1/vardenafil-label-16.png",
+      "SHA256": "6bc0056bcb1540e95cd42013d80f03ce34b5a4ecbb051ad15653f688f6172666",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "vardenafil-label",
+      "PDFPage": 17,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-medchem-historical-review-20261011/evidence/private-medchem-sources-v1/vardenafil-label-17.png",
+      "SHA256": "1c69d7019ce8961d63069d1e131d2e493ad6592807587ebdb888c265cccbdd78",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "vardenafil-label",
+      "PDFPage": 28,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-medchem-historical-review-20261011/evidence/private-medchem-sources-v1/vardenafil-label-supplement-28.png",
+      "SHA256": "49e256d9f998c7e8c6cbadd2269cb5cf2d6a7cdecf8e7a77d913ce5d3bc86528",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "vardenafil-label",
+      "PDFPage": 29,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-medchem-historical-review-20261011/evidence/private-medchem-sources-v1/vardenafil-label-supplement-29.png",
+      "SHA256": "c3ca10ab9bb628c4d6fe118590c38eec57a8e54e675b2eafb214ac34b4f3a96a",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "darifenacin-label",
+      "PDFPage": 3,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-medchem-historical-review-20261011/evidence/private-medchem-sources-v1/darifenacin-label-supplement-03.png",
+      "SHA256": "15a87998504557755592179435e84506be211e052ac3001051ee6a06017cf4a3",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "darifenacin-label",
+      "PDFPage": 4,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-medchem-historical-review-20261011/evidence/private-medchem-sources-v1/darifenacin-label-supplement-04.png",
+      "SHA256": "459f7c64385d0fbe2b9da98425465f57b5189f1f749937399f72b0dd5a3c55bd",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "darifenacin-label",
+      "PDFPage": 5,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-medchem-historical-review-20261011/evidence/private-medchem-sources-v1/darifenacin-label-05.png",
+      "SHA256": "32668b9ca9fb92b782204469df0c24951ee40a7f4070be499a3014163ef389f7",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "darifenacin-label",
+      "PDFPage": 6,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-medchem-historical-review-20261011/evidence/private-medchem-sources-v1/darifenacin-label-supplement-06.png",
+      "SHA256": "ac3b01bd7d2f18e9838274d170cbf99414f1b640cca32aa307b33c783a2cf04b",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "darifenacin-label",
+      "PDFPage": 9,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-medchem-historical-review-20261011/evidence/private-medchem-sources-v1/darifenacin-label-09.png",
+      "SHA256": "adc802427db4fb2c8865cf2592ae016d2c24d832ce2af44ba5287a0228cbefc8",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "darifenacin-label",
+      "PDFPage": 10,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-medchem-historical-review-20261011/evidence/private-medchem-sources-v1/darifenacin-label-10.png",
+      "SHA256": "34ce8198461a308b003dcb65fb59ac9d1e383a71e6cac8f06de2c6c0b33a036c",
+      "actualNativeReviewPassed": true
+    }
+  ],
+  "sourceNativePagesActuallyInspected": 35,
+  "privateSourceCatalog": [
+    {
+      "name": "ptu-label",
+      "URL": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=804fa92a-a5ba-4be0-aa44-a40a2e89fde6",
+      "SHA256": "7423b059a184c43535cf1c956019420e8af695faaff680abd8714ac7bc964c51",
+      "pageCount": 13,
+      "renderedPages": [
+        1,
+        2
+      ],
+      "nativeReviewPassed": false
+    },
+    {
+      "name": "t4-label",
+      "URL": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=42a26f8a-dc67-42e4-abb0-d2602afb1b7d",
+      "SHA256": "b210eadb05e34cffcc56701522ae6039e6919648563c4e74c8c4f55cf2643cbb",
+      "pageCount": 39,
+      "renderedPages": [
+        17,
+        18
+      ],
+      "nativeReviewPassed": false
+    },
+    {
+      "name": "levonorgestrel-fda-review",
+      "URL": "https://www.accessdata.fda.gov/drugsatfda_docs/nda/99/21-045_Plan%20B_medr.pdf",
+      "SHA256": "36094c9c4b7eeeb473d115557525913f0913642c0fdcc8e1f7fc75bbe22bf056",
+      "pageCount": 36,
+      "renderedPages": [
+        3
+      ],
+      "nativeReviewPassed": false
+    },
+    {
+      "name": "sildenafil-label",
+      "URL": "https://labeling.pfizer.com/ShowLabeling.aspx?format=PDF&id=652",
+      "SHA256": "9e35373b19cc7e8f6fd0e45cc7ce23b9bd14c0ca40e671863223acb8066d0e45",
+      "pageCount": 32,
+      "renderedPages": [
+        12,
+        18
+      ],
+      "nativeReviewPassed": false
+    },
+    {
+      "name": "vardenafil-label",
+      "URL": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=2782efed-6198-47b9-81ac-3e255e2ab7f6",
+      "SHA256": "da56402664e5d1e980bcad765a32e839f093be281bfe368a54b0eab859515ac0",
+      "pageCount": 45,
+      "renderedPages": [
+        8,
+        16,
+        17
+      ],
+      "nativeReviewPassed": false
+    },
+    {
+      "name": "darifenacin-label",
+      "URL": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=6e8470d1-c3e6-4644-b70a-aa47ddf79676",
+      "SHA256": "5ba72f488e51db6c15e02b06fcafbf4092c127e0074922294dc2655ecbf27a4e",
+      "pageCount": 23,
+      "renderedPages": [
+        5,
+        9,
+        10
+      ],
+      "nativeReviewPassed": false
+    },
+    {
+      "name": "t3-label",
+      "URL": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=51452b31-ff68-4e0c-b982-c15502ebf1d3",
+      "SHA256": "b9914eecd0b80e07d91270f162e90978013fced1b11e38be942b74d4dfc0d636",
+      "pageCount": 21,
+      "renderedPages": [
+        14
+      ],
+      "nativeReviewPassed": false
+    },
+    {
+      "name": "levonorgestrel-fda-2024",
+      "URL": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2024/017031s041EA.pdf",
+      "SHA256": "f059ab9323721e9cb4237625eb098264159f3fbac70395315a5a75d090df58a0",
+      "pageCount": 53,
+      "renderedPages": [
+        9,
+        11,
+        13
+      ],
+      "nativeReviewPassed": false
+    },
+    {
+      "name": "deiodination-jci-cdn-1985",
+      "URL": "https://dm5migu4zj3pb.cloudfront.net/manuscripts/112000/112188/JCI85112188.pdf",
+      "SHA256": "cce3a05cbbf86d6a5d280eefd757a6d8f6f0603717a5d4e67640156474b31ed0",
+      "pageCount": 6,
+      "renderedPages": [
+        1
+      ],
+      "nativeReviewPassed": false
+    },
+    {
+      "name": "book",
+      "SHA256": "5e60f0b3ce20601985515c259c9503bd7ee2681836efecf03906a7da3dddf6ef",
+      "renderedPages": [
+        635,
+        637,
+        638,
+        639,
+        669,
+        698,
+        699,
+        700,
+        709,
+        710
+      ],
+      "nativeReviewPassed": false
+    }
+  ],
+  "sourceLimits": [
+    "Only listed 35 native pages qualified; FDA1999 TOC is locating-only.",
+    "JCI1985 introduction supports elementary ring identity only; no guinea-pig clinical treatment inference. PNAS2014 PDF unavailable and not adopted.",
+    "FDA2024 URL hosts a sponsor environmental report; chemical enantiomer identity only, not current contraceptive dosing, efficacy or environmental claims.",
+    "Sildenafil publisher label revised December2017; not described as latest2026. No new numeric dose, ratio, contraindication interval, food percentage or clinical equivalence.",
+    "No whole lesson, module or chapter closure; existing review anchors inspected only for consistency with these six questions."
+  ],
+  "sourceFiles": {
+    "src/data/questionBanks/thyroidMedicinalChemistry.js": "4df4ccd62ce9b8209a2bef4477194157fce7100fe8bbbaa6b2bc03991cded6d6",
+    "src/data/questionBanks/genitourinaryMedicinalChemistry.js": "d069e252df5a37adf7120efb41b5926f4dd80ef5792d65d7c202a91d41279ab4"
+  },
+  "invariants": {
+    "other230ModulesExact": true,
+    "otherQuestionsInTwoParentsExact": true,
+    "allTeachingFiguresEmbeddedChecksReferencesExact": true,
+    "selected30WholeObjectsExact": true,
+    "entireCumulativePoolExact": true,
+    "stableIdsKeysAndAnchorsPreserved": true
+  },
+  "actualRenderedQuestionReviewPassed": false,
+  "productionLiveVerified": false,
+  "wholeModuleVerified": false,
+  "wholeChapterVerified": false,
+  "wholeGoalComplete": false
+}

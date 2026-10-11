@@ -126,4 +126,50 @@ const feedingAndBindingQuestionRepairs = {
     "rationale": "A binding resin is a plausible cause of reduced gastrointestinal levothyroxine availability. Review its administration instructions and the thyroid response; the unchanged prescribed dose does not exclude a change in absorption."
   }
 };
-export const thyroidMedicinalChemistryQuestionBank = generatedThyroidMedicinalChemistryQuestionBank.map((question) => ({ ...question, ...(feedingAndBindingQuestionRepairs[question.id] || {}) }));
+const beforeHistoricalMedchemQuestionBank = generatedThyroidMedicinalChemistryQuestionBank.map((question) => ({ ...question, ...(feedingAndBindingQuestionRepairs[question.id] || {}) }));
+
+const historicalMedchemQuestionOverrides = {
+  "thychem-05-application": {
+    "id": "thychem-05-application",
+    "question": "Which structural assessment correctly distinguishes T4 from T3?",
+    "choices": [
+      "Locate the additional outer-ring iodine in T4; T4 has four iodine atoms and T3 has three.",
+      "Identify T4 and T3 as molecules with the same iodine count and positions.",
+      "Identify T4 as having one fewer iodine atom than T3.",
+      "Distinguish T4 from T3 only by brand name because their chemical structures are identical."
+    ],
+    "answer": 0,
+    "rationale": "T4 is 3,5,3-prime,5-prime-tetraiodothyronine, whereas T3 is 3,5,3-prime-triiodothyronine. The additional iodine in T4 is at the outer-ring 5-prime position. The iodine pattern is part of molecular identity, not merely a difference in product name.",
+    "reviewHref": "#thyronine-scaffold",
+    "difficulty": "application"
+  },
+  "thychem-11-application": {
+    "id": "thychem-11-application",
+    "question": "Which assessment correctly classifies inner-ring deiodination of thyroid hormones?",
+    "choices": [
+      "Classify inner-ring iodine removal as an inactivating direction, such as T4 to reverse T3.",
+      "Classify every loss of iodine as activation, regardless of its ring position.",
+      "Classify inner-ring removal from T4 as the same activating pathway that produces T3 by outer-ring removal.",
+      "Predict metabolic direction from iodine count alone without identifying the ring involved."
+    ],
+    "answer": 0,
+    "rationale": "Inner-ring deiodination can convert T4 to reverse T3 and T3 to inactive downstream metabolites. In contrast, outer-ring removal from T4 produces active T3. Substrate and ring position determine the direction; losing an iodine does not by itself establish activation.",
+    "reviewHref": "#deiodination-metabolism",
+    "difficulty": "application"
+  },
+  "thychem-17-application": {
+    "id": "thychem-17-application",
+    "question": "Which structural feature correctly identifies propylthiouracil (PTU)?",
+    "choices": [
+      "A propyl substituent on a thiouracil ring.",
+      "A tetraiodinated thyronine scaffold with two aromatic rings joined by an ether.",
+      "An Se atom as a ring atom in the PTU molecule.",
+      "An inorganic iodide ion without a carbon-containing ring."
+    ],
+    "answer": 0,
+    "rationale": "PTU is a propyl-substituted thiouracil, with a sulfur-containing heterocyclic scaffold. It is structurally distinct from thyroid hormones and inorganic iodide. Recognizing its scaffold does not by itself determine whether PTU is appropriate for a patient.",
+    "reviewHref": "#thionamide-chemistry",
+    "difficulty": "application"
+  }
+};
+export const thyroidMedicinalChemistryQuestionBank = beforeHistoricalMedchemQuestionBank.map(q => historicalMedchemQuestionOverrides[q.id] ?? q);
