@@ -33,7 +33,7 @@ const concepts = [
 
 const dimensions = [["principle", "Which principle best characterizes"], ["action", "Which clinical action best applies to"], ["assessment", "Which assessment is most appropriate for"], ["hazard", "Which reasoning hazard is most important to prevent with"]];
 function distractors(index, field) { return [5, 11, 17].map((offset) => concepts[(index + offset) % concepts.length][field]); }
-export const heartFailurePathophysiologyQuestionBank = concepts.flatMap((concept, index) => dimensions.map(([field, prompt], dimensionIndex) => ({
+const generatedHeartFailurePathophysiologyQuestionBank = concepts.flatMap((concept, index) => dimensions.map(([field, prompt], dimensionIndex) => ({
   id: `heart-failure-pathophysiology-${String(index * 4 + dimensionIndex + 1).padStart(3, "0")}`,
   question: `${prompt} ${concept.name}?`,
   choices: [concept[field], ...distractors(index, field)],
@@ -41,3 +41,320 @@ export const heartFailurePathophysiologyQuestionBank = concepts.flatMap((concept
   rationale: concept.why,
   reviewHref: `#${concept.lesson}`,
 })));
+
+const reviewedNeurohormonalQuestions = {
+  "heart-failure-pathophysiology-041": {
+    "id": "heart-failure-pathophysiology-041",
+    "question": "Which principle best characterizes sympathetic nervous system activation?",
+    "choices": [
+      "Reduced effective perfusion and baroreceptor signaling increase sympathetic tone, initially supporting rate, contractility, and pressure but chronically driving tachycardia, vasoconstriction, arrhythmia, ischemia, and remodeling.",
+      "Persistent sympathetic activation lowers myocardial oxygen demand while increasing heart rate.",
+      "Chronic catecholamine exposure prevents ventricular remodeling and arrhythmia.",
+      "Sympathetic activation improves pressure only by increasing sodium excretion."
+    ],
+    "answer": 0,
+    "rationale": "Sympathetic activation supports rate, contractility and vascular tone initially. Persistent activation can increase oxygen demand, arrhythmia and remodeling; it does not prevent those complications or act through natriuresis.",
+    "reviewHref": "#neurohormonal-compensation"
+  },
+  "heart-failure-pathophysiology-042": {
+    "id": "heart-failure-pathophysiology-042",
+    "question": "Which clinical action best applies to sympathetic nervous system activation?",
+    "choices": [
+      "Recognize cold extremities, tachycardia, vasoconstriction, arrhythmia, and high catecholamine states as compensatory signals with long-term cost.",
+      "Treat a rise in blood pressure during persistent sympathetic activation as proof that myocardial stress has resolved.",
+      "Ignore tachycardia and arrhythmia when the arterial pressure is maintained.",
+      "Interpret persistent vasoconstriction as evidence that long-term catecholamine effects are protective."
+    ],
+    "answer": 0,
+    "rationale": "The correct action connects observable perfusion and rhythm signals with the chronic cost of catecholamine activation. Maintained pressure does not eliminate myocardial oxygen demand or arrhythmia risk.",
+    "reviewHref": "#neurohormonal-compensation"
+  },
+  "heart-failure-pathophysiology-043": {
+    "id": "heart-failure-pathophysiology-043",
+    "question": "Which assessment is most appropriate for sympathetic nervous system activation?",
+    "choices": [
+      "Review heart rate, blood pressure, perfusion, rhythm, ischemia, beta-agonist exposure, sleep and stress state, and chronic remodeling.",
+      "Assess only the blood pressure and assume a maintained value excludes adverse sympathetic effects.",
+      "Assess only heart rate and omit rhythm, perfusion and ischemia.",
+      "Assess only chamber size and disregard the current perfusion and catecholamine context."
+    ],
+    "answer": 0,
+    "rationale": "An integrated assessment is needed because sympathetic activation changes rate, rhythm, vascular tone and myocardial workload. A single pressure, rate or chamber measurement cannot describe the whole response.",
+    "reviewHref": "#neurohormonal-compensation"
+  },
+  "heart-failure-pathophysiology-044": {
+    "id": "heart-failure-pathophysiology-044",
+    "question": "Which reasoning hazard is most important to prevent with sympathetic nervous system activation?",
+    "choices": [
+      "Calling persistent sympathetic activation beneficial because it raises pressure ignores myocardial oxygen demand and toxicity.",
+      "Interpreting persistent catecholamine stimulation as harmful despite an initial pressure benefit.",
+      "Considering oxygen demand when tachycardia accompanies sympathetic activation.",
+      "Recognizing that arrhythmia risk can persist despite maintained arterial pressure."
+    ],
+    "answer": 0,
+    "rationale": "The hazard is mistaking the immediate pressure benefit for lasting protection. The other choices describe appropriate recognition of the chronic costs of sympathetic activation.",
+    "reviewHref": "#neurohormonal-compensation"
+  },
+  "heart-failure-pathophysiology-045": {
+    "id": "heart-failure-pathophysiology-045",
+    "question": "Which principle best characterizes renin-angiotensin-aldosterone activation?",
+    "choices": [
+      "Reduced renal perfusion and sympathetic drive activate RAAS; angiotensin II causes vasoconstriction, while aldosterone promotes sodium retention and potassium excretion, contributing to congestion and remodeling.",
+      "Angiotensin II primarily causes vasodilation and suppresses aldosterone release.",
+      "Aldosterone promotes sodium excretion and potassium retention.",
+      "Persistent RAAS activation reduces afterload and prevents ventricular fibrosis."
+    ],
+    "answer": 0,
+    "rationale": "Angiotensin II promotes vasoconstriction and aldosterone release. Aldosterone promotes renal sodium retention and potassium excretion; net serum potassium still depends on kidney function and treatment. Persistent activation contributes to congestion and remodeling.",
+    "reviewHref": "#neurohormonal-compensation"
+  },
+  "heart-failure-pathophysiology-046": {
+    "id": "heart-failure-pathophysiology-046",
+    "question": "Which clinical action best applies to renin-angiotensin-aldosterone activation?",
+    "choices": [
+      "Connect renal sodium avidity and vascular tone to congestion, afterload, potassium, kidney function, and progressive myocardial fibrosis.",
+      "Infer that persistent sodium retention protects the failing heart from congestion.",
+      "Ignore potassium and kidney function because RAAS affects only vascular tone.",
+      "Interpret rising vascular resistance as evidence that ventricular afterload has fallen."
+    ],
+    "answer": 0,
+    "rationale": "RAAS links vascular tone and renal sodium handling with congestion, potassium balance and remodeling. Its effects extend beyond pressure alone and do not make sodium retention uniformly protective.",
+    "reviewHref": "#neurohormonal-compensation"
+  },
+  "heart-failure-pathophysiology-047": {
+    "id": "heart-failure-pathophysiology-047",
+    "question": "Which assessment is most appropriate for renin-angiotensin-aldosterone activation?",
+    "choices": [
+      "Review blood pressure, sodium and water balance, potassium, kidney function, venous congestion, perfusion, diuretic response, and remodeling phenotype.",
+      "Review blood pressure alone and omit potassium, kidney function and congestion.",
+      "Review serum potassium alone and infer the entire sodium and water balance from that value.",
+      "Review edema alone and disregard perfusion, venous pressure and diuretic response."
+    ],
+    "answer": 0,
+    "rationale": "The correct assessment follows both the vascular and renal consequences of RAAS activation. Single measurements of pressure, potassium or edema leave important components of the response unexamined.",
+    "reviewHref": "#neurohormonal-compensation"
+  },
+  "heart-failure-pathophysiology-048": {
+    "id": "heart-failure-pathophysiology-048",
+    "question": "Which reasoning hazard is most important to prevent with renin-angiotensin-aldosterone activation?",
+    "choices": [
+      "Interpreting all creatinine rise as simple underperfusion can miss venous-pressure-driven kidney dysfunction.",
+      "Considering venous congestion as well as arterial perfusion when kidney function worsens.",
+      "Reviewing the creatinine trend alongside decongestion and urine output.",
+      "Considering intrinsic kidney disease and nephrotoxic exposure as alternative contributors."
+    ],
+    "answer": 0,
+    "rationale": "The hazard is assuming that every creatinine rise means isolated low forward perfusion. Venous back pressure and other kidney contributors require consideration; the other choices are appropriate contextual assessments.",
+    "reviewHref": "#neurohormonal-compensation"
+  },
+  "heart-failure-pathophysiology-049": {
+    "id": "heart-failure-pathophysiology-049",
+    "question": "Which principle best characterizes natriuretic peptide system?",
+    "choices": [
+      "BNP and NT-proBNP reflect myocardial wall stress and support diagnosis and prognosis, while age, atrial fibrillation, kidney disease, obesity, acute timing, and therapy alter their values.",
+      "BNP and NT-proBNP diagnose heart failure independently of symptoms, imaging and clinical context.",
+      "Obesity, atrial fibrillation and kidney disease have no effect on natriuretic-peptide interpretation.",
+      "A single universal BNP or NT-proBNP cutoff has identical meaning in every acute and chronic presentation."
+    ],
+    "answer": 0,
+    "rationale": "BNP and NT-proBNP are contextual markers, not stand-alone diagnoses. Assay, patient characteristics and clinical setting affect interpretation; the peptide system also counteracts sodium retention and vasoconstriction.",
+    "reviewHref": "#neurohormonal-compensation"
+  },
+  "heart-failure-pathophysiology-050": {
+    "id": "heart-failure-pathophysiology-050",
+    "question": "Which clinical action best applies to natriuretic peptide system?",
+    "choices": [
+      "Interpret the peptide as contextual evidence and trend it only when the clinical question and assay are appropriate.",
+      "Use an isolated peptide result to replace the clinical and imaging evaluation.",
+      "Repeat peptide measurements without defining a clinical question or checking assay context.",
+      "Interpret every rise in BNP or NT-proBNP as definitive evidence of one cardiac cause."
+    ],
+    "answer": 0,
+    "rationale": "The test should answer a defined question and supplement the clinical assessment. Repeated or isolated values do not remove the need to consider assay, comorbidity, phenotype and trajectory.",
+    "reviewHref": "#neurohormonal-compensation"
+  },
+  "heart-failure-pathophysiology-051": {
+    "id": "heart-failure-pathophysiology-051",
+    "question": "Which assessment is most appropriate for natriuretic peptide system?",
+    "choices": [
+      "Review assay type, age, body size, rhythm, kidney function, acute versus chronic state, prior values, filling pressure, and neprilysin-inhibitor exposure.",
+      "Compare peptide values without checking assay, rhythm, kidney function or body size.",
+      "Interpret peptide levels solely from ejection fraction and omit the acute or chronic setting.",
+      "Ignore medication exposure and assume all peptide assays respond identically to treatment."
+    ],
+    "answer": 0,
+    "rationale": "Peptide interpretation requires the assay and clinical context, including kidney function, rhythm, body size and therapy. Ejection fraction alone does not account for those influences.",
+    "reviewHref": "#neurohormonal-compensation"
+  },
+  "heart-failure-pathophysiology-052": {
+    "id": "heart-failure-pathophysiology-052",
+    "question": "Which reasoning hazard is most important to prevent with natriuretic peptide system?",
+    "choices": [
+      "Using one universal cutoff across obesity, AF, kidney dysfunction, and acute disease can create false reassurance or false certainty.",
+      "Accounting for obesity and kidney dysfunction when interpreting a peptide value.",
+      "Distinguishing an acute dyspnea evaluation from a chronic follow-up assessment.",
+      "Checking rhythm and treatment context before attributing a peptide change to heart failure alone."
+    ],
+    "answer": 0,
+    "rationale": "The reasoning error is imposing one cutoff on different patients and settings. The other choices appropriately account for factors that change the meaning of a peptide result.",
+    "reviewHref": "#neurohormonal-compensation"
+  },
+  "heart-failure-pathophysiology-053": {
+    "id": "heart-failure-pathophysiology-053",
+    "question": "Which principle best characterizes ventricular remodeling?",
+    "choices": [
+      "Remodeling changes chamber size, shape, wall stress, extracellular matrix, myocyte biology, and electrical substrate in response to injury and chronic load.",
+      "Remodeling changes symptoms only, without altering myocardial cells or chamber structure.",
+      "Remodeling is limited to fluid accumulation and cannot affect the electrical substrate.",
+      "Remodeling always resolves completely when edema improves."
+    ],
+    "answer": 0,
+    "rationale": "Remodeling involves myocardial cells, matrix and chamber geometry, with mechanical and electrical consequences. Symptom or fluid improvement alone does not establish reversal of those changes.",
+    "reviewHref": "#neurohormonal-compensation"
+  },
+  "heart-failure-pathophysiology-054": {
+    "id": "heart-failure-pathophysiology-054",
+    "question": "Which clinical action best applies to ventricular remodeling?",
+    "choices": [
+      "Reassess structure and function when a clinical change or treatment decision warrants it, while treating the cause and neurohormonal drivers rather than only relieving symptoms.",
+      "Stop structural follow-up once congestion improves, regardless of the underlying cardiac cause.",
+      "Treat edema relief as proof that the myocardial substrate has normalized.",
+      "Assess symptoms alone and omit the cause, chamber function and neurohormonal drivers."
+    ],
+    "answer": 0,
+    "rationale": "Symptoms and structural remodeling are related but distinct. Reassessment is useful after a significant clinical change or for relevant treatment or device decisions; routine repeat imaging without a clinical indication is not recommended.",
+    "reviewHref": "#neurohormonal-compensation"
+  },
+  "heart-failure-pathophysiology-055": {
+    "id": "heart-failure-pathophysiology-055",
+    "question": "Which assessment is most appropriate for ventricular remodeling?",
+    "choices": [
+      "Review serial volumes, ejection fraction, strain, wall thickness, valve regurgitation, scar, rhythm, blood pressure, and clinical trajectory.",
+      "Assess current edema alone and infer that chamber structure is unchanged.",
+      "Compare symptom scores alone without considering serial cardiac structure or function.",
+      "Use one ejection-fraction value to exclude changes in chamber geometry, valves and rhythm."
+    ],
+    "answer": 0,
+    "rationale": "Remodeling is assessed through serial structural, functional and clinical information. Edema, symptom scores or one ejection fraction cannot characterize all chamber, valve and electrical changes.",
+    "reviewHref": "#neurohormonal-compensation"
+  },
+  "heart-failure-pathophysiology-056": {
+    "id": "heart-failure-pathophysiology-056",
+    "question": "Which reasoning hazard is most important to prevent with ventricular remodeling?",
+    "choices": [
+      "Assuming symptom improvement proves reversal of remodeling can miss persistent structural disease and its clinical consequences.",
+      "Reassessing structure and function when a significant clinical change or treatment decision warrants it.",
+      "Considering valve and rhythm consequences when evaluating remodeling.",
+      "Distinguishing decongestion from reversal of the myocardial substrate."
+    ],
+    "answer": 0,
+    "rationale": "The hazard is assuming that symptom improvement removes the need to assess the underlying structure. The other choices explicitly preserve that distinction.",
+    "reviewHref": "#neurohormonal-compensation"
+  },
+  "heart-failure-pathophysiology-109": {
+    "id": "heart-failure-pathophysiology-109",
+    "question": "Which principle best characterizes time-dependent compensation?",
+    "choices": [
+      "Sympathetic tone, vasoconstriction, and fluid retention can preserve pressure and perfusion briefly, while persistent activation raises oxygen demand, afterload, congestion, arrhythmia risk, fibrosis, and remodeling.",
+      "A response that preserves pressure initially cannot contribute to chronic myocardial injury.",
+      "Persistent sympathetic and RAAS activation are uniformly protective throughout heart failure.",
+      "Short-term compensation and chronic remodeling are unrelated processes."
+    ],
+    "answer": 0,
+    "rationale": "The book distinguishes a temporary hemodynamic benefit from chronic myocyte damage and remodeling. Persistent sodium retention, vascular load and catecholamine exposure can amplify disease rather than provide lasting protection.",
+    "reviewHref": "#neurohormonal-compensation"
+  },
+  "heart-failure-pathophysiology-110": {
+    "id": "heart-failure-pathophysiology-110",
+    "question": "Which clinical action best applies to time-dependent compensation?",
+    "choices": [
+      "For each compensatory response, separate its immediate hemodynamic benefit from its chronic myocardial and organ cost.",
+      "Judge each pathway only by whether it raises arterial pressure immediately.",
+      "Assume that every compensatory response has the same effects regardless of duration.",
+      "Ignore chronic congestion and remodeling when an immediate perfusion benefit is present."
+    ],
+    "answer": 0,
+    "rationale": "The appropriate action separates immediate benefit from later cost. Neither maintained pressure nor the label compensatory establishes that persistent activation is beneficial.",
+    "reviewHref": "#neurohormonal-compensation"
+  },
+  "heart-failure-pathophysiology-111": {
+    "id": "heart-failure-pathophysiology-111",
+    "question": "Which assessment is most appropriate for time-dependent compensation?",
+    "choices": [
+      "Review perfusion, blood pressure, heart rate, vascular tone, filling pressure, sodium balance, oxygen demand, rhythm, kidney function, and serial chamber remodeling.",
+      "Review blood pressure alone at one visit and omit congestion, rhythm and serial structure.",
+      "Assess current heart rate alone and infer that the long-term response is protective.",
+      "Review edema alone without considering vascular tone, perfusion or myocardial remodeling."
+    ],
+    "answer": 0,
+    "rationale": "Evaluating compensation over time requires both current hemodynamic signals and longitudinal organ and chamber information. One pressure, rate or edema measurement cannot show the complete trajectory.",
+    "reviewHref": "#neurohormonal-compensation"
+  },
+  "heart-failure-pathophysiology-112": {
+    "id": "heart-failure-pathophysiology-112",
+    "question": "Which reasoning hazard is most important to prevent with time-dependent compensation?",
+    "choices": [
+      "Calling a compensatory pathway uniformly beneficial or uniformly harmful ignores why it activates and how its consequences change with duration.",
+      "Separating the initial pressure benefit of RAAS from its chronic volume and remodeling costs.",
+      "Recognizing that a short-term sympathetic response can become harmful if it persists.",
+      "Considering duration and patient physiology when interpreting compensatory activation."
+    ],
+    "answer": 0,
+    "rationale": "The hazard is treating a pathway as uniformly helpful or harmful. The other choices appropriately distinguish the sensed disturbance, initial response and consequences of persistent activation.",
+    "reviewHref": "#neurohormonal-compensation"
+  },
+  "heart-failure-pathophysiology-113": {
+    "id": "heart-failure-pathophysiology-113",
+    "question": "Which principle best characterizes vasopressin and dilutional hyponatremia?",
+    "choices": [
+      "Nonosmotic vasopressin release increases collecting-duct free-water reabsorption and can contribute to dilutional hyponatremia in congested or advanced heart failure.",
+      "Low serum sodium proves total-body sodium depletion even when the patient is congested.",
+      "Congestion guarantees suppression of vasopressin and normal free-water excretion.",
+      "Vasopressin raises serum sodium primarily by increasing urinary water loss."
+    ],
+    "answer": 0,
+    "rationale": "Reduced effective circulation can sustain vasopressin despite edema. Collecting-duct water retention can dilute serum sodium even when total-body sodium is increased; low sodium is not automatically sodium depletion.",
+    "reviewHref": "#neurohormonal-compensation"
+  },
+  "heart-failure-pathophysiology-114": {
+    "id": "heart-failure-pathophysiology-114",
+    "question": "Which clinical action best applies to vasopressin and dilutional hyponatremia?",
+    "choices": [
+      "Interpret low sodium with volume status, osmolality context, kidney function, intake, diuretic exposure, congestion, and the overall trajectory before choosing a response.",
+      "Give sodium and fluid to every congested patient with low serum sodium before assessing the mechanism.",
+      "Classify low sodium from its numerical value alone, without volume or osmolality assessment.",
+      "Assume vasopressin is the only possible contributor and disregard diuretics, intake and kidney function."
+    ],
+    "answer": 0,
+    "rationale": "Confirm the clinical and osmolality context, then consider volume status and contributing factors. Heart failure can produce dilutional hyponatremia, but diuretics, intake and other causes must still be assessed before choosing a response.",
+    "reviewHref": "#neurohormonal-compensation"
+  },
+  "heart-failure-pathophysiology-115": {
+    "id": "heart-failure-pathophysiology-115",
+    "question": "Which assessment is most appropriate for vasopressin and dilutional hyponatremia?",
+    "choices": [
+      "Review sodium trend, glucose, volume status, urine output, kidney function, congestion, fluid intake, diuretics, neurologic symptoms, and other causes of hyponatremia.",
+      "Review sodium alone and omit glucose, neurologic symptoms and the direction of change.",
+      "Review edema alone and assume it excludes every alternative cause of low sodium.",
+      "Review ejection fraction alone to determine whether the sodium reflects water retention or sodium loss."
+    ],
+    "answer": 0,
+    "rationale": "The integrated assessment addresses severity, trajectory and mechanism. Sodium, edema or ejection fraction alone cannot distinguish impaired water excretion from other contributors to hyponatremia.",
+    "reviewHref": "#neurohormonal-compensation"
+  },
+  "heart-failure-pathophysiology-116": {
+    "id": "heart-failure-pathophysiology-116",
+    "question": "Which reasoning hazard is most important to prevent with vasopressin and dilutional hyponatremia?",
+    "choices": [
+      "Treating every low sodium value as sodium depletion can worsen congestion when excess free water is the dominant mechanism.",
+      "Considering that excess water can dilute sodium in a congested patient.",
+      "Reviewing volume status and osmolality before choosing a sodium-directed response.",
+      "Considering both diuretic-related sodium loss and heart-failure-related water retention."
+    ],
+    "answer": 0,
+    "rationale": "The hazard is equating a low sodium concentration with sodium depletion in every patient. The other choices appropriately consider dilution and competing mechanisms before treatment.",
+    "reviewHref": "#neurohormonal-compensation"
+  }
+};
+
+export const heartFailurePathophysiologyQuestionBank = generatedHeartFailurePathophysiologyQuestionBank.map((question) => reviewedNeurohormonalQuestions[question.id] ?? question);
