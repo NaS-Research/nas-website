@@ -120,7 +120,53 @@ const finalPrimaryQuestionOverrides = {
     "reviewHref": "#dexamethasone"
   }
 };
-export const acuteBacterialMeningitisQuestionBank = beforeFinalPrimaryQuestionBank.map(q => finalPrimaryQuestionOverrides[q.id] ?? q);
+const beforeHistoricalMeningitisQuestionBank = beforeFinalPrimaryQuestionBank.map(q => finalPrimaryQuestionOverrides[q.id] ?? q);
+
+const historicalMeningitisQuestionOverrides = {
+  "acute-bacterial-meningitis-027": {
+    "id": "acute-bacterial-meningitis-027",
+    "lesson": "diagnostic-sequence",
+    "question": "Which assessment is most appropriate for selective neuroimaging?",
+    "choices": [
+      "Assess focal deficit, pupils, severe consciousness impairment, seizure context, mass lesion history, and other local criteria",
+      "Order cranial imaging for every patient before lumbar puncture even when no risk features are present",
+      "Wait for cranial imaging before taking blood cultures, giving antibiotics, or stabilizing the patient",
+      "Use normal orientation alone to dismiss new focal neurological findings or abnormal pupillary reactions"
+    ],
+    "answer": 0,
+    "rationale": "Use clinical risk features to decide whether imaging is needed before lumbar puncture. Routine imaging is not recommended; normal orientation alone does not override focal findings, abnormal pupils, or a suspected mass lesion. When imaging is indicated or lumbar puncture is deferred, obtain blood cultures promptly and start treatment and stabilization without waiting for the scan. Interpret seizure context and other criteria using the applicable age-specific local pathway.",
+    "reviewHref": "#diagnostic-sequence"
+  },
+  "acute-bacterial-meningitis-059": {
+    "id": "acute-bacterial-meningitis-059",
+    "lesson": "host-pathogens",
+    "question": "Which assessment is most appropriate for neonatal pathway?",
+    "choices": [
+      "Review gestational and postnatal age, birth history, group B streptococcal and gram-negative risk, bilirubin, calcium infusions, and renal function",
+      "Choose the neonatal regimen from birth weight alone and omit gestational and postnatal age",
+      "Omit bilirubin and calcium-infusion review whenever the neonate has no fever",
+      "Assume a different IV line removes the ceftriaxone contraindication in a neonate who requires IV calcium"
+    ],
+    "answer": 0,
+    "rationale": "Use the neonatal pathway to assess age, likely pathogens, organ function and drug-specific hazards. Weight alone does not replace gestational and postnatal age review, and absence of fever does not remove ceftriaxone precautions. Its label contraindicates use in specified premature neonates, hyperbilirubinemic neonates, and neonates who require or are expected to require calcium-containing IV solutions. Using a different line does not remove that neonatal contraindication. The book separates neonatal empiric therapy from older age groups; use the current neonatal protocol for regimen selection.",
+    "reviewHref": "#host-pathogens"
+  },
+  "acute-bacterial-meningitis-143": {
+    "id": "acute-bacterial-meningitis-143",
+    "lesson": "support-complications",
+    "question": "At follow-up after meningitis, which assessment best evaluates functional recovery?",
+    "choices": [
+      "Assess hearing, cranial nerves, cognition, behavior, speech, mobility, daily function, family needs, and access",
+      "Limit the review to fever and antibiotic completion because infection clearance proves recovery",
+      "Assess only gross motor strength and omit hearing, cognition and communication",
+      "Use the absence of a spontaneous complaint as proof that sequelae are absent"
+    ],
+    "answer": 0,
+    "rationale": "WHO highlights hearing, focal neurologic and neuropsychological impairments, subtle after-effects, daily function, and coordinated family support. A review should examine relevant domains and access to ongoing care. Fever resolution, gross motor strength alone, and absence of an unsolicited complaint do not exclude hearing, cognitive, communication or participation difficulties.",
+    "reviewHref": "#support-complications"
+  }
+};
+export const acuteBacterialMeningitisQuestionBank = beforeHistoricalMeningitisQuestionBank.map(q => historicalMeningitisQuestionOverrides[q.id] ?? q);
 
 if (acuteBacterialMeningitisQuestionBank.length < 100) {
   throw new Error(`Acute bacterial meningitis question bank must contain at least 100 questions, found ${acuteBacterialMeningitisQuestionBank.length}.`);
