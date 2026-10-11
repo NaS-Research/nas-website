@@ -63,5 +63,38 @@ const cases = [
   ["integrated-cases", "A positive Lyme antibody result appears in a patient with low exposure probability and no objective manifestations. What is the best next step?", ["Reassess pretest probability, assay sequence, prior infection, and alternate causes", "Diagnose active disseminated disease automatically", "Begin indefinite antibiotics", "Use the result as proof of treatment failure"], "Testing is interpreted through clinical probability and the validated algorithm."]
 ].map((item, index) => ({ id: `lyme-${String(generated.length + index + 1).padStart(3, "0")}`, lesson: item[0], question: item[1], choices: item[2], answer: 0, rationale: item[3], reviewHref: `#${item[0]}` }));
 
-export const lymeDiseaseQuestionBank = [...generated, ...cases];
+const beforeFinalPrimaryQuestionBank =  [...generated, ...cases];
+
+const finalPrimaryQuestionOverrides = {
+  "lyme-062": {
+    "id": "lyme-062",
+    "lesson": "localized-treatment",
+    "question": "An adult prescribed oral doxycycline for localized Lyme disease routinely takes it together with an iron supplement and a calcium-containing antacid. Which counseling action is appropriate?",
+    "choices": [
+      "Review the exact products and arrange appropriate separation from doxycycline to limit impaired absorption.",
+      "Encourage simultaneous iron and antacid dosing because both enhance doxycycline absorption.",
+      "Advise that only prescription medicines need interaction review; supplements are irrelevant.",
+      "Stop all nutrition during the doxycycline course instead of reviewing the interacting products."
+    ],
+    "answer": 0,
+    "rationale": "Iron and calcium-containing antacids can impair doxycycline absorption. Product-specific separation and a complete medication/supplement review address the interaction. Supplements are clinically relevant, and stopping food is not an appropriate substitute for scheduling interacting products. This question does not prescribe a universal hold interval for every tube feed or ban ordinary food and milk.",
+    "reviewHref": "#localized-treatment"
+  },
+  "lyme-063": {
+    "id": "lyme-063",
+    "lesson": "localized-treatment",
+    "question": "A patient prescribed doxycycline tablets for localized Lyme disease swallows each dose with a sip of water immediately before lying down. Which counseling is appropriate?",
+    "choices": [
+      "Take the tablet with adequate water and remain upright after the dose to reduce esophageal irritation.",
+      "Continue taking the tablet immediately before lying down because posture cannot affect esophageal injury risk.",
+      "Avoid water with the tablet to improve absorption.",
+      "Stop all food during treatment because fasting prevents tablet-related esophageal injury."
+    ],
+    "answer": 0,
+    "rationale": "Doxycycline tablets and capsules can cause esophagitis and esophageal ulceration, particularly when taken immediately before bed. The reviewed label advises adequate fluids; the supplied book advises 8 ounces of water and remaining upright for at least 30 minutes. This is an esophageal-safety intervention, distinct from mineral interactions. Fasting or avoiding water does not address the risk.",
+    "reviewHref": "#localized-treatment"
+  }
+};
+export const lymeDiseaseQuestionBank = beforeFinalPrimaryQuestionBank.map(q => finalPrimaryQuestionOverrides[q.id] ?? q);
+
 if (lymeDiseaseQuestionBank.length < 100) throw new Error(`Lyme disease question bank must contain at least 100 questions, found ${lymeDiseaseQuestionBank.length}.`);

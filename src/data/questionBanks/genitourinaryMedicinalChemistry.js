@@ -57,7 +57,7 @@ function distractors(index, field) {
   return [5, 13, 21].map((offset) => concepts[(index + offset) % concepts.length][field]);
 }
 
-export const genitourinaryMedicinalChemistryQuestionBank = concepts.flatMap((concept, conceptIndex) =>
+const beforeFinalPrimaryQuestionBank =  concepts.flatMap((concept, conceptIndex) =>
   dimensions.map(([field, prefix], dimensionIndex) => ({
     id: `genitourinary-medchem-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`,
     concept: concept.name,
@@ -69,3 +69,22 @@ export const genitourinaryMedicinalChemistryQuestionBank = concepts.flatMap((con
     reviewHref: `#${concept.lesson}`,
   })),
 );
+
+const finalPrimaryQuestionOverrides = {
+  "genitourinary-medchem-123": {
+    "id": "genitourinary-medchem-123",
+    "concept": "extended-release dosage form integrity",
+    "difficulty": "Advanced",
+    "prompt": "A patient prescribed oxybutynin extended-release tablets develops difficulty swallowing and needs medication through a nasogastric tube. Which formulation decision is appropriate?",
+    "choices": [
+      "Review an appropriate alternative formulation and regimen; do not crush, chew, or divide the oxybutynin ER tablet.",
+      "Crush the oxybutynin ER tablet because an enteral tube preserves its extended-release behavior.",
+      "Divide the oxybutynin ER tablet into quarters because every ER tablet may be split.",
+      "Replace it with the same milligram dose and frequency of any immediate-release product without reviewing the regimen."
+    ],
+    "answer": 0,
+    "explanation": "The reviewed oxybutynin ER label requires swallowing the tablet whole with liquids and prohibits chewing, dividing, or crushing. A swallowing or tube-access problem therefore requires product-specific formulation and regimen review. Tube delivery does not preserve an altered tablet's release design, and ER instructions cannot be generalized across products. An alternative formulation also requires review of its dose and frequency rather than an automatic substitution.",
+    "reviewHref": "#product-engineering"
+  }
+};
+export const genitourinaryMedicinalChemistryQuestionBank = beforeFinalPrimaryQuestionBank.map(q => finalPrimaryQuestionOverrides[q.id] ?? q);

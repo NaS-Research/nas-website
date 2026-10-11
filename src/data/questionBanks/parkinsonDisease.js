@@ -74,7 +74,7 @@ const distractors = [
   "Choose a product by class name without reviewing formulation, interactions, or patient capability.",
 ];
 
-export const parkinsonDiseaseQuestionBank = concepts.flatMap(([slug, principle, action, hazard], i) =>
+const beforeFinalPrimaryQuestionBank =  concepts.flatMap(([slug, principle, action, hazard], i) =>
   dimensions.map(([dimension, stem, type], j) => {
     const correct = [principle, action, hazard][type];
     const choices = dimension === "hazard"
@@ -91,3 +91,63 @@ export const parkinsonDiseaseQuestionBank = concepts.flatMap(([slug, principle, 
     };
   }),
 );
+
+const finalPrimaryQuestionOverrides = {
+  "parkinson-disease-081": {
+    "id": "parkinson-disease-081",
+    "question": "A person with Parkinson disease reports coughing during meals, reduced intake, and difficulty swallowing tablets. Which interpretation is appropriate?",
+    "choices": [
+      "Possible dysphagia threatens swallowing safety, nutrition, and medication delivery and needs assessment.",
+      "Swallowing difficulty is irrelevant to medication delivery if the prescribed dose has not changed.",
+      "Coughing during meals proves that nutrition and aspiration risk need no review.",
+      "All extended-release tablets should be crushed automatically to solve swallowing difficulty."
+    ],
+    "answer": 0,
+    "rationale": "Dysphagia is a recognized Parkinson symptom in the supplied book. Swallowing problems can compromise eating and safe medication administration; NICE recommends speech and language therapy for people with Parkinson disease experiencing swallowing difficulty. Assessment should connect swallowing safety, nutritional intake, and the exact dosage form. A prescribed dose alone does not prove reliable delivery, and ER products cannot all be crushed.",
+    "reviewHref": "#autonomic",
+    "difficulty": "foundational"
+  },
+  "parkinson-disease-082": {
+    "id": "parkinson-disease-082",
+    "question": "A person with Parkinson disease develops persistent difficulty swallowing food and medicines. Which care plan is appropriate?",
+    "choices": [
+      "Offer assessment and therapy by a speech and language therapist experienced in Parkinson disease, with nutrition and medication-formulation review.",
+      "Wait for substantial weight loss before addressing the reported swallowing difficulty.",
+      "Crush every medicine without reviewing its formulation or the swallowing assessment.",
+      "Treat swallowing difficulty only by increasing dopaminergic doses without evaluating the symptom."
+    ],
+    "answer": 0,
+    "rationale": "NICE recommends offering speech and language therapy to people with Parkinson disease experiencing swallowing problems, including strategies to improve swallowing safety and efficiency. Nutrition and product-specific medication review connect the symptom to intake and delivery. Waiting for marked weight loss, indiscriminate crushing, or reflexive dose escalation does not replace that assessment.",
+    "reviewHref": "#autonomic",
+    "difficulty": "foundational"
+  },
+  "parkinson-disease-083": {
+    "id": "parkinson-disease-083",
+    "question": "A person with Parkinson disease and swallowing difficulty is eating less and asks whether eliminating dietary protein will improve medication response. Which nutrition advice is appropriate?",
+    "choices": [
+      "Consider specialist dietitian review and protect total daily protein intake while individualizing the nutrition and medication plan.",
+      "Eliminate total daily protein as a routine recommendation for every person with Parkinson disease.",
+      "Assume reduced intake is harmless and defer nutrition review until medication is stopped.",
+      "Use a protein-redistribution diet for every person with Parkinson disease regardless of levodopa use or motor fluctuations."
+    ],
+    "answer": 0,
+    "rationale": "NICE advises considering specialist dietitian referral and avoiding a reduction in total daily protein consumption. A protein-redistribution diet is a separate discussion for people taking levodopa who experience motor fluctuations; it is not a routine instruction for everyone, and the guideline notes low-quality evidence for protein diets. The swallowing problem also requires appropriate assessment so the nutrition plan is feasible and safe.",
+    "reviewHref": "#autonomic",
+    "difficulty": "advanced"
+  },
+  "parkinson-disease-084": {
+    "id": "parkinson-disease-084",
+    "question": "A patient with swallowing difficulty takes the reviewed carbidopa/levodopa extended-release tablet product, whose label permits whole or half tablets. Which proposed action should be corrected?",
+    "choices": [
+      "Crush the extended-release tablet into powder to bypass the swallowing problem.",
+      "If appropriate for the prescribed dose and swallowing plan, use a label-permitted half tablet without chewing or crushing.",
+      "Ask the pharmacist and treating team to review an appropriate alternative formulation if the tablet cannot be swallowed safely.",
+      "Arrange assessment of the swallowing difficulty before choosing the medication-delivery plan."
+    ],
+    "answer": 0,
+    "rationale": "This carbidopa/levodopa ER tablet label permits whole or half tablets to be swallowed without chewing or crushing; the supplied book gives the same distinction. Crushing is therefore the inappropriate action. Permission to halve this product does not mean every ER tablet can be divided. A half tablet still requires a suitable prescribed dose and safe swallowing, and an alternative formulation needs an individualized regimen review.",
+    "reviewHref": "#autonomic",
+    "difficulty": "advanced"
+  }
+};
+export const parkinsonDiseaseQuestionBank = beforeFinalPrimaryQuestionBank.map(q => finalPrimaryQuestionOverrides[q.id] ?? q);

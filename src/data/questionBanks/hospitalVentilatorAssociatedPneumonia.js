@@ -66,5 +66,24 @@ const cases=[
   ["duration-deescalation","A patient with VAP improves, source control is adequate, and no complication is found. What duration is standard?",["Seven days with individual adjustment based on response","Fourteen days for every organism","One dose","Continue until the radiograph is completely normal"],"Seven days is recommended for most improving VAP."],
   ["prevention-system","Which updated oral-care practice belongs in an adult VAP prevention bundle?",["Daily toothbrushing without routine chlorhexidine","Routine chlorhexidine for every ventilated adult","No oral care","Prophylactic systemic antibiotics"],"The 2022 prevention update supports toothbrushing and advises against routine chlorhexidine."],
 ].map((item,index)=>({id:`hospital-ventilator-associated-pneumonia-${String(generated.length+index+1).padStart(3,"0")}`,lesson:item[0],question:item[1],choices:item[2],answer:0,rationale:item[3],reviewHref:`#${item[0]}`}));
-export const hospitalVentilatorAssociatedPneumoniaQuestionBank=[...generated,...cases];
+const beforeFinalPrimaryQuestionBank = [...generated,...cases];
+
+const finalPrimaryQuestionOverrides = {
+  "hospital-ventilator-associated-pneumonia-157": {
+    "id": "hospital-ventilator-associated-pneumonia-157",
+    "lesson": "prevention-system",
+    "question": "A mechanically ventilated adult is eligible for enteral nutrition. The ventilator circuit is clean and functioning, and its manufacturer does not require a scheduled change. Which prevention plan is supported?",
+    "choices": [
+      "Use early enteral nutrition rather than default parenteral nutrition, and change the circuit when visibly soiled or malfunctioning or as the manufacturer instructs.",
+      "Use parenteral nutrition solely because mechanical ventilation makes enteral nutrition inappropriate.",
+      "Replace a clean functioning circuit every day because fixed daily changes lower VAP rates.",
+      "Delay tolerated enteral nutrition solely until mechanical ventilation ends."
+    ],
+    "answer": 0,
+    "rationale": "The 2022 SHEA guidance supports early enteral rather than parenteral nutrition in eligible adults; early enteral nutrition is associated with less nosocomial pneumonia. Circuit changes only when visibly soiled or malfunctioning reduce costs compared with fixed scheduled changes, without a demonstrated difference in VAP rates or outcomes. Follow different manufacturer instructions when applicable. Enteral eligibility still requires clinical assessment; this is not a directive to feed despite a contraindication.",
+    "reviewHref": "#prevention-system"
+  }
+};
+export const hospitalVentilatorAssociatedPneumoniaQuestionBank = beforeFinalPrimaryQuestionBank.map(q => finalPrimaryQuestionOverrides[q.id] ?? q);
+
 if(hospitalVentilatorAssociatedPneumoniaQuestionBank.length<100)throw new Error(`Hospital and ventilator-associated pneumonia question bank must contain at least 100 questions, found ${hospitalVentilatorAssociatedPneumoniaQuestionBank.length}.`);

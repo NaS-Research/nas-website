@@ -101,7 +101,26 @@ const ceftriaxoneNeonatalQuestionOverrides = {
     "reviewHref": "#dosing-safety"
   }
 };
-export const acuteBacterialMeningitisQuestionBank = beforeCeftriaxoneNeonatalQuestionBank.map(q => ceftriaxoneNeonatalQuestionOverrides[q.id] ?? q);
+const beforeFinalPrimaryQuestionBank =  beforeCeftriaxoneNeonatalQuestionBank.map(q => ceftriaxoneNeonatalQuestionOverrides[q.id] ?? q);
+
+
+const finalPrimaryQuestionOverrides = {
+  "acute-bacterial-meningitis-095": {
+    "id": "acute-bacterial-meningitis-095",
+    "lesson": "dexamethasone",
+    "question": "A hospitalized adult receiving adjunctive dexamethasone for bacterial meningitis has diabetes, a prior peptic ulcer, and concurrent warfarin and NSAID use. Which medication-safety assessment is appropriate?",
+    "choices": [
+      "Review glucose control, gastrointestinal bleeding risk, and anticoagulation monitoring while assessing mental-status changes in clinical context.",
+      "Assume a short corticosteroid course cannot affect glucose and omit glucose review.",
+      "Ignore the NSAID and ulcer history because corticosteroids cannot contribute to gastrointestinal bleeding risk.",
+      "Assume warfarin monitoring is unnecessary during corticosteroid therapy."
+    ],
+    "answer": 0,
+    "rationale": "Systemic dexamethasone can increase glucose and antidiabetic treatment requirements. Its label reports peptic ulceration with hemorrhage or perforation, increased gastrointestinal adverse effects with NSAIDs, and variable effects with warfarin that warrant coagulation monitoring. Psychiatric effects are also possible, but new agitation or altered mental status requires clinical assessment rather than automatic attribution to the steroid. This safety review does not establish a new meningitis dose, route, or timing recommendation.",
+    "reviewHref": "#dexamethasone"
+  }
+};
+export const acuteBacterialMeningitisQuestionBank = beforeFinalPrimaryQuestionBank.map(q => finalPrimaryQuestionOverrides[q.id] ?? q);
 
 if (acuteBacterialMeningitisQuestionBank.length < 100) {
   throw new Error(`Acute bacterial meningitis question bank must contain at least 100 questions, found ${acuteBacterialMeningitisQuestionBank.length}.`);
