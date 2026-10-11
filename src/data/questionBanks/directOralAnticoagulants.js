@@ -105,4 +105,34 @@ const foodAndCapsuleQuestionRepairs = {
     "rationale": "Check swallowing and the actual route, original moisture-protective packaging and dates. Pradaxa capsule bottles have a four-month use period after opening; blister packs use the date on the pack. Do not move capsules into a pill organizer or manipulate them for an NG tube. Open only one bottle at a time, and verify an appropriate alternative when the capsule cannot be used as directed."
   }
 };
-export const directOralAnticoagulantsQuestionBank = generatedDirectOralAnticoagulantsQuestionBank.map((question) => ({ ...question, ...(foodAndCapsuleQuestionRepairs[question.id] || {}) }));
+const beforeHistoricalAnticoagulantQuestionBank = generatedDirectOralAnticoagulantsQuestionBank.map((question) => ({ ...question, ...(foodAndCapsuleQuestionRepairs[question.id] || {}) }));
+
+const historicalAnticoagulantQuestionOverrides = {
+  "direct-oral-anticoagulants-007": {
+    "id": "direct-oral-anticoagulants-007",
+    "question": "An adult taking dabigatran capsules has declining kidney function before a planned procedure. Which assessment best addresses possible residual anticoagulant effect?",
+    "choices": [
+      "Review creatinine clearance, P-gp drugs, last dose, dyspepsia, swallowing, storage, bleeding, and planned procedures.",
+      "Use the INR alone to quantify dabigatran effect, as for warfarin.",
+      "Open the dabigatran capsule for feeding-tube delivery without reviewing formulation-related exposure.",
+      "Choose procedure timing from the next scheduled dose alone, without reviewing the last dose or kidney function."
+    ],
+    "answer": 0,
+    "rationale": "Dabigatran directly inhibits thrombin and is substantially cleared by the kidneys. Renal function, P-gp medicines, the last dose, bleeding and procedure timing inform assessment of residual effect. INR is not the appropriate warfarin-like measure of dabigatran activity. Capsules must be swallowed whole; opening them changes exposure. Assessment must account for the specific formulation and indication.",
+    "reviewHref": "#doac-targets-and-clinical-role"
+  },
+  "direct-oral-anticoagulants-099": {
+    "id": "direct-oral-anticoagulants-099",
+    "question": "An adult taking dabigatran has life-threatening bleeding and is being assessed for urgent idarucizumab reversal. Which assessment best supports this decision and follow-up?",
+    "choices": [
+      "Review last dabigatran dose, kidney function, thrombin-sensitive assays when available, bleeding or procedure urgency, thrombosis indication, and possible rebound.",
+      "Use INR alone to quantify dabigatran and decide whether urgent reversal is needed.",
+      "Assume idarucizumab reverses factor Xa inhibitors as well as dabigatran.",
+      "Prioritize capsule-storage and feeding-tube counseling while delaying assessment of life-threatening bleeding."
+    ],
+    "answer": 0,
+    "rationale": "Idarucizumab specifically binds dabigatran and is indicated when reversal is needed for life-threatening or uncontrolled bleeding or an emergency procedure. Review exposure, kidney function, urgency and thrombin-sensitive assays when available without delaying emergency care. Anticoagulant effect can recur in some patients; reassess clinical bleeding and relevant tests, and restart appropriate anticoagulation when medically appropriate because the underlying thrombotic risk remains.",
+    "reviewHref": "#major-bleeding-and-reversal"
+  }
+};
+export const directOralAnticoagulantsQuestionBank = beforeHistoricalAnticoagulantQuestionBank.map(q => historicalAnticoagulantQuestionOverrides[q.id] ?? q);

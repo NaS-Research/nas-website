@@ -1,0 +1,648 @@
+{
+  "status": "five_question_candidate_structural_pass_build_native_public_pending",
+  "questionIds": [
+    "warfarin-management-011",
+    "warfarin-management-035",
+    "warfarin-management-103",
+    "direct-oral-anticoagulants-007",
+    "direct-oral-anticoagulants-099"
+  ],
+  "wholeQuestionsReviewed": 5,
+  "choicesReviewed": 20,
+  "wholeQuestionBindings": [
+    {
+      "id": "warfarin-management-011",
+      "wholeQuestion": {
+        "id": "warfarin-management-011",
+        "question": "An adult develops painful, purpuric skin lesions shortly after starting warfarin. Which assessment most directly addresses suspected warfarin-associated skin necrosis?",
+        "choices": [
+          "Review timing after initiation, protein C or S deficiency, dose and overlap history, skin pain or discoloration, and thrombosis.",
+          "Review VTE date, parenteral start, warfarin start, INR sequence, bleeding, platelets, kidney function, adherence, and discharge access.",
+          "Review greens, oils, nutrition shakes, enteral feeds, supplements, appetite, weight loss, diarrhea, alcohol, and INR trend.",
+          "Review hemodynamics, site, INR, hemoglobin, platelets, fibrinogen, last dose, indication, thrombosis risk, imaging, and procedural control."
+        ],
+        "answer": 0,
+        "rationale": "Early reduction of protein C before slower procoagulant factors are fully reduced can contribute to a transient prothrombotic state. Protein C or S deficiency and initiation history are relevant to suspected skin necrosis. These lesions require urgent clinical assessment; labeling calls for discontinuing warfarin if necrosis occurs and considering alternative anticoagulation when needed.",
+        "reviewHref": "#vitamin-k-cycle-and-pharmacology"
+      },
+      "wholeObjectSHA256": "7afe9e80914d0edbd203e96be8f016b0228e1c387dd7aa9e5b7b0218036cd1f3",
+      "semanticSHA256": "7afe9e80914d0edbd203e96be8f016b0228e1c387dd7aa9e5b7b0218036cd1f3",
+      "sourcePages": [
+        "book PDF516",
+        "warfarin-label PDF10,11,19"
+      ],
+      "choiceReview": [
+        {
+          "index": 0,
+          "text": "Review timing after initiation, protein C or S deficiency, dose and overlap history, skin pain or discoloration, and thrombosis.",
+          "isKeyed": true,
+          "assessment": "The key targets early initiation, deficiency and characteristic lesions; labeling supports necrosis assessment.",
+          "sourcePages": [
+            "book PDF516",
+            "warfarin-label PDF10,11,19"
+          ]
+        },
+        {
+          "index": 1,
+          "text": "Review VTE date, parenteral start, warfarin start, INR sequence, bleeding, platelets, kidney function, adherence, and discharge access.",
+          "isKeyed": false,
+          "assessment": "Routine VTE overlap and discharge review is relevant in VTE care but omits the targeted skin findings and deficiency assessment.",
+          "sourcePages": [
+            "book PDF516",
+            "warfarin-label PDF10,11,19"
+          ]
+        },
+        {
+          "index": 2,
+          "text": "Review greens, oils, nutrition shakes, enteral feeds, supplements, appetite, weight loss, diarrhea, alcohol, and INR trend.",
+          "isKeyed": false,
+          "assessment": "Diet and INR review addresses variation in anticoagulation rather than the suspected necrosis mechanism.",
+          "sourcePages": [
+            "book PDF516",
+            "warfarin-label PDF10,11,19"
+          ]
+        },
+        {
+          "index": 3,
+          "text": "Review hemodynamics, site, INR, hemoglobin, platelets, fibrinogen, last dose, indication, thrombosis risk, imaging, and procedural control.",
+          "isKeyed": false,
+          "assessment": "Bleeding and source-control assessment does not directly address the characteristic initiation-associated skin syndrome.",
+          "sourcePages": [
+            "book PDF516",
+            "warfarin-label PDF10,11,19"
+          ]
+        }
+      ],
+      "stableIdOrderKeyAndReviewHrefPreserved": true
+    },
+    {
+      "id": "warfarin-management-035",
+      "wholeQuestion": {
+        "id": "warfarin-management-035",
+        "question": "An adult with acute heparin-induced thrombocytopenia (HIT) has recently received warfarin. Which reassessment most directly addresses this dangerous initiation setting?",
+        "choices": [
+          "Review 4Ts probability, platelets, thrombosis, skin findings, INR, warfarin exposure, kidney and liver function, bleeding, and alternative agent.",
+          "Review greens, oils, nutrition shakes, enteral feeds, supplements, appetite, weight loss, diarrhea, alcohol, and INR trend.",
+          "Review hemodynamics, site, INR, hemoglobin, platelets, fibrinogen, last dose, indication, thrombosis risk, imaging, and procedural control.",
+          "Review CYP2C9 and VKORC1 results, tested alleles, ancestry, age, interacting drugs, liver function, nutrition, indication, initial dose, and INR trajectory."
+        ],
+        "answer": 0,
+        "rationale": "Warfarin initiation during acute HIT can worsen thrombosis through early protein C depletion. Warfarin should not be initiated before platelet recovery; acute HIT requires an appropriate non-heparin anticoagulation plan. Review the probability and severity of HIT, platelet recovery, thrombosis, recent warfarin exposure, organ function and bleeding when selecting and reassessing that plan.",
+        "reviewHref": "#warfarin-indications-and-initiation"
+      },
+      "wholeObjectSHA256": "a8af434e145371bc9d4f2e95ba45397ed7fb01cdfe5783935929ba518441b670",
+      "semanticSHA256": "a8af434e145371bc9d4f2e95ba45397ed7fb01cdfe5783935929ba518441b670",
+      "sourcePages": [
+        "book PDF516",
+        "warfarin-label PDF10,19",
+        "ash-hit PDF2,3"
+      ],
+      "choiceReview": [
+        {
+          "index": 0,
+          "text": "Review 4Ts probability, platelets, thrombosis, skin findings, INR, warfarin exposure, kidney and liver function, bleeding, and alternative agent.",
+          "isKeyed": true,
+          "assessment": "The key includes HIT probability, platelets, thrombosis, exposure, organ function and an alternative agent.",
+          "sourcePages": [
+            "book PDF516",
+            "warfarin-label PDF10,19",
+            "ash-hit PDF2,3"
+          ]
+        },
+        {
+          "index": 1,
+          "text": "Review greens, oils, nutrition shakes, enteral feeds, supplements, appetite, weight loss, diarrhea, alcohol, and INR trend.",
+          "isKeyed": false,
+          "assessment": "Nutrition and INR review does not address acute HIT and the need for non-heparin therapy.",
+          "sourcePages": [
+            "book PDF516",
+            "warfarin-label PDF10,19",
+            "ash-hit PDF2,3"
+          ]
+        },
+        {
+          "index": 2,
+          "text": "Review hemodynamics, site, INR, hemoglobin, platelets, fibrinogen, last dose, indication, thrombosis risk, imaging, and procedural control.",
+          "isKeyed": false,
+          "assessment": "Bleeding assessment alone omits HIT probability, platelet recovery and alternative anticoagulation.",
+          "sourcePages": [
+            "book PDF516",
+            "warfarin-label PDF10,19",
+            "ash-hit PDF2,3"
+          ]
+        },
+        {
+          "index": 3,
+          "text": "Review CYP2C9 and VKORC1 results, tested alleles, ancestry, age, interacting drugs, liver function, nutrition, indication, initial dose, and INR trajectory.",
+          "isKeyed": false,
+          "assessment": "Genotype-guided dose planning cannot resolve the acute HIT contraindication to initiation.",
+          "sourcePages": [
+            "book PDF516",
+            "warfarin-label PDF10,19",
+            "ash-hit PDF2,3"
+          ]
+        }
+      ],
+      "stableIdOrderKeyAndReviewHrefPreserved": true
+    },
+    {
+      "id": "warfarin-management-103",
+      "wholeQuestion": {
+        "id": "warfarin-management-103",
+        "question": "An adult has CYP2C9 and VKORC1 results already available before starting warfarin. Which assessment most directly integrates these results into dose planning?",
+        "choices": [
+          "Review CYP2C9 and VKORC1 results, tested alleles, ancestry, age, interacting drugs, liver function, nutrition, indication, initial dose, and INR trajectory.",
+          "Review indication, start date, INR, overlap duration, factor-turnover timing, thrombosis status, bleeding, and adherence.",
+          "Review VTE date, parenteral start, warfarin start, INR sequence, bleeding, platelets, kidney function, adherence, and discharge access.",
+          "Review greens, oils, nutrition shakes, enteral feeds, supplements, appetite, weight loss, diarrhea, alcohol, and INR trend."
+        ],
+        "answer": 0,
+        "rationale": "CYP2C9 variants can affect warfarin clearance, while VKORC1 variation can affect dose sensitivity. Interpret the tested alleles and ancestry-related coverage with clinical factors and serial INR measurements. Available genotype results do not replace INR-guided management, guarantee better outcomes, or by themselves establish a need for routine genetic testing.",
+        "reviewHref": "#warfarin-indications-and-initiation"
+      },
+      "wholeObjectSHA256": "88fb75a038650ea5c0bd2e423522878d5324121a1dea15148850bf8f4cad823f",
+      "semanticSHA256": "88fb75a038650ea5c0bd2e423522878d5324121a1dea15148850bf8f4cad823f",
+      "sourcePages": [
+        "book PDF516",
+        "warfarin-label PDF6,19",
+        "cpic-warfarin PDF2,4,7"
+      ],
+      "choiceReview": [
+        {
+          "index": 0,
+          "text": "Review CYP2C9 and VKORC1 results, tested alleles, ancestry, age, interacting drugs, liver function, nutrition, indication, initial dose, and INR trajectory.",
+          "isKeyed": true,
+          "assessment": "The key integrates the available results with tested alleles, ancestry coverage, clinical variables and INR trajectory.",
+          "sourcePages": [
+            "book PDF516",
+            "warfarin-label PDF6,19",
+            "cpic-warfarin PDF2,4,7"
+          ]
+        },
+        {
+          "index": 1,
+          "text": "Review indication, start date, INR, overlap duration, factor-turnover timing, thrombosis status, bleeding, and adherence.",
+          "isKeyed": false,
+          "assessment": "General initiation and factor turnover do not interpret available CYP2C9 and VKORC1 results.",
+          "sourcePages": [
+            "book PDF516",
+            "warfarin-label PDF6,19",
+            "cpic-warfarin PDF2,4,7"
+          ]
+        },
+        {
+          "index": 2,
+          "text": "Review VTE date, parenteral start, warfarin start, INR sequence, bleeding, platelets, kidney function, adherence, and discharge access.",
+          "isKeyed": false,
+          "assessment": "VTE overlap and access review does not integrate these genotype results.",
+          "sourcePages": [
+            "book PDF516",
+            "warfarin-label PDF6,19",
+            "cpic-warfarin PDF2,4,7"
+          ]
+        },
+        {
+          "index": 3,
+          "text": "Review greens, oils, nutrition shakes, enteral feeds, supplements, appetite, weight loss, diarrhea, alcohol, and INR trend.",
+          "isKeyed": false,
+          "assessment": "Nutrition and INR monitoring remain useful but do not alone interpret the available genotype.",
+          "sourcePages": [
+            "book PDF516",
+            "warfarin-label PDF6,19",
+            "cpic-warfarin PDF2,4,7"
+          ]
+        }
+      ],
+      "stableIdOrderKeyAndReviewHrefPreserved": true
+    },
+    {
+      "id": "direct-oral-anticoagulants-007",
+      "wholeQuestion": {
+        "id": "direct-oral-anticoagulants-007",
+        "question": "An adult taking dabigatran capsules has declining kidney function before a planned procedure. Which assessment best addresses possible residual anticoagulant effect?",
+        "choices": [
+          "Review creatinine clearance, P-gp drugs, last dose, dyspepsia, swallowing, storage, bleeding, and planned procedures.",
+          "Use the INR alone to quantify dabigatran effect, as for warfarin.",
+          "Open the dabigatran capsule for feeding-tube delivery without reviewing formulation-related exposure.",
+          "Choose procedure timing from the next scheduled dose alone, without reviewing the last dose or kidney function."
+        ],
+        "answer": 0,
+        "rationale": "Dabigatran directly inhibits thrombin and is substantially cleared by the kidneys. Renal function, P-gp medicines, the last dose, bleeding and procedure timing inform assessment of residual effect. INR is not the appropriate warfarin-like measure of dabigatran activity. Capsules must be swallowed whole; opening them changes exposure. Assessment must account for the specific formulation and indication.",
+        "reviewHref": "#doac-targets-and-clinical-role"
+      },
+      "wholeObjectSHA256": "3a5e06d6c46e343fc810ccbb37ef4175457aee21f3f5b48404d7fbc47ead7df4",
+      "semanticSHA256": "3a5e06d6c46e343fc810ccbb37ef4175457aee21f3f5b48404d7fbc47ead7df4",
+      "sourcePages": [
+        "book PDF515,523",
+        "pradaxa-label PDF5,6,13,16,17,29,30"
+      ],
+      "choiceReview": [
+        {
+          "index": 0,
+          "text": "Review creatinine clearance, P-gp drugs, last dose, dyspepsia, swallowing, storage, bleeding, and planned procedures.",
+          "isKeyed": true,
+          "assessment": "The key includes renal function, P-gp drugs, last dose, bleeding and procedure timing, plus capsule administration concerns.",
+          "sourcePages": [
+            "book PDF515,523",
+            "pradaxa-label PDF5,6,13,16,17,29,30"
+          ]
+        },
+        {
+          "index": 1,
+          "text": "Use the INR alone to quantify dabigatran effect, as for warfarin.",
+          "isKeyed": false,
+          "assessment": "Incorrect: labeling specifies appropriate thrombin-sensitive assessment rather than INR as for warfarin.",
+          "sourcePages": [
+            "book PDF515,523",
+            "pradaxa-label PDF5,6,13,16,17,29,30"
+          ]
+        },
+        {
+          "index": 2,
+          "text": "Open the dabigatran capsule for feeding-tube delivery without reviewing formulation-related exposure.",
+          "isKeyed": false,
+          "assessment": "Incorrect: capsules must remain intact; opening increases exposure.",
+          "sourcePages": [
+            "book PDF515,523",
+            "pradaxa-label PDF5,6,13,16,17,29,30"
+          ]
+        },
+        {
+          "index": 3,
+          "text": "Choose procedure timing from the next scheduled dose alone, without reviewing the last dose or kidney function.",
+          "isKeyed": false,
+          "assessment": "Incorrect: last dose and kidney function are relevant to residual effect and procedure planning.",
+          "sourcePages": [
+            "book PDF515,523",
+            "pradaxa-label PDF5,6,13,16,17,29,30"
+          ]
+        }
+      ],
+      "stableIdOrderKeyAndReviewHrefPreserved": true
+    },
+    {
+      "id": "direct-oral-anticoagulants-099",
+      "wholeQuestion": {
+        "id": "direct-oral-anticoagulants-099",
+        "question": "An adult taking dabigatran has life-threatening bleeding and is being assessed for urgent idarucizumab reversal. Which assessment best supports this decision and follow-up?",
+        "choices": [
+          "Review last dabigatran dose, kidney function, thrombin-sensitive assays when available, bleeding or procedure urgency, thrombosis indication, and possible rebound.",
+          "Use INR alone to quantify dabigatran and decide whether urgent reversal is needed.",
+          "Assume idarucizumab reverses factor Xa inhibitors as well as dabigatran.",
+          "Prioritize capsule-storage and feeding-tube counseling while delaying assessment of life-threatening bleeding."
+        ],
+        "answer": 0,
+        "rationale": "Idarucizumab specifically binds dabigatran and is indicated when reversal is needed for life-threatening or uncontrolled bleeding or an emergency procedure. Review exposure, kidney function, urgency and thrombin-sensitive assays when available without delaying emergency care. Anticoagulant effect can recur in some patients; reassess clinical bleeding and relevant tests, and restart appropriate anticoagulation when medically appropriate because the underlying thrombotic risk remains.",
+        "reviewHref": "#major-bleeding-and-reversal"
+      },
+      "wholeObjectSHA256": "d9a29228cb406ad77ae5e1a0e6bd588af7bea3f6b823fcc9f6d00c3137fb1817",
+      "semanticSHA256": "d9a29228cb406ad77ae5e1a0e6bd588af7bea3f6b823fcc9f6d00c3137fb1817",
+      "sourcePages": [
+        "book PDF518",
+        "pradaxa-label PDF6",
+        "praxbind-label PDF2,5,8"
+      ],
+      "choiceReview": [
+        {
+          "index": 0,
+          "text": "Review last dabigatran dose, kidney function, thrombin-sensitive assays when available, bleeding or procedure urgency, thrombosis indication, and possible rebound.",
+          "isKeyed": true,
+          "assessment": "The key covers exposure, renal function, urgency, available assays, thrombotic indication and possible recurrence.",
+          "sourcePages": [
+            "book PDF518",
+            "pradaxa-label PDF6",
+            "praxbind-label PDF2,5,8"
+          ]
+        },
+        {
+          "index": 1,
+          "text": "Use INR alone to quantify dabigatran and decide whether urgent reversal is needed.",
+          "isKeyed": false,
+          "assessment": "Incorrect: INR alone is not a suitable measure for this urgent dabigatran assessment.",
+          "sourcePages": [
+            "book PDF518",
+            "pradaxa-label PDF6",
+            "praxbind-label PDF2,5,8"
+          ]
+        },
+        {
+          "index": 2,
+          "text": "Assume idarucizumab reverses factor Xa inhibitors as well as dabigatran.",
+          "isKeyed": false,
+          "assessment": "Incorrect: idarucizumab specifically binds dabigatran, not a universal factor Xa antidote.",
+          "sourcePages": [
+            "book PDF518",
+            "pradaxa-label PDF6",
+            "praxbind-label PDF2,5,8"
+          ]
+        },
+        {
+          "index": 3,
+          "text": "Prioritize capsule-storage and feeding-tube counseling while delaying assessment of life-threatening bleeding.",
+          "isKeyed": false,
+          "assessment": "Incorrect: counseling cannot take priority over assessment of life-threatening bleeding.",
+          "sourcePages": [
+            "book PDF518",
+            "pradaxa-label PDF6",
+            "praxbind-label PDF2,5,8"
+          ]
+        }
+      ],
+      "stableIdOrderKeyAndReviewHrefPreserved": true
+    }
+  ],
+  "sourceNativeReview": [
+    {
+      "source": "book",
+      "PDFPage": 515,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-anticoagulant-historical-review-20261011/evidence/private-anticoagulant-sources-v1/book-0515.png",
+      "SHA256": "8de3c1155dd4861165a71a8b748dafae76f20cb5ff3e24e15d50af8fb1702feb",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "book",
+      "PDFPage": 516,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-anticoagulant-historical-review-20261011/evidence/private-anticoagulant-sources-v1/book-0516.png",
+      "SHA256": "cbb8432cb164e8eff56d2d4e131484af73cffbfdbff2072674fb74ee3377c22b",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "book",
+      "PDFPage": 517,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-anticoagulant-historical-review-20261011/evidence/private-anticoagulant-sources-v1/book-0517.png",
+      "SHA256": "498a49fae47ea3e29b21c3f2c514e1637a1849e7d47e985f116da2e0d4011b1d",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "book",
+      "PDFPage": 518,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-anticoagulant-historical-review-20261011/evidence/private-anticoagulant-sources-v1/book-0518.png",
+      "SHA256": "9d3b365bf254ee4d7a93967cbc6967cb9d6a06a8b700be242dbe841f0063bff8",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "book",
+      "PDFPage": 520,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-anticoagulant-historical-review-20261011/evidence/private-anticoagulant-sources-v1/book-0520.png",
+      "SHA256": "239323aa46d872638c0d29035bfed8bb485557d978059a1c3576e272b86fa64c",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "book",
+      "PDFPage": 521,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-anticoagulant-historical-review-20261011/evidence/private-anticoagulant-sources-v1/book-0521.png",
+      "SHA256": "378c82520fc60a730bea460ba3fa022875022dc9e1f1cf373e4b7670c7439a77",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "book",
+      "PDFPage": 523,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-anticoagulant-historical-review-20261011/evidence/private-anticoagulant-sources-v1/book-0523.png",
+      "SHA256": "4a4d65d9fff1f9703b7c1da72be05e98ed5e314745d17cd957e13d7596c73b2a",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "warfarin-label",
+      "PDFPage": 6,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-anticoagulant-historical-review-20261011/evidence/private-anticoagulant-sources-v1/warfarin-label-06.png",
+      "SHA256": "06bf12fa426bae2f5270b771dde012929ca3c7d17621dcadd4c4a7942626652b",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "warfarin-label",
+      "PDFPage": 10,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-anticoagulant-historical-review-20261011/evidence/private-anticoagulant-sources-v1/warfarin-label-10.png",
+      "SHA256": "463da60ce5d63c4fb5783fd2f3ed54b1bc3e02fe859900bdbc8bf58950033fef",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "warfarin-label",
+      "PDFPage": 11,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-anticoagulant-historical-review-20261011/evidence/private-anticoagulant-sources-v1/warfarin-label-11.png",
+      "SHA256": "c5aa74b0845d3d16d409292c67722807730fe5ba5892c95cd5c4e0ce180423f0",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "warfarin-label",
+      "PDFPage": 19,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-anticoagulant-historical-review-20261011/evidence/private-anticoagulant-sources-v1/warfarin-label-19.png",
+      "SHA256": "13f6f7429053ed08b60661a85229915d2a99e13ca600648ab997527648c561d5",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "cpic-warfarin",
+      "PDFPage": 2,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-anticoagulant-historical-review-20261011/evidence/private-anticoagulant-sources-v1/cpic-warfarin-2.png",
+      "SHA256": "80b55a5e6ff0394ccb29ddbce97667591cf7ba32526577ffdf8c33e2280ef1d4",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "cpic-warfarin",
+      "PDFPage": 4,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-anticoagulant-historical-review-20261011/evidence/private-anticoagulant-sources-v1/cpic-warfarin-4.png",
+      "SHA256": "adbd9b32b11a42dac45597bb1c731d340c65146d6da7bdee6531d8eac20b1ea2",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "cpic-warfarin",
+      "PDFPage": 7,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-anticoagulant-historical-review-20261011/evidence/private-anticoagulant-sources-v1/cpic-warfarin-7.png",
+      "SHA256": "e2ad6042d6c2fac5e173d0eac985c99b96fccced036bee4119249c9bc25153f4",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "ash-hit",
+      "PDFPage": 2,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-anticoagulant-historical-review-20261011/evidence/private-anticoagulant-sources-v1/ash-hit-2.png",
+      "SHA256": "4c5c1f971818b53f66d183b00e24f0fc85fcadb4984a218db12ee13c83ef5ed2",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "ash-hit",
+      "PDFPage": 3,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-anticoagulant-historical-review-20261011/evidence/private-anticoagulant-sources-v1/ash-hit-supplement-3.png",
+      "SHA256": "9258ff90b02f5e7ecb23f307c0ed20f80c52edd66632dd04aa3b4cbd89c4f4ef",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "pradaxa-label",
+      "PDFPage": 5,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-anticoagulant-historical-review-20261011/evidence/private-anticoagulant-sources-v1/pradaxa-label-05.png",
+      "SHA256": "202221065e19527b74f1f93902cb3586863eff07a32c8617e7e0718096d478b7",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "pradaxa-label",
+      "PDFPage": 6,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-anticoagulant-historical-review-20261011/evidence/private-anticoagulant-sources-v1/pradaxa-label-06.png",
+      "SHA256": "b161639c28533c517aac6cc00a3dab5c3d17fc3679decdd3bc67281d49aa95fd",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "pradaxa-label",
+      "PDFPage": 13,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-anticoagulant-historical-review-20261011/evidence/private-anticoagulant-sources-v1/pradaxa-label-13.png",
+      "SHA256": "ab0245d193c853c02717245db8cdec1f2d1be9f63ba9eb74b7f7bf4848659643",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "pradaxa-label",
+      "PDFPage": 16,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-anticoagulant-historical-review-20261011/evidence/private-anticoagulant-sources-v1/pradaxa-label-16.png",
+      "SHA256": "d44024fb7c0fded1c564f0b008df2421a1f75ca2a4c2300818eb932643bbb96a",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "pradaxa-label",
+      "PDFPage": 17,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-anticoagulant-historical-review-20261011/evidence/private-anticoagulant-sources-v1/pradaxa-label-supplement-17.png",
+      "SHA256": "045751f7cfd6c88d2a3b64dda6af2d67b9825dc3b0152e05907482e5aaf7904b",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "pradaxa-label",
+      "PDFPage": 29,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-anticoagulant-historical-review-20261011/evidence/private-anticoagulant-sources-v1/pradaxa-label-supplement-29.png",
+      "SHA256": "373637d8083aaef1b0e3cc21fa8f4fc9ebc74cd3b3767fb8aa499db657b10b37",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "pradaxa-label",
+      "PDFPage": 30,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-anticoagulant-historical-review-20261011/evidence/private-anticoagulant-sources-v1/pradaxa-label-supplement-30.png",
+      "SHA256": "d97a3323fb322a5eaa0add620c102da73a4beb69c7bc48aed00bb74f347149e7",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "praxbind-label",
+      "PDFPage": 2,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-anticoagulant-historical-review-20261011/evidence/private-anticoagulant-sources-v1/praxbind-label-02.png",
+      "SHA256": "4eb65dc3713fa4de33ae4fe037c292421ad329ac9f2ac83f365a790f950b4f2a",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "praxbind-label",
+      "PDFPage": 5,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-anticoagulant-historical-review-20261011/evidence/private-anticoagulant-sources-v1/praxbind-label-05.png",
+      "SHA256": "660ca3e188a8e98e53afdf7c04c396c809365c5b61ba11986a301de66fdba973",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "praxbind-label",
+      "PDFPage": 8,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-anticoagulant-historical-review-20261011/evidence/private-anticoagulant-sources-v1/praxbind-label-08.png",
+      "SHA256": "1a850a35f11d4e24ad83dd079ced6cade4f3f4d0c2428802653a77cfc037788e",
+      "actualNativeReviewPassed": true
+    }
+  ],
+  "sourceNativePagesActuallyInspected": 26,
+  "privateSourceCatalog": [
+    {
+      "name": "book",
+      "SHA256": "5e60f0b3ce20601985515c259c9503bd7ee2681836efecf03906a7da3dddf6ef",
+      "renderedPages": [
+        515,
+        516,
+        517,
+        518,
+        520,
+        521,
+        523
+      ],
+      "nativeReviewPassed": false
+    },
+    {
+      "name": "warfarin-label",
+      "URL": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=51e98fb6-ba76-497e-95d8-fe895ef0b7ed",
+      "SHA256": "3549765045fde33067a104c83083cc668e91bbd45b6cd5272b941faa99ed95f9",
+      "pageCount": 33,
+      "renderedPages": [
+        2,
+        3,
+        6,
+        10,
+        11,
+        19
+      ],
+      "nativeReviewPassed": false
+    },
+    {
+      "name": "cpic-warfarin",
+      "URL": "https://files.cpicpgx.org/data/guideline/publication/warfarin/2017/28198005.pdf",
+      "SHA256": "b0c7d36e671f9e03185f5dde46f938b641e4375b6ec233178bf779892fc88eab",
+      "pageCount": 8,
+      "renderedPages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "nativeReviewPassed": false
+    },
+    {
+      "name": "ash-hit",
+      "URL": "https://www.hematology.org/-/media/hematology/files/education/clinicians/guidelines-quality/documents/ash_vte_hit_pocketguide.pdf",
+      "SHA256": "994309c68ac64241c2f20f991ffca6c2f7869867456e9d232eda7ee93b265c6b",
+      "pageCount": 5,
+      "renderedPages": [
+        2
+      ],
+      "nativeReviewPassed": false
+    },
+    {
+      "name": "pradaxa-label",
+      "URL": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/022512Orig1s049lbl.pdf",
+      "SHA256": "d5043e4a405ed3ecbac3cc2aeaeb22f15a13699b8eee1bfe6dcfac6e9dc70144",
+      "pageCount": 31,
+      "renderedPages": [
+        1,
+        2,
+        5,
+        6,
+        13,
+        16,
+        25
+      ],
+      "nativeReviewPassed": false
+    },
+    {
+      "name": "praxbind-label",
+      "URL": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=c7400f8a-dcf4-a6df-6d07-983081b1bf34",
+      "SHA256": "9c5457c29eb2f681afa1f6b2d87ad272a82b5db5503b0ec8529142c58acc2d05",
+      "pageCount": 18,
+      "renderedPages": [
+        1,
+        2,
+        5,
+        8
+      ],
+      "nativeReviewPassed": false
+    }
+  ],
+  "sourceLimits": [
+    "Only listed 26 native pages are qualified; other retained renders are locating material.",
+    "No new numeric dose, hold, assay threshold, routine genotyping recommendation or outcome guarantee.",
+    "FDA Pradaxa URL is under 2026 but label is revised June2025.",
+    "Historical book treatment requires current primary labeling and ASH/CPIC qualifications.",
+    "No whole lesson, module or chapter closure; unrelated teaching and labels remain outside this review."
+  ],
+  "sourceFiles": {
+    "src/data/questionBanks/warfarinManagement.js": "120a85b67b1e997c3781f6a2105a1e7b534ce40a5648a6e22a2d1096692eb71f",
+    "src/data/questionBanks/directOralAnticoagulants.js": "b50e0128afb6faea9005e65c2c2863434310dff70965383cff5f1a9f109e9fe8"
+  },
+  "invariants": {
+    "other230ModulesExact": true,
+    "otherQuestionsInTwoParentsExact": true,
+    "allTeachingFiguresEmbeddedChecksReferencesExact": true,
+    "selected30WholeObjectsExact": true,
+    "entireCumulativePoolExact": true,
+    "stableIdsKeysAndAnchorsPreserved": true
+  },
+  "actualRenderedQuestionReviewPassed": false,
+  "productionLiveVerified": false,
+  "wholeModuleVerified": false,
+  "wholeChapterVerified": false,
+  "wholeGoalComplete": false
+}
