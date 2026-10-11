@@ -14,7 +14,7 @@ const nodes = {
     title: "Choose the tip before the tube.",
     items: [
       ["Nasal", "Shorter course", "Gastric or postpyloric"],
-      ["Gastric", "Reservoir", "Bolus, intermittent, continuous"],
+      ["Gastric", "Flexible schedules", "Bolus, intermittent, continuous when tolerated"],
       ["Postpyloric", "Bypass", "Controlled small bowel delivery"],
       ["Percutaneous", "Longer support", "Gastrostomy or jejunostomy"],
     ],
@@ -24,8 +24,8 @@ const nodes = {
     title: "Rate is only half the order.",
     items: [
       ["Volume", "Daily target", "What must reach the patient"],
-      ["Rate", "mL per hour", "Volume divided by running hours"],
-      ["Schedule", "Hours on", "Continuous, cyclic, intermittent, bolus"],
+      ["Rate", "Pump rate, mL/h", "Volume divided by running hours"],
+      ["Schedule", "Feeding times", "Continuous, cyclic, intermittent, bolus"],
       ["Audit", "Actually delivered", "Account for every interruption"],
     ],
   },
@@ -34,8 +34,8 @@ const nodes = {
     title: "Composition follows physiology.",
     items: [
       ["Intact", "Polymeric", "Use when digestion and absorption work"],
-      ["Hydrolyzed", "Peptide based", "Use for a defined absorption problem"],
-      ["Density", "Energy per mL", "Trade volume for free water"],
+      ["Hydrolyzed", "Peptide based", "Consider for a defined absorption or tolerance problem"],
+      ["Density", "Energy per mL", "Check product water and daily volume"],
       ["Water", "Total sources", "Formula plus flushes plus other intake"],
     ],
   },

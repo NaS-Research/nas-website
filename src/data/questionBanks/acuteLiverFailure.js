@@ -132,4 +132,21 @@ const acetylcysteineCases = [
   }
 ];
 const acetylcysteineById = new Map(acetylcysteineCases.map(q => [q.id, q]));
-export const acuteLiverFailureQuestionBank = generated.map(q => acetylcysteineById.get(q.id) ?? q);
+const nutritionCases = [
+  {
+    "id": "acute-liver-failure-061",
+    "question": "A malnourished adult with acute liver failure cannot eat. The airway is protected, enteral access is usable, and immediately life-threatening metabolic derangements are controlled. Severe hyperacute hyperammonemia is absent. Which initial nutrition plan is most appropriate?",
+    "choices": [
+      "Begin low-dose enteral nutrition with monitoring and individualized advancement",
+      "Withhold all protein for the entire illness regardless of ammonia or nutritional status",
+      "Use parenteral nutrition first solely because liver failure is present",
+      "Require a liver-specific formula before starting any enteral nutrition"
+    ],
+    "answer": 0,
+    "rationale": "Malnutrition requires prompt nutritional support. When oral feeding is unavailable and enteral feeding is feasible, start enteral nutrition at low doses after immediate metabolic threats are controlled. Monitor arterial ammonia and nutritional tolerance. Parenteral nutrition is a second-line option when oral or enteral intake is inadequate; specialized liver formulas are not routinely required. Severe hyperacute disease with encephalopathy and marked hyperammonemia requires a separate, closely monitored protein decision.",
+    "reviewHref": "#medication-stewardship",
+    "difficulty": "advanced"
+  }
+];
+const nutritionById = new Map(nutritionCases.map(q => [q.id, q]));
+export const acuteLiverFailureQuestionBank = generated.map(q => nutritionById.get(q.id) ?? acetylcysteineById.get(q.id) ?? q);

@@ -21,7 +21,7 @@ function selectAcrossBank(questionBank = [], questionIds) {
 export const pharmacyCumulativeReviewPool = [
   ...pharmacyFinalReview,
   ...pharmacyModules.flatMap((module) =>
-    selectAcrossBank(module.questionBank, module.slug === "fluid-electrolyte-therapy" ? module.cumulativeQuestionIds : undefined).map((question) => ({
+    selectAcrossBank(module.questionBank, module.slug === "enteral-nutrition" ? ["enteral-nutrition-001", "enteral-nutrition-026", "enteral-nutrition-060", "enteral-nutrition-084", "enteral-nutrition-109"] : module.slug === "fluid-electrolyte-therapy" ? module.cumulativeQuestionIds : undefined).map((question) => ({
       ...question,
       id: `cumulative-${module.slug}-${question.id}`,
       module: module.title,
