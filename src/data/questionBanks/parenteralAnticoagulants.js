@@ -34,4 +34,45 @@ const concepts = [
 
 const dimensions = [["principle", "Which principle best characterizes"], ["action", "Which clinical action best applies to"], ["assessment", "Which assessment is most appropriate for"], ["hazard", "Which reasoning hazard is most important to prevent with"]];
 function distractors(index, field) { return [5, 11, 17].map((offset) => concepts[(index + offset) % concepts.length][field]); }
-export const parenteralAnticoagulantsQuestionBank = concepts.flatMap((concept, conceptIndex) => dimensions.map(([field, prefix], dimensionIndex) => ({ id: `parenteral-anticoagulants-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`, question: `${prefix} ${concept.name}?`, choices: [concept[field], ...distractors(conceptIndex, field)], answer: 0, rationale: concept.why, reviewHref: `#${concept.lesson}` })));
+const originalParenteralAnticoagulantsQuestionBank = concepts.flatMap((concept, conceptIndex) => dimensions.map(([field, prefix], dimensionIndex) => ({ id: `parenteral-anticoagulants-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`, question: `${prefix} ${concept.name}?`, choices: [concept[field], ...distractors(conceptIndex, field)], answer: 0, rationale: concept.why, reviewHref: `#${concept.lesson}` })));
+
+// Source-reviewed UFH potassium and prolonged-exposure safety items; preserve stable IDs and keys.
+const ufhPotassiumCorrections = {
+  "parenteral-anticoagulants-113": {
+    "choices": [
+      "Heparin can suppress adrenal aldosterone secretion and cause hyperkalemia; osteoporosis has been reported with long-term, high-dose exposure.",
+      "Heparin raises potassium only when excessive anticoagulation causes major bleeding.",
+      "A normal platelet count excludes the nonbleeding toxicities of prolonged heparin treatment.",
+      "Potassium risk is limited to patients taking potassium supplements and does not increase with treatment duration."
+    ],
+    "rationale": "Aldosterone suppression provides a potassium-risk mechanism distinct from bleeding or HIT. The label identifies diabetes, chronic kidney dysfunction, metabolic acidosis, elevated baseline potassium and potassium-sparing medicines as risk factors, with risk increasing over time. Long-term, high-dose exposure has also been associated with osteoporosis; normal platelets do not exclude these effects."
+  },
+  "parenteral-anticoagulants-114": {
+    "choices": [
+      "Measure potassium before starting in patients at risk, monitor periodically when therapy exceeds five days or earlier when clinically indicated, and reassess prolonged exposure.",
+      "Wait until the sixth day to obtain any potassium result, even if baseline potassium is high.",
+      "Use a therapeutic aPTT as evidence that potassium monitoring is unnecessary.",
+      "Measure potassium only after a platelet decline suggests heparin-induced thrombocytopenia."
+    ],
+    "rationale": "The label calls for baseline potassium in patients at risk and periodic measurement in all patients treated for more than five days, or earlier as clinically appropriate. This is not a mandatory five-day waiting period. Anticoagulant assays and platelet counts answer different questions and cannot replace potassium monitoring."
+  },
+  "parenteral-anticoagulants-115": {
+    "choices": [
+      "Review baseline and serial potassium, kidney function, diabetes, metabolic acidosis, potassium-sparing medicines and exposure duration; consider skeletal risk during prolonged treatment.",
+      "Review only aPTT and hemoglobin because these tests also exclude potassium toxicity.",
+      "Review only the current potassium value and disregard diabetes, renal function and treatment duration if it is normal.",
+      "Review only platelet count and injection-site bruising because nonbleeding toxicities require thrombocytopenia."
+    ],
+    "rationale": "Potassium values must be interpreted alongside the label-listed risk factors and duration of exposure. A normal result today does not eliminate subsequent risk. aPTT, hemoglobin and platelets do not measure potassium; skeletal risk becomes relevant with prolonged, high-dose exposure."
+  },
+  "parenteral-anticoagulants-116": {
+    "choices": [
+      "Treating therapeutic anticoagulant assays and stable blood counts as proof that a clinically important potassium rise cannot occur.",
+      "Recognizing diabetes and chronic kidney dysfunction as reasons to obtain baseline potassium before heparin.",
+      "Checking potassium earlier than five days when the clinical situation warrants it.",
+      "Considering long-term, high-dose exposure when assessing reported osteoporosis risk."
+    ],
+    "rationale": "The unsafe inference is that appropriate anticoagulant intensity or stable blood counts excludes aldosterone-related potassium toxicity. Baseline testing in patients at risk, earlier checks when warranted and attention to prolonged high-dose exposure are appropriate safeguards."
+  }
+};
+export const parenteralAnticoagulantsQuestionBank = originalParenteralAnticoagulantsQuestionBank.map(question => ufhPotassiumCorrections[question.id] ? { ...question, ...ufhPotassiumCorrections[question.id] } : question);
