@@ -84,6 +84,53 @@ const finalPrimaryQuestionOverrides = {
     "reviewHref": "#prevention-system"
   }
 };
-export const hospitalVentilatorAssociatedPneumoniaQuestionBank = beforeFinalPrimaryQuestionBank.map(q => finalPrimaryQuestionOverrides[q.id] ?? q);
+const beforeHapDistractorBank =  beforeFinalPrimaryQuestionBank.map(q => finalPrimaryQuestionOverrides[q.id] ?? q);
+
+
+const hapPreventionQuestionOverrides = {
+  "hospital-ventilator-associated-pneumonia-017": {
+    "id": "hospital-ventilator-associated-pneumonia-017",
+    "lesson": "diagnosis-differential",
+    "question": "Which principle best characterizes clinical and imaging diagnosis?",
+    "choices": [
+      "A new infiltrate plus infectious clinical evidence supports HAP or VAP, but no gold standard exists",
+      "Two antipseudomonal agents from different classes are reserved for defined resistance risk, poor local susceptibility, or unknown data",
+      "The 2026 consensus reserves true beta-lactam dose individualization for regimens informed by measured patient concentrations",
+      "In eligible mechanically ventilated adults, use early enteral rather than parenteral nutrition; change ventilator circuits when visibly soiled or malfunctioning, or as the manufacturer instructs"
+    ],
+    "answer": 0,
+    "rationale": "Critical illness creates many noninfectious mimics",
+    "reviewHref": "#diagnosis-differential"
+  },
+  "hospital-ventilator-associated-pneumonia-065": {
+    "id": "hospital-ventilator-associated-pneumonia-065",
+    "lesson": "hap-empiric-therapy",
+    "question": "Which principle best characterizes HAP MSSA and gram-negative frame?",
+    "choices": [
+      "Empiric HAP therapy generally covers MSSA and Pseudomonas-active gram-negative organisms",
+      "The 2026 consensus reserves true beta-lactam dose individualization for regimens informed by measured patient concentrations",
+      "In eligible mechanically ventilated adults, use early enteral rather than parenteral nutrition; change ventilator circuits when visibly soiled or malfunctioning, or as the manufacturer instructs",
+      "Colonization of an endotracheal tube does not prove invasive pneumonia"
+    ],
+    "answer": 0,
+    "rationale": "Nosocomial gram-negative coverage is part of the baseline frame",
+    "reviewHref": "#hap-empiric-therapy"
+  },
+  "hospital-ventilator-associated-pneumonia-113": {
+    "id": "hospital-ventilator-associated-pneumonia-113",
+    "lesson": "definitive-resistant-pathogens",
+    "question": "Which principle best characterizes definitive MRSA therapy?",
+    "choices": [
+      "Vancomycin or linezolid is recommended for proven MRSA HAP or VAP",
+      "In eligible mechanically ventilated adults, use early enteral rather than parenteral nutrition; change ventilator circuits when visibly soiled or malfunctioning, or as the manufacturer instructs",
+      "Colonization of an endotracheal tube does not prove invasive pneumonia",
+      "Use two antipseudomonal classes when resistance risk exists, more than 10 percent of isolates resist the proposed monotherapy, or susceptibility data are unavailable"
+    ],
+    "answer": 0,
+    "rationale": "Pulmonary surfactant inactivates daptomycin",
+    "reviewHref": "#definitive-resistant-pathogens"
+  }
+};
+export const hospitalVentilatorAssociatedPneumoniaQuestionBank = beforeHapDistractorBank.map(q => hapPreventionQuestionOverrides[q.id] ?? q);
 
 if(hospitalVentilatorAssociatedPneumoniaQuestionBank.length<100)throw new Error(`Hospital and ventilator-associated pneumonia question bank must contain at least 100 questions, found ${hospitalVentilatorAssociatedPneumoniaQuestionBank.length}.`);
