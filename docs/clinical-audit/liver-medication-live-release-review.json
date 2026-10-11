@@ -1,6 +1,6 @@
 {
-  "status": "source_build_and_actual_native_passed_public_pending",
-  "checkedUTC": "2026-10-11T11:34:04.502115+00:00",
+  "status": "verified_scoped_public_release",
+  "checkedUTC": "2026-10-11T11:37:44.023426+00:00",
   "module": "acute-liver-failure",
   "questionIds": [
     "acute-liver-failure-062",
@@ -34,6 +34,24 @@
   "remainingPrimaryLocatingRowsReleasePending": 44,
   "wholeModuleVerified": false,
   "wholeChapterVerified": false,
-  "productionLiveVerified": false,
-  "wholeGoalComplete": false
+  "productionLiveVerified": true,
+  "wholeGoalComplete": false,
+  "release": {
+    "mainCommit": "1d90d9871104ca64d7867d445f681b7223704807",
+    "exactRemoteMainVerified": true,
+    "auditReviewCommit": "d87100f71fe7e3b3ff549226b72a1771033e6f25",
+    "liveBrowserPassed": true,
+    "publicCapturesRGBIdenticalToActuallyInspectedMain": 32,
+    "extraPublicDifferences": 0,
+    "newestFirstAndSearchRelevanceVerified": true
+  },
+  "remainingPrimaryLocatingRowsAfterScopedRelease": 37,
+  "limits": "Seven whole questions only. Remaining ALF questions, teaching, figures, checks and full-module/chapter coverage remain open. Whole counts68/232 and7/82 unchanged.",
+  "evidenceHashes": {
+    "browser-liver-medication-live-v1.json": "eb02a2e18e699cf8ae938a692cbec8bc661fc975d2d2e92ef95af0edb699f4e5",
+    "public-pixel-comparison-liver-medication-v1.json": "1238bc695ebbf5759a9bee0bfa06cdd6e1c7674013e16e8d4268056d7be891f0",
+    "actual-native-feeding-complete-v1.json": "3544f323b0828341a5bb6bb6e888e44040c645f5098e070d37f255942cf2c9f4",
+    "liver-medication-question-review-v1.json": "a9d79a169b746fe2a8d572191c8265001467d986f237f8c706d4f219314c9c77",
+    "main-integration-liver-medication-v1.json": "2dae7cdb6c0f8c60856fbfd83c0e37fec89083bb93b9d1244bfe80aae9cc5487"
+  }
 }
