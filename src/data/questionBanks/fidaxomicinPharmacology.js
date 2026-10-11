@@ -189,4 +189,50 @@ const sourceReviewedAdultDeliveryQuestions = {
     "rationale": "A ten-day ordinary course is not permission to ignore deterioration. The book separates fulminant shock, ileus or megacolon into a different combined regimen and identifies potentially life-threatening progression."
   }
 };
-export const fidaxomicinPharmacologyQuestionBank = [...generated, ...cases].map((question) => sourceReviewedAdultDeliveryQuestions[question.id] ? { ...question, ...sourceReviewedAdultDeliveryQuestions[question.id] } : question);
+const beforePrimaryFeedingReviewQuestionBank = [...generated, ...cases].map((question) => sourceReviewedAdultDeliveryQuestions[question.id] ? { ...question, ...sourceReviewedAdultDeliveryQuestions[question.id] } : question);
+
+const primaryFeedingQuestionOverrides = {
+  "fidaxomicin-pharmacology-041": {
+    "id": "fidaxomicin-pharmacology-041",
+    "lesson": "selection-guidelines",
+    "question": "Which statement specifically explains the evidence limitation when considering fidaxomicin for fulminant CDI?",
+    "choices": [
+      "Fidaxomicin lacks evidence for fulminant CDI because pivotal trials excluded these patients",
+      "A pediatric patient aged 6 months to less than 18 years, weighing at least 12.5 kg and able to swallow tablets, may receive 200 mg orally twice daily for 10 days.",
+      "The oral suspension is prepared by a healthcare professional with 130 mL purified water",
+      "Fidaxomicin did not meaningfully alter digoxin, midazolam, warfarin, or omeprazole pharmacokinetics in label studies"
+    ],
+    "answer": 0,
+    "rationale": "The trials supporting fidaxomicin for nonfulminant CDI generally excluded fulminant disease. Their results therefore do not establish efficacy in shock or ileus. Guideline management remains the urgent bowel-directed vancomycin and IV metronidazole pathway; pediatric dosing, product preparation and interaction studies do not resolve this evidence gap.",
+    "reviewHref": "#selection-guidelines"
+  },
+  "fidaxomicin-pharmacology-043": {
+    "id": "fidaxomicin-pharmacology-043",
+    "lesson": "selection-guidelines",
+    "question": "An adult being considered for routine fidaxomicin treatment develops hypotension and abdominal distention. Which assessment takes priority in deciding whether the fulminant CDI pathway is needed?",
+    "choices": [
+      "Assess hypotension, shock, ileus, megacolon, lactate, organ failure, and surgical need",
+      "Assess kilograms, swallowing, aspiration risk, and formulation access",
+      "Inspect granule movement, measured water, mixing time, homogeneity, and discard date",
+      "Review all medications, indication, baseline monitoring, and independent interaction risks"
+    ],
+    "answer": 0,
+    "rationale": "Hypotension or shock, ileus and megacolon identify the fulminant CDI boundary. Lactate, organ dysfunction and possible surgical need inform urgent assessment. Routine formulation preparation and medication review remain relevant, but they do not replace assessment of dangerous disease progression.",
+    "reviewHref": "#selection-guidelines"
+  },
+  "fidaxomicin-pharmacology-044": {
+    "id": "fidaxomicin-pharmacology-044",
+    "lesson": "selection-guidelines",
+    "question": "Which reasoning hazard is most important to prevent with fulminant CDI boundary?",
+    "choices": [
+      "Extrapolating nonfulminant trial results to shock or ileus",
+      "Using weight alone while ignoring swallowing ability",
+      "Sending dry granules home with casual mixing instructions",
+      "Claiming that minimal interaction evidence means no medication review is needed"
+    ],
+    "answer": 0,
+    "rationale": "Nonfulminant fidaxomicin trial results cannot establish treatment efficacy in fulminant CDI with shock or ileus, because those studies generally excluded fulminant disease. Swallowing assessment, correct suspension preparation and medication review are separate safety tasks; none provides evidence for extrapolating those trial results.",
+    "reviewHref": "#selection-guidelines"
+  }
+};
+export const fidaxomicinPharmacologyQuestionBank = beforePrimaryFeedingReviewQuestionBank.map(q => primaryFeedingQuestionOverrides[q.id] ?? q);

@@ -151,5 +151,38 @@ const sourceReviewedBowelDeliveryQuestions = {
     "rationale": "The book specifies a combination for fulminant CDI. IV metronidazole alone omits the required bowel-directed vancomycin component."
   }
 };
-export const clostridioidesDifficileInfectionQuestionBank = [...generated, ...cases].map((question) => sourceReviewedBowelDeliveryQuestions[question.id] ? { ...question, ...sourceReviewedBowelDeliveryQuestions[question.id] } : question);
+const beforePrimaryFeedingReviewQuestionBank = [...generated, ...cases].map((question) => sourceReviewedBowelDeliveryQuestions[question.id] ? { ...question, ...sourceReviewedBowelDeliveryQuestions[question.id] } : question);
+
+const primaryFeedingQuestionOverrides = {
+  "clostridioides-difficile-infection-055": {
+    "id": "clostridioides-difficile-infection-055",
+    "lesson": "fulminant-disease",
+    "question": "An adult receiving IV metronidazole alongside bowel-directed vancomycin for fulminant CDI has hepatic impairment and develops new paresthesias. Which action directly addresses metronidazole safety?",
+    "choices": [
+      "Promptly review the new neurologic symptoms, hepatic function, interacting medicines and treatment duration, and reassess metronidazole therapy.",
+      "Monitor only stool frequency and disregard hepatic function when reviewing metronidazole.",
+      "Skip interaction review because metronidazole is being administered intravenously.",
+      "Continue metronidazole without reassessment because neurologic symptoms are unrelated to the drug."
+    ],
+    "answer": 0,
+    "rationale": "Metronidazole labeling warns about neurologic toxicity, impaired hepatic clearance and drug interactions. New abnormal neurologic symptoms require prompt assessment and discontinuation under the labeling guidance. IV metronidazole is a companion to bowel-directed vancomycin in fulminant CDI, so any treatment change must also preserve an appropriate urgent CDI plan.",
+    "reviewHref": "#fulminant-disease"
+  },
+  "clostridioides-difficile-infection-123": {
+    "id": "clostridioides-difficile-infection-123",
+    "lesson": "fulminant-disease",
+    "question": "An adult with CDI has shock and ileus. Which initial antimicrobial regimen fits the fulminant-disease pathway?",
+    "choices": [
+      "Vancomycin 500 mg orally or by nasogastric tube four times daily plus metronidazole 500 mg IV every 8 hours, with rectal vancomycin considered.",
+      "IV vancomycin alone",
+      "Fidaxomicin prophylaxis",
+      "Loperamide alone"
+    ],
+    "answer": 0,
+    "rationale": "Shock and ileus indicate fulminant CDI. Guidelines use bowel-directed vancomycin with IV metronidazole and consideration of rectal vancomycin when ileus limits delivery. IV vancomycin alone, fidaxomicin prophylaxis and loperamide alone do not provide this regimen; urgent organ support and surgical assessment are also needed.",
+    "reviewHref": "#fulminant-disease"
+  }
+};
+export const clostridioidesDifficileInfectionQuestionBank = beforePrimaryFeedingReviewQuestionBank.map(q => primaryFeedingQuestionOverrides[q.id] ?? q);
+
 if (clostridioidesDifficileInfectionQuestionBank.length < 100) throw new Error(`Clostridioides difficile infection question bank must contain at least 100 questions, found ${clostridioidesDifficileInfectionQuestionBank.length}.`);
