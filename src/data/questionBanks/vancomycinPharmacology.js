@@ -47,4 +47,36 @@ const cases = [
   ["128", "oral-cdi", "A patient with severe colitis and renal failure receives high-dose oral vancomycin and develops tinnitus. What is the best response?", ["Evaluate possible systemic absorption and obtain a concentration when clinically appropriate", "Assume oral vancomycin cannot be absorbed", "Double the oral dose", "Give IV vancomycin for luminal delivery"], "Inflamed mucosa and renal failure can permit systemic accumulation from oral therapy."],
 ].map(([id, lesson, question, choices, rationale]) => ({ id: `vancomycin-pharmacology-case-${id}`, lesson, question, choices, answer: 0, rationale, reviewHref: `#${lesson}` }));
 
-export const vancomycinPharmacologyQuestionBank = [...generated, ...cases];
+const beforePrimaryFeedingReviewQuestionBank = [...generated, ...cases];
+
+const primaryFeedingQuestionOverrides = {
+  "vancomycin-pharmacology-035": {
+    "id": "vancomycin-pharmacology-035",
+    "lesson": "route-selection",
+    "question": "An adult with CDI is prescribed bowel-directed vancomycin. Which assessment directly addresses whether the drug will reach the intended intestinal compartment?",
+    "choices": [
+      "Assess CDI diagnosis, severity, ileus, ability to receive enteral drug, recurrence, and absorption risk",
+      "Use an IV vancomycin AUC estimate as the sole evidence that the oral drug reaches the colon.",
+      "Assess IV catheter concentration and infusion rate instead of intestinal delivery.",
+      "Ignore ileus because parenteral vancomycin reliably replaces bowel-directed treatment."
+    ],
+    "answer": 0,
+    "rationale": "Review the CDI episode, severity and bowel-directed delivery, including ileus. IV vancomycin is not an effective substitute for intestinal vancomycin. Severe intestinal disease and renal failure can also make systemic absorption from bowel-directed treatment clinically relevant.",
+    "reviewHref": "#route-selection"
+  },
+  "vancomycin-pharmacology-041": {
+    "id": "vancomycin-pharmacology-041",
+    "lesson": "route-selection",
+    "question": "An adult has fulminant CDI with shock and ileus. Which treatment principle accounts for impaired intestinal delivery?",
+    "choices": [
+      "Fulminant CDI requires high-dose enteral vancomycin, IV metronidazole, and rectal vancomycin consideration when ileus limits delivery",
+      "Use IV vancomycin alone because a bloodstream route reliably treats the colonic lumen.",
+      "Use fidaxomicin monotherapy because nonfulminant CDI trials establish efficacy in shock and ileus.",
+      "Wait for ileus to resolve before initiating CDI antimicrobial treatment."
+    ],
+    "answer": 0,
+    "rationale": "Fulminant CDI requires urgent bowel-directed vancomycin with IV metronidazole; rectal vancomycin may be considered when ileus impairs delivery. Organ support and early surgical assessment remain important. IV vancomycin alone does not replace this pathway.",
+    "reviewHref": "#route-selection"
+  }
+};
+export const vancomycinPharmacologyQuestionBank = beforePrimaryFeedingReviewQuestionBank.map(q => primaryFeedingQuestionOverrides[q.id] ?? q);
