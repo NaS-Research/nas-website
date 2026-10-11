@@ -200,4 +200,45 @@ const reviewedMraSafety = {
     "rationale": "Severe hyperkalemia is a preventable treatment hazard. Kidney dysfunction and other potassium-raising exposures increase risk, so selection, dose review and scheduled laboratory follow-up matter even when pressure improves. Avoid contraindicated combinations and use product- and indication-specific exclusions."
   }
 };
-export const resistantSecondaryHypertensionQuestionBank = preservedMainResistantQuestionBank.map(question => reviewedMraSafety[question.id] ? {...question,...reviewedMraSafety[question.id]} : question);
+const preservedMainBeforeHypokalemia = preservedMainResistantQuestionBank.map(question => reviewedMraSafety[question.id] ? {...question,...reviewedMraSafety[question.id]} : question);
+
+// Scoped hypokalemia review; preserve all other Main questions and teaching.
+const reviewedMainHypokalemia = {
+  "resistant-secondary-hypertension-053": {
+    "choices": [
+      "Hypokalemia strengthens suspicion but is absent in many affected patients.",
+      "A normal potassium concentration excludes primary aldosteronism.",
+      "Every patient with primary aldosteronism must have spontaneous hypokalemia.",
+      "A potassium measurement alone replaces aldosterone and renin screening."
+    ],
+    "rationale": "Hypokalemia can increase suspicion, but primary aldosteronism is not limited to patients with low potassium. Screening measures aldosterone and renin; potassium helps interpret aldosterone. Waiting for hypokalemia can miss disease."
+  },
+  "resistant-secondary-hypertension-054": {
+    "choices": [
+      "Do not wait for low potassium to consider screening, and correct low potassium before interpreting aldosterone when possible.",
+      "Exclude primary aldosteronism after one negative screen obtained while potassium is low.",
+      "Use potassium alone as the primary aldosteronism screening test.",
+      "Wait for spontaneous hypokalemia before obtaining aldosterone and renin."
+    ],
+    "rationale": "Do not require low potassium before screening. Low potassium can cause a falsely low aldosterone result. If screening is negative during hypokalemia, correct potassium to the laboratory reference range and repeat screening. Review interfering medicines according to safety and feasibility."
+  },
+  "resistant-secondary-hypertension-055": {
+    "choices": [
+      "Review potassium trend, diuretic and medicine exposures, acid-base context, and magnesium when correction is difficult; interpret aldosterone and renin under appropriate testing conditions.",
+      "Check potassium once and omit aldosterone and renin if that result is normal.",
+      "Interpret a negative aldosterone result during hypokalemia without correcting potassium or considering repeat screening.",
+      "Ignore magnesium even when hypokalemia resists correction."
+    ],
+    "rationale": "Potassium must be interpreted alongside aldosterone and renin. Metabolic alkalosis, overdiuresis and medicines can contribute to hypokalemia. Check magnesium when hypokalemia resists correction. Low potassium may suppress aldosterone, so a negative screen during hypokalemia needs correction and repeat testing."
+  },
+  "resistant-secondary-hypertension-056": {
+    "choices": [
+      "Requiring spontaneous hypokalemia misses many cases.",
+      "Correcting hypokalemia makes every repeat aldosterone screen invalid.",
+      "Measuring aldosterone and renin together cannot detect primary aldosteronism.",
+      "Screening a patient with normal potassium inevitably produces a false-positive result."
+    ],
+    "rationale": "Requiring spontaneous hypokalemia would miss patients with primary aldosteronism who have normal potassium. Use aldosterone and renin screening with the relevant preparation and interpretation. Potassium is an aid to interpretation, not a prerequisite for considering disease."
+  }
+};
+export const resistantSecondaryHypertensionQuestionBank = preservedMainBeforeHypokalemia.map(question => reviewedMainHypokalemia[question.id] ? {...question,...reviewedMainHypokalemia[question.id]} : question);
