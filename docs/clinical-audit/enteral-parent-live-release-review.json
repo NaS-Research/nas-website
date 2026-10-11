@@ -1,6 +1,6 @@
 {
-  "status": "source_build_and_actual_native_passed_public_pending",
-  "checkedUTC": "2026-10-11T10:04:11.332531+00:00",
+  "status": "verified_scoped_public_release",
+  "checkedUTC": "2026-10-11T10:16:58.422495+00:00",
   "enteralQualifiedParent": {
     "lessons": 6,
     "teachingBodies": 37,
@@ -79,11 +79,26 @@
     "actual-native-enteral-complete-v1.json": "e7a05a2f0c4769b6695d7dc425556884f801341bd6f392c04e78b1bf07aedb0f",
     "browser-main-enteral-v3.json": "29f615589df238b73f294b652c3a4488e21f1b2c9f34bf719a8f1a6133b04aae",
     "main-integration-enteral-v2.json": "5e9a081e552f98cbf1b9aeddd7183c0f93c2ea1729025f34770a625322a0b9eb",
-    "alf-nutrition-061-source-review-v3.json": "de29b8540d236f59ff0f96f32de2be9e8361ea3b96ef54fd22b4564efba8e9e4"
+    "alf-nutrition-061-source-review-v3.json": "de29b8540d236f59ff0f96f32de2be9e8361ea3b96ef54fd22b4564efba8e9e4",
+    "browser-live-v1-enteral-v3.json": "1401b24fde522f687020aaa19a84c6f04f07b254970cbf290b313002981e859a",
+    "public-pixel-comparison-enteral-parent-v1.json": "17e8ac994413f0f34a1dfbd538e232267195fda9ece08fd3edcf21a55ce93fc9",
+    "actual-native-public-enteral-differences-v1.json": "c48c8756ad5bf72b0aac70146f0578bd8e007194916d88f300096e166ac6b343"
   },
   "wholeEnteralModuleVerified": false,
   "wholeChapterVerified": false,
   "wholeGoalComplete": false,
-  "productionLiveVerified": false,
-  "broaderFeedingSourceInventoryRemainsOpen": true
+  "productionLiveVerified": true,
+  "broaderFeedingSourceInventoryRemainsOpen": true,
+  "wholeALFModuleVerified": false,
+  "release": {
+    "mainCommit": "f269ff1274636278f457fe148f06a2ee5ca9fa57",
+    "exactRemoteMainVerified": true,
+    "auditReviewCommit": "bf47bfc9904b1fe02f97731a5e1e65cb8b3c7c94",
+    "production": "passed_managed_live_content_and_actual_native_visual_comparison",
+    "publicCaptures": 206,
+    "publicNativeRGBIdenticalCount": 187,
+    "publicNativeDifferentActuallyInspectedCount": 19,
+    "differencesLimitedToNavbarLogo": true
+  },
+  "limits": "Qualified enteral parent source continuity and scoped ALF061 correction publicly verified. Remaining48 primary feeding locating rows, secondary and historical semantic inventories, nutrition assessment, whole EN/ALF modules, chapter and full82-chapter goal remain open."
 }
