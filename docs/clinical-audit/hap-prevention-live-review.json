@@ -1,6 +1,6 @@
 {
-  "status": "scoped_prevention_clauses_source_build_actual_native_passed_live_pending",
-  "checkedUTC": "2026-10-11T16:05:51.360298+00:00",
+  "status": "three_prevention_clauses_verified_scoped_public_release",
+  "checkedUTC": "2026-10-11T16:09:00.812727+00:00",
   "scope": "Three nonkeyed adult VAP-prevention choice clauses; complete unchanged question clinical content remains open",
   "questionIds": [
     "hospital-ventilator-associated-pneumonia-017",
@@ -11,7 +11,7 @@
   "wholeModuleVerified": false,
   "wholeChapterVerified": false,
   "wholeGoalComplete": false,
-  "productionLiveVerified": false,
+  "productionLiveVerified": true,
   "mainBase": "266ece8b784eb07862d618ba6c28d91f1cb487cc",
   "nativeCapturesActuallyInspected": 16,
   "sourceNativePagesActuallyInspected": [
@@ -27,5 +27,18 @@
       "id": "hospital-ventilator-associated-pneumonia-152",
       "status": "older_audit_difference_public_reconciliation_pending"
     }
-  ]
+  ],
+  "mainCommit": "df54257a96c12caf32af184c2d8a395652f0eafa",
+  "auditReviewCommit": "cd24ca18c410b1da491807b5efb4d89fae4e04d4",
+  "actualNativeCapturesInspected": 16,
+  "publicCapturesRGBIdentical": 16,
+  "newestFirstAndSearchRelevanceVerified": true,
+  "limits": "Only the three nonkeyed prevention clauses are clinically reconciled and publicly verified. The unchanged complete question clinical claims, HAP parent module and chapter remain open. All104 historical whole-question clinical qualifications remain pending.",
+  "evidenceSHA256": {
+    "hap-prevention-question-review-qualified-v1.json": "90e7336c8b1757a8ba393dafa8ce6c13575065b54e5e037ba7b8e1a6bfad0048",
+    "main-integration-hap-prevention-v1.json": "51ee4225e72390bd37e4197c76cfa76cf67401bf43ebfb1954bfef5c55d2f490",
+    "browser-hap-prevention-live-v1.json": "f76bd764edca7d51df8f8a853579a0dff2ab9909f9e0bea17766e0f94543a1bf",
+    "public-pixel-comparison-hap-prevention-v1.json": "5fe934e55661e5882e9df0c7d148d6e9e1c3651453dc61ead6be732206f693ed",
+    "owner-native-review-hap-v1.json": "72c72e49cfe2ef819c60521855a75cd90631ee8258f1aba2c7b09569077920b2"
+  }
 }

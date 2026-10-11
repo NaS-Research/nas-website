@@ -996,7 +996,7 @@
     {
       "module": "hospital-ventilator-associated-pneumonia",
       "id": "hospital-ventilator-associated-pneumonia-017",
-      "wholeQuestionSHA256": "09f49fdb0cdd377a7ab2edd178bb9feedc244c20e4da6d6de32543995111ea59",
+      "wholeQuestionSHA256": "897901f14a288d4c1beb297b558b45a88adba1410b5ec5bcabc03f85b895b919",
       "testedConcept": "HAP/VAP diagnostic principle",
       "semanticCategory": "feeding_wording_in_distractor_other_tested_concept",
       "individualReviewReason": "The stem and keyed response test HAP/VAP diagnostic principle. Feeding-specific wording appears in another choice, rather than being the keyed explanation of that concept. That choice remains a clinical statement requiring evidence; its distractor position does not justify ignoring or certifying it.",
@@ -1008,14 +1008,20 @@
         "review anchor",
         "other retained object fields"
       ],
-      "feedingClaimClinicalQualification": "pending_full_source_or_exact_qualified_evidence",
+      "feedingClaimClinicalQualification": "one_nonkeyed_prevention_clause_source_native_public_verified_other_whole_question_claims_open",
       "wholeQuestionClinicalQualification": "not_newly_certified",
-      "wholeParentClosed": false
+      "wholeParentClosed": false,
+      "preCorrectionWholeQuestionSHA256": "09f49fdb0cdd377a7ab2edd178bb9feedc244c20e4da6d6de32543995111ea59",
+      "feedingClauseRelease": {
+        "mainCommit": "df54257a96c12caf32af184c2d8a395652f0eafa",
+        "review": "hap-prevention-live-review.json",
+        "wholeQuestionClinicalCertification": false
+      }
     },
     {
       "module": "hospital-ventilator-associated-pneumonia",
       "id": "hospital-ventilator-associated-pneumonia-065",
-      "wholeQuestionSHA256": "37cbe94a0d6d776a960e4466f434980389256d689f4f2bb6708ebbbd8044ff31",
+      "wholeQuestionSHA256": "d0d4abe4555e8a79343fe9d3eef56337d47cdea4a83a5ef9e493f4f0228df883",
       "testedConcept": "HAP baseline empiric coverage",
       "semanticCategory": "feeding_wording_in_distractor_other_tested_concept",
       "individualReviewReason": "The stem and keyed response test HAP baseline empiric coverage. Feeding-specific wording appears in another choice, rather than being the keyed explanation of that concept. That choice remains a clinical statement requiring evidence; its distractor position does not justify ignoring or certifying it.",
@@ -1027,14 +1033,20 @@
         "review anchor",
         "other retained object fields"
       ],
-      "feedingClaimClinicalQualification": "pending_full_source_or_exact_qualified_evidence",
+      "feedingClaimClinicalQualification": "one_nonkeyed_prevention_clause_source_native_public_verified_other_whole_question_claims_open",
       "wholeQuestionClinicalQualification": "not_newly_certified",
-      "wholeParentClosed": false
+      "wholeParentClosed": false,
+      "preCorrectionWholeQuestionSHA256": "37cbe94a0d6d776a960e4466f434980389256d689f4f2bb6708ebbbd8044ff31",
+      "feedingClauseRelease": {
+        "mainCommit": "df54257a96c12caf32af184c2d8a395652f0eafa",
+        "review": "hap-prevention-live-review.json",
+        "wholeQuestionClinicalCertification": false
+      }
     },
     {
       "module": "hospital-ventilator-associated-pneumonia",
       "id": "hospital-ventilator-associated-pneumonia-113",
-      "wholeQuestionSHA256": "d60d306cec386379e94afc4d5b91603b6a5b900282eaac2fc54ac7fc5ed49bd0",
+      "wholeQuestionSHA256": "dbdc4ac8baa3f62c5c04d655a98894c30dda3b849f59ed58ac1bc582e048cfb9",
       "testedConcept": "definitive MRSA HAP/VAP",
       "semanticCategory": "feeding_wording_in_distractor_other_tested_concept",
       "individualReviewReason": "The stem and keyed response test definitive MRSA HAP/VAP. Feeding-specific wording appears in another choice, rather than being the keyed explanation of that concept. That choice remains a clinical statement requiring evidence; its distractor position does not justify ignoring or certifying it.",
@@ -1046,9 +1058,15 @@
         "review anchor",
         "other retained object fields"
       ],
-      "feedingClaimClinicalQualification": "pending_full_source_or_exact_qualified_evidence",
+      "feedingClaimClinicalQualification": "one_nonkeyed_prevention_clause_source_native_public_verified_other_whole_question_claims_open",
       "wholeQuestionClinicalQualification": "not_newly_certified",
-      "wholeParentClosed": false
+      "wholeParentClosed": false,
+      "preCorrectionWholeQuestionSHA256": "d60d306cec386379e94afc4d5b91603b6a5b900282eaac2fc54ac7fc5ed49bd0",
+      "feedingClauseRelease": {
+        "mainCommit": "df54257a96c12caf32af184c2d8a395652f0eafa",
+        "review": "hap-prevention-live-review.json",
+        "wholeQuestionClinicalCertification": false
+      }
     },
     {
       "module": "clostridioides-difficile-infection",
@@ -2033,7 +2051,9 @@
       "check all bank and cumulative copies",
       "guarded build and actual desktop/mobile grading/review",
       "scoped Audit/Main publication and exact live verification"
-    ]
+    ],
+    "status": "three_prevention_clauses_corrected_and_live_verified_complete_question_claims_still_pending",
+    "mainCommit": "df54257a96c12caf32af184c2d8a395652f0eafa"
   },
   "historicalSemanticClassificationPending": 0,
   "historicalClinicalQualificationPending": 104,
