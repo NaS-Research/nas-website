@@ -1,0 +1,38 @@
+{
+  "status": "three_whole_questions_source_reconciled_build_native_public_pending",
+  "questionIds": [
+    "beta-lactam-pharmacology-115",
+    "beta-lactam-pharmacology-116",
+    "acute-bacterial-meningitis-169"
+  ],
+  "wholeQuestionsReviewed": 3,
+  "choicesReviewed": 12,
+  "sourceNativeImagesActuallyInspected": 8,
+  "sourceIntakeSHA256": "d9f9ce3499b0c899bfe5dbc5f30bb40f9aad8cf0a30241371f8ac3c7cbce3ec8",
+  "ownerNativeSourceReceiptSHA256": "969dbfbe9c04653c93ca69278a5b697df6bd34fce16303bc0e54c804c3a122d5",
+  "clinicalReview": {
+    "beta115": "Prompt and all choices now directly test exact neonatal eligibility instead of competing broad clinical assessments; label7/8/12/13/15 and book354/355 support the restrictions and mechanisms.",
+    "beta116": "Clinical case states expected PN, and the label applies to expected as well as current calcium IV need. Keyed action violates the restriction; the other three actions support safety assessment or avoidance.",
+    "meningitis169": "Existing prompt, choices and key correct. Rationale adds exact age and postmenstrual qualifications and distinguishes IV-calcium precipitation from bilirubin displacement. Book378 and label7/8/12/13/15 qualify all choices."
+  },
+  "bookDiscrepancy": "Book neonatal shorthand is broader than exact current labeling and compresses distinct biliary and bilirubin mechanisms. Use approved primary-label qualifications for these three questions; no unrelated book claims adopted.",
+  "sourceFiles": {
+    "src/data/questionBanks/betaLactamPharmacology.js": "3850b10d42a32da8aff57bc47257d4c4e7a21e7d6c80f5781a41995cb770010e",
+    "src/data/questionBanks/acuteBacterialMeningitis.js": "dd42ad30c762ff203bbcf8a7f865966840544b7eaeb1648368095f50dd166dc1"
+  },
+  "invariants": {
+    "allIdsOrderKeysAnchorsPreserved": true,
+    "other230ModulesExact": true,
+    "allTeachingFiguresChecksReferencesExact": true,
+    "allOtherParentQuestionsExact": true,
+    "selected30WholeObjectsExact": true,
+    "associatedPoolAliasesUpdated": [],
+    "allOtherPoolObjectsExact": true
+  },
+  "actualRenderedQuestionReviewPassed": false,
+  "productionLiveVerified": false,
+  "wholeModuleVerified": false,
+  "wholeChapterVerified": false,
+  "wholeGoalComplete": false,
+  "remainingPrimaryRows": 22
+}

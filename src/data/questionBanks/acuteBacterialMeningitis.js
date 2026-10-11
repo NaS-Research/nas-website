@@ -311,7 +311,26 @@ const supportComplicationsRepairs = {
   }
 };
 
-export const acuteBacterialMeningitisQuestionBank = [...generated, ...cases].map(question => ({ ...question, ...(bookAdministrationRepairs[question.id] || {}), ...(supportComplicationsRepairs[question.id] || {}) }));
+const beforeCeftriaxoneNeonatalQuestionBank = [...generated, ...cases].map(question => ({ ...question, ...(bookAdministrationRepairs[question.id] || {}), ...(supportComplicationsRepairs[question.id] || {}) }));
+
+
+const ceftriaxoneNeonatalQuestionOverrides = {
+  "acute-bacterial-meningitis-169": {
+    "lesson": "dosing-safety",
+    "question": "A 12-day-old premature neonate receives calcium-containing parenteral nutrition. Which ceftriaxone statement is correct?",
+    "choices": [
+      "Ceftriaxone is contraindicated in this setting",
+      "Separate intravenous lines eliminate the contraindication",
+      "Only oral calcium matters",
+      "The combination is preferred for meningitis"
+    ],
+    "answer": 0,
+    "rationale": "The infant is 12 days old and receives calcium-containing IV parenteral nutrition, so the label contraindication for neonates 28 days old or younger applies. Separate IV lines do not remove it. The label also contraindicates ceftriaxone in premature neonates up to a postmenstrual age of 41 weeks. Calcium precipitation and bilirubin displacement are distinct safety concerns; oral calcium is not the basis of this IV-calcium restriction.",
+    "id": "acute-bacterial-meningitis-169",
+    "reviewHref": "#dosing-safety"
+  }
+};
+export const acuteBacterialMeningitisQuestionBank = beforeCeftriaxoneNeonatalQuestionBank.map(q => ceftriaxoneNeonatalQuestionOverrides[q.id] ?? q);
 
 if (acuteBacterialMeningitisQuestionBank.length < 100) {
   throw new Error(`Acute bacterial meningitis question bank must contain at least 100 questions, found ${acuteBacterialMeningitisQuestionBank.length}.`);
