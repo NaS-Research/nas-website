@@ -1,0 +1,90 @@
+[
+  {
+    "id": "01-severity",
+    "caption": "Highest-severity category per eligible variant\u2013RCV\u2013inheritance unit; denominator 179,613. T0 is no derived disagreement, not necessarily identical source labels. P/LP = pathogenic/likely pathogenic; U = uncertain significance; B/LB = benign/likely benign.",
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "data_source": "frozen analysis tables",
+    "interpretation": "Public-record disagreement, not a new clinical classification"
+  },
+  {
+    "id": "02-gene-observed-expected",
+    "caption": "Each point is a gene with at least 30 eligible single-gene variants and complete reference-stratum coverage. Expected counts use leave-one-gene-out backgrounds stratified by organization count, variant type, expert involvement and evaluation age, with prespecified pooling. Dashed line: observed equals expected. Descriptive screen; no significance or clinical-risk claim.",
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "data_source": "frozen analysis tables",
+    "interpretation": "Public-record disagreement, not a new clinical classification"
+  },
+  {
+    "id": "03-evaluation-age",
+    "caption": "Empirical distributions of the oldest and newest nonmissing relevant evaluation dates per eligible unit. These are evaluation ages, not durations of conflict. Units with missing dates are retained in the study and their counts are reported separately; curves omit missing values.",
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "data_source": "frozen analysis tables",
+    "interpretation": "Public-record disagreement, not a new clinical classification"
+  },
+  {
+    "id": "05-review-status",
+    "caption": "T1/T2 units divided by all eligible units in each official RCV review-status category; numerators and denominators are shown. Bars are 95% percentile intervals from 2,000 resamples clustered by VariationID, with seed 20260926; they account for repeated units within the same variant. Finite-record counts are exact; uncertainty is model-based. Review-status association is not causal.",
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "data_source": "frozen analysis tables",
+    "interpretation": "Public-record disagreement, not a new clinical classification"
+  },
+  {
+    "id": "06-concentration",
+    "caption": "Entities are ranked by disputed fractional participation. A variant is divided across its genes or disputed condition sets; each disputed unit is divided across qualifying organizations. Domains use different units and ascertainment, so curves are descriptive and do not establish responsibility for disagreement.",
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "data_source": "frozen analysis tables",
+    "interpretation": "Public-record disagreement, not a new clinical classification"
+  },
+  {
+    "id": "07-condition-distribution",
+    "caption": "Fifteen complete condition sets with the most eligible variants, selected by denominator rather than conflict count. Each variant is counted once within a condition set, with T1/T2 in any eligible inheritance-specific unit. Variants may contribute to multiple condition sets. Names are source labels, not clinical reinterpretations.",
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "data_source": "frozen analysis tables",
+    "interpretation": "Public-record disagreement, not a new clinical classification"
+  },
+  {
+    "id": "08-cohort-disposition",
+    "caption": "Mutually exclusive first-applicable assertion dispositions, before organization deduplication and the requirement for at least two qualifying organizations per unit. Additional exclusion flags may overlap and are reported separately. This panel does not equate assertion eligibility with final unit eligibility.",
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "data_source": "frozen analysis tables",
+    "interpretation": "Public-record disagreement, not a new clinical classification"
+  },
+  {
+    "id": "04-persistence",
+    "caption": "Baseline cross-band units followed across three snapshots. Missing variants, ineligibility and non-comparable identities remain separate from observed resolution. Changes between snapshots are interval-observed; this plot cannot reveal transient resolution or recurrence between releases.",
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "data_source": "frozen analysis tables",
+    "interpretation": "Public-record disagreement, not a new clinical classification"
+  }
+]

@@ -4,7 +4,7 @@ import { publicationSectionTitle } from "@/lib/publicationHeadings";
 import { useEffect, useRef } from "react";
 import usePublicationSection from "./usePublicationSection";
 
-export default function MobileContents({ sections, hasSources, hasCitation = true }) {
+export default function MobileContents({ sections, hasSources, hasCitation = true, summaryLabel = "Summary" }) {
   const dialog = useRef(null);
   const trigger = useRef(null);
   const close = () => dialog.current?.close();
@@ -14,7 +14,7 @@ export default function MobileContents({ sections, hasSources, hasCitation = tru
     desktop.addEventListener("change", resize);
     return () => desktop.removeEventListener("change", resize);
   }, []);
-  const links = [{ id: "summary", title: "Summary" }, ...sections,
+  const links = [{ id: "summary", title: summaryLabel }, ...sections,
     ...(hasSources ? [{ id: "sources", title: "Sources" }] : []), ...(hasCitation ? [{ id: "citation", title: "Citation" }] : [])];
   const active = usePublicationSection(links.map(section => section.id));
   return <div className="mobile-contents">

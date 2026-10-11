@@ -4,11 +4,12 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import DenialsWorkflowFigure from "@/components/research/DenialsWorkflowFigure";
+import CvaHeroVisual from "@/components/research/CvaHeroVisual";
 import { publicationArtwork } from "@/data/publicationArtwork";
 
 const bbbArtwork = publicationArtwork["blood-brain-barrier-prediction-audit"];
 
-const pam50Artwork = publicationArtwork["pam50-technical-repeatability"];
+
 
 const slides = [
   {
@@ -22,14 +23,14 @@ const slides = [
     visual: "bbb",
   },
   {
-    id: "brca",
-    eyebrow: "NAS-BRCA-002 · Oncology",
-    title: "PAM50 repeatability. Tested.",
-    titleLines: ["PAM50 repeatability.", "Tested."],
-    summary: "136 technical-repeat pairs. One frozen subtype method.",
-    primary: { href: "/research/pam50-technical-repeatability", label: "Read the research" },
-    secondary: { href: "/research/papers/nas-brca-002-pam50-repeatability-v1.0.1.pdf", label: "View the paper" },
-    visual: "brca",
+    id: "cva",
+    eyebrow: "NAS-CVA-001 · Genomics",
+    title: "The ClinVar Conflict Atlas",
+    titleLines: ["The ClinVar", "Conflict Atlas"],
+    summary: "Classification disagreement across three preserved ClinVar snapshots.",
+    primary: { href: "/research/clinvar-conflict-atlas", label: "Read the research" },
+    secondary: { href: "/research/papers/nas-cva-001-clinvar-conflict-atlas-v1.0.1-review.pdf", label: "View the paper" },
+    visual: "cva",
   },
   {
     id: "denials",
@@ -101,7 +102,7 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <div className={`home-carousel__visual home-carousel__visual--${activeSlide.visual}`} aria-hidden={!(["workflow", "brca", "bbb"].includes(activeSlide.visual))}>
+        <div className={`home-carousel__visual home-carousel__visual--${activeSlide.visual}`} aria-hidden={!(["workflow", "cva", "bbb"].includes(activeSlide.visual))}>
           {activeSlide.visual === "workflow" && <DenialsWorkflowFigure compact theme="dark" />}
           {activeSlide.visual === "mark" && (
             <div className="home-mark">
@@ -126,14 +127,15 @@ export default function HeroSection() {
               />
             </div>
           )}
-          {["brca", "bbb"].includes(activeSlide.visual) && (
+          {activeSlide.visual === "cva" && <CvaHeroVisual active={index === activeIndex} />}
+          {activeSlide.visual === "bbb" && (
             <figure className="home-brca-visual">
               <div className="home-brca-visual__frame">
                 <Image
-                  src={activeSlide.visual === "bbb" ? bbbArtwork.src : (pam50Artwork.heroSrc ?? pam50Artwork.src)}
-                  alt={activeSlide.visual === "bbb" ? bbbArtwork.alt : (pam50Artwork.heroAlt ?? pam50Artwork.alt)}
+                  src={bbbArtwork.src}
+                  alt={bbbArtwork.alt}
                   width={1600}
-                  height={activeSlide.visual === "bbb" ? 1067 : 900}
+                  height={1067}
                   sizes="(max-width: 767px) 92vw, 48vw"
                   priority
                 />

@@ -17,3 +17,6 @@ export function validateResearchTaxonomy(items) {
     if (!Object.hasOwn(researchTypeGroups, item.type) || !researchAreas.includes(item.area)) throw new Error(`Unreviewed research classification: ${item.slug} (${item.type}, ${item.area})`);
   }
 }
+
+// Scientific publication formats use abstracts; essays and releases retain summaries.
+export const getResearchOpeningLabel = item => item.summaryLabel ?? (["Publications", "Research Notes"].some(group => matchesResearchType(item, group)) ? "Abstract" : "Summary");

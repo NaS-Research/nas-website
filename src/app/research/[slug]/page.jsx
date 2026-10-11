@@ -20,9 +20,12 @@ import DenialsWorkflowFigure from "@/components/research/DenialsWorkflowFigure";
 import BbbStudyVisual from "@/components/research/BbbStudyVisual";
 import PublicationActions from "@/components/research/PublicationActions";
 import EvidenceFigure from "@/components/research/EvidenceFigure";
+import CvaCoverVisual from "@/components/research/CvaCoverVisual";
+import PublicationFigureGallery from "@/components/research/PublicationFigureGallery";
+import PublicationSourceGroups from "@/components/research/PublicationSourceGroups";
 import { Fragment } from "react";
 import { getResearchItem, researchItems, researchDrafts } from "@/data/researchLibrary";
-import { getResearchPdfUrl } from "@/data/researchTaxonomy.mjs";
+import { getResearchPdfUrl, getResearchOpeningLabel } from "@/data/researchTaxonomy.mjs";
 
 function SourceReferences({ references = [] }) {
   if (!references.length) return null;
@@ -104,6 +107,7 @@ export default async function ResearchPublicationPage({ params }) {
 
   const isResearchPublication = ["Publications", "Research Notes"].includes(item.type) || Boolean(item.citable);
   const pdfUrl = getResearchPdfUrl(item);
+  const openingLabel = getResearchOpeningLabel(item);
   const isPaperArticle = item.variant === "paper";
   const isOriginStory = item.variant === "institutional-origin";
   const hasHeroVideo = Boolean(item.heroVideo);
@@ -193,15 +197,16 @@ export default async function ResearchPublicationPage({ params }) {
       </header>
 
       {!hasImmersiveHero && !hasHeroVideo && item.showArticleArtwork !== false && <PublicationArtwork slug={item.slug} hero />}
+      {item.coverVisual === "cva-molecular-network" && <CvaCoverVisual />}
       <ReadingSurface {...(hasImmersiveHero ? { className: "publication-reading-surface" } : {})}>
-      <MobileContents sections={item.sections.map(({ id, title }) => ({ id, title }))} hasSources={Boolean(item.sources?.length)} hasCitation={isResearchPublication} />
+      <MobileContents sections={item.sections.map(({ id, title }) => ({ id, title }))} hasSources={Boolean(item.sources?.length)} hasCitation={isResearchPublication} summaryLabel={openingLabel} />
       <div className="nas-shell publication-layout">
-        <PublicationContents sections={item.sections.map(({ id, title, level }) => ({ id, title: publicationSectionTitle(title), level }))} hasSources={Boolean(item.sources?.length)} hasCitation={isResearchPublication} />
+        <PublicationContents sections={item.sections.map(({ id, title, level }) => ({ id, title: publicationSectionTitle(title), level }))} hasSources={Boolean(item.sources?.length)} hasCitation={isResearchPublication} summaryLabel={openingLabel} />
 
         <article className="publication-body">
           {hasImmersiveHero && <div className="publication-reading-details">{publicationDetails}</div>}
           <section id="summary" className="publication-summary">
-            <p className="publication-section-label">Summary</p>
+            <p className="publication-section-label">{openingLabel}</p>
             <p>{item.summary}</p>
 
           </section>
@@ -235,6 +240,7 @@ export default async function ResearchPublicationPage({ params }) {
               </table></div>}
               {section.tableSourceRefs && <p className="publication-table-source">Source<SourceReferences references={section.tableSourceRefs} /></p>}
               {section.figures?.filter((figure) => figure.afterParagraph === undefined).map((figure) => <PublicationFigure figure={figure} key={figure.src} />)}
+              {section.figureGallery?.length > 0 && <PublicationFigureGallery figures={section.figureGallery} />}
               {item.workflowFigureSection === section.id && <DenialsWorkflowFigure />}
               {item.slug === "blood-brain-barrier-prediction-audit" && <BbbStudyVisual section={section.id} />}
               {item.visualsBySection?.[section.id]?.map((visual) => (
@@ -249,6 +255,7 @@ export default async function ResearchPublicationPage({ params }) {
               <p>
                 {item.sourcesIntro ?? "This publication draws on the institutional and government sources listed below. Links open in a new tab."}
               </p>
+              {item.sourceGroups?.length ? <PublicationSourceGroups sources={item.sources} groups={item.sourceGroups} /> : (
               <ol>
                 {item.sources.map((source, index) => (
                   <li id={`source-${index + 1}`} key={source.url}>
@@ -262,6 +269,7 @@ export default async function ResearchPublicationPage({ params }) {
                   </li>
                 ))}
               </ol>
+              )}
             </section>
           )}
 

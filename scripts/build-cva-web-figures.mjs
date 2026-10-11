@@ -1,0 +1,22 @@
+import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { createHash } from "node:crypto";
+import { fileURLToPath } from "node:url";
+import path from "node:path";
+import assert from "node:assert/strict";
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../public/research/nas-cva-001");
+const directory = path.join(root, "web-figures");
+mkdirSync(directory,{recursive:true});
+const names = ["01-severity","02-gene-observed-expected","03-evaluation-age","04-persistence","05-review-status","06-concentration","07-condition-distribution","08-cohort-disposition"];
+const colors = {"#ffffff":"#000000","#171717":"#eeeeee","#626262":"#b4b4b4","#a8a8a8":"#929292","#e8e8e8":"#454545","#999999":"#737373","#bbbbbb":"#555555","#b68a4b":"#b68a4b"};
+const paint = /(fill|stroke):\s*(#[0-9a-f]{6})/g;
+const geometry = text => text.replace(paint,(_,property)=>property+": #COLOR");
+const hash = value => createHash("sha256").update(value).digest("hex");
+const results = names.map(name=>{
+ const original=readFileSync(path.join(root,"figures",name+".svg"),"utf8");
+ const derived=original.replace(paint,(match,property,color)=>property+": "+(colors[color]??color));
+ assert.equal(geometry(derived),geometry(original),name+": drawing geometry and labels must remain identical");
+ const relative="web-figures/"+name+".svg";
+ writeFileSync(path.join(root,relative),derived);
+ return {name,source:"figures/"+name+".svg",source_sha256:hash(original),web:relative,web_sha256:hash(derived),geometry_sha256:hash(geometry(original)),geometry_identical:true};
+});
+console.log(JSON.stringify({figures:results,gold_preserved:true,scientific_source_assets_modified:false},null,2));

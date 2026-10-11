@@ -1,3 +1,4 @@
+import { cvaRelease } from "./cvaRelease.mjs";
 import { availableResearchTypes, validateResearchTaxonomy } from "@/data/researchTaxonomy.mjs";
 import { cortexPaperSections } from "@/data/cortexPaper";
 import { cortexNativeVisualsBySection } from "@/data/cortexNativeVisuals";
@@ -8,6 +9,7 @@ import { bbbRelease } from "@/data/bbbRelease";
 import { aiHospitalBillingEssay } from "@/data/aiHospitalBillingEssay";
 
 export const researchItems = [
+  cvaRelease,
   aiHospitalBillingEssay,
   {
   "slug": "introducing-nas-workspace",
@@ -109,7 +111,7 @@ export const researchItems = [
     abstract:
       "A knowledge architecture for the life sciences built around eight domain-specific gyri, sparse expert activation, incremental training, and a staged compute roadmap for Nicole.",
     summary:
-      "The NaS Cortex proposes an intelligent-systems stack designed to shorten the path from raw life-science data to validated therapies. The architecture organizes knowledge into eight specialized gyri coordinated by Nicole, with selective ingestion, sparse activation, retrieval, adapter-based updates, and staged hardware scaling.",
+      "We propose a knowledge architecture for the life sciences in which eight domain-specific digital gyri are coordinated by Nicole. The design combines filtered corpora, retrieval, adapter-based updates, sparse expert activation, and a staged compute roadmap. An initial TinyLLaMA-1B pilot on a 16 GB M1 Mac mini processed 36,451 records from two PubMed snapshots, producing about 31 million domain tokens. Manual inspection of 100 queries identified verbatim abstract echoes, recycled phrases, and placeholder citations; 18% of answers cited more than one paper. These observations are exploratory internal development checks, not comprehensive quantitative validation or independent comparisons with established models. The pilot exposed practical training-time and memory constraints. The architecture therefore sets out staged prototype development and formal benchmarking, with scalable performance, citation reliability, safety, and clinical benefit remaining to be established. Hardware scaling estimates and future operating targets are projections rather than measured achievements.",
     publicationNote:
       "This complete web edition is provided for accessible reading and navigation. The original 31-page PDF remains the fixed version of record.",
     sections: cortexPaperSections,

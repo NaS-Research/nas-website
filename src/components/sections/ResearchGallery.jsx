@@ -32,6 +32,8 @@ function ResearchRail({ studies, label, compact, reduced }) {
     let frame, previous = 0, visible = false, position = 0, written = 0;
     let cycle = 0;
     const measure = () => {
+      // A queued resize callback can arrive while client navigation removes the rail.
+      if (!element.isConnected || !group.current) return;
       cycle = group.current.getBoundingClientRect().width;
       position = reduced ? 0 : cycle;
       element.scrollLeft = position;

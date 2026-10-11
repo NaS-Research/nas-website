@@ -76,3 +76,14 @@
 /* Keep the featured homepage hero on a plain black background. */
 .home-carousel::before,
 .home-carousel::after { content: none; display: none; }
+
+.home-carousel--cva .home-carousel__copy h1 { max-width:14ch; font-size:clamp(2.8rem,4.5vw,5rem); line-height:1.04; }
+.home-carousel--cva .home-carousel__copy h1 span { display:block; }
+.home-cva-visual__frame { position:relative; aspect-ratio:2 / 1; background:#000; }
+.home-cva-visual__frame img, .home-cva-visual__frame video { display:block; position:absolute; inset:0; width:100%; height:100%; object-fit:contain; }
+.home-cva-visual__frame video { pointer-events:none; }
+@media(max-width:767px) {
+  .home-carousel--cva .home-carousel__copy h1 { font-size:clamp(2.4rem,9.5vw,4rem); }
+  .home-carousel--cva .home-carousel__slide { align-content:start; }
+  .home-carousel--cva .home-carousel__visual { min-height:0; margin-top:1rem; }
+}

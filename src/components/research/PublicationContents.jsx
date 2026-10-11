@@ -2,8 +2,8 @@
 
 import usePublicationSection from './usePublicationSection';
 
-export default function PublicationContents({ sections, hasSources, hasCitation }) {
-  const links = [{ id: 'summary', title: 'Summary' }, ...sections,
+export default function PublicationContents({ sections, hasSources, hasCitation, summaryLabel = "Summary" }) {
+  const links = [{ id: 'summary', title: summaryLabel }, ...sections,
     ...(hasSources ? [{ id: 'sources', title: 'Sources' }] : []),
     ...(hasCitation ? [{ id: 'citation', title: 'Citation' }] : [])];
   const active = usePublicationSection(links.map(section => section.id));

@@ -24,10 +24,11 @@ export default function usePublicationSection(ids) {
     window.addEventListener('scroll', schedule, { passive: true });
     window.addEventListener('resize', schedule);
     window.addEventListener('hashchange', schedule);
+    window.addEventListener('popstate', schedule);
     const observer = new ResizeObserver(schedule);
     const article = document.querySelector('.publication-body');
     if (article) observer.observe(article);
-    return () => { cancelAnimationFrame(frame); observer.disconnect(); window.removeEventListener('scroll', schedule); window.removeEventListener('resize', schedule); window.removeEventListener('hashchange', schedule); };
+    return () => { cancelAnimationFrame(frame); observer.disconnect(); window.removeEventListener('scroll', schedule); window.removeEventListener('resize', schedule); window.removeEventListener('hashchange', schedule); window.removeEventListener('popstate', schedule); };
   }, [key]);
   return active;
 }

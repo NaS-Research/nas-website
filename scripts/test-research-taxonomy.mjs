@@ -1,8 +1,9 @@
+import { cvaRelease } from "../src/data/cvaRelease.mjs";
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import vm from 'node:vm';
-import { researchTypeGroups, availableResearchTypes, matchesResearchType, getResearchPdfUrl } from '../src/data/researchTaxonomy.mjs';
-const context = vm.createContext({ availableResearchTypes, cortexPaperSections: [], cortexNativeVisualsBySection: {} });
+import { researchTypeGroups, availableResearchTypes, matchesResearchType, getResearchPdfUrl, getResearchOpeningLabel, validateResearchTaxonomy } from '../src/data/researchTaxonomy.mjs';
+const context = vm.createContext({ cvaRelease, validateResearchTaxonomy, availableResearchTypes, cortexPaperSections: [], cortexNativeVisualsBySection: {} });
 for (const name of ['bbbRelease', 'brcaRepeatabilityRelease', 'atlasRelease', 'denialsRelease', 'aiHospitalBillingEvidence', 'aiHospitalBillingEssay', 'researchLibrary']) {
   const source = readFileSync(new URL(`../src/data/${name}.js`, import.meta.url), 'utf8').replace(/^import .*;\n/gm, '').replace(/export /g, '');
   vm.runInContext(source, context);
@@ -19,11 +20,12 @@ const expected = {
   'blood-brain-barrier-prediction-audit': ['Publications', 'Drug Discovery'],
   'pam50-technical-repeatability': ['Publications', 'Oncology'],
   'alphagenome-atlas-rnu4-2': ['Research Notes', 'Genomics'],
-  'introducing-nas-denials': ['Publications', 'Healthcare Operations'],
+  'introducing-nas-denials': ['Releases', 'Healthcare Operations'],
   'introducing-nas-cortex': ['Publications', 'Scientific Infrastructure'],
-  'chicago-our-chosen-home': ['Releases', 'Institutional'],
+  'chicago-our-chosen-home': ['Essays', 'Institutional'],
   'why-nas-exists': ['Essays', 'Institutional'],
-  'why-hyde-park': ['Essays', 'Community'],
+  'why-hyde-park': ['Essays', 'Institutional'],
+  'clinvar-conflict-atlas': ['Publications', 'Genomics'],
 };
 assert.equal(items.length, Object.keys(expected).length);
 for (const item of items) {
@@ -32,7 +34,8 @@ for (const item of items) {
   assert.equal(item.area, area);
 }
 assert.ok(!availableResearchTypes(items).includes('Model Cards'));
-assert.ok(availableResearchTypes([...items, {type: 'Model Card'}]).includes('Model Cards'));
+assert.ok(matchesResearchType({type: 'Model Card'}, 'Publications'));
+assert.deepEqual(availableResearchTypes(items), ['All', 'Publications', 'Research Notes', 'Releases', 'Essays']);
 for (const type of ['Release', 'Institutional Essay']) {
   assert.equal(getResearchPdfUrl({type, citable: true, pdfUrl: '/example.pdf'}), null, `${type}: no PDF action even if citable`);
 }
@@ -45,3 +48,13 @@ for (const item of items) {
 }
 console.log(items.map(item => `${item.shortTitle}: ${item.type} / ${item.area}`).join('\n'));
 console.log(`All ${items.length} entries classified; every entry reachable through exactly one format filter.`);
+
+const drafts = vm.runInContext("researchDrafts", context);
+assert.equal(drafts.length, 0);
+assert.equal(items.filter(item => item.slug === "clinvar-conflict-atlas").length, 1);
+assert.equal(cvaRelease.publicationStatus, "published");
+assert.equal(vm.runInContext('getResearchItem("clinvar-conflict-atlas").slug', context), cvaRelease.slug);
+for (const type of ["Publications", "Publication", "Research Report", "Technical Report", "White Paper", "Research Notes", "Research Note", "Model Card"]) assert.equal(getResearchOpeningLabel({type}), "Abstract");
+for (const type of ["Releases", "Release", "Essays", "Institutional Essay"]) assert.equal(getResearchOpeningLabel({type}), "Summary");
+assert.equal(getResearchOpeningLabel({type:"Publications", summaryLabel:"Executive summary"}), "Executive summary");
+console.log("CVA is the only newly published entry; scientific abstracts and current public taxonomy pass.");

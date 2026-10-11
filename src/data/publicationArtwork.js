@@ -1,5 +1,6 @@
 // Original NaS artwork; conceptual images do not represent measured outcomes.
 export const publicationArtwork = {
+  "clinvar-conflict-atlas": { src: "/research/nas-cva-001/artwork/cva-refined-cover-poster.webp", alt: "A folded network of blue molecular nodes with gold and red clusters against black", contain: true },
   "ai-hospital-billing-evidence": {
     src: "/research/ai-hospital-billing/cover-v2/poster-960.webp",
     heroSrc: "/research/ai-hospital-billing/cover-v2/poster-1280.webp",
