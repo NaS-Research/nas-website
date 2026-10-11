@@ -28,7 +28,10 @@ export const cvaRelease = {
   shortTitle: "The ClinVar Conflict Atlas",
   type: "Publications", area: "Genomics",
   date: "October 10, 2026", dateISO: "2026-10-10",
-  version: "1.0.1", pdfVersion: "1.0.1",
+  version: "1.0.2", pdfVersion: "1.0.1",
+  updatedDate: "October 10, 2026", updatedDateISO: "2026-10-10",
+  revisionHistory: [{ version: "1.0.1", dateISO: "2026-10-10", note: "Initial public web edition." }],
+  revisionNote: "Presentation update: cover artwork loops automatically without play/pause controls. Scientific content, results, and the PDF edition remain unchanged.",
   authors: ["NaS Research"], affiliation: null,
   publicationStatus: "published", readTime: "16 min read", showArticleArtwork: false,
   coverVisual: "cva-molecular-network",
@@ -37,7 +40,7 @@ export const cvaRelease = {
   abstract: "Measuring the severity, distribution, and observed persistence of germline classification disagreement across three preserved ClinVar snapshots.",
   summaryLabel: "Abstract",
   summary: "We measured the severity, distribution, and observed persistence of germline classification disagreement in three preserved ClinVar XML snapshots dated 31 August 2025, 2 March 2026, and 29 August 2026. Primary comparisons kept each variant’s complete condition-identifier set and inheritance context separate and required qualifying records from at least two independent organizations. The latest cohort contained 179,613 eligible units across 154,037 distinct variants. Direct positive-versus-benign disagreement occurred in 224 units (0.125%); any cross-band disagreement occurred in 32,684 units (18.197%). Adjacent-only differences formed a separate category of 34,003 units (18.931%). Follow-up of 29,626 baseline cross-band units identified 719 first observed eligible T0/T4 resolution states, including seven units that later returned to cross-band disagreement; 682 units lost comparable follow-up before an observed resolution. The findings distinguish disagreement severity and snapshot-observed change under explicit eligibility rules. They describe qualifying submitted records, not biological correctness, patient risk, true disagreement onset, or continuous persistence between archives.",
-  publicationNote: "NAS-CVA-001, version 1.0.1. Public web edition of the computational research report. The PDF remains a fixed review-candidate edition. No independent human, expert, clinical, or journal peer review has been completed. Computational verification does not establish biological correctness. Earlier unpublished editions remain preserved.",
+  publicationNote: "NAS-CVA-001, web version 1.0.2. Public web edition of the computational research report. The PDF remains a fixed review-candidate edition. No independent human, expert, clinical, or journal peer review has been completed. Computational verification does not establish biological correctness. Earlier unpublished editions remain preserved.",
   sections: [
     {
       id: "context", title: "The same variant, in the same context",
