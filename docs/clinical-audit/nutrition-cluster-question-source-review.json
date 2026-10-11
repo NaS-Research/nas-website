@@ -1,0 +1,121 @@
+{
+  "questions": [
+    {
+      "wholeQuestion": {
+        "id": "nutrition-assessment-081",
+        "question": "A screening pathway must be introduced to entire hospital wards, so allocating it to individual patients is impractical. Which design best evaluates its effect on patient centered outcomes among these options?",
+        "choices": [
+          "A pragmatic cluster randomized implementation trial",
+          "A cross sectional survey of tool preference",
+          "A case report of one positive screen",
+          "A laboratory assay validation without patients"
+        ],
+        "answer": 0,
+        "rationale": "Randomizing wards matches the level at which this pathway is delivered. The trial must address recruitment bias, spillover between wards, and clustering in its analysis; cluster randomization does not guarantee clinical benefit or eliminate contamination.",
+        "reviewHref": "#screening-to-assessment"
+      },
+      "wholeObjectSHA256": "c49ef4e1d0880d377b9786ef5237b00aba689d14128c22e9c5e2696db2ce9aca",
+      "choiceReview": [
+        {
+          "choice": "A pragmatic cluster randomized implementation trial",
+          "isKeyed": true,
+          "assessment": "Ward randomization matches an intervention that cannot be allocated to selected individuals."
+        },
+        {
+          "choice": "A cross sectional survey of tool preference",
+          "isKeyed": false,
+          "assessment": "A preference survey does not test patient outcome effects of the pathway."
+        },
+        {
+          "choice": "A case report of one positive screen",
+          "isKeyed": false,
+          "assessment": "One case cannot estimate comparative pathway effects."
+        },
+        {
+          "choice": "A laboratory assay validation without patients",
+          "isKeyed": false,
+          "assessment": "An assay study without patients cannot evaluate this clinical pathway."
+        }
+      ],
+      "sourceLocations": [
+        "WHO2021 chapter4.3 native pages1-4 (printed262-265)"
+      ],
+      "status": "owner_whole_question_source_review_passed_product_and_publication_pending"
+    },
+    {
+      "wholeQuestion": {
+        "id": "nutrition-assessment-085",
+        "question": "Which analysis best handles repeated weights nested within patients across hospital units?",
+        "choices": [
+          "A multilevel longitudinal model",
+          "A single unpaired t test",
+          "A chi square test without time",
+          "A case series with no model"
+        ],
+        "answer": 0,
+        "rationale": "A longitudinal model should account for repeated observations within patients and clustering by unit. Its covariance structure and treatment of unit effects must fit the study and number of units; a random unit effect is not automatically appropriate when there are few units.",
+        "reviewHref": "#anthropometrics-body-composition"
+      },
+      "wholeObjectSHA256": "92dd322f652d779838cf5394b9c8d19cae6d4cfc81fa3e436b9c07272e529e83",
+      "choiceReview": [
+        {
+          "choice": "A multilevel longitudinal model",
+          "isKeyed": true,
+          "assessment": "A multilevel longitudinal approach can represent the repeated-patient and unit structure, with model assumptions checked."
+        },
+        {
+          "choice": "A single unpaired t test",
+          "isKeyed": false,
+          "assessment": "An unpaired test alone ignores the repeated and clustered structure."
+        },
+        {
+          "choice": "A chi square test without time",
+          "isKeyed": false,
+          "assessment": "A chi-square test without time does not model the serial weight measurements."
+        },
+        {
+          "choice": "A case series with no model",
+          "isKeyed": false,
+          "assessment": "An unmodelled case series does not address the stated correlation structure."
+        }
+      ],
+      "sourceLocations": [
+        "WHO2021 chapter4.3 native pages1-4 (printed262-265)",
+        "Jakobsen2017 native pages7/9 longitudinal and centre models"
+      ],
+      "status": "owner_whole_question_source_review_passed_product_and_publication_pending"
+    }
+  ],
+  "WHO": {
+    "source": "WHO Guidance on Research Methods for Health Emergency and Disaster Risk Management,2021 Chapter4.3",
+    "authors": [
+      "Matthew Coldiron",
+      "Rebecca F Grais"
+    ],
+    "url": "https://wkc.who.int/docs/librariesprovider24/hedrm-documents/research-methods/who-guidance-research-methods-health-edrm-2021-chapter-4-3.pdf?sfvrsn=bbfccfe2_1",
+    "SHA256": "809b8220a2019f387ba232b536227669a828b55f63625303e1185729a93f1497",
+    "pages": 9,
+    "status": "acquired_native_rendered_owner_review_pending",
+    "nativePagesRead": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "scope": "Group delivery, feasibility, spillover, recruitment bias and clustered analysis; no claim that clusters are always preferable."
+  },
+  "Jakobsen": {
+    "DOI": "10.1186/s12874-017-0442-1",
+    "SHA256": "084bd39732b6a146cf86a246e4906f212fdf0c9e12ea699e3b9c78fc72085c80",
+    "additionalNativePagesRead": [
+      7,
+      9
+    ],
+    "scope": "Repeated measurements and hierarchical centre effects; no automatic random-effect rule for few centres."
+  },
+  "questionIDsChoicesKeysAnchorsPreserved": 105,
+  "other231ModulesExact": true,
+  "selectedCumulativeAndPoolExact": true,
+  "fullModuleVerified": false,
+  "published": false
+}

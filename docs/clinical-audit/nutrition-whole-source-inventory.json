@@ -1,0 +1,773 @@
+{
+  "updatedUTC": "2026-10-11T17:23:00.782884+00:00",
+  "wholeModuleMetadata": {
+    "slug": "nutrition-screening-assessment",
+    "number": "01",
+    "title": "Nutrition Screening, Assessment, and Malnutrition",
+    "source": "NaS synthesis of current nutrition assessment guidance",
+    "description": "Move from a rapid nutrition risk screen to a defensible assessment, diagnosis, and monitoring plan.",
+    "topics": [
+      "Nutrition risk",
+      "Anthropometrics",
+      "Physical assessment",
+      "Malnutrition diagnosis"
+    ],
+    "outcomes": [
+      "Distinguish screening, assessment, diagnosis, intervention, and monitoring.",
+      "Collect and interpret weight, intake, functional, physical, and disease data.",
+      "Apply contemporary GLIM and Academy and ASPEN diagnostic frameworks.",
+      "Build a pharmacist focused nutrition problem list and follow up plan."
+    ],
+    "references": [
+      {
+        "label": "White et al. (2012): Academy and ASPEN adult malnutrition characteristics",
+        "href": "https://doi.org/10.1177/0148607112440285"
+      },
+      {
+        "label": "BAPEN MUST adult screening tool and measurement guidance",
+        "href": "https://www.bapen.org.uk/pdfs/must/must_full.pdf"
+      },
+      {
+        "label": "Rydholm et al. (2023): joint inflammation and grip force in early rheumatoid arthritis",
+        "href": "https://doi.org/10.1186/s13075-023-03212-6"
+      },
+      {
+        "label": "Vanhorebeek et al. (2020): ICU-acquired weakness and assessment limitations",
+        "href": "https://doi.org/10.1007/s00134-020-05944-4"
+      },
+      {
+        "label": "BAPEN MUST explanatory booklet: measurement limitations",
+        "href": "https://www.bapen.org.uk/pdfs/must/must_explan.pdf"
+      },
+      {
+        "label": "ASPEN: Screening, assessment, and malnutrition diagnostic processes",
+        "href": "https://nutritioncare.org/text-based-resource/key-nutrition-screening-assessment-and-malnutrition-diagnostic-processes-and-tools-for-adults/"
+      },
+      {
+        "label": "GLIM consensus approach, five year update",
+        "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12053077/"
+      },
+      {
+        "label": "ASPEN position paper on visceral proteins",
+        "href": "https://pubmed.ncbi.nlm.nih.gov/33125793/"
+      },
+      {
+        "label": "GLIM diagnostic criteria consensus report",
+        "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6438340/"
+      },
+      {
+        "label": "Missing data mechanisms and analysis in clinical trials",
+        "href": "https://doi.org/10.1186/s12874-017-0442-1"
+      },
+      {
+        "label": "STARD diagnostic accuracy methods",
+        "href": "https://doi.org/10.1136/bmjopen-2016-012799"
+      },
+      {
+        "label": "COSMIN measurement properties and cross-cultural validity",
+        "href": "https://doi.org/10.1007/s11136-010-9606-8"
+      },
+      {
+        "label": "WHO cluster trial design and analysis",
+        "href": "https://wkc.who.int/docs/librariesprovider24/hedrm-documents/research-methods/who-guidance-research-methods-health-edrm-2021-chapter-4-3.pdf?sfvrsn=bbfccfe2_1"
+      },
+      {
+        "label": "NICE CG32: Adult nutrition support, recommendations and monitoring tables (updated 2017)",
+        "href": "https://www.nice.org.uk/guidance/cg32/chapter/Recommendations"
+      },
+      {
+        "label": "Proctor et al. (2011): Implementation outcomes and fidelity",
+        "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3068522/"
+      }
+    ],
+    "cumulativeQuestionIds": [
+      "nutrition-assessment-001",
+      "nutrition-assessment-027",
+      "nutrition-assessment-052",
+      "nutrition-assessment-078",
+      "nutrition-assessment-103",
+      "nutrition-assessment-104",
+      "nutrition-assessment-105"
+    ],
+    "area": "Calculations & Nutrition"
+  },
+  "metadataSourceReview": {
+    "titleDescriptionTopics": "Scope accurately describes screening, history, measurements, examination, diagnosis and monitoring; no claim of book-only derivation.",
+    "sourceLabel": "NaS synthesis of current nutrition assessment guidance; current primary and official sources supplement the book with user authorization.",
+    "outcomes": "ASPEN2024 screening/assessment workflow; GLIM2019/2025 and Academy/ASPEN2012 diagnosis; NICECG32 medication, dysphagia and monitoring recommendations. Pharmacist-focused plan is an educational application, not a validated instrument.",
+    "referenceScope": "Fifteen distinct references have source evidence in saved receipts. Methods papers and ICU/RA sources support assessment/method limitations only; no new therapy, severity threshold or nutrition-independent causal effect claimed.",
+    "cumulative": "Seven module IDs remain stable; all exact current whole objects have individual-choice source receipts. Selected global30 and full pool remain exact."
+  },
+  "wholeQuestionBindings": {
+    "nutrition-assessment-082": {
+      "receipt": "nutrition-method-question-source-review-v1.json",
+      "receiptSHA256": "3a287d5dacbfb28b3d77c0e07818ea858138fdd86bb32c99f1dd2d7273cd9732",
+      "wholeObjectSHA256": "f4703f7ea39d2ba788febf12d0073926547b4377f4b1bffc083c10c2b0826d56",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-083": {
+      "receipt": "nutrition-method-question-source-review-v1.json",
+      "receiptSHA256": "3a287d5dacbfb28b3d77c0e07818ea858138fdd86bb32c99f1dd2d7273cd9732",
+      "wholeObjectSHA256": "3bd2bddc9df63fcce4c8986826ace937be63234075efa4482383699a25d59f80",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-086": {
+      "receipt": "nutrition-method-question-source-review-v1.json",
+      "receiptSHA256": "3a287d5dacbfb28b3d77c0e07818ea858138fdd86bb32c99f1dd2d7273cd9732",
+      "wholeObjectSHA256": "32df477a67cc641e9cb844958a78f5b682f6a20258dba0231863f1c986557ef9",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-088": {
+      "receipt": "nutrition-method-question-source-review-v1.json",
+      "receiptSHA256": "3a287d5dacbfb28b3d77c0e07818ea858138fdd86bb32c99f1dd2d7273cd9732",
+      "wholeObjectSHA256": "d6b9948b2edcfc7d7687e0e0941d55ea69f55a8f3967d3196971dcc6649e70ca",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-089": {
+      "receipt": "nutrition-method-question-source-review-v1.json",
+      "receiptSHA256": "3a287d5dacbfb28b3d77c0e07818ea858138fdd86bb32c99f1dd2d7273cd9732",
+      "wholeObjectSHA256": "087255b2200328990238c4e170237600f64724075dc10a7a6b412b75c869c2b5",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-081": {
+      "receipt": "nutrition-cluster-question-source-review-v1.json",
+      "receiptSHA256": "90237cf705c7c13394b183c0d54bd7b2fe3b4dd0efffa9feeb123991a0a68446",
+      "wholeObjectSHA256": "c49ef4e1d0880d377b9786ef5237b00aba689d14128c22e9c5e2696db2ce9aca",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-085": {
+      "receipt": "nutrition-cluster-question-source-review-v1.json",
+      "receiptSHA256": "90237cf705c7c13394b183c0d54bd7b2fe3b4dd0efffa9feeb123991a0a68446",
+      "wholeObjectSHA256": "92dd322f652d779838cf5394b9c8d19cae6d4cfc81fa3e436b9c07272e529e83",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-091": {
+      "receipt": "nutrition-retained-care-plan-and-figure-v2.json",
+      "receiptSHA256": "74dbecea14d8b8604070fffada60966621fda86170cb14f048cad5633f5f3cee",
+      "wholeObjectSHA256": "f6f98683a9bd25d6d568952cb321728cc1b60f51426f106c9289e6310ca4b1b2",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-095": {
+      "receipt": "nutrition-retained-care-plan-and-figure-v2.json",
+      "receiptSHA256": "74dbecea14d8b8604070fffada60966621fda86170cb14f048cad5633f5f3cee",
+      "wholeObjectSHA256": "3a82066c245ba9597b8238dc8460ad6d24144adeb7ff561493a5eda176cf1fec",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-096": {
+      "receipt": "nutrition-retained-care-plan-and-figure-v2.json",
+      "receiptSHA256": "74dbecea14d8b8604070fffada60966621fda86170cb14f048cad5633f5f3cee",
+      "wholeObjectSHA256": "bdf91504a62b9ec2020de5f1549e5ff23b4b0e9872c69f3c1ad1808b5445afd6",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-097": {
+      "receipt": "nutrition-retained-care-plan-and-figure-v2.json",
+      "receiptSHA256": "74dbecea14d8b8604070fffada60966621fda86170cb14f048cad5633f5f3cee",
+      "wholeObjectSHA256": "8b6cac553f50328fefd541801c2c40b7d9b8b64f05118b8215d3a20846b60f74",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-100": {
+      "receipt": "nutrition-retained-care-plan-and-figure-v2.json",
+      "receiptSHA256": "74dbecea14d8b8604070fffada60966621fda86170cb14f048cad5633f5f3cee",
+      "wholeObjectSHA256": "b60ddb8ed351a9e6bbfd12c7a1d2ba10e113620fcd2311482161340332475f7c",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-101": {
+      "receipt": "nutrition-retained-care-plan-and-figure-v2.json",
+      "receiptSHA256": "74dbecea14d8b8604070fffada60966621fda86170cb14f048cad5633f5f3cee",
+      "wholeObjectSHA256": "00b0141e54a3257ebb1667d208772b211176cf4c6918982bf9635a53cba821a2",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-102": {
+      "receipt": "nutrition-retained-care-plan-and-figure-v2.json",
+      "receiptSHA256": "74dbecea14d8b8604070fffada60966621fda86170cb14f048cad5633f5f3cee",
+      "wholeObjectSHA256": "144330fa37a05f9dc6dabeadb4ffad72e79188e256abe5959022c220e1b35c5c",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-103": {
+      "receipt": "nutrition-retained-care-plan-and-figure-v2.json",
+      "receiptSHA256": "74dbecea14d8b8604070fffada60966621fda86170cb14f048cad5633f5f3cee",
+      "wholeObjectSHA256": "c23490b33b29d2a91378eda01d9c9b44a13a8c0bc1fb256a79c6e8bf6d2c3f72",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-104": {
+      "receipt": "nutrition-retained-care-plan-and-figure-v2.json",
+      "receiptSHA256": "74dbecea14d8b8604070fffada60966621fda86170cb14f048cad5633f5f3cee",
+      "wholeObjectSHA256": "0168986d4166971a80213f2c01d08b48d0188fc63136a8fae1e599ac2b768404",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-105": {
+      "receipt": "nutrition-retained-care-plan-and-figure-v2.json",
+      "receiptSHA256": "74dbecea14d8b8604070fffada60966621fda86170cb14f048cad5633f5f3cee",
+      "wholeObjectSHA256": "6dce65232a312e7c487c033ed51436b6041a2748b7e9c5412caa9d32ddb1a490",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-022": {
+      "receipt": "nutrition-anthropometric-question-source-review-v1.json",
+      "receiptSHA256": "ffb495752ae5f8d16e6e1d8b3ad1484ff0aa6aff0054f3586f756886b372693c",
+      "wholeObjectSHA256": "ea43e324880e76bc10a989ad102d8cd0af14cbbc5ae2d41a1a8382972be921c4",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-025": {
+      "receipt": "nutrition-anthropometric-question-source-review-v1.json",
+      "receiptSHA256": "ffb495752ae5f8d16e6e1d8b3ad1484ff0aa6aff0054f3586f756886b372693c",
+      "wholeObjectSHA256": "d029e0d650e1b541023cdff2d07045c663ba38da29f491dc12730b1dfc33471d",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-027": {
+      "receipt": "nutrition-anthropometric-question-source-review-v1.json",
+      "receiptSHA256": "ffb495752ae5f8d16e6e1d8b3ad1484ff0aa6aff0054f3586f756886b372693c",
+      "wholeObjectSHA256": "f31e4cf38af7b2bd716317993d74d2beeb885debbaa5d8dee9c173e1e1fbd4f1",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-029": {
+      "receipt": "nutrition-anthropometric-question-source-review-v1.json",
+      "receiptSHA256": "ffb495752ae5f8d16e6e1d8b3ad1484ff0aa6aff0054f3586f756886b372693c",
+      "wholeObjectSHA256": "c18b12a5bc874fcfdab009d9ae563fbf28c8fca66ed14c52058993b9c4ee621a",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-030": {
+      "receipt": "nutrition-anthropometric-question-source-review-v1.json",
+      "receiptSHA256": "ffb495752ae5f8d16e6e1d8b3ad1484ff0aa6aff0054f3586f756886b372693c",
+      "wholeObjectSHA256": "9f3cf5af22cbff323c3407fbb0f4916ece76f824195b451b60c735f056305fb5",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-041": {
+      "receipt": "nutrition-diagnostic-whole-lesson-question-review-v1.json",
+      "receiptSHA256": "72dcff79020e2e9f564d92a57c81017e92fdca3a435c725b11867662160a041a",
+      "wholeObjectSHA256": "6696ccaf1cc54ee122b92f775a4d4d348321e49bfcb7e2fd2e0e135033cfb1a0",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-042": {
+      "receipt": "nutrition-diagnostic-whole-lesson-question-review-v1.json",
+      "receiptSHA256": "72dcff79020e2e9f564d92a57c81017e92fdca3a435c725b11867662160a041a",
+      "wholeObjectSHA256": "ea35e0a52aa181a1033d47a538aed93ec7080a006f5833b85838023fe4649925",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-043": {
+      "receipt": "nutrition-diagnostic-whole-lesson-question-review-v1.json",
+      "receiptSHA256": "72dcff79020e2e9f564d92a57c81017e92fdca3a435c725b11867662160a041a",
+      "wholeObjectSHA256": "5dc33b4480370d7a77945f7546e2143ea467bf9edc6190e804b86d89d62be124",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-044": {
+      "receipt": "nutrition-diagnostic-whole-lesson-question-review-v1.json",
+      "receiptSHA256": "72dcff79020e2e9f564d92a57c81017e92fdca3a435c725b11867662160a041a",
+      "wholeObjectSHA256": "32bd2e46ae97016499152ef887c4a5b1a5a6ccb8eea172c47d2dcb58ffd0695e",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-045": {
+      "receipt": "nutrition-diagnostic-whole-lesson-question-review-v1.json",
+      "receiptSHA256": "72dcff79020e2e9f564d92a57c81017e92fdca3a435c725b11867662160a041a",
+      "wholeObjectSHA256": "f3c027e83dd838bd8395d6fbb7a6ab0995c06510f477aa5e800fff895acd128b",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-046": {
+      "receipt": "nutrition-diagnostic-whole-lesson-question-review-v1.json",
+      "receiptSHA256": "72dcff79020e2e9f564d92a57c81017e92fdca3a435c725b11867662160a041a",
+      "wholeObjectSHA256": "205e59cab102831cd09a4e88bcfa2f7341e7e193d717f483bbe61e2006bea527",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-047": {
+      "receipt": "nutrition-diagnostic-whole-lesson-question-review-v1.json",
+      "receiptSHA256": "72dcff79020e2e9f564d92a57c81017e92fdca3a435c725b11867662160a041a",
+      "wholeObjectSHA256": "025742f190c976f6c4a4294dcd04552cc704e55708505954d838f8a3693990f2",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-048": {
+      "receipt": "nutrition-diagnostic-whole-lesson-question-review-v1.json",
+      "receiptSHA256": "72dcff79020e2e9f564d92a57c81017e92fdca3a435c725b11867662160a041a",
+      "wholeObjectSHA256": "9593c15e68e5e692f728a8e928769cfb2a7d015ebdd225af18a71c63b962a849",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-049": {
+      "receipt": "nutrition-diagnostic-whole-lesson-question-review-v1.json",
+      "receiptSHA256": "72dcff79020e2e9f564d92a57c81017e92fdca3a435c725b11867662160a041a",
+      "wholeObjectSHA256": "8ff864b05cdfa668439e7f02175fd7c1aa06137ce30de2455bb7f4fe7135434a",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-050": {
+      "receipt": "nutrition-diagnostic-whole-lesson-question-review-v1.json",
+      "receiptSHA256": "72dcff79020e2e9f564d92a57c81017e92fdca3a435c725b11867662160a041a",
+      "wholeObjectSHA256": "ed1c0fd8b3b301486e5e0658e5d2385889d6389ec53309b3935bde32c70ee118",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-001": {
+      "receipt": "nutrition-screening-whole-lesson-question-review-v1.json",
+      "receiptSHA256": "5203007bded764cdaf0c465cd4616df5d1304fb4abeb3be680ead4c324772328",
+      "wholeObjectSHA256": "4e6772ce231e49cd93558ec5d85144fce1c5fc35853e98f2f6261d902d09d6e3",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-002": {
+      "receipt": "nutrition-screening-whole-lesson-question-review-v1.json",
+      "receiptSHA256": "5203007bded764cdaf0c465cd4616df5d1304fb4abeb3be680ead4c324772328",
+      "wholeObjectSHA256": "b08e79191743942f787b67fbbd968eb1a6963d059c1db2ec5023af281a8cbda3",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-003": {
+      "receipt": "nutrition-screening-whole-lesson-question-review-v1.json",
+      "receiptSHA256": "5203007bded764cdaf0c465cd4616df5d1304fb4abeb3be680ead4c324772328",
+      "wholeObjectSHA256": "bdebe67f39c92cb58875b9790419645077cbfea403269c4ba6893d3e150fd145",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-004": {
+      "receipt": "nutrition-screening-whole-lesson-question-review-v1.json",
+      "receiptSHA256": "5203007bded764cdaf0c465cd4616df5d1304fb4abeb3be680ead4c324772328",
+      "wholeObjectSHA256": "71b1991b2cc43b46b9d33f9138b41889c2d750258737f809d1c23a97420a7e74",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-005": {
+      "receipt": "nutrition-screening-whole-lesson-question-review-v1.json",
+      "receiptSHA256": "5203007bded764cdaf0c465cd4616df5d1304fb4abeb3be680ead4c324772328",
+      "wholeObjectSHA256": "7eeae58e20ad8e51da91c336746d1003a522b58dc6e268062e423c84a65d32af",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-006": {
+      "receipt": "nutrition-screening-whole-lesson-question-review-v1.json",
+      "receiptSHA256": "5203007bded764cdaf0c465cd4616df5d1304fb4abeb3be680ead4c324772328",
+      "wholeObjectSHA256": "b7987f75c9461e1aec9eff2a0596f39f7e27362dffce4dfd14ddaa9e959ec81c",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-007": {
+      "receipt": "nutrition-screening-whole-lesson-question-review-v1.json",
+      "receiptSHA256": "5203007bded764cdaf0c465cd4616df5d1304fb4abeb3be680ead4c324772328",
+      "wholeObjectSHA256": "74de6b6b141697f7b66031ff4ef10cc3cd4641d38f2f79a5df5da851c8be68e8",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-008": {
+      "receipt": "nutrition-screening-whole-lesson-question-review-v1.json",
+      "receiptSHA256": "5203007bded764cdaf0c465cd4616df5d1304fb4abeb3be680ead4c324772328",
+      "wholeObjectSHA256": "1472fa60c26550771c0ec6af57e819f3716ea355d416bccf3128bd00c7496b9e",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-009": {
+      "receipt": "nutrition-screening-whole-lesson-question-review-v1.json",
+      "receiptSHA256": "5203007bded764cdaf0c465cd4616df5d1304fb4abeb3be680ead4c324772328",
+      "wholeObjectSHA256": "fb3087a5377239d3439b3150daa040fbcefb84e50db58fc7bbefec8cfc9ead90",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-010": {
+      "receipt": "nutrition-screening-whole-lesson-question-review-v1.json",
+      "receiptSHA256": "5203007bded764cdaf0c465cd4616df5d1304fb4abeb3be680ead4c324772328",
+      "wholeObjectSHA256": "ac89503cb82f6f01bcef9949f2ea704c3dcf1936958ef0122dfff862c810d15b",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-051": {
+      "receipt": "nutrition-math-whole-question-source-review-v1.json",
+      "receiptSHA256": "d4ff48f0eee0e67d19e98c084bc02cb1fb84cc9b1c77472cd0ccc33587ae3a05",
+      "wholeObjectSHA256": "b2b1d9cc2d3b0dec21b62d354c50a80cbdc41a191668f2849fac128d4c57e605",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-052": {
+      "receipt": "nutrition-math-whole-question-source-review-v1.json",
+      "receiptSHA256": "d4ff48f0eee0e67d19e98c084bc02cb1fb84cc9b1c77472cd0ccc33587ae3a05",
+      "wholeObjectSHA256": "d661e8f5423ecf0b7b2c3c06e4b2a26f9d5f693f9961a111ae2ab522daa68076",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-053": {
+      "receipt": "nutrition-math-whole-question-source-review-v1.json",
+      "receiptSHA256": "d4ff48f0eee0e67d19e98c084bc02cb1fb84cc9b1c77472cd0ccc33587ae3a05",
+      "wholeObjectSHA256": "0ff9d9846b65e6c048b425d8e57a7b061f4944a246966655a34b3257531a9e6f",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-054": {
+      "receipt": "nutrition-math-whole-question-source-review-v1.json",
+      "receiptSHA256": "d4ff48f0eee0e67d19e98c084bc02cb1fb84cc9b1c77472cd0ccc33587ae3a05",
+      "wholeObjectSHA256": "810df4e343e7c38ce83be0535d59853cb5a840322813063245973c63e4d1ed72",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-055": {
+      "receipt": "nutrition-math-whole-question-source-review-v1.json",
+      "receiptSHA256": "d4ff48f0eee0e67d19e98c084bc02cb1fb84cc9b1c77472cd0ccc33587ae3a05",
+      "wholeObjectSHA256": "20a717d792ae1c07dc67b9659d6024c18f81d30a59eabc019c60d7411933cbde",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-056": {
+      "receipt": "nutrition-math-whole-question-source-review-v1.json",
+      "receiptSHA256": "d4ff48f0eee0e67d19e98c084bc02cb1fb84cc9b1c77472cd0ccc33587ae3a05",
+      "wholeObjectSHA256": "0897bd11487c9d37497b9344abbc7fef3f796a8d36ac239684b38384ab84fc01",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-057": {
+      "receipt": "nutrition-math-whole-question-source-review-v1.json",
+      "receiptSHA256": "d4ff48f0eee0e67d19e98c084bc02cb1fb84cc9b1c77472cd0ccc33587ae3a05",
+      "wholeObjectSHA256": "85095b28cf0407a523deeb849d1611703dfd73613569716c0df110945798f27b",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-058": {
+      "receipt": "nutrition-math-whole-question-source-review-v1.json",
+      "receiptSHA256": "d4ff48f0eee0e67d19e98c084bc02cb1fb84cc9b1c77472cd0ccc33587ae3a05",
+      "wholeObjectSHA256": "6ed98ba66ae41a5529b6e6d8d61e433c6556f71691d39495b93bf7a948527396",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-059": {
+      "receipt": "nutrition-math-whole-question-source-review-v1.json",
+      "receiptSHA256": "d4ff48f0eee0e67d19e98c084bc02cb1fb84cc9b1c77472cd0ccc33587ae3a05",
+      "wholeObjectSHA256": "aeab19496c870cdf800783516e49e48394bf11eba7ededb3ca2521c796580fc7",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-060": {
+      "receipt": "nutrition-math-whole-question-source-review-v1.json",
+      "receiptSHA256": "d4ff48f0eee0e67d19e98c084bc02cb1fb84cc9b1c77472cd0ccc33587ae3a05",
+      "wholeObjectSHA256": "258b54a3a886af167f52f12705da65f0dc68c3a16642f295e9eb9b9af55e923f",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-061": {
+      "receipt": "nutrition-math-whole-question-source-review-v1.json",
+      "receiptSHA256": "d4ff48f0eee0e67d19e98c084bc02cb1fb84cc9b1c77472cd0ccc33587ae3a05",
+      "wholeObjectSHA256": "48cb9c51644d6d70c3a97d99ec8014ffde195aacbb4ed6d1e6844790d60606b8",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-062": {
+      "receipt": "nutrition-math-whole-question-source-review-v1.json",
+      "receiptSHA256": "d4ff48f0eee0e67d19e98c084bc02cb1fb84cc9b1c77472cd0ccc33587ae3a05",
+      "wholeObjectSHA256": "07ef50f52158abbe23b5fbcb8ccad4285abb01a83fb9290ede46f638f49b026e",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-063": {
+      "receipt": "nutrition-math-whole-question-source-review-v1.json",
+      "receiptSHA256": "d4ff48f0eee0e67d19e98c084bc02cb1fb84cc9b1c77472cd0ccc33587ae3a05",
+      "wholeObjectSHA256": "d1c7b58368c2cec0304d9e27c54df6e60acc8bfd631d55c8dd1454f0c7707d5a",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-064": {
+      "receipt": "nutrition-math-whole-question-source-review-v1.json",
+      "receiptSHA256": "d4ff48f0eee0e67d19e98c084bc02cb1fb84cc9b1c77472cd0ccc33587ae3a05",
+      "wholeObjectSHA256": "eb5d6364c05abee77da6003354f308c437aacdbd6e6918c0d182bed14376cfab",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-065": {
+      "receipt": "nutrition-math-whole-question-source-review-v1.json",
+      "receiptSHA256": "d4ff48f0eee0e67d19e98c084bc02cb1fb84cc9b1c77472cd0ccc33587ae3a05",
+      "wholeObjectSHA256": "64d1ada3786367d4122eb01754db7c9adf8f93f28ae684e5fa04a22f318aed8f",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-066": {
+      "receipt": "nutrition-math-whole-question-source-review-v1.json",
+      "receiptSHA256": "d4ff48f0eee0e67d19e98c084bc02cb1fb84cc9b1c77472cd0ccc33587ae3a05",
+      "wholeObjectSHA256": "6c607c7f28b208c95b27f61a20e25ea715b320781ed06b1cb27154fa3df93530",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-067": {
+      "receipt": "nutrition-math-whole-question-source-review-v1.json",
+      "receiptSHA256": "d4ff48f0eee0e67d19e98c084bc02cb1fb84cc9b1c77472cd0ccc33587ae3a05",
+      "wholeObjectSHA256": "8b34eec8a062338e7988e1af529e151ec2590e0ec95b0250889937b6de93fe99",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-068": {
+      "receipt": "nutrition-math-whole-question-source-review-v1.json",
+      "receiptSHA256": "d4ff48f0eee0e67d19e98c084bc02cb1fb84cc9b1c77472cd0ccc33587ae3a05",
+      "wholeObjectSHA256": "86160342a3e9095faf2cb31e3fe5219c68538b677392bd80f91d00952211f871",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-069": {
+      "receipt": "nutrition-math-whole-question-source-review-v1.json",
+      "receiptSHA256": "d4ff48f0eee0e67d19e98c084bc02cb1fb84cc9b1c77472cd0ccc33587ae3a05",
+      "wholeObjectSHA256": "d8b9d4e75d62f6d27b8753224527581dd5ea74bee1ccf435c30804fc293cc517",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-070": {
+      "receipt": "nutrition-math-whole-question-source-review-v1.json",
+      "receiptSHA256": "d4ff48f0eee0e67d19e98c084bc02cb1fb84cc9b1c77472cd0ccc33587ae3a05",
+      "wholeObjectSHA256": "7cfcb5e103c9682035b8d3988f2323118e0de979a505d333115fac07688a0885",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-071": {
+      "receipt": "nutrition-math-whole-question-source-review-v1.json",
+      "receiptSHA256": "d4ff48f0eee0e67d19e98c084bc02cb1fb84cc9b1c77472cd0ccc33587ae3a05",
+      "wholeObjectSHA256": "624f61a05d9d4390de5bd8c4f1699c2cbf1fd28fe4b4f91a8d808dbd3b8a05aa",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-072": {
+      "receipt": "nutrition-math-whole-question-source-review-v1.json",
+      "receiptSHA256": "d4ff48f0eee0e67d19e98c084bc02cb1fb84cc9b1c77472cd0ccc33587ae3a05",
+      "wholeObjectSHA256": "f706672731940f77ab4871b84d25b06c4649bfe3fda77126e9327008212bbcf3",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-073": {
+      "receipt": "nutrition-math-whole-question-source-review-v1.json",
+      "receiptSHA256": "d4ff48f0eee0e67d19e98c084bc02cb1fb84cc9b1c77472cd0ccc33587ae3a05",
+      "wholeObjectSHA256": "2b470e7abaf9993f885a8756fe0d5876282c802dff413b176ad62576c26a31f9",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-074": {
+      "receipt": "nutrition-math-whole-question-source-review-v1.json",
+      "receiptSHA256": "d4ff48f0eee0e67d19e98c084bc02cb1fb84cc9b1c77472cd0ccc33587ae3a05",
+      "wholeObjectSHA256": "e8b16eaff9e6f2ea2a62daf1d8c738c7ed1ce60d6c8acfc6be74e077f975f5fb",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-075": {
+      "receipt": "nutrition-math-whole-question-source-review-v1.json",
+      "receiptSHA256": "d4ff48f0eee0e67d19e98c084bc02cb1fb84cc9b1c77472cd0ccc33587ae3a05",
+      "wholeObjectSHA256": "ff48f77f8a4f09c14443e3b4d8b83426b8ee4b599216e767f60c64413521da6c",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-076": {
+      "receipt": "nutrition-math-whole-question-source-review-v1.json",
+      "receiptSHA256": "d4ff48f0eee0e67d19e98c084bc02cb1fb84cc9b1c77472cd0ccc33587ae3a05",
+      "wholeObjectSHA256": "c530e59d800b0b74658c941c93e774100cd9659b5ca23fb510d43d4d15cb80f0",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-077": {
+      "receipt": "nutrition-math-whole-question-source-review-v1.json",
+      "receiptSHA256": "d4ff48f0eee0e67d19e98c084bc02cb1fb84cc9b1c77472cd0ccc33587ae3a05",
+      "wholeObjectSHA256": "06089dc68a0eba764c83f694cc33b5eff4e79335ad6a6d575df2a231ced7581b",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-078": {
+      "receipt": "nutrition-math-whole-question-source-review-v1.json",
+      "receiptSHA256": "d4ff48f0eee0e67d19e98c084bc02cb1fb84cc9b1c77472cd0ccc33587ae3a05",
+      "wholeObjectSHA256": "bd91d5054797d5dd80ef87d2ae8cb8541903449c92a2de14de7dbea65e98cb78",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-079": {
+      "receipt": "nutrition-math-whole-question-source-review-v1.json",
+      "receiptSHA256": "d4ff48f0eee0e67d19e98c084bc02cb1fb84cc9b1c77472cd0ccc33587ae3a05",
+      "wholeObjectSHA256": "3da5a85a7302ca304ba1684c18eb57c888630a7ccb0a845fbaa1f1eb50a398c6",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-080": {
+      "receipt": "nutrition-math-whole-question-source-review-v1.json",
+      "receiptSHA256": "d4ff48f0eee0e67d19e98c084bc02cb1fb84cc9b1c77472cd0ccc33587ae3a05",
+      "wholeObjectSHA256": "0bf5010aa21ffcd2711c7e01c0019424ba7717765b85260cfdb91a61dc7e817f",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-011": {
+      "receipt": "nutrition-history-measurement-source-review-v1.json",
+      "receiptSHA256": "08b0d624c9a22eeebdd48c859c9d75399981cd84a70a0e74ad4762416f424e2f",
+      "wholeObjectSHA256": "712921bb77e0424fed5bd83fb6b6b47503a4710a0bb696d70466d1ba3af6f9b5",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-012": {
+      "receipt": "nutrition-history-measurement-source-review-v1.json",
+      "receiptSHA256": "08b0d624c9a22eeebdd48c859c9d75399981cd84a70a0e74ad4762416f424e2f",
+      "wholeObjectSHA256": "3fcc7b199c84e7cd3e1d108fe40b415b5edce9d14844f51b8ac76c00da0320e3",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-013": {
+      "receipt": "nutrition-history-measurement-source-review-v1.json",
+      "receiptSHA256": "08b0d624c9a22eeebdd48c859c9d75399981cd84a70a0e74ad4762416f424e2f",
+      "wholeObjectSHA256": "3256c15029b1075c9d95e99db13f9e16899764eced62d97d08148b677388b050",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-014": {
+      "receipt": "nutrition-history-measurement-source-review-v1.json",
+      "receiptSHA256": "08b0d624c9a22eeebdd48c859c9d75399981cd84a70a0e74ad4762416f424e2f",
+      "wholeObjectSHA256": "760475436a7a784351d8389853ed812f471ddedf291a67bd906a50180a13ac57",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-015": {
+      "receipt": "nutrition-history-measurement-source-review-v1.json",
+      "receiptSHA256": "08b0d624c9a22eeebdd48c859c9d75399981cd84a70a0e74ad4762416f424e2f",
+      "wholeObjectSHA256": "4a195f17c7a3c609e21ae33bfa99cb8f1d4d0d71ddc15bb1cd241979c41c7c68",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-016": {
+      "receipt": "nutrition-history-measurement-source-review-v1.json",
+      "receiptSHA256": "08b0d624c9a22eeebdd48c859c9d75399981cd84a70a0e74ad4762416f424e2f",
+      "wholeObjectSHA256": "56f54755d71c00446708a4582bb4cc4a11a19100a2305168619ad3cbd71efd6c",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-017": {
+      "receipt": "nutrition-history-measurement-source-review-v1.json",
+      "receiptSHA256": "08b0d624c9a22eeebdd48c859c9d75399981cd84a70a0e74ad4762416f424e2f",
+      "wholeObjectSHA256": "7d07ce63ebbb18790220fd2c3e22db087fbb3d8d189ef2696c11f1ddc3d4a384",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-018": {
+      "receipt": "nutrition-history-measurement-source-review-v1.json",
+      "receiptSHA256": "08b0d624c9a22eeebdd48c859c9d75399981cd84a70a0e74ad4762416f424e2f",
+      "wholeObjectSHA256": "58e0b2b372a391422b13890dc999dc920c4c10bb7e0ef1b0030c588bb36249fa",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-019": {
+      "receipt": "nutrition-history-measurement-source-review-v1.json",
+      "receiptSHA256": "08b0d624c9a22eeebdd48c859c9d75399981cd84a70a0e74ad4762416f424e2f",
+      "wholeObjectSHA256": "3e47907f0bd10a516bee9ac4570e5038b46ed425332f10c62da919df982496ef",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-020": {
+      "receipt": "nutrition-history-measurement-source-review-v1.json",
+      "receiptSHA256": "08b0d624c9a22eeebdd48c859c9d75399981cd84a70a0e74ad4762416f424e2f",
+      "wholeObjectSHA256": "8ccbe6f37aa9d689df4a2bad81db962c24d6126fbb830d916394bbbd5167ed4c",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-021": {
+      "receipt": "nutrition-history-measurement-source-review-v1.json",
+      "receiptSHA256": "08b0d624c9a22eeebdd48c859c9d75399981cd84a70a0e74ad4762416f424e2f",
+      "wholeObjectSHA256": "7bf9b72d20b3ead1884404b658cc3c4da141833f97a698a443d70237cdd58d6b",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-023": {
+      "receipt": "nutrition-history-measurement-source-review-v1.json",
+      "receiptSHA256": "08b0d624c9a22eeebdd48c859c9d75399981cd84a70a0e74ad4762416f424e2f",
+      "wholeObjectSHA256": "cc75a9bc0e9037c66272141a455d87f8444da140cf66c815450984dc223e2085",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-024": {
+      "receipt": "nutrition-history-measurement-source-review-v1.json",
+      "receiptSHA256": "08b0d624c9a22eeebdd48c859c9d75399981cd84a70a0e74ad4762416f424e2f",
+      "wholeObjectSHA256": "eb6bc259103b50a81f4f3aec1b65494d0c7977d4534f85b0b745f1cdb5e9ce1e",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-026": {
+      "receipt": "nutrition-history-measurement-source-review-v1.json",
+      "receiptSHA256": "08b0d624c9a22eeebdd48c859c9d75399981cd84a70a0e74ad4762416f424e2f",
+      "wholeObjectSHA256": "088a1746a33da0ff6fc01982e8a718a63b70fe3b354d6f6b365cd23e23bbc5f4",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-028": {
+      "receipt": "nutrition-history-measurement-source-review-v1.json",
+      "receiptSHA256": "08b0d624c9a22eeebdd48c859c9d75399981cd84a70a0e74ad4762416f424e2f",
+      "wholeObjectSHA256": "045140535150f1b2967e17f606c9f7fed7840f91917279adb6c99b24e59e4176",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-084": {
+      "receipt": "nutrition-remaining-method-question-review-v1.json",
+      "receiptSHA256": "e0d3b58d9567e4ef596aed3665a7e709b6a8a1169a97a56d81ff1b9d5691104f",
+      "wholeObjectSHA256": "906d37e3d2710daf0954c5c303dc5281274121cabbf5cf3e25c0111b695ab237",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-087": {
+      "receipt": "nutrition-remaining-method-question-review-v1.json",
+      "receiptSHA256": "e0d3b58d9567e4ef596aed3665a7e709b6a8a1169a97a56d81ff1b9d5691104f",
+      "wholeObjectSHA256": "4fbb016774e172ed8fc6bcc78486ad67aea50090d16a47ac1f68cd55c3b788a3",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-090": {
+      "receipt": "nutrition-remaining-method-question-review-v1.json",
+      "receiptSHA256": "e0d3b58d9567e4ef596aed3665a7e709b6a8a1169a97a56d81ff1b9d5691104f",
+      "wholeObjectSHA256": "9f2b44180a367608f21220865f401e823008b9b5a35107da4c279bfadfcb3a84",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-092": {
+      "receipt": "nutrition-remaining-method-question-review-v1.json",
+      "receiptSHA256": "e0d3b58d9567e4ef596aed3665a7e709b6a8a1169a97a56d81ff1b9d5691104f",
+      "wholeObjectSHA256": "d4fa4b0298f68f15ece1e04b968a2da414cf34f5b8dd0bcca7fd83f8c1b65d35",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-093": {
+      "receipt": "nutrition-remaining-method-question-review-v1.json",
+      "receiptSHA256": "e0d3b58d9567e4ef596aed3665a7e709b6a8a1169a97a56d81ff1b9d5691104f",
+      "wholeObjectSHA256": "f1f359b3e2d292436be120153c1511c5bbd70e6b32da249e74b3026cabbad270",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-094": {
+      "receipt": "nutrition-remaining-method-question-review-v1.json",
+      "receiptSHA256": "e0d3b58d9567e4ef596aed3665a7e709b6a8a1169a97a56d81ff1b9d5691104f",
+      "wholeObjectSHA256": "e0e669e2efb8ba988dd888812c83e94fb7930c66aff48c4e7f886fc205235a64",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-098": {
+      "receipt": "nutrition-remaining-method-question-review-v1.json",
+      "receiptSHA256": "e0d3b58d9567e4ef596aed3665a7e709b6a8a1169a97a56d81ff1b9d5691104f",
+      "wholeObjectSHA256": "e20609efa3644bd490e70d99d287df556f54013ed2e6a5fab69377fb180500bb",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-099": {
+      "receipt": "nutrition-remaining-method-question-review-v1.json",
+      "receiptSHA256": "e0d3b58d9567e4ef596aed3665a7e709b6a8a1169a97a56d81ff1b9d5691104f",
+      "wholeObjectSHA256": "951da669834e8d6fafd346a33edcb72ff41f4eb03f544b37ace30c83183b0293",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-031": {
+      "receipt": "nutrition-physical-whole-lesson-question-review-v1.json",
+      "receiptSHA256": "664ddcff1f9f75b75b959ab32d5680a155ed1c183a6dc273a2230243e2f45858",
+      "wholeObjectSHA256": "6d71da091e335b3ace78a05d009eaac9d0c4acc8236cd0f091c7c3b793f4ef5b",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-032": {
+      "receipt": "nutrition-physical-whole-lesson-question-review-v1.json",
+      "receiptSHA256": "664ddcff1f9f75b75b959ab32d5680a155ed1c183a6dc273a2230243e2f45858",
+      "wholeObjectSHA256": "b457d6553f0057ab9fe01cc036ffca72e7ef67839ce7611de29f63e70aaa1bdf",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-033": {
+      "receipt": "nutrition-physical-whole-lesson-question-review-v1.json",
+      "receiptSHA256": "664ddcff1f9f75b75b959ab32d5680a155ed1c183a6dc273a2230243e2f45858",
+      "wholeObjectSHA256": "ab88bbcee8ba72e13c97241eb7393d42008e82e1968ab538326816f33b203542",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-034": {
+      "receipt": "nutrition-physical-whole-lesson-question-review-v1.json",
+      "receiptSHA256": "664ddcff1f9f75b75b959ab32d5680a155ed1c183a6dc273a2230243e2f45858",
+      "wholeObjectSHA256": "0c0098626b6a11353f6cf07a77febf28a773a5957ad449989e1b49c6b072f85d",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-035": {
+      "receipt": "nutrition-physical-whole-lesson-question-review-v1.json",
+      "receiptSHA256": "664ddcff1f9f75b75b959ab32d5680a155ed1c183a6dc273a2230243e2f45858",
+      "wholeObjectSHA256": "ca94c2149c7d13f74319be69595ad1dc6caa591e35af170d790381eed785d1a6",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-036": {
+      "receipt": "nutrition-physical-whole-lesson-question-review-v1.json",
+      "receiptSHA256": "664ddcff1f9f75b75b959ab32d5680a155ed1c183a6dc273a2230243e2f45858",
+      "wholeObjectSHA256": "5e76a9ef2b9275f5ad2476c278d1492880b5856e209f9955030b8126a18a8570",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-037": {
+      "receipt": "nutrition-physical-whole-lesson-question-review-v1.json",
+      "receiptSHA256": "664ddcff1f9f75b75b959ab32d5680a155ed1c183a6dc273a2230243e2f45858",
+      "wholeObjectSHA256": "5f2d1c76fc47009bf6309c12a1f3bc1264877d4a97ac2b21ed833c7d2d97e42e",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-038": {
+      "receipt": "nutrition-physical-whole-lesson-question-review-v1.json",
+      "receiptSHA256": "664ddcff1f9f75b75b959ab32d5680a155ed1c183a6dc273a2230243e2f45858",
+      "wholeObjectSHA256": "6fd668cea74a039a3289887a4ecb4e445addbf8c3b96c4d7be4ff9c87f73fe8f",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-039": {
+      "receipt": "nutrition-physical-whole-lesson-question-review-v1.json",
+      "receiptSHA256": "664ddcff1f9f75b75b959ab32d5680a155ed1c183a6dc273a2230243e2f45858",
+      "wholeObjectSHA256": "69d10156f836288dcaea41aa8e54d1b9e4c2c45f24b88b5fd7cd3e9c06d41b1b",
+      "fourChoicesExact": true
+    },
+    "nutrition-assessment-040": {
+      "receipt": "nutrition-physical-whole-lesson-question-review-v1.json",
+      "receiptSHA256": "664ddcff1f9f75b75b959ab32d5680a155ed1c183a6dc273a2230243e2f45858",
+      "wholeObjectSHA256": "6bb2251cc91b06c0ad1d371674c77f5f052e048cd1567e423d3fa503633bf0c2",
+      "fourChoicesExact": true
+    }
+  },
+  "wholeLessonBindings": {
+    "plan-monitor-communicate": {
+      "receipt": "nutrition-retained-care-plan-and-figure-v2.json",
+      "wholeObjectSHA256": "30caf4c60c3f5e3f4dc2e14e80104eddc1b7eee5b30f146eeebe632660da2bdd",
+      "exactPriorQualifiedObject": true
+    },
+    "diagnostic-frameworks": {
+      "receipt": "nutrition-diagnostic-whole-lesson-question-review-v1.json",
+      "wholeObjectSHA256": "25bb1bfb9097a9108308b665aeaf7f5cd86b922b4952010b2a591527b4385405"
+    },
+    "screening-to-assessment": {
+      "receipt": "nutrition-screening-whole-lesson-question-review-v1.json",
+      "wholeObjectSHA256": "c15c3ef53cd95544dc0b5567ab368f4054150f1220610038a1eff714011741e1"
+    },
+    "history-intake-disease": {
+      "receipt": "nutrition-history-measurement-source-review-v1.json",
+      "wholeObjectSHA256": "4ec36fce1a6f27ede6aaaff89b7934e211452a5ec823e1ecd893e5c14cd918d5"
+    },
+    "anthropometrics-body-composition": {
+      "receipt": "nutrition-history-measurement-source-review-v1.json",
+      "wholeObjectSHA256": "67c325cb6ca26fd2a21657bf68ef621ade49ccd2c1b4ed705221153d225ea9f5"
+    },
+    "physical-functional-assessment": {
+      "receipt": "nutrition-physical-whole-lesson-question-review-v1.json",
+      "wholeObjectSHA256": "c29f7f91a24a551fa2b02f6ad89c33e519ce98d565365211a382423c276c78e9"
+    }
+  },
+  "sourceReviewedOrExactRetainedQuestionCount": 105,
+  "wholeLessonSourceReviewCount": 6,
+  "other231ModulesExact": true,
+  "selectedCumulativeAndPoolExact": true,
+  "sourceComparisonPassed": true,
+  "fullModuleVerified": false,
+  "published": false,
+  "pending": [
+    "Guarded production build",
+    "Desktop/mobile lesson/figure/check/full question-bank and cumulative product proof",
+    "Exact scoped Audit/Main release and live inspection",
+    "Updated ledgers and fully verified lifecycle archive"
+  ]
+}

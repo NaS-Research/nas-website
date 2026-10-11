@@ -1,0 +1,541 @@
+{
+  "questions": [
+    {
+      "wholeQuestion": {
+        "id": "nutrition-assessment-031",
+        "question": "Which examination finding is most specific in documentation?",
+        "choices": [
+          "Moderate temporal muscle loss bilaterally",
+          "Appears malnourished",
+          "Looks weak",
+          "Thin person"
+        ],
+        "answer": 0,
+        "rationale": "The site, tissue, and degree make the observation reviewable and repeatable.",
+        "reviewHref": "#physical-functional-assessment"
+      },
+      "wholeObjectSHA256": "6d71da091e335b3ace78a05d009eaac9d0c4acc8236cd0f091c7c3b793f4ef5b",
+      "choiceReview": [
+        {
+          "choice": "Moderate temporal muscle loss bilaterally",
+          "isKeyed": true,
+          "assessment": "A named site, tissue, laterality and degree makes the observation reviewable; this documentation example does not validate a severity cutoff."
+        },
+        {
+          "choice": "Appears malnourished",
+          "isKeyed": false,
+          "assessment": "A global label omits the site and observed finding."
+        },
+        {
+          "choice": "Looks weak",
+          "isKeyed": false,
+          "assessment": "Weakness alone does not document tissue loss."
+        },
+        {
+          "choice": "Thin person",
+          "isKeyed": false,
+          "assessment": "Thinness alone omits the examined tissue and degree."
+        }
+      ],
+      "sourceLocations": [
+        "Academy/ASPEN2012 native4/5 tissue-site table; native6/7 examination/documentation"
+      ],
+      "status": "owner_whole_question_source_review_passed_product_and_publication_pending"
+    },
+    {
+      "wholeQuestion": {
+        "id": "nutrition-assessment-032",
+        "question": "Why should muscle findings be compared with baseline habitus when possible?",
+        "choices": [
+          "Age, training, disability, and chronic disease can affect expected muscle stores",
+          "Muscle anatomy is identical in every patient",
+          "Baseline eliminates the need for history",
+          "Only athletes have muscle"
+        ],
+        "answer": 0,
+        "rationale": "Expected tissue varies and the assessment should distinguish chronic baseline from recent loss.",
+        "reviewHref": "#physical-functional-assessment"
+      },
+      "wholeObjectSHA256": "b457d6553f0057ab9fe01cc036ffca72e7ef67839ce7611de29f63e70aaa1bdf",
+      "choiceReview": [
+        {
+          "choice": "Age, training, disability, and chronic disease can affect expected muscle stores",
+          "isKeyed": true,
+          "assessment": "Interpret expected tissue in the context of prior habitus, age, activity, disability and disease; training is contextual history, not a new diagnostic cutoff."
+        },
+        {
+          "choice": "Muscle anatomy is identical in every patient",
+          "isKeyed": false,
+          "assessment": "Patients do not have identical baseline muscle stores."
+        },
+        {
+          "choice": "Baseline eliminates the need for history",
+          "isKeyed": false,
+          "assessment": "Baseline comparison still requires history and clinical context."
+        },
+        {
+          "choice": "Only athletes have muscle",
+          "isKeyed": false,
+          "assessment": "Muscle is present beyond the athlete population."
+        }
+      ],
+      "sourceLocations": [
+        "Academy/ASPEN2012 native6/7 baseline, disuse, neurologic and chronic disease context; GLIM2025 native7 age/population context"
+      ],
+      "status": "owner_whole_question_source_review_passed_product_and_publication_pending"
+    },
+    {
+      "wholeQuestion": {
+        "id": "nutrition-assessment-033",
+        "question": "Which competing cause should be considered when interpreting reduced handgrip strength?",
+        "choices": [
+          "Painful arthritis",
+          "Measured height",
+          "Food preference",
+          "Serum chloride"
+        ],
+        "answer": 0,
+        "rationale": "Musculoskeletal pain can limit performance; reduced grip alone does not identify its cause.",
+        "reviewHref": "#physical-functional-assessment"
+      },
+      "wholeObjectSHA256": "ab88bbcee8ba72e13c97241eb7393d42008e82e1968ab538326816f33b203542",
+      "choiceReview": [
+        {
+          "choice": "Painful arthritis",
+          "isKeyed": true,
+          "assessment": "Painful arthritis is a competing musculoskeletal contributor to reduced performance. The cohort supports clinical context, not a nutrition-independent causal estimate."
+        },
+        {
+          "choice": "Measured height",
+          "isKeyed": false,
+          "assessment": "Measured height is not the competing painful musculoskeletal cause described here."
+        },
+        {
+          "choice": "Food preference",
+          "isKeyed": false,
+          "assessment": "Food preference alone does not identify this competing musculoskeletal cause."
+        },
+        {
+          "choice": "Serum chloride",
+          "isKeyed": false,
+          "assessment": "A serum chloride value alone does not identify the competing musculoskeletal cause."
+        }
+      ],
+      "sourceLocations": [
+        "Rydholm2023 native1/2/3/7 cohort methods, associations and limitations; ICUweakness2020 native4/5 volitional measurement limitations"
+      ],
+      "status": "owner_whole_question_source_review_passed_product_and_publication_pending"
+    },
+    {
+      "wholeQuestion": {
+        "id": "nutrition-assessment-034",
+        "question": "How should bilateral lower extremity edema be used in assessment?",
+        "choices": [
+          "As a fluid finding that may mask weight loss and support context",
+          "As direct proof of adequate protein intake",
+          "As a measure of muscle mass",
+          "As an automatic severe diagnosis"
+        ],
+        "answer": 0,
+        "rationale": "Edema is clinically important but nonspecific and can conceal tissue loss.",
+        "reviewHref": "#physical-functional-assessment"
+      },
+      "wholeObjectSHA256": "0c0098626b6a11353f6cf07a77febf28a773a5957ad449989e1b49c6b072f85d",
+      "choiceReview": [
+        {
+          "choice": "As a fluid finding that may mask weight loss and support context",
+          "isKeyed": true,
+          "assessment": "Fluid accumulation can mask weight loss and needs clinical interpretation."
+        },
+        {
+          "choice": "As direct proof of adequate protein intake",
+          "isKeyed": false,
+          "assessment": "Edema does not establish adequate protein intake."
+        },
+        {
+          "choice": "As a measure of muscle mass",
+          "isKeyed": false,
+          "assessment": "Edema is not a muscle-mass measurement."
+        },
+        {
+          "choice": "As an automatic severe diagnosis",
+          "isKeyed": false,
+          "assessment": "Edema alone does not establish severe malnutrition."
+        }
+      ],
+      "sourceLocations": [
+        "Academy/ASPEN2012 native4/5 fluid accumulation masking weight loss; GLIM2025 native6/7 fluid confounding"
+      ],
+      "status": "owner_whole_question_source_review_passed_product_and_publication_pending"
+    },
+    {
+      "wholeQuestion": {
+        "id": "nutrition-assessment-035",
+        "question": "What is the best response to visible muscle loss after a focal neurologic injury?",
+        "choices": [
+          "Consider denervation and immobility before attributing all loss to malnutrition",
+          "Ignore the injury",
+          "Diagnose by albumin",
+          "Assume generalized dietary deficiency"
+        ],
+        "answer": 0,
+        "rationale": "Non-nutrition causes must be considered when interpreting focal loss.",
+        "reviewHref": "#physical-functional-assessment"
+      },
+      "wholeObjectSHA256": "ca94c2149c7d13f74319be69595ad1dc6caa591e35af170d790381eed785d1a6",
+      "choiceReview": [
+        {
+          "choice": "Consider denervation and immobility before attributing all loss to malnutrition",
+          "isKeyed": true,
+          "assessment": "Denervation and disuse can cause focal muscle loss despite adequate intake, so assess the competing neurologic cause."
+        },
+        {
+          "choice": "Ignore the injury",
+          "isKeyed": false,
+          "assessment": "Ignoring the injury omits a relevant competing cause."
+        },
+        {
+          "choice": "Diagnose by albumin",
+          "isKeyed": false,
+          "assessment": "Albumin does not establish tissue loss or its cause."
+        },
+        {
+          "choice": "Assume generalized dietary deficiency",
+          "isKeyed": false,
+          "assessment": "Focal loss alone does not establish a generalized dietary deficiency."
+        }
+      ],
+      "sourceLocations": [
+        "Academy/ASPEN2012 native6 denervation/disuse despite adequate intake; ICUweakness2020 native1/2 pathology/context"
+      ],
+      "status": "owner_whole_question_source_review_passed_product_and_publication_pending"
+    },
+    {
+      "wholeQuestion": {
+        "id": "nutrition-assessment-036",
+        "question": "Why is a nutrition focused physical examination stronger than a global visual impression?",
+        "choices": [
+          "It evaluates defined tissue sites and fluid findings systematically",
+          "It eliminates interobserver variation",
+          "It measures caloric intake directly",
+          "It replaces all history"
+        ],
+        "answer": 0,
+        "rationale": "A structured examination produces specific findings that can be integrated with other evidence.",
+        "reviewHref": "#physical-functional-assessment"
+      },
+      "wholeObjectSHA256": "5e76a9ef2b9275f5ad2476c278d1492880b5856e209f9955030b8126a18a8570",
+      "choiceReview": [
+        {
+          "choice": "It evaluates defined tissue sites and fluid findings systematically",
+          "isKeyed": true,
+          "assessment": "A structured assessment documents defined fat, muscle and fluid findings."
+        },
+        {
+          "choice": "It eliminates interobserver variation",
+          "isKeyed": false,
+          "assessment": "Structure does not eliminate observer variation."
+        },
+        {
+          "choice": "It measures caloric intake directly",
+          "isKeyed": false,
+          "assessment": "Examination does not directly measure caloric intake."
+        },
+        {
+          "choice": "It replaces all history",
+          "isKeyed": false,
+          "assessment": "Examination complements rather than replaces history."
+        }
+      ],
+      "sourceLocations": [
+        "Academy/ASPEN2012 native4/5/6/7 structured clinical characteristics and exam; COSMIN2010 native4 measurement reliability concepts"
+      ],
+      "status": "owner_whole_question_source_review_passed_product_and_publication_pending"
+    },
+    {
+      "wholeQuestion": {
+        "id": "nutrition-assessment-037",
+        "question": "Which change most supports worsening function over time?",
+        "choices": [
+          "New inability to rise from a chair without assistance",
+          "Stable preferred foods",
+          "A new room number",
+          "Normal serum sodium"
+        ],
+        "answer": 0,
+        "rationale": "A documented decline in usual activity can support the overall assessment, although it remains nonspecific.",
+        "reviewHref": "#physical-functional-assessment"
+      },
+      "wholeObjectSHA256": "5f2d1c76fc47009bf6309c12a1f3bc1264877d4a97ac2b21ed833c7d2d97e42e",
+      "choiceReview": [
+        {
+          "choice": "New inability to rise from a chair without assistance",
+          "isKeyed": true,
+          "assessment": "New assistance needed for rising from a chair is an observable functional decline; it is not specific for malnutrition."
+        },
+        {
+          "choice": "Stable preferred foods",
+          "isKeyed": false,
+          "assessment": "Stable food preferences do not show a worsening transfer task."
+        },
+        {
+          "choice": "A new room number",
+          "isKeyed": false,
+          "assessment": "Room assignment is not a functional measurement."
+        },
+        {
+          "choice": "Normal serum sodium",
+          "isKeyed": false,
+          "assessment": "Normal sodium does not show the change in transfer ability."
+        }
+      ],
+      "sourceLocations": [
+        "ICUweakness2020 native5 Table1 functional scales and sit-to-stand assistance; Academy/ASPEN2012 native6/7 function context"
+      ],
+      "status": "owner_whole_question_source_review_passed_product_and_publication_pending"
+    },
+    {
+      "wholeQuestion": {
+        "id": "nutrition-assessment-038",
+        "question": "What is the main limitation of handgrip strength as a diagnostic characteristic?",
+        "choices": [
+          "It is influenced by many neurologic, musculoskeletal, and acute clinical factors",
+          "It cannot be measured more than once",
+          "It measures only fat mass",
+          "It is a laboratory assay"
+        ],
+        "answer": 0,
+        "rationale": "Function must be interpreted in clinical context.",
+        "reviewHref": "#physical-functional-assessment"
+      },
+      "wholeObjectSHA256": "6fd668cea74a039a3289887a4ecb4e445addbf8c3b96c4d7be4ff9c87f73fe8f",
+      "choiceReview": [
+        {
+          "choice": "It is influenced by many neurologic, musculoskeletal, and acute clinical factors",
+          "isKeyed": true,
+          "assessment": "Neurologic disease, musculoskeletal pain, acute illness and ability to cooperate can affect performance."
+        },
+        {
+          "choice": "It cannot be measured more than once",
+          "isKeyed": false,
+          "assessment": "Grip can be measured serially with a consistent method."
+        },
+        {
+          "choice": "It measures only fat mass",
+          "isKeyed": false,
+          "assessment": "Grip is functional performance, not fat mass alone."
+        },
+        {
+          "choice": "It is a laboratory assay",
+          "isKeyed": false,
+          "assessment": "Grip testing is not a laboratory assay."
+        }
+      ],
+      "sourceLocations": [
+        "ICUweakness2020 native4/5 testing cooperation, pain, positioning and devices; Rydholm2023 native2/3/7 standardized grip and clinical context"
+      ],
+      "status": "owner_whole_question_source_review_passed_product_and_publication_pending"
+    },
+    {
+      "wholeQuestion": {
+        "id": "nutrition-assessment-039",
+        "question": "Which finding should prompt examination for micronutrient or oral contributors to poor intake?",
+        "choices": [
+          "Painful oral lesions",
+          "Stable bowel habits",
+          "Normal appetite",
+          "Intentional exercise"
+        ],
+        "answer": 0,
+        "rationale": "Oral pain can reduce intake and may also provide clues to specific deficiencies or disease.",
+        "reviewHref": "#physical-functional-assessment"
+      },
+      "wholeObjectSHA256": "69d10156f836288dcaea41aa8e54d1b9e4c2c45f24b88b5fd7cd3e9c06d41b1b",
+      "choiceReview": [
+        {
+          "choice": "Painful oral lesions",
+          "isKeyed": true,
+          "assessment": "Painful oral findings warrant oral and micronutrient assessment and can affect intake; no specific deficiency is diagnosed by this item."
+        },
+        {
+          "choice": "Stable bowel habits",
+          "isKeyed": false,
+          "assessment": "Stable bowel habits do not supply the oral clue asked here."
+        },
+        {
+          "choice": "Normal appetite",
+          "isKeyed": false,
+          "assessment": "Normal appetite alone does not supply that oral clue."
+        },
+        {
+          "choice": "Intentional exercise",
+          "isKeyed": false,
+          "assessment": "Intentional exercise alone does not supply that oral clue."
+        }
+      ],
+      "sourceLocations": [
+        "Academy/ASPEN2012 native6 oral/skin examination and micronutrient clues; GLIMoriginal native3 poor oral health and impaired intake"
+      ],
+      "status": "owner_whole_question_source_review_passed_product_and_publication_pending"
+    },
+    {
+      "wholeQuestion": {
+        "id": "nutrition-assessment-040",
+        "question": "What makes serial physical findings useful for monitoring?",
+        "choices": [
+          "Using the same sites and method while documenting clinical context",
+          "Changing the method at every visit",
+          "Recording only a global adjective",
+          "Ignoring fluid status"
+        ],
+        "answer": 0,
+        "rationale": "Consistency makes direction of change more interpretable.",
+        "reviewHref": "#physical-functional-assessment"
+      },
+      "wholeObjectSHA256": "6bb2251cc91b06c0ad1d371674c77f5f052e048cd1567e423d3fa503633bf0c2",
+      "choiceReview": [
+        {
+          "choice": "Using the same sites and method while documenting clinical context",
+          "isKeyed": true,
+          "assessment": "Consistent sites and methods with recorded context support interpretation of change."
+        },
+        {
+          "choice": "Changing the method at every visit",
+          "isKeyed": false,
+          "assessment": "Changing the method can obscure comparability."
+        },
+        {
+          "choice": "Recording only a global adjective",
+          "isKeyed": false,
+          "assessment": "A global adjective omits reproducible observed findings."
+        },
+        {
+          "choice": "Ignoring fluid status",
+          "isKeyed": false,
+          "assessment": "Fluid status can alter interpretation and should be recorded."
+        }
+      ],
+      "sourceLocations": [
+        "Academy/ASPEN2012 native6/7 repeat assessment; Rydholm2023 native2/3/7 standardized measurements; ICUweakness2020 native5/6 method and edema limitations"
+      ],
+      "status": "owner_whole_question_source_review_passed_product_and_publication_pending"
+    }
+  ],
+  "wholeLesson": {
+    "slug": "physical-functional-assessment",
+    "title": "Physical and Functional Assessment",
+    "visual": "nutrition-physical-function",
+    "summary": "The bedside examination turns suspected tissue loss into observable evidence and helps distinguish fat, muscle, fluid, and function.",
+    "concepts": [
+      "Subcutaneous fat stores",
+      "Muscle groups",
+      "Edema and ascites",
+      "Functional change"
+    ],
+    "application": "Compare bilateral sites when appropriate, consider age and baseline habitus, and document the location and degree of loss rather than writing a vague global impression.",
+    "lesson": [
+      {
+        "heading": "Inspect specific tissue compartments",
+        "body": "Nutrition focused examination evaluates fat stores, muscle groups, fluid accumulation, oral and skin findings, and functional clues. Findings should be interpreted with the history because immobility, denervation, aging, trauma, and organ disease can alter muscle independently of intake."
+      },
+      {
+        "heading": "Treat function as context",
+        "body": "A decline in grip, mobility, transfers, or usual activity can support the assessment, but function is affected by pain, cognition, neurologic disease, sedation, and acute illness. It should not be treated as a nutrition specific measurement in isolation."
+      }
+    ],
+    "keyPoints": [
+      "Name the anatomical site and tissue examined.",
+      "Account for nonnutrition causes of weakness or atrophy.",
+      "Use repeated findings to monitor trajectory when the method is consistent."
+    ],
+    "check": {
+      "question": "Why should reduced handgrip strength not be interpreted alone as proof of malnutrition?",
+      "choices": [
+        "Pain, neurologic disease, sedation, and acute illness can also reduce performance",
+        "Grip strength measures only body fat",
+        "Grip strength is never clinically useful",
+        "It directly measures serum protein concentration"
+      ],
+      "answer": 0,
+      "rationale": "Functional measures are clinically useful but nonspecific and require interpretation within the complete assessment.",
+      "reviewHref": "#physical-functional-assessment"
+    }
+  },
+  "wholeLessonSHA256": "c29f7f91a24a551fa2b02f6ad89c33e519ce98d565365211a382423c276c78e9",
+  "wholeLessonUnchanged": true,
+  "lessonReview": {
+    "summaryAndApplication": "Specific observed tissue and fluid findings must be integrated with baseline and clinical context; these are documentation principles, not new severity thresholds.",
+    "body1": "Academy/ASPEN2012 native4-7 supports fat, muscle, fluid, oral/skin findings and competing denervation/disuse causes; ICUweakness2020 native1/2 supports illness context.",
+    "body2": "ICUweakness2020 native4/5 supports volitional-testing and functional limitations; RA2023 native2/3/7 supports pain/joint context without a causal nutrition claim.",
+    "keyPoints": "Defined sites and consistent examination with documented context support interpretation of trajectory.",
+    "checkChoiceReviews": [
+      "Clinical factors can reduce or prevent valid volitional performance.",
+      "Grip does not measure only fat.",
+      "Grip can contribute useful contextual information.",
+      "Grip does not directly measure serum protein."
+    ],
+    "figure": "Owner reviewed physical-function three-column Inspect/Separate/Test figure. Tissue examination, fluid masking and contextual function match reviewed source passages; no numeric cutoff or new claim introduced."
+  },
+  "questionCorrection": [
+    {
+      "before": {
+        "id": "nutrition-assessment-033",
+        "question": "Which factor can reduce handgrip strength independent of nutrition status?",
+        "choices": [
+          "Painful arthritis",
+          "Measured height",
+          "Food preference",
+          "Serum chloride"
+        ],
+        "answer": 0,
+        "rationale": "Pain can limit performance and confound a functional measure.",
+        "reviewHref": "#physical-functional-assessment"
+      },
+      "after": {
+        "id": "nutrition-assessment-033",
+        "question": "Which competing cause should be considered when interpreting reduced handgrip strength?",
+        "choices": [
+          "Painful arthritis",
+          "Measured height",
+          "Food preference",
+          "Serum chloride"
+        ],
+        "answer": 0,
+        "rationale": "Musculoskeletal pain can limit performance; reduced grip alone does not identify its cause.",
+        "reviewHref": "#physical-functional-assessment"
+      }
+    }
+  ],
+  "newSources": [
+    {
+      "name": "RA2023",
+      "SHA256": "e3b9f4717690cfc223909ecc0681be0b2f11f595da44b3de28e2b3289eafd847",
+      "ownerNativePagesReadAndViewed": [
+        1,
+        2,
+        3,
+        7,
+        8
+      ],
+      "limits": "Historical observational cohort; no nutrition-independent causal estimate, treatment effect or supplement qualification."
+    },
+    {
+      "name": "ICUweakness2020",
+      "SHA256": "c1b0c29ee90ff6fa5e4fab99fab41a1043bcc9416ec5b9baec07ac356508b7cd",
+      "ownerNativePagesReadAndViewed": [
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "limits": "Narrative review; Table1 both pages read. No new ICU treatment recommendation or numeric nutrition/strength threshold qualified."
+    }
+  ],
+  "allQuestionIDsKeysChoicesAnchorsPreserved": true,
+  "other104QuestionObjectsExact": true,
+  "other231ModulesExact": true,
+  "selectedCumulativeAndPoolExact": true,
+  "fullModuleVerified": false,
+  "published": false
+}

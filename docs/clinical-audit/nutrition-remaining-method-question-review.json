@@ -1,0 +1,378 @@
+{
+  "questions": [
+    {
+      "wholeQuestion": {
+        "id": "nutrition-assessment-084",
+        "question": "A diagnostic framework predicts mortality well but disagrees with a reference assessment. Which property is demonstrated most directly?",
+        "choices": [
+          "Predictive validity without established criterion agreement",
+          "Perfect reliability",
+          "High specificity by definition",
+          "No clinical utility"
+        ],
+        "answer": 0,
+        "rationale": "Prediction of outcomes and agreement with a reference are different validity questions.",
+        "reviewHref": "#diagnostic-frameworks"
+      },
+      "wholeObjectSHA256": "906d37e3d2710daf0954c5c303dc5281274121cabbf5cf3e25c0111b695ab237",
+      "choiceReview": [
+        {
+          "choice": "Predictive validity without established criterion agreement",
+          "isKeyed": true,
+          "assessment": "Predicting later mortality and agreeing with a reference assessment are distinct questions; GLIM2025 separately reviews predictive and criterion validity. The hypothetical does not establish either perfect diagnosis or a treatment benefit."
+        },
+        {
+          "choice": "Perfect reliability",
+          "isKeyed": false,
+          "assessment": "Outcome prediction does not establish measurement reliability."
+        },
+        {
+          "choice": "High specificity by definition",
+          "isKeyed": false,
+          "assessment": "Specificity requires the reference-negative comparison; it is not established by outcome prediction alone."
+        },
+        {
+          "choice": "No clinical utility",
+          "isKeyed": false,
+          "assessment": "Reference disagreement does not by itself prove no possible clinical utility."
+        }
+      ],
+      "sourceLocations": [
+        "GLIM2025 native3/4 criterion versus predictive validity, Table1"
+      ],
+      "status": "owner_whole_question_source_review_passed_product_and_publication_pending"
+    },
+    {
+      "wholeQuestion": {
+        "id": "nutrition-assessment-087",
+        "question": "Which finding most threatens causal interpretation of an association between low albumin and mortality?",
+        "choices": [
+          "Inflammation affects both albumin and mortality risk",
+          "Albumin is measured in grams per deciliter",
+          "Mortality is a binary outcome",
+          "The sample includes adults"
+        ],
+        "answer": 0,
+        "rationale": "Inflammation is a major confounder and helps explain why albumin is a risk marker rather than a direct nutrition measure.",
+        "reviewHref": "#diagnostic-frameworks"
+      },
+      "wholeObjectSHA256": "4fbb016774e172ed8fc6bcc78486ad67aea50090d16a47ac1f68cd55c3b788a3",
+      "choiceReview": [
+        {
+          "choice": "Inflammation affects both albumin and mortality risk",
+          "isKeyed": true,
+          "assessment": "A shared inflammatory context can confound interpretation; albumin-outcome association alone cannot establish a nutritional or causal effect."
+        },
+        {
+          "choice": "Albumin is measured in grams per deciliter",
+          "isKeyed": false,
+          "assessment": "A measurement unit does not by itself create this common-cause problem."
+        },
+        {
+          "choice": "Mortality is a binary outcome",
+          "isKeyed": false,
+          "assessment": "A binary outcome alone does not explain the common-cause problem."
+        },
+        {
+          "choice": "The sample includes adults",
+          "isKeyed": false,
+          "assessment": "Adult inclusion alone does not explain the common-cause problem."
+        }
+      ],
+      "sourceLocations": [
+        "ASPEN visceral proteins native1-3 executive summary, inflammation relationship and Figure1; inference about common-cause interpretation, not a causal effect estimate"
+      ],
+      "status": "owner_whole_question_source_review_passed_product_and_publication_pending"
+    },
+    {
+      "wholeQuestion": {
+        "id": "nutrition-assessment-090",
+        "question": "A patient has phenotype and etiology consistent with GLIM, but muscle mass was estimated with a method invalid in severe edema. What is the best response?",
+        "choices": [
+          "Use another valid phenotypic criterion or a better measurement and document uncertainty",
+          "Ignore all other evidence",
+          "Diagnose from albumin",
+          "Assume the estimate is exact"
+        ],
+        "answer": 0,
+        "rationale": "Measurement limitations should be addressed rather than concealed.",
+        "reviewHref": "#diagnostic-frameworks"
+      },
+      "wholeObjectSHA256": "9f2b44180a367608f21220865f401e823008b9b5a35107da4c279bfadfcb3a84",
+      "choiceReview": [
+        {
+          "choice": "Use another valid phenotypic criterion or a better measurement and document uncertainty",
+          "isKeyed": true,
+          "assessment": "GLIM requires valid phenotypic evidence; use another valid phenotype or an appropriate measure and retain uncertainty when severe fluid confounding invalidates a muscle estimate."
+        },
+        {
+          "choice": "Ignore all other evidence",
+          "isKeyed": false,
+          "assessment": "Discarding all valid evidence is unnecessary."
+        },
+        {
+          "choice": "Diagnose from albumin",
+          "isKeyed": false,
+          "assessment": "Albumin does not replace the phenotype and etiology criteria."
+        },
+        {
+          "choice": "Assume the estimate is exact",
+          "isKeyed": false,
+          "assessment": "An invalid estimate should not be treated as exact."
+        }
+      ],
+      "sourceLocations": [
+        "GLIM2025 native3/6/7/10 diagnostic criteria and fluid-confounded muscle/BMI limitations"
+      ],
+      "status": "owner_whole_question_source_review_passed_product_and_publication_pending"
+    },
+    {
+      "wholeQuestion": {
+        "id": "nutrition-assessment-092",
+        "question": "A quality project reports fewer positive screens after training. What should be checked before concluding nutrition risk fell?",
+        "choices": [
+          "Case mix, completion rate, and fidelity to the screening tool",
+          "Only the average albumin",
+          "The color of the form",
+          "Whether all patients received supplements"
+        ],
+        "answer": 0,
+        "rationale": "Changes in population or implementation can alter positivity independent of true risk.",
+        "reviewHref": "#screening-to-assessment"
+      },
+      "wholeObjectSHA256": "d4fa4b0298f68f15ece1e04b968a2da414cf34f5b8dd0bcca7fd83f8c1b65d35",
+      "choiceReview": [
+        {
+          "choice": "Case mix, completion rate, and fidelity to the screening tool",
+          "isKeyed": true,
+          "assessment": "Population mix, whether screens were completed and how the tool was applied can change observed positivity; check these before inferring a true fall in risk."
+        },
+        {
+          "choice": "Only the average albumin",
+          "isKeyed": false,
+          "assessment": "Albumin alone does not verify the screening process or case mix."
+        },
+        {
+          "choice": "The color of the form",
+          "isKeyed": false,
+          "assessment": "Form color does not establish population change or implementation fidelity."
+        },
+        {
+          "choice": "Whether all patients received supplements",
+          "isKeyed": false,
+          "assessment": "Supplement receipt does not establish screening fidelity or a true fall in risk."
+        }
+      ],
+      "sourceLocations": [
+        "GLIM2025 native5 screening method affects prevalence; STARD2016 native11 study population spectrum; Proctor2011 retained fidelity definition"
+      ],
+      "status": "owner_whole_question_source_review_passed_product_and_publication_pending"
+    },
+    {
+      "wholeQuestion": {
+        "id": "nutrition-assessment-093",
+        "question": "Even after accounting for recorded clinical characteristics, the probability that weight is missing depends on the unrecorded weight itself. Which missing data mechanism does this describe?",
+        "choices": [
+          "Missing not at random",
+          "Missing completely at random",
+          "No missingness",
+          "Random measurement calibration"
+        ],
+        "answer": 0,
+        "rationale": "Missing not at random means the probability of missingness still depends on the missing value after conditioning on observed data. Severe illness alone does not establish this mechanism: if recorded clinical characteristics explain missingness, it may be missing at random. The stem explicitly states dependence on the unrecorded weight.",
+        "reviewHref": "#anthropometrics-body-composition"
+      },
+      "wholeObjectSHA256": "f1f359b3e2d292436be120153c1511c5bbd70e6b32da249e74b3026cabbad270",
+      "choiceReview": [
+        {
+          "choice": "Missing not at random",
+          "isKeyed": true,
+          "assessment": "Conditional dependence on the missing weight is the stated MNAR mechanism."
+        },
+        {
+          "choice": "Missing completely at random",
+          "isKeyed": false,
+          "assessment": "MCAR would not depend on the missing value or observed characteristics."
+        },
+        {
+          "choice": "No missingness",
+          "isKeyed": false,
+          "assessment": "The stem explicitly states missing weights."
+        },
+        {
+          "choice": "Random measurement calibration",
+          "isKeyed": false,
+          "assessment": "Calibration variation does not describe why an observation is missing."
+        }
+      ],
+      "sourceLocations": [
+        "Jakobsen2017 native2 MCAR/MAR/MNAR definitions"
+      ],
+      "status": "owner_whole_question_source_review_passed_product_and_publication_pending"
+    },
+    {
+      "wholeQuestion": {
+        "id": "nutrition-assessment-094",
+        "question": "What is the principal advantage of documenting confidence in a usual weight source?",
+        "choices": [
+          "It makes uncertainty visible for diagnostic interpretation",
+          "It changes the BMI formula",
+          "It guarantees the value is correct",
+          "It removes the need for a time interval"
+        ],
+        "answer": 0,
+        "rationale": "A measured prior weight, patient recall, and proxy report have different uncertainty.",
+        "reviewHref": "#anthropometrics-body-composition"
+      },
+      "wholeObjectSHA256": "e0e669e2efb8ba988dd888812c83e94fb7930c66aff48c4e7f886fc205235a64",
+      "choiceReview": [
+        {
+          "choice": "It makes uncertainty visible for diagnostic interpretation",
+          "isKeyed": true,
+          "assessment": "Documenting the source and confidence exposes uncertainty when interpreting baseline change."
+        },
+        {
+          "choice": "It changes the BMI formula",
+          "isKeyed": false,
+          "assessment": "Source confidence does not alter the BMI equation."
+        },
+        {
+          "choice": "It guarantees the value is correct",
+          "isKeyed": false,
+          "assessment": "Confidence documentation does not guarantee accuracy."
+        },
+        {
+          "choice": "It removes the need for a time interval",
+          "isKeyed": false,
+          "assessment": "The interval remains needed to interpret change."
+        }
+      ],
+      "sourceLocations": [
+        "BAPEN explanatory native20 reliable historical/reported weights; Academy/ASPEN2012 native6/7 patient/caregiver history and records"
+      ],
+      "status": "owner_whole_question_source_review_passed_product_and_publication_pending"
+    },
+    {
+      "wholeQuestion": {
+        "id": "nutrition-assessment-098",
+        "question": "A model uses low BMI as the only phenotype. What subgroup is most likely to be underdetected?",
+        "choices": [
+          "Patients with obesity and clinically important muscle loss",
+          "Patients whose BMI is already low",
+          "Patients with measured height",
+          "Patients without edema"
+        ],
+        "answer": 0,
+        "rationale": "A BMI only approach can miss malnutrition across higher body size categories.",
+        "reviewHref": "#diagnostic-frameworks"
+      },
+      "wholeObjectSHA256": "e20609efa3644bd490e70d99d287df556f54013ed2e6a5fab69377fb180500bb",
+      "choiceReview": [
+        {
+          "choice": "Patients with obesity and clinically important muscle loss",
+          "isKeyed": true,
+          "assessment": "GLIM explicitly recognizes malnutrition with obesity and low muscle mass despite a non-low BMI."
+        },
+        {
+          "choice": "Patients whose BMI is already low",
+          "isKeyed": false,
+          "assessment": "A low-BMI-only phenotype can already identify the low-BMI subgroup."
+        },
+        {
+          "choice": "Patients with measured height",
+          "isKeyed": false,
+          "assessment": "Having measured height does not define the body-composition subgroup missed by low BMI alone."
+        },
+        {
+          "choice": "Patients without edema",
+          "isKeyed": false,
+          "assessment": "Absence of edema does not specifically define the high-BMI muscle-loss subgroup."
+        }
+      ],
+      "sourceLocations": [
+        "GLIM2025 native6/7 obesity and muscle-mass limitations"
+      ],
+      "status": "owner_whole_question_source_review_passed_product_and_publication_pending"
+    },
+    {
+      "wholeQuestion": {
+        "id": "nutrition-assessment-099",
+        "question": "Which approach makes a nutrition diagnosis most transparent and reviewable?",
+        "choices": [
+          "Review the raw history, measurements, and examination before applying criteria",
+          "Copy the prior label",
+          "Use one laboratory result",
+          "Avoid documenting contradictory evidence"
+        ],
+        "answer": 0,
+        "rationale": "Reviewing the underlying history, measurements, and examination makes supporting and contradictory evidence visible before a diagnostic label is applied.",
+        "reviewHref": "#diagnostic-frameworks"
+      },
+      "wholeObjectSHA256": "951da669834e8d6fafd346a33edcb72ff41f4eb03f544b37ace30c83183b0293",
+      "choiceReview": [
+        {
+          "choice": "Review the raw history, measurements, and examination before applying criteria",
+          "isKeyed": true,
+          "assessment": "Reviewing history, measured data and examination before applying a label makes evidence and discrepancies reviewable. This revised item makes no untested causal claim that a technique best reduces cognitive bias."
+        },
+        {
+          "choice": "Copy the prior label",
+          "isKeyed": false,
+          "assessment": "Copying a label alone leaves its supporting findings unclear."
+        },
+        {
+          "choice": "Use one laboratory result",
+          "isKeyed": false,
+          "assessment": "One laboratory result is not a comprehensive diagnostic assessment."
+        },
+        {
+          "choice": "Avoid documenting contradictory evidence",
+          "isKeyed": false,
+          "assessment": "Suppressing contradictory findings reduces transparency."
+        }
+      ],
+      "sourceLocations": [
+        "Academy/ASPEN2012 native6/7 assessment and documentation; GLIM2025 explicit criteria; ASPEN visceral proteins executive summary"
+      ],
+      "status": "owner_whole_question_source_review_passed_product_and_publication_pending"
+    }
+  ],
+  "questionCorrection": [
+    {
+      "before": {
+        "id": "nutrition-assessment-099",
+        "question": "Which method best reduces anchoring on a referral diagnosis?",
+        "choices": [
+          "Review the raw history, measurements, and examination before applying criteria",
+          "Copy the prior label",
+          "Use one laboratory result",
+          "Avoid documenting contradictory evidence"
+        ],
+        "answer": 0,
+        "rationale": "Independent evidence review reduces diagnostic anchoring and makes discrepancies visible.",
+        "reviewHref": "#diagnostic-frameworks"
+      },
+      "after": {
+        "id": "nutrition-assessment-099",
+        "question": "Which approach makes a nutrition diagnosis most transparent and reviewable?",
+        "choices": [
+          "Review the raw history, measurements, and examination before applying criteria",
+          "Copy the prior label",
+          "Use one laboratory result",
+          "Avoid documenting contradictory evidence"
+        ],
+        "answer": 0,
+        "rationale": "Reviewing the underlying history, measurements, and examination makes supporting and contradictory evidence visible before a diagnostic label is applied.",
+        "reviewHref": "#diagnostic-frameworks"
+      }
+    }
+  ],
+  "newReference": "BAPEN official explanatory booklet; actual selected pages owner read/viewed",
+  "allQuestionIDsKeysChoicesAnchorsPreserved": true,
+  "other104QuestionObjectsExact": true,
+  "other231ModulesExact": true,
+  "selectedCumulativeAndPoolExact": true,
+  "sourceScope": "Separate outcome prediction, reference agreement, clinical confounding and process measurement. No new efficacy, diagnostic cutoff or cognitive-debiasing causal estimate. Proctor definitions retain their original implementation-methodology scope.",
+  "fullModuleVerified": false,
+  "published": false
+}

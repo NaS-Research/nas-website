@@ -1,0 +1,331 @@
+{
+  "status": "scoped_source_corrections_saved_full_module_review_pending",
+  "changedQuestions": [
+    {
+      "id": "nutrition-assessment-007",
+      "before": {
+        "id": "nutrition-assessment-007",
+        "question": "What is the strongest systems level quality measure for a screening program?",
+        "choices": [
+          "The proportion of positive screens followed by timely assessment",
+          "The number of albumin tests ordered",
+          "The percentage of patients given supplements",
+          "The number of diagnoses entered before screening"
+        ],
+        "answer": 0,
+        "rationale": "Follow through measures whether risk identification leads to appropriate evaluation.",
+        "reviewHref": "#screening-to-assessment"
+      },
+      "after": {
+        "id": "nutrition-assessment-007",
+        "question": "Which process measure most directly shows whether positive nutrition screens lead to assessment?",
+        "choices": [
+          "The proportion of positive screens followed by timely assessment",
+          "The number of albumin tests ordered",
+          "The percentage of patients given supplements",
+          "The number of diagnoses entered before screening"
+        ],
+        "answer": 0,
+        "rationale": "Follow through measures whether risk identification leads to assessment. Completing that process does not by itself establish a patient benefit.",
+        "reviewHref": "#screening-to-assessment"
+      }
+    },
+    {
+      "id": "nutrition-assessment-093",
+      "before": {
+        "id": "nutrition-assessment-093",
+        "question": "Which missing data mechanism is most concerning when weights are absent because the sickest patients cannot be weighed?",
+        "choices": [
+          "Missing not at random",
+          "Missing completely at random",
+          "No missingness",
+          "Random measurement calibration"
+        ],
+        "answer": 0,
+        "rationale": "Missingness depends on unobserved severity and can bias estimates if treated as random.",
+        "reviewHref": "#anthropometrics-body-composition"
+      },
+      "after": {
+        "id": "nutrition-assessment-093",
+        "question": "Even after accounting for recorded clinical characteristics, the probability that weight is missing depends on the unrecorded weight itself. Which missing data mechanism does this describe?",
+        "choices": [
+          "Missing not at random",
+          "Missing completely at random",
+          "No missingness",
+          "Random measurement calibration"
+        ],
+        "answer": 0,
+        "rationale": "Missing not at random means the probability of missingness still depends on the missing value after conditioning on observed data. Severe illness alone does not establish this mechanism: if recorded clinical characteristics explain missingness, it may be missing at random. The stem explicitly states dependence on the unrecorded weight.",
+        "reviewHref": "#anthropometrics-body-composition"
+      }
+    }
+  ],
+  "changedTeaching": "diagnostic-frameworks GLIM body: distinguish diagnosis from exclusion; muscle strength not a muscle-mass substitute",
+  "sourceOwnerRead": {
+    "aspenProcessesNativePages": [
+      1,
+      2,
+      3
+    ],
+    "glimUpdateNativePages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "glimOriginalNativePages": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "missingDataMethodsNativePages": [
+      1,
+      2,
+      7,
+      9
+    ],
+    "bapenMustNativePages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "allOtherModulesUnchanged": 231,
+  "questionIDsChoicesAnswersAnchorsPreserved": 105,
+  "cumulativeSelectedUnchanged": true,
+  "fullModuleVerified": false,
+  "published": false,
+  "pending": [
+    "Guarded production build",
+    "Desktop/mobile lesson/figure/check/full question-bank and cumulative product proof",
+    "Exact scoped Audit/Main release and live inspection",
+    "Updated ledgers and fully verified lifecycle archive"
+  ],
+  "updatedUTC": "2026-10-11T17:23:00.782884+00:00",
+  "calculations": {
+    "passed": 30,
+    "receipt": "nutrition-independent-calculations-v1.json",
+    "SHA256": "49b02df7b93686ed22feffed9414c533651ce71c1b5d4d27edfdc1d7b3740bf7"
+  },
+  "additionalSourceOwnerRead": {
+    "aspenVisceralProteins": {
+      "DOI": "10.1002/ncp.10588",
+      "nativePages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "SHA256": "eb1402dfcc1366b009efee1c1fb121696768b1c312e73bd0690917667a7756ff",
+      "scope": "Full primary paper including Figure 1/Table 1; no isolated lab-based diagnosis or efficacy claim"
+    },
+    "AAIM2012": {
+      "DOI": "10.1177/0148607112440285",
+      "nativePages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "SHA256": "350e08b53f3ad638407fceb917272a534c88ce106a961d3c5a9c166430e02a57",
+      "scope": "Complete nine-page primary consensus paper, including Figure 1 and full Table 1, read and actually viewed; whole lesson and question mapping remains pending."
+    }
+  },
+  "sourceAcquisitionLimitations": [
+    "CONSORT2012 retrieval remained unavailable. WHO2021 official chapter4.3 and Jakobsen2017 relevant primary methods sections independently reviewed for081/085; no claims qualified from failed retrieval.",
+    "ASPEN processes is a practice tool, not a Board-approved guideline.",
+    "COSMIN source scope and remaining STARD/COSMIN pages documented in methods receipt; no particular nutrition screening tool newly validated."
+  ],
+  "progress": {
+    "wholeModulesVerified": 68,
+    "totalModules": 232,
+    "wholeChaptersVerified": 7,
+    "totalChapters": 82,
+    "wholeGoalComplete": false
+  },
+  "methodsAcquisitionV2": [
+    {
+      "name": "cosmin-2010",
+      "url": "https://link.springer.com/content/pdf/10.1007/s11136-010-9606-8.pdf",
+      "SHA256": "99ecc81a8860c9d640649e56044905a735b5baeadf28836618325d1d8d6979e4",
+      "pages": 11,
+      "status": "acquired_rendered_owner_review_pending"
+    },
+    {
+      "name": "stard-2016",
+      "url": "https://bmjopen.bmj.com/content/6/11/e012799.full.pdf",
+      "status": "unavailable_no_qualification"
+    },
+    {
+      "name": "consort-2012-author-record",
+      "url": "https://abdn.elsevierpure.com/en/publications/consort-2010-statement-extension-to-cluster-randomised-trials",
+      "status": "record_acquired_not_full_paper",
+      "SHA256": "ca79069454aafc4ca4d94a710ce99842403def9adad7a1c82780e32a7be437fb",
+      "possiblePaperLinks": [
+        "/files/22372160/Campbell_2012.e5661"
+      ]
+    },
+    {
+      "name": "stard-author-record",
+      "url": "https://ora.ox.ac.uk/objects/uuid%3A25c2041c-f931-4b98-bfcf-3c22a3bd1891",
+      "status": "record_acquired_not_full_paper",
+      "SHA256": "30723d6ea0ad3d85219b8240f7705946b9802741ab9da2fdf21f751657775ba9",
+      "possiblePaperLinks": [
+        "/objects/uuid:25c2041c-f931-4b98-bfcf-3c22a3bd1891/files/md48c242e3cc602956383156304adc585",
+        "/objects/uuid:25c2041c-f931-4b98-bfcf-3c22a3bd1891/files/md48c242e3cc602956383156304adc585/preview"
+      ]
+    }
+  ],
+  "methodQuestionSourceReviews": [
+    "nutrition-assessment-082",
+    "nutrition-assessment-083",
+    "nutrition-assessment-086",
+    "nutrition-assessment-088",
+    "nutrition-assessment-089",
+    "nutrition-assessment-081",
+    "nutrition-assessment-085"
+  ],
+  "methodSourceReviewReceipt": "nutrition-method-question-source-review-v1.json",
+  "clusterSourceReviewReceipt": "nutrition-cluster-question-source-review-v1.json",
+  "retainedCarePlanExactMatchReceipt": "nutrition-retained-care-plan-and-figure-v2.json",
+  "retainedExactPriorQualifiedQuestionIDs": [
+    "nutrition-assessment-091",
+    "nutrition-assessment-095",
+    "nutrition-assessment-096",
+    "nutrition-assessment-097",
+    "nutrition-assessment-100",
+    "nutrition-assessment-101",
+    "nutrition-assessment-102",
+    "nutrition-assessment-103",
+    "nutrition-assessment-104",
+    "nutrition-assessment-105"
+  ],
+  "diagnosticFigureSourceCorrections": 3,
+  "anthropometricQuestionSourceReviewReceipt": "nutrition-anthropometric-question-source-review-v1.json",
+  "anthropometricQuestionSourceReviews": [
+    "nutrition-assessment-022",
+    "nutrition-assessment-025",
+    "nutrition-assessment-027",
+    "nutrition-assessment-029",
+    "nutrition-assessment-030"
+  ],
+  "diagnosticSourceReviewReceipt": "nutrition-diagnostic-whole-lesson-question-review-v1.json",
+  "diagnosticWholeQuestionSourceReviews": [
+    "nutrition-assessment-041",
+    "nutrition-assessment-042",
+    "nutrition-assessment-043",
+    "nutrition-assessment-044",
+    "nutrition-assessment-045",
+    "nutrition-assessment-046",
+    "nutrition-assessment-047",
+    "nutrition-assessment-048",
+    "nutrition-assessment-049",
+    "nutrition-assessment-050"
+  ],
+  "diagnosticWholeLessonSourceReview": "passed_pending_product_and_release",
+  "screeningSourceReviewReceipt": "nutrition-screening-whole-lesson-question-review-v1.json",
+  "screeningWholeQuestionSourceReviews": [
+    "nutrition-assessment-001",
+    "nutrition-assessment-002",
+    "nutrition-assessment-003",
+    "nutrition-assessment-004",
+    "nutrition-assessment-005",
+    "nutrition-assessment-006",
+    "nutrition-assessment-007",
+    "nutrition-assessment-008",
+    "nutrition-assessment-009",
+    "nutrition-assessment-010"
+  ],
+  "screeningWholeLessonSourceReview": "passed_pending_product_and_release",
+  "mathWholeQuestionSourceReviewReceipt": "nutrition-math-whole-question-source-review-v1.json",
+  "mathWholeQuestionSourceReviews": [
+    "nutrition-assessment-051",
+    "nutrition-assessment-052",
+    "nutrition-assessment-053",
+    "nutrition-assessment-054",
+    "nutrition-assessment-055",
+    "nutrition-assessment-056",
+    "nutrition-assessment-057",
+    "nutrition-assessment-058",
+    "nutrition-assessment-059",
+    "nutrition-assessment-060",
+    "nutrition-assessment-061",
+    "nutrition-assessment-062",
+    "nutrition-assessment-063",
+    "nutrition-assessment-064",
+    "nutrition-assessment-065",
+    "nutrition-assessment-066",
+    "nutrition-assessment-067",
+    "nutrition-assessment-068",
+    "nutrition-assessment-069",
+    "nutrition-assessment-070",
+    "nutrition-assessment-071",
+    "nutrition-assessment-072",
+    "nutrition-assessment-073",
+    "nutrition-assessment-074",
+    "nutrition-assessment-075",
+    "nutrition-assessment-076",
+    "nutrition-assessment-077",
+    "nutrition-assessment-078",
+    "nutrition-assessment-079",
+    "nutrition-assessment-080"
+  ],
+  "historyMeasurementSourceReviewReceipt": "nutrition-history-measurement-source-review-v1.json",
+  "historyMeasurementWholeQuestionSourceReviews": [
+    "nutrition-assessment-011",
+    "nutrition-assessment-012",
+    "nutrition-assessment-013",
+    "nutrition-assessment-014",
+    "nutrition-assessment-015",
+    "nutrition-assessment-016",
+    "nutrition-assessment-017",
+    "nutrition-assessment-018",
+    "nutrition-assessment-019",
+    "nutrition-assessment-020",
+    "nutrition-assessment-021",
+    "nutrition-assessment-023",
+    "nutrition-assessment-024",
+    "nutrition-assessment-026",
+    "nutrition-assessment-028"
+  ],
+  "historyMeasurementWholeLessonsSourceReviewed": [
+    "history-intake-disease",
+    "anthropometrics-body-composition"
+  ],
+  "remainingMethodQuestionSourceReviewReceipt": "nutrition-remaining-method-question-review-v1.json",
+  "remainingMethodWholeQuestionSourceReviews": [
+    "nutrition-assessment-084",
+    "nutrition-assessment-087",
+    "nutrition-assessment-090",
+    "nutrition-assessment-092",
+    "nutrition-assessment-093",
+    "nutrition-assessment-094",
+    "nutrition-assessment-098",
+    "nutrition-assessment-099"
+  ],
+  "physicalReviewReceipt": "nutrition-physical-whole-lesson-question-review-v1.json",
+  "sourceReviewedOrExactRetainedWholeQuestions": 105,
+  "wholeSourceInventoryReceipt": "nutrition-whole-source-inventory-v2.json"
+}

@@ -1,0 +1,243 @@
+{
+  "questions": [
+    {
+      "id": "nutrition-assessment-082",
+      "wholeQuestion": {
+        "id": "nutrition-assessment-082",
+        "question": "A new screening tool has very high sensitivity but low specificity. What is the most likely operational consequence?",
+        "choices": [
+          "More false positive referrals for assessment",
+          "More false negative screens",
+          "No need for confirmatory assessment",
+          "Perfect diagnostic accuracy"
+        ],
+        "answer": 0,
+        "rationale": "High sensitivity captures most at risk patients, while low specificity increases false positives.",
+        "reviewHref": "#screening-to-assessment"
+      },
+      "wholeObjectSHA256": "f4703f7ea39d2ba788febf12d0073926547b4377f4b1bffc083c10c2b0826d56",
+      "sourceLocation": "STARD2016 native page2 Table1 sensitivity/specificity",
+      "choiceReview": [
+        {
+          "choice": "More false positive referrals for assessment",
+          "isKeyed": true,
+          "assessment": "Low specificity entails more false positives among those without the target condition, increasing assessment referrals."
+        },
+        {
+          "choice": "More false negative screens",
+          "isKeyed": false,
+          "assessment": "High sensitivity does not imply more false negatives."
+        },
+        {
+          "choice": "No need for confirmatory assessment",
+          "isKeyed": false,
+          "assessment": "A positive screen does not remove the need for assessment."
+        },
+        {
+          "choice": "Perfect diagnostic accuracy",
+          "isKeyed": false,
+          "assessment": "High sensitivity with low specificity is not perfect accuracy."
+        }
+      ],
+      "status": "owner_whole_question_source_review_passed_product_and_publication_pending"
+    },
+    {
+      "id": "nutrition-assessment-083",
+      "wholeQuestion": {
+        "id": "nutrition-assessment-083",
+        "question": "Why is interrater reliability important for a nutrition focused physical examination?",
+        "choices": [
+          "Different clinicians should classify the same findings consistently",
+          "It proves the findings cause mortality",
+          "It replaces criterion validity",
+          "It eliminates all measurement error"
+        ],
+        "answer": 0,
+        "rationale": "Reliability addresses consistency, not causal validity.",
+        "reviewHref": "#physical-functional-assessment"
+      },
+      "wholeObjectSHA256": "3bd2bddc9df63fcce4c8986826ace937be63234075efa4482383699a25d59f80",
+      "sourceLocation": "COSMIN2010 native pages4/9; reliability is distinct from validity",
+      "choiceReview": [
+        {
+          "choice": "Different clinicians should classify the same findings consistently",
+          "isKeyed": true,
+          "assessment": "Interrater reliability concerns consistency between clinicians."
+        },
+        {
+          "choice": "It proves the findings cause mortality",
+          "isKeyed": false,
+          "assessment": "Agreement between raters does not establish a causal mortality relationship."
+        },
+        {
+          "choice": "It replaces criterion validity",
+          "isKeyed": false,
+          "assessment": "Rater agreement does not replace comparison with a criterion."
+        },
+        {
+          "choice": "It eliminates all measurement error",
+          "isKeyed": false,
+          "assessment": "Reliability does not eliminate all measurement error."
+        }
+      ],
+      "status": "owner_whole_question_source_review_passed_product_and_publication_pending"
+    },
+    {
+      "id": "nutrition-assessment-086",
+      "wholeQuestion": {
+        "id": "nutrition-assessment-086",
+        "question": "What is spectrum bias in validation of a malnutrition screen?",
+        "choices": [
+          "Performance changes because the study population does not represent the intended clinical spectrum",
+          "The tool contains too many colors",
+          "The same assessor repeats a measurement",
+          "The reference standard is blinded"
+        ],
+        "answer": 0,
+        "rationale": "A tool validated only in a narrow severity range may perform differently in broader practice.",
+        "reviewHref": "#screening-to-assessment"
+      },
+      "wholeObjectSHA256": "32df477a67cc641e9cb844958a78f5b682f6a20258dba0231863f1c986557ef9",
+      "sourceLocation": "STARD2016 native pages1/11, items20/21 population and disease spectrum",
+      "choiceReview": [
+        {
+          "choice": "Performance changes because the study population does not represent the intended clinical spectrum",
+          "isKeyed": true,
+          "assessment": "Accuracy may vary with severity and alternative-diagnosis mix; a narrow population may not represent the intended population."
+        },
+        {
+          "choice": "The tool contains too many colors",
+          "isKeyed": false,
+          "assessment": "Color count is not the clinical spectrum."
+        },
+        {
+          "choice": "The same assessor repeats a measurement",
+          "isKeyed": false,
+          "assessment": "Repeated measurement by one assessor is not spectrum bias."
+        },
+        {
+          "choice": "The reference standard is blinded",
+          "isKeyed": false,
+          "assessment": "Blinding the reference assessor is a different methodological issue."
+        }
+      ],
+      "status": "owner_whole_question_source_review_passed_product_and_publication_pending"
+    },
+    {
+      "id": "nutrition-assessment-088",
+      "wholeQuestion": {
+        "id": "nutrition-assessment-088",
+        "question": "Why should a clinical decision threshold be prespecified before validating a screening score?",
+        "choices": [
+          "Post hoc threshold selection can exaggerate apparent performance",
+          "Thresholds make sensitivity irrelevant",
+          "A threshold guarantees transportability",
+          "Prespecification removes missing data"
+        ],
+        "answer": 0,
+        "rationale": "Selecting the best threshold after seeing results can overfit the sample.",
+        "reviewHref": "#screening-to-assessment"
+      },
+      "wholeObjectSHA256": "d6b9948b2edcfc7d7687e0e0941d55ea69f55a8f3967d3196971dcc6649e70ca",
+      "sourceLocation": "STARD2016 native page7, item12 prespecified versus exploratory cutoffs",
+      "choiceReview": [
+        {
+          "choice": "Post hoc threshold selection can exaggerate apparent performance",
+          "isKeyed": true,
+          "assessment": "Selecting a cutoff that maximizes observed performance can yield optimistic accuracy in that sample."
+        },
+        {
+          "choice": "Thresholds make sensitivity irrelevant",
+          "isKeyed": false,
+          "assessment": "Sensitivity remains relevant after a threshold is chosen."
+        },
+        {
+          "choice": "A threshold guarantees transportability",
+          "isKeyed": false,
+          "assessment": "A fixed threshold does not guarantee performance in a different population."
+        },
+        {
+          "choice": "Prespecification removes missing data",
+          "isKeyed": false,
+          "assessment": "Prespecification does not remove missing observations."
+        }
+      ],
+      "status": "owner_whole_question_source_review_passed_product_and_publication_pending"
+    },
+    {
+      "id": "nutrition-assessment-089",
+      "wholeQuestion": {
+        "id": "nutrition-assessment-089",
+        "question": "What is the best method to test whether a translated screening tool retains construct validity?",
+        "choices": [
+          "Evaluate measurement structure and associations in the target language population",
+          "Translate each word literally and assume equivalence",
+          "Compare font size only",
+          "Use the original validation sample"
+        ],
+        "answer": 0,
+        "rationale": "Translation requires cultural and psychometric validation in the target population.",
+        "reviewHref": "#screening-to-assessment"
+      },
+      "wholeObjectSHA256": "087255b2200328990238c4e170237600f64724075dc10a7a6b412b75c869c2b5",
+      "sourceLocation": "COSMIN2010 native pages4/9/10, construct and cross-cultural validity",
+      "choiceReview": [
+        {
+          "choice": "Evaluate measurement structure and associations in the target language population",
+          "isKeyed": true,
+          "assessment": "Assess the construct structure and expected associations in the target-language population; do not assume linguistic equivalence."
+        },
+        {
+          "choice": "Translate each word literally and assume equivalence",
+          "isKeyed": false,
+          "assessment": "Literal word translation alone does not establish measurement validity."
+        },
+        {
+          "choice": "Compare font size only",
+          "isKeyed": false,
+          "assessment": "Font comparison does not test the construct."
+        },
+        {
+          "choice": "Use the original validation sample",
+          "isKeyed": false,
+          "assessment": "The original-language sample cannot establish performance of the translated version in the target population."
+        }
+      ],
+      "status": "owner_whole_question_source_review_passed_product_and_publication_pending"
+    }
+  ],
+  "sources": {
+    "STARD2016": {
+      "DOI": "10.1136/bmjopen-2016-012799",
+      "SHA256": "208c7341b51e251c27f88a19c3cee69bd14daabfeaf8ace69bc7547c8297a892",
+      "nativePagesRead": [
+        1,
+        2,
+        7,
+        11
+      ]
+    },
+    "COSMIN2010": {
+      "DOI": "10.1007/s11136-010-9606-8",
+      "SHA256": "99ecc81a8860c9d640649e56044905a735b5baeadf28836618325d1d8d6979e4",
+      "nativePagesRead": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10
+      ],
+      "scopeLimit": "COSMIN paper focuses on health-related patient-reported instruments. Used here for general distinctions between reliability, validity, construct structure and target-language measurement; no nutrition-screen-specific validation or endorsement inferred."
+    }
+  },
+  "pendingMethodQuestions": [
+    "nutrition-assessment-081",
+    "nutrition-assessment-085"
+  ],
+  "fullyVerifiedLesson": false,
+  "wholeModuleVerified": false,
+  "published": false
+}

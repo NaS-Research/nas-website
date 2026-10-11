@@ -48,7 +48,7 @@ export const nutritionScreeningAssessmentModule = {
         },
         {
           heading: "Identify the mechanism",
-          body: "Reduced intake can reflect nausea, pain, dysphagia, altered taste, depression, food insecurity, medication effects, or treatment schedules. Reduced assimilation can reflect maldigestion, malabsorption, fistulae, vomiting, diarrhea, or altered anatomy. Disease burden can add inflammatory and catabolic stress.",
+          body: "Reduced intake can reflect nausea, pain, dysphagia, altered taste, depression, food insecurity, medication effects, or treatment schedules. Gastrointestinal symptoms such as vomiting and diarrhea can impair intake or assimilation. Review malabsorptive disorders, altered anatomy, and gastrointestinal losses as distinct mechanisms affecting nutrient availability. Disease burden can add inflammatory and catabolic stress.",
         },
       ],
       keyPoints: ["Ask about duration, not only current intake.", "Distinguish intentional from unintentional loss.", "Review medications as possible causes of anorexia, nausea, altered taste, diarrhea, or constipation."],
@@ -71,7 +71,7 @@ export const nutritionScreeningAssessmentModule = {
           body: "Edema and ascites can mask tissue loss. A person with a high BMI can still have low muscle mass and clinically important malnutrition. Repeated measurements obtained under similar conditions are more informative than isolated values.",
         },
       ],
-      keyPoints: ["Use dry or estimated euvolemic weight when fluid accumulation is substantial.", "State whether height and weight were measured, reported, or estimated.", "BMI does not directly measure muscle mass."],
+      keyPoints: ["Record measured weight and fluid status. Use credible prior weights and other assessment findings when fluid shifts obscure tissue change; label estimates and their uncertainty.", "State whether height and weight were measured, reported, or estimated.", "BMI does not directly measure muscle mass."],
       check: { question: "A patient with edema has lost visible muscle but weighs the same as last month. What is the best interpretation?", choices: ["Fluid accumulation may be masking tissue loss", "Stable scale weight excludes malnutrition", "BMI directly proves muscle preservation", "The physical findings should be discarded"], answer: 0, rationale: "Fluid gain can offset tissue loss on the scale, so weight must be interpreted with the physical examination and volume status.", reviewHref: "#anthropometrics-body-composition" },
     },
     {
@@ -104,7 +104,7 @@ export const nutritionScreeningAssessmentModule = {
       lesson: [
         {
           heading: "Apply GLIM in two steps",
-          body: "After risk screening, GLIM diagnosis requires at least one phenotypic criterion and at least one etiologic criterion. Phenotypic criteria are weight loss, low BMI, and reduced muscle mass. Etiologic criteria are reduced intake or assimilation and inflammation or disease burden.",
+          body: "After risk screening, GLIM diagnosis requires at least one phenotypic criterion and at least one etiologic criterion. Phenotypic criteria are weight loss, low BMI, and reduced muscle mass. Etiologic criteria are reduced intake or assimilation and inflammation or disease burden. Assess all five criteria where possible. A diagnosis can be established when at least one phenotypic and one etiologic criterion are demonstrated despite a practical barrier to other measurements; excluding malnutrition requires assessment of all five. Muscle strength may inform the wider assessment, but it is not a substitute for muscle mass in the GLIM diagnostic algorithm.",
         },
         {
           heading: "Apply Academy and ASPEN characteristics",
@@ -169,10 +169,21 @@ export const nutritionScreeningAssessmentModule = {
     },
   ],
   references: [
+    {"label": "White et al. (2012): Academy and ASPEN adult malnutrition characteristics", "href": "https://doi.org/10.1177/0148607112440285"},
+    {"label": "BAPEN MUST adult screening tool and measurement guidance", "href": "https://www.bapen.org.uk/pdfs/must/must_full.pdf"},
+
+    {"label": "Rydholm et al. (2023): joint inflammation and grip force in early rheumatoid arthritis", "href": "https://doi.org/10.1186/s13075-023-03212-6"},
+    {"label": "Vanhorebeek et al. (2020): ICU-acquired weakness and assessment limitations", "href": "https://doi.org/10.1007/s00134-020-05944-4"},
+
+    {"label": "BAPEN MUST explanatory booklet: measurement limitations", "href": "https://www.bapen.org.uk/pdfs/must/must_explan.pdf"},
     { label: "ASPEN: Screening, assessment, and malnutrition diagnostic processes", href: "https://nutritioncare.org/text-based-resource/key-nutrition-screening-assessment-and-malnutrition-diagnostic-processes-and-tools-for-adults/" },
     { label: "GLIM consensus approach, five year update", href: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12053077/" },
     { label: "ASPEN position paper on visceral proteins", href: "https://pubmed.ncbi.nlm.nih.gov/33125793/" },
     { label: "GLIM diagnostic criteria consensus report", href: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6438340/" },
+    { label: "Missing data mechanisms and analysis in clinical trials", href: "https://doi.org/10.1186/s12874-017-0442-1" },
+    { label: "STARD diagnostic accuracy methods", href: "https://doi.org/10.1136/bmjopen-2016-012799" },
+    { label: "COSMIN measurement properties and cross-cultural validity", href: "https://doi.org/10.1007/s11136-010-9606-8" },
+    {"label": "WHO cluster trial design and analysis", "href": "https://wkc.who.int/docs/librariesprovider24/hedrm-documents/research-methods/who-guidance-research-methods-health-edrm-2021-chapter-4-3.pdf?sfvrsn=bbfccfe2_1"},
     {"label": "NICE CG32: Adult nutrition support, recommendations and monitoring tables (updated 2017)", "href": "https://www.nice.org.uk/guidance/cg32/chapter/Recommendations"},
     {"label": "Proctor et al. (2011): Implementation outcomes and fidelity", "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3068522/"},
   ],

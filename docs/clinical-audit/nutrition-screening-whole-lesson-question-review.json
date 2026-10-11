@@ -1,0 +1,563 @@
+{
+  "questions": [
+    {
+      "wholeQuestion": {
+        "id": "nutrition-assessment-001",
+        "question": "What is the primary purpose of nutrition screening?",
+        "choices": [
+          "Identify people who need a comprehensive assessment",
+          "Establish a definitive malnutrition diagnosis",
+          "Select a parenteral nutrition formula",
+          "Measure total body protein"
+        ],
+        "answer": 0,
+        "rationale": "Screening is a brief risk identification step that directs who needs assessment.",
+        "reviewHref": "#screening-to-assessment"
+      },
+      "wholeObjectSHA256": "4e6772ce231e49cd93558ec5d85144fce1c5fc35853e98f2f6261d902d09d6e3",
+      "choiceReview": [
+        {
+          "choice": "Identify people who need a comprehensive assessment",
+          "isKeyed": true,
+          "assessment": "A risk screen identifies who needs comprehensive assessment."
+        },
+        {
+          "choice": "Establish a definitive malnutrition diagnosis",
+          "isKeyed": false,
+          "assessment": "The screen does not supply a complete diagnostic assessment."
+        },
+        {
+          "choice": "Select a parenteral nutrition formula",
+          "isKeyed": false,
+          "assessment": "Choosing a PN formula is a treatment task, not the primary screening purpose."
+        },
+        {
+          "choice": "Measure total body protein",
+          "isKeyed": false,
+          "assessment": "A brief screen does not directly measure total body protein."
+        }
+      ],
+      "sourceLocations": [
+        "ASPEN2024 adult processes native1 Table1 and assessment definitions; native2 diagnostic definitions"
+      ],
+      "status": "owner_whole_question_source_review_passed_product_and_publication_pending"
+    },
+    {
+      "wholeQuestion": {
+        "id": "nutrition-assessment-002",
+        "question": "Which statement best distinguishes screening from assessment?",
+        "choices": [
+          "Screening identifies risk, while assessment explains the problem and guides care",
+          "Screening is more detailed than assessment",
+          "Assessment is limited to body weight",
+          "The terms are interchangeable"
+        ],
+        "answer": 0,
+        "rationale": "The two processes answer different clinical questions and should not be conflated.",
+        "reviewHref": "#screening-to-assessment"
+      },
+      "wholeObjectSHA256": "b08e79191743942f787b67fbbd968eb1a6963d059c1db2ec5023af281a8cbda3",
+      "choiceReview": [
+        {
+          "choice": "Screening identifies risk, while assessment explains the problem and guides care",
+          "isKeyed": true,
+          "assessment": "ASPEN distinguishes risk identification from the comprehensive assessment used to identify problems and guide care."
+        },
+        {
+          "choice": "Screening is more detailed than assessment",
+          "isKeyed": false,
+          "assessment": "Screening is the briefer risk-identification step."
+        },
+        {
+          "choice": "Assessment is limited to body weight",
+          "isKeyed": false,
+          "assessment": "Assessment includes history, examination, anthropometry and other clinical information, not just weight."
+        },
+        {
+          "choice": "The terms are interchangeable",
+          "isKeyed": false,
+          "assessment": "The source explicitly separates screening and assessment."
+        }
+      ],
+      "sourceLocations": [
+        "ASPEN2024 adult processes native1 Table1 and assessment definitions; native2 diagnostic definitions"
+      ],
+      "status": "owner_whole_question_source_review_passed_product_and_publication_pending"
+    },
+    {
+      "wholeQuestion": {
+        "id": "nutrition-assessment-003",
+        "question": "A positive nutrition screen should be documented with which next action?",
+        "choices": [
+          "A referral or defined pathway to comprehensive assessment",
+          "An automatic severe malnutrition code",
+          "A single albumin measurement",
+          "No action until discharge"
+        ],
+        "answer": 0,
+        "rationale": "A screen is useful only when it triggers a closed clinical workflow.",
+        "reviewHref": "#screening-to-assessment"
+      },
+      "wholeObjectSHA256": "bdebe67f39c92cb58875b9790419645077cbfea403269c4ba6893d3e150fd145",
+      "choiceReview": [
+        {
+          "choice": "A referral or defined pathway to comprehensive assessment",
+          "isKeyed": true,
+          "assessment": "A defined referral or assessment pathway follows identification of risk."
+        },
+        {
+          "choice": "An automatic severe malnutrition code",
+          "isKeyed": false,
+          "assessment": "A positive screen does not automatically establish severe malnutrition."
+        },
+        {
+          "choice": "A single albumin measurement",
+          "isKeyed": false,
+          "assessment": "Albumin does not replace comprehensive assessment."
+        },
+        {
+          "choice": "No action until discharge",
+          "isKeyed": false,
+          "assessment": "Deferring all action until discharge fails the assessment pathway."
+        }
+      ],
+      "sourceLocations": [
+        "ASPEN2024 adult processes native1 Table1 and assessment definitions; native2 diagnostic definitions",
+        "NICECG32 native10/11 sections1.2.2,1.2.4-1.2.6; BAPEN MUST native3 repeat screening/management",
+        "ASPEN visceral proteins native1/2 executive summary"
+      ],
+      "status": "owner_whole_question_source_review_passed_product_and_publication_pending"
+    },
+    {
+      "wholeQuestion": {
+        "id": "nutrition-assessment-004",
+        "question": "Why can a previously negative screen require repetition?",
+        "choices": [
+          "Nutrition risk can change with illness, procedures, and intake",
+          "Screening tools expire every 24 hours",
+          "A negative screen proves the tool was invalid",
+          "Diagnosis always precedes screening"
+        ],
+        "answer": 0,
+        "rationale": "Risk is dynamic and should be reconsidered after meaningful clinical change.",
+        "reviewHref": "#screening-to-assessment"
+      },
+      "wholeObjectSHA256": "71b1991b2cc43b46b9d33f9138b41889c2d750258737f809d1c23a97420a7e74",
+      "choiceReview": [
+        {
+          "choice": "Nutrition risk can change with illness, procedures, and intake",
+          "isKeyed": true,
+          "assessment": "NICE repeat screening and clinical-concern recommendations recognize changing risk from intake and illness; no fixed universal interval is being prescribed here."
+        },
+        {
+          "choice": "Screening tools expire every 24 hours",
+          "isKeyed": false,
+          "assessment": "The tools have no universal24-hour expiration rule."
+        },
+        {
+          "choice": "A negative screen proves the tool was invalid",
+          "isKeyed": false,
+          "assessment": "A negative result alone does not invalidate a tool."
+        },
+        {
+          "choice": "Diagnosis always precedes screening",
+          "isKeyed": false,
+          "assessment": "GLIM screening precedes diagnostic assessment; diagnosis is not always first."
+        }
+      ],
+      "sourceLocations": [
+        "ASPEN2024 adult processes native1 Table1 and assessment definitions; native2 diagnostic definitions",
+        "NICECG32 native10/11 sections1.2.2,1.2.4-1.2.6; BAPEN MUST native3 repeat screening/management"
+      ],
+      "status": "owner_whole_question_source_review_passed_product_and_publication_pending"
+    },
+    {
+      "wholeQuestion": {
+        "id": "nutrition-assessment-005",
+        "question": "Which tool was designed specifically for brief malnutrition risk screening rather than definitive diagnosis?",
+        "choices": [
+          "MST",
+          "GLIM diagnostic criteria",
+          "Nutrition focused physical examination",
+          "Indirect calorimetry"
+        ],
+        "answer": 0,
+        "rationale": "The Malnutrition Screening Tool is a brief risk screen.",
+        "reviewHref": "#screening-to-assessment"
+      },
+      "wholeObjectSHA256": "7eeae58e20ad8e51da91c336746d1003a522b58dc6e268062e423c84a65d32af",
+      "choiceReview": [
+        {
+          "choice": "MST",
+          "isKeyed": true,
+          "assessment": "ASPEN Table1 identifies MST as a validated nutrition screening tool."
+        },
+        {
+          "choice": "GLIM diagnostic criteria",
+          "isKeyed": false,
+          "assessment": "GLIM supplies diagnostic criteria following screening."
+        },
+        {
+          "choice": "Nutrition focused physical examination",
+          "isKeyed": false,
+          "assessment": "The physical examination is part of comprehensive assessment, not a named brief risk screen."
+        },
+        {
+          "choice": "Indirect calorimetry",
+          "isKeyed": false,
+          "assessment": "Indirect calorimetry estimates expenditure and is not the named screening process."
+        }
+      ],
+      "sourceLocations": [
+        "ASPEN2024 adult processes native1 Table1 and assessment definitions; native2 diagnostic definitions"
+      ],
+      "status": "owner_whole_question_source_review_passed_product_and_publication_pending"
+    },
+    {
+      "wholeQuestion": {
+        "id": "nutrition-assessment-006",
+        "question": "Which screening tool is particularly associated with older adult assessment?",
+        "choices": [
+          "MNA-SF",
+          "APGAR",
+          "CHA2DS2-VASc",
+          "CURB-65"
+        ],
+        "answer": 0,
+        "rationale": "The Mini Nutritional Assessment Short Form is designed for older adults.",
+        "reviewHref": "#screening-to-assessment"
+      },
+      "wholeObjectSHA256": "b7987f75c9461e1aec9eff2a0596f39f7e27362dffce4dfd14ddaa9e959ec81c",
+      "choiceReview": [
+        {
+          "choice": "MNA-SF",
+          "isKeyed": true,
+          "assessment": "ASPEN Table1 identifies MNA-SF as intended for older adult populations."
+        },
+        {
+          "choice": "APGAR",
+          "isKeyed": false,
+          "assessment": "APGAR is not the older-adult malnutrition screening tool named in this source."
+        },
+        {
+          "choice": "CHA2DS2-VASc",
+          "isKeyed": false,
+          "assessment": "CHA2DS2-VASc is not the older-adult malnutrition screening tool named in this source."
+        },
+        {
+          "choice": "CURB-65",
+          "isKeyed": false,
+          "assessment": "CURB-65 is not the older-adult malnutrition screening tool named in this source."
+        }
+      ],
+      "sourceLocations": [
+        "ASPEN2024 adult processes native1 Table1 and assessment definitions; native2 diagnostic definitions"
+      ],
+      "status": "owner_whole_question_source_review_passed_product_and_publication_pending"
+    },
+    {
+      "wholeQuestion": {
+        "id": "nutrition-assessment-007",
+        "question": "Which process measure most directly shows whether positive nutrition screens lead to assessment?",
+        "choices": [
+          "The proportion of positive screens followed by timely assessment",
+          "The number of albumin tests ordered",
+          "The percentage of patients given supplements",
+          "The number of diagnoses entered before screening"
+        ],
+        "answer": 0,
+        "rationale": "Follow through measures whether risk identification leads to assessment. Completing that process does not by itself establish a patient benefit.",
+        "reviewHref": "#screening-to-assessment"
+      },
+      "wholeObjectSHA256": "74de6b6b141697f7b66031ff4ef10cc3cd4641d38f2f79a5df5da851c8be68e8",
+      "choiceReview": [
+        {
+          "choice": "The proportion of positive screens followed by timely assessment",
+          "isKeyed": true,
+          "assessment": "This proportion directly measures the specified transition from positive screening to assessment."
+        },
+        {
+          "choice": "The number of albumin tests ordered",
+          "isKeyed": false,
+          "assessment": "Counting albumin orders does not measure that transition."
+        },
+        {
+          "choice": "The percentage of patients given supplements",
+          "isKeyed": false,
+          "assessment": "Supplement administration does not establish completion of an assessment."
+        },
+        {
+          "choice": "The number of diagnoses entered before screening",
+          "isKeyed": false,
+          "assessment": "Diagnoses entered before screening do not measure follow-through after a positive screen."
+        }
+      ],
+      "sourceLocations": [
+        "ASPEN2024 adult processes native1 Table1 and assessment definitions; native2 diagnostic definitions",
+        "NICECG32 native10/11 sections1.2.2,1.2.4-1.2.6; BAPEN MUST native3 repeat screening/management",
+        "ASPEN visceral proteins native1/2 executive summary"
+      ],
+      "status": "owner_whole_question_source_review_passed_product_and_publication_pending"
+    },
+    {
+      "wholeQuestion": {
+        "id": "nutrition-assessment-008",
+        "question": "Which result is least appropriate as a stand alone screening strategy?",
+        "choices": [
+          "Serum albumin",
+          "MST score",
+          "MUST score",
+          "NRS-2002 result"
+        ],
+        "answer": 0,
+        "rationale": "Albumin is strongly affected by inflammation and other factors and is not a stand alone nutrition marker.",
+        "reviewHref": "#screening-to-assessment"
+      },
+      "wholeObjectSHA256": "1472fa60c26550771c0ec6af57e819f3716ea355d416bccf3128bd00c7496b9e",
+      "choiceReview": [
+        {
+          "choice": "Serum albumin",
+          "isKeyed": true,
+          "assessment": "ASPEN rejects albumin as a standalone nutrition marker and describes inflammation confounding."
+        },
+        {
+          "choice": "MST score",
+          "isKeyed": false,
+          "assessment": "MST is a named nutrition screening tool; its use still needs appropriate setting and interpretation."
+        },
+        {
+          "choice": "MUST score",
+          "isKeyed": false,
+          "assessment": "MUST is a named nutrition screening tool with a defined workflow."
+        },
+        {
+          "choice": "NRS-2002 result",
+          "isKeyed": false,
+          "assessment": "NRS-2002 is a named nutrition screening tool for hospitalized patients."
+        }
+      ],
+      "sourceLocations": [
+        "ASPEN2024 adult processes native1 Table1 and assessment definitions; native2 diagnostic definitions",
+        "ASPEN visceral proteins native1/2 executive summary"
+      ],
+      "status": "owner_whole_question_source_review_passed_product_and_publication_pending"
+    },
+    {
+      "wholeQuestion": {
+        "id": "nutrition-assessment-009",
+        "question": "A hospital changes its screening tool. What should be evaluated first?",
+        "choices": [
+          "Whether the tool is validated for the intended population and linked to action",
+          "Whether the tool produces the most positive results",
+          "Whether it contains the most laboratory values",
+          "Whether it eliminates clinical assessment"
+        ],
+        "answer": 0,
+        "rationale": "Validity, population fit, and workflow linkage matter more than positivity alone.",
+        "reviewHref": "#screening-to-assessment"
+      },
+      "wholeObjectSHA256": "fb3087a5377239d3439b3150daa040fbcefb84e50db58fc7bbefec8cfc9ead90",
+      "choiceReview": [
+        {
+          "choice": "Whether the tool is validated for the intended population and linked to action",
+          "isKeyed": true,
+          "assessment": "The appropriate choice checks population fit and workflow linkage; positivity alone cannot establish valid risk identification."
+        },
+        {
+          "choice": "Whether the tool produces the most positive results",
+          "isKeyed": false,
+          "assessment": "The largest positive count does not establish validity."
+        },
+        {
+          "choice": "Whether it contains the most laboratory values",
+          "isKeyed": false,
+          "assessment": "A larger laboratory count does not establish an appropriate screen."
+        },
+        {
+          "choice": "Whether it eliminates clinical assessment",
+          "isKeyed": false,
+          "assessment": "A screen does not eliminate the need for assessment."
+        }
+      ],
+      "sourceLocations": [
+        "ASPEN2024 adult processes native1 Table1 and assessment definitions; native2 diagnostic definitions",
+        "NICECG32 native10/11 sections1.2.2,1.2.4-1.2.6; BAPEN MUST native3 repeat screening/management"
+      ],
+      "status": "owner_whole_question_source_review_passed_product_and_publication_pending"
+    },
+    {
+      "wholeQuestion": {
+        "id": "nutrition-assessment-010",
+        "question": "Which statement best reflects a negative screening result?",
+        "choices": [
+          "Risk was not identified at that time, but reassessment may be needed",
+          "Malnutrition is impossible",
+          "No intake history should be collected",
+          "Future clinical changes are irrelevant"
+        ],
+        "answer": 0,
+        "rationale": "A negative screen is time specific and does not permanently exclude later risk.",
+        "reviewHref": "#screening-to-assessment"
+      },
+      "wholeObjectSHA256": "ac89503cb82f6f01bcef9949f2ea704c3dcf1936958ef0122dfff862c810d15b",
+      "choiceReview": [
+        {
+          "choice": "Risk was not identified at that time, but reassessment may be needed",
+          "isKeyed": true,
+          "assessment": "A negative result is time-specific; repeat screening and clinical concern can call for reassessment."
+        },
+        {
+          "choice": "Malnutrition is impossible",
+          "isKeyed": false,
+          "assessment": "A negative screen does not make future malnutrition impossible."
+        },
+        {
+          "choice": "No intake history should be collected",
+          "isKeyed": false,
+          "assessment": "A negative result does not prohibit collecting intake history."
+        },
+        {
+          "choice": "Future clinical changes are irrelevant",
+          "isKeyed": false,
+          "assessment": "Later illness and intake changes can alter risk."
+        }
+      ],
+      "sourceLocations": [
+        "ASPEN2024 adult processes native1 Table1 and assessment definitions; native2 diagnostic definitions",
+        "NICECG32 native10/11 sections1.2.2,1.2.4-1.2.6; BAPEN MUST native3 repeat screening/management"
+      ],
+      "status": "owner_whole_question_source_review_passed_product_and_publication_pending"
+    }
+  ],
+  "wholeLesson": {
+    "slug": "screening-to-assessment",
+    "title": "From Screening to Assessment",
+    "visual": "nutrition-screening-flow",
+    "summary": "Screening identifies who may be at risk. Assessment determines what is happening, why it is happening, and what should happen next.",
+    "concepts": [
+      "Validated screening tools",
+      "Risk versus diagnosis",
+      "Referral and escalation",
+      "Repeat screening after clinical change"
+    ],
+    "application": "A positive screen is a signal to perform a more complete assessment. It is not, by itself, a malnutrition diagnosis.",
+    "lesson": [
+      {
+        "heading": "Use the right tool for the right decision",
+        "body": "Nutrition screening is intentionally brief. Tools such as MST, MUST, MNA-SF, and NRS-2002 use different populations and inputs, so the tool should match the care setting and local workflow. The result answers a narrow question: does this person need a more complete nutrition assessment?"
+      },
+      {
+        "heading": "Build a closed loop",
+        "body": "A useful workflow links a positive screen to timely assessment, a documented plan, and reassessment. Risk changes with acute illness, procedures, poor intake, gastrointestinal losses, functional decline, and prolonged hospitalization."
+      }
+    ],
+    "keyPoints": [
+      "Do not substitute a laboratory value for a validated screen.",
+      "Do not convert a positive screen directly into a diagnosis.",
+      "Document the trigger, action, and follow up interval."
+    ],
+    "check": {
+      "question": "A patient has a positive MST result on admission. What is the most appropriate next step?",
+      "choices": [
+        "Complete a comprehensive nutrition assessment",
+        "Diagnose severe malnutrition immediately",
+        "Order albumin as the deciding test",
+        "Repeat the same screen and ignore the first result"
+      ],
+      "answer": 0,
+      "rationale": "A positive screen identifies risk and should trigger a comprehensive assessment rather than serve as the diagnosis.",
+      "reviewHref": "#screening-to-assessment"
+    }
+  },
+  "wholeLessonSHA256": "c15c3ef53cd95544dc0b5567ab368f4054150f1220610038a1eff714011741e1",
+  "bodyReview": [
+    {
+      "heading": "Use the right tool for the right decision",
+      "source": "ASPEN2024 native1 complete Table1 and screening/assessment definitions",
+      "assessment": "Tools differ in population and inputs; use the appropriate brief risk screen rather than call it a diagnostic assessment. No claim of new tool validation."
+    },
+    {
+      "heading": "Build a closed loop",
+      "source": "ASPEN2024 native1 screening-to-assessment and care plan; NICECG32 native10/11; BAPENMUST native3 management and repeat screening",
+      "assessment": "Risk detection needs assessment and a plan; clinical concern, altered intake, illness and trajectory can call for reassessment. This general workflow does not override setting-specific screening intervals."
+    }
+  ],
+  "metadataReview": [
+    {
+      "field": "title/summary/concepts",
+      "assessment": "Accurately separates risk, assessment, referral and changing clinical risk.",
+      "source": "ASPEN2024 native1 and NICE screening recommendations"
+    },
+    {
+      "field": "application/keyPoints",
+      "assessment": "Positive screen is not a diagnosis; a laboratory value cannot replace the risk/assessment workflow; document action and reassessment.",
+      "source": "ASPEN2024 native1/2; visceral proteins executive summary; BAPENMUST native3"
+    }
+  ],
+  "embeddedWholeCheck": {
+    "wholeObject": {
+      "question": "A patient has a positive MST result on admission. What is the most appropriate next step?",
+      "choices": [
+        "Complete a comprehensive nutrition assessment",
+        "Diagnose severe malnutrition immediately",
+        "Order albumin as the deciding test",
+        "Repeat the same screen and ignore the first result"
+      ],
+      "answer": 0,
+      "rationale": "A positive screen identifies risk and should trigger a comprehensive assessment rather than serve as the diagnosis.",
+      "reviewHref": "#screening-to-assessment"
+    },
+    "SHA256": "8d18d5df365d60ab48d3c4b8719d617fec6408f370517b68b48f4fb73eee9fca",
+    "choiceReview": [
+      {
+        "choice": "Complete a comprehensive nutrition assessment",
+        "isKeyed": true,
+        "assessment": "A positive MST risk screen calls for comprehensive assessment."
+      },
+      {
+        "choice": "Diagnose severe malnutrition immediately",
+        "isKeyed": false,
+        "assessment": "A positive screen alone does not establish severe malnutrition."
+      },
+      {
+        "choice": "Order albumin as the deciding test",
+        "isKeyed": false,
+        "assessment": "Albumin is not the deciding diagnostic nutrition test."
+      },
+      {
+        "choice": "Repeat the same screen and ignore the first result",
+        "isKeyed": false,
+        "assessment": "Ignoring a positive screen leaves the risk-to-assessment pathway incomplete."
+      }
+    ]
+  },
+  "screeningFigure": {
+    "file": "src/components/learn/NutritionScreeningAssessmentVisual.jsx",
+    "fullFileSHA256": "41ce96579c6ac857f10afd7ca84987ea1f3bf9e8e4af87852b70568650d9d96b",
+    "threeColumnsReviewed": [
+      "Screen using an appropriate validated tool",
+      "Assess intake, trajectory, tissue, function, disease and confounders",
+      "Act with a documented intervention/referral and reassessment owner"
+    ],
+    "sourceLocations": [
+      "ASPEN2024 native1 comprehensive assessment and planning",
+      "Retained exact care-plan source review; NICECG32 care-team/monitoring sections"
+    ],
+    "sourceReviewPassed": true,
+    "renderedQA": "pending"
+  },
+  "sourceHashes": {
+    "aspen-processes.pdf": "4d71d2193cc2a9ece47ecab56be1ca41dfa2397721e7f164976528e06b602599",
+    "bapen-must.pdf": "e8f2b06ffb015872e0610ac01d5f4ab9730da8d2d54c1ed4b577eb4909ab5b73",
+    "aspen-visceral-proteins.pdf": "eb1402dfcc1366b009efee1c1fb121696768b1c312e73bd0690917667a7756ff"
+  },
+  "NICEsourceReceipt": "nutrition-screening-nice-source-owner-v1.json",
+  "sourceLimitations": [
+    "ASPEN adult processes is an official practice tool, not a Board-approved guideline.",
+    "NICE fresh web URL returned403; retained official PDF exact hash verified and relevant native pages actually read/viewed.",
+    "No new legal/coding claim, tool validation, timing mandate or numerical support threshold qualified."
+  ],
+  "fullModuleVerified": false,
+  "published": false,
+  "productAndReleaseGates": "pending"
+}

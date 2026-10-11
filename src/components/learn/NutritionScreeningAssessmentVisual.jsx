@@ -26,7 +26,7 @@ const diagrams = {
   },
   "nutrition-diagnostic-frameworks": {
     eyebrow: "Diagnostic reasoning", title: "Use one framework transparently instead of blending unrelated thresholds", accent: "#9b8cad",
-    columns: [["GLIM", "Phenotype plus etiology", "Diagnosis follows screening and requires evidence from both sides of the framework."], ["Academy and ASPEN", "Two clinical characteristics", "Interpret intake, weight, muscle, fat, fluid, and function within the etiologic context."], ["Exclude", "Do not diagnose from albumin", "Inflammation and fluid biology make visceral proteins risk markers, not tissue inventories."]],
+    columns: [["GLIM", "Phenotype plus etiology", "After screening, diagnosis requires at least one phenotypic and one etiologic criterion."], ["Academy and ASPEN", "At least two clinical characteristics", "Interpret intake, weight, muscle, fat, fluid, and function within the etiologic context."], ["Limits", "Do not diagnose from albumin", "Inflammation and fluid biology make visceral proteins risk markers, not tissue inventories."]],
   },
   "nutrition-care-loop": {
     eyebrow: "Implementation", title: "Every intervention needs a measure, interval, threshold, and owner", accent: "#89a083",

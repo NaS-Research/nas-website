@@ -1,0 +1,248 @@
+{
+  "questions": [
+    {
+      "wholeQuestion": {
+        "id": "nutrition-assessment-022",
+        "question": "Why can BMI underestimate nutrition risk?",
+        "choices": [
+          "It does not distinguish muscle, fat, and fluid compartments",
+          "It always overestimates height",
+          "It directly measures inflammation",
+          "It is identical to percent weight loss"
+        ],
+        "answer": 0,
+        "rationale": "People with the same BMI can have very different body composition and trajectories.",
+        "reviewHref": "#anthropometrics-body-composition"
+      },
+      "wholeObjectSHA256": "ea43e324880e76bc10a989ad102d8cd0af14cbbc5ae2d41a1a8382972be921c4",
+      "choiceReview": [
+        {
+          "choice": "It does not distinguish muscle, fat, and fluid compartments",
+          "isKeyed": true,
+          "assessment": "BMI describes mass relative to height, not separate muscle, fat or retained fluid; GLIM treats muscle mass separately and warns of fluid-confounded BMI."
+        },
+        {
+          "choice": "It always overestimates height",
+          "isKeyed": false,
+          "assessment": "Height is not always overestimated; this is not an inherent BMI property."
+        },
+        {
+          "choice": "It directly measures inflammation",
+          "isKeyed": false,
+          "assessment": "BMI is not a measurement of inflammation, which belongs to a separate etiologic domain."
+        },
+        {
+          "choice": "It is identical to percent weight loss",
+          "isKeyed": false,
+          "assessment": "BMI uses weight and height, whereas percentage loss uses change relative to baseline."
+        }
+      ],
+      "sourceLocations": [
+        "GLIM2025 native page6 printed419: Figure1, BMI, obesity, fluid overload and weight history",
+        "GLIM2025 native page7 printed420: muscle-mass assessment and fluid/obesity limitations"
+      ],
+      "status": "owner_whole_question_source_review_passed_product_and_publication_pending"
+    },
+    {
+      "wholeQuestion": {
+        "id": "nutrition-assessment-025",
+        "question": "A patient with obesity has clear temporal muscle loss and prolonged poor intake. What is the correct inference?",
+        "choices": [
+          "A high BMI does not exclude malnutrition",
+          "Obesity guarantees adequate muscle mass",
+          "Only underweight patients can be malnourished",
+          "The intake history is irrelevant"
+        ],
+        "answer": 0,
+        "rationale": "Malnutrition can occur across the BMI spectrum.",
+        "reviewHref": "#anthropometrics-body-composition"
+      },
+      "wholeObjectSHA256": "d029e0d650e1b541023cdff2d07045c663ba38da29f491dc12730b1dfc33471d",
+      "choiceReview": [
+        {
+          "choice": "A high BMI does not exclude malnutrition",
+          "isKeyed": true,
+          "assessment": "GLIM explicitly recognizes malnutrition in people with overweight or obesity; this inference does not by itself assign diagnostic severity."
+        },
+        {
+          "choice": "Obesity guarantees adequate muscle mass",
+          "isKeyed": false,
+          "assessment": "High BMI does not establish adequate muscle mass."
+        },
+        {
+          "choice": "Only underweight patients can be malnourished",
+          "isKeyed": false,
+          "assessment": "Malnutrition is not restricted to people with low BMI."
+        },
+        {
+          "choice": "The intake history is irrelevant",
+          "isKeyed": false,
+          "assessment": "Reduced intake is relevant to the etiologic assessment."
+        }
+      ],
+      "sourceLocations": [
+        "GLIM2025 native page6 printed419: Figure1, BMI, obesity, fluid overload and weight history",
+        "GLIM2025 native page7 printed420: muscle-mass assessment and fluid/obesity limitations"
+      ],
+      "status": "owner_whole_question_source_review_passed_product_and_publication_pending"
+    },
+    {
+      "wholeQuestion": {
+        "id": "nutrition-assessment-027",
+        "question": "Which GLIM phenotypic criterion can be present despite a normal BMI?",
+        "choices": [
+          "Reduced muscle mass",
+          "Disease burden",
+          "Reduced assimilation",
+          "Inflammation"
+        ],
+        "answer": 0,
+        "rationale": "Muscle depletion can occur even when BMI is not low.",
+        "reviewHref": "#anthropometrics-body-composition"
+      },
+      "wholeObjectSHA256": "f31e4cf38af7b2bd716317993d74d2beeb885debbaa5d8dee9c173e1e1fbd4f1",
+      "choiceReview": [
+        {
+          "choice": "Reduced muscle mass",
+          "isKeyed": true,
+          "assessment": "Low muscle mass is a separate phenotypic criterion and can occur without low BMI."
+        },
+        {
+          "choice": "Disease burden",
+          "isKeyed": false,
+          "assessment": "Disease burden is in the etiologic domain, not a phenotypic criterion."
+        },
+        {
+          "choice": "Reduced assimilation",
+          "isKeyed": false,
+          "assessment": "Reduced assimilation is etiologic, not phenotypic."
+        },
+        {
+          "choice": "Inflammation",
+          "isKeyed": false,
+          "assessment": "Inflammation is etiologic, not phenotypic."
+        }
+      ],
+      "sourceLocations": [
+        "GLIM2025 native page6 printed419: Figure1, BMI, obesity, fluid overload and weight history",
+        "GLIM2025 native page7 printed420: muscle-mass assessment and fluid/obesity limitations"
+      ],
+      "status": "owner_whole_question_source_review_passed_product_and_publication_pending"
+    },
+    {
+      "wholeQuestion": {
+        "id": "nutrition-assessment-029",
+        "question": "Which finding most directly confounds a rapid increase in body weight?",
+        "choices": [
+          "New fluid retention",
+          "Reduced appetite",
+          "Loss of subcutaneous fat",
+          "Low grip strength"
+        ],
+        "answer": 0,
+        "rationale": "Fluid gain can increase scale weight without increasing tissue mass.",
+        "reviewHref": "#anthropometrics-body-composition"
+      },
+      "wholeObjectSHA256": "c18b12a5bc874fcfdab009d9ae563fbf28c8fca66ed14c52058993b9c4ee621a",
+      "choiceReview": [
+        {
+          "choice": "New fluid retention",
+          "isKeyed": true,
+          "assessment": "Fluid accumulation can increase measured weight and confound tissue interpretation."
+        },
+        {
+          "choice": "Reduced appetite",
+          "isKeyed": false,
+          "assessment": "Reduced appetite alone does not directly explain a rapid increase in measured weight."
+        },
+        {
+          "choice": "Loss of subcutaneous fat",
+          "isKeyed": false,
+          "assessment": "Fat loss reduces a tissue compartment rather than directly explaining an increased scale weight."
+        },
+        {
+          "choice": "Low grip strength",
+          "isKeyed": false,
+          "assessment": "Reduced grip describes function and does not directly account for a rapid scale-weight increase."
+        }
+      ],
+      "sourceLocations": [
+        "GLIM2025 native page6 printed419: Figure1, BMI, obesity, fluid overload and weight history",
+        "GLIM2025 native page7 printed420: muscle-mass assessment and fluid/obesity limitations"
+      ],
+      "status": "owner_whole_question_source_review_passed_product_and_publication_pending"
+    },
+    {
+      "wholeQuestion": {
+        "id": "nutrition-assessment-030",
+        "question": "What does a single body weight fail to reveal?",
+        "choices": [
+          "Direction, speed, and cause of change",
+          "The numerical mass at that moment",
+          "The unit used by the scale",
+          "Whether the scale displayed a value"
+        ],
+        "answer": 0,
+        "rationale": "Trajectory requires a credible baseline, time interval, and clinical context.",
+        "reviewHref": "#anthropometrics-body-composition"
+      },
+      "wholeObjectSHA256": "9f3cf5af22cbff323c3407fbb0f4916ece76f824195b451b60c735f056305fb5",
+      "choiceReview": [
+        {
+          "choice": "Direction, speed, and cause of change",
+          "isKeyed": true,
+          "assessment": "A single value does not supply a baseline, interval or causal history; GLIM and clinical assessment require trajectory and context."
+        },
+        {
+          "choice": "The numerical mass at that moment",
+          "isKeyed": false,
+          "assessment": "The scale value supplies numerical mass, subject to measurement limitations."
+        },
+        {
+          "choice": "The unit used by the scale",
+          "isKeyed": false,
+          "assessment": "A recorded weight can carry its unit; lacking trajectory is the relevant limitation among these options."
+        },
+        {
+          "choice": "Whether the scale displayed a value",
+          "isKeyed": false,
+          "assessment": "Whether the scale displayed a value is an observation, not a trajectory or cause."
+        }
+      ],
+      "sourceLocations": [
+        "GLIM2025 native page6 printed419: Figure1, BMI, obesity, fluid overload and weight history",
+        "GLIM2025 native page7 printed420: muscle-mass assessment and fluid/obesity limitations"
+      ],
+      "status": "owner_whole_question_source_review_passed_product_and_publication_pending"
+    }
+  ],
+  "sources": [
+    {
+      "source": "GLIM five-year update 2025",
+      "DOI": "10.1002/jpen.2756",
+      "SHA256": "113e1b27ea1e5edd031630b2e4216507f9b19415c27b66ebc230a0ceca2111ab",
+      "additionalNativePagesRead": [
+        6,
+        7
+      ],
+      "scope": "Phenotypic versus etiologic definitions; BMI limitations, obesity, muscle mass and fluid confounding. No new cutoff or numerical muscle threshold qualified in this phase."
+    },
+    {
+      "source": "BAPEN MUST full guide",
+      "URL": "https://www.bapen.org.uk/pdfs/must/must_full.pdf",
+      "SHA256": "e8f2b06ffb015872e0610ac01d5f4ab9730da8d2d54c1ed4b577eb4909ab5b73",
+      "actualNativePagesRead": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "scope": "Adult tool workflow, population and measurement limitations and alternative measures. Reading the charts does not independently validate each numeric chart cell. MUAC gives a general BMI category and must not be substituted into the BMI formula or assigned an actual MUST score. Special fluid/amputation interpretation requires the explanatory booklet; those question qualifications remain pending."
+    }
+  ],
+  "unchangedQuestionObjects": true,
+  "fullModuleVerified": false,
+  "published": false
+}
