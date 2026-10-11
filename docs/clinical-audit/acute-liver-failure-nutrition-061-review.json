@@ -1,0 +1,94 @@
+{
+  "status": "source_reviewed_candidate_only",
+  "precedingValidationFailure": "v1 verifier used incorrect lesson schema keys id/sections; failed candidate and phase output preserved. Exact whole-runtime restoration passed before fresh v2 patch.",
+  "checkedUTC": "2026-10-11T09:29:08.203589+00:00",
+  "sourceHEAD": "80fe033e7bb087660b0bf3e564919f19fa0f633d",
+  "questionID": "acute-liver-failure-061",
+  "poolID": "cumulative-acute-liver-failure-acute-liver-failure-061",
+  "beforeQuestion": {
+    "id": "acute-liver-failure-061",
+    "question": "Which statement is most accurate? Focus: nutrition medication.",
+    "choices": [
+      "ALF care requires adequate energy, avoidance of prolonged fasting, enteral nutrition when feasible, and aggressive medication stewardship.",
+      "Routine prolonged protein elimination can worsen catabolism without reliably controlling cerebral edema.",
+      "Wait for every diagnostic result before contacting a transplant center.",
+      "Use aminotransferase height alone to decide whether the patient is improving."
+    ],
+    "answer": 0,
+    "rationale": "ALF care requires adequate energy, avoidance of prolonged fasting, enteral nutrition when feasible, and aggressive medication stewardship. Review every sedative, nephrotoxin, hepatotoxin, dose, solvent, sodium load, and enteral or intravenous route each day.",
+    "reviewHref": "#medication-stewardship",
+    "difficulty": "foundational"
+  },
+  "afterQuestion": {
+    "id": "acute-liver-failure-061",
+    "question": "A malnourished adult with acute liver failure cannot eat. The airway is protected, enteral access is usable, and immediately life-threatening metabolic derangements are controlled. Severe hyperacute hyperammonemia is absent. Which initial nutrition plan is most appropriate?",
+    "choices": [
+      "Begin low-dose enteral nutrition with monitoring and individualized advancement",
+      "Withhold all protein for the entire illness regardless of ammonia or nutritional status",
+      "Use parenteral nutrition first solely because liver failure is present",
+      "Require a liver-specific formula before starting any enteral nutrition"
+    ],
+    "answer": 0,
+    "rationale": "Malnutrition requires prompt nutritional support. When oral feeding is unavailable and enteral feeding is feasible, start enteral nutrition at low doses after immediate metabolic threats are controlled. Monitor arterial ammonia and nutritional tolerance. Parenteral nutrition is a second-line option when oral or enteral intake is inadequate; specialized liver formulas are not routinely required. Severe hyperacute disease with encephalopathy and marked hyperammonemia requires a separate, closely monitored protein decision.",
+    "reviewHref": "#medication-stewardship",
+    "difficulty": "advanced"
+  },
+  "changedTeachingBody": [
+    "Match nutrition to the acute state",
+    "For malnutrition, provide prompt nutritional support. If oral intake is unavailable, use low-dose enteral feeding when feasible after immediate metabolic threats are controlled, with arterial ammonia monitoring. Use parenteral nutrition when oral or enteral intake is inadequate. In severe hyperacute disease with encephalopathy and markedly elevated arterial ammonia, specialist teams may briefly defer protein for 24 to 48 hours, then reassess and monitor when restarting. This exception does not justify prolonged blanket protein withdrawal."
+  ],
+  "sourceInterpretation": {
+    "ESPEN2019": "ALF sections 4.1\u20134.5, recommendations 6\u201314. Primarily consensus/GPP and limited ALF trial evidence; no claimed survival advantage or numeric energy/protein regimen. Explicitly preserve temporary protein exception for severe hyperacute disease.",
+    "book": "Printed302,303,305 / PDF310,311,313 native pages read. Liver disease, alcohol-related nutrition, and general HE teaching do not supply this ALF-specific route/temporary-protein protocol. Outside-source exception is the previously authorized primary guidance scope. Book HE protein range not applied as a new ALF dosing rule."
+  },
+  "choiceReview": [
+    {
+      "index": 0,
+      "result": "single best answer under explicit case conditions",
+      "source": "Recommendations6,11,12 and commentary after immediately life-threatening metabolic derangements controlled"
+    },
+    {
+      "index": 1,
+      "result": "incorrect blanket prolonged withdrawal; excludes clinical trajectory",
+      "source": "Recommendation8 limited24\u201348hour exception for specified severehyperacute phenotype"
+    },
+    {
+      "index": 2,
+      "result": "incorrect routine first-line PN solely for ALF",
+      "source": "Recommendation13 second-line if oral/EN inadequate"
+    },
+    {
+      "index": 3,
+      "result": "incorrect mandatory specialized formula",
+      "source": "Recommendation14 standard formulas permitted"
+    }
+  ],
+  "changedModules": [
+    "acute-liver-failure"
+  ],
+  "changedModuleQuestionIDs": [
+    "acute-liver-failure-061"
+  ],
+  "changedRetainedPoolIDs": [
+    "cumulative-acute-liver-failure-acute-liver-failure-061"
+  ],
+  "stableQuestionIDsPreserved": true,
+  "combinedBank30Unchanged": true,
+  "enteralWholeObjectUnchanged": true,
+  "wholeALFModuleVerified": false,
+  "wholeEnteralModuleVerified": false,
+  "buildVerified": false,
+  "nativeRenderedCandidateVerified": false,
+  "productionLiveVerified": false,
+  "wholeGoalComplete": false,
+  "formattingCorrection": {
+    "checkedUTC": "2026-10-11T09:38:28.695208+00:00",
+    "trigger": "Main v1 structural audit rejected prohibited en dash in new teaching body. Failed archive candidate and terminal log preserved.",
+    "change": "24\u201348 hours changed to 24 to 48 hours only.",
+    "questionChoicesKeyRationaleAndLinksUnchanged": true,
+    "other231ModulesAndCombinedAndRetainedBankObjectsUnchanged": true,
+    "sourceReviewUnchanged": true,
+    "passedMainBuild": false
+  },
+  "privateSourceEvidence": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/enteral-feeding-current-reconciliation-20261011/evidence/alf-nutrition-061-source-review-v3.json"
+}
