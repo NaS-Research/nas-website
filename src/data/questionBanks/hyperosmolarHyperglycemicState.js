@@ -80,4 +80,244 @@ const sourceReviewedExposureQuestions = {
     "rationale": "Systemic steroids are listed as glucose-raising drugs, while inpatient insulin treatment depends on intake and should be proactive. The book describes illness, reduced fluid intake and osmotic diuresis in HHS. Reassess the actual steroid and nutrition exposures while treating the crisis and investigating illness and hydration. The chronology alone does not prove causation; these principles do not supply a tube-specific dosing or IV-transition protocol."
   }
 };
-export const hyperosmolarHyperglycemicStateQuestionBank = originalHyperosmolarHyperglycemicStateQuestionBank.map((question) => sourceReviewedExposureQuestions[question.id] ? { ...question, ...sourceReviewedExposureQuestions[question.id] } : question);
+const exposureReviewedHyperosmolarHyperglycemicStateQuestionBank = originalHyperosmolarHyperglycemicStateQuestionBank.map((question) => sourceReviewedExposureQuestions[question.id] ? { ...question, ...sourceReviewedExposureQuestions[question.id] } : question);
+
+// Scoped corrections preserve the canonical bank and previously reviewed exposure items.
+const sourceReviewedSodiumOsmolalityQuestions = {
+  "hhs-12-principle": {
+    "distractors": [
+      "The ceiling is 90 to 120 mg/dL over the entire admission.",
+      "Glucose must fall by at least 120 mg/dL every hour.",
+      "The rate limit applies only after glucose is below 250 mg/dL."
+    ],
+    "rationale": "The HHS glucose limit is an hourly ceiling, not a minimum speed or a target for the whole admission. Interpret the rate alongside sodium, osmolality, perfusion, and neurologic findings."
+  },
+  "hhs-12-application": {
+    "distractors": [
+      "Judge safety from the latest glucose value without its elapsed time.",
+      "Use the average daily glucose decrease to exclude a rapid early fall.",
+      "Track glucose alone because sodium and osmolality do not affect safety."
+    ],
+    "rationale": "A rate requires paired measurements and elapsed time. A still-high glucose can be falling too quickly; check the coupled sodium and osmolality trajectories rather than accepting the current value alone."
+  },
+  "hhs-12-safety": {
+    "distractors": [
+      "Checking the hourly glucose decline against the HHS ceiling.",
+      "Reviewing osmolality and sodium when glucose falls quickly.",
+      "Reassessing treatment when neurologic findings change."
+    ],
+    "rationale": "Accelerating glucose correction beyond the HHS ceiling can cause harmful osmotic shifts. Serial rate checks, coupled chemistry review, and reassessment of new neurologic findings are protective actions."
+  },
+  "hhs-12-case": {
+    "distractors": [
+      "Continue the same rate because 650 mg/dL is still high.",
+      "Increase insulin to normalize glucose within the next hour.",
+      "Stop sodium and osmolality monitoring after glucose starts falling."
+    ],
+    "rationale": "The decline is 820 - 650 = 170 mg/dL in one hour, exceeding the 90 to 120 mg/dL/h HHS ceiling. Reassess the actual fluid and insulin delivery, osmolality, sodium, perfusion, and neurologic status, then adjust the correction trajectory."
+  },
+  "hhs-13-principle": {
+    "distractors": [
+      "Osmolality should fall 3 to 8 mOsm/kg over the entire day.",
+      "Any osmolality decrease is safe if glucose remains above 600 mg/dL.",
+      "An osmolality fall above 8 mOsm/kg/h is required to reverse HHS."
+    ],
+    "rationale": "The 3 to 8 mOsm/kg/h range describes a monitored hourly fall during HHS treatment. Faster biochemical improvement can be unsafe; assess the rate and the clinical response together."
+  },
+  "hhs-13-application": {
+    "distractors": [
+      "Infer osmolality from the glucose value without checking sodium.",
+      "Use the admission osmolality to judge all subsequent treatment.",
+      "Check cognition only after the osmolality reaches its resolution threshold."
+    ],
+    "rationale": "Serial osmolality, sodium, glucose, fluid balance, and cognition reveal the direction and speed of correction. Neither an isolated glucose nor an admission value establishes safety later in treatment."
+  },
+  "hhs-13-safety": {
+    "distractors": [
+      "Plotting serial osmolality measurements with elapsed time.",
+      "Reassessing the fluid and insulin plan when osmolality falls too quickly.",
+      "Checking neurologic status when the correction trajectory changes."
+    ],
+    "rationale": "Large rapid osmotic changes can move water into brain cells and contribute to cerebral injury. Rate monitoring and clinical reassessment reduce the chance of overlooking this problem; a new neurologic symptom requires urgent evaluation."
+  },
+  "hhs-13-case": {
+    "distractors": [
+      "Continue unchanged because falling osmolality always proves safe recovery.",
+      "Increase the correction rate to reach the resolution threshold sooner.",
+      "Wait for the next routine laboratory draw before assessing worsening headache."
+    ],
+    "rationale": "A 14 mOsm/kg fall in one hour exceeds the 3 to 8 mOsm/kg/h HHS range. Worsening headache warrants urgent neurologic assessment and review of treatment delivery and tonicity; the rate of biochemical change alone is not proof of safe recovery."
+  },
+  "hhs-14-principle": {
+    "distractors": [
+      "Sodium must fall by 10 mmol/L every hour.",
+      "A 10 mmol/L decline is a minimum daily treatment target.",
+      "The sodium limit is irrelevant if the osmolality is decreasing."
+    ],
+    "rationale": "The HHS sodium limit is a maximum decline of 10 mmol/L in 24 hours. It is not a required decline, and sodium must be interpreted with osmolality and glucose rather than used as an isolated treatment target."
+  },
+  "hhs-14-application": {
+    "distractors": [
+      "Restart the allowable sodium decline at each new laboratory draw.",
+      "Ignore sodium change until exactly 24 hours have elapsed.",
+      "Use glucose decline alone to decide whether sodium correction is safe."
+    ],
+    "rationale": "Review the cumulative sodium change over its actual time interval alongside osmolality and clinical status. An excessive fall can be identified before 24 hours; each measurement does not reset the safety limit."
+  },
+  "hhs-14-safety": {
+    "distractors": [
+      "Reviewing the cumulative sodium decline over 24 hours.",
+      "Distinguishing rapid correction of hypernatremia from rapid correction of hyponatremia.",
+      "Reassessing neurologic status and osmolality when sodium changes unexpectedly."
+    ],
+    "rationale": "Rapid lowering of hypernatremia can produce harmful cerebral water shifts. The classic osmotic demyelination mechanism is rapid correction of hyponatremia; do not label every downward sodium change as that mechanism. HHS requires controlled correction of the coupled sodium and osmolality trajectory."
+  },
+  "hhs-14-case": {
+    "distractors": [
+      "Continue unchanged because 24 hours have not yet elapsed.",
+      "Accelerate fluids to normalize sodium sooner.",
+      "Judge neurologic safety from glucose without considering sodium or osmolality."
+    ],
+    "rationale": "A 12 mmol/L sodium decline within 18 hours already exceeds the HHS maximum of 10 mmol/L in 24 hours. Reassess the fluid plan, osmolality, and neurologic findings and reduce excessive correction rather than waiting for the clock to reach 24 hours."
+  },
+  "hhs-15-principle": {
+    "distractors": [
+      "Sodium must fall by 1.6 mmol/L whenever glucose falls by 100 mg/dL.",
+      "Any rise in sodium establishes treatment failure.",
+      "The expected sodium rise removes the need to monitor osmolality."
+    ],
+    "rationale": "As extracellular glucose falls, water returns into cells and measured sodium can rise. The 2024 consensus uses about 1.6 mmol/L per 100 mg/dL glucose decline; this estimate does not replace serial osmolality and volume assessment."
+  },
+  "hhs-15-application": {
+    "distractors": [
+      "Switch fluids solely because measured sodium is higher.",
+      "Stop fluid replacement whenever sodium rises during glucose correction.",
+      "Treat the sodium rise as proof that insulin has no effect."
+    ],
+    "rationale": "An early sodium rise can reflect the expected redistribution of water during glucose correction. Determine whether osmolality is declining appropriately and whether perfusion and fluid balance are improving before changing the fluid plan."
+  },
+  "hhs-15-safety": {
+    "distractors": [
+      "Interpreting sodium beside the contemporaneous glucose and osmolality.",
+      "Reviewing fluid balance and perfusion before changing fluid tonicity.",
+      "Monitoring a rising sodium while the osmolality declines appropriately."
+    ],
+    "rationale": "Changing to hypotonic fluid solely because sodium rises ignores the expected water shift and may accelerate osmotic correction. Review the complete trajectory; an appropriate osmolality decline is not treatment failure merely because sodium rose."
+  },
+  "hhs-15-case": {
+    "distractors": [
+      "Switch to hypotonic saline based only on the sodium rise.",
+      "Stop all replacement fluid because the rise proves failure.",
+      "Increase insulin solely to reverse the sodium rise."
+    ],
+    "rationale": "Using the stated estimate, a 200 mg/dL glucose decline predicts roughly a 3.2 mmol/L sodium rise. The observed rise of 3 mmol/L is compatible with that shift. Continue guided treatment and serial reassessment when osmolality is falling appropriately."
+  },
+  "hhs-16-principle": {
+    "distractors": [
+      "Half-normal saline is the initial resuscitation fluid for every HHS patient.",
+      "An isolated sodium rise is enough to require half-normal saline.",
+      "Positive fluid balance alone requires a switch to half-normal saline."
+    ],
+    "rationale": "In the 2024 HHS pathway, 0.45 percent saline is a conditional later choice when osmolality is not declining despite adequate positive balance and appropriate insulin. It is not selected from sodium alone or substituted for initial perfusion assessment."
+  },
+  "hhs-16-application": {
+    "distractors": [
+      "Change fluid tonicity before checking whether the prescribed treatment was delivered.",
+      "Use a single sodium result to decide the fluid change.",
+      "Assume a positive balance excludes persistent perfusion or cardiac problems."
+    ],
+    "rationale": "Before changing tonicity, reassess actual treatment delivery, perfusion, balance, sodium, glucose, and osmolality. Positive balance is one piece of evidence, not proof that the whole treatment plan is adequate or well tolerated."
+  },
+  "hhs-16-safety": {
+    "distractors": [
+      "Starting monitored isotonic resuscitation when hypovolemia requires it.",
+      "Checking whether osmolality is falling before changing fluid tonicity.",
+      "Confirming adequate balance and appropriate insulin before considering 0.45 percent saline."
+    ],
+    "rationale": "Making half-normal saline the automatic first fluid bypasses the HHS resuscitation sequence. Initial perfusion restoration and subsequent fluid selection require the complete volume and tonicity context."
+  },
+  "hhs-16-case": {
+    "distractors": [
+      "Switch all HHS patients to hypotonic fluid as soon as they arrive.",
+      "Use hypotonic fluid whenever sodium rises, irrespective of osmolality.",
+      "Stop reassessing volume tolerance because positive balance has been achieved."
+    ],
+    "rationale": "The stated findings meet the context for considering 0.45 percent saline under the HHS protocol. Continue clinical and chemistry reassessment: a conditional fluid change is not an instruction to stop monitoring volume tolerance or treatment response."
+  },
+  "hhs-27-principle": {
+    "distractors": [
+      "Corrected sodium is the sodium concentration directly measured by the laboratory.",
+      "Corrected sodium equals the current effective osmolality.",
+      "Corrected sodium is a guaranteed immediate target for fluid replacement."
+    ],
+    "rationale": "Corrected sodium estimates the concentration after accounting for the glucose-related water shift under stated assumptions. It differs from measured sodium and from osmolality; ongoing losses and treatment can change the estimate."
+  },
+  "hhs-27-application": {
+    "distractors": [
+      "Combine sodium and glucose drawn at unrelated times without qualification.",
+      "Use corrected sodium in place of measured sodium in the standard osmolality equation.",
+      "Treat the chosen correction factor as an exact value for every patient."
+    ],
+    "rationale": "Use paired sodium and glucose values and state the correction factor. Interpret the estimate with measured sodium, osmolality, and clinical findings. Standard current osmolality calculations use measured sodium; replacing it with a glucose-corrected estimate counts that shift again."
+  },
+  "hhs-27-safety": {
+    "distractors": [
+      "Stating the correction factor and its units.",
+      "Recalculating the estimate from paired serial sodium and glucose values.",
+      "Checking perfusion and osmolality before changing the fluid plan."
+    ],
+    "rationale": "A corrected sodium estimate is not an exact measured target or a complete replacement order. Stating assumptions, repeating paired measurements, and assessing the full clinical trajectory are safeguards."
+  },
+  "hhs-27-case": {
+    "distractors": [
+      "Estimate corrected sodium as 133.6 mmol/L by counting only one glucose increment.",
+      "Estimate corrected sodium as 141.6 mmol/L by counting glucose above zero.",
+      "Estimate corrected sodium as 124 mmol/L by subtracting the glucose correction."
+    ],
+    "rationale": "Glucose is 500 mg/dL above 100, or five 100 mg/dL increments. The stated calculation is 132 + 1.6 x 5 = 140 mmol/L. This remains an estimate; do not treat it as the current measured sodium or an automatic fluid target."
+  },
+  "hhs-28-principle": {
+    "distractors": [
+      "A calculated deficit specifies both the fluid type and delivery rate without clinical assessment.",
+      "A calculated deficit includes every future urinary and insensible loss automatically.",
+      "A weight-derived total-body-water estimate is an exact measured volume."
+    ],
+    "rationale": "The estimate frames the scale of water imbalance under assumptions about total body water. It does not include every evolving loss or determine a safe delivery rate; examination, perfusion, reserve, balance, and serial chemistry guide the plan."
+  },
+  "hhs-28-application": {
+    "distractors": [
+      "Use the admission weight as a fixed exact body-water volume throughout treatment.",
+      "Replace the calculated deficit without updating ongoing losses or urine output.",
+      "Use the formula instead of assessing perfusion and cardiac tolerance."
+    ],
+    "rationale": "Body-water estimates and ongoing losses can change during treatment. Update the plan from weight context, intake and output, sodium, glucose, osmolality, perfusion, and heart and kidney reserve rather than repeating an unchanged formula order."
+  },
+  "hhs-28-safety": {
+    "distractors": [
+      "Considering the uncertainty of a weight-derived total-body-water estimate.",
+      "Reassessing the plan as urinary losses and measured sodium change.",
+      "Using cautious monitored replacement when cardiac reserve is limited."
+    ],
+    "rationale": "Automatically delivering a rough deficit rapidly can exceed volume tolerance and accelerate osmotic correction. Uncertainty, ongoing losses, and cardiac reserve require repeated assessment rather than an automatic complete order."
+  },
+  "hhs-28-case": {
+    "distractors": [
+      "Give the whole calculated deficit rapidly despite cardiac congestion.",
+      "Treat an uncertain baseline weight as an exact measure of total body water.",
+      "Convert the estimated deficit directly into a complete fluid order without reassessment."
+    ],
+    "rationale": "Weight-derived body-water estimates and evolving losses are uncertain, and heart failure constrains the safe delivery rate. Use the deficit to inform a cautious monitored plan with frequent assessment of perfusion, congestion, balance, sodium, and osmolality."
+  }
+};
+const sourceReviewedCorrectAnswerText = {
+  "hhs-13-safety": "Rapid changes in osmolality without serial assessment can produce harmful cerebral fluid shifts.",
+  "hhs-14-safety": "Rapidly lowering high sodium without monitoring tonicity and neurologic status creates cerebral injury risk."
+};
+const sodiumOsmolalityReviewedQuestionBank = exposureReviewedHyperosmolarHyperglycemicStateQuestionBank.map((question) => {
+  const correction = sourceReviewedSodiumOsmolalityQuestions[question.id];
+  if (!correction) return question;
+  return { ...question, choices: [sourceReviewedCorrectAnswerText[question.id] ?? question.choices[0], ...correction.distractors], rationale: correction.rationale };
+});
+
+// Correct the same inherited mechanism wording in two non-key choices.
+export const hyperosmolarHyperglycemicStateQuestionBank = sodiumOsmolalityReviewedQuestionBank.map((question) => ["hhs-03-safety", "hhs-09-safety"].includes(question.id) ? { ...question, choices: question.choices.map((choice) => choice === "Correcting severe hypernatremia rapidly creates osmotic demyelination and cerebral injury risk." ? "Rapidly lowering high sodium without monitoring tonicity and neurologic status creates cerebral injury risk." : choice) } : question);
