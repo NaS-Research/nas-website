@@ -1,14 +1,14 @@
 {
-  "status": "six_medchem_historical_questions_live_qualified_remaining93_open",
-  "checkedUTC": "2026-10-11T19:41:50.572534+00:00",
+  "status": "fifteen_antibiotic_historical_questions_live_qualified_remaining78_open",
+  "checkedUTC": "2026-10-11T20:25:53.258546+00:00",
   "sourceHEAD": "a403e8e2da7679186f4244847635a73c400d7633",
   "scope": "All current232 modules and whole bank fields, historical233 rows, focused416 and secondary2046 retained rows. Rebuild locating inventory, compare exact whole objects and bind48 completed source/render/live releases. Keyword results and retained ID labels are not clinical qualification.",
   "modules": 232,
   "wholeBankObjects": 28012,
   "selectedCumulativeWholeObjectsExact": true,
   "priorRegistryIds": 1510,
-  "retainedExactPublishedWholeQuestionBindings": 275,
-  "registryIdsAfter": 1783,
+  "retainedExactPublishedWholeQuestionBindings": 290,
+  "registryIdsAfter": 1798,
   "archives": [
     {
       "path": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/archives/feeding-primary-nutrition-question-review-20261011",
@@ -716,9 +716,9 @@
     "retainedSecondaryRows": 2046,
     "currentFocusedRows": 405,
     "currentSecondaryLocatingRows": 1881,
-    "priorUnregisteredHistoricalStillPending": 93,
-    "historicalCurrentExactReleaseBindings": 39,
-    "historicalPriorUnregisteredNowExactBound": 37,
+    "priorUnregisteredHistoricalStillPending": 78,
+    "historicalCurrentExactReleaseBindings": 54,
+    "historicalPriorUnregisteredNowExactBound": 52,
     "changedWholeObjectsWithoutCurrentExactReleaseBinding": 36
   },
   "currentPrimaryQuestionInventory": {
@@ -739,9 +739,9 @@
   "newWholeModuleOrChapterClosures": 0,
   "wholeGoalComplete": false,
   "additionalArchivedQuestionBindings": 111,
-  "newRegistryIdsAddedThisPhase": 6,
+  "newRegistryIdsAddedThisPhase": 15,
   "ownEnteralQuestionHashesReconciled": 108,
-  "newClinicalQuestionCertifications": 6,
+  "newClinicalQuestionCertifications": 15,
   "additionalProof": [
     {
       "path": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/archives/fluid-parent-closure-reconciliation-20261011",
@@ -770,8 +770,6 @@
     }
   ],
   "remainingHistoricalUnregisteredPendingByModule": {
-    "fluoroquinolone-pharmacology": 9,
-    "tetracycline-pharmacology": 6,
     "vancomycin-pharmacology": 14,
     "lefamulin-pharmacology": 9,
     "acute-bacterial-meningitis": 3,
@@ -1442,5 +1440,171 @@
     ],
     "remainingHistoricalQuestions": 93,
     "limits": "Six whole questions/24 choices only. No whole module or chapter closure. Older Audit differences remain preserved and are not published here. The selected30and entire cumulative pool remain exact."
+  },
+  "latestHistoricalAntibioticRelease": {
+    "status": "verified_scoped_public_release",
+    "checkedUTC": "2026-10-11T20:25:53.258546+00:00",
+    "questionIds": [
+      "fluoroquinolone-pharmacology-001",
+      "fluoroquinolone-pharmacology-007",
+      "fluoroquinolone-pharmacology-023",
+      "fluoroquinolone-pharmacology-025",
+      "fluoroquinolone-pharmacology-091",
+      "fluoroquinolone-pharmacology-107",
+      "fluoroquinolone-pharmacology-109",
+      "fluoroquinolone-pharmacology-115",
+      "fluoroquinolone-pharmacology-131",
+      "tetracycline-pharmacology-011",
+      "tetracycline-pharmacology-017",
+      "tetracycline-pharmacology-035",
+      "tetracycline-pharmacology-041",
+      "tetracycline-pharmacology-115",
+      "tetracycline-pharmacology-121"
+    ],
+    "wholeQuestionsReviewed": 15,
+    "individualChoicesReviewed": 60,
+    "sourceNativePagesActuallyInspected": 38,
+    "mainBase": "97e4c81f6948b28ce47c28af9cb35cf87f1308d8",
+    "nativeCapturesActuallyInspected": 68,
+    "evidenceSHA256": {
+      "antibiotic-question-review-v2.json": "e08831fa6e7ef91b689e998cc3f48f64b87defc91089bdffd13e7948c8eabdf5",
+      "main-integration-antibiotic-v3.json": "0ae2f43bc2780fa32cdeb790e195742338ea37e96b30907e4cdd367b46fcc120",
+      "browser-antibiotic-main-v1.json": "aa555d04a2abf36beee8211087aaeacf39821b3b808fcbb69f1d1c116a30f5cc",
+      "actual-native-antibiotic-complete-v1.json": "1ed038e2e019cad5a5847c17ab9796f9db6fc7ab43658ab421c306d8ba9f3de3",
+      "browser-antibiotic-live-v1.json": "44490e21f192d604b91f1ca7c92ff21bc66ef9588c3978567bdd0da2e90a4f79",
+      "public-pixel-comparison-antibiotic-v1.json": "a2b52d6c394c2630cb811e7661f24ac7979f0dd9a61385014d5ce4e7e861292e",
+      "original-preservation-antibiotic-v1.json": "1da0e62e27eeb06580e7b8f92c251bf2e8f3d05652ebd362724a532a86758500"
+    },
+    "selected30WholeObjectsExact": true,
+    "other1183CumulativePoolObjectsExact": true,
+    "oneDerivedPoolAliasUpdatedFromReviewedParent": true,
+    "other230ModulesExact": true,
+    "wholeModulesVerified": 69,
+    "chaptersVerified": 7,
+    "wholeModuleVerified": false,
+    "wholeChapterVerified": false,
+    "productionLiveVerified": true,
+    "wholeGoalComplete": false,
+    "release": {
+      "mainCommit": "0fcbce5f6dd992d367faf3f3ba2a5800c0367757",
+      "auditReviewCommit": "3adef76c0e552b6a0a52e0637618d3b141169d90",
+      "exactRemoteMainVerified": true,
+      "liveBrowserPassed": true,
+      "publicCapturesRGBIdenticalToActuallyInspectedMain": 68,
+      "extraPublicDifferences": 0,
+      "newestFirstAndSearchRelevanceVerified": true
+    },
+    "olderAuditDifferencesPreserved": [
+      {
+        "module": "fluoroquinolone-pharmacology",
+        "id": "fluoroquinolone-pharmacology-035",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "fluoroquinolone-pharmacology",
+        "id": "fluoroquinolone-pharmacology-051",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "fluoroquinolone-pharmacology",
+        "id": "fluoroquinolone-pharmacology-053",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "fluoroquinolone-pharmacology",
+        "id": "fluoroquinolone-pharmacology-054",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "fluoroquinolone-pharmacology",
+        "id": "fluoroquinolone-pharmacology-055",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "fluoroquinolone-pharmacology",
+        "id": "fluoroquinolone-pharmacology-056",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "tetracycline-pharmacology",
+        "id": "tetracycline-pharmacology-057",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "tetracycline-pharmacology",
+        "id": "tetracycline-pharmacology-058",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "tetracycline-pharmacology",
+        "id": "tetracycline-pharmacology-059",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "tetracycline-pharmacology",
+        "id": "tetracycline-pharmacology-060",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "tetracycline-pharmacology",
+        "id": "tetracycline-pharmacology-061",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "tetracycline-pharmacology",
+        "id": "tetracycline-pharmacology-062",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "tetracycline-pharmacology",
+        "id": "tetracycline-pharmacology-063",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "tetracycline-pharmacology",
+        "id": "tetracycline-pharmacology-064",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "tetracycline-pharmacology",
+        "id": "tetracycline-pharmacology-069",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "tetracycline-pharmacology",
+        "id": "tetracycline-pharmacology-070",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "tetracycline-pharmacology",
+        "id": "tetracycline-pharmacology-071",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "module": "tetracycline-pharmacology",
+        "id": "tetracycline-pharmacology-072",
+        "status": "older_audit_difference_not_published_here",
+        "absentFromMain": false
+      }
+    ],
+    "remainingHistoricalQuestions": 78,
+    "limits": "Fifteen whole questions/60 choices and one matching lesson paragraph only. No whole module or chapter closure. Older Audit differences remain preserved and are not published here. The selected30remain exact; one derived pool alias follows its reviewed parent and the other1183pool objects remain exact."
   }
 }
