@@ -27603,7 +27603,8 @@
       "questions": 120,
       "status": "reviewing",
       "evidence": [
-        "enteral-nutrition-broader-thyroid-review.json"
+        "enteral-nutrition-broader-thyroid-review.json",
+        "medchem-historical-live-release-review.json"
       ],
       "latestEnteralDependencyReview": {
         "evidence": "enteral-nutrition-broader-thyroid-review.json",
@@ -27652,6 +27653,17 @@
           "separateSourceExamples": 98
         },
         "workingLocalDraftPreservedUnreleased": false
+      },
+      "historicalMedchemScopedReview": {
+        "evidence": "medchem-historical-live-release-review.json",
+        "verifiedQuestionIds": [
+          "thychem-05-application",
+          "thychem-11-application",
+          "thychem-17-application"
+        ],
+        "productionLiveVerified": true,
+        "mainCommit": "97e4c81f6948b28ce47c28af9cb35cf87f1308d8",
+        "wholeModuleVerified": false
       }
     },
     {
@@ -32547,7 +32559,8 @@
       "status": "reviewing",
       "evidence": [
         "enteral-nutrition-broader-genitourinary-review.json",
-        "final-primary-live-release-review.json"
+        "final-primary-live-release-review.json",
+        "medchem-historical-live-release-review.json"
       ],
       "broaderEnteralAdministrationReview": {
         "evidence": "enteral-nutrition-broader-genitourinary-review.json",
@@ -32602,6 +32615,17 @@
         ],
         "productionLiveVerified": true,
         "mainCommit": "266ece8b784eb07862d618ba6c28d91f1cb487cc",
+        "wholeModuleVerified": false
+      },
+      "historicalMedchemScopedReview": {
+        "evidence": "medchem-historical-live-release-review.json",
+        "verifiedQuestionIds": [
+          "genitourinary-medchem-039",
+          "genitourinary-medchem-071",
+          "genitourinary-medchem-103"
+        ],
+        "productionLiveVerified": true,
+        "mainCommit": "97e4c81f6948b28ce47c28af9cb35cf87f1308d8",
         "wholeModuleVerified": false
       }
     },

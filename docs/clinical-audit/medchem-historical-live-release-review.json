@@ -1,6 +1,6 @@
 {
-  "status": "source_build_actual_native_passed_public_pending",
-  "checkedUTC": "2026-10-11T19:38:13.524938+00:00",
+  "status": "verified_scoped_public_release",
+  "checkedUTC": "2026-10-11T19:41:50.572534+00:00",
   "questionIds": [
     "thychem-05-application",
     "thychem-11-application",
@@ -18,7 +18,10 @@
     "medchem-question-review-v1.json": "93be0c776cc49cac14954fe1bad3bc1a6615af200c777bf6784715c52128af2c",
     "main-integration-medchem-v2.json": "ec96f8597b728ac7bcf125f1c91362b438ca40a4e7ab6b1061a84873ee73ebae",
     "browser-medchem-main-v1.json": "95ed207920669d597aef474d63fb77ea338c2c4748e8f5e5cbfe352c60626cb3",
-    "actual-native-medchem-complete-v1.json": "5e6a050b9102452b4f3cde0cb21bcd2982848514f011c8a72c77cede59041695"
+    "actual-native-medchem-complete-v1.json": "5e6a050b9102452b4f3cde0cb21bcd2982848514f011c8a72c77cede59041695",
+    "browser-medchem-live-v1.json": "aa4c836eba37a21e154fbde18e886fefa1d80e4b07432730df4adb03b3b47637",
+    "public-pixel-comparison-medchem-v1.json": "13a8e8932c43bb3e47f8451fe34322350cf537cfa7deacdf67db6f02a376d93b",
+    "original-preservation-medchem-v1.json": "804f1307ecc884d5f75cbd1a12c967a4248c4118504c7a647985c34db3322d48"
   },
   "selected30WholeObjectsExact": true,
   "entireCumulativePoolExact": true,
@@ -27,6 +30,85 @@
   "chaptersVerified": 7,
   "wholeModuleVerified": false,
   "wholeChapterVerified": false,
-  "productionLiveVerified": false,
-  "wholeGoalComplete": false
+  "productionLiveVerified": true,
+  "wholeGoalComplete": false,
+  "release": {
+    "mainCommit": "97e4c81f6948b28ce47c28af9cb35cf87f1308d8",
+    "auditReviewCommit": "6756afc86d348c26e02fc39ca677a21807cf848e",
+    "exactRemoteMainVerified": true,
+    "liveBrowserPassed": true,
+    "publicCapturesRGBIdenticalToActuallyInspectedMain": 30,
+    "extraPublicDifferences": 0,
+    "newestFirstAndSearchRelevanceVerified": true
+  },
+  "olderAuditDifferencesPreserved": [
+    {
+      "module": "thyroid-medicinal-chemistry",
+      "id": "thychem-23-principle",
+      "status": "older_audit_difference_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "module": "thyroid-medicinal-chemistry",
+      "id": "thychem-23-application",
+      "status": "older_audit_difference_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "module": "thyroid-medicinal-chemistry",
+      "id": "thychem-23-safety",
+      "status": "older_audit_difference_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "module": "thyroid-medicinal-chemistry",
+      "id": "thychem-23-case",
+      "status": "older_audit_difference_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "module": "thyroid-medicinal-chemistry",
+      "id": "thychem-24-principle",
+      "status": "older_audit_difference_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "module": "thyroid-medicinal-chemistry",
+      "id": "thychem-24-application",
+      "status": "older_audit_difference_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "module": "thyroid-medicinal-chemistry",
+      "id": "thychem-24-safety",
+      "status": "older_audit_difference_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "module": "thyroid-medicinal-chemistry",
+      "id": "thychem-24-case",
+      "status": "older_audit_difference_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "module": "genitourinary-medicinal-chemistry",
+      "id": "genitourinary-medchem-121",
+      "status": "older_audit_difference_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "module": "genitourinary-medicinal-chemistry",
+      "id": "genitourinary-medchem-122",
+      "status": "older_audit_difference_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "module": "genitourinary-medicinal-chemistry",
+      "id": "genitourinary-medchem-124",
+      "status": "older_audit_difference_not_published_here",
+      "absentFromMain": false
+    }
+  ],
+  "remainingHistoricalQuestions": 93,
+  "limits": "Six whole questions/24 choices only. No whole module or chapter closure. Older Audit differences remain preserved and are not published here. The selected30and entire cumulative pool remain exact."
 }
