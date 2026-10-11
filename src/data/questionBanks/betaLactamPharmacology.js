@@ -39,7 +39,7 @@ const concepts = [
 const dimensions = [["principle", "Which principle best characterizes"], ["action", "Which clinical action best applies to"], ["assessment", "Which assessment is most appropriate for"], ["hazard", "Which reasoning hazard is most important to prevent with"]];
 const distractors = (index, field) => [7, 13, 19].map((offset) => concepts[(index + offset) % concepts.length][field]);
 
-export const betaLactamPharmacologyQuestionBank = concepts.flatMap((item, index) => dimensions.map(([field, stem], dimension) => ({
+const beforeCeftriaxoneNeonatalQuestionBank = concepts.flatMap((item, index) => dimensions.map(([field, stem], dimension) => ({
   id: `beta-lactam-pharmacology-${String(index * 4 + dimension + 1).padStart(3, "0")}`,
   lesson: item.lesson,
   question: `${stem} ${item.name}?`,
@@ -48,3 +48,35 @@ export const betaLactamPharmacologyQuestionBank = concepts.flatMap((item, index)
   rationale: item.why,
   reviewHref: `#${item.lesson}`,
 })));
+
+const ceftriaxoneNeonatalQuestionOverrides = {
+  "beta-lactam-pharmacology-115": {
+    "id": "beta-lactam-pharmacology-115",
+    "lesson": "safety-monitoring",
+    "question": "Before dispensing ceftriaxone for a neonate, which assessment directly addresses the neonatal contraindications?",
+    "choices": [
+      "Assess chronological and postmenstrual age, prematurity, bilirubin, and whether calcium-containing IV solutions or parenteral nutrition are needed or expected.",
+      "Check only chronological age; prematurity and bilirubin do not affect ceftriaxone eligibility.",
+      "Review only the current IV bag and disregard calcium-containing parenteral nutrition planned later.",
+      "Confirm separate IV lines and treat that alone as evidence that neonatal calcium restrictions do not apply."
+    ],
+    "answer": 0,
+    "rationale": "Current labeling contraindicates ceftriaxone in premature neonates up to a postmenstrual age of 41 weeks and in neonates 28 days old or younger who require or are expected to require calcium-containing IV solutions, including parenteral nutrition. Hyperbilirubinemic neonates should not receive it because ceftriaxone can displace bilirubin from albumin. Separate IV lines do not remove the neonatal calcium contraindication.",
+    "reviewHref": "#safety-monitoring"
+  },
+  "beta-lactam-pharmacology-116": {
+    "id": "beta-lactam-pharmacology-116",
+    "lesson": "safety-monitoring",
+    "question": "A 12-day-old neonate is expected to receive calcium-containing parenteral nutrition. Which proposed action violates the ceftriaxone neonatal restriction?",
+    "choices": [
+      "Administer ceftriaxone despite the expected calcium-containing parenteral nutrition.",
+      "Withhold ceftriaxone while the team selects a suitable alternative for the infection.",
+      "Confirm all planned calcium-containing IV solutions before evaluating ceftriaxone eligibility.",
+      "Review bilirubin and prematurity as additional ceftriaxone safety factors."
+    ],
+    "answer": 0,
+    "rationale": "The calcium restriction applies to neonates 28 days old or younger who need or are expected to need calcium-containing IV solutions, including parenteral nutrition. It is not limited to simultaneous infusion through one line. Ceftriaxone-calcium precipitation and bilirubin displacement are separate neonatal hazards; the other choices support safe assessment or avoidance.",
+    "reviewHref": "#safety-monitoring"
+  }
+};
+export const betaLactamPharmacologyQuestionBank = beforeCeftriaxoneNeonatalQuestionBank.map(q => ceftriaxoneNeonatalQuestionOverrides[q.id] ?? q);
