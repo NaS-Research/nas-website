@@ -4,7 +4,12 @@ import { pharmacyFinalReview } from "@/data/pharmacyReview";
 
 const questionsPerModule = 5;
 
-function selectAcrossBank(questionBank = []) {
+function selectAcrossBank(questionBank = [], questionIds) {
+  if (questionIds) return questionIds.map((id) => {
+    const question = questionBank.find((item) => item.id === id);
+    if (!question) throw new Error(`Missing preserved fluid-review question: ${id}`);
+    return question;
+  });
   if (questionBank.length <= questionsPerModule) return questionBank;
 
   return Array.from({ length: questionsPerModule }, (_, index) => {
@@ -16,7 +21,7 @@ function selectAcrossBank(questionBank = []) {
 export const pharmacyCumulativeReviewPool = [
   ...pharmacyFinalReview,
   ...pharmacyModules.flatMap((module) =>
-    selectAcrossBank(module.questionBank).map((question) => ({
+    selectAcrossBank(module.questionBank, module.slug === "fluid-electrolyte-therapy" ? module.cumulativeQuestionIds : undefined).map((question) => ({
       ...question,
       id: `cumulative-${module.slug}-${question.id}`,
       module: module.title,

@@ -130,3 +130,1441 @@ export const fluidElectrolyteTherapyQuestionBank = [
 if (fluidElectrolyteTherapyQuestionBank.length !== 100) {
   throw new Error(`Fluid and electrolyte question bank must contain 100 questions, found ${fluidElectrolyteTherapyQuestionBank.length}.`);
 }
+
+// Reconcile enteral intake and gastric-loss fluid assessments.
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-016"), {
+  "choices": [
+    "Enteral intake must be included and IV fluid reduced or stopped as appropriate",
+    "Continue the full IV maintenance volume because tube water counts only toward nutrition",
+    "Stop every IV fluid as soon as any enteral feeding begins",
+    "Replace the formula volume with additional IV water without counting water already delivered"
+  ],
+  "rationale": "Count the fluid and electrolytes actually received from tube feeds, water flushes, oral intake, medicines and other IV sources. NICE advises IV fluid only when oral or enteral routes cannot meet the need, so reduce or stop unnecessary IV maintenance after reassessment. Starting a feed does not prove that hydration is sufficient, and adding a full IV allowance without counting enteral water can overprescribe fluid. The stem does not select a fixed daily volume."
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-083"), {
+  "choices": [
+    "Replacement based on the loss",
+    "Treat measured gastric drainage as already covered by the ordinary maintenance allowance",
+    "Replace all drainage with feeding formula without assessing fluid and electrolyte needs",
+    "Continue the same daily IV order as drainage changes, without reassessing intake or fluid balance"
+  ],
+  "rationale": "Measured gastric drainage is an abnormal ongoing loss. Review its quantity and composition, the patient’s fluid status, laboratory trends and all intake, then adjust replacement alongside any maintenance requirement. Ordinary maintenance does not automatically cover this loss; formula is not an interchangeable loss-replacement prescription, and a changing output requires reassessment. The stem does not establish a resuscitation bolus or an exact replacement solution, rate or volume."
+});
+
+// Individually reviewed fluid physiology cases; retain existing question IDs.
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-001"), {
+  "id": "fluid-electrolyte-001",
+  "question": "Which statement best distinguishes serum sodium from total body sodium?",
+  "choices": [
+    "Serum sodium is a concentration governed strongly by water balance",
+    "Serum sodium directly equals exchangeable body sodium",
+    "Serum sodium measures intravascular volume",
+    "Serum sodium is independent of glucose"
+  ],
+  "answer": 0,
+  "rationale": "Serum sodium describes concentration relative to water, rather than the amount of sodium in the body. Interpret it with tonicity and the clinical volume assessment. Hyperglycemia can change measured sodium by moving water into extracellular fluid.",
+  "reviewHref": "#fluid-physiology-assessment"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-002"), {
+  "id": "fluid-electrolyte-002",
+  "question": "Which solute contributes to calculated osmolality but is excluded from effective tonicity?",
+  "choices": [
+    "Urea nitrogen",
+    "Sodium",
+    "Glucose",
+    "Mannitol"
+  ],
+  "answer": 0,
+  "rationale": "Urea contributes to total osmolality, but readily crosses cell membranes and is excluded from the simplified effective-tonicity estimate. Sodium salts, glucose and mannitol can act as effective extracellular osmoles; BUN is the reported nitrogen component of urea.",
+  "reviewHref": "#fluid-physiology-assessment"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-003"), {
+  "id": "fluid-electrolyte-003",
+  "question": "Why can a patient with marked edema still have reduced effective circulating volume?",
+  "choices": [
+    "Fluid can be retained outside the vascular space while perfusion remains inadequate",
+    "Edema proves plasma volume is high",
+    "Interstitial water cannot exchange with plasma",
+    "Edema eliminates neurohormonal activation"
+  ],
+  "answer": 0,
+  "rationale": "Interstitial fluid accumulation does not guarantee adequate effective circulation. Fluid compartments exchange water, and disorders with reduced effective circulation can activate water-retaining mechanisms despite edema. Assess perfusion and congestion together.",
+  "reviewHref": "#fluid-physiology-assessment"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-004"), {
+  "id": "fluid-electrolyte-004",
+  "question": "Which measurement is most useful for detecting a new water diuresis during correction of hyponatremia?",
+  "choices": [
+    "Urine output trend",
+    "Body weight measured only at discharge",
+    "A repeat serum sodium without recording urine output",
+    "The amount of saline already prescribed"
+  ],
+  "answer": 0,
+  "rationale": "A sudden increase in dilute urine output can signal rising free-water clearance and precede unexpectedly rapid sodium correction. Track output with serial sodium measurements; sodium must still be checked, but it does not directly record the emerging diuresis.",
+  "reviewHref": "#fluid-physiology-assessment"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-005"), {
+  "id": "fluid-electrolyte-005",
+  "question": "A measured osmolality is substantially greater than the calculated osmolality. What does the difference suggest?",
+  "choices": [
+    "An osmolar gap that may reflect an unmeasured osmole",
+    "Definitive SIADH",
+    "Normal effective tonicity",
+    "A direct measure of dehydration"
+  ],
+  "answer": 0,
+  "rationale": "Measured minus calculated osmolality is the osmolal gap. An unexpectedly positive gap may reflect an osmole omitted from the formula or analytic context. Check the same-sample measurements, units and exposures; the gap alone does not diagnose SIADH, prove normal tonicity or quantify volume depletion.",
+  "reviewHref": "#fluid-physiology-assessment"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-006"), {
+  "id": "fluid-electrolyte-006",
+  "question": "The intake/output chart suggests neutral balance, but comparable weights rise and examination shows new edema. What is the best interpretation?",
+  "choices": [
+    "Reconcile the chart with the weight and examination before revising the fluid plan",
+    "The chart rules out fluid accumulation despite the examination",
+    "The weight trend alone proves hypotonic hyponatremia",
+    "The weights identify the cause of the edema without further assessment"
+  ],
+  "answer": 0,
+  "rationale": "Discordant findings require reconciliation. Weight is one part of the fluid assessment, alongside intake/output, examination, medicines and laboratory trends. Neither a chart nor a weight trend establishes tonicity or the cause by itself; a daily-weight schedule is not required for every patient.",
+  "reviewHref": "#fluid-physiology-assessment"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-007"), {
+  "id": "fluid-electrolyte-007",
+  "question": "Which finding most directly supports impaired perfusion rather than isolated interstitial edema?",
+  "choices": [
+    "Delayed capillary refill with cool extremities",
+    "Bilateral ankle swelling alone",
+    "A low serum albumin alone",
+    "Stable body weight"
+  ],
+  "answer": 0,
+  "rationale": "Delayed capillary refill and cool extremities are clinical indicators of possible impaired circulation. Ankle edema and low albumin do not by themselves establish perfusion, and stable weight does not exclude an acute problem. Use the full assessment before selecting therapy.",
+  "reviewHref": "#fluid-physiology-assessment"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-008"), {
+  "id": "fluid-electrolyte-008",
+  "question": "Hyperglycemia lowers measured sodium primarily through which mechanism?",
+  "choices": [
+    "Water shifts from cells into extracellular fluid",
+    "Sodium enters cells with glucose",
+    "Urea becomes an effective osmole",
+    "The kidney immediately loses all sodium"
+  ],
+  "answer": 0,
+  "rationale": "In hyperglycemia, extracellular glucose can act as an effective osmole and draw water from cells into extracellular fluid, lowering measured sodium by dilution. This is not simply sodium moving into cells, conversion of urea into an effective osmole or immediate loss of all renal sodium.",
+  "reviewHref": "#fluid-physiology-assessment"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-009"), {
+  "id": "fluid-electrolyte-009",
+  "question": "A patient has ankle edema, cool extremities and delayed capillary refill. What assessment best avoids assuming that edema proves adequate circulation?",
+  "choices": [
+    "Assess perfusion and congestion together, using history, examination and trends",
+    "Treat ankle edema as proof that effective circulation is adequate",
+    "Infer circulating volume from serum sodium alone",
+    "Use low albumin alone to select an albumin infusion"
+  ],
+  "answer": 0,
+  "rationale": "Edema and inadequate effective circulation can coexist. The fluid assessment combines examination, history, input/output, weight and laboratory trends. Neither sodium concentration nor albumin alone establishes circulating volume or an infusion indication.",
+  "reviewHref": "#fluid-physiology-assessment"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-010"), {
+  "id": "fluid-electrolyte-010",
+  "question": "What is the strongest reason to document the intended response before administering IV fluid?",
+  "choices": [
+    "It creates a measurable stopping or revision point",
+    "It guarantees the fluid is harmless",
+    "It eliminates the need for reassessment",
+    "It converts maintenance into resuscitation"
+  ],
+  "answer": 0,
+  "rationale": "An explicit intended response and monitoring plan make reassessment actionable, including stopping or revising fluid when it does not help or causes harm. Documentation does not make any fluid harmless, remove monitoring or change the indication from maintenance to resuscitation.",
+  "reviewHref": "#fluid-physiology-assessment"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-061"), {
+  "id": "fluid-electrolyte-061",
+  "question": "Using 2(Na) + glucose/18 + BUN/2.8, what is the estimated serum osmolality for Na 140 mmol/L, glucose 90 mg/dL, and BUN 14 mg/dL?",
+  "choices": [
+    "290 mOsm/kg",
+    "270 mOsm/kg",
+    "325 mOsm/kg",
+    "145 mOsm/kg"
+  ],
+  "answer": 0,
+  "rationale": "2 x 140 + 90/18 + 14/2.8 = 280 + 5 + 5 = 290 mOsm/kg. Sodium is in mmol/L and glucose/BUN in mg/dL. The other choices reflect incorrect substitution or arithmetic. This is an estimate of total osmolality, not a measured result or a direct volume assessment.",
+  "reviewHref": "#fluid-physiology-assessment"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-062"), {
+  "id": "fluid-electrolyte-062",
+  "question": "Using 2(Na) + glucose/18 for effective tonicity, what is the estimate for sodium 132 mmol/L, glucose 540 mg/dL and BUN 28 mg/dL?",
+  "choices": [
+    "294 mOsm/kg",
+    "304 mOsm/kg",
+    "274 mOsm/kg",
+    "264 mOsm/kg"
+  ],
+  "answer": 0,
+  "rationale": "Effective tonicity is 2 x 132 + 540/18 = 264 + 30 = 294 mOsm/kg. Adding BUN/2.8 would give total osmolality 304; urea is omitted from effective tonicity. 274 omits much of the glucose contribution, and 264 omits it entirely.",
+  "reviewHref": "#fluid-physiology-assessment"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-063"), {
+  "id": "fluid-electrolyte-063",
+  "question": "An adult has sodium 128 mmol/L and measured serum osmolality 266 mOsm/kg. What classification follows from the measured osmolality?",
+  "choices": [
+    "Hypotonic hyponatremia; assess symptoms and cause next",
+    "Hypertonic hyponatremia caused by the low sodium itself",
+    "Confirmed SIADH without further assessment",
+    "Proven intravascular depletion from the sodium alone"
+  ],
+  "answer": 0,
+  "rationale": "Measured osmolality below 275 mOsm/kg with hyponatremia establishes hypotonicity. It does not establish SIADH or volume depletion; symptom severity and the broader diagnostic assessment remain necessary.",
+  "reviewHref": "#fluid-physiology-assessment"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-064"), {
+  "id": "fluid-electrolyte-064",
+  "question": "For sodium 150 mmol/L, glucose 126 mg/dL and BUN 35 mg/dL, which pair correctly gives estimated TOTAL osmolality and EFFECTIVE tonicity using this lesson's formulas?",
+  "choices": [
+    "319.5 and 307 mOsm/kg",
+    "307 and 319.5 mOsm/kg",
+    "319.5 and 319.5 mOsm/kg",
+    "300 and 300 mOsm/kg"
+  ],
+  "answer": 0,
+  "rationale": "Total = 300 + 7 + 12.5 = 319.5 mOsm/kg; effective = 300 + 7 = 307. The reversed pair places effective above total; equal 319.5 values incorrectly include urea in tonicity, while 300 values omit glucose and, for total, BUN.",
+  "reviewHref": "#fluid-physiology-assessment"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-065"), {
+  "id": "fluid-electrolyte-065",
+  "question": "A colleague enters a UREA result reported in mg/dL into the BUN/2.8 term. Which response is appropriate?",
+  "choices": [
+    "Verify the analyte and convert units or use the appropriate laboratory formula before calculating",
+    "Accept it because urea mass and BUN mass are interchangeable",
+    "Use the same number but label the result mL/kg",
+    "Double the sodium term again to compensate"
+  ],
+  "answer": 0,
+  "rationale": "BUN reports the nitrogen component of urea, not the full urea mass. The divisor 2.8 applies to BUN in mg/dL. Correct the analyte/unit mismatch before calculation; changing the output label or sodium multiplier cannot fix it.",
+  "reviewHref": "#fluid-physiology-assessment"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-066"), {
+  "id": "fluid-electrolyte-066",
+  "question": "Calculated osmolality is available, but measured osmolality was not obtained. What can be concluded about the osmolal gap?",
+  "choices": [
+    "It cannot be determined without measured osmolality",
+    "It must be zero because the calculation was completed",
+    "It equals the BUN contribution alone",
+    "It proves that no unmeasured effective osmole is present"
+  ],
+  "answer": 0,
+  "rationale": "The gap is measured minus calculated osmolality. A calculation alone cannot provide the missing measured value or exclude an unmeasured osmole. BUN is already represented in the total-osmolality formula.",
+  "reviewHref": "#fluid-physiology-assessment"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-067"), {
+  "id": "fluid-electrolyte-067",
+  "question": "An adult has sodium 125 mmol/L and glucose 900 mg/dL. Using 2(Na) + glucose/18, effective tonicity is 300 mOsm/kg. What interpretation is most defensible?",
+  "choices": [
+    "Low sodium alone does not establish hypotonicity when glucose raises effective tonicity",
+    "The sodium value alone confirms hypotonic SIADH",
+    "Glucose lowers tonicity by drawing water into cells",
+    "The result directly establishes total body sodium depletion"
+  ],
+  "answer": 0,
+  "rationale": "2 x 125 + 900/18 = 250 + 50 = 300 mOsm/kg. Hyperglycemic water movement can lower measured sodium while raising effective tonicity. Neither the sodium nor this estimate alone proves SIADH or total sodium depletion; it also does not establish a complete hyperglycemic-crisis diagnosis.",
+  "reviewHref": "#fluid-physiology-assessment"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-068"), {
+  "id": "fluid-electrolyte-068",
+  "question": "Sodium is 138 mmol/L, glucose is ALREADY reported as 10 mmol/L and BUN is 56 mg/dL. Which substitution correctly estimates total osmolality?",
+  "choices": [
+    "2 x 138 + 10 + 56/2.8 = 306 mOsm/kg",
+    "2 x 138 + 10/18 + 56/2.8 = 296.6 mOsm/kg",
+    "138 + 10 + 56/2.8 = 168 mOsm/kg",
+    "2 x 138 + 10 + 56 = 342 mOsm/kg"
+  ],
+  "answer": 0,
+  "rationale": "Glucose in mmol/L is already in the form needed for the calculation, so do not divide it by 18. BUN remains in mg/dL and contributes 56/2.8 = 20. Total = 276 + 10 + 20 = 306 mOsm/kg. The alternatives repeat a conversion, omit the sodium multiplier or fail to convert BUN.",
+  "reviewHref": "#fluid-physiology-assessment"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-069"), {
+  "id": "fluid-electrolyte-069",
+  "question": "The same sample has measured osmolality 326 mOsm/kg and calculated osmolality 305.9 mOsm/kg. What is the osmolal gap, and what does it establish?",
+  "choices": [
+    "20.1 mOsm/kg; investigate the formula, measurements and unmeasured osmoles",
+    "-20.1 mOsm/kg; subtraction order does not matter",
+    "20.1 mOsm/kg; this identifies methanol as the cause",
+    "631.9 mOsm/kg; adding the two values gives the gap"
+  ],
+  "answer": 0,
+  "rationale": "The gap is measured minus calculated: 326 - 305.9 = 20.1 mOsm/kg. It is a reason to investigate, not a substance-specific diagnosis. Reverse subtraction changes the sign; addition does not calculate a gap. Interpret with the laboratory's validated method and clinical findings.",
+  "reviewHref": "#fluid-physiology-assessment"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find((question) => question.id === "fluid-electrolyte-0610"), {
+  "id": "fluid-electrolyte-0610",
+  "question": "A patient has low sodium and high BUN, with measured total osmolality above 275 mOsm/kg. Which conclusion is safest?",
+  "choices": [
+    "Assess effective tonicity because high urea can raise total osmolality without a sustained transcellular osmotic effect",
+    "The total osmolality guarantees hypertonic plasma regardless of the solutes present",
+    "High BUN proves that sodium was diluted by urea drawing water from cells",
+    "The measured total osmolality alone diagnoses SIADH"
+  ],
+  "answer": 0,
+  "rationale": "Urea raises total measured osmolality but is relatively ineffective at producing sustained water shifts across cell membranes. A total result above 275 does not by itself establish effective tonicity when ineffective osmoles are present. Review glucose and other osmoles; SIADH still requires an appropriate pattern and exclusions.",
+  "reviewHref": "#fluid-physiology-assessment"
+});
+
+// Stable question IDs, answer keys and review anchors retained.
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-011"), {
+  "id": "fluid-electrolyte-011",
+  "question": "Which of the Five Rs describes fluid given to match abnormal gastrointestinal drainage?",
+  "choices": [
+    "Replacement",
+    "Resuscitation",
+    "Routine maintenance",
+    "Redistribution"
+  ],
+  "answer": 0,
+  "rationale": "Replacement matches abnormal ongoing drainage according to measured volume and composition. Resuscitation addresses impaired perfusion, maintenance ordinary daily requirements, and redistribution complex shifts. A patient may need more than one component; replacement does not mean an unassessed fixed-volume order.",
+  "reviewHref": "#iv-fluid-selection"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-012"), {
+  "id": "fluid-electrolyte-012",
+  "question": "Why is dextrose 5 percent in water unsuitable as a primary resuscitation fluid?",
+  "choices": [
+    "After glucose metabolism it behaves mainly as electrolyte-free water",
+    "It remains entirely intravascular",
+    "It contains excessive chloride",
+    "It cannot deliver any water"
+  ],
+  "answer": 0,
+  "rationale": "After glucose metabolism, D5W supplies electrolyte-free water that distributes beyond the vascular space. It does not remain entirely intravascular, has no excessive chloride load and does deliver water; it provides poor durable volume expansion for primary resuscitation. A dextrose-saline combination is a different product.",
+  "reviewHref": "#iv-fluid-selection"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-013"), {
+  "id": "fluid-electrolyte-013",
+  "question": "Under NICE CG174 general adult IV resuscitation guidance, with suspected sepsis handled by its separate guideline, which starting prescription matches recommendation 1.3.1?",
+  "choices": [
+    "A sodium 130 to 154 mmol/L crystalloid, 500 mL over less than 15 minutes, with reassessment",
+    "D5W, 500 mL over less than 15 minutes, as equivalent extracellular volume expansion",
+    "A sodium-containing crystalloid continued at a maintenance rate until perfusion is reassessed the next day",
+    "A 500 mL crystalloid bolus repeated automatically until a fixed total is reached"
+  ],
+  "answer": 0,
+  "rationale": "CG174 retains the sodium range and 500 mL bolus recommendation. D5W is not an equivalent resuscitation fluid, a maintenance rate with delayed reassessment does not address acute perfusion needs, and repeat boluses require benefit/harm assessment. NG253 has a distinct initial 250 mL recommendation for its suspected-sepsis population; do not conflate the two.",
+  "reviewHref": "#iv-fluid-selection"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-014"), {
+  "id": "fluid-electrolyte-014",
+  "question": "What is the main physiologic concern with large volumes of 0.9 percent sodium chloride?",
+  "choices": [
+    "A high chloride load can contribute to hyperchloremic acidosis",
+    "It always causes severe hypernatremia",
+    "It contains no sodium",
+    "It acts as free water"
+  ],
+  "answer": 0,
+  "rationale": "Normal saline has sodium and chloride at 154 mmol/L each. Large volumes can contribute to hyperchloremic metabolic acidosis. This is a risk, not inevitable severe hypernatremia; saline contains sodium and is an extracellular electrolyte solution rather than electrolyte-free water.",
+  "reviewHref": "#iv-fluid-selection"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-015"), {
+  "id": "fluid-electrolyte-015",
+  "question": "Which statement best represents the current balanced crystalloid evidence?",
+  "choices": [
+    "Results differ across populations, so fluid choice remains context dependent",
+    "Balanced fluids improve every outcome in every patient",
+    "Saline is superior in every clinical setting",
+    "Solution composition has no physiologic effect"
+  ],
+  "answer": 0,
+  "rationale": "ESICM conditionally favors balanced crystalloids for general adult critical-care volume expansion, with low certainty of evidence. Outcomes and populations differ, and traumatic brain injury has a separate recommendation. Neither balanced fluids nor saline improve every outcome in every setting; composition affects chloride exposure and acid-base physiology.",
+  "reviewHref": "#iv-fluid-selection"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-017"), {
+  "id": "fluid-electrolyte-017",
+  "question": "Which patient is most likely to need an initial adult maintenance estimate below 25 to 30 mL/kg/day?",
+  "choices": [
+    "An older adult with heart failure and renal impairment",
+    "A healthy adult with high-output diarrhea",
+    "A patient in hemorrhagic shock",
+    "An athlete drinking normally"
+  ],
+  "answer": 0,
+  "rationale": "NICE suggests considering a lower initial maintenance volume, such as 20 to 25 mL/kg/day, for older or frail adults and people with cardiac or renal impairment. High-output diarrhea requires separate loss replacement; hemorrhagic shock is a resuscitation problem. An athlete drinking adequately does not automatically require IV maintenance.",
+  "reviewHref": "#iv-fluid-selection"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-018"), {
+  "id": "fluid-electrolyte-018",
+  "question": "Which statement best explains why hydroxyethyl starch should not be selected for routine resuscitation?",
+  "choices": [
+    "FDA warns of mortality, kidney injury and excess bleeding, and restricts use when adequate alternatives are available",
+    "Its oncotic effect establishes better clinical outcomes than crystalloid in every patient",
+    "Its starch content makes it a complete nutritional replacement for low serum albumin",
+    "A smaller infusion volume eliminates the need to monitor kidney function or bleeding"
+  ],
+  "answer": 0,
+  "rationale": "The FDA safety warning directs that HES should not be used unless adequate alternative treatment is unavailable. Oncotic volume expansion is not proof of superior outcomes. HES is not a nutritional substitute, and a smaller volume does not remove its safety concerns or monitoring needs.",
+  "reviewHref": "#iv-fluid-selection"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-019"), {
+  "id": "fluid-electrolyte-019",
+  "question": "An IV order says 'normal saline at 100 mL/hour' with no other fluid plan. What is the most appropriate next step?",
+  "choices": [
+    "Clarify the indication, total volume/duration, response, monitoring and stopping rule",
+    "Infer from the rate that the prescription is complete resuscitation for any adult",
+    "Add a full maintenance allowance without counting this infusion",
+    "Continue until oral intake resumes without assessing fluid status or losses"
+  ],
+  "answer": 0,
+  "rationale": "A rate alone does not establish the purpose or duration. At 100 mL/hour a 24-hour infusion would provide 2,400 mL, which must be counted in total intake. The rate does not prove a resuscitation indication; adding uncounted maintenance or continuing without reassessment risks an inappropriate prescription.",
+  "reviewHref": "#iv-fluid-selection"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-020"), {
+  "id": "fluid-electrolyte-020",
+  "question": "What is the best endpoint after a resuscitation fluid challenge?",
+  "choices": [
+    "A predefined change in perfusion with assessment for harm",
+    "Completion of the bag regardless of response",
+    "A rise in body weight",
+    "Development of edema"
+  ],
+  "answer": 0,
+  "rationale": "A fluid challenge should assess a predefined perfusion response and potential harm to guide the next decision. Bag completion is not a clinical endpoint; weight gain or edema does not establish useful resuscitation and may accompany fluid accumulation.",
+  "reviewHref": "#iv-fluid-selection"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-081"), {
+  "id": "fluid-electrolyte-081",
+  "question": "A stable 70 kg adult needs routine IV maintenance alone, cannot drink and has no abnormal losses or reason for a lower initial estimate. Under NICE 25 to 30 mL/kg/day, what total daily water range is estimated before counting other intake?",
+  "choices": [
+    "1,750 to 2,100 mL/day",
+    "1,400 to 1,750 mL/day",
+    "2,100 to 2,800 mL/day",
+    "25 to 30 mL/day"
+  ],
+  "answer": 0,
+  "rationale": "70 x 25 = 1,750 and 70 x 30 = 2,100 mL/day. 1,400 to 1,750 uses the lower 20 to 25 range; 2,100 to 2,800 uses 30 to 40. 25 to 30 omits multiplication by weight. This estimates maintenance water, not losses or resuscitation, and other intake still counts.",
+  "reviewHref": "#iv-fluid-selection"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-082"), {
+  "id": "fluid-electrolyte-082",
+  "question": "A nonpregnant adult, not recently pregnant, has high-risk suspected sepsis in hospital. Fluid resuscitation is indicated and no contraindication is identified. Under NICE NG253, which initial action is appropriate?",
+  "choices": [
+    "Give an isotonic balanced crystalloid 250 mL bolus, ideally over 10 to 15 minutes, then reassess",
+    "Give 1,000 mL without reassessment because it is a required minimum total",
+    "Give D5W 250 mL as equivalent extracellular volume support",
+    "Defer the indicated resuscitation until the routine next-day fluid review"
+  ],
+  "answer": 0,
+  "rationale": "NG253 uses an initial 250 mL isotonic electrolyte crystalloid bolus, ideally over 10 to 15 minutes, with reassessment after each bolus. Use saline if a balanced solution is unavailable. Further boluses are conditional on need; 1,000 mL is not a mandatory minimum. D5W is not equivalent, and high-risk indicated resuscitation should not be deferred to next-day review.",
+  "reviewHref": "#iv-fluid-selection"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-084"), {
+  "id": "fluid-electrolyte-084",
+  "question": "A patient with cirrhosis has ascites, edema and suspected reduced effective circulation. What is the best next fluid-planning approach?",
+  "choices": [
+    "Assess complex redistribution and seek expert input using perfusion, congestion, intake and laboratory findings",
+    "Treat edema as proof that effective circulating volume is adequate",
+    "Select albumin solely because serum albumin is low",
+    "Apply an unchanged maintenance volume based only on scale weight"
+  ],
+  "answer": 0,
+  "rationale": "NICE recommends expert input for complex redistribution and significant liver disease. Edema can coexist with reduced effective circulation; assess both. Low albumin alone does not establish an albumin infusion indication, and weight alone does not determine a safe prescription. Selected albumin indications require the full clinical context.",
+  "reviewHref": "#iv-fluid-selection"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-085"), {
+  "id": "fluid-electrolyte-085",
+  "question": "A stable adult has a specified total water target of 1,750 mL/day, receives 800 mL of oral water plus 450 mL of medication fluid, and has no other intake or abnormal losses. What IV WATER allowance remains before a separate electrolyte plan?",
+  "choices": [
+    "500 mL/day",
+    "950 mL/day",
+    "1,750 mL/day",
+    "3,000 mL/day"
+  ],
+  "answer": 0,
+  "rationale": "Other intake totals 800 + 450 = 1,250 mL/day; 1,750 − 1,250 = 500 mL/day. 950 subtracts only oral water, 1,750 ignores both sources and 3,000 adds them to the target. This water accounting does not specify the IV formulation or prove that electrolyte requirements have been met.",
+  "reviewHref": "#iv-fluid-selection"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-086"), {
+  "id": "fluid-electrolyte-086",
+  "question": "An adult critically ill patient with traumatic brain injury needs volume expansion. Which approach best reflects the 2024 ESICM recommendation?",
+  "choices": [
+    "Consider isotonic saline rather than balanced crystalloid or albumin, and follow the neurocritical protocol",
+    "Apply the general balanced-fluid preference without considering brain injury or tonicity",
+    "Select albumin because every colloid provides better clinical outcomes",
+    "Use D5W because its glucose makes it a durable intravascular volume expander"
+  ],
+  "answer": 0,
+  "rationale": "For this population, ESICM conditionally suggests isotonic saline over balanced crystalloids or albumin, with very low certainty of evidence. More hypotonic Ringer's lactate is discouraged in TBI. A general balanced preference does not apply automatically, colloid expansion does not prove superior outcomes, and metabolized D5W acts as free water. This question does not select osmotic therapy for intracranial pressure.",
+  "reviewHref": "#iv-fluid-selection"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-087"), {
+  "id": "fluid-electrolyte-087",
+  "question": "A frail 60 kg older adult with heart failure needs temporary routine maintenance alone. A clinician chooses NICE's lower initial 20 to 25 mL/kg/day estimate. What total water range follows before subtracting other intake?",
+  "choices": [
+    "1,200 to 1,500 mL/day",
+    "1,500 to 1,800 mL/day",
+    "2,100 to 2,400 mL/day",
+    "20 to 25 mL/day"
+  ],
+  "answer": 0,
+  "rationale": "60 x 20 = 1,200 and 60 x 25 = 1,500 mL/day. 1,500 to 1,800 uses 25 to 30; 2,100 to 2,400 does not use the specified range. 20 to 25 omits weight. Tailor the initial estimate after counting intake and reassessing congestion, kidney function and electrolytes; it is not a bolus or a fixed ongoing mandate.",
+  "reviewHref": "#iv-fluid-selection"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-088"), {
+  "id": "fluid-electrolyte-088",
+  "question": "New dyspnea and crackles develop during an IV fluid infusion. What is the best immediate fluid-related response?",
+  "choices": [
+    "Stop the infusion and urgently reassess for possible harm and the ongoing indication",
+    "Complete the prescribed bag before reviewing the new respiratory findings",
+    "Give a further bolus automatically because crackles demonstrate inadequate volume",
+    "Continue at the same rate if the most recent serum sodium was normal"
+  ],
+  "answer": 0,
+  "rationale": "New respiratory findings can indicate fluid-related harm and require stopping and urgent clinical reassessment. They are not proof of one diagnosis or a reason to complete the bag or give more fluid automatically. Normal sodium does not exclude overload or remove the need to assess the patient.",
+  "reviewHref": "#iv-fluid-selection"
+});
+
+// Source-reconciled sodium questions; stable IDs, answer keys and anchors retained.
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-021"), {
+  "id": "fluid-electrolyte-021",
+  "question": "A clinically stable patient has a low measured sodium before an etiology is assigned. What laboratory distinction should guide the next diagnostic steps?",
+  "choices": [
+    "Determine effective tonicity using glucose, serum osmolality and the clinical context",
+    "Assign SIADH solely because the measured sodium is below 135 mmol/L",
+    "Use the urine sodium alone to exclude pseudohyponatremia",
+    "Interpret a high total osmolality as proof that hypotonicity is impossible"
+  ],
+  "answer": 0,
+  "rationale": "Glucose, effective osmoles and measurement artifact can change interpretation of a low sodium. Total osmolality includes ineffective osmoles such as urea, so a higher total result does not alone exclude low effective tonicity. Urine sodium does not identify a serum measurement artifact, and low sodium alone does not establish SIADH. Severe symptoms would require urgent care alongside testing.",
+  "reviewHref": "#sodium-water-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-022"), {
+  "id": "fluid-electrolyte-022",
+  "question": "A patient has effective serum osmolality 260 mOsm/kg, urine osmolality 420 mOsm/kg, urine sodium 55 mmol/L on usual intake and clinical euvolemia. Adrenal, thyroid, pituitary and renal insufficiency and recent diuretic use have been excluded. Which interpretation fits best?",
+  "choices": [
+    "The findings support an SIADH pattern while its cause is investigated",
+    "The concentrated urine proves central diabetes insipidus",
+    "The urine sodium establishes gastrointestinal hypovolemia regardless of examination",
+    "The low sodium is necessarily a lipid-related measurement artifact"
+  ],
+  "answer": 0,
+  "rationale": "The stated hypotonicity, antidiuresis, urine sodium above 30 and exclusions fit the European essential SIAD criteria. They do not identify the underlying cause. Central DI typically produces dilute urine during water loss; a high urine sodium does not prove gastrointestinal volume loss. A measured hypotonic pattern is not explained simply by a lipid artifact.",
+  "reviewHref": "#sodium-water-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-023"), {
+  "id": "fluid-electrolyte-023",
+  "question": "During urgent monitored treatment of severe symptomatic hypotonic hyponatremia, what is the initial sodium objective?",
+  "choices": [
+    "A small controlled rise sufficient to relieve dangerous cerebral edema, followed by reassessment",
+    "Immediate normalization to 135 mmol/L before reassessing symptoms",
+    "The largest possible water diuresis before the next sodium measurement",
+    "Completion of every endocrine test before starting symptom-directed treatment"
+  ],
+  "answer": 0,
+  "rationale": "European guidance aims for an initial rise of about 5 mmol/L; US/Irish experts describe 4 to 6 mmol/L over the early treatment period. Both emphasize a limited symptom-relieving rise rather than immediate normalization. Uncontrolled aquaresis risks overshoot, and severe symptoms should not wait for the full diagnostic workup.",
+  "reviewHref": "#sodium-water-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-024"), {
+  "id": "fluid-electrolyte-024",
+  "question": "Under the cited European general first-day limit, sodium rises from 116 to 121 mmol/L and severe symptoms improve. Which statement correctly accounts for the initial response?",
+  "choices": [
+    "The 5 mmol/L rise is included within the total first-day 10 mmol/L limit; later 24-hour limits are 8 mmol/L",
+    "The first 5 mmol/L is excluded, allowing a total 15 mmol/L rise during the first day",
+    "The first-day limit is a target requiring sodium to reach exactly 126 mmol/L",
+    "The daily limit can be reset each time a saline bolus finishes"
+  ],
+  "answer": 0,
+  "rationale": "The original baseline and elapsed time govern the cumulative change. The initial 5 counts within 10; it does not create an additional allowance. A ceiling is not a mandatory target, and a new bolus does not reset the clock. High-risk patients require a stricter limit, such as the US/Irish maximum of 8 mmol/L in any 24 hours.",
+  "reviewHref": "#sodium-water-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-025"), {
+  "id": "fluid-electrolyte-025",
+  "question": "An adult with chronic sodium 108 mmol/L has malnutrition and alcohol use disorder. Which correction plan best reflects the high-risk US/Irish recommendations discussed by Sterns and colleagues?",
+  "choices": [
+    "Aim for 4 to 6 mmol/L/day and do not exceed 8 mmol/L in any 24 hours",
+    "Use the general European 10 mmol/L first-day ceiling as a required minimum",
+    "Target 12 mmol/L/day because a product label warns about rises above 12",
+    "Remove the daily limit if the neurologic examination is initially normal"
+  ],
+  "answer": 0,
+  "rationale": "Malnutrition and alcohol use disorder increase demyelination risk even with an initially normal examination. The high-risk recommendations use a daily goal of 4 to 6 and a ceiling of 8 in any 24 hours. Neither a general ceiling nor a label warning is a required target or permission for faster correction in this patient.",
+  "reviewHref": "#sodium-water-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-026"), {
+  "id": "fluid-electrolyte-026",
+  "question": "After isotonic saline restores volume in hypovolemic hypotonic hyponatremia, urine output abruptly increases and sodium rises faster than predicted. Which mechanism best explains the change?",
+  "choices": [
+    "The hypovolemic vasopressin stimulus resolves, allowing increased electrolyte-free water excretion",
+    "Saline chemically destroys vasopressin before it reaches the kidney",
+    "Chloride moves entirely into cells and independently raises serum sodium",
+    "The saline becomes an electrolyte-free solution after its sodium is metabolized"
+  ],
+  "answer": 0,
+  "rationale": "Restoring circulation can suppress non-osmotic vasopressin release and produce water diuresis. Saline does not chemically destroy the hormone or become free water by sodium metabolism; its chloride is not entirely intracellular. Monitor sodium and urine output closely because correction can accelerate beyond the calculated saline effect.",
+  "reviewHref": "#sodium-water-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-027"), {
+  "id": "fluid-electrolyte-027",
+  "question": "A specialist selects SAMSCA for a hospitalized adult with persistent clinically significant euvolemic hyponatremia, without an urgent neurologic indication or contraindication. Which initiation safeguard follows its label?",
+  "choices": [
+    "Avoid fluid restriction in the first 24 hours, allow fluid in response to thirst and monitor sodium and volume closely",
+    "Start outside hospital if the first dose is only 15 mg",
+    "Maintain strict fluid restriction during the first day to prevent excessive correction",
+    "Add hypertonic saline automatically whenever tolvaptan is started"
+  ],
+  "answer": 0,
+  "rationale": "SAMSCA initiation and reinitiation require hospital monitoring. Restriction during the first 24 hours can increase rapid-correction risk; the label advises avoiding it and allowing thirst-directed intake. Concomitant hypertonic saline is not recommended. The approved role does not make tolvaptan an emergency treatment for serious neurologic symptoms.",
+  "reviewHref": "#sodium-water-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-028"), {
+  "id": "fluid-electrolyte-028",
+  "question": "An adult has sodium 158 mmol/L, hypotension and poor perfusion after gastrointestinal losses. What is the immediate fluid priority?",
+  "choices": [
+    "Restore circulation with an appropriate isotonic crystalloid, then plan monitored free-water replacement",
+    "Use D5W alone as equivalent durable intravascular resuscitation",
+    "Lower sodium to 140 mmol/L before addressing circulation",
+    "Avoid all sodium-containing fluid because sodium is elevated"
+  ],
+  "answer": 0,
+  "rationale": "Shock or hypotension requires isotonic saline or an appropriate balanced crystalloid to restore circulation despite hypernatremia. D5W is not equivalent durable extracellular volume support. Immediate normalization is not the initial objective. After stabilization, choose a controlled water-replacement plan that includes losses and repeat sodium measurements.",
+  "reviewHref": "#sodium-water-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-029"), {
+  "id": "fluid-electrolyte-029",
+  "question": "An adult with hypernatremia and polyuria has urine osmolality 120 mOsm/kg. Under supervised testing, desmopressin produces a substantial rise in urine osmolality and reduces urine volume. Which mechanism is most supported?",
+  "choices": [
+    "Central vasopressin deficiency causing diabetes insipidus",
+    "Complete renal resistance to vasopressin with no expected desmopressin response",
+    "SIADH causing water retention despite low effective tonicity",
+    "Normal maximal urine concentration in response to hypernatremia"
+  ],
+  "answer": 0,
+  "rationale": "Dilute urine during hypernatremia indicates impaired water conservation. A substantial concentrating response to desmopressin supports central DI; complete nephrogenic resistance would respond poorly. SIADH describes inappropriate antidiuresis during hypotonicity. The initial urine is not maximally concentrated. Partial disorders require fuller specialist interpretation.",
+  "reviewHref": "#sodium-water-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-030"), {
+  "id": "fluid-electrolyte-030",
+  "question": "For a specified water-deficit estimate, a 70 kg adult has sodium 154 mmol/L and the chosen total-body-water fraction is 0.50. Using TBW x (Na/140 − 1), which result and interpretation are correct?",
+  "choices": [
+    "3.5 L estimated deficit; ongoing losses and the monitored correction schedule still require assessment",
+    "7.0 L estimated deficit, using total body weight directly as liters of water",
+    "35 L estimated deficit, equal to the total-body-water estimate itself",
+    "3.5 L that must be infused immediately to normalize sodium"
+  ],
+  "answer": 0,
+  "rationale": "TBW = 70 x 0.50 = 35 L; 154/140 − 1 = 0.10; deficit = 35 x 0.10 = 3.5 L. Using weight directly doubles the result, and 35 L is TBW rather than deficit. The result is a simplifying estimate, not an immediate infusion order; body-water assumptions, losses, intake and serial sodium measurements still matter.",
+  "reviewHref": "#sodium-water-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-089"), {
+  "id": "fluid-electrolyte-089",
+  "question": "An adult with confirmed hypotonic hyponatremia develops a seizure plausibly related to the sodium disorder. Which response best addresses the immediate danger?",
+  "choices": [
+    "Use the local monitored hypertonic-saline emergency protocol while diagnostic assessment proceeds",
+    "Use tolvaptan first because any sodium-raising drug is equivalent in this emergency",
+    "Delay symptom-directed treatment until SIADH is fully confirmed",
+    "Give D5W to raise sodium rapidly without repeated measurements"
+  ],
+  "answer": 0,
+  "rationale": "Severe neurologic symptoms attributable to hypotonic hyponatremia require urgent controlled hypertonic saline and reassessment. SAMSCA is excluded for urgent serious neurologic indications, and a full etiologic diagnosis must not delay emergency care. D5W supplies free water and does not raise sodium as proposed; treatment requires repeated monitoring.",
+  "reviewHref": "#sodium-water-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-0810"), {
+  "id": "fluid-electrolyte-0810",
+  "question": "After isotonic resuscitation restores perfusion in a hypernatremic adult with no current congestion, which next plan best addresses the sodium disorder?",
+  "choices": [
+    "Assess duration and ongoing losses, choose suitable water replacement and adjust it using serial sodium and fluid findings",
+    "Continue isotonic boluses until sodium reaches 140 regardless of perfusion response",
+    "Give the entire calculated water deficit in one hour without considering duration",
+    "Use urine volume alone to set treatment without checking sodium again"
+  ],
+  "answer": 0,
+  "rationale": "After circulation is restored, treatment must address water balance and the correction schedule, including ongoing losses and intake. Continuing unneeded isotonic boluses can add volume and sodium; rapid unmonitored delivery ignores chronicity and risk. Urine output is useful but does not replace sodium and clinical reassessment.",
+  "reviewHref": "#sodium-water-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-097"), {
+  "id": "fluid-electrolyte-097",
+  "question": "A patient with chronic hypotonic hyponatremia, malnutrition and alcohol use disorder rises from sodium 109 to 118 mmol/L in 12 hours during treatment. What is the best next action?",
+  "choices": [
+    "Stop active correction and obtain urgent expert management of overcorrection, with frequent sodium and urine monitoring",
+    "Continue because the high-risk daily ceiling is not exceeded until the rise reaches 12 mmol/L",
+    "Treat 118 as a fresh baseline and allow a further 8 mmol/L rise",
+    "Wait for neurologic deficits before changing the correction plan"
+  ],
+  "answer": 0,
+  "rationale": "118 − 109 = 9 mmol/L in 12 hours, exceeding the high-risk maximum of 8 in any 24 hours. Stop active correction and urgently assess expert-guided relowering or prevention of further rise. Resetting the baseline or using 12 as this patient’s limit is incorrect. Neurologic injury may be delayed; do not wait for deficits to respond to the trajectory.",
+  "reviewHref": "#sodium-water-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-098"), {
+  "id": "fluid-electrolyte-098",
+  "question": "An adult has sodium 151 mmol/L, urine output 5 L/day and urine osmolality 90 mOsm/kg. Which next diagnostic approach is most appropriate?",
+  "choices": [
+    "Evaluate hypotonic water diuresis, including central or nephrogenic DI, with medication, electrolyte and specialist assessment",
+    "Diagnose central DI from the sodium value alone and disregard renal resistance",
+    "Assign SIADH because all polyuria reflects excess vasopressin activity",
+    "Assume fever-related water loss explains the dilute urine without further assessment"
+  ],
+  "answer": 0,
+  "rationale": "Polyuria with inappropriately dilute urine during hypernatremia suggests impaired renal water conservation. DI is a possibility, but distinguishing vasopressin deficiency from resistance needs fuller assessment; medication causes, potassium, calcium and other mechanisms matter. SIADH is inappropriate antidiuresis, and pure extrarenal loss normally stimulates urine concentration.",
+  "reviewHref": "#sodium-water-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-099"), {
+  "id": "fluid-electrolyte-099",
+  "question": "A stable adult develops hypotonic hyponatremia after starting an implicated medicine. Urine is concentrated and examination suggests euvolemia. What is the best next cause-directed approach?",
+  "choices": [
+    "Review and withdraw or replace the implicated medicine when feasible, while checking the full SIADH criteria and exclusions",
+    "Confirm SIADH solely from the new medicine and concentrated urine",
+    "Give isotonic saline automatically because every low sodium reflects depleted circulation",
+    "Start demeclocycline routinely because the book describes an off-label SIADH use"
+  ],
+  "answer": 0,
+  "rationale": "Medication review and cause removal are appropriate, but adrenal, thyroid, pituitary and renal disorders and diuretics must be considered before assigning SIADH. Concentrated urine is not diagnostic by itself; universal saline is inappropriate. Off-label mention does not establish a preferred therapy, and the European guideline recommends against demeclocycline in moderate or profound SIADH.",
+  "reviewHref": "#sodium-water-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-0910"), {
+  "id": "fluid-electrolyte-0910",
+  "question": "SAMSCA is proposed for a volume-depleted patient with hypotonic hyponatremia after gastrointestinal losses. Which assessment is correct?",
+  "choices": [
+    "Hypovolemic hyponatremia is a labeled contraindication; address the volume problem with monitored cause-specific care",
+    "Hospital initiation removes the hypovolemic contraindication",
+    "A 15 mg dose is permitted in any low-sodium state because it is the labeled starting dose",
+    "V2 blockade restores depleted circulating volume and prevents water diuresis"
+  ],
+  "answer": 0,
+  "rationale": "SAMSCA is contraindicated in hypovolemic hyponatremia. Hospital monitoring and a labeled dose do not override that restriction. V2 blockade increases water excretion and can worsen depletion; assess and restore volume as indicated while monitoring for aquaresis and rapid sodium correction.",
+  "reviewHref": "#sodium-water-disorders"
+});
+
+// Source-reconciled potassium questions; stable IDs, answer keys and anchors retained.
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-031"), {
+  "id": "fluid-electrolyte-031",
+  "question": "Which treatment is used for hyperkalemic ECG toxicity without lowering serum potassium?",
+  "choices": [
+    "IV calcium",
+    "IV insulin with glucose",
+    "Nebulized albuterol",
+    "Hemodialysis"
+  ],
+  "answer": 0,
+  "rationale": "Calcium antagonizes cardiac toxicity without shifting or removing potassium. Insulin and albuterol shift it into cells; hemodialysis removes it. Calcium use and reassessment follow the emergency protocol, and clinical outcome evidence remains limited.",
+  "reviewHref": "#potassium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-032"), {
+  "id": "fluid-electrolyte-032",
+  "question": "An adult receives insulin with dextrose for hyperkalemia. Why are subsequent glucose checks still required?",
+  "choices": [
+    "Hypoglycemia can occur despite the administered dextrose, including after the initial response",
+    "The dextrose guarantees protection once the first glucose result is normal",
+    "Only patients with known diabetes can become hypoglycemic",
+    "Potassium normalization proves that glucose has remained safe"
+  ],
+  "answer": 0,
+  "rationale": "Dextrose reduces risk but does not eliminate insulin-related hypoglycemia. Monitoring applies to all treated patients, including those without diabetes. A potassium result does not establish the glucose concentration. The cited UK protocol checks glucose repeatedly through six hours, with further monitoring as indicated.",
+  "reviewHref": "#potassium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-033"), {
+  "id": "fluid-electrolyte-033",
+  "question": "An anuric adult has persistent severe hyperkalemia despite temporary shifting treatment. Which intervention can remove potassium definitively?",
+  "choices": [
+    "Urgently arranged renal replacement therapy, with modality and timing selected by the specialist",
+    "Repeated calcium doses as the sole potassium-lowering treatment",
+    "Insulin alone as proof that total body potassium has fallen",
+    "Furosemide alone with an assumption of urinary removal despite anuria"
+  ],
+  "answer": 0,
+  "rationale": "Renal replacement therapy removes potassium; urgent nephrology or critical-care assessment selects the appropriate method. Calcium does not lower potassium, and insulin only redistributes it. Anuria prevents the assumed urinary removal. Continue indicated emergency medical care while definitive treatment is arranged.",
+  "reviewHref": "#potassium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-034"), {
+  "id": "fluid-electrolyte-034",
+  "question": "How should the U.S. LOKELMA and VELTASSA limitations be interpreted for life-threatening hyperkalemia?",
+  "choices": [
+    "Their labels exclude emergency treatment because onset is delayed; urgent rescue must not be replaced by a binder",
+    "Both labels authorize emergency rescue whenever another drug is also given",
+    "A reported onset within an hour guarantees immediate protection from arrhythmia",
+    "The UK acute pathway automatically changes the U.S. approved labeling"
+  ],
+  "answer": 0,
+  "rationale": "Both U.S. labels say the products should not be used as emergency treatment for life-threatening hyperkalemia. This is broader than a monotherapy-only warning. National guideline recommendations can discuss adjunctive roles but do not rewrite U.S. labeling. Reported potassium changes do not guarantee immediate cardiac protection.",
+  "reviewHref": "#potassium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-035"), {
+  "id": "fluid-electrolyte-035",
+  "question": "Which finding provides a possible acid-base indication to consider bicarbonate as an adjunct during hyperkalemia care?",
+  "choices": [
+    "Clinically important metabolic acidemia, assessed with its cause and sodium/volume burden",
+    "Metabolic alkalosis with no bicarbonate deficit",
+    "A normal acid-base state in every patient with high potassium",
+    "Respiratory alkalosis used as proof of a metabolic bicarbonate deficiency"
+  ],
+  "answer": 0,
+  "rationale": "Bicarbonate may be considered for clinically important metabolic acidemia, but its potassium effect is variable and routine acute use is not recommended by UK guidance. Metabolic or respiratory alkalosis and a normal acid-base state do not establish this indication. It does not replace other required emergency measures.",
+  "reviewHref": "#potassium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-036"), {
+  "id": "fluid-electrolyte-036",
+  "question": "Potassium remains low during replacement in an adult receiving a loop diuretic. Which assessment addresses a frequent reason for failure?",
+  "choices": [
+    "Check magnesium and ongoing renal or gastrointestinal potassium losses",
+    "Assume each replacement dose must have raised potassium by an identical amount",
+    "Treat the low potassium as proof that there can be no renal wasting",
+    "Check sodium alone and stop investigating the replacement response"
+  ],
+  "answer": 0,
+  "rationale": "Magnesium deficiency can aggravate renal potassium wasting, and ongoing losses can offset replacement. Serum response is variable; repeated low results do not exclude renal loss. Sodium alone does not assess magnesium or explain potassium balance. Correct identified deficits and causes with continued monitoring.",
+  "reviewHref": "#potassium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-037"), {
+  "id": "fluid-electrolyte-037",
+  "question": "Which order involving Hospira potassium chloride for injection concentrate, 2 mEq/mL, requires immediate correction?",
+  "choices": [
+    "Direct IV push of the undiluted concentrate",
+    "Dilution and complete mixing into an appropriate infusion solution",
+    "Product-specific renal and cardiac safety assessment before prescribing",
+    "Controlled infusion with appropriate repeat potassium measurements"
+  ],
+  "answer": 0,
+  "rationale": "The vial is a concentrate requiring dilution before infusion. Direct undiluted injection can cause fatal arrhythmia or cardiac arrest; IV push is unsafe. The other actions are necessary safeguards. A separately labeled ready-to-use bag does not authorize direct injection of this vial.",
+  "reviewHref": "#potassium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-038"), {
+  "id": "fluid-electrolyte-038",
+  "question": "A specified ready-to-use bag contains 40 mEq potassium chloride in 100 mL and is proposed at 50 mL/hour. Which review is correct?",
+  "choices": [
+    "It contains 400 mEq/L and delivers 20 mEq/hour; central access, monitoring and justification beyond routine limits require review",
+    "It contains 40 mEq/L and delivers 2 mEq/hour, suitable for routine peripheral use",
+    "It delivers 50 mEq/hour because the pump displays 50 mL/hour",
+    "Correct calculation alone proves that the rate and peripheral route are appropriate"
+  ],
+  "answer": 0,
+  "rationale": "40/0.100 = 400 mEq/L; 40/100 x 50 = 20 mEq/hour. The reviewed ICU Medical label requires central access for 400 mEq/L and continuous monitoring for these concentrated products; 20 exceeds its usual 10 mEq/hour rate. Pump volume is not a potassium dose, and arithmetic does not independently authorize an order.",
+  "reviewHref": "#potassium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-039"), {
+  "id": "fluid-electrolyte-039",
+  "question": "Which combination most directly combines reduced renal potassium elimination with medicines that promote retention?",
+  "choices": [
+    "Kidney impairment with an ACE inhibitor and a potassium-sparing diuretic",
+    "Normal kidney function with diarrhea and a loop diuretic",
+    "Normal kidney function with insulin and nebulized albuterol",
+    "Vomiting with alkalosis and thiazide treatment"
+  ],
+  "answer": 0,
+  "rationale": "Kidney impairment reduces elimination; RAAS inhibition and potassium-sparing diuretics can further promote retention. The other scenarios primarily favor losses or movement into cells rather than this combined retention mechanism. Review supplements, trimethoprim and other contributors as well.",
+  "reviewHref": "#potassium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-040"), {
+  "id": "fluid-electrolyte-040",
+  "question": "After insulin and nebulized albuterol, serum potassium falls. What does this response demonstrate?",
+  "choices": [
+    "Movement into cells can lower the serum concentration without proving removal of total body potassium",
+    "The measured fall proves that insulin has excreted potassium through the kidneys",
+    "Albuterol has necessarily removed potassium through the gastrointestinal tract",
+    "Total stores and serum concentration are interchangeable measurements"
+  ],
+  "answer": 0,
+  "rationale": "Insulin and beta agonists change distribution. They do not prove urinary or gastrointestinal elimination; total stores and the serum concentration are distinct. Arrange removal when indicated and monitor for rebound as the shifting effect wanes.",
+  "reviewHref": "#potassium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-091"), {
+  "id": "fluid-electrolyte-091",
+  "question": "An adult has confirmed potassium 6.9 mmol/L and a new widened QRS. Which response best addresses the immediate problem?",
+  "choices": [
+    "Give protocol-directed IV calcium and promptly initiate shifting, removal assessment and monitoring",
+    "Treat with an oral binder alone and await its effect on the QRS",
+    "Delay rescue until a second sample tomorrow proves the same value",
+    "Give calcium and stop all further care when the first ECG improves"
+  ],
+  "answer": 0,
+  "rationale": "Hyperkalemic ECG toxicity calls for prompt monitored cardiac protection while the potassium is addressed. A binder cannot replace immediate rescue; delaying until tomorrow is inappropriate. Calcium does not lower potassium, so improvement in the tracing does not complete treatment.",
+  "reviewHref": "#potassium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-092"), {
+  "id": "fluid-electrolyte-092",
+  "question": "An adult has persistent potassium 2.7 mmol/L after repeated replacement, without current paralysis or arrhythmia. What should the ongoing treatment review include?",
+  "choices": [
+    "Magnesium, continued losses, medicines, kidney function and repeat potassium-directed adjustment",
+    "Automatic rapid infusion of an undiluted concentrate because prior doses failed",
+    "A potassium binder to improve absorption of the replacement",
+    "A fixed prediction that the next 10 mEq must raise potassium by exactly 0.1 mEq/L"
+  ],
+  "answer": 0,
+  "rationale": "Investigate refractory hypokalemia while adjusting replacement safely. Magnesium deficiency, losses and medicines may explain failure. Undiluted rapid infusion is dangerous; a binder removes potassium and can worsen depletion. The serum response is not an exact fixed conversion.",
+  "reviewHref": "#potassium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-093"), {
+  "id": "fluid-electrolyte-093",
+  "question": "An anuric adult still has potassium 7.1 mmol/L after an initial shifting response. Which next plan is most appropriate?",
+  "choices": [
+    "Obtain urgent nephrology or critical-care assessment for renal replacement therapy while continuing indicated monitored emergency treatment",
+    "Use repeated insulin alone as a durable removal plan",
+    "Use a loop diuretic and assume substantial urinary potassium loss despite anuria",
+    "Wait for an oral binder without urgent specialist assessment"
+  ],
+  "answer": 0,
+  "rationale": "Persistent severe hyperkalemia with anuria requires urgent consideration of definitive extracorporeal removal. Shifts are temporary, urinary removal cannot be assumed without urine, and an oral binder must not delay rescue or specialist escalation. The specialist determines timing and modality.",
+  "reviewHref": "#potassium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-094"), {
+  "id": "fluid-electrolyte-094",
+  "question": "An acutely ill adult has potassium 6.4 mmol/L and significant metabolic acidemia, with no hyperkalemic ECG changes on the initial tracing. Which approach is most appropriate?",
+  "choices": [
+    "Use monitored potassium-lowering care guided by acuity and trajectory; consider bicarbonate for the acidemia without replacing shifting or removal",
+    "Give calcium automatically because every potassium above 6.0 requires it regardless of ECG or setting",
+    "Use bicarbonate alone and assume an immediate, predictable potassium response",
+    "Use an oral binder alone and omit glucose and potassium follow-up"
+  ],
+  "answer": 0,
+  "rationale": "Moderate hyperkalemia requires context-based acute assessment and monitored treatment. UK guidance suggests insulin-glucose in this range and advises against routine bicarbonate for hyperkalemia. Acidemia can provide a separate reason to consider bicarbonate, but it is not sole rescue. The initial normal ECG does not exclude risk or mandate calcium automatically; follow-up remains essential.",
+  "reviewHref": "#potassium-disorders"
+});
+
+// Source-reconciled magnesium questions; stable IDs, keys and anchors retained.
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-041"), {
+  "id": "fluid-electrolyte-041",
+  "question": "Which coexisting electrolyte deficiency can contribute to refractory hypokalemia and torsades risk?",
+  "choices": [
+    "Magnesium",
+    "Phosphate alone",
+    "Chloride alone",
+    "Sodium alone"
+  ],
+  "answer": 0,
+  "rationale": "Magnesium depletion can promote renal potassium loss and ventricular electrical instability. The other deficiencies may need their own assessment, but they do not best explain this combined magnesium-related pattern. Assess the rhythm, magnesium and other electrolytes and correct the relevant causes.",
+  "reviewHref": "#magnesium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-042"), {
+  "id": "fluid-electrolyte-042",
+  "question": "Why does advanced kidney impairment increase magnesium replacement risk?",
+  "choices": [
+    "Reduced renal elimination permits magnesium accumulation",
+    "Renal impairment prevents all intestinal magnesium absorption",
+    "Dilution of an IV dose makes renal elimination irrelevant",
+    "A low potassium value excludes magnesium toxicity"
+  ],
+  "answer": 0,
+  "rationale": "Renal elimination is central to magnesium balance. Intestinal absorption can continue, and dilution changes concentration rather than eliminating the administered dose. Potassium does not establish magnesium safety. Individualize treatment and monitor exposure and clinical signs.",
+  "reviewHref": "#magnesium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-043"), {
+  "id": "fluid-electrolyte-043",
+  "question": "Which presentation most strongly suggests clinically important magnesium excess?",
+  "choices": [
+    "Diminished or absent reflexes with hypotension during magnesium exposure",
+    "Muscle cramps with a confirmed low magnesium result",
+    "An isolated creatinine increase without neuromuscular or cardiovascular depression",
+    "Diarrhea alone after a small oral dose"
+  ],
+  "answer": 0,
+  "rationale": "Magnesium excess can depress reflexes, circulation, breathing and conduction. A low magnesium result with cramps suggests deficiency; creatinine indicates clearance risk but is not itself toxicity, and diarrhea alone may reflect oral intolerance. Interpret the exposure and concentration with the clinical signs.",
+  "reviewHref": "#magnesium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-044"), {
+  "id": "fluid-electrolyte-044",
+  "question": "An oral magnesium regimen causes persistent diarrhea. Which review is most appropriate?",
+  "choices": [
+    "Reassess dose and formulation, continued losses and whether oral treatment remains feasible",
+    "Increase every dose because diarrhea proves adequate absorption",
+    "Continue the same regimen indefinitely without repeat magnesium testing",
+    "Switch automatically to undiluted 50% magnesium by IV injection"
+  ],
+  "answer": 0,
+  "rationale": "Oral magnesium can cause dose-limiting diarrhea and continued gastrointestinal loss. Adjust the regimen, consider an alternative tolerated product, and monitor the response. IV treatment may be needed for intolerance or severity, but the concentrate must be appropriately diluted and supervised.",
+  "reviewHref": "#magnesium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-045"), {
+  "id": "fluid-electrolyte-045",
+  "question": "Which statement correctly describes IV calcium in serious magnesium toxicity?",
+  "choices": [
+    "It temporarily antagonizes toxic effects while exposure is stopped and elimination is addressed",
+    "It removes all excess magnesium by converting it into an inactive blood constituent",
+    "It replaces ventilation even when respiratory depression persists",
+    "It restores renal excretion reliably in an anuric patient"
+  ],
+  "answer": 0,
+  "rationale": "IV calcium provides physiologic antagonism at neuromuscular and cardiovascular sites; it is not magnesium removal. Airway and circulatory support remain necessary, and anuria prevents assumed renal elimination. Arrange definitive clearance when indicated.",
+  "reviewHref": "#magnesium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-046"), {
+  "id": "fluid-electrolyte-046",
+  "question": "Which exposure is a recognized cause of renal magnesium wasting that can persist after therapy?",
+  "choices": [
+    "Cisplatin",
+    "Magnesium hydroxide laxative use with advanced kidney failure",
+    "Magnesium sulfate infusion above the prescribed dose",
+    "Calcium gluconate used for magnesium toxicity"
+  ],
+  "answer": 0,
+  "rationale": "Cisplatin can injure renal tubular magnesium handling, and wasting may persist after therapy ends. Magnesium-containing laxatives or excess infused magnesium increase magnesium exposure, especially with poor clearance. Calcium antagonism does not represent the characteristic persistent wasting mechanism.",
+  "reviewHref": "#magnesium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-047"), {
+  "id": "fluid-electrolyte-047",
+  "question": "A laboratory reports magnesium as 1.0 mmol/L. Which equivalent in mEq/L is correct for this divalent ion?",
+  "choices": [
+    "2.0 mEq/L",
+    "1.0 mEq/L",
+    "0.5 mEq/L",
+    "4.0 mEq/L"
+  ],
+  "answer": 0,
+  "rationale": "Milliequivalents equal millimoles multiplied by ionic charge. Magnesium has a charge of two, so 1.0 mmol/L equals 2.0 mEq/L. This conversion does not make mmol/L or mEq/L numerically interchangeable with mg/dL; check the local reference range before clinical interpretation.",
+  "reviewHref": "#magnesium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-048"), {
+  "id": "fluid-electrolyte-048",
+  "question": "What is an appropriate starting approach for stable mild asymptomatic magnesium deficiency with intact gastrointestinal function?",
+  "choices": [
+    "Consider a tolerated oral regimen, address the cause and arrange repeat testing",
+    "Use the obstetric rapid IV loading regimen for every patient",
+    "Start dialysis solely because magnesium is below the reference range",
+    "Give a five-day course without any assessment of response or ongoing losses"
+  ],
+  "answer": 0,
+  "rationale": "Oral therapy is reasonable in stable mild deficiency when absorption and tolerance permit. Severity, symptoms and kidney function can change the plan. Obstetric loading and dialysis have different indications, and the book\u2019s five-day course does not replace individualized duration or follow-up.",
+  "reviewHref": "#magnesium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-049"), {
+  "id": "fluid-electrolyte-049",
+  "question": "A specified order is 2 g magnesium sulfate from 50% stock, diluted to a final 100 mL and infused over two hours. Which calculation is correct?",
+  "choices": [
+    "Withdraw 4 mL stock; the pump rate is 50 mL/hour and delivery is 1 g/hour",
+    "Withdraw 2 mL stock; the pump rate is 50 mL/hour and delivery is 1 g/hour",
+    "Withdraw 4 mL stock; the pump rate is 100 mL/hour and delivery is 1 g/hour",
+    "Withdraw 4 mL stock and inject it directly because 50% is ready for IV use"
+  ],
+  "answer": 0,
+  "rationale": "50% w/v is 0.5 g/mL, so 2 g requires 4 mL. A final 100 mL over two hours gives 50 mL/hour and 1 g/hour. Two mL contains only 1 g; 100 mL/hour would deliver 2 g/hour. The concentrate requires dilution, and correct arithmetic still requires clinical review of dose, access, rate and renal function.",
+  "reviewHref": "#magnesium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-050"), {
+  "id": "fluid-electrolyte-050",
+  "question": "Severe magnesium toxicity persists in an anuric patient with kidney failure. Which strategy can provide definitive removal?",
+  "choices": [
+    "Urgently assess for dialysis while continuing indicated stabilization and monitoring",
+    "Give calcium alone and assume total body magnesium is now normal",
+    "Use furosemide alone and assume urinary excretion despite anuria",
+    "Wait for oral phosphate to eliminate magnesium without follow-up"
+  ],
+  "answer": 0,
+  "rationale": "Dialysis can remove magnesium when renal clearance is inadequate. Calcium temporarily antagonizes effects rather than removing magnesium, and anuria defeats assumed urinary clearance. Continue appropriate emergency support and monitor magnesium and other electrolytes, including calcium.",
+  "reviewHref": "#magnesium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-095"), {
+  "id": "fluid-electrolyte-095",
+  "question": "An adult has recurrent self-terminating torsades with a prolonged QT and low magnesium and is currently perfusing between episodes. Which approach is appropriate?",
+  "choices": [
+    "Use monitored IV magnesium, correct contributors and prepare immediate shock if polymorphic VT becomes sustained",
+    "Delay intervention until the next day because each episode ended spontaneously",
+    "Treat with oral magnesium alone and omit rhythm monitoring",
+    "Use magnesium instead of defibrillation even if sustained polymorphic VT develops"
+  ],
+  "answer": 0,
+  "rationale": "AHA permits consideration of magnesium for recurrent polymorphic VT with prolonged QT, and confirmed deficiency also needs correction. Recurrence is dangerous despite spontaneous termination. Sustained polymorphic VT requires immediate unsynchronized shock; magnesium must not delay rescue. Assess potassium and provoking medicines as well.",
+  "reviewHref": "#magnesium-disorders"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-096"), {
+  "id": "fluid-electrolyte-096",
+  "question": "A patient with kidney failure receiving magnesium has a level of 10 mEq/L, hypotension, absent reflexes and slowed breathing. Which response best addresses the presentation?",
+  "choices": [
+    "Stop magnesium, support ventilation and circulation, give protocol-directed IV calcium and urgently assess for dialysis",
+    "Continue replacement because 10 mEq/L equals 1.0 mmol/L",
+    "Give calcium alone and stop monitoring once blood pressure improves",
+    "Give a loop diuretic and assume magnesium removal even without urine"
+  ],
+  "answer": 0,
+  "rationale": "This is a clinically toxic presentation with impaired clearance. The reviewed label describes possible absent reflexes and respiratory paralysis near 10 mEq/L; 10 mEq/L equals 5 mmol/L, not 1. Calcium is temporary antagonism, so support and removal assessment remain necessary. Symptoms and units guide urgent care rather than a universal numeric threshold.",
+  "reviewHref": "#magnesium-disorders"
+});
+
+// Source-reconciled fluid calculations and monitoring questions; stable IDs, keys and anchors retained.
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-051"), {
+  "id": "fluid-electrolyte-051",
+  "question": "What makes a fluid calculation clinically defensible?",
+  "choices": [
+    "The method, units, weight assumption, other intake and losses, monitoring and adjustment criteria are explicit",
+    "The total volume is correct even though the patient\u2019s other intake was omitted",
+    "The result has many decimal places, so patient-specific adjustment is unnecessary",
+    "A single equation supplies the same prescription for maintenance, shock and deficit replacement"
+  ],
+  "answer": 0,
+  "rationale": "Correct arithmetic addresses only the stated model. The method and its assumptions must fit the indication, with all relevant intake and losses included and a response plan. Precision cannot correct missing clinical inputs or make different fluid needs interchangeable.",
+  "reviewHref": "#calculations-monitoring"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-052"), {
+  "id": "fluid-electrolyte-052",
+  "question": "Which approach accords with NICE routine-maintenance guidance for an adult with obesity?",
+  "choices": [
+    "Use ideal body weight and lower per-kg volumes with clinical review",
+    "Scale the prescription to actual weight without considering obesity or other intake",
+    "Use the book\u2019s PN total-weight assumption as if it were the same maintenance recommendation",
+    "Restrict every patient with obesity to an identical daily volume regardless of losses"
+  ],
+  "answer": 0,
+  "rationale": "NICE specifies ideal body weight in obesity and lower per-kg volumes, with expert help for marked obesity. This is distinct from the book\u2019s stated PN calculation assumption. The patient still needs an individual assessment; obesity alone does not establish an identical fixed volume for everyone.",
+  "reviewHref": "#calculations-monitoring"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-053"), {
+  "id": "fluid-electrolyte-053",
+  "question": "An otherwise correct routine-maintenance estimate omits substantial ongoing ostomy losses. What needs review?",
+  "choices": [
+    "The loss volume and composition and an appropriate replacement plan beyond maintenance",
+    "Only the number of decimal places in the multiplication",
+    "Only the brand name of the maintenance bag, without reviewing the losses",
+    "Nothing, because maintenance automatically includes every abnormal loss"
+  ],
+  "answer": 0,
+  "rationale": "Maintenance does not automatically replace abnormal losses. Assess the ostomy output and its composition, other intake, existing deficits and the response. Rounding or changing a brand without addressing the missing loss cannot make the fluid budget complete.",
+  "reviewHref": "#calculations-monitoring"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-054"), {
+  "id": "fluid-electrolyte-054",
+  "question": "When should the response to fluid resuscitation be reassessed?",
+  "choices": [
+    "Promptly after the intervention and repeatedly with continuous clinical monitoring during instability",
+    "Only when the next daily chemistry panel is scheduled, despite instability",
+    "Only after the full written daily maintenance volume has been delivered",
+    "By checking the bag is empty without assessing breathing or perfusion"
+  ],
+  "answer": 0,
+  "rationale": "Resuscitation needs rapid clinical feedback and continuous monitoring of respiratory and circulatory status and perfusion. Daily maintenance schedules and delivered volume cannot establish benefit or exclude overload. Reassess before assuming another bolus is appropriate.",
+  "reviewHref": "#calculations-monitoring"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-055"), {
+  "id": "fluid-electrolyte-055",
+  "question": "Which finding most strongly raises concern for possible fluid-overload harm during IV therapy?",
+  "choices": [
+    "New breathlessness with evidence of pulmonary edema",
+    "The prescribed number of bags has been administered",
+    "The solution\u2019s labeled volume matches the order",
+    "A single electrolyte result is within its reference range"
+  ],
+  "answer": 0,
+  "rationale": "Pulmonary edema and new breathlessness warrant prompt clinical reassessment for overload and other causes. Bag counts, matching volumes and one normal electrolyte result do not establish clinical safety or prove that further fluid is needed. This finding signals concern, not proof that IV fluid was the only cause.",
+  "reviewHref": "#calculations-monitoring"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-056"), {
+  "id": "fluid-electrolyte-056",
+  "question": "Which approach best handles uncertainty in a weight-based fluid estimate?",
+  "choices": [
+    "Use a justified starting range, adjust to the patient and reassess the response",
+    "Choose the upper bound for everyone because the calculation is a range",
+    "Report a precise value while omitting the weight assumption and losses",
+    "Keep the starting estimate unchanged even when new intake or edema develops"
+  ],
+  "answer": 0,
+  "rationale": "Weight-based methods estimate need rather than proving it. Choose the method and range appropriate to the indication, include clinical inputs and monitor the response. Automatic upper-bound dosing, concealed assumptions and ignoring new information undermine the prescription.",
+  "reviewHref": "#calculations-monitoring"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-057"), {
+  "id": "fluid-electrolyte-057",
+  "question": "A specified final preparation has 20 mEq potassium in 500 mL over two hours. Which pair correctly states concentration and potassium delivery rate?",
+  "choices": [
+    "40 mEq/L and 10 mEq/hour",
+    "20 mEq/L and 10 mEq/hour",
+    "40 mEq/L and 250 mEq/hour",
+    "10 mEq/L and 40 mEq/hour"
+  ],
+  "answer": 0,
+  "rationale": "500 mL is 0.5 L, so 20 mEq \u00f7 0.5 L = 40 mEq/L. Delivery is 20 mEq \u00f7 2 hours = 10 mEq/hour; the pump volume rate is 250 mL/hour, not 250 mEq/hour. Correct calculations do not independently authorize the product, access, dilution or clinical rate.",
+  "reviewHref": "#calculations-monitoring"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-058"), {
+  "id": "fluid-electrolyte-058",
+  "question": "During treatment of hyponatremia, which observation requires urgent review of the correction plan?",
+  "choices": [
+    "The sodium rise is exceeding the patient\u2019s planned correction limit",
+    "The chart documents kilograms as the weight unit",
+    "The pretreatment sodium value has been recorded",
+    "Urine output is being measured as planned"
+  ],
+  "answer": 0,
+  "rationale": "A rise beyond the patient\u2019s risk-specific correction limit needs prompt expert reassessment because overrapid correction can cause osmotic demyelination. A documented baseline, weight units and urine-output monitoring are safeguards, not reasons by themselves to stop a correctly progressing plan.",
+  "reviewHref": "#calculations-monitoring"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-059"), {
+  "id": "fluid-electrolyte-059",
+  "question": "A specified infusion is 1,000 mL over eight hours. Which volume rate is correct?",
+  "choices": [
+    "125 mL/hour",
+    "8 mL/hour",
+    "80 mL/hour",
+    "1,000 mL/hour"
+  ],
+  "answer": 0,
+  "rationale": "Divide the total volume by the prescribed duration: 1,000 mL \u00f7 8 hours = 125 mL/hour. Eight is the time, 80 is not this quotient, and 1,000 mL/hour would deliver the entire volume in one hour. The arithmetic still needs the clinical prescription and product safeguards.",
+  "reviewHref": "#calculations-monitoring"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-060"), {
+  "id": "fluid-electrolyte-060",
+  "question": "A recovering patient can meet fluid needs through oral or enteral intake. Which IV-fluid review is appropriate?",
+  "choices": [
+    "Reassess the complete intake and loss plan and stop IV therapy when it is no longer needed",
+    "Continue every scheduled IV bag solely because it was ordered earlier",
+    "Give an additional bolus for any abnormal laboratory value without assessment",
+    "Keep IV maintenance unchanged while adding full oral intake without counting it"
+  ],
+  "answer": 0,
+  "rationale": "NICE reserves IV fluids for needs that oral or enteral routes cannot meet and recommends stopping as soon as feasible. Include all intake and losses in the reassessment. An earlier order or an isolated laboratory abnormality does not independently justify continued or additional IV exposure.",
+  "reviewHref": "#calculations-monitoring"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-071"), {
+  "id": "fluid-electrolyte-071",
+  "question": "Using the book\u2019s stated nutrition-fluid formula for weight above 20 kg, what is the estimate at 65 kg?",
+  "choices": [
+    "2,400 mL/day",
+    "1,950 mL/day",
+    "1,300 mL/day",
+    "2,800 mL/day"
+  ],
+  "answer": 0,
+  "rationale": "The book\u2019s method gives 1,500 + 20 \u00d7 (65 \u2212 20) = 2,400 mL/day. 1,950 uses a different 30 mL/kg/day method; 1,300 is 20 \u00d7 65 without the formula\u2019s base; 2,800 omits subtraction of the first 20 kg. This estimate is not an automatically authorized IV prescription.",
+  "reviewHref": "#calculations-monitoring"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-072"), {
+  "id": "fluid-electrolyte-072",
+  "question": "Use 2.2 lb/kg and the book\u2019s nutrition-fluid formula above 20 kg. What is the estimate for a specified 154 lb adult?",
+  "choices": [
+    "2,500 mL/day",
+    "1,750 mL/day",
+    "2,100 mL/day",
+    "4,180 mL/day"
+  ],
+  "answer": 0,
+  "rationale": "154 lb \u00f7 2.2 lb/kg = 70 kg. The book\u2019s method gives 1,500 + 20 \u00d7 (70 \u2212 20) = 2,500 mL/day. 1,750 and 2,100 instead use 25 and 30 mL/kg/day; 4,180 incorrectly enters pounds into the kilogram formula. Clinical adjustment remains necessary.",
+  "reviewHref": "#calculations-monitoring"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-073"), {
+  "id": "fluid-electrolyte-073",
+  "question": "The selected total water target is 1,800 mL/day. Usable oral intake is 600 mL/day and IV medicines supply 400 mL/day. What is the remaining allowance before other adjustments?",
+  "choices": [
+    "800 mL/day",
+    "1,200 mL/day",
+    "1,400 mL/day",
+    "1,800 mL/day"
+  ],
+  "answer": 0,
+  "rationale": "Subtract both counted sources: 1,800 \u2212 600 \u2212 400 = 800 mL/day. The 1,200 and 1,400 results omit one source; 1,800 counts neither. This budget still needs review for deficits, losses, redistribution, composition and the patient\u2019s response.",
+  "reviewHref": "#calculations-monitoring"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-074"), {
+  "id": "fluid-electrolyte-074",
+  "question": "A reviewed plan selects 30 mL/kg/day at 80 kg, counts 1,000 mL/day from other intake and specifies the remaining volume over 14 hours. What volume rate follows?",
+  "choices": [
+    "100 mL/hour",
+    "171.4 mL/hour",
+    "58.3 mL/hour",
+    "2,400 mL/hour"
+  ],
+  "answer": 0,
+  "rationale": "The total target is 80 \u00d7 30 = 2,400 mL/day. Subtracting 1,000 leaves 1,400 mL; 1,400 \u00f7 14 = 100 mL/hour. 171.4 divides the full target without subtracting other intake; 58.3 uses 24 rather than the specified 14 hours; 2,400 is a daily total, not the hourly rate. The selected schedule must also be clinically appropriate.",
+  "reviewHref": "#calculations-monitoring"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-075"), {
+  "id": "fluid-electrolyte-075",
+  "question": "At 90 kg, the book\u2019s nutrition formula gives 2,900 mL/day while a selected 25 mL/kg/day adult maintenance estimate gives 2,250 mL/day. Which interpretation is correct?",
+  "choices": [
+    "The methods and contexts differ; assess the indication and patient rather than treating either result as a universal prescription",
+    "Both methods must give the same result, so one answer can be accepted without checking its assumptions",
+    "The higher answer should always be selected because it prevents all deficits",
+    "The lower answer automatically includes every ongoing abnormal loss"
+  ],
+  "answer": 0,
+  "rationale": "1,500 + 20 \u00d7 (90 \u2212 20) = 2,900, while 90 \u00d7 25 = 2,250. Both arithmetic results follow their stated methods, which have different contexts and assumptions. Neither automatically includes all losses or determines the correct individual prescription.",
+  "reviewHref": "#calculations-monitoring"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-076"), {
+  "id": "fluid-electrolyte-076",
+  "question": "After clinical review, 20 mL/kg/day is selected for a frail 48 kg adult. What is the initial total water estimate?",
+  "choices": [
+    "960 mL/day",
+    "1,200 mL/day",
+    "1,440 mL/day",
+    "480 mL/day"
+  ],
+  "answer": 0,
+  "rationale": "48 \u00d7 20 = 960 mL/day. The 1,200 and 1,440 answers use different 25 and 30 mL/kg/day factors; 480 uses 10. NICE suggests considering lower volumes in relevant risk groups, but frailty does not automatically select one dose or remove the need to count other intake and reassess.",
+  "reviewHref": "#calculations-monitoring"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-077"), {
+  "id": "fluid-electrolyte-077",
+  "question": "A reviewed maintenance calculation selects 22 mL/kg/day at 60 kg and distributes that total evenly over 24 hours. Which pair is correct?",
+  "choices": [
+    "1,320 mL/day and 55 mL/hour",
+    "1,320 mL/day and 22 mL/hour",
+    "1,500 mL/day and 55 mL/hour",
+    "1,320 mL/hour and 55 mL/day"
+  ],
+  "answer": 0,
+  "rationale": "60 \u00d7 22 = 1,320 mL/day; 1,320 \u00f7 24 = 55 mL/hour. The factor 22 is not the pump rate, 1,500 uses a different per-kg factor, and the last option reverses day and hour units. Other intake and clinical adjustments may change the actual IV volume.",
+  "reviewHref": "#calculations-monitoring"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-078"), {
+  "id": "fluid-electrolyte-078",
+  "question": "Over the same interval, the chart records 2,200 mL intake and 1,600 mL output. Which interpretation is correct?",
+  "choices": [
+    "Recorded balance is +600 mL and still needs clinical interpretation",
+    "Recorded balance is \u2212600 mL because intake must be subtracted from output",
+    "Recorded balance is +3,800 mL because intake and output should be added",
+    "The +600 mL result proves exactly 600 mL of intravascular expansion"
+  ],
+  "answer": 0,
+  "rationale": "Recorded intake minus output is 2,200 \u2212 1,600 = +600 mL. Adding the quantities or reversing the subtraction is incorrect. A chart can omit insensible losses and contain measurement error, and fluid distributes between compartments; interpret it with weight, examination and laboratory trends.",
+  "reviewHref": "#calculations-monitoring"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-079"), {
+  "id": "fluid-electrolyte-079",
+  "question": "An adult with obesity weighs 120 kg and has a reviewed ideal body weight of 76 kg. Using the NICE obesity weight approach and a selected 25 mL/kg/day factor, what is the estimate?",
+  "choices": [
+    "1,900 mL/day",
+    "3,000 mL/day",
+    "2,280 mL/day",
+    "760 mL/day"
+  ],
+  "answer": 0,
+  "rationale": "For this NICE maintenance approach use the specified ideal body weight: 76 \u00d7 25 = 1,900 mL/day. 3,000 uses actual weight; 2,280 uses 30 rather than 25 with ideal weight; 760 uses 10. The result remains a starting total water estimate subject to other intake, losses and clinical review.",
+  "reviewHref": "#calculations-monitoring"
+});
+Object.assign(fluidElectrolyteTherapyQuestionBank.find(q => q.id === "fluid-electrolyte-0710"), {
+  "id": "fluid-electrolyte-0710",
+  "question": "A specified solution contains 154 mmol sodium per liter. How much sodium is supplied in 250 mL?",
+  "choices": [
+    "38.5 mmol",
+    "154 mmol",
+    "15.4 mmol",
+    "38,500 mmol"
+  ],
+  "answer": 0,
+  "rationale": "250 mL = 0.25 L, so 154 mmol/L \u00d7 0.25 L = 38.5 mmol. 154 is the amount in one liter; 15.4 uses 0.1 L; 38,500 incorrectly treats milliliters as liters. Count the amount with other electrolyte intake; this calculation does not select an appropriate solution for a patient.",
+  "reviewHref": "#calculations-monitoring"
+});
+
+// Source-reconciled phosphate questions; preserve all existing canonical IDs and items.
+{ const q = {
+  "id": "fluid-electrolyte-phosphate-route",
+  "question": "A stable adult with moderate phosphate deficiency can swallow and absorb medicines and has no severe symptoms. Which route discussion is appropriate?",
+  "choices": [
+    "IV therapy is mandatory for every low phosphate result",
+    "Consider oral replacement with follow-up, checking the product's sodium/potassium load and gastrointestinal tolerance",
+    "No laboratory follow-up is needed after oral treatment",
+    "All oral phosphate products contain identical electrolyte quantities"
+  ],
+  "answer": 1,
+  "rationale": "Oral treatment may suit a stable patient with usable gastrointestinal absorption. Diarrhea can limit tolerance; formulation and accompanying electrolyte loads still matter. IV is not mandatory for every low result, oral treatment still needs follow-up, and oral formulations are not interchangeable.",
+  "reviewHref": "#phosphate-replacement"
+}; const old = fluidElectrolyteTherapyQuestionBank.find(x => x.id === q.id); if (old) Object.assign(old, q); else fluidElectrolyteTherapyQuestionBank.push(q); }
+{ const q = {
+  "id": "fluid-electrolyte-phosphate-cause",
+  "question": "Phosphate repeatedly falls after replacement in a patient taking phosphate-binding medicines and eating very little. What should the review address?",
+  "choices": [
+    "Increase IV doses without reviewing the cause",
+    "Assume serum phosphate proves normal total-body stores",
+    "Stop all nutritional assessment once a phosphate dose is prescribed",
+    "Review reduced intake and binding medicines, plus refeeding risk as nutrition resumes"
+  ],
+  "answer": 3,
+  "rationale": "A replacement dose does not remove continuing causes. Intake, absorption, renal loss and redistribution should be assessed rather than repeatedly treating an isolated value. Increasing doses without a cause review or abandoning the nutrition assessment can leave these drivers untreated; a serum result alone does not prove adequate stores.",
+  "reviewHref": "#phosphate-replacement"
+}; const old = fluidElectrolyteTherapyQuestionBank.find(x => x.id === q.id); if (old) Object.assign(old, q); else fluidElectrolyteTherapyQuestionBank.push(q); }
+{ const q = {
+  "id": "fluid-electrolyte-phosphate-renal",
+  "question": "An adult with phosphorus 0.8 mg/dL has an eGFR of 24 mL/min/1.73 m2. An order specifies the cited potassium-phosphates concentrate. What should the pharmacist do first?",
+  "choices": [
+    "Use half the calculated dose without contacting the prescriber",
+    "Use the full dose because phosphorus is below 1 mg/dL",
+    "Hold this product and obtain an individualized replacement plan because its label contraindicates this degree of renal impairment",
+    "Give the concentrate undiluted to avoid fluid overload"
+  ],
+  "answer": 2,
+  "rationale": "The cited product is contraindicated at eGFR below 30. Choosing the low end of its dose range applies to moderate impairment, not a workaround for this contraindication. Severe hypophosphatemia still needs prompt clinical management with an appropriate alternative plan. An unapproved half dose does not resolve a contraindication, and undiluted administration is unsafe.",
+  "reviewHref": "#phosphate-replacement"
+}; const old = fluidElectrolyteTherapyQuestionBank.find(x => x.id === q.id); if (old) Object.assign(old, q); else fluidElectrolyteTherapyQuestionBank.push(q); }
+{ const q = {
+  "id": "fluid-electrolyte-phosphate-cap",
+  "question": "For a 90-kg adult whose weight is appropriate for the calculation, a verified protocol selects 0.64 mmol phosphorus/kg from the cited potassium-phosphates concentrate. What initial dose ceiling must be applied?",
+  "choices": [
+    "57.6 mmol because weight-based dosing overrides the maximum",
+    "45 mmol phosphorus",
+    "66 mmol phosphorus",
+    "90 mmol phosphorus"
+  ],
+  "answer": 1,
+  "rationale": "90 x 0.64 = 57.6 mmol before the cap. The cited label limits an initial or single dose to 45 mmol phosphorus, which accompanies 66 mEq potassium with this formulation. Eligibility, rate, access and monitoring must still be checked. Neither 66 nor 90 mmol is the phosphorus ceiling; 66 is the accompanying potassium amount in mEq.",
+  "reviewHref": "#phosphate-replacement"
+}; const old = fluidElectrolyteTherapyQuestionBank.find(x => x.id === q.id); if (old) Object.assign(old, q); else fluidElectrolyteTherapyQuestionBank.push(q); }
+{ const q = {
+  "id": "fluid-electrolyte-phosphate-access",
+  "question": "An adult order for review contains 18 mmol phosphorus from the cited potassium-phosphates concentrate in a FINAL volume of 150 mL over 3 hours through a peripheral line. Which concentration-and-rate assessment is correct?",
+  "choices": [
+    "Both concentration and rate fit the cited peripheral limits",
+    "Only the infusion rate exceeds the peripheral limit",
+    "Changing to a 6-hour infusion fixes the concentration problem",
+    "The rate fits, but the concentration exceeds the peripheral limit; revise the preparation or access before administration"
+  ],
+  "answer": 3,
+  "rationale": "18/3 = 6 mmol/hour, below 6.8 mmol/hour. However, 18/150 x 100 = 12 mmol/100 mL, above 6.8 mmol/100 mL. A slower infusion does not dilute the bag. Pharmacy must reconcile concentration, fluid tolerance and access rather than approve from rate alone. Potassium delivery is 8.8 mEq/hour, while its concentration is 17.6 mEq/100 mL, also above the cited peripheral concentration ceiling. This comparison does not establish eligibility, compatibility or stability for the entire preparation and administration interval.",
+  "reviewHref": "#phosphate-replacement"
+}; const old = fluidElectrolyteTherapyQuestionBank.find(x => x.id === q.id); if (old) Object.assign(old, q); else fluidElectrolyteTherapyQuestionBank.push(q); }
+{ const q = {
+  "id": "fluid-electrolyte-phosphate-load",
+  "question": "A reviewed product contains 3 mmol phosphorus/mL and 4.4 mEq potassium/mL. Which quantities accompany a specified 30 mmol phosphorus dose?",
+  "choices": [
+    "10 mL concentrate and 44 mEq potassium",
+    "30 mL concentrate and 44 mEq potassium",
+    "10 mL concentrate and 30 mEq potassium",
+    "10 mL concentrate and 13.2 mEq potassium"
+  ],
+  "answer": 0,
+  "rationale": "30 \u00f7 3 = 10 mL; 10 \u00d7 4.4 = 44 mEq potassium. Thirty mL would contain 90 mmol phosphorus; 30 mEq incorrectly equates phosphorus mmol with potassium mEq; 13.2 multiplies the two concentration numbers without using the required volume. Verify the actual formulation, eligibility, dilution and clinical plan before administration.",
+  "reviewHref": "#phosphate-replacement"
+}; const old = fluidElectrolyteTherapyQuestionBank.find(x => x.id === q.id); if (old) Object.assign(old, q); else fluidElectrolyteTherapyQuestionBank.push(q); }
+{ const q = {
+  "id": "fluid-electrolyte-phosphate-sodium",
+  "question": "The cited sodium-phosphates concentrate provides 3 mmol phosphorus/mL and 4 mEq sodium/mL. What accompanies a specified 30 mmol phosphorus dose?",
+  "choices": [
+    "10 mL and 30 mEq sodium",
+    "30 mL and 120 mEq sodium",
+    "10 mL and 40 mEq sodium",
+    "10 mL and 44 mEq sodium"
+  ],
+  "answer": 2,
+  "rationale": "30 \u00f7 3 = 10 mL and 10 \u00d7 4 = 40 mEq sodium. Thirty mEq confuses the phosphorus dose with sodium; 30 mL would deliver 90 mmol phosphorus; 44 mEq borrows a different potassium-phosphates formulation. Avoiding potassium does not eliminate sodium, renal, calcium or fluid risks.",
+  "reviewHref": "#phosphate-replacement"
+}; const old = fluidElectrolyteTherapyQuestionBank.find(x => x.id === q.id); if (old) Object.assign(old, q); else fluidElectrolyteTherapyQuestionBank.push(q); }
+{ const q = {
+  "id": "fluid-electrolyte-phosphate-dose",
+  "question": "An individualized review has selected 0.32 mmol phosphorus/kg for an eligible adult with a specified appropriate 40 kg dosing weight. What is the calculated phosphorus dose before other administration checks?",
+  "choices": [
+    "128 mmol",
+    "12.8 mmol",
+    "40 mmol",
+    "0.8 mmol"
+  ],
+  "answer": 1,
+  "rationale": "40 kg \u00d7 0.32 mmol/kg = 12.8 mmol phosphorus. The 128 result is a decimal error; 40 uses the weight as the dose; 0.8 does not follow multiplication with the stated units. The question supplies a reviewed factor and weight rather than selecting them automatically from age or one laboratory result. Still check product eligibility, cap, companion electrolyte, preparation, access and monitoring.",
+  "reviewHref": "#phosphate-replacement"
+}; const old = fluidElectrolyteTherapyQuestionBank.find(x => x.id === q.id); if (old) Object.assign(old, q); else fluidElectrolyteTherapyQuestionBank.push(q); }
+{ const q = {
+  "id": "fluid-electrolyte-phosphate-compatibility",
+  "question": "Which statement correctly applies the cited potassium-phosphates concentrate\u2019s calcium precautions?",
+  "choices": [
+    "A clear bag proves calcium compatibility for any shared infusion",
+    "A single pump makes calcium co-infusion compatible",
+    "Because PN can contain both ions, IV replacement may always share calcium-containing fluids",
+    "Do not co-infuse with calcium-containing IV fluids; a compounded PN formula needs a separate pharmacy compatibility and stability review"
+  ],
+  "answer": 3,
+  "rationale": "The replacement label prohibits infusion with calcium-containing IV fluids. PN admixture requires a separate formulation-specific assessment of calcium-phosphate compatibility and stability. Appearance and pump arrangement cannot prove compatibility, and permission to compound an assessed PN formula does not authorize unrestricted co-infusion.",
+  "reviewHref": "#phosphate-replacement"
+}; const old = fluidElectrolyteTherapyQuestionBank.find(x => x.id === q.id); if (old) Object.assign(old, q); else fluidElectrolyteTherapyQuestionBank.push(q); }
+{ const q = {
+  "id": "fluid-electrolyte-phosphate-refeeding",
+  "question": "Phosphate falls as nutrition resumes after prolonged inadequate intake. Which response addresses the broader risk?",
+  "choices": [
+    "Treat the isolated phosphate result and omit the nutrition history",
+    "Stop monitoring potassium and magnesium once phosphate is prescribed",
+    "Coordinate nutrition, thiamine, fluid and electrolyte assessment and monitoring under a refeeding plan",
+    "Assume one IV replacement dose prevents every subsequent electrolyte fall"
+  ],
+  "answer": 2,
+  "rationale": "Refeeding risk requires coordinated nutrition support and assessment of fluid, thiamine and multiple electrolytes. A phosphate dose alone does not remove continuing redistribution or other causes. Omitting the history or other electrolyte monitoring and assuming one dose prevents further falls leaves the broader risk unaddressed.",
+  "reviewHref": "#phosphate-replacement"
+}; const old = fluidElectrolyteTherapyQuestionBank.find(x => x.id === q.id); if (old) Object.assign(old, q); else fluidElectrolyteTherapyQuestionBank.push(q); }
