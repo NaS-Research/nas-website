@@ -4,7 +4,7 @@ export const heartFailurePathophysiologyModule = {
   slug: "heart-failure-pathophysiology", number: "41", title: "Heart Failure Pathophysiology", source: "2022 AHA, ACC, and HFSA heart failure guidance, 2024 ACC hospitalized heart failure trajectory guidance, and 2026 ACC HFpEF consensus",
   description: "Build a mechanistic model of heart failure from pump mechanics and neurohormonal compensation through congestion, cardiorenal dysfunction, phenotype confirmation, etiology, decompensation, and advanced disease.",
   topics: ["Definition and staging", "Pump mechanics", "Neurohormonal compensation", "Congestion and cardiorenal physiology", "Heart failure phenotypes", "Diagnostic trajectory"],
-  outcomes: ["Distinguish heart failure stage from ejection-fraction phenotype and explain why improved ejection fraction is not synonymous with cure.", "Interpret pressure-volume relationships using preload, afterload, contractility, compliance, rhythm, valve function, and ventricular interaction.", "Explain how sympathetic, RAAS, natriuretic, inflammatory, and remodeling pathways shift from compensation to disease amplification.", "Differentiate pulmonary and systemic congestion, low-output physiology, cardiorenal syndrome, and right-ventricular failure.", "Confirm HFrEF, HFmrEF, HFpEF, and HFimpEF using clinical, imaging, biomarker, and hemodynamic evidence.", "Identify etiology, decompensation triggers, mimics, and advanced-disease signals that require specialist escalation."],
+  outcomes: ["Distinguish heart failure stage from ejection-fraction phenotype and explain why improved ejection fraction is not synonymous with cure.", "Interpret pressure-volume relationships using preload, afterload, contractility, compliance, rhythm, valve function, and ventricular interaction.", "Explain how persistent sympathetic, RAAS and vasopressin activation can amplify disease, how natriuretic peptides counteract those effects, and how inflammation and remodeling alter the cardiac substrate.", "Differentiate pulmonary and systemic congestion, low-output physiology, cardiorenal syndrome, and right-ventricular failure.", "Confirm HFrEF, HFmrEF, HFpEF, and HFimpEF using clinical, imaging, biomarker, and hemodynamic evidence.", "Identify etiology, decompensation triggers, mimics, and advanced-disease signals that require specialist escalation."],
   submodules: [
     { slug: "heart-failure-definition-and-staging", title: "Definition, Staging, and Phenotype", summary: "Heart failure is a clinical syndrome with objective cardiac support. Stage describes disease progression, while ejection fraction describes current or historical ventricular behavior.", concepts: ["Clinical syndrome", "Stages A through D", "Ejection-fraction phenotypes", "Limits of ejection fraction"], visual: "hf-definition-stages", application: "For every patient, write one sentence that states objective evidence, stage, current and prior ejection fraction, symptom history, congestion, perfusion, and suspected etiology.", lesson: [
       { heading: "Require clinical and objective evidence", body: "Dyspnea, fatigue, edema, orthopnea, and exercise intolerance are important but nonspecific. Structural or functional cardiac abnormality plus elevated filling pressures, natriuretic peptides, imaging, or objective congestion supports the syndrome. Pulmonary, renal, hepatic, venous, hematologic, and deconditioning mimics remain active alternatives." },
@@ -18,13 +18,60 @@ export const heartFailurePathophysiologyModule = {
       { heading: "Treat afterload as a composite", body: "The ventricle ejects against arterial pressure, resistance, impedance, valve obstruction, and wall stress. Contractility is the intrinsic force-generating state, but observed ejection remains load dependent. A cuff pressure alone cannot describe the total load." },
       { heading: "Connect mechanics to remodeling", body: "Systolic dysfunction often raises end-systolic volume and promotes dilation. Diastolic dysfunction raises pressure through impaired relaxation or stiffness. Chronic wall stress, ischemia, inflammation, neurohormonal signaling, and altered matrix biology reshape the ventricle and create electrical and valve consequences." },
     ], keyPoints: ["Stroke volume depends on interacting forces.", "Pressure is not the same as volume.", "Afterload is more than blood pressure.", "Remodeling changes mechanics and rhythm."], check: { question: "Why can additional fluid worsen a stiff failing ventricle without improving output?", choices: ["Pressure can rise steeply after the Frank-Starling response has flattened", "Preload never affects the heart", "Compliance increases infinitely", "Stroke volume is unrelated to filling"], answer: 0, rationale: "Beyond useful preload recruitment, added volume may produce congestion with little forward-flow gain.", reviewHref: "#pump-mechanics-and-remodeling" } },
-    { slug: "neurohormonal-compensation", title: "Neurohormonal Compensation", summary: "The failing circulation activates systems designed for short-term survival. Persistent activation retains sodium, raises vascular load, increases oxygen demand, promotes arrhythmia and fibrosis, and accelerates remodeling.", concepts: ["Sympathetic activation", "RAAS and vasopressin", "Natriuretic peptides", "Remodeling biology"], visual: "hf-neurohormonal", application: "For every compensatory pathway, name the sensed disturbance, immediate hemodynamic benefit, chronic myocardial or organ cost, measurable clinical signal, and therapeutic consequence.", lesson: [
-      { heading: "Follow the baroreceptor response", body: "Lower effective perfusion increases sympathetic tone. Heart rate, contractility, venous tone, and vascular resistance support pressure initially. Chronic catecholamine exposure increases oxygen demand, ischemia, receptor dysregulation, calcium stress, arrhythmia, and cell injury." },
-      { heading: "Follow the kidney response", body: "Renal perfusion, sodium delivery, and sympathetic signaling activate renin, angiotensin II, and aldosterone. Vasoconstriction and sodium retention support pressure initially, but persistent activation raises afterload, expands congestion, alters potassium balance, and promotes fibrosis." },
-      { heading: "Separate sodium retention from free-water retention", body: "Nonosmotic vasopressin release increases collecting-duct water reabsorption. The resulting free-water retention can produce dilutional hyponatremia, especially in advanced congestion. Interpret sodium with volume status, kidney function, intake, diuretic exposure, and the clinical trajectory rather than as an isolated laboratory value." },
-      { heading: "Interpret the counter-regulatory peptide system", body: "Wall stress stimulates natriuretic peptides that promote natriuresis, vasodilation, and neurohormonal opposition. BNP and NT-proBNP support diagnosis and prognosis, but age, AF, kidney disease, obesity, acute timing, and therapy change their values." },
-      { heading: "See remodeling as biology, not geometry alone", body: "Myocyte hypertrophy and death, altered calcium handling, extracellular-matrix turnover, inflammation, fibrosis, chamber dilation or thickening, and secondary valve regurgitation create a new substrate. Symptoms can improve while the structural process still requires surveillance." },
-    ], keyPoints: ["Compensation has a time-dependent cost.", "RAAS changes volume and structure.", "Vasopressin can retain free water.", "Peptides require context.", "Remodeling is cellular and mechanical."], check: { question: "Why can persistent sympathetic activation worsen heart failure despite supporting blood pressure?", choices: ["It increases oxygen demand, arrhythmia, vasoconstriction, and remodeling", "It eliminates all myocardial stress", "It permanently restores receptor sensitivity", "It prevents sodium retention"], answer: 0, rationale: "A short-term compensatory response becomes a chronic disease amplifier.", reviewHref: "#neurohormonal-compensation" } },
+    {
+      "slug": "neurohormonal-compensation",
+      "title": "Neurohormonal Compensation",
+      "summary": "Reduced effective circulation activates sympathetic, RAAS and vasopressin responses that can become harmful when persistent. Natriuretic peptides oppose those effects but may not restore balance.",
+      "concepts": [
+        "Sympathetic activation",
+        "RAAS and vasopressin",
+        "Natriuretic peptides",
+        "Remodeling biology"
+      ],
+      "visual": "hf-neurohormonal",
+      "application": "For each pathway, identify the sensed disturbance, immediate response and chronic consequences. Distinguish the counter-regulatory natriuretic peptides from sodium-retaining and vasoconstrictor pathways, then interpret measurable signals in the patient's clinical context.",
+      "lesson": [
+        {
+          "heading": "Follow the baroreceptor response",
+          "body": "Lower effective perfusion increases sympathetic tone. Heart rate, contractility, venous tone, and vascular resistance support pressure initially. Chronic catecholamine exposure increases oxygen demand, ischemia, receptor dysregulation, calcium stress, arrhythmia, and cell injury."
+        },
+        {
+          "heading": "Follow the kidney response",
+          "body": "Reduced effective renal perfusion and sympathetic drive stimulate renin release, leading to angiotensin II and aldosterone activation. Angiotensin II causes vasoconstriction; aldosterone promotes sodium retention and potassium excretion. These responses can support circulation initially, but persistent activation raises afterload, expands congestion and promotes fibrosis. Serum potassium still depends on kidney function and treatment."
+        },
+        {
+          "heading": "Separate sodium retention from free-water retention",
+          "body": "Reduced effective circulation can sustain nonosmotic vasopressin release despite edema. Vasopressin increases collecting-duct water reabsorption, so retained water can dilute serum sodium even when total-body sodium is increased. Interpret low sodium with volume status, osmolality and glucose, kidney function, intake, diuretic exposure, neurologic symptoms and the clinical trajectory. Do not assume every low sodium concentration represents sodium depletion."
+        },
+        {
+          "heading": "Interpret the counter-regulatory peptide system",
+          "body": "Wall stress stimulates natriuretic peptides that promote sodium excretion and vasodilation and oppose RAAS and sympathetic activation. This counter-regulation can be insufficient in heart failure; it should not be grouped with pathways that directly drive sodium retention and vasoconstriction. BNP and NT-proBNP support diagnosis and prognosis, but age, atrial fibrillation, kidney disease, obesity, acute timing and therapy affect interpretation. An elevated biomarker is contextual evidence, not a stand-alone diagnosis."
+        },
+        {
+          "heading": "See remodeling as biology, not geometry alone",
+          "body": "Myocyte hypertrophy and death, altered calcium handling, extracellular-matrix turnover, inflammation, fibrosis, chamber dilation or thickening, and secondary valve regurgitation create a changed substrate. Symptom improvement does not prove structural reversal. Reassess structure and function when a significant clinical change or a treatment or device decision warrants it; routine repeat imaging without a clinical indication is not recommended."
+        }
+      ],
+      "keyPoints": [
+        "Persistent sympathetic and RAAS activation can turn compensation into injury.",
+        "Aldosterone promotes sodium retention and potassium excretion; serum potassium needs context.",
+        "Vasopressin can retain water despite edema and dilute serum sodium.",
+        "Natriuretic peptides counteract sodium retention and vasoconstriction.",
+        "Symptoms and biomarker values do not describe the complete myocardial substrate."
+      ],
+      "check": {
+        "question": "Why can persistent sympathetic activation worsen heart failure despite supporting blood pressure?",
+        "choices": [
+          "It increases oxygen demand, arrhythmia, vasoconstriction, and remodeling",
+          "It eliminates all myocardial stress",
+          "It permanently restores receptor sensitivity",
+          "It prevents sodium retention"
+        ],
+        "answer": 0,
+        "rationale": "A short-term compensatory response becomes a chronic disease amplifier.",
+        "reviewHref": "#neurohormonal-compensation"
+      }
+    },
     { slug: "congestion-and-cardiorenal-physiology", title: "Congestion, Perfusion, and Cardiorenal Physiology", summary: "Heart failure harms organs through both inadequate forward flow and excessive backward pressure. Venous congestion is an active mechanism, not merely a visible consequence.", concepts: ["Pulmonary congestion", "Systemic venous pressure", "Cardiorenal syndrome", "Low output and right-heart failure"], visual: "hf-congestion-cardiorenal", application: "Describe the patient on two axes, congestion and perfusion. Then identify left, right, or biventricular pressure, organ consequences, diuretic response, true shock signals, and intrinsic kidney or pulmonary alternatives.", lesson: [
       { heading: "Trace pulmonary fluid movement", body: "Elevated left-sided filling pressure raises pulmonary capillary hydrostatic force. Lymphatic reserve delays overt edema, then interstitial and alveolar fluid impair compliance and gas exchange. Examination can be insensitive, so imaging, ultrasound, oxygenation, biomarkers, and context matter." },
       { heading: "Treat venous pressure as organ load", body: "High right-sided pressure impairs renal filtration gradient, hepatic drainage, gut absorption, lymphatic return, and abdominal organ function. Jugular pressure, edema, ascites, liver tests, right-ventricular imaging, and the clinical trajectory reveal this burden." },
@@ -46,6 +93,13 @@ export const heartFailurePathophysiologyModule = {
     ], keyPoints: ["Trajectory is a clinical variable.", "Recurrent instability signals advanced disease.", "Referral should precede shock.", "Goals belong in physiology-based planning."], check: { question: "Which pattern should prompt advanced-heart-failure referral rather than waiting for overt shock?", choices: ["Recurrent admissions, escalating diuretic needs, and end-organ dysfunction", "One isolated normal blood pressure", "Stable symptoms with improving function", "A single normal potassium value"], answer: 0, rationale: "Progressive instability and organ involvement indicate a narrowing window for advanced options.", reviewHref: "#heart-failure-trajectory" } },
   ],
   references: [
+    {"label": "Ball S. Endotext: Hyponatremia, 2018", "href": "https://www.ncbi.nlm.nih.gov/sites/books/NBK279136/"},
+    {"label": "Hall ME and colleagues. Endotext: Hormones of the Cardiovascular System, 2015", "href": "https://www.ncbi.nlm.nih.gov/sites/books/NBK279096/"},
+    {"label": "van Berlo JH and colleagues. Cardiac Growth and Remodeling, JCI, 2013", "href": "https://www.jci.org/articles/view/62839"},
+    {"label": "NICE NG106: Chronic heart failure, recommendations amended 2025", "href": "https://www.nice.org.uk/guidance/ng106/chapter/Recommendations"},
+    {"label": "Mullens W and colleagues. Venous congestion and worsening renal function in advanced decompensated heart failure, JACC 2009", "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2856960/"},
+    {"label": "AHA/ACC/HFSA Heart Failure Guideline, 2022 official slide set", "href": "https://professional.heart.org/en/science-news/-/media/832EA0F4E73948848612F228F7FA2D35.ashx"},
+
     { label: "American College of Cardiology. 2022 AHA, ACC, and HFSA Heart Failure Guideline", href: "https://www.acc.org/Guidelines/Guidelines/2022/03/30/16/38/2022-Heart-Failure" },
     { label: "American Heart Association. 2022 Heart Failure Guideline", href: "https://professional.heart.org/en/guidelines-statements/2022-ahaacchfsa-guideline-for-the-management-of-heart-failure-a-report-of-thecir0000000000001063" },
     { label: "American College of Cardiology. 2026 HFpEF Expert Consensus", href: "https://www.acc.org/latest-in-cardiology/journal-scans/2026/07/22/17/25/updated-acc-ecdp-addresses-management-of-hfpef" },
