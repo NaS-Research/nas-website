@@ -1,6 +1,6 @@
 {
-  "status": "source_build_and_actual_native_passed_public_pending",
-  "checkedUTC": "2026-10-11T12:15:43.581588+00:00",
+  "status": "verified_scoped_public_release",
+  "checkedUTC": "2026-10-11T12:19:32.331629+00:00",
   "module": "candidemia-invasive-candidiasis",
   "questionIds": [
     "invasive-candidiasis-005",
@@ -36,6 +36,24 @@
   "remainingPrimaryLocatingRowsReleasePending": 37,
   "wholeModuleVerified": false,
   "wholeChapterVerified": false,
-  "productionLiveVerified": false,
-  "wholeGoalComplete": false
+  "productionLiveVerified": true,
+  "wholeGoalComplete": false,
+  "release": {
+    "mainCommit": "a93e02cc86b032e91564be60d46f7b43c69c3e9c",
+    "exactRemoteMainVerified": true,
+    "auditReviewCommit": "2c7b46e97f0652209f032335f53d8be6fe3fd1d8",
+    "liveBrowserPassed": true,
+    "publicCapturesRGBIdenticalToActuallyInspectedMain": 42,
+    "extraPublicDifferences": 0,
+    "newestFirstAndSearchRelevanceVerified": true
+  },
+  "remainingPrimaryLocatingRowsAfterScopedRelease": 29,
+  "limits": "Eight whole questions, two teaching bodies and one reference only. Remaining parent questions, teaching, figures, checks and full-module/chapter coverage remain open. Whole counts68/232 and7/82 unchanged.",
+  "evidenceHashes": {
+    "browser-candida-risk-live-v1.json": "8ab0129328b53f56359d8325824f4c5455d9db40b825ef743f3b50a0a1de7926",
+    "public-pixel-comparison-candida-risk-v1.json": "8889b0f69bdac5f02d5288736060851ee023eb8d830973c2083298263a4d601a",
+    "actual-native-candida-risk-complete-v1.json": "4bb7d2553d6464ea83b6e4aee1731b51f0f7f611c879bdd74b42948340e73ff3",
+    "candida-risk-question-review-v1.json": "f09d0778330a26bee42bf3d005514a4f0b0dd739aaf3b5782e315fec3c731dea",
+    "main-integration-candida-risk-v1.json": "e8472065ba6ffc2a48e75fde68a13a6d1fcdf547ba2b0d58f0e27a26b46c2ed1"
+  }
 }
