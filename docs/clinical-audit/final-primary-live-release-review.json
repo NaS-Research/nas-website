@@ -1,6 +1,6 @@
 {
-  "status": "source_build_and_actual_native_passed_public_pending",
-  "checkedUTC": "2026-10-11T15:03:21.280330+00:00",
+  "status": "verified_scoped_public_release",
+  "checkedUTC": "2026-10-11T15:08:55.541393+00:00",
   "modules": [
     "acute-bacterial-meningitis",
     "cytomegalovirus-pharmacotherapy",
@@ -273,6 +273,24 @@
   ],
   "wholeModuleVerified": false,
   "wholeChapterVerified": false,
-  "productionLiveVerified": false,
-  "wholeGoalComplete": false
+  "productionLiveVerified": true,
+  "wholeGoalComplete": false,
+  "release": {
+    "mainCommit": "266ece8b784eb07862d618ba6c28d91f1cb487cc",
+    "exactRemoteMainVerified": true,
+    "auditReviewCommit": "2837c988ec276a311f4089c58fa40eceb502f53f",
+    "liveBrowserPassed": true,
+    "publicCapturesRGBIdenticalToActuallyInspectedMain": 78,
+    "extraPublicDifferences": 0,
+    "newestFirstAndSearchRelevanceVerified": true
+  },
+  "remainingPrimaryRowsAfterScopedRelease": 0,
+  "limits": "Fifteen whole primary feeding and medication administration questions across eight parent banks only. Full parent modules and chapters remain open. Whole counts68/232 and7/82 unchanged. Prior older Audit public reconciliation and secondary/historical semantic inventories remain pending.",
+  "evidenceHashes": {
+    "browser-final-primary-live-v1.json": "ee4b7e37ceb839f266d25be3c809266546069069395f8d4c13fd05ebf8833cfb",
+    "public-pixel-comparison-final-primary-v1.json": "c86824c346066a5149723c4a5d0d9cc5acbee9135dd5bb0be51622dcfc202561",
+    "owner-native-review-final-primary-v1.json": "595a3652f70641f1b1f08207dabf7cfbec0f97ec9b59bed11e16e2152fbb3380",
+    "final-primary-question-review-qualified-v1.json": "520c5e13135d7b69ba78fb0169f47e88bb90680c0abd720e4820f2d97f54b008",
+    "main-integration-final-primary-v1.json": "1d0ce3e7dbe07362edd2597c877cb77d55e985b5d2e33c1326625313a8d01de0"
+  }
 }
