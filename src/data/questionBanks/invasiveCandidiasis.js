@@ -67,8 +67,124 @@ const reviewLessonByConcept = {
 const dimensions = [["principle", "Which statement is most accurate?", 0], ["action", "Which action best applies the evidence?", 1], ["assessment", "Which plan demonstrates the strongest clinical reasoning?", 1], ["hazard", "Which error creates the greatest avoidable risk?", 2]];
 const generic = ["Use one isolated result without considering source, species, site, host, or prior antifungal exposure.", "Continue the same plan despite persistent fungemia and no source reassessment.", "Assume every Candida species, echinocandin, and body compartment is interchangeable."];
 
-export const invasiveCandidiasisQuestionBank = concepts.flatMap(([slug, principle, action, hazard], conceptIndex) => dimensions.map(([dimension, stem, answerType], dimensionIndex) => {
+const generatedInvasiveCandidiasisQuestionBank = concepts.flatMap(([slug, principle, action, hazard], conceptIndex) => dimensions.map(([dimension, stem, answerType], dimensionIndex) => {
   const correct = [principle, action, hazard][answerType];
   const choices = dimension === "hazard" ? [hazard, principle, action, generic[(conceptIndex + dimensionIndex) % 3]] : [correct, hazard, generic[(conceptIndex + dimensionIndex) % 3], generic[(conceptIndex + dimensionIndex + 1) % 3]];
   return { id: `invasive-candidiasis-${String(conceptIndex * 4 + dimensionIndex + 1).padStart(3, "0")}`, question: `${stem} Focus: ${slug.replaceAll("-", " ")}.`, choices, answer: 0, rationale: `${principle} ${action}`, reviewHref: `#${reviewLessonByConcept[slug]}`, difficulty: dimensionIndex < 2 ? "foundational" : "advanced" };
 }));
+
+const riskDeviceQuestionOverrides = {
+  "invasive-candidiasis-005": {
+    "id": "invasive-candidiasis-005",
+    "question": "An adult ICU patient receives parenteral nutrition through a central venous catheter after abdominal surgery and has recent broad-spectrum antibiotic exposure. How should these exposures affect invasive Candida assessment?",
+    "choices": [
+      "They are recognized risk factors to consider with the clinical presentation.",
+      "They establish candidemia even without compatible clinical or microbiologic findings.",
+      "Parenteral nutrition rules out invasive Candida infection.",
+      "Central venous access makes recent surgery and antibiotic exposure irrelevant."
+    ],
+    "answer": 0,
+    "rationale": "Parenteral nutrition, central venous access, abdominal surgery, and broad-spectrum antibiotics contribute to risk assessment. Risk factors raise suspicion but do not independently establish candidemia.",
+    "reviewHref": "#risk-pathogenesis",
+    "difficulty": "foundational"
+  },
+  "invasive-candidiasis-006": {
+    "id": "invasive-candidiasis-006",
+    "question": "Parenteral nutrition and a central venous catheter are the only information available about a patient. Which next step avoids mistaking risk factors for a diagnosis?",
+    "choices": [
+      "Assess the clinical syndrome and relevant microbiologic evidence before labeling invasive Candida disease.",
+      "Diagnose candidemia solely because parenteral nutrition is prescribed.",
+      "Exclude candidemia solely because the catheter is still needed.",
+      "Ignore parenteral nutrition and catheter exposure in the assessment."
+    ],
+    "answer": 0,
+    "rationale": "Nutrition and device exposures inform risk assessment. Their presence alone cannot establish or exclude invasive infection; assessment must incorporate the clinical situation and microbiologic evidence.",
+    "reviewHref": "#risk-pathogenesis",
+    "difficulty": "foundational"
+  },
+  "invasive-candidiasis-007": {
+    "id": "invasive-candidiasis-007",
+    "question": "A critically ill patient with recent abdominal surgery, parenteral nutrition, and broad-spectrum antibiotic exposure develops unexplained fever. Candida colonization is also detected. Which reasoning best guides assessment for invasive candidiasis?",
+    "choices": [
+      "Integrate the illness, exposures, and microbiologic findings rather than making the decision from colonization alone.",
+      "Use colonization alone to establish bloodstream infection.",
+      "Ignore the clinical illness whenever a colonization result is available.",
+      "Assume a single risk factor reliably determines whether invasive infection is present."
+    ],
+    "answer": 0,
+    "rationale": "IDSA emphasizes clinical assessment of risk factors and microbiologic information in critically ill patients with unexplained fever. Colonization alone is an inadequate basis for an empiric treatment decision.",
+    "reviewHref": "#risk-pathogenesis",
+    "difficulty": "advanced"
+  },
+  "invasive-candidiasis-008": {
+    "id": "invasive-candidiasis-008",
+    "question": "A clinically stable patient has Candida colonization from a nonsterile site without a compatible invasive syndrome. Which decision relies on colonization alone rather than a clinical indication?",
+    "choices": [
+      "Start systemic antifungal treatment solely because colonization was detected.",
+      "Reassess for a compatible invasive syndrome if new symptoms appear.",
+      "Consider specimen source when interpreting the result.",
+      "Review relevant host and device exposures alongside the clinical presentation."
+    ],
+    "answer": 0,
+    "rationale": "Colonization must be interpreted in its clinical and specimen context. A colonization result alone does not provide an adequate basis for systemic antifungal treatment.",
+    "reviewHref": "#risk-pathogenesis",
+    "difficulty": "advanced"
+  },
+  "invasive-candidiasis-105": {
+    "id": "invasive-candidiasis-105",
+    "question": "A central venous catheter is being used for necessary parenteral nutrition. Which general prevention principle should guide ongoing catheter use?",
+    "choices": [
+      "Reassess whether the catheter remains essential and use appropriate insertion and maintenance practices.",
+      "Keep the catheter permanently because it was once needed for nutrition.",
+      "Replace every functioning catheter on a fixed calendar solely to prevent infection.",
+      "Add unnecessary lumens because nutrition is being infused."
+    ],
+    "answer": 0,
+    "rationale": "Catheter prevention includes appropriate care, the minimum essential lumens, and removal when access is no longer essential. Necessary access should be reassessed; routine calendar replacement is not a prevention strategy.",
+    "reviewHref": "#prevention-stewardship",
+    "difficulty": "foundational"
+  },
+  "invasive-candidiasis-106": {
+    "id": "invasive-candidiasis-106",
+    "question": "Parenteral nutrition has stopped, and the central venous catheter is no longer essential for any patient care. Which action follows catheter-prevention guidance?",
+    "choices": [
+      "Arrange prompt removal of the no-longer-essential catheter.",
+      "Keep it indefinitely for possible future nutrition.",
+      "Keep it until a bloodstream infection occurs.",
+      "Replace it with another central catheter despite no access requirement."
+    ],
+    "answer": 0,
+    "rationale": "CDC recommends prompt removal of intravascular catheters that are no longer essential. A prior nutrition indication does not justify continued unnecessary central access.",
+    "reviewHref": "#prevention-stewardship",
+    "difficulty": "foundational"
+  },
+  "invasive-candidiasis-107": {
+    "id": "invasive-candidiasis-107",
+    "question": "A functioning central venous catheter remains essential, and there is no evidence of infection. A fixed weekly replacement is proposed solely to prevent infection. Which plan is appropriate?",
+    "choices": [
+      "Continue indicated catheter care and necessity review without routine calendar replacement.",
+      "Replace every functioning central catheter weekly regardless of indication.",
+      "Use routine guidewire exchanges as the default infection-prevention method.",
+      "Stop all maintenance practices because replacement is unnecessary."
+    ],
+    "answer": 0,
+    "rationale": "CDC advises against routine replacement of central venous catheters solely to prevent infection. Avoiding unnecessary replacement does not remove the need for catheter care and ongoing necessity review.",
+    "reviewHref": "#prevention-stewardship",
+    "difficulty": "advanced"
+  },
+  "invasive-candidiasis-108": {
+    "id": "invasive-candidiasis-108",
+    "question": "Which proposed infection-prevention policy conflicts with general central-catheter replacement guidance?",
+    "choices": [
+      "Use routine guidewire exchanges of non-tunneled central catheters solely to prevent infection.",
+      "Remove a catheter promptly when it is no longer essential.",
+      "Use only the number of catheter lumens essential for care.",
+      "Reassess the ongoing need for central access."
+    ],
+    "answer": 0,
+    "rationale": "CDC advises against routine guidewire exchanges of non-tunneled catheters solely for infection prevention. Necessary-lumen selection and removal of nonessential access address avoidable catheter exposure.",
+    "reviewHref": "#prevention-stewardship",
+    "difficulty": "advanced"
+  }
+};
+export const invasiveCandidiasisQuestionBank = generatedInvasiveCandidiasisQuestionBank.map(q => riskDeviceQuestionOverrides[q.id] ?? q);
