@@ -1,0 +1,308 @@
+{
+  "status": "source_build_actual_native_passed_production_and_archive_pending",
+  "questionCount": 3,
+  "revisedQuestionCount": 2,
+  "retainedQuestionCount": 1,
+  "choiceCount": 12,
+  "reviews": [
+    {
+      "id": "acute-bacterial-meningitis-027",
+      "action": "revised",
+      "sourceSections": [
+        "WHO 2025 A.4; native PDF54-55",
+        "NICE NG240 recommendations1.4.6-1.4.9; official source reviewed",
+        "RxPrep2023 printed369/PDF377"
+      ],
+      "correctIndex": 0,
+      "choiceEvaluations": [
+        {
+          "index": 0,
+          "choice": "Assess focal deficit, pupils, severe consciousness impairment, seizure context, mass lesion history, and other local criteria",
+          "isCorrect": true,
+          "evaluation": "Correct: focal findings, consciousness, seizures and mass-lesion risks guide selective imaging; NICE adds abnormal pupils."
+        },
+        {
+          "index": 1,
+          "choice": "Order cranial imaging for every patient before lumbar puncture even when no risk features are present",
+          "isCorrect": false,
+          "evaluation": "Incorrect: both WHO and NICE advise against routine pre-LP imaging in the absence of risk criteria."
+        },
+        {
+          "index": 2,
+          "choice": "Wait for cranial imaging before taking blood cultures, giving antibiotics, or stabilizing the patient",
+          "isCorrect": false,
+          "evaluation": "Incorrect: NICE directs bloods, antibiotics and stabilization before imaging; WHO says treatment must not be delayed."
+        },
+        {
+          "index": 3,
+          "choice": "Use normal orientation alone to dismiss new focal neurological findings or abnormal pupillary reactions",
+          "isCorrect": false,
+          "evaluation": "Incorrect: preserved orientation does not eliminate independent focal or pupillary risk features."
+        }
+      ],
+      "rationaleReviewed": true
+    },
+    {
+      "id": "acute-bacterial-meningitis-059",
+      "action": "revised",
+      "sourceSections": [
+        "RxPrep2023 printed346-347,369-370/PDF354-355,377-378",
+        "Current ceftriaxone label Contraindications, Calcium interaction, Pediatric use; native7,8,12",
+        "CDC bacterial meningitis age risk section: newborn Group B Streptococcus and E. coli; official text actually reviewed"
+      ],
+      "correctIndex": 0,
+      "choiceEvaluations": [
+        {
+          "index": 0,
+          "choice": "Review gestational and postnatal age, birth history, group B streptococcal and gram-negative risk, bilirubin, calcium infusions, and renal function",
+          "isCorrect": true,
+          "evaluation": "Correct: neonatal age/pathogen assessment plus bilirubin/calcium and organ-function review supports safe selection."
+        },
+        {
+          "index": 1,
+          "choice": "Choose the neonatal regimen from birth weight alone and omit gestational and postnatal age",
+          "isCorrect": false,
+          "evaluation": "Incorrect: neonatal regimen and contraindication assessment is age-specific, not birth-weight-only."
+        },
+        {
+          "index": 2,
+          "choice": "Omit bilirubin and calcium-infusion review whenever the neonate has no fever",
+          "isCorrect": false,
+          "evaluation": "Incorrect: labeled bilirubin/calcium hazards are not conditional on presence of fever."
+        },
+        {
+          "index": 3,
+          "choice": "Assume a different IV line removes the ceftriaxone contraindication in a neonate who requires IV calcium",
+          "isCorrect": false,
+          "evaluation": "Incorrect: the neonatal IV-calcium contraindication applies even when a separate line is proposed."
+        }
+      ],
+      "rationaleReviewed": true
+    },
+    {
+      "id": "acute-bacterial-meningitis-143",
+      "action": "retained_after_whole_object_review",
+      "sourceSections": [
+        "WHO2025 C,C.1,C.2; native82-84"
+      ],
+      "correctIndex": 0,
+      "choiceEvaluations": [
+        {
+          "index": 0,
+          "choice": "Assess hearing, cranial nerves, cognition, behavior, speech, mobility, daily function, family needs, and access",
+          "isCorrect": true,
+          "evaluation": "Correct: neurologic, hearing and neuropsychological domains, functioning, family support and access belong in recovery review."
+        },
+        {
+          "index": 1,
+          "choice": "Limit the review to fever and antibiotic completion because infection clearance proves recovery",
+          "isCorrect": false,
+          "evaluation": "Incorrect: infection clearance does not prove resolution of hearing, neurological or psychosocial sequelae."
+        },
+        {
+          "index": 2,
+          "choice": "Assess only gross motor strength and omit hearing, cognition and communication",
+          "isCorrect": false,
+          "evaluation": "Incorrect: gross strength alone omits hearing, cognition, communication and wider functioning."
+        },
+        {
+          "index": 3,
+          "choice": "Use the absence of a spontaneous complaint as proof that sequelae are absent",
+          "isCorrect": false,
+          "evaluation": "Incorrect: WHO highlights easily missed or subtle sequelae; absence of a spontaneous complaint is insufficient."
+        }
+      ],
+      "rationaleReviewed": true
+    }
+  ],
+  "stableIdsKeysLessonsAnchorsPreserved": true,
+  "allOtherModuleObjectsExact": true,
+  "selected30Exact": true,
+  "entirePoolExact": true,
+  "nativePagesActuallyInspected": 13,
+  "newNumericalRegimenClaims": false,
+  "associatedTeachingReadForContextOnly": true,
+  "wholeModuleVerified": false,
+  "wholeChapterVerified": false,
+  "wholeGoalComplete": false,
+  "remainingGates": [
+    "Main reconciliation and guarded audit/build",
+    "Managed desktop/mobile native review",
+    "Scoped pushes and production verification",
+    "Ledger closure and external archive"
+  ],
+  "questionIds": [
+    "acute-bacterial-meningitis-027",
+    "acute-bacterial-meningitis-059",
+    "acute-bacterial-meningitis-143"
+  ],
+  "sourceFiles": {
+    "src/data/questionBanks/acuteBacterialMeningitis.js": "a614b22c90ebab1073af2aa24cc660e6155b0f35ed9e1f78877dfa074aa20dc0"
+  },
+  "wholeQuestionBindings": [
+    {
+      "id": "acute-bacterial-meningitis-027",
+      "wholeQuestion": {
+        "id": "acute-bacterial-meningitis-027",
+        "lesson": "diagnostic-sequence",
+        "question": "Which assessment is most appropriate for selective neuroimaging?",
+        "choices": [
+          "Assess focal deficit, pupils, severe consciousness impairment, seizure context, mass lesion history, and other local criteria",
+          "Order cranial imaging for every patient before lumbar puncture even when no risk features are present",
+          "Wait for cranial imaging before taking blood cultures, giving antibiotics, or stabilizing the patient",
+          "Use normal orientation alone to dismiss new focal neurological findings or abnormal pupillary reactions"
+        ],
+        "answer": 0,
+        "rationale": "Use clinical risk features to decide whether imaging is needed before lumbar puncture. Routine imaging is not recommended; normal orientation alone does not override focal findings, abnormal pupils, or a suspected mass lesion. When imaging is indicated or lumbar puncture is deferred, obtain blood cultures promptly and start treatment and stabilization without waiting for the scan. Interpret seizure context and other criteria using the applicable age-specific local pathway.",
+        "reviewHref": "#diagnostic-sequence"
+      },
+      "SHA256": "196944bd2efdc93694fa127f32d6604903f8c6a3ec4f6d1063b3f3b84f3a92f0"
+    },
+    {
+      "id": "acute-bacterial-meningitis-059",
+      "wholeQuestion": {
+        "id": "acute-bacterial-meningitis-059",
+        "lesson": "host-pathogens",
+        "question": "Which assessment is most appropriate for neonatal pathway?",
+        "choices": [
+          "Review gestational and postnatal age, birth history, group B streptococcal and gram-negative risk, bilirubin, calcium infusions, and renal function",
+          "Choose the neonatal regimen from birth weight alone and omit gestational and postnatal age",
+          "Omit bilirubin and calcium-infusion review whenever the neonate has no fever",
+          "Assume a different IV line removes the ceftriaxone contraindication in a neonate who requires IV calcium"
+        ],
+        "answer": 0,
+        "rationale": "Use the neonatal pathway to assess age, likely pathogens, organ function and drug-specific hazards. Weight alone does not replace gestational and postnatal age review, and absence of fever does not remove ceftriaxone precautions. Its label contraindicates use in specified premature neonates, hyperbilirubinemic neonates, and neonates who require or are expected to require calcium-containing IV solutions. Using a different line does not remove that neonatal contraindication. The book separates neonatal empiric therapy from older age groups; use the current neonatal protocol for regimen selection.",
+        "reviewHref": "#host-pathogens"
+      },
+      "SHA256": "4cc7671d1df6408ff4458ed94ef7618eda428799bc0f1b68e6dd47637ffb82a4"
+    },
+    {
+      "id": "acute-bacterial-meningitis-143",
+      "wholeQuestion": {
+        "id": "acute-bacterial-meningitis-143",
+        "lesson": "support-complications",
+        "question": "At follow-up after meningitis, which assessment best evaluates functional recovery?",
+        "choices": [
+          "Assess hearing, cranial nerves, cognition, behavior, speech, mobility, daily function, family needs, and access",
+          "Limit the review to fever and antibiotic completion because infection clearance proves recovery",
+          "Assess only gross motor strength and omit hearing, cognition and communication",
+          "Use the absence of a spontaneous complaint as proof that sequelae are absent"
+        ],
+        "answer": 0,
+        "rationale": "WHO highlights hearing, focal neurologic and neuropsychological impairments, subtle after-effects, daily function, and coordinated family support. A review should examine relevant domains and access to ongoing care. Fever resolution, gross motor strength alone, and absence of an unsolicited complaint do not exclude hearing, cognitive, communication or participation difficulties.",
+        "reviewHref": "#support-complications"
+      },
+      "SHA256": "80aaa1738248aa8375a2b24462ad80ff0da334feddef84f8a346bb5f437050f3"
+    }
+  ],
+  "privateSourceCatalog": [
+    {
+      "name": "who-meningitis-2025",
+      "format": "pdf",
+      "localFile": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-meningitis-historical-review-20261011/evidence/private-meningitis-sources-v1/who-meningitis-2025.pdf",
+      "URL": "https://www.who.int/publications/i/item/9789240108042",
+      "SHA256": "3151468d2e1b9729ca19eeeba07d33e72947da549cc267ce71adcc5718d4b781",
+      "preservedSourceArchive": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/archives/fluid-broader-meningitis-support-20261008",
+      "actualRelevantSourceReviewPassed": true
+    },
+    {
+      "name": "ceftriaxone-label",
+      "format": "pdf",
+      "localFile": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-meningitis-historical-review-20261011/evidence/private-meningitis-sources-v1/ceftriaxone-label.pdf",
+      "URL": "https://dailymed.nlm.nih.gov/dailymed/getFile.cfm?setid=85ce4f8b-77e0-48bf-9f57-93f1478befa2&type=pdf",
+      "SHA256": "56a4870d06239b62a18646ace042adda3ff1fc7d64e7eeb73f2b17b4cbf9bb72",
+      "actualRelevantSourceReviewPassed": true
+    },
+    {
+      "name": "book",
+      "SHA256": "5e60f0b3ce20601985515c259c9503bd7ee2681836efecf03906a7da3dddf6ef",
+      "nativeReviewPassed": true,
+      "actualRelevantSourceReviewPassed": true
+    },
+    {
+      "name": "nice-ng240",
+      "format": "pdf",
+      "URL": "https://www.nice.org.uk/guidance/ng240/resources/meningitis-bacterial-and-meningococcal-disease-recognition-diagnosis-and-management-pdf-66143949881029",
+      "localFile": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-meningitis-historical-review-20261011/evidence/private-meningitis-sources-v1/nice-ng240.pdf",
+      "SHA256": "75d80383139e5d0022ab3254d4a7f4c9dfbe2be99ffa68d18ffb713223b22b98",
+      "actualRelevantSourceReviewPassed": true
+    },
+    {
+      "name": "cdc-bacterial-meningitis",
+      "format": "html",
+      "URL": "https://www.cdc.gov/meningitis/about/bacterial-meningitis.html",
+      "localFile": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-meningitis-historical-review-20261011/evidence/private-meningitis-sources-v1/cdc-bacterial-meningitis.html",
+      "SHA256": "d5ea640038917c39e92cf435e752288edb8ef359bb978aaedaa7e394441c835c",
+      "actualRelevantSourceReviewPassed": true
+    }
+  ],
+  "sourceNativeReview": [
+    {
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-meningitis-historical-review-20261011/evidence/private-meningitis-sources-v1/book-native-354.png",
+      "SHA256": "2c51ee3e37bde1a04deed3e3e335f73eaaf6c2a7f46fb713aa645d82536762c4",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-meningitis-historical-review-20261011/evidence/private-meningitis-sources-v1/book-native-355.png",
+      "SHA256": "b56f507b24c2c53392e22ba125eacce4601079d797c532cb60e999ea9c430001",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-meningitis-historical-review-20261011/evidence/private-meningitis-sources-v1/book-native-377.png",
+      "SHA256": "cea99afe53847211e549ccacf4bef1383721f1d3ea4fd159dc8fe801fc0f9a3d",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-meningitis-historical-review-20261011/evidence/private-meningitis-sources-v1/book-native-378.png",
+      "SHA256": "f515326e37d2dbaed0b5fcca0e4bd766837b19ad19f81fe41735e07f9f37a7be",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-meningitis-historical-review-20261011/evidence/private-meningitis-sources-v1/ceftriaxone-native-7.png",
+      "SHA256": "cf7cb459f6bd8d52149220b14cbb83becbbb0a9ab61066e52400b010c685f59d",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-meningitis-historical-review-20261011/evidence/private-meningitis-sources-v1/ceftriaxone-native-8.png",
+      "SHA256": "c0a7118095f2c5d71d017b33ee20e752395550b7f6008f60d9e7f1f4a3273237",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-meningitis-historical-review-20261011/evidence/private-meningitis-sources-v1/ceftriaxone-native-12.png",
+      "SHA256": "a9207be3d05f5be5ed5f7bd7f244ee91ca4ec1dfaf3c9f79a8dd7fa229cd7f51",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-meningitis-historical-review-20261011/evidence/private-meningitis-sources-v1/who-native-54.png",
+      "SHA256": "abf7596cc6998d736aab044300c139c584388bbe1166b67d440fe91aeff5a437",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-meningitis-historical-review-20261011/evidence/private-meningitis-sources-v1/who-native-55.png",
+      "SHA256": "364ad19c499b373a15608fb7f8b4cf3cbda3df27960ed254f32ba315153bdb34",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-meningitis-historical-review-20261011/evidence/private-meningitis-sources-v1/who-native-82.png",
+      "SHA256": "1545a1021f2d50a05b746464820fad160dd4851ba9e90acf471864e5910b228f",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-meningitis-historical-review-20261011/evidence/private-meningitis-sources-v1/who-native-83.png",
+      "SHA256": "a0d846d21b6a2f0ab258b942814e72b386fcbff79f3d860d45fa41bf74b20e6a",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-meningitis-historical-review-20261011/evidence/private-meningitis-sources-v1/who-native-84.png",
+      "SHA256": "cf16c089046631216ff81e5ad18a7d39374a25bf6b08d10ea80cb163c177b462",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-meningitis-historical-review-20261011/evidence/private-meningitis-sources-v1/nice-native-27.png",
+      "SHA256": "4bbe69b96178aa06d1bb318793a8fe4fa0025263da240d0fdaffcc18b7e41d94",
+      "actualNativeReviewPassed": true
+    }
+  ],
+  "nativeCapturesActuallyInspected": 16,
+  "wholeAssociatedLessonsNewlyCertified": false
+}

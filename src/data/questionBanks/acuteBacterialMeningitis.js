@@ -349,7 +349,29 @@ const finalPrimaryQuestionOverrides = {
     "reviewHref": "#dexamethasone"
   }
 };
-export const acuteBacterialMeningitisQuestionBank = beforeFinalPrimaryQuestionBank.map(q => finalPrimaryQuestionOverrides[q.id] ?? q);
+const beforeHistoricalMeningitisQuestionBank = beforeFinalPrimaryQuestionBank.map(q => finalPrimaryQuestionOverrides[q.id] ?? q);
+const historicalMeningitisQuestionOverrides = {
+  "acute-bacterial-meningitis-027": {
+    "choices": [
+      "Assess focal deficit, pupils, severe consciousness impairment, seizure context, mass lesion history, and other local criteria",
+      "Order cranial imaging for every patient before lumbar puncture even when no risk features are present",
+      "Wait for cranial imaging before taking blood cultures, giving antibiotics, or stabilizing the patient",
+      "Use normal orientation alone to dismiss new focal neurological findings or abnormal pupillary reactions"
+    ],
+    "rationale": "Use clinical risk features to decide whether imaging is needed before lumbar puncture. Routine imaging is not recommended; normal orientation alone does not override focal findings, abnormal pupils, or a suspected mass lesion. When imaging is indicated or lumbar puncture is deferred, obtain blood cultures promptly and start treatment and stabilization without waiting for the scan. Interpret seizure context and other criteria using the applicable age-specific local pathway."
+  },
+  "acute-bacterial-meningitis-059": {
+    "choices": [
+      "Review gestational and postnatal age, birth history, group B streptococcal and gram-negative risk, bilirubin, calcium infusions, and renal function",
+      "Choose the neonatal regimen from birth weight alone and omit gestational and postnatal age",
+      "Omit bilirubin and calcium-infusion review whenever the neonate has no fever",
+      "Assume a different IV line removes the ceftriaxone contraindication in a neonate who requires IV calcium"
+    ],
+    "rationale": "Use the neonatal pathway to assess age, likely pathogens, organ function and drug-specific hazards. Weight alone does not replace gestational and postnatal age review, and absence of fever does not remove ceftriaxone precautions. Its label contraindicates use in specified premature neonates, hyperbilirubinemic neonates, and neonates who require or are expected to require calcium-containing IV solutions. Using a different line does not remove that neonatal contraindication. The book separates neonatal empiric therapy from older age groups; use the current neonatal protocol for regimen selection."
+  }
+};
+export const acuteBacterialMeningitisQuestionBank = beforeHistoricalMeningitisQuestionBank.map(q => historicalMeningitisQuestionOverrides[q.id] ? {...q,...historicalMeningitisQuestionOverrides[q.id]} : q);
+
 if (acuteBacterialMeningitisQuestionBank.length < 100) {
   throw new Error(`Acute bacterial meningitis question bank must contain at least 100 questions, found ${acuteBacterialMeningitisQuestionBank.length}.`);
 }
