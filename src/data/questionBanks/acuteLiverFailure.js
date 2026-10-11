@@ -149,4 +149,104 @@ const nutritionCases = [
   }
 ];
 const nutritionById = new Map(nutritionCases.map(q => [q.id, q]));
-export const acuteLiverFailureQuestionBank = generated.map(q => nutritionById.get(q.id) ?? acetylcysteineById.get(q.id) ?? q);
+const medicationReviewOverrides = {
+  "acute-liver-failure-062": {
+    "id": "acute-liver-failure-062",
+    "question": "A patient with acute liver failure develops encephalopathy on the ward. A nonessential sedative is on the medication list. Which medication action is appropriate while urgent escalation is arranged?",
+    "choices": [
+      "Review and avoid nonessential sedation and other avoidable hepatotoxic or nephrotoxic exposure.",
+      "Increase ward sedation to conceal agitation before neurologic reassessment.",
+      "Keep every admission medicine unchanged until all diagnostic results return.",
+      "Assume nonprescription products cannot contribute to liver injury."
+    ],
+    "answer": 0,
+    "rationale": "Ward management should avoid sedation that obscures neurologic deterioration and avoid additional liver or kidney injury. Medication review accompanies urgent assessment and escalation; it must not delay them.",
+    "reviewHref": "#medication-stewardship",
+    "difficulty": "foundational"
+  },
+  "acute-liver-failure-063": {
+    "id": "acute-liver-failure-063",
+    "question": "A patient with acute liver failure has progressed to severe encephalopathy and requires intubation and ventilation. Which statement correctly distinguishes this situation from avoidable ward sedation?",
+    "choices": [
+      "Sedation may be required for intubation and ventilation in critical care despite avoiding unnecessary ward sedatives.",
+      "All sedation is prohibited even when intubation and ventilation are required.",
+      "Ward sedation should replace airway assessment whenever consciousness declines.",
+      "Protein withdrawal eliminates the need for airway management."
+    ],
+    "answer": 0,
+    "rationale": "Avoiding unnecessary ward sedation does not prohibit sedation needed for intubation and ventilation in critical care. The airway and neurologic course require active specialist management.",
+    "reviewHref": "#medication-stewardship",
+    "difficulty": "advanced"
+  },
+  "acute-liver-failure-064": {
+    "id": "acute-liver-failure-064",
+    "question": "Which protein plan in acute liver failure incorrectly extends a narrowly defined hyperacute exception to every patient?",
+    "choices": [
+      "Withhold all protein throughout the illness regardless of nutritional status or arterial ammonia.",
+      "Provide prompt nutritional support for malnutrition while assessing feeding safety.",
+      "Consider only brief protein deferral in severe hyperacute disease with encephalopathy and markedly elevated arterial ammonia, with monitoring and reassessment.",
+      "Monitor arterial ammonia when protein is started after a clinically indicated brief deferral."
+    ],
+    "answer": 0,
+    "rationale": "ESPEN describes a brief protein deferral for a specific severe hyperacute presentation, followed by reassessment and arterial ammonia monitoring when protein is restarted. This does not support prolonged protein withdrawal for every patient with acute liver failure.",
+    "reviewHref": "#medication-stewardship",
+    "difficulty": "advanced"
+  },
+  "acute-liver-failure-105": {
+    "id": "acute-liver-failure-105",
+    "question": "When extracorporeal liver support or renal replacement therapy is used in acute liver failure, which statement about antimicrobials and sedatives is accurate?",
+    "choices": [
+      "The support can affect drug clearance, so the dosing schedule needs review.",
+      "Every antimicrobial and sedative must be increased by the same fixed amount.",
+      "Every antimicrobial and sedative must be reduced by the same fixed amount.",
+      "Extracorporeal support makes drug clearance irrelevant."
+    ],
+    "answer": 0,
+    "rationale": "EASL identifies altered antimicrobial and sedative clearance during extracorporeal support as a dosing consideration. The direction and size of a change cannot be assigned uniformly to every drug.",
+    "reviewHref": "#medication-stewardship",
+    "difficulty": "foundational"
+  },
+  "acute-liver-failure-106": {
+    "id": "acute-liver-failure-106",
+    "question": "Extracorporeal support is started for a patient with acute liver failure receiving an antimicrobial and a sedative. Which medication action best follows the clearance concern?",
+    "choices": [
+      "Review the dosing schedules for the specific drugs and the current support.",
+      "Automatically double both medicines because a circuit is present.",
+      "Automatically halve both medicines without considering which drugs are used.",
+      "Keep both schedules permanently fixed despite changes in support."
+    ],
+    "answer": 0,
+    "rationale": "Possible changes in clearance require review of the actual antimicrobial and sedative schedules in the current support setting. A circuit does not establish a universal increase, decrease, or unchanged dose.",
+    "reviewHref": "#medication-stewardship",
+    "difficulty": "foundational"
+  },
+  "acute-liver-failure-107": {
+    "id": "acute-liver-failure-107",
+    "question": "Consciousness declines in a patient with acute liver failure who is receiving sedation. Which reasoning best supports the neurologic reassessment?",
+    "choices": [
+      "Consider sedative effects and other causes of reduced consciousness alongside hepatic encephalopathy.",
+      "Attribute every change in consciousness to hepatic encephalopathy without reviewing medications.",
+      "Use falling aminotransferases alone to exclude neurologic deterioration.",
+      "Increase sedation before considering alternative causes of reduced consciousness."
+    ],
+    "answer": 0,
+    "rationale": "EASL includes sedatives among alternative causes of decreased consciousness that must be considered in acute liver failure. Medication review supports the assessment and does not replace evaluation of the underlying illness or other causes.",
+    "reviewHref": "#medication-stewardship",
+    "difficulty": "advanced"
+  },
+  "acute-liver-failure-108": {
+    "id": "acute-liver-failure-108",
+    "question": "Which prescribing decision overlooks a recognized clearance concern when extracorporeal liver support or renal replacement therapy changes?",
+    "choices": [
+      "Continue antimicrobial and sedative schedules without reassessing the effect of the changed support.",
+      "Review the antimicrobial schedule in light of the current support.",
+      "Review sedative exposure when interpreting a change in consciousness.",
+      "Reassess whether the specific drugs need a different dosing schedule."
+    ],
+    "answer": 0,
+    "rationale": "Changes in extracorporeal support can affect antimicrobial and sedative clearance. Continuing schedules without review overlooks this concern; individualized review does not mean every drug requires the same adjustment.",
+    "reviewHref": "#medication-stewardship",
+    "difficulty": "advanced"
+  }
+};
+export const acuteLiverFailureQuestionBank = generated.map(q => medicationReviewOverrides[q.id] ?? nutritionById.get(q.id) ?? acetylcysteineById.get(q.id) ?? q);
