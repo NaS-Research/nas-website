@@ -114,7 +114,137 @@ const feedingQuestionRepairs = {
   }
 };
 
-export const fluoroquinolonePharmacologyQuestionBank = [...generated, ...cases].map((question) => {
+const beforeHistoricalAntibioticQuestionBank = [...generated, ...cases].map((question) => {
   const repair = feedingQuestionRepairs[question.id];
   return repair ? { ...question, ...repair } : question;
 });
+
+const historicalAntibioticQuestionOverrides = {
+  "fluoroquinolone-pharmacology-001": {
+    "id": "fluoroquinolone-pharmacology-001",
+    "lesson": "target-structure",
+    "question": "Which statement correctly connects the fluoroquinolone scaffold with its antibacterial target?",
+    "choices": [
+      "The quinolone framework supports inhibition of bacterial DNA gyrase and topoisomerase IV; substitutions help distinguish individual agents.",
+      "The quinolone framework makes these agents inhibitors of bacterial 30S ribosomal protein synthesis.",
+      "A shared quinolone framework establishes identical spectrum, exposure, and safety for every agent.",
+      "The quinolone framework makes these agents inhibitors of bacterial cell-wall synthesis."
+    ],
+    "answer": 0,
+    "rationale": "Fluoroquinolones inhibit bacterial DNA gyrase and topoisomerase IV, enzymes involved in DNA processes. Native ciprofloxacin and delafloxacin structures show the related quinolone framework with different substituents. A shared scaffold and target do not establish clinical interchangeability.",
+    "reviewHref": "#target-structure"
+  },
+  "fluoroquinolone-pharmacology-007": {
+    "id": "fluoroquinolone-pharmacology-007",
+    "lesson": "target-structure",
+    "question": "Which assessment best interprets possible fluoroquinolone target-mediated resistance?",
+    "choices": [
+      "Review the organism, agent-specific susceptibility result, infection site, exposure, and response; interpret target changes when such information is available.",
+      "Assume a susceptible result guarantees cure regardless of absorption or infection site.",
+      "Assume all bacterial DNA gyrase mutations leave fluoroquinolone activity unchanged.",
+      "Infer fluoroquinolone activity solely from susceptibility to a cell-wall inhibitor."
+    ],
+    "answer": 0,
+    "rationale": "Changes in bacterial DNA gyrase or topoisomerase IV can reduce fluoroquinolone activity. Permeability and efflux can also contribute. Susceptibility must be interpreted for the actual organism and agent alongside site, exposure, and clinical response. This assessment does not require routine resistance genotyping.",
+    "reviewHref": "#target-structure"
+  },
+  "fluoroquinolone-pharmacology-023": {
+    "id": "fluoroquinolone-pharmacology-023",
+    "lesson": "agent-spectrum",
+    "question": "A clinician considers moxifloxacin because it generally needs no renal dose adjustment. Which assessment is most appropriate?",
+    "choices": [
+      "Confirm that the agent fits the infection site and susceptibility, then review QT risk, organ function, interacting medicines, and alternatives.",
+      "Select it automatically for urinary infection because no renal adjustment implies adequate active urinary exposure.",
+      "Ignore QT-active medicines because a renal adjustment is generally unnecessary.",
+      "Use the same clinical indications and precautions as every other fluoroquinolone."
+    ],
+    "answer": 0,
+    "rationale": "Moxifloxacin generally requires no renal dose adjustment, but that property does not establish a suitable urinary-infection role. The book specifically distinguishes its inadequate urinary concentration. Its label retains QT precautions, including interacting medicines and patient risk factors. Selection still requires an appropriate site, organism, and benefit-risk assessment.",
+    "reviewHref": "#agent-spectrum"
+  },
+  "fluoroquinolone-pharmacology-025": {
+    "id": "fluoroquinolone-pharmacology-025",
+    "lesson": "agent-spectrum",
+    "question": "Which statement accurately distinguishes delafloxacin's labeled S. aureus indications?",
+    "choices": [
+      "Its adult skin-infection indication includes susceptible MRSA and MSSA; its pneumonia indication lists susceptible MSSA only.",
+      "Its pneumonia indication includes MRSA because its skin-infection indication includes MRSA.",
+      "Its skin-infection indication excludes MRSA and includes only MSSA.",
+      "Its labeled S. aureus indications apply to every infection site without additional evidence."
+    ],
+    "answer": 0,
+    "rationale": "Delafloxacin is labeled for adult acute bacterial skin and skin structure infections caused by designated susceptible organisms, including MRSA and MSSA. For community-acquired bacterial pneumonia, the labeled S. aureus organisms are MSSA isolates only. Do not transfer the MRSA skin-infection indication to pneumonia or infer universal preference from susceptibility.",
+    "reviewHref": "#agent-spectrum"
+  },
+  "fluoroquinolone-pharmacology-091": {
+    "id": "fluoroquinolone-pharmacology-091",
+    "lesson": "metabolic-cardiovascular",
+    "question": "A patient with a known aortic aneurysm is being considered for ciprofloxacin. Which assessment best applies its aortic warning?",
+    "choices": [
+      "Review the infection and active alternatives; in known aneurysm or increased aortic risk, reserve ciprofloxacin for situations without an alternative antibacterial treatment.",
+      "Treat the known aneurysm as irrelevant when the organism is susceptible.",
+      "Assume the aortic warning applies only to intravenous administration.",
+      "Assume the absence of tendon symptoms rules out the separate aortic concern."
+    ],
+    "answer": 0,
+    "rationale": "Ciprofloxacin labeling describes an increased rate of aortic aneurysm and dissection in epidemiologic studies, with the cause of that increased risk not identified. It advises reserving ciprofloxacin in patients with known aneurysm or increased risk when no alternative antibacterial treatment is available. A susceptibility result does not erase this separate patient risk.",
+    "reviewHref": "#metabolic-cardiovascular"
+  },
+  "fluoroquinolone-pharmacology-107": {
+    "id": "fluoroquinolone-pharmacology-107",
+    "lesson": "resistance-stewardship",
+    "question": "Which approach follows ciprofloxacin labeling when considering treatment of acute uncomplicated cystitis?",
+    "choices": [
+      "Confirm the bacterial syndrome, review patient risks and active alternatives, and reserve ciprofloxacin when no alternative treatment option is available.",
+      "Choose ciprofloxacin first for every urinary symptom without confirming the syndrome.",
+      "Ignore its serious adverse-reaction warnings because the infection is uncomplicated.",
+      "Assume the cystitis restriction prohibits every use of ciprofloxacin for every infection."
+    ],
+    "answer": 0,
+    "rationale": "Ciprofloxacin's boxed warning and acute uncomplicated cystitis section reserve its use for patients without alternative treatment options because serious adverse reactions can occur. Confirm the actual syndrome and consider appropriate active alternatives. This indication-specific restriction is not a blanket prohibition of all ciprofloxacin treatment.",
+    "reviewHref": "#resistance-stewardship"
+  },
+  "fluoroquinolone-pharmacology-109": {
+    "id": "fluoroquinolone-pharmacology-109",
+    "lesson": "special-populations",
+    "question": "Which approach is appropriate when considering a fluoroquinolone during pregnancy, lactation, or childhood?",
+    "choices": [
+      "Use the exact product's labeling and disease-specific evidence to compare infection severity, alternatives, and patient-specific risks.",
+      "Apply a blanket rule that every fluoroquinolone is forbidden for every pediatric indication.",
+      "Assume reassuring observational pregnancy data prove that every agent is risk free.",
+      "Assume pregnancy, breastfeeding, and pediatric use share identical instructions across the class."
+    ],
+    "answer": 0,
+    "rationale": "These decisions require the particular medicine and infection. Ciprofloxacin labeling includes selected pediatric indications and specific lactation considerations; it also explains limits of observational pregnancy evidence. Neither a class-wide ban nor a class-wide assurance of safety replaces product-specific benefit-risk reasoning.",
+    "reviewHref": "#special-populations"
+  },
+  "fluoroquinolone-pharmacology-115": {
+    "id": "fluoroquinolone-pharmacology-115",
+    "lesson": "special-populations",
+    "question": "Which assessment best evaluates fluoroquinolone risk in an older adult?",
+    "choices": [
+      "Review corticosteroids and tendon history, kidney function and exposure, diabetes treatment, QT-active medicines, vascular history, cognition, and the infection's alternatives.",
+      "Use age alone to conclude that every fluoroquinolone is absolutely contraindicated.",
+      "Ignore current kidney function because an older adult's usual outpatient dose must remain appropriate.",
+      "Ignore interacting medicines once a susceptibility result is available."
+    ],
+    "answer": 0,
+    "rationale": "Older adults can have several overlapping risks. Ciprofloxacin labeling discusses tendon risk with corticosteroids, renal function, QT susceptibility, glucose disturbances, and aortic concerns. The actual patient, product, exposure, interacting medicines, and available treatment alternatives determine the assessment; age alone is insufficient.",
+    "reviewHref": "#special-populations"
+  },
+  "fluoroquinolone-pharmacology-131": {
+    "id": "fluoroquinolone-pharmacology-131",
+    "lesson": "clinical-integration",
+    "question": "When useful culture results and the clinical response are available, which review best supports a definitive fluoroquinolone plan?",
+    "choices": [
+      "Reassess the organism and susceptibility, infection site, response, source control, exposure, adverse effects, alternatives, and whether ongoing treatment is still indicated.",
+      "Continue the original empiric choice indefinitely because it was reasonable before cultures returned.",
+      "Treat a culture result as proof that absorption, site exposure, and source control no longer matter.",
+      "Extend an inactive regimen rather than reconsider the agent or diagnosis."
+    ],
+    "answer": 0,
+    "rationale": "An initial empiric plan requires reassessment as diagnostic and susceptibility information becomes available. Review clinical response, delivery, safety, source control, and the continuing indication. Use the evidence to decide whether to narrow, change, stop, or continue therapy rather than automatically extending the original choice.",
+    "reviewHref": "#clinical-integration"
+  }
+};
+export const fluoroquinolonePharmacologyQuestionBank = beforeHistoricalAntibioticQuestionBank.map(q => historicalAntibioticQuestionOverrides[q.id] ?? q);

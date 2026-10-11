@@ -1,0 +1,1453 @@
+{
+  "status": "fifteen_question_candidate_structural_pass_build_native_public_pending",
+  "questionIds": [
+    "fluoroquinolone-pharmacology-001",
+    "fluoroquinolone-pharmacology-007",
+    "fluoroquinolone-pharmacology-023",
+    "fluoroquinolone-pharmacology-025",
+    "fluoroquinolone-pharmacology-091",
+    "fluoroquinolone-pharmacology-107",
+    "fluoroquinolone-pharmacology-109",
+    "fluoroquinolone-pharmacology-115",
+    "fluoroquinolone-pharmacology-131",
+    "tetracycline-pharmacology-011",
+    "tetracycline-pharmacology-017",
+    "tetracycline-pharmacology-035",
+    "tetracycline-pharmacology-041",
+    "tetracycline-pharmacology-115",
+    "tetracycline-pharmacology-121"
+  ],
+  "wholeQuestionsReviewed": 15,
+  "choicesReviewed": 60,
+  "wholeQuestionBindings": [
+    {
+      "id": "fluoroquinolone-pharmacology-001",
+      "wholeQuestion": {
+        "id": "fluoroquinolone-pharmacology-001",
+        "lesson": "target-structure",
+        "question": "Which statement correctly connects the fluoroquinolone scaffold with its antibacterial target?",
+        "choices": [
+          "The quinolone framework supports inhibition of bacterial DNA gyrase and topoisomerase IV; substitutions help distinguish individual agents.",
+          "The quinolone framework makes these agents inhibitors of bacterial 30S ribosomal protein synthesis.",
+          "A shared quinolone framework establishes identical spectrum, exposure, and safety for every agent.",
+          "The quinolone framework makes these agents inhibitors of bacterial cell-wall synthesis."
+        ],
+        "answer": 0,
+        "rationale": "Fluoroquinolones inhibit bacterial DNA gyrase and topoisomerase IV, enzymes involved in DNA processes. Native ciprofloxacin and delafloxacin structures show the related quinolone framework with different substituents. A shared scaffold and target do not establish clinical interchangeability.",
+        "reviewHref": "#target-structure"
+      },
+      "wholeObjectSHA256": "d3c31413a5866de697283cacbb5c287f2b8cebba142ebc998cb5b43a419bafb3",
+      "semanticSHA256": "d3c31413a5866de697283cacbb5c287f2b8cebba142ebc998cb5b43a419bafb3",
+      "sourcePages": [
+        "book PDF350,360",
+        "cipro-label PDF35,41",
+        "baxdela-label PDF17,21"
+      ],
+      "choiceReview": [
+        {
+          "index": 0,
+          "text": "The quinolone framework supports inhibition of bacterial DNA gyrase and topoisomerase IV; substitutions help distinguish individual agents.",
+          "isKeyed": true,
+          "assessment": "Correct: structures and labeled targets support the connection without an unsupported atomic binding claim.",
+          "sourcePages": [
+            "book PDF350,360",
+            "cipro-label PDF35,41",
+            "baxdela-label PDF17,21"
+          ]
+        },
+        {
+          "index": 1,
+          "text": "The quinolone framework makes these agents inhibitors of bacterial 30S ribosomal protein synthesis.",
+          "isKeyed": false,
+          "assessment": "Incorrect: 30S protein synthesis is the tetracycline target, not this class target.",
+          "sourcePages": [
+            "book PDF350,360",
+            "cipro-label PDF35,41",
+            "baxdela-label PDF17,21"
+          ]
+        },
+        {
+          "index": 2,
+          "text": "A shared quinolone framework establishes identical spectrum, exposure, and safety for every agent.",
+          "isKeyed": false,
+          "assessment": "Incorrect: the book and individual labels distinguish clinical behavior despite shared targets.",
+          "sourcePages": [
+            "book PDF350,360",
+            "cipro-label PDF35,41",
+            "baxdela-label PDF17,21"
+          ]
+        },
+        {
+          "index": 3,
+          "text": "The quinolone framework makes these agents inhibitors of bacterial cell-wall synthesis.",
+          "isKeyed": false,
+          "assessment": "Incorrect: the class targets DNA enzymes, not the cell-wall pathway.",
+          "sourcePages": [
+            "book PDF350,360",
+            "cipro-label PDF35,41",
+            "baxdela-label PDF17,21"
+          ]
+        }
+      ],
+      "stableIdOrderKeyAndReviewHrefPreserved": true
+    },
+    {
+      "id": "fluoroquinolone-pharmacology-007",
+      "wholeQuestion": {
+        "id": "fluoroquinolone-pharmacology-007",
+        "lesson": "target-structure",
+        "question": "Which assessment best interprets possible fluoroquinolone target-mediated resistance?",
+        "choices": [
+          "Review the organism, agent-specific susceptibility result, infection site, exposure, and response; interpret target changes when such information is available.",
+          "Assume a susceptible result guarantees cure regardless of absorption or infection site.",
+          "Assume all bacterial DNA gyrase mutations leave fluoroquinolone activity unchanged.",
+          "Infer fluoroquinolone activity solely from susceptibility to a cell-wall inhibitor."
+        ],
+        "answer": 0,
+        "rationale": "Changes in bacterial DNA gyrase or topoisomerase IV can reduce fluoroquinolone activity. Permeability and efflux can also contribute. Susceptibility must be interpreted for the actual organism and agent alongside site, exposure, and clinical response. This assessment does not require routine resistance genotyping.",
+        "reviewHref": "#target-structure"
+      },
+      "wholeObjectSHA256": "d87070878e4089387ec88f34ae7a1f3336afc30dbce653c9cc07096238e935d2",
+      "semanticSHA256": "d87070878e4089387ec88f34ae7a1f3336afc30dbce653c9cc07096238e935d2",
+      "sourcePages": [
+        "book PDF345,350,360",
+        "cipro-label PDF41",
+        "moxifloxacin-label PDF33"
+      ],
+      "choiceReview": [
+        {
+          "index": 0,
+          "text": "Review the organism, agent-specific susceptibility result, infection site, exposure, and response; interpret target changes when such information is available.",
+          "isKeyed": true,
+          "assessment": "Correct: combines available agent/organism evidence with site, exposure and response; no routine genetic test ordered.",
+          "sourcePages": [
+            "book PDF345,350,360",
+            "cipro-label PDF41",
+            "moxifloxacin-label PDF33"
+          ]
+        },
+        {
+          "index": 1,
+          "text": "Assume a susceptible result guarantees cure regardless of absorption or infection site.",
+          "isKeyed": false,
+          "assessment": "Incorrect: susceptibility does not repair inadequate site exposure or delivery.",
+          "sourcePages": [
+            "book PDF345,350,360",
+            "cipro-label PDF41",
+            "moxifloxacin-label PDF33"
+          ]
+        },
+        {
+          "index": 2,
+          "text": "Assume all bacterial DNA gyrase mutations leave fluoroquinolone activity unchanged.",
+          "isKeyed": false,
+          "assessment": "Incorrect: labeled resistance mechanisms include target mutations.",
+          "sourcePages": [
+            "book PDF345,350,360",
+            "cipro-label PDF41",
+            "moxifloxacin-label PDF33"
+          ]
+        },
+        {
+          "index": 3,
+          "text": "Infer fluoroquinolone activity solely from susceptibility to a cell-wall inhibitor.",
+          "isKeyed": false,
+          "assessment": "Incorrect: different antibiotic targets do not establish equivalent susceptibility.",
+          "sourcePages": [
+            "book PDF345,350,360",
+            "cipro-label PDF41",
+            "moxifloxacin-label PDF33"
+          ]
+        }
+      ],
+      "stableIdOrderKeyAndReviewHrefPreserved": true
+    },
+    {
+      "id": "fluoroquinolone-pharmacology-023",
+      "wholeQuestion": {
+        "id": "fluoroquinolone-pharmacology-023",
+        "lesson": "agent-spectrum",
+        "question": "A clinician considers moxifloxacin because it generally needs no renal dose adjustment. Which assessment is most appropriate?",
+        "choices": [
+          "Confirm that the agent fits the infection site and susceptibility, then review QT risk, organ function, interacting medicines, and alternatives.",
+          "Select it automatically for urinary infection because no renal adjustment implies adequate active urinary exposure.",
+          "Ignore QT-active medicines because a renal adjustment is generally unnecessary.",
+          "Use the same clinical indications and precautions as every other fluoroquinolone."
+        ],
+        "answer": 0,
+        "rationale": "Moxifloxacin generally requires no renal dose adjustment, but that property does not establish a suitable urinary-infection role. The book specifically distinguishes its inadequate urinary concentration. Its label retains QT precautions, including interacting medicines and patient risk factors. Selection still requires an appropriate site, organism, and benefit-risk assessment.",
+        "reviewHref": "#agent-spectrum"
+      },
+      "wholeObjectSHA256": "5fc60bce9d5b5c06030465f5cab4d1c6e0dd6b3731ff0f2dc94a3e1bfb23983b",
+      "semanticSHA256": "5fc60bce9d5b5c06030465f5cab4d1c6e0dd6b3731ff0f2dc94a3e1bfb23983b",
+      "sourcePages": [
+        "book PDF360,373",
+        "moxifloxacin-label PDF5,10,24"
+      ],
+      "choiceReview": [
+        {
+          "index": 0,
+          "text": "Confirm that the agent fits the infection site and susceptibility, then review QT risk, organ function, interacting medicines, and alternatives.",
+          "isKeyed": true,
+          "assessment": "Correct: renal convenience is only one selection factor.",
+          "sourcePages": [
+            "book PDF360,373",
+            "moxifloxacin-label PDF5,10,24"
+          ]
+        },
+        {
+          "index": 1,
+          "text": "Select it automatically for urinary infection because no renal adjustment implies adequate active urinary exposure.",
+          "isKeyed": false,
+          "assessment": "Incorrect: the book explicitly separates moxifloxacin renal dosing from UTI suitability.",
+          "sourcePages": [
+            "book PDF360,373",
+            "moxifloxacin-label PDF5,10,24"
+          ]
+        },
+        {
+          "index": 2,
+          "text": "Ignore QT-active medicines because a renal adjustment is generally unnecessary.",
+          "isKeyed": false,
+          "assessment": "Incorrect: the label retains QT precautions regardless of renal dosing.",
+          "sourcePages": [
+            "book PDF360,373",
+            "moxifloxacin-label PDF5,10,24"
+          ]
+        },
+        {
+          "index": 3,
+          "text": "Use the same clinical indications and precautions as every other fluoroquinolone.",
+          "isKeyed": false,
+          "assessment": "Incorrect: indications and precautions remain agent specific.",
+          "sourcePages": [
+            "book PDF360,373",
+            "moxifloxacin-label PDF5,10,24"
+          ]
+        }
+      ],
+      "stableIdOrderKeyAndReviewHrefPreserved": true
+    },
+    {
+      "id": "fluoroquinolone-pharmacology-025",
+      "wholeQuestion": {
+        "id": "fluoroquinolone-pharmacology-025",
+        "lesson": "agent-spectrum",
+        "question": "Which statement accurately distinguishes delafloxacin's labeled S. aureus indications?",
+        "choices": [
+          "Its adult skin-infection indication includes susceptible MRSA and MSSA; its pneumonia indication lists susceptible MSSA only.",
+          "Its pneumonia indication includes MRSA because its skin-infection indication includes MRSA.",
+          "Its skin-infection indication excludes MRSA and includes only MSSA.",
+          "Its labeled S. aureus indications apply to every infection site without additional evidence."
+        ],
+        "answer": 0,
+        "rationale": "Delafloxacin is labeled for adult acute bacterial skin and skin structure infections caused by designated susceptible organisms, including MRSA and MSSA. For community-acquired bacterial pneumonia, the labeled S. aureus organisms are MSSA isolates only. Do not transfer the MRSA skin-infection indication to pneumonia or infer universal preference from susceptibility.",
+        "reviewHref": "#agent-spectrum"
+      },
+      "wholeObjectSHA256": "efe6ea1693ec3b49e8c1f428e45887ca57e3c24f88f5d723ecb12e5d3023a791",
+      "semanticSHA256": "efe6ea1693ec3b49e8c1f428e45887ca57e3c24f88f5d723ecb12e5d3023a791",
+      "sourcePages": [
+        "baxdela-label PDF4"
+      ],
+      "choiceReview": [
+        {
+          "index": 0,
+          "text": "Its adult skin-infection indication includes susceptible MRSA and MSSA; its pneumonia indication lists susceptible MSSA only.",
+          "isKeyed": true,
+          "assessment": "Correct: directly distinguishes the two labeled organism lists.",
+          "sourcePages": [
+            "baxdela-label PDF4"
+          ]
+        },
+        {
+          "index": 1,
+          "text": "Its pneumonia indication includes MRSA because its skin-infection indication includes MRSA.",
+          "isKeyed": false,
+          "assessment": "Incorrect: transfers an organism-specific skin indication to pneumonia.",
+          "sourcePages": [
+            "baxdela-label PDF4"
+          ]
+        },
+        {
+          "index": 2,
+          "text": "Its skin-infection indication excludes MRSA and includes only MSSA.",
+          "isKeyed": false,
+          "assessment": "Incorrect: the skin indication explicitly includes susceptible MRSA.",
+          "sourcePages": [
+            "baxdela-label PDF4"
+          ]
+        },
+        {
+          "index": 3,
+          "text": "Its labeled S. aureus indications apply to every infection site without additional evidence.",
+          "isKeyed": false,
+          "assessment": "Incorrect: approved organisms and syndromes are site specific.",
+          "sourcePages": [
+            "baxdela-label PDF4"
+          ]
+        }
+      ],
+      "stableIdOrderKeyAndReviewHrefPreserved": true
+    },
+    {
+      "id": "fluoroquinolone-pharmacology-091",
+      "wholeQuestion": {
+        "id": "fluoroquinolone-pharmacology-091",
+        "lesson": "metabolic-cardiovascular",
+        "question": "A patient with a known aortic aneurysm is being considered for ciprofloxacin. Which assessment best applies its aortic warning?",
+        "choices": [
+          "Review the infection and active alternatives; in known aneurysm or increased aortic risk, reserve ciprofloxacin for situations without an alternative antibacterial treatment.",
+          "Treat the known aneurysm as irrelevant when the organism is susceptible.",
+          "Assume the aortic warning applies only to intravenous administration.",
+          "Assume the absence of tendon symptoms rules out the separate aortic concern."
+        ],
+        "answer": 0,
+        "rationale": "Ciprofloxacin labeling describes an increased rate of aortic aneurysm and dissection in epidemiologic studies, with the cause of that increased risk not identified. It advises reserving ciprofloxacin in patients with known aneurysm or increased risk when no alternative antibacterial treatment is available. A susceptibility result does not erase this separate patient risk.",
+        "reviewHref": "#metabolic-cardiovascular"
+      },
+      "wholeObjectSHA256": "dd2f386562f7177916a33c756b042a558e98cb52a657d1a5cf5362ee57a3152f",
+      "semanticSHA256": "dd2f386562f7177916a33c756b042a558e98cb52a657d1a5cf5362ee57a3152f",
+      "sourcePages": [
+        "book PDF360",
+        "cipro-label PDF20,34"
+      ],
+      "choiceReview": [
+        {
+          "index": 0,
+          "text": "Review the infection and active alternatives; in known aneurysm or increased aortic risk, reserve ciprofloxacin for situations without an alternative antibacterial treatment.",
+          "isKeyed": true,
+          "assessment": "Correct: applies the label restriction while assessing an active alternative.",
+          "sourcePages": [
+            "book PDF360",
+            "cipro-label PDF20,34"
+          ]
+        },
+        {
+          "index": 1,
+          "text": "Treat the known aneurysm as irrelevant when the organism is susceptible.",
+          "isKeyed": false,
+          "assessment": "Incorrect: microbial activity does not negate the patient warning.",
+          "sourcePages": [
+            "book PDF360",
+            "cipro-label PDF20,34"
+          ]
+        },
+        {
+          "index": 2,
+          "text": "Assume the aortic warning applies only to intravenous administration.",
+          "isKeyed": false,
+          "assessment": "Incorrect: the warning is not confined to intravenous administration.",
+          "sourcePages": [
+            "book PDF360",
+            "cipro-label PDF20,34"
+          ]
+        },
+        {
+          "index": 3,
+          "text": "Assume the absence of tendon symptoms rules out the separate aortic concern.",
+          "isKeyed": false,
+          "assessment": "Incorrect: tendon and aortic warnings are separate risks.",
+          "sourcePages": [
+            "book PDF360",
+            "cipro-label PDF20,34"
+          ]
+        }
+      ],
+      "stableIdOrderKeyAndReviewHrefPreserved": true
+    },
+    {
+      "id": "fluoroquinolone-pharmacology-107",
+      "wholeQuestion": {
+        "id": "fluoroquinolone-pharmacology-107",
+        "lesson": "resistance-stewardship",
+        "question": "Which approach follows ciprofloxacin labeling when considering treatment of acute uncomplicated cystitis?",
+        "choices": [
+          "Confirm the bacterial syndrome, review patient risks and active alternatives, and reserve ciprofloxacin when no alternative treatment option is available.",
+          "Choose ciprofloxacin first for every urinary symptom without confirming the syndrome.",
+          "Ignore its serious adverse-reaction warnings because the infection is uncomplicated.",
+          "Assume the cystitis restriction prohibits every use of ciprofloxacin for every infection."
+        ],
+        "answer": 0,
+        "rationale": "Ciprofloxacin's boxed warning and acute uncomplicated cystitis section reserve its use for patients without alternative treatment options because serious adverse reactions can occur. Confirm the actual syndrome and consider appropriate active alternatives. This indication-specific restriction is not a blanket prohibition of all ciprofloxacin treatment.",
+        "reviewHref": "#resistance-stewardship"
+      },
+      "wholeObjectSHA256": "ac7d69f79169fb8f6ce8a9f56739dea381e501ad12b4fb9e946bd20a0254f7c8",
+      "semanticSHA256": "ac7d69f79169fb8f6ce8a9f56739dea381e501ad12b4fb9e946bd20a0254f7c8",
+      "sourcePages": [
+        "book PDF345,360",
+        "cipro-label PDF6,8"
+      ],
+      "choiceReview": [
+        {
+          "index": 0,
+          "text": "Confirm the bacterial syndrome, review patient risks and active alternatives, and reserve ciprofloxacin when no alternative treatment option is available.",
+          "isKeyed": true,
+          "assessment": "Correct: diagnosis, risks and alternatives match the indication-specific restriction.",
+          "sourcePages": [
+            "book PDF345,360",
+            "cipro-label PDF6,8"
+          ]
+        },
+        {
+          "index": 1,
+          "text": "Choose ciprofloxacin first for every urinary symptom without confirming the syndrome.",
+          "isKeyed": false,
+          "assessment": "Incorrect: urinary symptoms alone do not establish a treatable bacterial infection.",
+          "sourcePages": [
+            "book PDF345,360",
+            "cipro-label PDF6,8"
+          ]
+        },
+        {
+          "index": 2,
+          "text": "Ignore its serious adverse-reaction warnings because the infection is uncomplicated.",
+          "isKeyed": false,
+          "assessment": "Incorrect: uncomplicated disease does not remove the boxed warning.",
+          "sourcePages": [
+            "book PDF345,360",
+            "cipro-label PDF6,8"
+          ]
+        },
+        {
+          "index": 3,
+          "text": "Assume the cystitis restriction prohibits every use of ciprofloxacin for every infection.",
+          "isKeyed": false,
+          "assessment": "Incorrect: the label contains other defined indications; this is not a universal prohibition.",
+          "sourcePages": [
+            "book PDF345,360",
+            "cipro-label PDF6,8"
+          ]
+        }
+      ],
+      "stableIdOrderKeyAndReviewHrefPreserved": true
+    },
+    {
+      "id": "fluoroquinolone-pharmacology-109",
+      "wholeQuestion": {
+        "id": "fluoroquinolone-pharmacology-109",
+        "lesson": "special-populations",
+        "question": "Which approach is appropriate when considering a fluoroquinolone during pregnancy, lactation, or childhood?",
+        "choices": [
+          "Use the exact product's labeling and disease-specific evidence to compare infection severity, alternatives, and patient-specific risks.",
+          "Apply a blanket rule that every fluoroquinolone is forbidden for every pediatric indication.",
+          "Assume reassuring observational pregnancy data prove that every agent is risk free.",
+          "Assume pregnancy, breastfeeding, and pediatric use share identical instructions across the class."
+        ],
+        "answer": 0,
+        "rationale": "These decisions require the particular medicine and infection. Ciprofloxacin labeling includes selected pediatric indications and specific lactation considerations; it also explains limits of observational pregnancy evidence. Neither a class-wide ban nor a class-wide assurance of safety replaces product-specific benefit-risk reasoning.",
+        "reviewHref": "#special-populations"
+      },
+      "wholeObjectSHA256": "2c7d9463123f3a0c98c6e65f41b5a37fec8d14c17c677134c646e1d5d9a317b0",
+      "semanticSHA256": "2c7d9463123f3a0c98c6e65f41b5a37fec8d14c17c677134c646e1d5d9a317b0",
+      "sourcePages": [
+        "cipro-label PDF8,21,31,32,33"
+      ],
+      "choiceReview": [
+        {
+          "index": 0,
+          "text": "Use the exact product's labeling and disease-specific evidence to compare infection severity, alternatives, and patient-specific risks.",
+          "isKeyed": true,
+          "assessment": "Correct: combines exact label, disease and individual benefit-risk evidence.",
+          "sourcePages": [
+            "cipro-label PDF8,21,31,32,33"
+          ]
+        },
+        {
+          "index": 1,
+          "text": "Apply a blanket rule that every fluoroquinolone is forbidden for every pediatric indication.",
+          "isKeyed": false,
+          "assessment": "Incorrect: ciprofloxacin has selected labeled pediatric uses.",
+          "sourcePages": [
+            "cipro-label PDF8,21,31,32,33"
+          ]
+        },
+        {
+          "index": 2,
+          "text": "Assume reassuring observational pregnancy data prove that every agent is risk free.",
+          "isKeyed": false,
+          "assessment": "Incorrect: the label explicitly states that available observational data cannot establish absence of risk.",
+          "sourcePages": [
+            "cipro-label PDF8,21,31,32,33"
+          ]
+        },
+        {
+          "index": 3,
+          "text": "Assume pregnancy, breastfeeding, and pediatric use share identical instructions across the class.",
+          "isKeyed": false,
+          "assessment": "Incorrect: developmental exposure and milk exposure require distinct instructions.",
+          "sourcePages": [
+            "cipro-label PDF8,21,31,32,33"
+          ]
+        }
+      ],
+      "stableIdOrderKeyAndReviewHrefPreserved": true
+    },
+    {
+      "id": "fluoroquinolone-pharmacology-115",
+      "wholeQuestion": {
+        "id": "fluoroquinolone-pharmacology-115",
+        "lesson": "special-populations",
+        "question": "Which assessment best evaluates fluoroquinolone risk in an older adult?",
+        "choices": [
+          "Review corticosteroids and tendon history, kidney function and exposure, diabetes treatment, QT-active medicines, vascular history, cognition, and the infection's alternatives.",
+          "Use age alone to conclude that every fluoroquinolone is absolutely contraindicated.",
+          "Ignore current kidney function because an older adult's usual outpatient dose must remain appropriate.",
+          "Ignore interacting medicines once a susceptibility result is available."
+        ],
+        "answer": 0,
+        "rationale": "Older adults can have several overlapping risks. Ciprofloxacin labeling discusses tendon risk with corticosteroids, renal function, QT susceptibility, glucose disturbances, and aortic concerns. The actual patient, product, exposure, interacting medicines, and available treatment alternatives determine the assessment; age alone is insufficient.",
+        "reviewHref": "#special-populations"
+      },
+      "wholeObjectSHA256": "2174137af592ce51337b644296358bd7ceaf128aa83efc493179d4da836ebf14",
+      "semanticSHA256": "2174137af592ce51337b644296358bd7ceaf128aa83efc493179d4da836ebf14",
+      "sourcePages": [
+        "book PDF345,360",
+        "cipro-label PDF18,20,21,22,34"
+      ],
+      "choiceReview": [
+        {
+          "index": 0,
+          "text": "Review corticosteroids and tendon history, kidney function and exposure, diabetes treatment, QT-active medicines, vascular history, cognition, and the infection's alternatives.",
+          "isKeyed": true,
+          "assessment": "Correct: reviews separate labeled risks and the patient context without an automatic age ban.",
+          "sourcePages": [
+            "book PDF345,360",
+            "cipro-label PDF18,20,21,22,34"
+          ]
+        },
+        {
+          "index": 1,
+          "text": "Use age alone to conclude that every fluoroquinolone is absolutely contraindicated.",
+          "isKeyed": false,
+          "assessment": "Incorrect: age calls for individual risk review, not a universal contraindication.",
+          "sourcePages": [
+            "book PDF345,360",
+            "cipro-label PDF18,20,21,22,34"
+          ]
+        },
+        {
+          "index": 2,
+          "text": "Ignore current kidney function because an older adult's usual outpatient dose must remain appropriate.",
+          "isKeyed": false,
+          "assessment": "Incorrect: renal function and exposure can change and require reassessment.",
+          "sourcePages": [
+            "book PDF345,360",
+            "cipro-label PDF18,20,21,22,34"
+          ]
+        },
+        {
+          "index": 3,
+          "text": "Ignore interacting medicines once a susceptibility result is available.",
+          "isKeyed": false,
+          "assessment": "Incorrect: susceptibility establishes no protection against medicine-related interactions.",
+          "sourcePages": [
+            "book PDF345,360",
+            "cipro-label PDF18,20,21,22,34"
+          ]
+        }
+      ],
+      "stableIdOrderKeyAndReviewHrefPreserved": true
+    },
+    {
+      "id": "fluoroquinolone-pharmacology-131",
+      "wholeQuestion": {
+        "id": "fluoroquinolone-pharmacology-131",
+        "lesson": "clinical-integration",
+        "question": "When useful culture results and the clinical response are available, which review best supports a definitive fluoroquinolone plan?",
+        "choices": [
+          "Reassess the organism and susceptibility, infection site, response, source control, exposure, adverse effects, alternatives, and whether ongoing treatment is still indicated.",
+          "Continue the original empiric choice indefinitely because it was reasonable before cultures returned.",
+          "Treat a culture result as proof that absorption, site exposure, and source control no longer matter.",
+          "Extend an inactive regimen rather than reconsider the agent or diagnosis."
+        ],
+        "answer": 0,
+        "rationale": "An initial empiric plan requires reassessment as diagnostic and susceptibility information becomes available. Review clinical response, delivery, safety, source control, and the continuing indication. Use the evidence to decide whether to narrow, change, stop, or continue therapy rather than automatically extending the original choice.",
+        "reviewHref": "#clinical-integration"
+      },
+      "wholeObjectSHA256": "e3e66600c21c375e9698bd886366b31c7557baade7095b65c4472d00ebf6a7a6",
+      "semanticSHA256": "e3e66600c21c375e9698bd886366b31c7557baade7095b65c4472d00ebf6a7a6",
+      "sourcePages": [
+        "book PDF345,350",
+        "cipro-label PDF9,21",
+        "baxdela-label PDF4"
+      ],
+      "choiceReview": [
+        {
+          "index": 0,
+          "text": "Reassess the organism and susceptibility, infection site, response, source control, exposure, adverse effects, alternatives, and whether ongoing treatment is still indicated.",
+          "isKeyed": true,
+          "assessment": "Correct: links available microbiology with site, clinical course, exposure and continuing need.",
+          "sourcePages": [
+            "book PDF345,350",
+            "cipro-label PDF9,21",
+            "baxdela-label PDF4"
+          ]
+        },
+        {
+          "index": 1,
+          "text": "Continue the original empiric choice indefinitely because it was reasonable before cultures returned.",
+          "isKeyed": false,
+          "assessment": "Incorrect: new information should inform selection or modification of therapy.",
+          "sourcePages": [
+            "book PDF345,350",
+            "cipro-label PDF9,21",
+            "baxdela-label PDF4"
+          ]
+        },
+        {
+          "index": 2,
+          "text": "Treat a culture result as proof that absorption, site exposure, and source control no longer matter.",
+          "isKeyed": false,
+          "assessment": "Incorrect: laboratory activity alone cannot establish adequate delivery or source control.",
+          "sourcePages": [
+            "book PDF345,350",
+            "cipro-label PDF9,21",
+            "baxdela-label PDF4"
+          ]
+        },
+        {
+          "index": 3,
+          "text": "Extend an inactive regimen rather than reconsider the agent or diagnosis.",
+          "isKeyed": false,
+          "assessment": "Incorrect: more time does not establish activity for an inactive drug.",
+          "sourcePages": [
+            "book PDF345,350",
+            "cipro-label PDF9,21",
+            "baxdela-label PDF4"
+          ]
+        }
+      ],
+      "stableIdOrderKeyAndReviewHrefPreserved": true
+    },
+    {
+      "id": "tetracycline-pharmacology-011",
+      "wholeQuestion": {
+        "id": "tetracycline-pharmacology-011",
+        "lesson": "structure-mechanism",
+        "question": "How should the primarily bacteriostatic action of tetracyclines be interpreted clinically?",
+        "choices": [
+          "Interpret inhibition of bacterial growth together with organism susceptibility, infection site, host factors, exposure, and response.",
+          "Conclude that inhibition of bacterial growth guarantees treatment failure in every patient.",
+          "Describe tetracyclines as inhibitors of DNA gyrase rather than bacterial protein synthesis.",
+          "Assume the bacteriostatic label establishes a suitable regimen for every infection site."
+        ],
+        "answer": 0,
+        "rationale": "Tetracyclines inhibit bacterial protein synthesis, and doxycycline binds the 30S ribosomal subunit. Primarily bacteriostatic action describes an antimicrobial effect; it does not alone predict clinical success or failure. Organism, site, host factors, effective exposure, and response remain part of the assessment.",
+        "reviewHref": "#structure-mechanism"
+      },
+      "wholeObjectSHA256": "0d54d387cbc3b20a0b5821c33c3eb77b70b33c620d2dd6c6553ad76cb26d8f38",
+      "semanticSHA256": "0d54d387cbc3b20a0b5821c33c3eb77b70b33c620d2dd6c6553ad76cb26d8f38",
+      "sourcePages": [
+        "book PDF345,350,362",
+        "doxycycline-label PDF2",
+        "minocycline-label PDF2"
+      ],
+      "choiceReview": [
+        {
+          "index": 0,
+          "text": "Interpret inhibition of bacterial growth together with organism susceptibility, infection site, host factors, exposure, and response.",
+          "isKeyed": true,
+          "assessment": "Correct: combines the actual growth-inhibition mechanism with clinical selection factors.",
+          "sourcePages": [
+            "book PDF345,350,362",
+            "doxycycline-label PDF2",
+            "minocycline-label PDF2"
+          ]
+        },
+        {
+          "index": 1,
+          "text": "Conclude that inhibition of bacterial growth guarantees treatment failure in every patient.",
+          "isKeyed": false,
+          "assessment": "Incorrect: bacteriostatic activity does not by itself establish inevitable failure.",
+          "sourcePages": [
+            "book PDF345,350,362",
+            "doxycycline-label PDF2",
+            "minocycline-label PDF2"
+          ]
+        },
+        {
+          "index": 2,
+          "text": "Describe tetracyclines as inhibitors of DNA gyrase rather than bacterial protein synthesis.",
+          "isKeyed": false,
+          "assessment": "Incorrect: DNA gyrase is a fluoroquinolone target, not the tetracycline target.",
+          "sourcePages": [
+            "book PDF345,350,362",
+            "doxycycline-label PDF2",
+            "minocycline-label PDF2"
+          ]
+        },
+        {
+          "index": 3,
+          "text": "Assume the bacteriostatic label establishes a suitable regimen for every infection site.",
+          "isKeyed": false,
+          "assessment": "Incorrect: effect classification alone establishes neither site suitability nor exposure.",
+          "sourcePages": [
+            "book PDF345,350,362",
+            "doxycycline-label PDF2",
+            "minocycline-label PDF2"
+          ]
+        }
+      ],
+      "stableIdOrderKeyAndReviewHrefPreserved": true
+    },
+    {
+      "id": "tetracycline-pharmacology-017",
+      "wholeQuestion": {
+        "id": "tetracycline-pharmacology-017",
+        "lesson": "agent-differences",
+        "question": "Which safety assessment is specifically important when considering minocycline?",
+        "choices": [
+          "Review dizziness or vertigo, pigmentation changes, and reported autoimmune or serious hypersensitivity reactions alongside the exact product and patient risks.",
+          "Assume minocycline cannot cause vestibular symptoms because it belongs to the tetracycline class.",
+          "Dismiss new rash, fever, and systemic symptoms because only mild gastrointestinal effects are possible.",
+          "Assume minocycline and doxycycline have identical adverse-effect profiles and product instructions."
+        ],
+        "answer": 0,
+        "rationale": "Minocycline labeling reports dizziness and vertigo, pigmentation changes, lupus-like syndromes, autoimmune hepatitis, and serious hypersensitivity reactions. These reports warrant product-specific assessment and appropriate action when symptoms emerge; they do not establish that every listed reaction is common or that all tetracyclines share identical risks.",
+        "reviewHref": "#agent-differences"
+      },
+      "wholeObjectSHA256": "cd7a0a573bc4ad14468f99bac8f383f4981ad6b17a8feacbb059a8646edf7714",
+      "semanticSHA256": "cd7a0a573bc4ad14468f99bac8f383f4981ad6b17a8feacbb059a8646edf7714",
+      "sourcePages": [
+        "book PDF362",
+        "minocycline-label PDF6,10,11"
+      ],
+      "choiceReview": [
+        {
+          "index": 0,
+          "text": "Review dizziness or vertigo, pigmentation changes, and reported autoimmune or serious hypersensitivity reactions alongside the exact product and patient risks.",
+          "isKeyed": true,
+          "assessment": "Correct: these specific reported effects appear in the native label.",
+          "sourcePages": [
+            "book PDF362",
+            "minocycline-label PDF6,10,11"
+          ]
+        },
+        {
+          "index": 1,
+          "text": "Assume minocycline cannot cause vestibular symptoms because it belongs to the tetracycline class.",
+          "isKeyed": false,
+          "assessment": "Incorrect: the label explicitly reports dizziness and vertigo.",
+          "sourcePages": [
+            "book PDF362",
+            "minocycline-label PDF6,10,11"
+          ]
+        },
+        {
+          "index": 2,
+          "text": "Dismiss new rash, fever, and systemic symptoms because only mild gastrointestinal effects are possible.",
+          "isKeyed": false,
+          "assessment": "Incorrect: serious hypersensitivity and systemic syndromes are reported.",
+          "sourcePages": [
+            "book PDF362",
+            "minocycline-label PDF6,10,11"
+          ]
+        },
+        {
+          "index": 3,
+          "text": "Assume minocycline and doxycycline have identical adverse-effect profiles and product instructions.",
+          "isKeyed": false,
+          "assessment": "Incorrect: related agents do not establish identical labeled risks or instructions.",
+          "sourcePages": [
+            "book PDF362",
+            "minocycline-label PDF6,10,11"
+          ]
+        }
+      ],
+      "stableIdOrderKeyAndReviewHrefPreserved": true
+    },
+    {
+      "id": "tetracycline-pharmacology-035",
+      "wholeQuestion": {
+        "id": "tetracycline-pharmacology-035",
+        "lesson": "clinical-selection",
+        "question": "Which assessment best supports a complete chlamydial-infection plan when doxycycline is being considered?",
+        "choices": [
+          "Review the infection site, pregnancy, adherence, partner management, coinfection testing, and appropriate follow-up.",
+          "Ignore pregnancy because one antibiotic regimen fits every patient.",
+          "Treat the patient while omitting partner evaluation and reinfection prevention.",
+          "Use symptom resolution as the only reason to omit all follow-up considerations."
+        ],
+        "answer": 0,
+        "rationale": "Chlamydia care includes effective treatment and prevention of reinfection and transmission. The CDC guidance distinguishes pregnancy-related treatment and follow-up, addresses anatomic sites and adherence, and includes partner management and testing for other sexually transmitted infections. Symptom improvement alone does not complete that plan.",
+        "reviewHref": "#clinical-selection"
+      },
+      "wholeObjectSHA256": "7782b57915cdb35c38a3d4493377e1f48ba5e8217c6bfc4d3a5c58c75b7d59ea",
+      "semanticSHA256": "7782b57915cdb35c38a3d4493377e1f48ba5e8217c6bfc4d3a5c58c75b7d59ea",
+      "sourcePages": [
+        "book PDF394",
+        "CDC chlamydia 2021 guideline: treatment, other management, follow-up, sex partners and pregnancy"
+      ],
+      "choiceReview": [
+        {
+          "index": 0,
+          "text": "Review the infection site, pregnancy, adherence, partner management, coinfection testing, and appropriate follow-up.",
+          "isKeyed": true,
+          "assessment": "Correct: covers the CDC management domains without adding a new dosing regimen.",
+          "sourcePages": [
+            "book PDF394",
+            "CDC chlamydia 2021 guideline: treatment, other management, follow-up, sex partners and pregnancy"
+          ]
+        },
+        {
+          "index": 1,
+          "text": "Ignore pregnancy because one antibiotic regimen fits every patient.",
+          "isKeyed": false,
+          "assessment": "Incorrect: pregnancy changes recommended treatment and follow-up.",
+          "sourcePages": [
+            "book PDF394",
+            "CDC chlamydia 2021 guideline: treatment, other management, follow-up, sex partners and pregnancy"
+          ]
+        },
+        {
+          "index": 2,
+          "text": "Treat the patient while omitting partner evaluation and reinfection prevention.",
+          "isKeyed": false,
+          "assessment": "Incorrect: untreated partners can contribute to reinfection and transmission.",
+          "sourcePages": [
+            "book PDF394",
+            "CDC chlamydia 2021 guideline: treatment, other management, follow-up, sex partners and pregnancy"
+          ]
+        },
+        {
+          "index": 3,
+          "text": "Use symptom resolution as the only reason to omit all follow-up considerations.",
+          "isKeyed": false,
+          "assessment": "Incorrect: follow-up and reinfection considerations persist even after symptom improvement.",
+          "sourcePages": [
+            "book PDF394",
+            "CDC chlamydia 2021 guideline: treatment, other management, follow-up, sex partners and pregnancy"
+          ]
+        }
+      ],
+      "stableIdOrderKeyAndReviewHrefPreserved": true
+    },
+    {
+      "id": "tetracycline-pharmacology-041",
+      "wholeQuestion": {
+        "id": "tetracycline-pharmacology-041",
+        "lesson": "clinical-selection",
+        "question": "Which principle correctly distinguishes doxycycline treatment from Lyme-disease prophylaxis?",
+        "choices": [
+          "Choose treatment for the actual Lyme presentation; consider prophylaxis only for an eligible high-risk tick exposure under current guidance.",
+          "Give prophylaxis automatically after every tick bite regardless of risk or eligibility.",
+          "Use a prophylaxis regimen as complete treatment for every established Lyme manifestation.",
+          "Assume one oral regimen is appropriate for every neurologic or cardiac presentation."
+        ],
+        "answer": 0,
+        "rationale": "Treatment depends on the Lyme manifestation and patient context. The AAN/ACR/IDSA guideline limits prophylaxis to defined high-risk exposures and distinguishes treatment by presentation, including circumstances requiring intravenous therapy. A prophylaxis decision does not substitute for treatment of established disease.",
+        "reviewHref": "#clinical-selection"
+      },
+      "wholeObjectSHA256": "8f0fcd7d14f31982dc868b0e06ec6626fcda737378591aa2482b55d96fc737d8",
+      "semanticSHA256": "8f0fcd7d14f31982dc868b0e06ec6626fcda737378591aa2482b55d96fc737d8",
+      "sourcePages": [
+        "book PDF396",
+        "AAN/ACR/IDSA Lyme 2020 guideline recommendations III,IV,VI,XIII,XIV"
+      ],
+      "choiceReview": [
+        {
+          "index": 0,
+          "text": "Choose treatment for the actual Lyme presentation; consider prophylaxis only for an eligible high-risk tick exposure under current guidance.",
+          "isKeyed": true,
+          "assessment": "Correct: separates eligible exposure prevention from manifestation-specific treatment.",
+          "sourcePages": [
+            "book PDF396",
+            "AAN/ACR/IDSA Lyme 2020 guideline recommendations III,IV,VI,XIII,XIV"
+          ]
+        },
+        {
+          "index": 1,
+          "text": "Give prophylaxis automatically after every tick bite regardless of risk or eligibility.",
+          "isKeyed": false,
+          "assessment": "Incorrect: equivocal and low-risk bites do not automatically meet prophylaxis criteria.",
+          "sourcePages": [
+            "book PDF396",
+            "AAN/ACR/IDSA Lyme 2020 guideline recommendations III,IV,VI,XIII,XIV"
+          ]
+        },
+        {
+          "index": 2,
+          "text": "Use a prophylaxis regimen as complete treatment for every established Lyme manifestation.",
+          "isKeyed": false,
+          "assessment": "Incorrect: prophylaxis and treatment are separate clinical situations.",
+          "sourcePages": [
+            "book PDF396",
+            "AAN/ACR/IDSA Lyme 2020 guideline recommendations III,IV,VI,XIII,XIV"
+          ]
+        },
+        {
+          "index": 3,
+          "text": "Assume one oral regimen is appropriate for every neurologic or cardiac presentation.",
+          "isKeyed": false,
+          "assessment": "Incorrect: the guideline distinguishes manifestations and route requirements.",
+          "sourcePages": [
+            "book PDF396",
+            "AAN/ACR/IDSA Lyme 2020 guideline recommendations III,IV,VI,XIII,XIV"
+          ]
+        }
+      ],
+      "stableIdOrderKeyAndReviewHrefPreserved": true
+    },
+    {
+      "id": "tetracycline-pharmacology-115",
+      "wholeQuestion": {
+        "id": "tetracycline-pharmacology-115",
+        "lesson": "resistance-stewardship",
+        "question": "How should ribosomal-protection resistance be assessed when a tetracycline-class agent is considered?",
+        "choices": [
+          "Use organism- and agent-specific susceptibility evidence and the infection site; interpret mechanism data within its stated evidence limits.",
+          "Assume a newer tetracycline is clinically active against every ribosomal-protection mechanism.",
+          "Assume in-vitro activity proves clinical efficacy at every infection site.",
+          "Ignore agent-specific susceptibility because all tetracyclines have the same resistance pattern."
+        ],
+        "answer": 0,
+        "rationale": "Ribosomal protection can reduce the activity of tetracyclines, and individual agents differ in resistance patterns. NUZYRA labeling reports omadacycline activity in vitro against organisms expressing TetM but explicitly states that the clinical significance of these resistance data is unknown. Mechanism information does not replace organism-specific susceptibility and evidence for the intended site.",
+        "reviewHref": "#resistance-stewardship"
+      },
+      "wholeObjectSHA256": "fd04fa0a3bf0292e7df0605c217cec6f66609d6f0135cc1fa73d62c2ed57eb1e",
+      "semanticSHA256": "fd04fa0a3bf0292e7df0605c217cec6f66609d6f0135cc1fa73d62c2ed57eb1e",
+      "sourcePages": [
+        "nuzyra-label PDF17",
+        "doxycycline-label PDF2",
+        "minocycline-label PDF2"
+      ],
+      "choiceReview": [
+        {
+          "index": 0,
+          "text": "Use organism- and agent-specific susceptibility evidence and the infection site; interpret mechanism data within its stated evidence limits.",
+          "isKeyed": true,
+          "assessment": "Correct: respects agent, organism, site and stated limits of mechanism data.",
+          "sourcePages": [
+            "nuzyra-label PDF17",
+            "doxycycline-label PDF2",
+            "minocycline-label PDF2"
+          ]
+        },
+        {
+          "index": 1,
+          "text": "Assume a newer tetracycline is clinically active against every ribosomal-protection mechanism.",
+          "isKeyed": false,
+          "assessment": "Incorrect: the label does not establish universal clinical activity against resistance mechanisms.",
+          "sourcePages": [
+            "nuzyra-label PDF17",
+            "doxycycline-label PDF2",
+            "minocycline-label PDF2"
+          ]
+        },
+        {
+          "index": 2,
+          "text": "Assume in-vitro activity proves clinical efficacy at every infection site.",
+          "isKeyed": false,
+          "assessment": "Incorrect: the label expressly qualifies the clinical significance of these in-vitro data.",
+          "sourcePages": [
+            "nuzyra-label PDF17",
+            "doxycycline-label PDF2",
+            "minocycline-label PDF2"
+          ]
+        },
+        {
+          "index": 3,
+          "text": "Ignore agent-specific susceptibility because all tetracyclines have the same resistance pattern.",
+          "isKeyed": false,
+          "assessment": "Incorrect: common class membership does not establish identical agent-specific resistance behavior.",
+          "sourcePages": [
+            "nuzyra-label PDF17",
+            "doxycycline-label PDF2",
+            "minocycline-label PDF2"
+          ]
+        }
+      ],
+      "stableIdOrderKeyAndReviewHrefPreserved": true
+    },
+    {
+      "id": "tetracycline-pharmacology-121",
+      "wholeQuestion": {
+        "id": "tetracycline-pharmacology-121",
+        "lesson": "clinical-integration",
+        "question": "Which plan best coordinates tetracycline selection, administration, and follow-up?",
+        "choices": [
+          "Define the diagnosis and site, choose an active agent and exact product, specify an appropriate regimen and administration instructions, and set monitoring and reassessment criteria.",
+          "Write a drug name without checking the infection, product, or administration requirements.",
+          "Apply one food and mineral-spacing rule to every tetracycline formulation.",
+          "Continue indefinitely without reviewing response, toxicity, or the ongoing indication."
+        ],
+        "answer": 0,
+        "rationale": "A complete plan connects the treatable infection and active agent with the exact product and regimen. Product-specific absorption and administration instructions, cation interactions, esophageal precautions, adverse effects, clinical response, and ongoing need require coordinated review. A class name alone is not an executable prescription.",
+        "reviewHref": "#clinical-integration"
+      },
+      "wholeObjectSHA256": "ef26d9271c22245d17682711c6ddfb5667563d362c1409b716f4824a0995d6e2",
+      "semanticSHA256": "ef26d9271c22245d17682711c6ddfb5667563d362c1409b716f4824a0995d6e2",
+      "sourcePages": [
+        "book PDF345,362,363",
+        "doxycycline-label PDF6,7,8",
+        "minocycline-label PDF11"
+      ],
+      "choiceReview": [
+        {
+          "index": 0,
+          "text": "Define the diagnosis and site, choose an active agent and exact product, specify an appropriate regimen and administration instructions, and set monitoring and reassessment criteria.",
+          "isKeyed": true,
+          "assessment": "Correct: coordinates selection, exact product, delivery, safety and continuing need.",
+          "sourcePages": [
+            "book PDF345,362,363",
+            "doxycycline-label PDF6,7,8",
+            "minocycline-label PDF11"
+          ]
+        },
+        {
+          "index": 1,
+          "text": "Write a drug name without checking the infection, product, or administration requirements.",
+          "isKeyed": false,
+          "assessment": "Incorrect: a drug name does not establish diagnosis, activity or an executable regimen.",
+          "sourcePages": [
+            "book PDF345,362,363",
+            "doxycycline-label PDF6,7,8",
+            "minocycline-label PDF11"
+          ]
+        },
+        {
+          "index": 2,
+          "text": "Apply one food and mineral-spacing rule to every tetracycline formulation.",
+          "isKeyed": false,
+          "assessment": "Incorrect: the native doxycycline and minocycline labels distinguish food instructions; cation rules require the product.",
+          "sourcePages": [
+            "book PDF345,362,363",
+            "doxycycline-label PDF6,7,8",
+            "minocycline-label PDF11"
+          ]
+        },
+        {
+          "index": 3,
+          "text": "Continue indefinitely without reviewing response, toxicity, or the ongoing indication.",
+          "isKeyed": false,
+          "assessment": "Incorrect: clinical response, harm and ongoing indication require reassessment.",
+          "sourcePages": [
+            "book PDF345,362,363",
+            "doxycycline-label PDF6,7,8",
+            "minocycline-label PDF11"
+          ]
+        }
+      ],
+      "stableIdOrderKeyAndReviewHrefPreserved": true
+    }
+  ],
+  "sourceNativeReview": [
+    {
+      "source": "book",
+      "PDFPage": 345,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-antibiotic-historical-review-20261011/evidence/private-antibiotic-sources-v1/book-native-345.png",
+      "SHA256": "f51d8f001808ed680bc184d1533da9ec3224152d515be6e4e66fc098f1cfcd96",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "book",
+      "PDFPage": 350,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-antibiotic-historical-review-20261011/evidence/private-antibiotic-sources-v1/book-native-350.png",
+      "SHA256": "4e93d5519fcf96a2f36d023dbd14aef2b93596ed255fbb5473312c3f57ef5fcb",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "book",
+      "PDFPage": 360,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-antibiotic-historical-review-20261011/evidence/private-antibiotic-sources-v1/book-native-360.png",
+      "SHA256": "9cc34f824f12f2d719505eddb028968d2033d5c38fd2ed4f4ee5a4c9f7612813",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "book",
+      "PDFPage": 362,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-antibiotic-historical-review-20261011/evidence/private-antibiotic-sources-v1/book-native-362.png",
+      "SHA256": "70612331eea81b2ca1943df5fd772143e2950a19138bb9db9d86459f2cc70720",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "book",
+      "PDFPage": 363,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-antibiotic-historical-review-20261011/evidence/private-antibiotic-sources-v1/book-native-363.png",
+      "SHA256": "507a56c54e786e531df5fb1b45d9339729a5444badb53bf5b598a9d1f970b30d",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "book",
+      "PDFPage": 373,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-antibiotic-historical-review-20261011/evidence/private-antibiotic-sources-v1/book-native-373.png",
+      "SHA256": "b68562203085c26695948625055dde3fb00135a1ead2356c3c7dc049adfafecb",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "book",
+      "PDFPage": 394,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-antibiotic-historical-review-20261011/evidence/private-antibiotic-sources-v1/book-native-394.png",
+      "SHA256": "25f817e108a299f0ddaf0043a5e356edc4e35e3e68e79034e87c19be86aedc8d",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "book",
+      "PDFPage": 396,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-antibiotic-historical-review-20261011/evidence/private-antibiotic-sources-v1/book-native-396.png",
+      "SHA256": "2f59353415ad43c026386ab3e08c42766a45d27dcf5642cfcfd3618b146d6b2c",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "cipro-label",
+      "PDFPage": 6,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-antibiotic-historical-review-20261011/evidence/private-antibiotic-sources-v1/cipro-label-native-6.png",
+      "SHA256": "762ac5078760752792d5d022970edff723464243ffced8cbb5291bf4dec63df8",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "cipro-label",
+      "PDFPage": 8,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-antibiotic-historical-review-20261011/evidence/private-antibiotic-sources-v1/cipro-label-native-8.png",
+      "SHA256": "4f2ee3f3cdbffb737142251a4489b7556145416e679f11bd57934320310113fd",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "cipro-label",
+      "PDFPage": 18,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-antibiotic-historical-review-20261011/evidence/private-antibiotic-sources-v1/cipro-label-native-18.png",
+      "SHA256": "26d17de7dfec43a46654bf27957d2dd6856540b56ab0ed4ecab25505ca86ed36",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "cipro-label",
+      "PDFPage": 20,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-antibiotic-historical-review-20261011/evidence/private-antibiotic-sources-v1/cipro-label-native-20.png",
+      "SHA256": "80803ee0dff8ad523e6b1d9bfb02042efd3aff055217ff776f0c59738422989e",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "cipro-label",
+      "PDFPage": 21,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-antibiotic-historical-review-20261011/evidence/private-antibiotic-sources-v1/cipro-label-native-21.png",
+      "SHA256": "c7662c7045e4ee2e17fb8322a031b838144c6bb43c19fbd696d27bb5b1ac0159",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "cipro-label",
+      "PDFPage": 22,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-antibiotic-historical-review-20261011/evidence/private-antibiotic-sources-v1/cipro-label-native-22.png",
+      "SHA256": "28fdc4ffcdc2431f153ba36f9ecf0bd0d8f0c3962735cc296616b2631428d6af",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "cipro-label",
+      "PDFPage": 31,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-antibiotic-historical-review-20261011/evidence/private-antibiotic-sources-v1/cipro-label-native-31.png",
+      "SHA256": "168d35534fa2fd2feeea5a42280650f2773efa1c5cff5b536be3dbb37e859923",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "cipro-label",
+      "PDFPage": 32,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-antibiotic-historical-review-20261011/evidence/private-antibiotic-sources-v1/cipro-label-native-32.png",
+      "SHA256": "d38fe50ec7292dffa2ebc9669df2463fed25a33fea8244bd0aa784db7e2ae27d",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "cipro-label",
+      "PDFPage": 33,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-antibiotic-historical-review-20261011/evidence/private-antibiotic-sources-v1/cipro-label-native-33.png",
+      "SHA256": "309cd436cd108f3b280e68d2fa2110b0d50efcf30d9e09ab858a4be6e93b8e15",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "cipro-label",
+      "PDFPage": 34,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-antibiotic-historical-review-20261011/evidence/private-antibiotic-sources-v1/cipro-label-native-34.png",
+      "SHA256": "8383232dc6d02b3a079de067eeae53897a30fd6423d547c510a0d893cc587333",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "cipro-label",
+      "PDFPage": 35,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-antibiotic-historical-review-20261011/evidence/private-antibiotic-sources-v1/cipro-label-native-35.png",
+      "SHA256": "31bafb98fbdb27348067f9bc2a613f4968962b7c9cf2bc415e3ef77c0b425f1d",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "cipro-label",
+      "PDFPage": 41,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-antibiotic-historical-review-20261011/evidence/private-antibiotic-sources-v1/cipro-label-native-41.png",
+      "SHA256": "78f61bd0f5012ef60af008fe111a2dd119a161f713ae3b8aa756eeddfdaa7f23",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "baxdela-label",
+      "PDFPage": 4,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-antibiotic-historical-review-20261011/evidence/private-antibiotic-sources-v1/baxdela-label-native-4.png",
+      "SHA256": "216bf1ac21d68b69ee04d56306ef421d490fb7027acebf18a8d024809dc9f1d7",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "baxdela-label",
+      "PDFPage": 17,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-antibiotic-historical-review-20261011/evidence/private-antibiotic-sources-v1/baxdela-label-native-17.png",
+      "SHA256": "86b3ccc040c355e67bb9d190462bbc9ca6463bf06ac5e2ca4f837b9506d03563",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "baxdela-label",
+      "PDFPage": 21,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-antibiotic-historical-review-20261011/evidence/private-antibiotic-sources-v1/baxdela-label-native-21.png",
+      "SHA256": "68c41b8ae95df3c38b666b5347c7e3ea4cf5274c40abe2fa4d5931af2fd992b7",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "moxifloxacin-label",
+      "PDFPage": 5,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-antibiotic-historical-review-20261011/evidence/private-antibiotic-sources-v1/moxifloxacin-label-native-5.png",
+      "SHA256": "e2af9c12f416a537472e3dd7ae7c2a205b97fa531e8fead232fef7d8d6b7cffa",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "moxifloxacin-label",
+      "PDFPage": 10,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-antibiotic-historical-review-20261011/evidence/private-antibiotic-sources-v1/moxifloxacin-label-native-10.png",
+      "SHA256": "70ec18a4567c9b1debb0fe5ff8522efa3cb11ddcd2876387724c4e767b433f48",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "moxifloxacin-label",
+      "PDFPage": 24,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-antibiotic-historical-review-20261011/evidence/private-antibiotic-sources-v1/moxifloxacin-label-native-24.png",
+      "SHA256": "3391b924b9095dbe1765a9745eb65f6f142bf21025f133eb7c30e287e4fa8936",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "moxifloxacin-label",
+      "PDFPage": 26,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-antibiotic-historical-review-20261011/evidence/private-antibiotic-sources-v1/moxifloxacin-label-native-26.png",
+      "SHA256": "fb5854cc254598275cf31811b9633317dfc0f26bcf33710a075c678f409a1850",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "moxifloxacin-label",
+      "PDFPage": 33,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-antibiotic-historical-review-20261011/evidence/private-antibiotic-sources-v1/moxifloxacin-label-native-33.png",
+      "SHA256": "8cf407f3b04d46068def26b541139af0682f926fdc1e29cdbdfca41daf3582b9",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "minocycline-label",
+      "PDFPage": 2,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-antibiotic-historical-review-20261011/evidence/private-antibiotic-sources-v1/minocycline-label-native-2.png",
+      "SHA256": "a7f3d5e4b5e7cc02f424cdc93f4e129c9b140b1d902618b1ecc78a8fd0b4d497",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "minocycline-label",
+      "PDFPage": 6,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-antibiotic-historical-review-20261011/evidence/private-antibiotic-sources-v1/minocycline-label-native-6.png",
+      "SHA256": "e707d1f2404aea9bc249122461685a2ef7789d2ce4222c4441c4acf1bfd9a5cc",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "minocycline-label",
+      "PDFPage": 10,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-antibiotic-historical-review-20261011/evidence/private-antibiotic-sources-v1/minocycline-label-native-10.png",
+      "SHA256": "eded7b9b0d22ef9b283bb00fed7e1f95542f3ffc2a50f466b8226492d8101109",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "minocycline-label",
+      "PDFPage": 11,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-antibiotic-historical-review-20261011/evidence/private-antibiotic-sources-v1/minocycline-label-native-11.png",
+      "SHA256": "e8f2bb268fa68bd97bed408b71f1ee202dc3e96d77f02e13f7f2dc3f14e42a7b",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "doxycycline-label",
+      "PDFPage": 2,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-antibiotic-historical-review-20261011/evidence/private-antibiotic-sources-v1/doxycycline-label-native-2.png",
+      "SHA256": "182a5cf96616321d149d60462aa1e8dfa033ccb5a2496f17a05cbeb1b7a4774c",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "doxycycline-label",
+      "PDFPage": 6,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-antibiotic-historical-review-20261011/evidence/private-antibiotic-sources-v1/doxycycline-label-native-6.png",
+      "SHA256": "09f02747e943ed6932175c0667e8e0180e7d87b2ecab062e0cdf48d4000f2758",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "doxycycline-label",
+      "PDFPage": 7,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-antibiotic-historical-review-20261011/evidence/private-antibiotic-sources-v1/doxycycline-label-native-7.png",
+      "SHA256": "4839be093f25d45ef2ec760ccbb7bafe553bf9fce9a65a40a19bf032f2d5ac4b",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "nuzyra-label",
+      "PDFPage": 17,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-antibiotic-historical-review-20261011/evidence/private-antibiotic-sources-v1/nuzyra-label-native-17.png",
+      "SHA256": "fce4daae41ec77a11a2c960ef24beae75ff105c7b4367740389f117527fe3d9b",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "cipro-label",
+      "PDFPage": 9,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-antibiotic-historical-review-20261011/evidence/private-antibiotic-sources-v1/cipro-label-native-9.png",
+      "SHA256": "5cc03aa33a2da7d5e01a20ab9de229f3a0c812e82b1c007bb6f9f520a0db1cfd",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "source": "doxycycline-label",
+      "PDFPage": 8,
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-antibiotic-historical-review-20261011/evidence/private-antibiotic-sources-v1/doxycycline-label-native-8.png",
+      "SHA256": "da058a64acaf6f5b95eab427557bfb5f046b6c84139059ea275ac12153a90123",
+      "actualNativeReviewPassed": true
+    }
+  ],
+  "sourceNativePagesActuallyInspected": 38,
+  "privateSourceCatalog": [
+    {
+      "name": "cipro-label",
+      "URL": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=888dc7f9-ad9c-4c00-8d50-8ddfd9bd27c0",
+      "SHA256": "888deef77fefffecee5eb8581ab5485dd608395db66acc445c7ce54e8b12e646",
+      "pageCount": 70,
+      "nativeReviewPassed": false
+    },
+    {
+      "name": "baxdela-label",
+      "URL": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=fb77637a-88d9-4aea-958f-e270030ce30d",
+      "SHA256": "29c6fd3842fa357d7f4a2517dacba626ca5c395c0afffe7f3a4fef9c1aa6c326",
+      "pageCount": 44,
+      "nativeReviewPassed": false
+    },
+    {
+      "name": "moxifloxacin-label",
+      "URL": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=371ca7b2-c62d-ef4b-3076-890b385bfff8",
+      "SHA256": "cd94742c63f1a7f7335d832465bc5e15b8bc246e18e0cf92afb60fc462007089",
+      "pageCount": 54,
+      "nativeReviewPassed": false
+    },
+    {
+      "name": "minocycline-label",
+      "URL": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=87a137c6-dd53-44d3-ab49-ef78ebed35c8",
+      "SHA256": "733635c0e7eeab3b1992760d4ec5b54df65394cf6fc6821a920539dafe06246d",
+      "pageCount": 18,
+      "nativeReviewPassed": false
+    },
+    {
+      "name": "doxycycline-label",
+      "URL": "https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=10988250-b267-4f10-b264-5f127cc1ae18",
+      "SHA256": "f0fd81802a56eb3fc0eaa0bdb382d7d250b383c352eb89be7b3d6ffc3507bbef",
+      "pageCount": 16,
+      "nativeReviewPassed": false
+    },
+    {
+      "name": "nuzyra-label",
+      "URL": "https://www.nuzyra.com/nuzyra-pi.pdf",
+      "SHA256": "77c4c4c765a5433e6ff0e46abd940851f2f8f5182c13b3a56bb8a2bfe3363fa1",
+      "pageCount": 24,
+      "nativeReviewPassed": false
+    },
+    {
+      "name": "cdc-chlamydia",
+      "URL": "https://www.cdc.gov/std/treatment-guidelines/chlamydia.htm",
+      "SHA256": "02f8a9403dc31d017579132fa90c837e88d33b50d1fc96e4595cc6336cbf7895",
+      "format": "HTML",
+      "nativeReviewPassed": false
+    },
+    {
+      "name": "idsa-lyme",
+      "URL": "https://www.idsociety.org/practice-guideline/lyme-disease/",
+      "SHA256": "1b09b9406bda156ac669ab8cb0d7a1694ff3f097c69e4bea968faec6a46c23ab",
+      "format": "HTML",
+      "nativeReviewPassed": false
+    },
+    {
+      "name": "cdc-stewardship",
+      "URL": "https://www.cdc.gov/antibiotic-use/hcp/core-elements/hospital.html",
+      "SHA256": "0d7e2cb777998a370cc358aa34172e38643d228c8c51fcb86b34f73ff8e453d2",
+      "format": "HTML",
+      "nativeReviewPassed": false
+    },
+    {
+      "name": "book",
+      "SHA256": "5e60f0b3ce20601985515c259c9503bd7ee2681836efecf03906a7da3dddf6ef",
+      "nativeReviewPassed": false
+    }
+  ],
+  "sourceLimits": [
+    "Only listed 38 native pages inspected; unlisted PDF pages and retained CDC core-elements HTML are locating-only.",
+    "Book RxPrep2023 class teaching was cross-checked against retained primary labels; older blanket age/pregnancy/spacing/alternative rules were not newly adopted.",
+    "DailyMed labels contain different prescribing-information and medication-guide revision dates; no claim that all sections were revised together in 2026.",
+    "CDC chlamydia guidance is the 2021 STI guideline; Lyme guidance is the 2020 AAN/ACR/IDSA guideline, not a new 2026 guideline.",
+    "Omadacycline TetM mechanism data remain in vitro with clinical significance unknown.",
+    "No new numeric dosing, separation interval, pediatric age threshold, treatment duration, risk rate or automatic genetic test recommendation.",
+    "One delafloxacin lesson paragraph corrected consistently with the reviewed question; other teaching and embedded checks unchanged. No whole-module or chapter closure."
+  ],
+  "sourceFiles": {
+    "src/data/questionBanks/fluoroquinolonePharmacology.js": "0fce7ea66969615ffeb4dd6a19cc4a97fc3f29b42cfec11e91145f7416af67fe",
+    "src/data/questionBanks/tetracyclinePharmacology.js": "533c4fadc5ee05f0bf6f8d734847dac3ebc9bf6b01aeb73620a7e8c9487aa556",
+    "src/data/modules/fluoroquinolonePharmacology.js": "10ce15da3a5b483a45b695b4d5387e39897d191a4c5e7146f57844d9a81fca6a"
+  },
+  "lessonCorrections": [
+    {
+      "module": "fluoroquinolone-pharmacology",
+      "section": "agent-spectrum",
+      "heading": "Delafloxacin has a narrow labeled frame",
+      "before": "Delafloxacin has oral and intravenous labeling for acute bacterial skin and skin structure infection and community-acquired bacterial pneumonia, with activity against designated susceptible organisms including MRSA. That does not make it the preferred drug for every suspected MRSA infection.",
+      "after": "Delafloxacin has oral and intravenous labeling for adult acute bacterial skin and skin structure infection and community-acquired bacterial pneumonia caused by designated susceptible organisms. Its skin-infection indication includes MRSA and MSSA; its pneumonia indication lists S. aureus as MSSA isolates only. The MRSA skin-infection indication does not establish a labeled MRSA pneumonia indication or universal treatment preference.",
+      "sourcePages": [
+        "baxdela-label PDF4"
+      ]
+    }
+  ],
+  "invariants": {
+    "other230ModulesExact": true,
+    "otherQuestionsInTwoParentsExact": true,
+    "allOtherTeachingFiguresEmbeddedChecksReferencesExact": true,
+    "selected30WholeObjectsExact": true,
+    "other1183CumulativePoolObjectsExact": true,
+    "oneDerivedPoolAliasUpdatedFromReviewedParent": true,
+    "stableIdsKeysAndAnchorsPreserved": true
+  },
+  "actualRenderedQuestionReviewPassed": false,
+  "productionLiveVerified": false,
+  "wholeModuleVerified": false,
+  "wholeChapterVerified": false,
+  "wholeGoalComplete": false,
+  "derivedCumulativeAlias": {
+    "before": {
+      "id": "cumulative-fluoroquinolone-pharmacology-fluoroquinolone-pharmacology-001",
+      "lesson": "target-structure",
+      "question": "Which principle best characterizes quinolone pharmacophore?",
+      "choices": [
+        "The 4-quinolone-3-carboxylate core coordinates the bacterial type II topoisomerase DNA cleavage complex",
+        "A susceptible result predicts likely efficacy only with the associated organism, site, and recommended exposure",
+        "Enteral nutrition and mineral content can reduce oral fluoroquinolone exposure, while some suspensions create tube-specific handling problems",
+        "Fluoroquinolones can exacerbate muscle weakness in myasthenia gravis and are generally avoided in known disease"
+      ],
+      "answer": 0,
+      "rationale": "A common pharmacophore creates a class mechanism, while substitutions create meaningful agent differences",
+      "reviewHref": "/learn/pharmacy/modules/fluoroquinolone-pharmacology",
+      "module": "Fluoroquinolone Pharmacology"
+    },
+    "after": {
+      "id": "cumulative-fluoroquinolone-pharmacology-fluoroquinolone-pharmacology-001",
+      "lesson": "target-structure",
+      "question": "Which statement correctly connects the fluoroquinolone scaffold with its antibacterial target?",
+      "choices": [
+        "The quinolone framework supports inhibition of bacterial DNA gyrase and topoisomerase IV; substitutions help distinguish individual agents.",
+        "The quinolone framework makes these agents inhibitors of bacterial 30S ribosomal protein synthesis.",
+        "A shared quinolone framework establishes identical spectrum, exposure, and safety for every agent.",
+        "The quinolone framework makes these agents inhibitors of bacterial cell-wall synthesis."
+      ],
+      "answer": 0,
+      "rationale": "Fluoroquinolones inhibit bacterial DNA gyrase and topoisomerase IV, enzymes involved in DNA processes. Native ciprofloxacin and delafloxacin structures show the related quinolone framework with different substituents. A shared scaffold and target do not establish clinical interchangeability.",
+      "reviewHref": "/learn/pharmacy/modules/fluoroquinolone-pharmacology",
+      "module": "Fluoroquinolone Pharmacology"
+    },
+    "idKeyOrderModuleAndReviewHrefPreserved": true,
+    "sourceQuestionId": "fluoroquinolone-pharmacology-001",
+    "sourcePages": [
+      "book PDF350,360",
+      "cipro-label PDF35,41",
+      "baxdela-label PDF17,21"
+    ],
+    "activeSelected30Unchanged": true
+  }
+}
