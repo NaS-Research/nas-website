@@ -1,6 +1,6 @@
 {
-  "status": "source_build_and_actual_native_passed_public_pending",
-  "checkedUTC": "2026-10-11T13:08:52.368576+00:00",
+  "status": "verified_scoped_public_release",
+  "checkedUTC": "2026-10-11T13:14:33.839578+00:00",
   "modules": [
     "vancomycin-pharmacology",
     "fidaxomicin-pharmacology",
@@ -203,6 +203,29 @@
   "olderVancomycinBodyDifferencesPendingPublicReconciliation": 4,
   "wholeModuleVerified": false,
   "wholeChapterVerified": false,
-  "productionLiveVerified": false,
-  "wholeGoalComplete": false
+  "productionLiveVerified": true,
+  "wholeGoalComplete": false,
+  "release": {
+    "mainCommit": "24ceff056ae52f4862cf47afc3e5dedff28357f8",
+    "exactRemoteMainVerified": true,
+    "auditReviewCommit": "525fdf9cf51ac1ed38a001a382e06974ff77270f",
+    "liveBrowserPassed": true,
+    "publicCapturesRGBIdenticalToActuallyInspectedMain": 36,
+    "extraPublicDifferences": 0,
+    "newestFirstAndSearchRelevanceVerified": true
+  },
+  "remainingPrimaryLocatingRowsAfterScopedRelease": 22,
+  "limits": "Seven whole questions and one associated cumulative-pool copy only. Remaining parent questions, teaching, figures, checks and full-module/chapter coverage remain open. Whole counts68/232 and7/82 unchanged. Older31Audit questions and4vancomycin bodies still require their own public reconciliation; no assertion they were published in this unit.",
+  "indexPreservation": {
+    "currentRealIndexPreservedFromPublicationRetry": true,
+    "baselineChangeReceiptSHA256": "80d0560ba2c38714f5ec5a871070bf2c08d235e0625b861e45a6178358e7f131",
+    "priorIndexBytesUnchangedNotClaimed": true
+  },
+  "evidenceHashes": {
+    "browser-cdi-primary-live-v1.json": "590788399291987da37e730851a0b0f3686ef30c45f96bdec45b3129998a4e0e",
+    "public-pixel-comparison-cdi-primary-v1.json": "4e69147d3d853c581747bc25ec2bf2452152ed1df2eea75d3f8604a3bb9c8e44",
+    "actual-native-cdi-primary-complete-v1.json": "d0fb217290f2b52ef6aac8fb725802938926d57a884ad420124152b209f496d2",
+    "cdi-primary-question-review-v1.json": "644cac605f9b665be4f54963701790726417aaf04292dea3126bcd8ccadde455",
+    "main-integration-cdi-primary-v2.json": "9d83ddd75e9e723c6edd02014457602c6eb17f422afc89efd9b0ca7b1f53371b"
+  }
 }
