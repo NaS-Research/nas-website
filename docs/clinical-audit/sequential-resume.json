@@ -70,10 +70,11 @@
       ],
       "allTextAndVisualRead": true,
       "status": "reviewing",
-      "note": "PN calculations,adult PN,pediatric PN,calcium/phosphorus,acid-base and fluid parent are fully verified. Remaining EN/nutrition assessment and chapter/checklist requirements require exact current inventory reconciliation.",
+      "note": "PN calculations, adult and pediatric PN, calcium/phosphorus, acid-base, fluid parent and nutrition screening/assessment are whole-module verified. Remaining EN/broader feeding and chapter/checklist requirements still need exact current reconciliation.",
       "verifiedModules": [
         "parenteral-nutrition-calculations",
-        "parenteral-nutrition"
+        "parenteral-nutrition",
+        "nutrition-screening-assessment"
       ]
     },
     "completedEntries": 14,
@@ -88,8 +89,8 @@
     "dependencyChapter": 11,
     "dependencyPrintedPage": 150,
     "dependencyPdfPage": 158,
-    "sectionAudit": "Complete canonical ECG ischemia/electrolytes/drugs lesson compared with the selected supplied-book and authorized primary source sections: seven teaching bodies and retained teaching metadata, embedded check/all four choices, four-panel diagram, and twenty whole questions/all eighty choices. Revised isolated ST-elevation and diagnostic-pattern distinctions; broad ST-T differential; variable potassium findings without a mandatory sequence; potassium/magnesium context; QT versus QU and T-wave endpoint uncertainty; QRS-related QT lengthening versus delayed repolarization; and patient/exposure benefit-risk judgment. One associated cumulative derivative reconciled. All 120 module IDs/order/keys/correct-answer texts/anchors and all 1184 cumulative IDs/order/keys/correct-answer texts/links preserved. Other five whole ECG lessons, 100 whole ECG questions, 231 whole modules and 1183 whole cumulative objects exact. Build, structural preservation, grading/link checks and all 126 actually viewed product renderings passed. No question addition/removal, new numerical dose, threshold, formula or universal monitoring schedule. Native source review is limited to the specifically recorded pages, figures and sections. AHA2025 figure9 and AHA2021 native slides remain uncertified; no inaccessible-visual claim adopted. Whole parent/dependency modules, chapters and full goal remain open.",
-    "nextAction": "Continue Chapter1 entry15 / Chapter11 feeding dependency review. Three HAP/VAP prevention distractor clauses017/065/113 are now publicly corrected; whole-question claims remain open. Continue source qualification of historical feeding statements, retained/current secondary candidates and nutrition assessment. Reconcile older41 Audit question differences,31 separate CDI question differences and4 vancomycin bodies using exact source/native/public evidence. Preserve all originals, IV-fluid checkpoint and selected30/10bank. Complete all82 chapters and232 modules.",
+    "sectionAudit": "Most recent completed dependency: whole nutrition-screening-assessment module;105 complete questions,420 choices,six whole lessons/checks/figures,15 references and30 independent calculations source/product/live verified. The determining-fluid-needs checklist entry and broader Chapter11 work remain open.",
+    "nextAction": "Continue Chapter1 entry15 / Chapter11 feeding dependency from the preserved sequential checkpoint. Nutrition assessment is now whole-module source/product/live verified. Reconcile its newly exact whole-object bindings with retained/current feeding inventories, then resume the earliest unfinished historical/secondary feeding claim. Preserve the IV-fluid checkpoint, all originals, current232 modules and selected30/10 review; all82 chapters remain in scope. Other104 historical whole-question claims and older Audit/public differences are not closed by this nutrition review.",
     "nextDependencyPrintedPage": 161,
     "nextDependencyPdfPage": 169
   },
@@ -176,14 +177,17 @@
       "scope": "Original working ledger marks only; mixed original runtime not certified."
     },
     "committedModuleLedger": {
-      "markedVerified": 68,
+      "markedVerified": 69,
       "total": 232,
-      "moduleCountPercent": 29.31
+      "moduleCountPercent": 29.74
     },
-    "interpretation": "68/232whole modules and7/82chapters remain verified. Three nonkeyed prevention clauses publicly verified; no whole-question, module or chapter closure. All104 historical whole-question qualifications remain pending. Secondary semantics, nutrition assessment and older Audit/public reconciliation remain open. Combined30/10 retained.",
-    "checkedAt": "2026-10-11T16:09:00.812727+00:00"
+    "interpretation": "69/232 whole modules and7/82 chapters verified. All105 nutrition-assessment whole questions and six complete lessons are now source/product/live verified. Remaining broader feeding semantics, historical whole questions and older Audit/public differences remain open. Selected30/10 retained.",
+    "checkedAt": "2026-10-11T18:07:14.767728+00:00",
+    "wholeModulesVerified": 69,
+    "wholeModulesTotal": 232,
+    "moduleCountPercent": 29.74
   },
-  "lastVerifiedLogicalUnit": "Three HAP/VAP prevention distractor clauses source reconciled and Main df54257a96c12caf32af184c2d8a395652f0eafa publicly verified against all16 actually inspected desktop/mobile captures. Whole question/parent/chapter requirements remain open.",
+  "lastVerifiedLogicalUnit": "Complete nutrition screening/assessment/malnutrition module,105 whole questions and six complete lessons, source/product/Main 7413f7fb32b6d4d20c1a3427e89a11b084e9b99f verified. Lifecycle archive remains the final preservation gate.",
   "lastVerifiedSections": {
     "enteral-nutrition": {
       "evidence": "enteral-nutrition-renal-solute-review.json",
@@ -39256,8 +39260,8 @@
     }
   },
   "currentNutritionAssessmentWholeReview": {
-    "status": "whole_nutrition_source_build_product_review_passed_live_archive_pending",
-    "checkedUTC": "2026-10-11T17:51:18.317568+00:00",
+    "status": "whole_nutrition_module_source_product_and_live_verified_archive_pending",
+    "checkedUTC": "2026-10-11T18:07:14.767728+00:00",
     "scope": "Whole nutrition assessment module:105 complete questions and420 choices; six whole lessons, six figures, six embedded checks, metadata and15 references. All30 independent calculations passed. Retained care-plan source proof remains exact.",
     "questionCount": 105,
     "lessonCount": 6,
@@ -39268,15 +39272,77 @@
     "allExistingMainPoolIDsRetained": true,
     "selected30Exact": true,
     "other231ModulesExact": true,
-    "productionLiveVerified": false,
-    "fullModuleVerified": false,
+    "productionLiveVerified": true,
+    "fullModuleVerified": true,
     "wholeChapterVerified": false,
     "wholeGoalComplete": false,
     "mainBase": "df54257a96c12caf32af184c2d8a395652f0eafa",
     "pending": [
-      "Actual production inspection",
-      "Updated completion ledgers and fully verified external lifecycle archive"
+      "Fully verified external lifecycle archive"
     ],
-    "evidence": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/nutrition-assessment-source-review-20261011/evidence/nutrition-whole-source-inventory-v2.json"
+    "mainCommit": "7413f7fb32b6d4d20c1a3427e89a11b084e9b99f",
+    "auditReviewCommit": "eda016c6ff3e9bb9f2a9fcfcc04bb9e416b90b38",
+    "sourceReviewedOrExactRetainedWholeQuestions": 105,
+    "individualChoiceReviewCount": 420,
+    "wholeLessonCount": 6,
+    "wholeFigureCount": 6,
+    "embeddedCheckCount": 6,
+    "referenceCount": 15,
+    "independentCalculations": 30,
+    "actualNativeCapturesViewed": 33,
+    "publicCapturesRGBIdentical": 126,
+    "publicLearningContentCapturesRGBIdentical": 129,
+    "localizedHeaderLogoDifferencesReviewed": 3,
+    "newestFirstAndSearchRelevanceVerified": true,
+    "evidenceSHA256": {
+      "nutrition-whole-source-inventory-v2.json": "a5a4aabf05c0af93a063bb0ae28d8d78ef5a5d991e472cdeffb0cc88db978a6b",
+      "nutrition-main-integration-v2.json": "20ba2758e9172ea73cdf9824d8bd399d0ac2368d0847f7b44787dde26eb90851",
+      "browser-nutrition-live-v4.json": "c18078c0c0020a121186621560d427cd7656cbd62844ad3c995ec1c7f323fce6",
+      "nutrition-live-pixel-comparison-v2.json": "b85b305be6fdf76c56f18e16407f3e67f0f86b25cd9ce797c6903626816ff3e0",
+      "nutrition-main-owner-native-v1.json": "2e92151a33ae1f86d31ddd485bf69814866cc3638d32f606b5123fd468db6f3a"
+    }
+  },
+  "latestNutritionAssessmentWholeModuleRelease": {
+    "status": "whole_nutrition_module_source_product_and_live_verified_archive_pending",
+    "checkedUTC": "2026-10-11T18:07:14.767728+00:00",
+    "scope": "Whole nutrition assessment module:105 complete questions and420 choices; six whole lessons, six figures, six embedded checks, metadata and15 references. All30 independent calculations passed. Retained care-plan source proof remains exact.",
+    "questionCount": 105,
+    "lessonCount": 6,
+    "sourceInventorySHA256": "a5a4aabf05c0af93a063bb0ae28d8d78ef5a5d991e472cdeffb0cc88db978a6b",
+    "mainProductProofSHA256": "49e85234605459a52ff8a89eef50c01c322feb2abd4c1f2d99dc2a4ac532cc06",
+    "nativeReviewSHA256": "2e92151a33ae1f86d31ddd485bf69814866cc3638d32f606b5123fd468db6f3a",
+    "nativeCapturesActuallyViewed": 33,
+    "allExistingMainPoolIDsRetained": true,
+    "selected30Exact": true,
+    "other231ModulesExact": true,
+    "productionLiveVerified": true,
+    "fullModuleVerified": true,
+    "wholeChapterVerified": false,
+    "wholeGoalComplete": false,
+    "mainBase": "df54257a96c12caf32af184c2d8a395652f0eafa",
+    "pending": [
+      "Fully verified external lifecycle archive"
+    ],
+    "mainCommit": "7413f7fb32b6d4d20c1a3427e89a11b084e9b99f",
+    "auditReviewCommit": "eda016c6ff3e9bb9f2a9fcfcc04bb9e416b90b38",
+    "sourceReviewedOrExactRetainedWholeQuestions": 105,
+    "individualChoiceReviewCount": 420,
+    "wholeLessonCount": 6,
+    "wholeFigureCount": 6,
+    "embeddedCheckCount": 6,
+    "referenceCount": 15,
+    "independentCalculations": 30,
+    "actualNativeCapturesViewed": 33,
+    "publicCapturesRGBIdentical": 126,
+    "publicLearningContentCapturesRGBIdentical": 129,
+    "localizedHeaderLogoDifferencesReviewed": 3,
+    "newestFirstAndSearchRelevanceVerified": true,
+    "evidenceSHA256": {
+      "nutrition-whole-source-inventory-v2.json": "a5a4aabf05c0af93a063bb0ae28d8d78ef5a5d991e472cdeffb0cc88db978a6b",
+      "nutrition-main-integration-v2.json": "20ba2758e9172ea73cdf9824d8bd399d0ac2368d0847f7b44787dde26eb90851",
+      "browser-nutrition-live-v4.json": "c18078c0c0020a121186621560d427cd7656cbd62844ad3c995ec1c7f323fce6",
+      "nutrition-live-pixel-comparison-v2.json": "b85b305be6fdf76c56f18e16407f3e67f0f86b25cd9ce797c6903626816ff3e0",
+      "nutrition-main-owner-native-v1.json": "2e92151a33ae1f86d31ddd485bf69814866cc3638d32f606b5123fd468db6f3a"
+    }
   }
 }
