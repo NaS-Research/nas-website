@@ -36163,7 +36163,8 @@
         "enteral-nutrition-broader-meningitis-hap-review.json",
         "fluid-broader-meningitis-support-review.json",
         "ceftriaxone-neonatal-live-release-review.json",
-        "final-primary-live-release-review.json"
+        "final-primary-live-release-review.json",
+        "meningitis-historical-live-release-review.json"
       ],
       "broaderEnteralAdministrationReview": {
         "evidence": "enteral-nutrition-broader-meningitis-hap-review.json",
@@ -36375,6 +36376,17 @@
         ],
         "productionLiveVerified": true,
         "mainCommit": "266ece8b784eb07862d618ba6c28d91f1cb487cc",
+        "wholeModuleVerified": false
+      },
+      "historicalMeningitisScopedReview": {
+        "evidence": "meningitis-historical-live-release-review.json",
+        "verifiedQuestionIds": [
+          "acute-bacterial-meningitis-027",
+          "acute-bacterial-meningitis-059",
+          "acute-bacterial-meningitis-143"
+        ],
+        "productionLiveVerified": true,
+        "mainCommit": "98ccee789e5358ba059904e4100355e6517f3ac1",
         "wholeModuleVerified": false
       }
     },

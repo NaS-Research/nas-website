@@ -1,14 +1,14 @@
 {
-  "status": "nine_lefamulin_historical_questions_live_qualified_remaining55_open",
-  "checkedUTC": "2026-10-11T21:43:18.831061+00:00",
+  "status": "three_meningitis_historical_questions_live_qualified_remaining52_open",
+  "checkedUTC": "2026-10-11T22:13:15.384372+00:00",
   "sourceHEAD": "a403e8e2da7679186f4244847635a73c400d7633",
   "scope": "All current232 modules and whole bank fields, historical233 rows, focused416 and secondary2046 retained rows. Rebuild locating inventory, compare exact whole objects and bind48 completed source/render/live releases. Keyword results and retained ID labels are not clinical qualification.",
   "modules": 232,
   "wholeBankObjects": 28012,
   "selectedCumulativeWholeObjectsExact": true,
   "priorRegistryIds": 1510,
-  "retainedExactPublishedWholeQuestionBindings": 313,
-  "registryIdsAfter": 1821,
+  "retainedExactPublishedWholeQuestionBindings": 316,
+  "registryIdsAfter": 1824,
   "archives": [
     {
       "path": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/archives/feeding-primary-nutrition-question-review-20261011",
@@ -716,10 +716,10 @@
     "retainedSecondaryRows": 2046,
     "currentFocusedRows": 405,
     "currentSecondaryLocatingRows": 1881,
-    "priorUnregisteredHistoricalStillPending": 55,
-    "historicalCurrentExactReleaseBindings": 77,
-    "historicalPriorUnregisteredNowExactBound": 75,
-    "changedWholeObjectsWithoutCurrentExactReleaseBinding": 36
+    "priorUnregisteredHistoricalStillPending": 52,
+    "historicalCurrentExactReleaseBindings": 80,
+    "historicalPriorUnregisteredNowExactBound": 78,
+    "changedWholeObjectsWithoutCurrentExactReleaseBinding": 35
   },
   "currentPrimaryQuestionInventory": {
     "originalRows": 48,
@@ -739,9 +739,9 @@
   "newWholeModuleOrChapterClosures": 0,
   "wholeGoalComplete": false,
   "additionalArchivedQuestionBindings": 111,
-  "newRegistryIdsAddedThisPhase": 9,
+  "newRegistryIdsAddedThisPhase": 3,
   "ownEnteralQuestionHashesReconciled": 108,
-  "newClinicalQuestionCertifications": 9,
+  "newClinicalQuestionCertifications": 3,
   "additionalProof": [
     {
       "path": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/archives/fluid-parent-closure-reconciliation-20261011",
@@ -770,7 +770,6 @@
     }
   ],
   "remainingHistoricalUnregisteredPendingByModule": {
-    "acute-bacterial-meningitis": 3,
     "hospital-ventilator-associated-pneumonia": 3,
     "clostridioides-difficile-infection": 12,
     "rickettsial-ehrlichial-anaplasma-infections": 6,
@@ -782,12 +781,6 @@
     "cytomegalovirus-pharmacotherapy": 3
   },
   "changedWithoutCurrentExactReleaseBinding": [
-    {
-      "module": "acute-bacterial-meningitis",
-      "id": "acute-bacterial-meningitis-143",
-      "priorStatus": "whole-question review not registered; requires source review",
-      "newReleaseExactBinding": false
-    },
     {
       "module": "clinical-drug-interactions",
       "id": "clinical-drug-interactions-017",
@@ -1844,5 +1837,152 @@
     ],
     "remainingHistoricalQuestions": 55,
     "limits": "Nine whole questions/36 choices only. No whole module or chapter closure. Older Audit differences remain preserved and are not published here. The selected30remain exact; no cumulative pool objects changed; all1184pool objects remain exact."
+  },
+  "latestHistoricalMeningitisRelease": {
+    "status": "verified_scoped_public_release",
+    "checkedUTC": "2026-10-11T22:13:15.384372+00:00",
+    "questionIds": [
+      "acute-bacterial-meningitis-027",
+      "acute-bacterial-meningitis-059",
+      "acute-bacterial-meningitis-143"
+    ],
+    "wholeQuestionsReviewed": 3,
+    "revisedQuestions": 2,
+    "retainedQuestions": 1,
+    "individualChoicesReviewed": 12,
+    "sourceNativePagesActuallyInspected": 13,
+    "mainBase": "ddf723eac25e1da6142d7d6c0d008aa85c1242de",
+    "nativeCapturesActuallyInspected": 16,
+    "evidenceSHA256": {
+      "meningitis-qualified-review-v2.json": "8df626f8f1012776a955e5061a447f6fbe393880d698fd2ae537b99a0a4ed68a",
+      "main-integration-meningitis-v1.json": "c25ea145e00c270d1b30b1345ce4085166e1b1e8afc5a071ce0d4011bf013453",
+      "browser-meningitis-main-v1.json": "37d2359d2c8710c50c834ce92a8a62be4a7c362790c0c8629ad6771146789ce6",
+      "actual-native-meningitis-complete-v1.json": "54d39a694df63456d89df632544d2a95923e0f4789f9834370f2a10cc8fe6a83",
+      "browser-meningitis-live-v1.json": "f17e8d91a9c6850ff3c6677ad03e5f146976a38df2e3c276794c326059356537",
+      "public-pixel-comparison-meningitis-v1.json": "cb9b7746e7a61bc344e0118c0913904b8f4e21fa169dc86edd2d18be6a743cd1",
+      "original-preservation-meningitis-v1.json": "cea95af3888ea79394e4fa989ee862715311ef9bbcafb24766e622eac008ce76"
+    },
+    "selected30WholeObjectsExact": true,
+    "entireCumulativePoolExact": true,
+    "other231ModulesExact": true,
+    "wholeModulesVerified": 69,
+    "chaptersVerified": 7,
+    "wholeModuleVerified": false,
+    "wholeChapterVerified": false,
+    "productionLiveVerified": true,
+    "wholeGoalComplete": false,
+    "release": {
+      "mainCommit": "98ccee789e5358ba059904e4100355e6517f3ac1",
+      "auditReviewCommit": "3e3cb6ba80af66ebb97ba6bbd1526fa2b5b2e6e3",
+      "exactRemoteMainVerified": true,
+      "liveBrowserPassed": true,
+      "publicCapturesRGBIdenticalToActuallyInspectedMain": 16,
+      "extraPublicDifferences": 0,
+      "newestFirstAndSearchRelevanceVerified": true
+    },
+    "olderAuditDifferencesPreserved": [
+      {
+        "id": "acute-bacterial-meningitis-081",
+        "status": "older_audit_difference_preserved_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "id": "acute-bacterial-meningitis-082",
+        "status": "older_audit_difference_preserved_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "id": "acute-bacterial-meningitis-084",
+        "status": "older_audit_difference_preserved_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "id": "acute-bacterial-meningitis-096",
+        "status": "older_audit_difference_preserved_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "id": "acute-bacterial-meningitis-129",
+        "status": "older_audit_difference_preserved_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "id": "acute-bacterial-meningitis-130",
+        "status": "older_audit_difference_preserved_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "id": "acute-bacterial-meningitis-131",
+        "status": "older_audit_difference_preserved_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "id": "acute-bacterial-meningitis-132",
+        "status": "older_audit_difference_preserved_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "id": "acute-bacterial-meningitis-133",
+        "status": "older_audit_difference_preserved_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "id": "acute-bacterial-meningitis-134",
+        "status": "older_audit_difference_preserved_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "id": "acute-bacterial-meningitis-135",
+        "status": "older_audit_difference_preserved_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "id": "acute-bacterial-meningitis-136",
+        "status": "older_audit_difference_preserved_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "id": "acute-bacterial-meningitis-137",
+        "status": "older_audit_difference_preserved_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "id": "acute-bacterial-meningitis-138",
+        "status": "older_audit_difference_preserved_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "id": "acute-bacterial-meningitis-139",
+        "status": "older_audit_difference_preserved_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "id": "acute-bacterial-meningitis-140",
+        "status": "older_audit_difference_preserved_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "id": "acute-bacterial-meningitis-141",
+        "status": "older_audit_difference_preserved_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "id": "acute-bacterial-meningitis-142",
+        "status": "older_audit_difference_preserved_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "id": "acute-bacterial-meningitis-144",
+        "status": "older_audit_difference_preserved_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "id": "acute-bacterial-meningitis-170",
+        "status": "older_audit_difference_preserved_not_published_here",
+        "absentFromMain": false
+      }
+    ],
+    "remainingHistoricalQuestions": 52,
+    "limits": "Three whole questions/12 choices (two revised, one retained) only. No whole module or chapter closure. Unreviewed older Audit differences remain preserved and are not published here; the previously revised follow-up question143 is part of this freshly reviewed release. The selected30remain exact; no cumulative pool objects changed; all1184pool objects remain exact."
   }
 }
