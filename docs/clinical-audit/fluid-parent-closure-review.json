@@ -1,6 +1,6 @@
 {
-  "status": "qualified_parent_release_pending",
-  "checkedUTC": "2026-10-11T08:56:07.607026+00:00",
+  "status": "verified_whole_module",
+  "checkedUTC": "2026-10-11T09:07:24.674245+00:00",
   "moduleSlug": "fluid-electrolyte-therapy",
   "wholeLessons": 7,
   "teachingBodies": 84,
@@ -32,8 +32,21 @@
     "actual-native-review-v5.json": "9c67198b5fcdd30a4795d88391de792dec45f2317af95048ea4b62949e249536",
     "main-integration-fluid-v3.json": "8e8ee7816b8413b507800fc6d2199fc88fbe8527760c5252b6a5c6fd51246379"
   },
-  "wholeModuleVerified": false,
+  "wholeModuleVerified": true,
   "wholeChapterVerified": false,
   "wholeGoalComplete": false,
-  "release": "Exact branch push and production live verification pending"
+  "release": {
+    "mainCommit": "dd315eb7dd572b1abd5db3d3ed6f3408d287f2d3",
+    "exactRemoteMainVerified": true,
+    "production": "passed_managed_live_content_and_visual_comparison",
+    "publicNativeRGBIdenticalCount": 210,
+    "publicNativeDifferentCount": 31,
+    "auditReviewCommit": "85816584741ceb50da0a5daac6aaf92f4db2df43"
+  },
+  "committedWholeModulesVerifiedAfter": 68,
+  "committedWholeModulesTotal": 232,
+  "moduleCountPercent": 29.31,
+  "chaptersVerifiedAfter": 7,
+  "chapterTotal": 82,
+  "limits": "Only this whole fluid parent is closed. No blanket certification of all dependency modules, retained cumulative pool, keyword matches, Chapter11 or the full82-chapter goal."
 }

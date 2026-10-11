@@ -127,7 +127,7 @@
         }
       ],
       "questions": 110,
-      "status": "reviewing",
+      "status": "verified",
       "evidence": [
         "enteral-nutrition-broader-fluid-intake-loss-review.json",
         "fluid-physiology-assessment-review.json",
@@ -155,7 +155,8 @@
         "fluid-broader-trimethoprim-electrolytes-review.json",
         "fluid-broader-cirrhosis-continuity-review.json",
         "fluid-broader-clinical-interactions-review.json",
-        "fluid-broader-ecg-electrolytes-review.json"
+        "fluid-broader-ecg-electrolytes-review.json",
+        "fluid-parent-closure-review.json"
       ],
       "latestFluidIntakeLossReview": {
         "evidence": "enteral-nutrition-broader-fluid-intake-loss-review.json",
@@ -3029,6 +3030,59 @@
           "exactRemoteObservedByTool": true,
           "remoteVerifiedAt": "2026-10-09T10:16:39.425616+00:00"
         }
+      },
+      "wholeModuleVerified": true,
+      "latestFluidParentClosureReview": {
+        "status": "verified_whole_module",
+        "checkedUTC": "2026-10-11T09:07:24.674245+00:00",
+        "moduleSlug": "fluid-electrolyte-therapy",
+        "wholeLessons": 7,
+        "teachingBodies": 84,
+        "embeddedChecks": 7,
+        "embeddedChoices": 28,
+        "figures": 7,
+        "questions": 110,
+        "questionChoices": 440,
+        "referenceEntries": 38,
+        "combinedBankTotal": 30,
+        "combinedBankPerAttempt": 10,
+        "allOther231ModulesExact": true,
+        "existingPoolIdsPreserved": true,
+        "published30WholeObjectsPreserved": true,
+        "directDependenciesQualified": 100,
+        "nativeCapturesActuallyInspected": 241,
+        "nativeRepresentativeQuestions": 22,
+        "all110QuestionsDOMVerifiedDesktopMobile": true,
+        "mainSourceHashes": {
+          "src/data/modules/fluidElectrolyteTherapy.js": "365fae6c0aa64f2c7608ed835c92f0252eeca7d075543e0d942d8238455b3d54",
+          "src/data/questionBanks/fluidElectrolyteTherapy.js": "f13b06c2b3398c92e50e90a6756d997ade7b8e2cecca32dfb65ee714c7c7c07a",
+          "src/components/learn/FluidElectrolyteVisual.jsx": "3d085c9a6cb7a124d07125f2ab2447416389fd4367e1eb29013f39853f23894a",
+          "src/data/pharmacyCumulativeReview.js": "9f3ecadcc0ff9a325be76bb19907c354dac92be3470db3dc3d94219a2295cef2"
+        },
+        "mainBase": "fc3818e649edda4fa41f2f270607fc79cd7af47e",
+        "externalEvidence": {
+          "qualified-fluid-parent-bank-continuity-v1.json": "f0f19e451d9385d87a2c777c849936cd1422e4a2e626e5d07090b30421ce924b",
+          "qualified-figure-source-continuity-v1.json": "d207db30c23d55755176f2204c5cd0dde7015e7c3ce0ec85eaa4c818c1e11b89",
+          "actual-native-review-v5.json": "9c67198b5fcdd30a4795d88391de792dec45f2317af95048ea4b62949e249536",
+          "main-integration-fluid-v3.json": "8e8ee7816b8413b507800fc6d2199fc88fbe8527760c5252b6a5c6fd51246379"
+        },
+        "wholeModuleVerified": true,
+        "wholeChapterVerified": false,
+        "wholeGoalComplete": false,
+        "release": {
+          "mainCommit": "dd315eb7dd572b1abd5db3d3ed6f3408d287f2d3",
+          "exactRemoteMainVerified": true,
+          "production": "passed_managed_live_content_and_visual_comparison",
+          "publicNativeRGBIdenticalCount": 210,
+          "publicNativeDifferentCount": 31,
+          "auditReviewCommit": "85816584741ceb50da0a5daac6aaf92f4db2df43"
+        },
+        "committedWholeModulesVerifiedAfter": 68,
+        "committedWholeModulesTotal": 232,
+        "moduleCountPercent": 29.31,
+        "chaptersVerifiedAfter": 7,
+        "chapterTotal": 82,
+        "limits": "Only this whole fluid parent is closed. No blanket certification of all dependency modules, retained cumulative pool, keyword matches, Chapter11 or the full82-chapter goal."
       }
     },
     {
