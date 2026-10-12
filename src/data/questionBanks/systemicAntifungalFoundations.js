@@ -143,5 +143,135 @@ const sourceReviewedExposureQuestions = {
     "rationale": "Review the formulation, meal conditions, acid-suppressing medicines and actual delivery route, including tube feeds, and assess mucositis, nausea, swallowing, access and adherence as barriers to completing the plan. Use teach-back to check understanding of the exact product and its instructions, including permitted manipulation and the proper measuring device. This is an educational way to check the labeled administration plan, not a claim that FDA mandates teach-back or that it guarantees absorption. NOXAFIL labeling distinguishes whole tablets, conventional suspension meal and spoon instructions, and PowderMix kit-specific preparation. Ingredient-only review, omission of intake barriers, and assuming a written order proves administration all miss that assessment."
   }
 };
-export const systemicAntifungalFoundationsQuestionBank = priorExposureReviewQuestionBank.map((question) => sourceReviewedExposureQuestions[question.id] ? { ...question, ...sourceReviewedExposureQuestions[question.id] } : question);
+const beforeDiagnosticHistoricalQuestionBank = priorExposureReviewQuestionBank.map((question) => sourceReviewedExposureQuestions[question.id] ? { ...question, ...sourceReviewedExposureQuestions[question.id] } : question);
+
+const diagnosticHistoricalQuestionOverrides = {
+  "antifungal-foundations-005": {
+    "id": "antifungal-foundations-005",
+    "lesson": "fungal-architecture",
+    "question": "Which principle best characterizes Candida yeasts?",
+    "choices": [
+      "Candida can colonize body surfaces, so identifying yeast does not by itself establish invasive infection",
+      "Any Candida identified on a body surface proves invasive candidiasis",
+      "Candida is always a contaminant, including when recovered from a normally sterile site",
+      "The specimen site and host context cannot change the clinical meaning of a Candida result"
+    ],
+    "answer": 0,
+    "rationale": "Candida may be normal flora or cause disease. Interpret its recovery with the specimen compartment, host and clinical evidence; a surface finding alone neither proves invasion nor establishes that every sterile-site finding is contamination.",
+    "reviewHref": "#fungal-architecture"
+  },
+  "antifungal-foundations-007": {
+    "id": "antifungal-foundations-007",
+    "lesson": "fungal-architecture",
+    "question": "Which assessment best helps distinguish Candida colonization from invasive disease?",
+    "choices": [
+      "Assess species, specimen site, host, devices, symptoms, and sterile-site evidence",
+      "Treat every positive surface culture as invasive disease without reviewing the patient",
+      "Ignore the sampled compartment once the laboratory identifies Candida",
+      "Exclude invasive disease solely because Candida can be normal flora"
+    ],
+    "answer": 0,
+    "rationale": "The book separates colonization from invasive disease using anatomy and host context. Review symptoms, risk factors and the quality and site of the evidence rather than treating every surface isolate or excluding invasion because Candida can colonize. Respiratory isolation usually represents colonization; culture alone is insufficient to diagnose Candida pneumonia.",
+    "reviewHref": "#fungal-architecture"
+  },
+  "antifungal-foundations-045": {
+    "id": "antifungal-foundations-045",
+    "lesson": "diagnostic-evidence",
+    "question": "Which statement best describes serum beta-D-glucan in suspected invasive fungal infection?",
+    "choices": [
+      "It is an adjunctive marker for several fungal infections, with limited specificity and important false-positive contexts",
+      "A positive result identifies Candida species and the infected organ",
+      "A positive result alone definitively establishes invasive candidiasis in every patient",
+      "A negative result excludes every invasive fungal infection regardless of prior therapy"
+    ],
+    "answer": 0,
+    "rationale": "IDSA describes serum beta-D-glucan as an adjunct to cultures, not a Candida-specific test. Several fungi can produce a positive result, and false positivity limits interpretation. Clinical context and other evidence remain necessary; prior antifungal treatment may reduce sensitivity, so a negative result is not a universal exclusion rule.",
+    "reviewHref": "#diagnostic-evidence"
+  },
+  "antifungal-foundations-047": {
+    "id": "antifungal-foundations-047",
+    "lesson": "diagnostic-evidence",
+    "question": "Which assessment is most appropriate when interpreting a serum beta-D-glucan result?",
+    "choices": [
+      "Review clinical probability, other evidence, prior antifungals, and possible false-positive exposures such as dialysis, glucan-containing materials, albumin or immunoglobulin",
+      "Assume a positive result is specific for Candida and omit review of other evidence",
+      "Ignore dialysis and glucan-containing materials because they cannot affect interpretation",
+      "Use a negative result to exclude infection without considering prior antifungal treatment"
+    ],
+    "answer": 0,
+    "rationale": "IDSA lists false-positive contexts including hemodialysis, albumin or immunoglobulin, glucan-containing materials, some infections and selected antibiotics. These are interpretation concerns, not a guarantee that every exposure produces a false positive. Consider pretest probability and corroborating evidence; prior antifungals can reduce test sensitivity.",
+    "reviewHref": "#diagnostic-evidence"
+  },
+  "antifungal-foundations-085": {
+    "id": "antifungal-foundations-085",
+    "lesson": "susceptibility-resistance",
+    "question": "Which statement best describes current C auris susceptibility criteria?",
+    "choices": [
+      "CLSI has a rezafungin-specific susceptible-only criterion, while CDC provides tentative criteria for several other drugs",
+      "No C auris-specific CLSI susceptibility criterion exists for any antifungal",
+      "One C auris breakpoint applies to every antifungal drug",
+      "CDC tentative criteria definitively predict clinical outcomes"
+    ],
+    "answer": 0,
+    "rationale": "Current CDC detailed guidance identifies a C auris-specific rezafungin susceptibility breakpoint. The CLSI newsletter describes it as susceptible-only, without intermediate or resistant categories. CDC criteria for several other drugs remain tentative, based on expert opinion and related species; their correlation with clinical outcomes is uncertain. Identify the drug and applicable criterion.",
+    "reviewHref": "#susceptibility-resistance"
+  },
+  "antifungal-foundations-086": {
+    "id": "antifungal-foundations-086",
+    "lesson": "susceptibility-resistance",
+    "question": "When using a CDC tentative C auris criterion, which clinical action is most appropriate?",
+    "choices": [
+      "Combine the drug-specific interpretation with identification quality, clinical response, public health guidance and expert consultation",
+      "Let the tentative category alone determine care regardless of clinical response",
+      "Apply the rezafungin criterion to every other antifungal",
+      "Stop susceptibility testing because tentative criteria make all MIC results useless"
+    ],
+    "answer": 0,
+    "rationale": "Tentative criteria help interpret a specific drug result but do not establish a definitive clinical outcome. Retain species identification and clinical context, and consult laboratory, public health and clinical experts for difficult results. A rezafungin criterion cannot be transferred to other drugs, and uncertainty does not make susceptibility testing useless.",
+    "reviewHref": "#susceptibility-resistance"
+  },
+  "antifungal-foundations-087": {
+    "id": "antifungal-foundations-087",
+    "lesson": "susceptibility-resistance",
+    "question": "What should be checked before interpreting a C auris MIC?",
+    "choices": [
+      "Confirm the species, exact antifungal and applicable criterion, then review prior exposure, clinical response and current public health guidance",
+      "Use a criterion from any Candida species without checking its applicability",
+      "Classify the result without identifying which antifungal was tested",
+      "Assume a tentative category guarantees the same response in every patient"
+    ],
+    "answer": 0,
+    "rationale": "An MIC belongs to a specific organism-drug pair. The current rezafungin-specific CLSI criterion and CDC tentative criteria for other drugs have different evidence status. Species confirmation, the tested drug, the applicable standard and the clinical situation must be checked before interpreting a category.",
+    "reviewHref": "#susceptibility-resistance"
+  },
+  "antifungal-foundations-088": {
+    "id": "antifungal-foundations-088",
+    "lesson": "susceptibility-resistance",
+    "question": "Which reasoning hazard should be avoided when using CDC tentative C auris criteria?",
+    "choices": [
+      "Treating tentative criteria as definitive predictors of clinical outcome",
+      "Identifying the tested antifungal before selecting a criterion",
+      "Distinguishing a CLSI rezafungin criterion from CDC tentative criteria for other drugs",
+      "Reviewing species confirmation and clinical response alongside the laboratory result"
+    ],
+    "answer": 0,
+    "rationale": "CDC states that the correlation between its tentative breakpoints and clinical outcomes is not known. Drug identification, correct source selection and clinical review protect interpretation; treating a tentative category as a guaranteed outcome overstates the evidence.",
+    "reviewHref": "#susceptibility-resistance"
+  },
+  "antifungal-foundations-177": {
+    "id": "antifungal-foundations-177",
+    "lesson": "susceptibility-resistance",
+    "question": "A fluconazole MIC is reported for C auris. Which interpretation is most accurate?",
+    "choices": [
+      "Use the CDC tentative fluconazole criterion with species confirmation, clinical response and expert context",
+      "Apply the CLSI rezafungin criterion directly to the fluconazole result",
+      "Use the same criterion for all Candida species and antifungals",
+      "Assume the tentative category predicts clinical outcome with certainty"
+    ],
+    "answer": 0,
+    "rationale": "CDC provides a tentative fluconazole criterion for C auris. The established CLSI rezafungin criterion concerns a different drug and cannot classify fluconazole. Confirm identification and interpret the appropriate drug criterion alongside clinical response and expert guidance; CDC does not establish a definitive relationship between tentative categories and outcomes.",
+    "reviewHref": "#susceptibility-resistance"
+  }
+};
+export const systemicAntifungalFoundationsQuestionBank = beforeDiagnosticHistoricalQuestionBank.map(q => diagnosticHistoricalQuestionOverrides[q.id] ?? q);
 if (systemicAntifungalFoundationsQuestionBank.length < 100) throw new Error(`Systemic antifungal foundations bank must contain at least 100 questions, found ${systemicAntifungalFoundationsQuestionBank.length}.`);
