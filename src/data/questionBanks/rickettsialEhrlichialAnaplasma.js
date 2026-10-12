@@ -117,5 +117,62 @@ const finalPrimaryQuestionOverrides = {
     "reviewHref": "#empiric-doxycycline"
   }
 };
-export const rickettsialEhrlichialAnaplasmaQuestionBank = beforeFinalPrimaryQuestionBank.map(q => finalPrimaryQuestionOverrides[q.id] ?? q);
+const beforeHistoricalRickettsialQuestionBank = beforeFinalPrimaryQuestionBank.map(q => finalPrimaryQuestionOverrides[q.id] ?? q);
+const historicalRickettsialQuestionOverrides = {
+  "rickettsial-015": {
+    "choices": [
+      "Assess perfusion, mental status, lungs, kidneys, sodium, platelets, liver tests, skin, and extremity ischemia",
+      "Limit assessment to the rash and disregard respiratory or neurologic deterioration",
+      "Assume reassuring initial laboratory results exclude evolving organ injury",
+      "Wait for a classic rash before assessing circulation or organ function"
+    ],
+    "rationale": "RMSF infects vascular endothelium and causes systemic vasculitis and capillary leakage. Assess circulation and evolving neurologic, pulmonary, renal and skin injury together with supportive laboratory findings. Early reassuring tests or an absent rash do not remove the need for clinical reassessment."
+  },
+  "rickettsial-023": {
+    "choices": [
+      "Assess platelet count, sodium and hepatic transaminases with the illness timeline and clinical trajectory",
+      "Exclude RMSF when the initial CBC and chemistry panel are normal",
+      "Require every characteristic laboratory abnormality before starting treatment",
+      "Interpret the laboratory pattern without considering examination or exposure history"
+    ],
+    "rationale": "Thrombocytopenia, hyponatremia and elevated hepatic transaminases can support RMSF, but they may be absent early. Interpret these results with illness day, exposure and examination, and trend the patient clinically. Do not delay treatment of suspected disease while waiting for a complete laboratory pattern."
+  },
+  "rickettsial-051": {
+    "choices": [
+      "Assess for meningococcemia, sepsis and other dangerous mimics in parallel with suspected rickettsial disease",
+      "Assume doxycycline alone covers possible meningococcal disease",
+      "Use tick exposure to exclude nonvector causes of shock or fever and rash",
+      "Postpone evaluation of dangerous mimics until convalescent rickettsial serology returns"
+    ],
+    "rationale": "A suspected rickettsial infection does not close the differential. CDC guidance specifically describes parallel empiric treatment when meningococcal and rickettsial disease are both being considered. Evaluate other supported emergencies promptly and provide their indicated treatment in addition to doxycycline; do not wait for convalescent serology."
+  },
+  "rickettsial-059": {
+    "choices": [
+      "Assess illness day, exposure and syndrome, assay type, and a plan for appropriately timed paired IgG testing",
+      "Rule out RMSF from one negative antibody result in the first week",
+      "Confirm acute RMSF from one elevated IgG titer without appropriately timed paired samples",
+      "Withhold indicated treatment until the convalescent antibody result is available"
+    ],
+    "rationale": "RMSF antibodies are frequently negative in the first week, and a single acute result cannot confirm the diagnosis. Interpret IgG IFA using paired acute and convalescent samples and the clinical syndrome; current CDC RMSF guidance specifies collection 2 to 10 weeks apart. Testing must not delay indicated treatment."
+  },
+  "rickettsial-115": {
+    "choices": [
+      "Clarify the reaction phenotype, timing and severity, and seek specialist guidance on an appropriate treatment pathway",
+      "Treat every reported intolerance as a proven life-threatening tetracycline allergy",
+      "Assume chloramphenicol treats RMSF, ehrlichiosis and anaplasmosis equally well",
+      "Use rapid desensitization routinely for every rash without reaction assessment or a monitored setting"
+    ],
+    "rationale": "Clarify what reaction occurred and whether it was potentially life threatening. CDC describes case-by-case specialist assessment, with possible inpatient rapid desensitization for selected immediate hypersensitivity reactions; the supporting evidence is limited. Chloramphenicol is associated with worse RMSF outcomes and does not cover ehrlichiosis or anaplasmosis, so it is not an interchangeable empiric substitute."
+  },
+  "rickettsial-123": {
+    "choices": [
+      "Assess likely tick exposure, label-directed repellents and treated gear, body and pet checks, and prompt safe removal of attached ticks",
+      "Rely on routine antibody screening instead of measures that prevent tick bites",
+      "Skip body checks because no tick bite was felt",
+      "Delay removal of an attached tick while waiting for a commercial tick test"
+    ],
+    "rationale": "Tick prevention combines exposure reduction, correctly used repellents and treated gear, and checks of the body, clothing, gear and pets. Remove an attached tick promptly with an appropriate mechanical technique; do not wait for commercial tick testing. Tick bites can go unnoticed, and antibody screening does not replace prevention. Seek care if compatible symptoms develop after a bite."
+  }
+};
+export const rickettsialEhrlichialAnaplasmaQuestionBank = beforeHistoricalRickettsialQuestionBank.map(q => historicalRickettsialQuestionOverrides[q.id] ? {...q, ...historicalRickettsialQuestionOverrides[q.id]} : q);
 if (rickettsialEhrlichialAnaplasmaQuestionBank.length < 100) throw new Error(`Rickettsial question bank must contain at least 100 questions, found ${rickettsialEhrlichialAnaplasmaQuestionBank.length}.`);

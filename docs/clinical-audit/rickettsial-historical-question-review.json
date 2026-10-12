@@ -1,0 +1,599 @@
+{
+  "status": "source_build_actual_native_passed_production_and_archive_pending",
+  "checkedUTC": "2026-10-12T19:38:01.366948+00:00",
+  "questionIds": [
+    "rickettsial-015",
+    "rickettsial-023",
+    "rickettsial-051",
+    "rickettsial-059",
+    "rickettsial-115",
+    "rickettsial-123"
+  ],
+  "questionCount": 6,
+  "choiceCount": 24,
+  "reviews": [
+    {
+      "id": "rickettsial-015",
+      "originalWholeQuestion": {
+        "id": "rickettsial-015",
+        "lesson": "rmsf",
+        "question": "Which assessment is most appropriate for RMSF endothelial injury?",
+        "choices": [
+          "Assess perfusion, mental status, lungs, kidneys, sodium, platelets, liver tests, skin, and extremity ischemia",
+          "Assess airway, breathing, circulation, mental status, oxygenation, perfusion, urine output, bleeding, oral tolerance, and follow-up reliability",
+          "Assess exact weight, vomiting, mental status, enteral access, cations, kidney and liver status, and dose timing",
+          "Assess gestation, severity, differential, allergy, oral tolerance, organ injury, and fetal and maternal monitoring"
+        ],
+        "answer": 0,
+        "rationale": "Rash often appears after the treatment window has begun and can be absent",
+        "reviewHref": "#rmsf"
+      },
+      "sourceSections": [
+        "CDC2016 nativePDF15-16 pathophysiology, Table1 and end-organ injury",
+        "CDC current RMSF signs: late illness, bloodwork and vascular damage"
+      ],
+      "stemReviewed": true,
+      "rationaleReviewed": true,
+      "correctIndex": 0,
+      "choiceEvaluations": [
+        {
+          "index": 0,
+          "choice": "Assess perfusion, mental status, lungs, kidneys, sodium, platelets, liver tests, skin, and extremity ischemia",
+          "isCorrect": true,
+          "evaluation": "Correct: evaluates the organ systems and laboratory effects of endothelial injury."
+        },
+        {
+          "index": 1,
+          "choice": "Limit assessment to the rash and disregard respiratory or neurologic deterioration",
+          "isCorrect": false,
+          "evaluation": "Incorrect: vascular injury includes pulmonary and CNS complications, not only rash."
+        },
+        {
+          "index": 2,
+          "choice": "Assume reassuring initial laboratory results exclude evolving organ injury",
+          "isCorrect": false,
+          "evaluation": "Incorrect: early bloodwork can be normal while disease evolves."
+        },
+        {
+          "index": 3,
+          "choice": "Wait for a classic rash before assessing circulation or organ function",
+          "isCorrect": false,
+          "evaluation": "Incorrect: rash may be absent early; organ assessment cannot wait for it."
+        }
+      ]
+    },
+    {
+      "id": "rickettsial-023",
+      "originalWholeQuestion": {
+        "id": "rickettsial-023",
+        "lesson": "rmsf",
+        "question": "Which assessment is most appropriate for RMSF laboratory pattern?",
+        "choices": [
+          "Assess CBC, sodium, AST, ALT, creatinine, coagulation, lactate, urinalysis, and trajectory",
+          "Assess purpura, meningismus, focal infection, hemolysis, schistocytes, coagulation, cultures, CSF safety, and shock",
+          "Assess antacids, iron, calcium, magnesium, bismuth, tube feeds, swallowing, posture, photosensitivity, and adherence",
+          "Assess reaction phenotype, timing, severity, prior tetracyclines, organ involvement, and desensitization capability"
+        ],
+        "answer": 0,
+        "rationale": "Supportive abnormalities evolve and are not required for early therapy",
+        "reviewHref": "#rmsf"
+      },
+      "sourceSections": [
+        "CDC2016 nativePDF16 Table1 and nativePDF23 integrated assessment",
+        "CDC current RMSF signs bloodwork; current diagnosis never delay treatment"
+      ],
+      "stemReviewed": true,
+      "rationaleReviewed": true,
+      "correctIndex": 0,
+      "choiceEvaluations": [
+        {
+          "index": 0,
+          "choice": "Assess platelet count, sodium and hepatic transaminases with the illness timeline and clinical trajectory",
+          "isCorrect": true,
+          "evaluation": "Correct: integrates characteristic supportive findings with timing and clinical evolution."
+        },
+        {
+          "index": 1,
+          "choice": "Exclude RMSF when the initial CBC and chemistry panel are normal",
+          "isCorrect": false,
+          "evaluation": "Incorrect: current CDC guidance states these tests can be normal early."
+        },
+        {
+          "index": 2,
+          "choice": "Require every characteristic laboratory abnormality before starting treatment",
+          "isCorrect": false,
+          "evaluation": "Incorrect: laboratory confirmation or a complete pattern cannot be prerequisites for therapy."
+        },
+        {
+          "index": 3,
+          "choice": "Interpret the laboratory pattern without considering examination or exposure history",
+          "isCorrect": false,
+          "evaluation": "Incorrect: isolated labs omit the clinical and exposure context required for interpretation."
+        }
+      ]
+    },
+    {
+      "id": "rickettsial-051",
+      "originalWholeQuestion": {
+        "id": "rickettsial-051",
+        "lesson": "coinfection-differential",
+        "question": "Which assessment is most appropriate for dangerous differential?",
+        "choices": [
+          "Assess purpura, meningismus, focal infection, hemolysis, schistocytes, coagulation, cultures, CSF safety, and shock",
+          "Assess exact weight, vomiting, mental status, enteral access, cations, kidney and liver status, and dose timing",
+          "Assess reaction phenotype, timing, severity, prior tetracyclines, organ involvement, and desensitization capability",
+          "Assess perfusion, mental status, lungs, kidneys, sodium, platelets, liver tests, skin, and extremity ischemia"
+        ],
+        "answer": 0,
+        "rationale": "Empiric rickettsial therapy does not cover every lethal mimic",
+        "reviewHref": "#coinfection-differential"
+      },
+      "sourceSections": [
+        "CDC2016 nativePDF16 mimics and nativePDF23 differential, Box6 and parallel empiric treatment"
+      ],
+      "stemReviewed": true,
+      "rationaleReviewed": true,
+      "correctIndex": 0,
+      "choiceEvaluations": [
+        {
+          "index": 0,
+          "choice": "Assess for meningococcemia, sepsis and other dangerous mimics in parallel with suspected rickettsial disease",
+          "isCorrect": true,
+          "evaluation": "Correct: retains parallel assessment of potentially lethal alternative processes."
+        },
+        {
+          "index": 1,
+          "choice": "Assume doxycycline alone covers possible meningococcal disease",
+          "isCorrect": false,
+          "evaluation": "Incorrect: CDC explicitly describes additional meningococcal therapy alongside doxycycline."
+        },
+        {
+          "index": 2,
+          "choice": "Use tick exposure to exclude nonvector causes of shock or fever and rash",
+          "isCorrect": false,
+          "evaluation": "Incorrect: compatible exposure does not exclude other life-threatening illnesses."
+        },
+        {
+          "index": 3,
+          "choice": "Postpone evaluation of dangerous mimics until convalescent rickettsial serology returns",
+          "isCorrect": false,
+          "evaluation": "Incorrect: emergency evaluation and empiric therapy cannot wait for later serology."
+        }
+      ]
+    },
+    {
+      "id": "rickettsial-059",
+      "originalWholeQuestion": {
+        "id": "rickettsial-059",
+        "lesson": "diagnosis-timing",
+        "question": "Which assessment is most appropriate for acute serology?",
+        "choices": [
+          "Assess collection day, assay type, syndrome, exposure, treatment, and plan for paired testing",
+          "Assess antacids, iron, calcium, magnesium, bismuth, tube feeds, swallowing, posture, photosensitivity, and adherence",
+          "Assess attachment site, duration, engorgement, symptoms, geography, repellent safety, pets, and retained mouthparts",
+          "Assess CBC, sodium, AST, ALT, creatinine, coagulation, lactate, urinalysis, and trajectory"
+        ],
+        "answer": 0,
+        "rationale": "Antibody production usually lags behind early illness",
+        "reviewHref": "#diagnosis-timing"
+      },
+      "sourceSections": [
+        "CDC2016 nativePDF29 serology and Table4",
+        "CDC current RMSF diagnosis serology and testing timing"
+      ],
+      "stemReviewed": true,
+      "rationaleReviewed": true,
+      "correctIndex": 0,
+      "choiceEvaluations": [
+        {
+          "index": 0,
+          "choice": "Assess illness day, exposure and syndrome, assay type, and a plan for appropriately timed paired IgG testing",
+          "isCorrect": true,
+          "evaluation": "Correct: integrates timing, compatible illness, assay and paired-sample planning."
+        },
+        {
+          "index": 1,
+          "choice": "Rule out RMSF from one negative antibody result in the first week",
+          "isCorrect": false,
+          "evaluation": "Incorrect: early negative serology does not exclude RMSF."
+        },
+        {
+          "index": 2,
+          "choice": "Confirm acute RMSF from one elevated IgG titer without appropriately timed paired samples",
+          "isCorrect": false,
+          "evaluation": "Incorrect: a single elevated titer can reflect prior exposure and does not confirm acute infection."
+        },
+        {
+          "index": 3,
+          "choice": "Withhold indicated treatment until the convalescent antibody result is available",
+          "isCorrect": false,
+          "evaluation": "Incorrect: CDC states treatment must not await diagnostic results."
+        }
+      ]
+    },
+    {
+      "id": "rickettsial-115",
+      "originalWholeQuestion": {
+        "id": "rickettsial-115",
+        "lesson": "special-populations",
+        "question": "Which assessment is most appropriate for doxycycline allergy?",
+        "choices": [
+          "Assess reaction phenotype, timing, severity, prior tetracyclines, organ involvement, and desensitization capability",
+          "Assess perfusion, mental status, lungs, kidneys, sodium, platelets, liver tests, skin, and extremity ischemia",
+          "Assess purpura, meningismus, focal infection, hemolysis, schistocytes, coagulation, cultures, CSF safety, and shock",
+          "Assess exact weight, vomiting, mental status, enteral access, cations, kidney and liver status, and dose timing"
+        ],
+        "answer": 0,
+        "rationale": "The alternative pathway is less reliable and requires expert oversight",
+        "reviewHref": "#special-populations"
+      },
+      "sourceSections": [
+        "CDC2016 nativePDF25-26 doxycycline allergy, immediate hypersensitivity case-report limitation and alternative agents",
+        "CDC current RMSF care allergy and other treatments"
+      ],
+      "stemReviewed": true,
+      "rationaleReviewed": true,
+      "correctIndex": 0,
+      "choiceEvaluations": [
+        {
+          "index": 0,
+          "choice": "Clarify the reaction phenotype, timing and severity, and seek specialist guidance on an appropriate treatment pathway",
+          "isCorrect": true,
+          "evaluation": "Correct: follows reaction characterization and individualized specialist treatment selection."
+        },
+        {
+          "index": 1,
+          "choice": "Treat every reported intolerance as a proven life-threatening tetracycline allergy",
+          "isCorrect": false,
+          "evaluation": "Incorrect: reaction type and severity must be established rather than assumed from a label."
+        },
+        {
+          "index": 2,
+          "choice": "Assume chloramphenicol treats RMSF, ehrlichiosis and anaplasmosis equally well",
+          "isCorrect": false,
+          "evaluation": "Incorrect: the CDC guide explicitly excludes ehrlichiosis and anaplasmosis coverage."
+        },
+        {
+          "index": 3,
+          "choice": "Use rapid desensitization routinely for every rash without reaction assessment or a monitored setting",
+          "isCorrect": false,
+          "evaluation": "Incorrect: the described pathway is selected, specialist-led and inpatient, not automatic for all rashes."
+        }
+      ]
+    },
+    {
+      "id": "rickettsial-123",
+      "originalWholeQuestion": {
+        "id": "rickettsial-123",
+        "lesson": "prevention-public-health",
+        "question": "Which assessment is most appropriate for tick bite prevention?",
+        "choices": [
+          "Assess attachment site, duration, engorgement, symptoms, geography, repellent safety, pets, and retained mouthparts",
+          "Assess CBC, sodium, AST, ALT, creatinine, coagulation, lactate, urinalysis, and trajectory",
+          "Assess collection day, assay type, syndrome, exposure, treatment, and plan for paired testing",
+          "Assess antacids, iron, calcium, magnesium, bismuth, tube feeds, swallowing, posture, photosensitivity, and adherence"
+        ],
+        "answer": 0,
+        "rationale": "Irritating the tick can delay removal and increase exposure to fluids",
+        "reviewHref": "#prevention-public-health"
+      },
+      "sourceSections": [
+        "CDC current preventing tick bites: before outdoors and after indoors",
+        "CDC current after a tick bite: prompt removal, tick testing and follow-up"
+      ],
+      "stemReviewed": true,
+      "rationaleReviewed": true,
+      "correctIndex": 0,
+      "choiceEvaluations": [
+        {
+          "index": 0,
+          "choice": "Assess likely tick exposure, label-directed repellents and treated gear, body and pet checks, and prompt safe removal of attached ticks",
+          "isCorrect": true,
+          "evaluation": "Correct: combines the individually read prevention layers and prompt-removal guidance."
+        },
+        {
+          "index": 1,
+          "choice": "Rely on routine antibody screening instead of measures that prevent tick bites",
+          "isCorrect": false,
+          "evaluation": "Incorrect: serologic screening is not a substitute for reducing exposure."
+        },
+        {
+          "index": 2,
+          "choice": "Skip body checks because no tick bite was felt",
+          "isCorrect": false,
+          "evaluation": "Incorrect: bites can be painless or unnoticed, so checks remain necessary."
+        },
+        {
+          "index": 3,
+          "choice": "Delay removal of an attached tick while waiting for a commercial tick test",
+          "isCorrect": false,
+          "evaluation": "Incorrect: current CDC guidance says remove promptly and do not base treatment decisions on tick testing."
+        }
+      ]
+    }
+  ],
+  "teachingBodiesReviewedAndCorrected": [
+    {
+      "lesson": "diagnosis-timing",
+      "heading": "Confirm with paired IgG IFA",
+      "before": "Collect acute and convalescent serum about 2 to 4 weeks apart. A fourfold rise supports acute infection, while one elevated titer can reflect prior exposure.",
+      "after": "For RMSF, collect acute and convalescent IgG IFA serum samples 2 to 10 weeks apart, as specified by current CDC diagnostic guidance. Interpret a fourfold rise with a compatible illness; one elevated titer can reflect prior exposure.",
+      "source": "CDC current RMSF diagnosis serology; dated CDC2016 Table4 recommends ideally 2-4 weeks for the broader group.",
+      "module": "rickettsial-ehrlichial-anaplasma-infections"
+    },
+    {
+      "lesson": "special-populations",
+      "heading": "Manage severe allergy as an emergency",
+      "before": "Life threatening doxycycline allergy with suspected RMSF can warrant inpatient rapid desensitization. Chloramphenicol has worse RMSF outcomes and does not cover ehrlichiosis or anaplasmosis.",
+      "after": "Clarify the reported reaction and involve an appropriate specialist. In selected immediate hypersensitivity reactions, inpatient rapid desensitization may be considered; evidence is limited to case reports. This is not an automatic pathway for every severe reaction. Chloramphenicol has worse RMSF outcomes and does not cover ehrlichiosis or anaplasmosis.",
+      "source": "CDC2016 nativePDF25-26 doxycycline allergy and immediate hypersensitivity limitation; current CDC RMSF care.",
+      "module": "rickettsial-ehrlichial-anaplasma-infections"
+    }
+  ],
+  "nativePagesActuallyInspected": [
+    {
+      "file": "book-native-396.png",
+      "SHA256": "b678679982ddf4d1fd54a4948ac72e286cac3d09ddcf8ed06e1c76c2da9887e8"
+    },
+    {
+      "file": "cdc-tickborne-2016-native-15.png",
+      "SHA256": "74fb0cef823848e804eac8d62d05b877d4e39f032adf00e3624708329c91733e"
+    },
+    {
+      "file": "cdc-tickborne-2016-native-16.png",
+      "SHA256": "01b9b824d99fd44002819bba9490d8b539595563765a40d062e146bc81a52f47"
+    },
+    {
+      "file": "cdc-tickborne-2016-native-23.png",
+      "SHA256": "8eb31a4950218679a7bd6bba53a503c62f42657a62446140aa6ee5abba6006b7"
+    },
+    {
+      "file": "cdc-tickborne-2016-native-25.png",
+      "SHA256": "35c03853ac94580911849f64673274d16672d1b2892e08acb844e5dd61214dd7"
+    },
+    {
+      "file": "cdc-tickborne-2016-native-26.png",
+      "SHA256": "894170abf3298d64155877fbe08f1d2f9daf219be6fe297ee407945a9e889c6b"
+    },
+    {
+      "file": "cdc-tickborne-2016-native-29.png",
+      "SHA256": "73bea823ea6a7ce1ccfccae70dd072d95bab5fffdcc9cf26acad31c399f0ead1"
+    }
+  ],
+  "privateSourceCatalog": [
+    {
+      "name": "book",
+      "SHA256": "5e60f0b3ce20601985515c259c9503bd7ee2681836efecf03906a7da3dddf6ef",
+      "nativeReviewPassed": true,
+      "actualRelevantSourceReviewPassed": true
+    },
+    {
+      "name": "CDC2016 tickborne rickettsial recommendations",
+      "URL": "https://www.cdc.gov/mmwr/volumes/65/rr/pdfs/rr6502.pdf",
+      "localFile": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-rickettsial-historical-review-20261012/evidence/private-rickettsial-sources-v1/cdc-tickborne-2016.pdf",
+      "SHA256": "dbcf3b389801cb25ab477fa376e9778d47b0543625095ec1c1f9e01e5aa40918",
+      "pages": 48,
+      "textAndNativeReviewPending": true,
+      "datedSourceNotAssumedLatest": true,
+      "actualRelevantSourceReviewPassed": true
+    },
+    {
+      "name": "cdc-rmsf-diagnosis",
+      "URL": "https://www.cdc.gov/rocky-mountain-spotted-fever/hcp/diagnosis-testing/index.html",
+      "localFile": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-rickettsial-historical-review-20261012/evidence/private-rickettsial-sources-v1/cdc-rmsf-diagnosis.html",
+      "retrievalExitCode": 0,
+      "SHA256": "97e22fce4a6d5d959164e30230cf9f38094c82132d6117c2cc0efdb118892355",
+      "individualSourceReviewPending": true,
+      "actualRelevantSourceReviewPassed": true
+    },
+    {
+      "name": "cdc-rmsf-care",
+      "URL": "https://www.cdc.gov/rocky-mountain-spotted-fever/hcp/clinical-care/index.html",
+      "localFile": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-rickettsial-historical-review-20261012/evidence/private-rickettsial-sources-v1/cdc-rmsf-care.html",
+      "retrievalExitCode": 0,
+      "SHA256": "60778f4d14806760b17569cc203cd2ffcbe85e832f1c1c222f83299c8e39811a",
+      "individualSourceReviewPending": true,
+      "actualRelevantSourceReviewPassed": true
+    },
+    {
+      "name": "cdc-tick-prevention",
+      "URL": "https://www.cdc.gov/ticks/prevention/index.html",
+      "localFile": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-rickettsial-historical-review-20261012/evidence/private-rickettsial-sources-v1/cdc-tick-prevention.html",
+      "retrievalExitCode": 0,
+      "SHA256": "34496dc30038fd5ed827fbb7963b554975692166bb625bafb2dd69dd574cb42c",
+      "individualSourceReviewPending": true,
+      "actualRelevantSourceReviewPassed": true
+    },
+    {
+      "name": "cdc-after-tick-bite",
+      "URL": "https://www.cdc.gov/ticks/after-a-tick-bite/index.html",
+      "localFile": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-rickettsial-historical-review-20261012/evidence/private-rickettsial-sources-v1/cdc-after-tick-bite.html",
+      "retrievalExitCode": 0,
+      "SHA256": "4932044c71d82914401b3e1f78f3bce4d030f17ce9c99a8d9e2fe2f35f4a36c5",
+      "individualSourceReviewPending": true,
+      "actualRelevantSourceReviewPassed": true
+    },
+    {
+      "name": "cdc-rmsf-signs",
+      "URL": "https://www.cdc.gov/rocky-mountain-spotted-fever/hcp/signs-symptoms/index.html",
+      "localFile": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-rickettsial-historical-review-20261012/evidence/private-rickettsial-sources-v1/cdc-rmsf-signs.html",
+      "SHA256": "71fddb93c4bedae48b80ce599bd276f46692e535e29a618350accd6096712543",
+      "retrievalExitCode": 0,
+      "actualRelevantSourceReviewPassed": true
+    }
+  ],
+  "bookSHA256": "5e60f0b3ce20601985515c259c9503bd7ee2681836efecf03906a7da3dddf6ef",
+  "sourceDiscrepanciesAndLimits": [
+    "Book PDF396/printed388 gives a short rickettsial overview and treatment table; it does not independently establish the detailed assessment, serology or allergy pathways. Those changes use previously authorized CDC primary sources.",
+    "CDC2016 recommends paired sera ideally 2-4 weeks apart for the broader group; current RMSF-specific CDC guidance states 2-10 weeks. The revised body explicitly names RMSF.",
+    "Rapid doxycycline desensitization evidence in CDC2016 is limited to individual immediate-hypersensitivity case reports. Do not generalize it to every severe reaction.",
+    "No full chapter or whole module newly certified; other teaching, worked examples, visuals and embedded checks remain unchanged and require their own coverage.",
+    "Book printed388 lists ehrlichiosis doxycycline for7-14days, while the retained duration lesson uses a minimum5-7days with clinical improvement and at least3days beyond fever, reflecting CDC guidance. Full disease-duration reconciliation remains outside this six-question unit; no new duration qualification here."
+  ],
+  "stableIdsKeysLessonsAnchorsPreserved": true,
+  "allOtherModuleObjectsExact": true,
+  "allOtherTeachingFiguresAndChecksExact": true,
+  "selected30Exact": true,
+  "entirePoolExact": true,
+  "newDrugDoseClaims": false,
+  "wholeModuleVerified": false,
+  "wholeChapterVerified": false,
+  "wholeGoalComplete": false,
+  "remainingGates": [
+    "Scoped commits/pushes and authorized production verification",
+    "Ledger reconciliation and external archive"
+  ],
+  "sourceFiles": {
+    "src/data/questionBanks/rickettsialEhrlichialAnaplasma.js": "26fe09809e0ec8e80cc6ea8818d0ea84d30040fd420bbbd4d1c74ef9c8f506c2",
+    "src/data/modules/rickettsialEhrlichialAnaplasma.js": "c49f3c596337bd242aa7a696bd0b02ba55c415510e30c0718b3d0c38c2abfb06"
+  },
+  "wholeQuestionBindings": [
+    {
+      "id": "rickettsial-015",
+      "wholeQuestion": {
+        "id": "rickettsial-015",
+        "lesson": "rmsf",
+        "question": "Which assessment is most appropriate for RMSF endothelial injury?",
+        "choices": [
+          "Assess perfusion, mental status, lungs, kidneys, sodium, platelets, liver tests, skin, and extremity ischemia",
+          "Limit assessment to the rash and disregard respiratory or neurologic deterioration",
+          "Assume reassuring initial laboratory results exclude evolving organ injury",
+          "Wait for a classic rash before assessing circulation or organ function"
+        ],
+        "answer": 0,
+        "rationale": "RMSF infects vascular endothelium and causes systemic vasculitis and capillary leakage. Assess circulation and evolving neurologic, pulmonary, renal and skin injury together with supportive laboratory findings. Early reassuring tests or an absent rash do not remove the need for clinical reassessment.",
+        "reviewHref": "#rmsf"
+      },
+      "SHA256": "76a6b69240189c15348b7c563a0fdb76374c83dfc1b4cce3cba3789e5fe10b86"
+    },
+    {
+      "id": "rickettsial-023",
+      "wholeQuestion": {
+        "id": "rickettsial-023",
+        "lesson": "rmsf",
+        "question": "Which assessment is most appropriate for RMSF laboratory pattern?",
+        "choices": [
+          "Assess platelet count, sodium and hepatic transaminases with the illness timeline and clinical trajectory",
+          "Exclude RMSF when the initial CBC and chemistry panel are normal",
+          "Require every characteristic laboratory abnormality before starting treatment",
+          "Interpret the laboratory pattern without considering examination or exposure history"
+        ],
+        "answer": 0,
+        "rationale": "Thrombocytopenia, hyponatremia and elevated hepatic transaminases can support RMSF, but they may be absent early. Interpret these results with illness day, exposure and examination, and trend the patient clinically. Do not delay treatment of suspected disease while waiting for a complete laboratory pattern.",
+        "reviewHref": "#rmsf"
+      },
+      "SHA256": "a1f457b04e8ba9d26278cd6d4c015bc94bf90d37887ee48a07a587e87821cb44"
+    },
+    {
+      "id": "rickettsial-051",
+      "wholeQuestion": {
+        "id": "rickettsial-051",
+        "lesson": "coinfection-differential",
+        "question": "Which assessment is most appropriate for dangerous differential?",
+        "choices": [
+          "Assess for meningococcemia, sepsis and other dangerous mimics in parallel with suspected rickettsial disease",
+          "Assume doxycycline alone covers possible meningococcal disease",
+          "Use tick exposure to exclude nonvector causes of shock or fever and rash",
+          "Postpone evaluation of dangerous mimics until convalescent rickettsial serology returns"
+        ],
+        "answer": 0,
+        "rationale": "A suspected rickettsial infection does not close the differential. CDC guidance specifically describes parallel empiric treatment when meningococcal and rickettsial disease are both being considered. Evaluate other supported emergencies promptly and provide their indicated treatment in addition to doxycycline; do not wait for convalescent serology.",
+        "reviewHref": "#coinfection-differential"
+      },
+      "SHA256": "2a98fcb7b71c0e0f4816b03fae411df012bde96dad4e15bba6fcaa7107bd8cdc"
+    },
+    {
+      "id": "rickettsial-059",
+      "wholeQuestion": {
+        "id": "rickettsial-059",
+        "lesson": "diagnosis-timing",
+        "question": "Which assessment is most appropriate for acute serology?",
+        "choices": [
+          "Assess illness day, exposure and syndrome, assay type, and a plan for appropriately timed paired IgG testing",
+          "Rule out RMSF from one negative antibody result in the first week",
+          "Confirm acute RMSF from one elevated IgG titer without appropriately timed paired samples",
+          "Withhold indicated treatment until the convalescent antibody result is available"
+        ],
+        "answer": 0,
+        "rationale": "RMSF antibodies are frequently negative in the first week, and a single acute result cannot confirm the diagnosis. Interpret IgG IFA using paired acute and convalescent samples and the clinical syndrome; current CDC RMSF guidance specifies collection 2 to 10 weeks apart. Testing must not delay indicated treatment.",
+        "reviewHref": "#diagnosis-timing"
+      },
+      "SHA256": "0a563e730954d724001c42b50dbdd6b72501c34a5d76711d6dbb9b9e293ca370"
+    },
+    {
+      "id": "rickettsial-115",
+      "wholeQuestion": {
+        "id": "rickettsial-115",
+        "lesson": "special-populations",
+        "question": "Which assessment is most appropriate for doxycycline allergy?",
+        "choices": [
+          "Clarify the reaction phenotype, timing and severity, and seek specialist guidance on an appropriate treatment pathway",
+          "Treat every reported intolerance as a proven life-threatening tetracycline allergy",
+          "Assume chloramphenicol treats RMSF, ehrlichiosis and anaplasmosis equally well",
+          "Use rapid desensitization routinely for every rash without reaction assessment or a monitored setting"
+        ],
+        "answer": 0,
+        "rationale": "Clarify what reaction occurred and whether it was potentially life threatening. CDC describes case-by-case specialist assessment, with possible inpatient rapid desensitization for selected immediate hypersensitivity reactions; the supporting evidence is limited. Chloramphenicol is associated with worse RMSF outcomes and does not cover ehrlichiosis or anaplasmosis, so it is not an interchangeable empiric substitute.",
+        "reviewHref": "#special-populations"
+      },
+      "SHA256": "2651c5a36e6b0dd1d88d02f6fe65cde315d48b7f770207b1724c0c1c8898d735"
+    },
+    {
+      "id": "rickettsial-123",
+      "wholeQuestion": {
+        "id": "rickettsial-123",
+        "lesson": "prevention-public-health",
+        "question": "Which assessment is most appropriate for tick bite prevention?",
+        "choices": [
+          "Assess likely tick exposure, label-directed repellents and treated gear, body and pet checks, and prompt safe removal of attached ticks",
+          "Rely on routine antibody screening instead of measures that prevent tick bites",
+          "Skip body checks because no tick bite was felt",
+          "Delay removal of an attached tick while waiting for a commercial tick test"
+        ],
+        "answer": 0,
+        "rationale": "Tick prevention combines exposure reduction, correctly used repellents and treated gear, and checks of the body, clothing, gear and pets. Remove an attached tick promptly with an appropriate mechanical technique; do not wait for commercial tick testing. Tick bites can go unnoticed, and antibody screening does not replace prevention. Seek care if compatible symptoms develop after a bite.",
+        "reviewHref": "#prevention-public-health"
+      },
+      "SHA256": "889e1c015073c96dbcf77c2ff14dd8b26bb7fc52cf2b43c2507cb9a4cd10fc7a"
+    }
+  ],
+  "sourceNativeReview": [
+    {
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-rickettsial-historical-review-20261012/evidence/private-rickettsial-sources-v1/book-native-396.png",
+      "SHA256": "b678679982ddf4d1fd54a4948ac72e286cac3d09ddcf8ed06e1c76c2da9887e8",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-rickettsial-historical-review-20261012/evidence/private-rickettsial-sources-v1/cdc-tickborne-2016-native-15.png",
+      "SHA256": "74fb0cef823848e804eac8d62d05b877d4e39f032adf00e3624708329c91733e",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-rickettsial-historical-review-20261012/evidence/private-rickettsial-sources-v1/cdc-tickborne-2016-native-16.png",
+      "SHA256": "01b9b824d99fd44002819bba9490d8b539595563765a40d062e146bc81a52f47",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-rickettsial-historical-review-20261012/evidence/private-rickettsial-sources-v1/cdc-tickborne-2016-native-23.png",
+      "SHA256": "8eb31a4950218679a7bd6bba53a503c62f42657a62446140aa6ee5abba6006b7",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-rickettsial-historical-review-20261012/evidence/private-rickettsial-sources-v1/cdc-tickborne-2016-native-25.png",
+      "SHA256": "35c03853ac94580911849f64673274d16672d1b2892e08acb844e5dd61214dd7",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-rickettsial-historical-review-20261012/evidence/private-rickettsial-sources-v1/cdc-tickborne-2016-native-26.png",
+      "SHA256": "894170abf3298d64155877fbe08f1d2f9daf219be6fe297ee407945a9e889c6b",
+      "actualNativeReviewPassed": true
+    },
+    {
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-rickettsial-historical-review-20261012/evidence/private-rickettsial-sources-v1/cdc-tickborne-2016-native-29.png",
+      "SHA256": "73bea823ea6a7ce1ccfccae70dd072d95bab5fffdcc9cf26acad31c399f0ead1",
+      "actualNativeReviewPassed": true
+    }
+  ],
+  "nativeCapturesActuallyInspected": 32,
+  "wholeAssociatedLessonsNewlyCertified": false
+}
