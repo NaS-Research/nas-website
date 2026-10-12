@@ -127,6 +127,135 @@ const historicalCdiQuestionOverrides = {
     "reviewHref": "#diagnostic-stewardship"
   }
 };
-export const clostridioidesDifficileInfectionQuestionBank = beforeHistoricalCdiQuestionBank.map(q => historicalCdiQuestionOverrides[q.id] ?? q);
+const beforeRemainingHistoricalCdiQuestionBank = beforeHistoricalCdiQuestionBank.map(q => historicalCdiQuestionOverrides[q.id] ?? q);
+const remainingHistoricalCdiQuestionOverrides = {
+  "clostridioides-difficile-infection-026": {
+    "id": "clostridioides-difficile-infection-026",
+    "lesson": "severity-complications",
+    "question": "Which clinical action best applies to nonsevere severity?",
+    "choices": [
+      "Use laboratory staging as one part of a dynamic clinical assessment",
+      "Freeze the initial nonsevere classification even if the patient develops shock",
+      "Dismiss new ileus because the initial laboratory results were reassuring",
+      "Follow stool assay positivity alone and disregard physiology"
+    ],
+    "answer": 0,
+    "rationale": "Laboratory findings support nonsevere classification, but they do not replace reassessment of the patient. New hypotension or shock, ileus, or megacolon identifies fulminant physiology and changes urgency. Reassess when the clinical condition changes rather than allowing the initial laboratory category or a positive assay to override deterioration.",
+    "reviewHref": "#severity-complications"
+  },
+  "clostridioides-difficile-infection-071": {
+    "id": "clostridioides-difficile-infection-071",
+    "lesson": "first-recurrence",
+    "question": "Which assessment is most appropriate for vancomycin taper?",
+    "choices": [
+      "Assess prior response, the taper-and-pulse calendar, oral delivery, access, and ability to follow the plan",
+      "Assess only stool assay conversion and omit the dosing calendar",
+      "Substitute IV vancomycin for the oral taper without reassessing the bowel-directed plan",
+      "Keep the same dosing frequency throughout and call it a tapered-and-pulsed course"
+    ],
+    "answer": 0,
+    "rationale": "A tapered-and-pulsed oral vancomycin regimen is an acceptable first-recurrence alternative in the IDSA/SHEA guideline. Its changing schedule requires a clear calendar and review of prior treatment, oral delivery and the ability to complete the plan. A fixed-frequency course is not the same regimen, and IV delivery does not substitute for its oral route.",
+    "reviewHref": "#first-recurrence"
+  },
+  "clostridioides-difficile-infection-078": {
+    "id": "clostridioides-difficile-infection-078",
+    "lesson": "multiple-recurrences",
+    "question": "Which clinical action best applies to REBYOTA?",
+    "choices": [
+      "Coordinate labeled rectal administration after antibiotic treatment for recurrent CDI and review transmission and allergy precautions",
+      "Administer REBYOTA orally because all microbiota products have the same route",
+      "Use REBYOTA alone to treat uncontrolled active CDI instead of appropriate antibiotics",
+      "Omit infectious-agent precautions because FDA approval guarantees no transmission risk"
+    ],
+    "answer": 0,
+    "rationale": "REBYOTA is a rectal recurrence-prevention product for adults following antibiotic treatment for recurrent CDI. It is not labeled to treat active CDI. Follow its administration instructions and safety precautions; the label warns of transmissible infectious agents and allergic reactions. Do not import another microbiota product\u2019s route or assume approval eliminates these risks.",
+    "reviewHref": "#multiple-recurrences"
+  },
+  "clostridioides-difficile-infection-079": {
+    "id": "clostridioides-difficile-infection-079",
+    "lesson": "multiple-recurrences",
+    "question": "Which assessment is most appropriate for REBYOTA?",
+    "choices": [
+      "Confirm adult recurrent-CDI history, completed antibiotic treatment, rectal delivery feasibility, allergy history and infection risk",
+      "Select REBYOTA for an asymptomatic positive assay alone without a recurrent-CDI history",
+      "Ignore a prior severe allergic reaction to a known product component",
+      "Use REBYOTA as the sole initial treatment while uncontrolled active CDI remains untreated"
+    ],
+    "answer": 0,
+    "rationale": "Assess whether the patient fits REBYOTA\u2019s adult recurrence-prevention indication after antibiotic treatment for recurrent CDI, and whether rectal administration is feasible. Review the component-allergy contraindication and infectious-agent risk. An asymptomatic positive assay alone is not the labeled indication, and REBYOTA does not replace antibacterial treatment of active CDI.",
+    "reviewHref": "#multiple-recurrences"
+  },
+  "clostridioides-difficile-infection-082": {
+    "id": "clostridioides-difficile-infection-082",
+    "lesson": "multiple-recurrences",
+    "question": "Which clinical action best applies to conventional FMT?",
+    "choices": [
+      "Use a clinician-led program with donor and stool screening, testing, informed consent and the appropriate regulatory pathway",
+      "Use an apparently healthy home donor without stool testing",
+      "Skip donor screening because recurrence prevention eliminates transmission risk",
+      "Omit informed consent because conventional FMT is automatically interchangeable with an FDA-approved microbiota product"
+    ],
+    "answer": 0,
+    "rationale": "Conventional FMT requires controlled sourcing and a clinician-led safety process. FDA guidance addresses donor and stool screening and testing, foreseeable infection risks and appropriate consent within its regulatory framework. These safeguards are not replaced by a donor\u2019s healthy appearance, and conventional FMT is not automatically interchangeable with an approved product\u2019s protocol.",
+    "reviewHref": "#multiple-recurrences"
+  },
+  "clostridioides-difficile-infection-107": {
+    "id": "clostridioides-difficile-infection-107",
+    "lesson": "special-populations",
+    "question": "Which assessment is most appropriate for severe immune compromise?",
+    "choices": [
+      "Assess the nature and degree of immune compromise, immune-directed medicines, recurrence history and microbiota-therapy safety",
+      "Treat mild and severe immune compromise as identical when selecting microbiota therapy",
+      "Assume an approved microbiota product cannot transmit an infectious agent",
+      "Ignore immune status once any recurrence-prevention intervention is being considered"
+    ],
+    "answer": 0,
+    "rationale": "Assess immune compromise explicitly rather than treating every immunocompromised patient as equivalent. Microbiota-based interventions carry transmissible-infection risks. The 2024 AGA guideline conditionally suggests against fecal microbiota-based therapy in severely immunocompromised adults with recurrent CDI, with very low certainty evidence; patient-specific specialist review remains important.",
+    "reviewHref": "#special-populations"
+  },
+  "clostridioides-difficile-infection-114": {
+    "id": "clostridioides-difficile-infection-114",
+    "lesson": "monitoring-stewardship",
+    "question": "Which clinical action best applies to recurrence counseling?",
+    "choices": [
+      "Explain symptoms that need reassessment, how to contact the care team, antibiotic-history disclosure and testing boundaries",
+      "Tell the patient every positive assay after recovery automatically requires another antibiotic course",
+      "Advise restarting CDI treatment for any loose stool without clinical assessment",
+      "Tell the patient to withhold prior CDI history from future antibiotic prescribers"
+    ],
+    "answer": 0,
+    "rationale": "Explain that new or recurrent compatible diarrhea warrants clinical assessment and provide a clear contact plan. Routine testing after symptoms resolve is not a cure check. Encourage disclosure of prior CDI to future prescribers, review avoidable antibiotic exposure, and reinforce prevention measures. Neither an isolated positive assay nor any single loose stool automatically establishes recurrent CDI.",
+    "reviewHref": "#monitoring-stewardship"
+  },
+  "clostridioides-difficile-infection-115": {
+    "id": "clostridioides-difficile-infection-115",
+    "lesson": "monitoring-stewardship",
+    "question": "Which assessment is most appropriate for recurrence counseling?",
+    "choices": [
+      "Use teach-back to check symptom recognition, the contact plan, access, medication history, hygiene and follow-up",
+      "Assume the patient understands because a leaflet was handed over",
+      "Assess only whether a stool assay is negative and omit symptom and contact-plan review",
+      "Exclude future antibiotic prescribers and household prevention from the counseling assessment"
+    ],
+    "answer": 0,
+    "rationale": "Check whether the patient can explain when to seek reassessment, whom to contact and how to communicate prior CDI to future prescribers. Confirm access to the plan and understanding of hand hygiene and prevention. A leaflet alone does not establish comprehension, and a routine negative stool assay is not the follow-up goal.",
+    "reviewHref": "#monitoring-stewardship"
+  },
+  "clostridioides-difficile-infection-118": {
+    "id": "clostridioides-difficile-infection-118",
+    "lesson": "monitoring-stewardship",
+    "question": "Which clinical action best applies to CDI handoff?",
+    "choices": [
+      "Document the CDI episode and treatment plan, pending decisions, precautions and follow-up owner, and notify the receiving team",
+      "Transfer the patient without communicating CDI status because precautions will restart automatically",
+      "Omit the current regimen and last-dose information because CDI history alone is enough",
+      "Leave pending results and recurrence follow-up without a named receiving clinician"
+    ],
+    "answer": 0,
+    "rationale": "A CDI handoff must preserve both treatment continuity and infection prevention. Communicate the current treatment and outstanding decisions to the receiving team, assign follow-up ownership and notify the receiving ward or facility of CDI status so precautions continue. A historical diagnosis alone does not convey the active plan or resolve pending responsibilities.",
+    "reviewHref": "#monitoring-stewardship"
+  }
+};
+export const clostridioidesDifficileInfectionQuestionBank = beforeRemainingHistoricalCdiQuestionBank.map(q => remainingHistoricalCdiQuestionOverrides[q.id] ? {...q,...remainingHistoricalCdiQuestionOverrides[q.id]} : q);
 
 if (clostridioidesDifficileInfectionQuestionBank.length < 100) throw new Error(`Clostridioides difficile infection question bank must contain at least 100 questions, found ${clostridioidesDifficileInfectionQuestionBank.length}.`);
