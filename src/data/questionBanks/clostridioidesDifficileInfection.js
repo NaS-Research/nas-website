@@ -82,6 +82,51 @@ const primaryFeedingQuestionOverrides = {
     "reviewHref": "#fulminant-disease"
   }
 };
-export const clostridioidesDifficileInfectionQuestionBank = beforePrimaryFeedingReviewQuestionBank.map(q => primaryFeedingQuestionOverrides[q.id] ?? q);
+const beforeHistoricalCdiQuestionBank = beforePrimaryFeedingReviewQuestionBank.map(q => primaryFeedingQuestionOverrides[q.id] ?? q);
+const historicalCdiQuestionOverrides = {
+  "clostridioides-difficile-infection-015": {
+    "id": "clostridioides-difficile-infection-015",
+    "lesson": "diagnostic-stewardship",
+    "question": "Which assessment is most appropriate for testing eligibility?",
+    "choices": [
+      "Assess new, unexplained diarrhea with at least three unformed stools in 24 hours and review medicines and alternative causes",
+      "Test formed stool whenever the patient has recently received an antibiotic",
+      "Routinely test an asymptomatic patient after antibiotic exposure to diagnose active CDI",
+      "Use stool frequency alone as definitive proof of CDI without reviewing the clinical context"
+    ],
+    "answer": 0,
+    "rationale": "Choose testing using the clinical presentation: new, unexplained diarrhea with at least three unformed stools in 24 hours is the preferred target. Review alternative causes and medicines, including recent laxative use. The stool-count threshold identifies a testing population; it does not by itself establish CDI. Routine testing of formed stool or asymptomatic patients does not diagnose active infection.",
+    "reviewHref": "#diagnostic-stewardship"
+  },
+  "clostridioides-difficile-infection-022": {
+    "id": "clostridioides-difficile-infection-022",
+    "lesson": "diagnostic-stewardship",
+    "question": "Which clinical action best applies to test of cure?",
+    "choices": [
+      "Do not repeat stool testing to document cure after symptoms have resolved",
+      "Repeat stool testing after symptom resolution until the assay becomes negative",
+      "Use a positive stool result after symptom resolution as sufficient evidence of active infection",
+      "Require a negative stool assay before recognizing clinical recovery"
+    ],
+    "answer": 0,
+    "rationale": "Follow clinical recovery rather than ordering a routine stool test of cure. Do not test asymptomatic patients to document resolution. If compatible symptoms return, reassess for recurrence and alternative causes; an isolated assay result does not replace that clinical assessment.",
+    "reviewHref": "#diagnostic-stewardship"
+  },
+  "clostridioides-difficile-infection-023": {
+    "id": "clostridioides-difficile-infection-023",
+    "lesson": "diagnostic-stewardship",
+    "question": "Which assessment is most appropriate for test of cure?",
+    "choices": [
+      "Assess clinical resolution and reassess for recurrence if compatible symptoms return",
+      "Assess cure only by serial stool assays and disregard symptom resolution",
+      "Ignore recurrent compatible diarrhea because the previous treatment course was completed",
+      "Automatically diagnose recurrent active CDI from any positive assay without assessing symptoms or alternative causes"
+    ],
+    "answer": 0,
+    "rationale": "Assess symptom resolution clinically. Routine stool testing of an asymptomatic patient is not a test of cure. A return of compatible diarrhea requires a fresh assessment for recurrence and other explanations, using testing when clinically appropriate. Neither treatment completion nor an isolated positive assay replaces reassessment.",
+    "reviewHref": "#diagnostic-stewardship"
+  }
+};
+export const clostridioidesDifficileInfectionQuestionBank = beforeHistoricalCdiQuestionBank.map(q => historicalCdiQuestionOverrides[q.id] ?? q);
 
 if (clostridioidesDifficileInfectionQuestionBank.length < 100) throw new Error(`Clostridioides difficile infection question bank must contain at least 100 questions, found ${clostridioidesDifficileInfectionQuestionBank.length}.`);
