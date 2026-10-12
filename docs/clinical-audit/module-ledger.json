@@ -37950,7 +37950,8 @@
       "status": "reviewing",
       "evidence": [
         "enteral-nutrition-broader-ddi-tetracycline-review.json",
-        "fluid-broader-clinical-interactions-review.json"
+        "fluid-broader-clinical-interactions-review.json",
+        "ddi-historical-live-release-review.json"
       ],
       "latestEnteralDependencyReview": {
         "evidence": "enteral-nutrition-broader-ddi-tetracycline-review.json",
@@ -38130,6 +38131,17 @@
           "exactRemoteObservedByTool": true,
           "remoteVerifiedAt": "2026-10-09T08:00:50.050018+00:00"
         }
+      },
+      "historicalClinicalDdiScopedReview": {
+        "evidence": "ddi-historical-live-release-review.json",
+        "verifiedQuestionIds": [
+          "clinical-drug-interactions-007",
+          "clinical-drug-interactions-079",
+          "clinical-drug-interactions-127"
+        ],
+        "productionLiveVerified": true,
+        "mainCommit": "c68b934c63b09f7f85ecd5b84b6ee04aac2f128c",
+        "wholeModuleVerified": false
       }
     },
     {
