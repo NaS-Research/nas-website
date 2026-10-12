@@ -52,7 +52,7 @@ function distractors(index, field) {
   return [7, 17, 29].map((offset) => concepts[(index + offset) % concepts.length][field]);
 }
 
-export const clinicalDrugInteractionsQuestionBank = concepts.flatMap((concept, index) =>
+const beforeHistoricalClinicalDdiQuestionBank = concepts.flatMap((concept, index) =>
   dimensions.map(([field, prompt], dimensionIndex) => ({
     id: `clinical-drug-interactions-${String(index * 4 + dimensionIndex + 1).padStart(3, "0")}`,
     question: `${prompt} ${concept[0]}?`,
@@ -62,3 +62,46 @@ export const clinicalDrugInteractionsQuestionBank = concepts.flatMap((concept, i
     reviewHref: `#${concept[1]}`,
   })),
 );
+
+const historicalClinicalDdiQuestionOverrides = {
+  "clinical-drug-interactions-007": {
+    "id": "clinical-drug-interactions-007",
+    "question": "When judging the clinical significance of a drug interaction that changes exposure, which assessment is most appropriate?",
+    "choices": [
+      "Review human exposure data, current labeling, dose, route, duration, and therapeutic index.",
+      "Use a theoretical mechanism alone to assign the same severity to every patient.",
+      "Apply one automatic dose adjustment to every drug sharing the same interaction pathway.",
+      "Treat a database severity category as sufficient without reviewing the exact product or exposure evidence."
+    ],
+    "answer": 0,
+    "rationale": "Clinical significance requires evidence for the exact products and exposure change, interpreted with dose, route, duration, therapeutic index, and patient context. FDA interaction examples supplement prescribing information and are not a comprehensive list. A mechanism or severity category alone does not determine a universal dose change.",
+    "reviewHref": "#interaction-framework"
+  },
+  "clinical-drug-interactions-079": {
+    "id": "clinical-drug-interactions-079",
+    "question": "When evaluating a suspected protein-binding interaction in a patient taking phenytoin who has hypoalbuminemia, which assessment is most appropriate?",
+    "choices": [
+      "Review albumin, kidney and liver function, total and measured unbound phenytoin concentrations, and clinical toxicity.",
+      "Assume an apparently acceptable total phenytoin concentration excludes toxicity despite hypoalbuminemia.",
+      "Change the dose from the percentage of protein binding alone without assessing concentrations or clinical response.",
+      "Treat albumin as the only relevant result and disregard organ function or toxicity."
+    ],
+    "answer": 0,
+    "rationale": "Low albumin can make total phenytoin misleading because the unbound fraction can increase. The reviewed DILANTIN labeling bases level monitoring on unbound phenytoin in hypoalbuminemia or renal or hepatic disease. Interpret concentrations with the clinical assessment; neither total concentration nor binding percentage alone determines safe dose management. This product-specific example does not establish a free-level monitoring rule for every medicine.",
+    "reviewHref": "#transporter-distribution-interactions"
+  },
+  "clinical-drug-interactions-127": {
+    "id": "clinical-drug-interactions-127",
+    "question": "Which assessment best supports evaluating potentially interacting medicines during pregnancy or lactation?",
+    "choices": [
+      "Review pregnancy timing, lactation, maternal disease, active metabolites, alternatives, and infant monitoring.",
+      "Use a retired pregnancy letter alone and omit current narrative labeling and exposure timing.",
+      "Assume pregnancy information alone establishes safety during breastfeeding without reviewing infant exposure.",
+      "Assess the interaction mechanism alone and disregard maternal disease, alternatives, or monitoring."
+    ],
+    "answer": 0,
+    "rationale": "Use current narrative product information and the timing of exposure, maternal disease, drug or metabolite exposure, alternatives, and applicable infant monitoring. The book describes pregnancy risk and lactation drug/metabolite information separately, and FDA PLLR resources replace pregnancy letters with narrative information. A pregnancy category or interaction mechanism alone cannot answer the complete clinical question.",
+    "reviewHref": "#drug-disease-interactions"
+  }
+};
+export const clinicalDrugInteractionsQuestionBank = beforeHistoricalClinicalDdiQuestionBank.map(q => historicalClinicalDdiQuestionOverrides[q.id] ?? q);
