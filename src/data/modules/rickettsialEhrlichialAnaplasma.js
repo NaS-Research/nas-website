@@ -93,7 +93,7 @@ export const rickettsialEhrlichialAnaplasmaModule = {
       [
         ["Use early whole blood PCR selectively", "Whole blood PCR is useful early for ehrlichiosis and anaplasmosis because organisms circulate in leukocytes. Sensitivity falls after doxycycline begins."],
         ["Know the RMSF blood limitation", "RMSF whole blood PCR is less sensitive because infection centers in endothelium. Rash or eschar biopsy PCR or immunostaining can be more useful when tissue is available."],
-        ["Confirm with paired IgG IFA", "Collect acute and convalescent serum about 2 to 4 weeks apart. A fourfold rise supports acute infection, while one elevated titer can reflect prior exposure."],
+        ["Confirm with paired IgG IFA", "For RMSF, collect acute and convalescent IgG IFA serum samples 2 to 10 weeks apart, as specified by current CDC diagnostic guidance. Interpret a fourfold rise with a compatible illness; one elevated titer can reflect prior exposure."],
         ["Use microscopy as a clue", "Morulae in monocytes or granulocytes can support ehrlichiosis or anaplasmosis, but low sensitivity and operator dependence make a negative smear unhelpful for exclusion."]
       ],
       ["Specimen collection cannot delay therapy.", "RMSF whole blood PCR can miss disease.", "Early serology is often negative.", "One elevated titer does not prove acute infection."],
@@ -138,7 +138,7 @@ export const rickettsialEhrlichialAnaplasmaModule = {
       [
         ["Treat children of every age", "CDC and pediatric guidance recommend doxycycline for suspected rickettsial disease in all children. Short recommended courses have not shown permanent tooth staining."],
         ["Use doxycycline for suspected RMSF in pregnancy", "Untreated RMSF can be fatal. Counsel with current narrative evidence, involve specialists when possible, and do not substitute an inferior regimen by reflex."],
-        ["Manage severe allergy as an emergency", "Life threatening doxycycline allergy with suspected RMSF can warrant inpatient rapid desensitization. Chloramphenicol has worse RMSF outcomes and does not cover ehrlichiosis or anaplasmosis."],
+        ["Manage severe allergy as an emergency", "Clarify the reported reaction and involve an appropriate specialist. In selected immediate hypersensitivity reactions, inpatient rapid desensitization may be considered; evidence is limited to case reports. This is not an automatic pathway for every severe reaction. Chloramphenicol has worse RMSF outcomes and does not cover ehrlichiosis or anaplasmosis."],
         ["Keep rifampin in its narrow role", "Expert guided rifampin can be considered for selected mild anaplasmosis when doxycycline cannot be used. It does not treat RMSF or possible Borrelia coinfection."]
       ],
       ["Age below eight does not delay doxycycline.", "Pregnancy requires disease-specific benefit risk reasoning.", "Desensitization can preserve effective RMSF therapy.", "Rifampin is not an undifferentiated substitute."],
