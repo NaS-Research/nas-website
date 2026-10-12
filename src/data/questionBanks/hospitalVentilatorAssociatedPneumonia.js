@@ -131,6 +131,51 @@ const hapPreventionQuestionOverrides = {
     "reviewHref": "#definitive-resistant-pathogens"
   }
 };
-export const hospitalVentilatorAssociatedPneumoniaQuestionBank = beforeHapDistractorBank.map(q => hapPreventionQuestionOverrides[q.id] ?? q);
+const beforeHistoricalHapQuestionBank = beforeHapDistractorBank.map(q => hapPreventionQuestionOverrides[q.id] ?? q);
+const historicalHapQuestionOverrides = {
+  "hospital-ventilator-associated-pneumonia-017": {
+    "id": "hospital-ventilator-associated-pneumonia-017",
+    "lesson": "diagnosis-differential",
+    "question": "Which principle best characterizes clinical and imaging diagnosis?",
+    "choices": [
+      "A new infiltrate plus infectious clinical evidence supports HAP or VAP, but no gold standard exists",
+      "A new infiltrate alone proves that the lung abnormality has an infectious cause",
+      "Purulent secretions alone provide a definitive diagnosis regardless of imaging or clinical trajectory",
+      "Clinical evidence can be ignored once an imaging abnormality is present"
+    ],
+    "answer": 0,
+    "rationale": "Interpret a new lung infiltrate together with clinical evidence of infection, such as new fever, purulent sputum, leukocytosis, or declining oxygenation. No gold standard exists for HAP or VAP diagnosis. An infiltrate or secretion change alone does not establish the full diagnosis; reassess discordant findings and alternative explanations.",
+    "reviewHref": "#diagnosis-differential"
+  },
+  "hospital-ventilator-associated-pneumonia-065": {
+    "id": "hospital-ventilator-associated-pneumonia-065",
+    "lesson": "hap-empiric-therapy",
+    "question": "Which principle best characterizes HAP MSSA and gram-negative frame?",
+    "choices": [
+      "Empiric HAP therapy covers S. aureus, P. aeruginosa, and other gram-negative bacilli, with MRSA coverage when indicated",
+      "Empiric HAP therapy can cover gram-negative bacilli alone and omit all S. aureus coverage",
+      "Empiric HAP therapy can cover MSSA alone and omit P. aeruginosa and other gram-negative bacilli",
+      "Empiric HAP therapy needs P. aeruginosa coverage only after a positive culture has already identified it"
+    ],
+    "answer": 0,
+    "rationale": "Build empiric HAP therapy to cover S. aureus together with P. aeruginosa and other gram-negative bacilli. Select MSSA or MRSA coverage and the breadth of antipseudomonal therapy using patient risk factors and local susceptibility data. A positive culture is not a prerequisite for empiric P. aeruginosa coverage; narrow treatment when microbiology and clinical response permit.",
+    "reviewHref": "#hap-empiric-therapy"
+  },
+  "hospital-ventilator-associated-pneumonia-113": {
+    "id": "hospital-ventilator-associated-pneumonia-113",
+    "lesson": "definitive-resistant-pathogens",
+    "question": "Which principle best characterizes definitive MRSA therapy?",
+    "choices": [
+      "Vancomycin or linezolid is recommended for proven MRSA HAP or VAP",
+      "Choose daptomycin for MRSA HAP or VAP because its bloodstream activity guarantees lung activity",
+      "Treat proven MRSA HAP or VAP with an MSSA-only antibiotic instead of MRSA-active therapy",
+      "Use an antipseudomonal agent with no MRSA activity as the sole definitive treatment for proven MRSA HAP or VAP"
+    ],
+    "answer": 0,
+    "rationale": "For MRSA HAP or VAP, ATS/IDSA recommends vancomycin or linezolid. Choose between them using patient-specific factors, including renal function, blood cell counts and interacting medicines. Daptomycin is inactivated by pulmonary surfactant and should not be used to treat pneumonia. MSSA-only or gram-negative-only activity does not replace MRSA-active definitive therapy.",
+    "reviewHref": "#definitive-resistant-pathogens"
+  }
+};
+export const hospitalVentilatorAssociatedPneumoniaQuestionBank = beforeHistoricalHapQuestionBank.map(q => historicalHapQuestionOverrides[q.id] ?? q);
 
 if(hospitalVentilatorAssociatedPneumoniaQuestionBank.length<100)throw new Error(`Hospital and ventilator-associated pneumonia question bank must contain at least 100 questions, found ${hospitalVentilatorAssociatedPneumoniaQuestionBank.length}.`);
