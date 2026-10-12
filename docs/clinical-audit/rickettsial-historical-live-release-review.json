@@ -1,6 +1,6 @@
 {
-  "status": "source_build_actual_native_passed_public_pending",
-  "checkedUTC": "2026-10-12T19:47:45.456869+00:00",
+  "status": "verified_scoped_public_release",
+  "checkedUTC": "2026-10-12T19:52:06.870354+00:00",
   "questionIds": [
     "rickettsial-015",
     "rickettsial-023",
@@ -38,7 +38,10 @@
     "rickettsial-qualified-review-v2.json": "b20383fbe57309a35ec70a03a99bda6a88670946555cf775ae8bd54a2cf38067",
     "main-integration-rickettsial-v1.json": "ec549b9658aad12c79d7e5b0ce96d675c3562aada0e8cc5b5f4851cbd4b0eef1",
     "browser-rickettsial-main-v1.json": "492bda702829416dab0f2819b0ab10d2785b6b10b3640a0c09d4a9ba28914e36",
-    "actual-native-rickettsial-complete-v1.json": "c53c442e7cfd159da57579172ddda12dc75f28e1433a4cd8f35e7d095173086c"
+    "actual-native-rickettsial-complete-v1.json": "c53c442e7cfd159da57579172ddda12dc75f28e1433a4cd8f35e7d095173086c",
+    "browser-rickettsial-live-v1.json": "3e7b036f04e183d23725d2b12c589de8673495c1034b904916ad43aca428995f",
+    "public-pixel-comparison-rickettsial-v1.json": "04d7001b628dad27466d7e2393d2eb349fb87829c9e496e83d3059e6135e494d",
+    "original-preservation-rickettsial-v1.json": "310029a3d3e474ff3b897c33916d1c401b7c7f7b07562895c000c12f4dd1fb5c"
   },
   "selected30WholeObjectsExact": true,
   "entireCumulativePoolExact": true,
@@ -47,6 +50,36 @@
   "chaptersVerified": 7,
   "wholeModuleVerified": false,
   "wholeChapterVerified": false,
-  "productionLiveVerified": false,
-  "wholeGoalComplete": false
+  "productionLiveVerified": true,
+  "wholeGoalComplete": false,
+  "release": {
+    "mainCommit": "526b4884a31f74fd91058aa9fa2c89dd740aaa88",
+    "auditReviewCommit": "1a588b4caf3b2e2597e634e05679d2b2db6fd73b",
+    "exactRemoteMainVerified": true,
+    "liveBrowserPassed": true,
+    "publicCapturesRGBIdenticalToActuallyInspectedMain": 32,
+    "extraPublicDifferences": 0,
+    "newestFirstAndSearchRelevanceVerified": true
+  },
+  "olderAuditDifferencesPreserved": [
+    {
+      "id": "rickettsial-086",
+      "status": "older_audit_difference_preserved_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "id": "rickettsial-088",
+      "status": "older_audit_difference_preserved_not_published_here",
+      "absentFromMain": false
+    }
+  ],
+  "remainingHistoricalQuestions": 31,
+  "limits": "Six whole questions/24 choices and two source-qualified teaching-body corrections only. No whole module or chapter closure. Unreviewed older Audit differences remain preserved and are not published here. The selected30remain exact; no cumulative pool objects changed; all1184pool objects remain exact.",
+  "sourceDiscrepanciesAndLimits": [
+    "Book PDF396/printed388 gives a short rickettsial overview and treatment table; it does not independently establish the detailed assessment, serology or allergy pathways. Those changes use previously authorized CDC primary sources.",
+    "CDC2016 recommends paired sera ideally 2-4 weeks apart for the broader group; current RMSF-specific CDC guidance states 2-10 weeks. The revised body explicitly names RMSF.",
+    "Rapid doxycycline desensitization evidence in CDC2016 is limited to individual immediate-hypersensitivity case reports. Do not generalize it to every severe reaction.",
+    "No full chapter or whole module newly certified; other teaching, worked examples, visuals and embedded checks remain unchanged and require their own coverage.",
+    "Book printed388 lists ehrlichiosis doxycycline for7-14days, while the retained duration lesson uses a minimum5-7days with clinical improvement and at least3days beyond fever, reflecting CDC guidance. Full disease-duration reconciliation remains outside this six-question unit; no new duration qualification here."
+  ]
 }

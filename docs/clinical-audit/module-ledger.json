@@ -37705,7 +37705,8 @@
       "status": "reviewing",
       "evidence": [
         "enteral-nutrition-broader-tickborne-tularemia-review.json",
-        "final-primary-live-release-review.json"
+        "final-primary-live-release-review.json",
+        "rickettsial-historical-live-release-review.json"
       ],
       "broaderEnteralAdministrationReview": {
         "evidence": "enteral-nutrition-broader-tickborne-tularemia-review.json",
@@ -37755,6 +37756,20 @@
         ],
         "productionLiveVerified": true,
         "mainCommit": "266ece8b784eb07862d618ba6c28d91f1cb487cc",
+        "wholeModuleVerified": false
+      },
+      "historicalRickettsialScopedReview": {
+        "evidence": "rickettsial-historical-live-release-review.json",
+        "verifiedQuestionIds": [
+          "rickettsial-015",
+          "rickettsial-023",
+          "rickettsial-051",
+          "rickettsial-059",
+          "rickettsial-115",
+          "rickettsial-123"
+        ],
+        "productionLiveVerified": true,
+        "mainCommit": "526b4884a31f74fd91058aa9fa2c89dd740aaa88",
         "wholeModuleVerified": false
       }
     },
