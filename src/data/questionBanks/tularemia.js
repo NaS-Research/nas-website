@@ -107,6 +107,136 @@ const finalPrimaryQuestionOverrides = {
     "reviewHref": "#dosing-administration-monitoring"
   }
 };
-export const tularemiaQuestionBank = beforeFinalPrimaryQuestionBank.map(q => finalPrimaryQuestionOverrides[q.id] ?? q);
+const beforeHistoricalTularemiaQuestionBank = beforeFinalPrimaryQuestionBank.map(q => finalPrimaryQuestionOverrides[q.id] ?? q);
 
+
+const historicalTularemiaQuestionOverrides = {
+  "tularemia-007": {
+    "id": "tularemia-007",
+    "lesson": "ecology-transmission",
+    "question": "When assessing possible arthropod-associated tularemia, which exposure assessment is most appropriate?",
+    "choices": [
+      "Assess tick or fly exposure, location, season, animal contact, skin portal, and symptom onset",
+      "Assume the Lyme disease tick pathway is a complete tularemia exposure assessment.",
+      "Exclude tularemia whenever a patient cannot recall a tick bite, without asking about deer flies or animal contact.",
+      "Use the bite location alone and disregard exposure timing or the clinical presentation."
+    ],
+    "answer": 0,
+    "rationale": "Tick or deer-fly exposure can be relevant, and animal contact is another route. Tularemia vector ecology differs from Lyme disease; an exposure history should not be reduced to Lyme-specific assumptions or a remembered tick bite.",
+    "reviewHref": "#ecology-transmission"
+  },
+  "tularemia-015": {
+    "id": "tularemia-015",
+    "lesson": "ecology-transmission",
+    "question": "When reconstructing a suspected tularemia exposure, which timeline and contact assessment is most appropriate?",
+    "choices": [
+      "Assess exposure date, symptom onset, laboratory or occupational contact, PPE breach, and intentional release indicators",
+      "Use symptom onset alone to identify the exposure route, without asking when or how contact occurred.",
+      "Assume routine proximity to a patient carries the same risk as direct contact with infectious material.",
+      "Disregard laboratory or occupational safety breaches because the illness can also follow natural exposures."
+    ],
+    "answer": 0,
+    "rationale": "Relate symptom onset to the exposure date and mechanism. Occupational or infectious-material contact requires its own assessment; ordinary close contact is not the usual transmission route. Rare human-associated transmissions have been reported, so an absolute claim that transmission has never occurred is inappropriate.",
+    "reviewHref": "#ecology-transmission"
+  },
+  "tularemia-019": {
+    "id": "tularemia-019",
+    "lesson": "clinical-forms",
+    "question": "When evaluating possible ulceroglandular tularemia, which local examination and exposure assessment is most appropriate?",
+    "choices": [
+      "Assess ulcer, eschar, pain, drainage, node size, fluctuation, fever, and exposure portal",
+      "Treat the skin lesion alone as definitive confirmation without considering exposure or diagnostic evidence.",
+      "Exclude glandular tularemia whenever no obvious skin ulcer is found.",
+      "Assess only respiratory findings and ignore the lesion and its regional lymph nodes."
+    ],
+    "answer": 0,
+    "rationale": "Ulceroglandular disease can produce an inoculation-site ulcer with regional lymphadenopathy after an arthropod bite or animal contact. Glandular disease may lack an obvious ulcer. The pattern supports assessment but does not independently prove the cause.",
+    "reviewHref": "#clinical-forms"
+  },
+  "tularemia-043": {
+    "id": "tularemia-043",
+    "lesson": "severity-triage",
+    "question": "When a positive tularemia antibody result does not fit the patient's illness and exposure history, which assessment is most appropriate before accepting the diagnosis?",
+    "choices": [
+      "Reassess the clinical syndrome, exposure history, test timing and specificity, and alternative causes of illness.",
+      "Treat any positive antibody result as proof of the cause of the current illness, regardless of clinical or exposure fit.",
+      "Stop evaluating other causes as soon as an antibody result is positive.",
+      "Use the antibody result alone to identify the exposure portal and current illness severity."
+    ],
+    "answer": 0,
+    "rationale": "Interpret antibody results with a compatible clinical illness and exposure. False positives and cross-reactions can occur, and antibodies can persist after prior infection. An isolated result does not establish that tularemia explains the current illness; poor clinical fit warrants reassessment of alternatives.",
+    "reviewHref": "#severity-triage"
+  },
+  "tularemia-051": {
+    "id": "tularemia-051",
+    "lesson": "diagnosis-laboratory-safety",
+    "question": "When tularemia is suspected before a clinical specimen is processed, which laboratory-safety assessment is most appropriate?",
+    "choices": [
+      "Assess who received the alert, specimen route, containment, potential aerosol generation, and occupational exposure",
+      "Use routine processing without alerting the laboratory because the specimen is clinical material.",
+      "Wait for a positive culture before notifying laboratory staff of the suspected organism.",
+      "Treat patient-care precautions as proof that all laboratory culture work can proceed without organism-specific safety review."
+    ],
+    "answer": 0,
+    "rationale": "Notify the laboratory when tularemia is suspected so staff can plan appropriate diagnostic and safety procedures. Clinical-specimen and culture handling are distinct; an alert should precede hazardous work rather than depend on a positive culture.",
+    "reviewHref": "#diagnosis-laboratory-safety"
+  },
+  "tularemia-055": {
+    "id": "tularemia-055",
+    "lesson": "diagnosis-laboratory-safety",
+    "question": "Which assessment best supports selecting diagnostic specimens when tularemia is suspected?",
+    "choices": [
+      "Match the specimen to the clinical form and coordinate safe collection and testing with the alerted laboratory.",
+      "Choose the same specimen for every clinical form without considering the involved site.",
+      "Use an early negative antibody test to cancel all further diagnostic assessment despite compatible illness.",
+      "Collect and process specimens without informing the laboratory of suspected tularemia."
+    ],
+    "answer": 0,
+    "rationale": "Specimen choice follows the disease compartment: ulcer, conjunctival, lymph-node, blood or respiratory material may be appropriate. Alert the laboratory and coordinate testing. An early negative antibody result does not exclude compatible acute disease.",
+    "reviewHref": "#diagnosis-laboratory-safety"
+  },
+  "tularemia-135": {
+    "id": "tularemia-135",
+    "lesson": "prophylaxis-bioterrorism",
+    "question": "For an asymptomatic worker with a possible occupational exposure to F. tularensis, which assessment is most appropriate before choosing prophylaxis or fever watch?",
+    "choices": [
+      "Assess the material and exposure mechanism, safety breaches, elapsed time, symptoms, and individual risk to choose prophylaxis or fever watch with clinical and occupational-health guidance.",
+      "Give the same prophylaxis plan to every worker based only on being employed in the same laboratory.",
+      "Choose prophylaxis or monitoring without reviewing the exposure mechanism or elapsed time.",
+      "Continue an exposure-prevention plan unchanged after concerning symptoms develop, without clinical evaluation."
+    ],
+    "answer": 0,
+    "rationale": "Occupational management may use antimicrobial prophylaxis or fever watch. Exposure risk, elapsed time, and individual preferences help guide the decision; criteria are not fully standardized. New concerning symptoms require medical evaluation for illness. Prophylaxis is not treatment for an already symptomatic patient.",
+    "reviewHref": "#prophylaxis-bioterrorism"
+  },
+  "tularemia-143": {
+    "id": "tularemia-143",
+    "lesson": "prophylaxis-bioterrorism",
+    "question": "When an intentional F. tularensis release is suspected, which assessment best separates prevention from treatment needs?",
+    "choices": [
+      "Assess exposure zone, symptom screen, release timing, drug supply, resistance intelligence, contraindications, and follow-up",
+      "Give one prophylaxis plan to symptomatic and asymptomatic people without reassessing illness.",
+      "Assume every nearby resident has confirmed exposure without an event investigation.",
+      "Disregard antimicrobial susceptibility information once prophylaxis has started."
+    ],
+    "answer": 0,
+    "rationale": "Define who was likely exposed and who is already ill, with public-health coordination. Prevention and treatment have different objectives, and possible engineered resistance affects antimicrobial decisions. Exposure location, timing, symptoms, available drugs and follow-up therefore belong in the assessment.",
+    "reviewHref": "#prophylaxis-bioterrorism"
+  },
+  "tularemia-147": {
+    "id": "tularemia-147",
+    "lesson": "prophylaxis-bioterrorism",
+    "question": "For a healthcare worker using standard precautions during routine tularemia care, which prevention assessment is most appropriate?",
+    "choices": [
+      "Assess job role, PPE, specimen handling, aerosol event, sharps injury, symptoms, and public health instructions",
+      "Start routine antimicrobial PrEP for every patient-contact shift regardless of exposure.",
+      "Replace protective measures with routine pre-exposure antibiotics.",
+      "Use the healthcare job title alone to decide prophylaxis without considering actual exposure."
+    ],
+    "answer": 0,
+    "rationale": "Routine patient care with standard precautions does not require automatic antimicrobial PrEP. Review the actual task and exposure. Contaminated environmental response work without appropriate PPE is a separate situation requiring individualized public-health guidance, rather than a rule that prophylaxis is never considered.",
+    "reviewHref": "#prophylaxis-bioterrorism"
+  }
+};
+export const tularemiaQuestionBank = beforeHistoricalTularemiaQuestionBank.map(q => historicalTularemiaQuestionOverrides[q.id] ?? q);
 if (tularemiaQuestionBank.length < 100) throw new Error(`Tularemia question bank must contain at least 100 questions, found ${tularemiaQuestionBank.length}.`);
