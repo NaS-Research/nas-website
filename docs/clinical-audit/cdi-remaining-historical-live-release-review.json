@@ -1,6 +1,6 @@
 {
-  "status": "source_build_actual_native_passed_public_pending",
-  "checkedUTC": "2026-10-12T19:17:49.898473+00:00",
+  "status": "verified_scoped_public_release",
+  "checkedUTC": "2026-10-12T19:23:02.884582+00:00",
   "questionIds": [
     "clostridioides-difficile-infection-026",
     "clostridioides-difficile-infection-071",
@@ -41,7 +41,10 @@
     "cdi-qualified-review-v2.json": "e8f8db53424b4201a6257a3c3261d9fa587ea1589680969bf2be412c1d09199e",
     "main-integration-cdi-v1.json": "0aac011384b6d8dcf70f6eb0edbc732faa2d91cf4a2e8562382c80ab50f83741",
     "browser-cdi-main-v1.json": "a68d8643e44a36e7729c51609b31ceef42b21bbad6f42141103856a0d75f6f5d",
-    "actual-native-cdi-complete-v1.json": "001ff066b5f7e18fa97894b7b860b56108d7d4136642a0a3242891b8ee56432c"
+    "actual-native-cdi-complete-v1.json": "001ff066b5f7e18fa97894b7b860b56108d7d4136642a0a3242891b8ee56432c",
+    "browser-cdi-live-v1.json": "d4aa9312a673e79fa054395c757d4ea315e436bfc345b19de71de1cc85bfc27f",
+    "public-pixel-comparison-cdi-v1.json": "7d4b8f66a7d7c83ee36fb9827c05e7ab22d08c3349aa16e65cda12fc6e203a31",
+    "original-preservation-cdi-v1.json": "7903158e2254c6554eeda080fb0660470e2b315f21d6387ef201667f48c3b539"
   },
   "selected30WholeObjectsExact": true,
   "entireCumulativePoolExact": true,
@@ -50,6 +53,80 @@
   "chaptersVerified": 7,
   "wholeModuleVerified": false,
   "wholeChapterVerified": false,
-  "productionLiveVerified": false,
-  "wholeGoalComplete": false
+  "productionLiveVerified": true,
+  "wholeGoalComplete": false,
+  "release": {
+    "mainCommit": "fe1bbc8e8c4e411b3df4ca2cf3e47376af70607f",
+    "auditReviewCommit": "1e32b432e7d4b0bee0a6a2f199b8b875b83cdd9e",
+    "exactRemoteMainVerified": true,
+    "liveBrowserPassed": true,
+    "publicCapturesRGBIdenticalToActuallyInspectedMain": 44,
+    "extraPublicDifferences": 0,
+    "newestFirstAndSearchRelevanceVerified": true
+  },
+  "olderAuditDifferencesPreserved": [
+    {
+      "id": "clostridioides-difficile-infection-041",
+      "status": "older_audit_difference_preserved_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "id": "clostridioides-difficile-infection-042",
+      "status": "older_audit_difference_preserved_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "id": "clostridioides-difficile-infection-043",
+      "status": "older_audit_difference_preserved_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "id": "clostridioides-difficile-infection-044",
+      "status": "older_audit_difference_preserved_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "id": "clostridioides-difficile-infection-049",
+      "status": "older_audit_difference_preserved_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "id": "clostridioides-difficile-infection-050",
+      "status": "older_audit_difference_preserved_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "id": "clostridioides-difficile-infection-051",
+      "status": "older_audit_difference_preserved_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "id": "clostridioides-difficile-infection-052",
+      "status": "older_audit_difference_preserved_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "id": "clostridioides-difficile-infection-053",
+      "status": "older_audit_difference_preserved_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "id": "clostridioides-difficile-infection-054",
+      "status": "older_audit_difference_preserved_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "id": "clostridioides-difficile-infection-056",
+      "status": "older_audit_difference_preserved_not_published_here",
+      "absentFromMain": false
+    }
+  ],
+  "remainingHistoricalQuestions": 37,
+  "limits": "Nine whole questions/36 choices and two dated teaching-body corrections only. No whole module or chapter closure. Unreviewed older Audit differences remain preserved and are not published here. The selected30remain exact; no cumulative pool objects changed; all1184pool objects remain exact.",
+  "sourceDiscrepanciesAndLimits": [
+    "FDA linked REBYOTA PDF contains unfilled initial approval/revision fields; do not claim a dated latest revision or product availability.",
+    "AGA2026 adult expert update located DOI10.1016/j.cgh.2026.05.007; full journal retrieval returned403 in web tool. Preserve this limitation; do not claim its unread advice or that2024 is the latest adult update.",
+    "HTML sources are not clinically qualified merely by retrieval.",
+    "Book PDF393/printed385 uses WBC<15000 in its nonsevere footnote; compare guideline threshold wording before adding boundary claims."
+  ]
 }
