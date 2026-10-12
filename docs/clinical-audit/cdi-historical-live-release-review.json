@@ -1,6 +1,6 @@
 {
-  "status": "source_build_actual_native_passed_public_pending",
-  "checkedUTC": "2026-10-12T18:39:17.940376+00:00",
+  "status": "verified_scoped_public_release",
+  "checkedUTC": "2026-10-12T18:42:48.453765+00:00",
   "questionIds": [
     "clostridioides-difficile-infection-015",
     "clostridioides-difficile-infection-022",
@@ -17,7 +17,10 @@
     "cdi-qualified-review-v2.json": "9b9c6f1207fb66284d377a36982d28b69e700ce88e414c9d79e835e7b7629801",
     "main-integration-cdi-v1.json": "fff63d550adfa19b76c0f645cc0461f1d0817752b503275b2499f64a199f2517",
     "browser-cdi-main-v1.json": "5751622ada825abb1cccdce60943d43ed6353a618317a6840e8d3cc4592629ac",
-    "actual-native-cdi-complete-v1.json": "10b87bd18d0b97fe5a94cc045aff283d8c35cb112221e8a9a8746086a50902fa"
+    "actual-native-cdi-complete-v1.json": "10b87bd18d0b97fe5a94cc045aff283d8c35cb112221e8a9a8746086a50902fa",
+    "browser-cdi-live-v1.json": "77bcaae1b65ba98554789c7343b74f3ead71b4d1297efd66ac6b70c8392bad7e",
+    "public-pixel-comparison-cdi-v1.json": "3eaaea0f99b8f0f09ec7182c9a66f9276c3dfe6882cffdca9ff6f2b8eafb4b99",
+    "original-preservation-cdi-v1.json": "6a1e146a831e0e96679e87dad6236d11f4b3e7959e1744515a5b04ae6bc05bd5"
   },
   "selected30WholeObjectsExact": true,
   "entireCumulativePoolExact": true,
@@ -26,6 +29,74 @@
   "chaptersVerified": 7,
   "wholeModuleVerified": false,
   "wholeChapterVerified": false,
-  "productionLiveVerified": false,
-  "wholeGoalComplete": false
+  "productionLiveVerified": true,
+  "wholeGoalComplete": false,
+  "release": {
+    "mainCommit": "e92f5f16029f1f0d8db831d85baf05e0dbf3d64d",
+    "auditReviewCommit": "8905146b2d1870728e3d50bace61572979ffe975",
+    "exactRemoteMainVerified": true,
+    "liveBrowserPassed": true,
+    "publicCapturesRGBIdenticalToActuallyInspectedMain": 16,
+    "extraPublicDifferences": 0,
+    "newestFirstAndSearchRelevanceVerified": true
+  },
+  "olderAuditDifferencesPreserved": [
+    {
+      "id": "clostridioides-difficile-infection-041",
+      "status": "older_audit_difference_preserved_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "id": "clostridioides-difficile-infection-042",
+      "status": "older_audit_difference_preserved_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "id": "clostridioides-difficile-infection-043",
+      "status": "older_audit_difference_preserved_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "id": "clostridioides-difficile-infection-044",
+      "status": "older_audit_difference_preserved_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "id": "clostridioides-difficile-infection-049",
+      "status": "older_audit_difference_preserved_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "id": "clostridioides-difficile-infection-050",
+      "status": "older_audit_difference_preserved_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "id": "clostridioides-difficile-infection-051",
+      "status": "older_audit_difference_preserved_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "id": "clostridioides-difficile-infection-052",
+      "status": "older_audit_difference_preserved_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "id": "clostridioides-difficile-infection-053",
+      "status": "older_audit_difference_preserved_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "id": "clostridioides-difficile-infection-054",
+      "status": "older_audit_difference_preserved_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "id": "clostridioides-difficile-infection-056",
+      "status": "older_audit_difference_preserved_not_published_here",
+      "absentFromMain": false
+    }
+  ],
+  "remainingHistoricalQuestions": 46,
+  "limits": "Three whole questions/12 choices (three revised) only. No whole module or chapter closure. Unreviewed older Audit differences remain preserved and are not published here. The selected30remain exact; no cumulative pool objects changed; all1184pool objects remain exact."
 }

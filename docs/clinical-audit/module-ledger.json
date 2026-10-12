@@ -37237,7 +37237,8 @@
       "status": "reviewing",
       "evidence": [
         "enteral-nutrition-broader-cdi-vancomycin-review.json",
-        "cdi-primary-live-release-review.json"
+        "cdi-primary-live-release-review.json",
+        "cdi-historical-live-release-review.json"
       ],
       "broaderEnteralBowelDeliveryReview": {
         "evidence": "enteral-nutrition-broader-cdi-vancomycin-review.json",
@@ -37306,6 +37307,17 @@
         "mainCommit": "24ceff056ae52f4862cf47afc3e5dedff28357f8",
         "wholeModuleVerified": false,
         "allOtherContentRequiresItsExistingAuditStatus": true
+      },
+      "historicalCdiScopedReview": {
+        "evidence": "cdi-historical-live-release-review.json",
+        "verifiedQuestionIds": [
+          "clostridioides-difficile-infection-015",
+          "clostridioides-difficile-infection-022",
+          "clostridioides-difficile-infection-023"
+        ],
+        "productionLiveVerified": true,
+        "mainCommit": "e92f5f16029f1f0d8db831d85baf05e0dbf3d64d",
+        "wholeModuleVerified": false
       }
     },
     {
