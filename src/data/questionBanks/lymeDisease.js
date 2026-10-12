@@ -116,5 +116,91 @@ const finalPrimaryQuestionOverrides = {
     "reviewHref": "#localized-treatment"
   }
 };
-export const lymeDiseaseQuestionBank = beforeFinalPrimaryQuestionBank.map(q => finalPrimaryQuestionOverrides[q.id] ?? q);
+const historicalLymeScopedOverrides = {
+  "lyme-034": {
+    "id": "lyme-034",
+    "lesson": "diagnosis-serology",
+    "question": "A patient with potential tick exposure in a Lyme-endemic area has a typical expanding erythema migrans lesion and negative early serology. Which action is appropriate?",
+    "choices": [
+      "Treat the clinical diagnosis without waiting for a positive antibody result.",
+      "Delay treatment until antibody testing becomes positive.",
+      "Exclude Lyme disease because the early antibody result is negative.",
+      "Require daily antibody testing before selecting treatment."
+    ],
+    "answer": 0,
+    "rationale": "A compatible erythema migrans lesion with credible endemic exposure supports clinical diagnosis. Early serology can be negative; it should not delay treatment. This does not make every atypical rash a clinical Lyme diagnosis.",
+    "reviewHref": "#diagnosis-serology"
+  },
+  "lyme-035": {
+    "id": "lyme-035",
+    "lesson": "diagnosis-serology",
+    "question": "Which assessment best supports deciding whether an early expanding lesion can be diagnosed clinically as erythema migrans?",
+    "choices": [
+      "Assess exposure likelihood, lesion evolution and compatibility, alternative diagnoses, and findings that change the manifestation or treatment setting.",
+      "Use the initial antibody result alone and disregard exposure or lesion evolution.",
+      "Assume every annular lesion is erythema migrans without considering other diagnoses.",
+      "Require antibody titers to become negative before assessing the lesion."
+    ],
+    "answer": 0,
+    "rationale": "Clinical diagnosis depends on compatible findings and exposure context. An atypical lesion needs a different diagnostic assessment; one early negative test does not exclude infection. Persistent antibodies are not a cure measure.",
+    "reviewHref": "#diagnosis-serology"
+  },
+  "lyme-110": {
+    "id": "lyme-110",
+    "lesson": "lyme-arthritis",
+    "question": "Objective Lyme synovitis persists after an adequate oral antibiotic course and an adequate IV course. Which next direction fits postantibiotic Lyme arthritis?",
+    "choices": [
+      "Refer to rheumatology or another trained specialist to consider treatment of persistent inflammatory arthritis.",
+      "Continue repeated antibiotic courses until antibody titers become negative.",
+      "Assume persistent synovitis always proves viable infection despite the completed oral and IV courses.",
+      "Withhold joint evaluation and symptom care because antibiotics are complete."
+    ],
+    "answer": 0,
+    "rationale": "The guideline suggests specialist referral after failure of one oral and one IV course; this is a weak recommendation with very low-quality evidence. Persistent synovitis after only the first oral course requires separate response-guided reassessment, not automatic application of this pathway.",
+    "reviewHref": "#lyme-arthritis"
+  },
+  "lyme-111": {
+    "id": "lyme-111",
+    "lesson": "lyme-arthritis",
+    "question": "Before applying the postantibiotic Lyme arthritis pathway, which assessment is appropriate?",
+    "choices": [
+      "Confirm objective synovitis, the prior oral and IV regimens and adherence, other causes of arthritis, functional burden, and the specialist follow-up plan.",
+      "Classify diffuse pain without objective joint swelling as Lyme arthritis.",
+      "Use persistent positive antibody titers alone to prove continuing infection.",
+      "Skip the prior treatment history because any residual swelling after the first oral course is postantibiotic arthritis."
+    ],
+    "answer": 0,
+    "rationale": "The oral-plus-IV treatment history and objective joint findings distinguish this pathway from an initial or partially responsive episode. Review alternative causes and function. Antibody positivity alone does not establish ongoing infection or select further treatment.",
+    "reviewHref": "#lyme-arthritis"
+  },
+  "lyme-146": {
+    "id": "lyme-146",
+    "lesson": "integrated-cases",
+    "question": "A Lyme treatment plan has been selected. Which action best closes responsibility for diagnostic results and treatment follow-up?",
+    "choices": [
+      "Document the regimen and administration, response checkpoint, red flags, pending results, and who reviews and acts on each result.",
+      "End the plan when the prescription is issued and leave pending results without an assigned reviewer.",
+      "Follow antibody titers until negative as the sole measure of treatment success.",
+      "Use the same follow-up plan for every manifestation without considering unresolved safety issues."
+    ],
+    "answer": 0,
+    "rationale": "Assigning result ownership and response checkpoints is a practical clinical application of manifestation-specific care. CDC states that antibodies can persist and cannot determine cure. This handoff framework is an application, not a quoted guideline requirement.",
+    "reviewHref": "#integrated-cases"
+  },
+  "lyme-147": {
+    "id": "lyme-147",
+    "lesson": "integrated-cases",
+    "question": "Which assessment best supports diagnostic and treatment ownership during Lyme follow-up?",
+    "choices": [
+      "Review the diagnosis and test timing, prior infection, exact therapy and adherence, objective trajectory, unresolved safety issues, pending results, and the follow-up owner.",
+      "Assess antibody magnitude alone and omit the objective clinical course.",
+      "Disregard prior therapy and adherence once a prescription appears in the record.",
+      "Assume every pending result will be acted on without identifying who is responsible."
+    ],
+    "answer": 0,
+    "rationale": "Follow-up combines clinical trajectory and an executable care plan; antibody titers cannot determine cure. Explicit pending-result ownership is a practical clinical application. It does not replace reassessment for objective new disease or treatment failure.",
+    "reviewHref": "#integrated-cases"
+  }
+};
+export const lymeDiseaseQuestionBank = beforeFinalPrimaryQuestionBank.map(q => historicalLymeScopedOverrides[q.id] ?? finalPrimaryQuestionOverrides[q.id] ?? q);
 if (lymeDiseaseQuestionBank.length < 100) throw new Error(`Lyme disease question bank must contain at least 100 questions, found ${lymeDiseaseQuestionBank.length}.`);

@@ -1,0 +1,424 @@
+{
+  "status": "source_build_actual_native_passed_production_and_archive_pending",
+  "questionCount": 6,
+  "questionIds": [
+    "lyme-034",
+    "lyme-035",
+    "lyme-110",
+    "lyme-111",
+    "lyme-146",
+    "lyme-147"
+  ],
+  "individualChoicesReviewed": 24,
+  "bookSHA256": "5e60f0b3ce20601985515c259c9503bd7ee2681836efecf03906a7da3dddf6ef",
+  "bookPDFPagesActuallyInspected": [
+    396
+  ],
+  "bookPrintedPagesActuallyInspected": [
+    388
+  ],
+  "bookNativeSHA256": "b678679982ddf4d1fd54a4948ac72e286cac3d09ddcf8ed06e1c76c2da9887e8",
+  "teachingBodiesReviewedAndCorrected": [
+    {
+      "module": "lyme-disease",
+      "lesson": "lyme-arthritis",
+      "heading": "Treat and grade response",
+      "before": "Initial Lyme arthritis receives 28 days of oral doxycycline, amoxicillin, or cefuroxime. Partial improvement can be observed or receive a second oral course. Minimal response can receive IV ceftriaxone for 14 to 28 days after reassessment.",
+      "after": "Initial Lyme arthritis receives 28 days of oral therapy. For mild residual swelling after the first oral course, evidence does not establish observation versus a second course; reassess adherence, other causes, joint findings, and patient preferences. No or minimal response can warrant 2 to 4 weeks of IV ceftriaxone after reassessment.",
+      "source": "IDSA2020 XXIII and XXIV; partial-response knowledge gap and oral-plus-IV failure boundary; weak/very-low certainty referral"
+    },
+    {
+      "module": "lyme-disease",
+      "lesson": "lyme-arthritis",
+      "heading": "Stop antibiotics after adequate oral and IV care",
+      "before": "Persistent synovitis after an adequate oral course and an adequate IV course is managed as postantibiotic inflammatory arthritis with rheumatology, not repeated antimicrobial cycles.",
+      "after": "After failure of one oral antibiotic course and one IV course, the guideline suggests rheumatology or another trained specialist for consideration of DMARDs, biologic agents, intraarticular steroids, or synovectomy. This is a weak recommendation with very low-quality evidence. It is distinct from residual swelling after the first oral course.",
+      "source": "IDSA2020 XXIII and XXIV; partial-response knowledge gap and oral-plus-IV failure boundary; weak/very-low certainty referral"
+    }
+  ],
+  "privateSourceCatalog": [
+    {
+      "name": "book",
+      "SHA256": "5e60f0b3ce20601985515c259c9503bd7ee2681836efecf03906a7da3dddf6ef",
+      "nativeReviewPassed": true,
+      "actualRelevantSourceReviewPassed": true,
+      "sourceReviewPending": false
+    },
+    {
+      "name": "idsa-2020",
+      "URL": "https://www.idsociety.org/practice-guideline/lyme-disease/",
+      "SHA256": "1b09b9406bda156ac669ab8cb0d7a1694ff3f097c69e4bea968faec6a46c23ab",
+      "localFile": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-lyme-historical-review-20261012/evidence/private-lyme-sources-v1/idsa-2020.html",
+      "sourceReviewPending": false,
+      "actualRelevantSourceReviewPassed": true
+    },
+    {
+      "name": "cdc-testing",
+      "URL": "https://www.cdc.gov/lyme/hcp/diagnosis-testing/index.html",
+      "SHA256": "82767677ca5c96e82229207768b6896d48c86e8431187e56b9c519d8c9b9d08d",
+      "localFile": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-lyme-historical-review-20261012/evidence/private-lyme-sources-v1/cdc-testing.html",
+      "sourceReviewPending": false,
+      "actualRelevantSourceReviewPassed": true
+    },
+    {
+      "name": "cdc-arthritis",
+      "URL": "https://www.cdc.gov/lyme/hcp/clinical-care/lyme-arthritis.html",
+      "SHA256": "37d9f5958b580e2c056f7b43c0f283cc0f62350e4f5b3d9c224e616309f09bdb",
+      "localFile": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-lyme-historical-review-20261012/evidence/private-lyme-sources-v1/cdc-arthritis.html",
+      "sourceReviewPending": false,
+      "actualRelevantSourceReviewPassed": true
+    }
+  ],
+  "sourceDiscrepanciesAndLimits": [
+    "Book PDF396/printed388 gives localized Lyme regimens and a brief rash/EIA illustration; it does not establish the full clinical diagnosis, arthritis response or result-ownership pathways. Previously authorized official primary guidance supports those retained claims.",
+    "IDSA2020 V supports clinical diagnosis for compatible EM plus potential endemic exposure; atypical lesions have a different testing pathway.",
+    "IDSA2020 XXIII states a knowledge gap for observation versus another oral course after mild partial response; XXIV specialist referral follows one oral AND one IV course and is weak/very-low certainty.",
+    "CDC2024 testing states antibodies can persist for months to years and cannot determine cure.",
+    "Explicit result ownership and named follow-up checkpoints are practical clinical applications, not direct guideline requirements.",
+    "No whole associated lesson, whole module, whole chapter or full goal is newly certified."
+  ],
+  "wholeAssociatedLessonsNewlyCertified": false,
+  "wholeModuleVerified": false,
+  "wholeChapterVerified": false,
+  "wholeGoalComplete": false,
+  "perQuestionReview": [
+    {
+      "id": "lyme-034",
+      "before": {
+        "id": "lyme-034",
+        "lesson": "diagnosis-serology",
+        "question": "Which clinical action best applies to clinical EM diagnosis?",
+        "choices": [
+          "Treat promptly without requiring a positive antibody result",
+          "Separate iron, calcium, magnesium, aluminum, bismuth, and interacting tube feeds from the dose",
+          "Transition from IV to an effective oral agent after high grade block and symptoms resolve to complete 14 to 21 days",
+          "Diagnose a new episode from new exposure and new objective findings rather than antibody magnitude alone"
+        ],
+        "answer": 0,
+        "rationale": "Antibody production often lags behind the common early rash window",
+        "reviewHref": "#diagnosis-serology"
+      },
+      "after": {
+        "id": "lyme-034",
+        "lesson": "diagnosis-serology",
+        "question": "A patient with potential tick exposure in a Lyme-endemic area has a typical expanding erythema migrans lesion and negative early serology. Which action is appropriate?",
+        "choices": [
+          "Treat the clinical diagnosis without waiting for a positive antibody result.",
+          "Delay treatment until antibody testing becomes positive.",
+          "Exclude Lyme disease because the early antibody result is negative.",
+          "Require daily antibody testing before selecting treatment."
+        ],
+        "answer": 0,
+        "rationale": "A compatible erythema migrans lesion with credible endemic exposure supports clinical diagnosis. Early serology can be negative; it should not delay treatment. This does not make every atypical rash a clinical Lyme diagnosis.",
+        "reviewHref": "#diagnosis-serology"
+      },
+      "allFourChoicesReviewed": true,
+      "stableIdKeyAnchor": true,
+      "sourceBasis": "IDSA V",
+      "disposition": "Revised vague stem and unrelated true distractors to test one explicit decision; expanded rationale with limits."
+    },
+    {
+      "id": "lyme-035",
+      "before": {
+        "id": "lyme-035",
+        "lesson": "diagnosis-serology",
+        "question": "Which assessment is most appropriate for clinical EM diagnosis?",
+        "choices": [
+          "Assess exposure probability, lesion evolution, disseminated findings, alternate diagnoses, and treatment factors",
+          "Assess supplements, antacids, enteral feeds, swallowing, water access, posture, photosensitivity, and adherence",
+          "Assess conduction recovery, pacing dependence, hemodynamics, symptoms, and total treatment duration",
+          "Assess new tick risk, new expanding lesion, prior lesion location, prior treatment, objective findings, and differential"
+        ],
+        "answer": 0,
+        "rationale": "Antibody production often lags behind the common early rash window",
+        "reviewHref": "#diagnosis-serology"
+      },
+      "after": {
+        "id": "lyme-035",
+        "lesson": "diagnosis-serology",
+        "question": "Which assessment best supports deciding whether an early expanding lesion can be diagnosed clinically as erythema migrans?",
+        "choices": [
+          "Assess exposure likelihood, lesion evolution and compatibility, alternative diagnoses, and findings that change the manifestation or treatment setting.",
+          "Use the initial antibody result alone and disregard exposure or lesion evolution.",
+          "Assume every annular lesion is erythema migrans without considering other diagnoses.",
+          "Require antibody titers to become negative before assessing the lesion."
+        ],
+        "answer": 0,
+        "rationale": "Clinical diagnosis depends on compatible findings and exposure context. An atypical lesion needs a different diagnostic assessment; one early negative test does not exclude infection. Persistent antibodies are not a cure measure.",
+        "reviewHref": "#diagnosis-serology"
+      },
+      "allFourChoicesReviewed": true,
+      "stableIdKeyAnchor": true,
+      "sourceBasis": "IDSA V",
+      "disposition": "Revised vague stem and unrelated true distractors to test one explicit decision; expanded rationale with limits."
+    },
+    {
+      "id": "lyme-110",
+      "before": {
+        "id": "lyme-110",
+        "lesson": "lyme-arthritis",
+        "question": "Which clinical action best applies to postantibiotic arthritis?",
+        "choices": [
+          "Refer to rheumatology for anti inflammatory, intraarticular, DMARD, or procedural management as appropriate",
+          "Use respectful shared decision making and provide a concrete plan for symptoms, safety, function, and follow-up",
+          "Screen every suspected case for neurologic and cardiac symptoms before selecting regimen and setting",
+          "Separate iron, calcium, magnesium, aluminum, bismuth, and interacting tube feeds from the dose"
+        ],
+        "answer": 0,
+        "rationale": "Additional antibiotics have not shown benefit after adequate oral and IV treatment",
+        "reviewHref": "#lyme-arthritis"
+      },
+      "after": {
+        "id": "lyme-110",
+        "lesson": "lyme-arthritis",
+        "question": "Objective Lyme synovitis persists after an adequate oral antibiotic course and an adequate IV course. Which next direction fits postantibiotic Lyme arthritis?",
+        "choices": [
+          "Refer to rheumatology or another trained specialist to consider treatment of persistent inflammatory arthritis.",
+          "Continue repeated antibiotic courses until antibody titers become negative.",
+          "Assume persistent synovitis always proves viable infection despite the completed oral and IV courses.",
+          "Withhold joint evaluation and symptom care because antibiotics are complete."
+        ],
+        "answer": 0,
+        "rationale": "The guideline suggests specialist referral after failure of one oral and one IV course; this is a weak recommendation with very low-quality evidence. Persistent synovitis after only the first oral course requires separate response-guided reassessment, not automatic application of this pathway.",
+        "reviewHref": "#lyme-arthritis"
+      },
+      "allFourChoicesReviewed": true,
+      "stableIdKeyAnchor": true,
+      "sourceBasis": "IDSA XXIII/XXIV; CDC arthritis",
+      "disposition": "Revised vague stem and unrelated true distractors to test one explicit decision; expanded rationale with limits."
+    },
+    {
+      "id": "lyme-111",
+      "before": {
+        "id": "lyme-111",
+        "lesson": "lyme-arthritis",
+        "question": "Which assessment is most appropriate for postantibiotic arthritis?",
+        "choices": [
+          "Assess objective synovitis, prior doses and durations, adherence, alternate arthritis, function, and rheumatologic plan",
+          "Assess patient goals, prior experiences, misinformation exposure, functional burden, red flags, and trust",
+          "Assess facial movement, headache, neck stiffness, radicular pain, weakness, palpitations, syncope, dyspnea, chest pain, and edema",
+          "Assess supplements, antacids, enteral feeds, swallowing, water access, posture, photosensitivity, and adherence"
+        ],
+        "answer": 0,
+        "rationale": "Additional antibiotics have not shown benefit after adequate oral and IV treatment",
+        "reviewHref": "#lyme-arthritis"
+      },
+      "after": {
+        "id": "lyme-111",
+        "lesson": "lyme-arthritis",
+        "question": "Before applying the postantibiotic Lyme arthritis pathway, which assessment is appropriate?",
+        "choices": [
+          "Confirm objective synovitis, the prior oral and IV regimens and adherence, other causes of arthritis, functional burden, and the specialist follow-up plan.",
+          "Classify diffuse pain without objective joint swelling as Lyme arthritis.",
+          "Use persistent positive antibody titers alone to prove continuing infection.",
+          "Skip the prior treatment history because any residual swelling after the first oral course is postantibiotic arthritis."
+        ],
+        "answer": 0,
+        "rationale": "The oral-plus-IV treatment history and objective joint findings distinguish this pathway from an initial or partially responsive episode. Review alternative causes and function. Antibody positivity alone does not establish ongoing infection or select further treatment.",
+        "reviewHref": "#lyme-arthritis"
+      },
+      "allFourChoicesReviewed": true,
+      "stableIdKeyAnchor": true,
+      "sourceBasis": "IDSA XXIII/XXIV; CDC arthritis",
+      "disposition": "Revised vague stem and unrelated true distractors to test one explicit decision; expanded rationale with limits."
+    },
+    {
+      "id": "lyme-146",
+      "before": {
+        "id": "lyme-146",
+        "lesson": "integrated-cases",
+        "question": "Which clinical action best applies to diagnostic and treatment ownership?",
+        "choices": [
+          "Document administration, response checkpoints, red flags, pending tests, ECG or joint follow-up when relevant, coinfection review, and the clinician responsible for each result",
+          "Screen every suspected case for neurologic and cardiac symptoms before selecting regimen and setting",
+          "Separate iron, calcium, magnesium, aluminum, bismuth, and interacting tube feeds from the dose",
+          "Transition from IV to an effective oral agent after high grade block and symptoms resolve to complete 14 to 21 days"
+        ],
+        "answer": 0,
+        "rationale": "Antibodies can persist, while safe care depends on objective trajectory, explicit checkpoints, and accountable ownership",
+        "reviewHref": "#integrated-cases"
+      },
+      "after": {
+        "id": "lyme-146",
+        "lesson": "integrated-cases",
+        "question": "A Lyme treatment plan has been selected. Which action best closes responsibility for diagnostic results and treatment follow-up?",
+        "choices": [
+          "Document the regimen and administration, response checkpoint, red flags, pending results, and who reviews and acts on each result.",
+          "End the plan when the prescription is issued and leave pending results without an assigned reviewer.",
+          "Follow antibody titers until negative as the sole measure of treatment success.",
+          "Use the same follow-up plan for every manifestation without considering unresolved safety issues."
+        ],
+        "answer": 0,
+        "rationale": "Assigning result ownership and response checkpoints is a practical clinical application of manifestation-specific care. CDC states that antibodies can persist and cannot determine cure. This handoff framework is an application, not a quoted guideline requirement.",
+        "reviewHref": "#integrated-cases"
+      },
+      "allFourChoicesReviewed": true,
+      "stableIdKeyAnchor": true,
+      "sourceBasis": "CDC testing plus explicit clinical-application inference",
+      "disposition": "Revised vague stem and unrelated true distractors to test one explicit decision; expanded rationale with limits."
+    },
+    {
+      "id": "lyme-147",
+      "before": {
+        "id": "lyme-147",
+        "lesson": "integrated-cases",
+        "question": "Which assessment is most appropriate for diagnostic and treatment ownership?",
+        "choices": [
+          "Assess test timing, prior infection, dose and duration, adherence barriers, cation exposure, objective response, new exposure, unresolved safety issues, and the follow-up owner",
+          "Assess facial movement, headache, neck stiffness, radicular pain, weakness, palpitations, syncope, dyspnea, chest pain, and edema",
+          "Assess supplements, antacids, enteral feeds, swallowing, water access, posture, photosensitivity, and adherence",
+          "Assess conduction recovery, pacing dependence, hemodynamics, symptoms, and total treatment duration"
+        ],
+        "answer": 0,
+        "rationale": "Antibodies can persist, while safe care depends on objective trajectory, explicit checkpoints, and accountable ownership",
+        "reviewHref": "#integrated-cases"
+      },
+      "after": {
+        "id": "lyme-147",
+        "lesson": "integrated-cases",
+        "question": "Which assessment best supports diagnostic and treatment ownership during Lyme follow-up?",
+        "choices": [
+          "Review the diagnosis and test timing, prior infection, exact therapy and adherence, objective trajectory, unresolved safety issues, pending results, and the follow-up owner.",
+          "Assess antibody magnitude alone and omit the objective clinical course.",
+          "Disregard prior therapy and adherence once a prescription appears in the record.",
+          "Assume every pending result will be acted on without identifying who is responsible."
+        ],
+        "answer": 0,
+        "rationale": "Follow-up combines clinical trajectory and an executable care plan; antibody titers cannot determine cure. Explicit pending-result ownership is a practical clinical application. It does not replace reassessment for objective new disease or treatment failure.",
+        "reviewHref": "#integrated-cases"
+      },
+      "allFourChoicesReviewed": true,
+      "stableIdKeyAnchor": true,
+      "sourceBasis": "CDC testing plus explicit clinical-application inference",
+      "disposition": "Revised vague stem and unrelated true distractors to test one explicit decision; expanded rationale with limits."
+    }
+  ],
+  "sourceFiles": {
+    "src/data/questionBanks/lymeDisease.js": "92ebff2839401d1f1cd1652baa13ed059bf6288834886ec5c22deeb2466a5aaf",
+    "src/data/modules/lymeDisease.js": "d0cb3bfb68147ed80df54b4132e5030a75208214a209d7d82694b4aeae239469"
+  },
+  "wholeQuestionBindings": [
+    {
+      "id": "lyme-034",
+      "wholeQuestion": {
+        "id": "lyme-034",
+        "lesson": "diagnosis-serology",
+        "question": "A patient with potential tick exposure in a Lyme-endemic area has a typical expanding erythema migrans lesion and negative early serology. Which action is appropriate?",
+        "choices": [
+          "Treat the clinical diagnosis without waiting for a positive antibody result.",
+          "Delay treatment until antibody testing becomes positive.",
+          "Exclude Lyme disease because the early antibody result is negative.",
+          "Require daily antibody testing before selecting treatment."
+        ],
+        "answer": 0,
+        "rationale": "A compatible erythema migrans lesion with credible endemic exposure supports clinical diagnosis. Early serology can be negative; it should not delay treatment. This does not make every atypical rash a clinical Lyme diagnosis.",
+        "reviewHref": "#diagnosis-serology"
+      },
+      "SHA256": "4a801edb9b222883e868d2f0fccf0ef6f75976017c3317ea71a27ca21c88f777"
+    },
+    {
+      "id": "lyme-035",
+      "wholeQuestion": {
+        "id": "lyme-035",
+        "lesson": "diagnosis-serology",
+        "question": "Which assessment best supports deciding whether an early expanding lesion can be diagnosed clinically as erythema migrans?",
+        "choices": [
+          "Assess exposure likelihood, lesion evolution and compatibility, alternative diagnoses, and findings that change the manifestation or treatment setting.",
+          "Use the initial antibody result alone and disregard exposure or lesion evolution.",
+          "Assume every annular lesion is erythema migrans without considering other diagnoses.",
+          "Require antibody titers to become negative before assessing the lesion."
+        ],
+        "answer": 0,
+        "rationale": "Clinical diagnosis depends on compatible findings and exposure context. An atypical lesion needs a different diagnostic assessment; one early negative test does not exclude infection. Persistent antibodies are not a cure measure.",
+        "reviewHref": "#diagnosis-serology"
+      },
+      "SHA256": "afe45fc57c2b36781dea995c0b14d8d9c4d6420b2304647848fe6fa9fcf9ee80"
+    },
+    {
+      "id": "lyme-110",
+      "wholeQuestion": {
+        "id": "lyme-110",
+        "lesson": "lyme-arthritis",
+        "question": "Objective Lyme synovitis persists after an adequate oral antibiotic course and an adequate IV course. Which next direction fits postantibiotic Lyme arthritis?",
+        "choices": [
+          "Refer to rheumatology or another trained specialist to consider treatment of persistent inflammatory arthritis.",
+          "Continue repeated antibiotic courses until antibody titers become negative.",
+          "Assume persistent synovitis always proves viable infection despite the completed oral and IV courses.",
+          "Withhold joint evaluation and symptom care because antibiotics are complete."
+        ],
+        "answer": 0,
+        "rationale": "The guideline suggests specialist referral after failure of one oral and one IV course; this is a weak recommendation with very low-quality evidence. Persistent synovitis after only the first oral course requires separate response-guided reassessment, not automatic application of this pathway.",
+        "reviewHref": "#lyme-arthritis"
+      },
+      "SHA256": "7bebd1e294a1c17401ca39bb636b327767522cd2acd6ac63e23af70947a5fcf4"
+    },
+    {
+      "id": "lyme-111",
+      "wholeQuestion": {
+        "id": "lyme-111",
+        "lesson": "lyme-arthritis",
+        "question": "Before applying the postantibiotic Lyme arthritis pathway, which assessment is appropriate?",
+        "choices": [
+          "Confirm objective synovitis, the prior oral and IV regimens and adherence, other causes of arthritis, functional burden, and the specialist follow-up plan.",
+          "Classify diffuse pain without objective joint swelling as Lyme arthritis.",
+          "Use persistent positive antibody titers alone to prove continuing infection.",
+          "Skip the prior treatment history because any residual swelling after the first oral course is postantibiotic arthritis."
+        ],
+        "answer": 0,
+        "rationale": "The oral-plus-IV treatment history and objective joint findings distinguish this pathway from an initial or partially responsive episode. Review alternative causes and function. Antibody positivity alone does not establish ongoing infection or select further treatment.",
+        "reviewHref": "#lyme-arthritis"
+      },
+      "SHA256": "9f8ffc6c8c53db22deb8be6215572be36a37ed999adde0f3140657929e089c37"
+    },
+    {
+      "id": "lyme-146",
+      "wholeQuestion": {
+        "id": "lyme-146",
+        "lesson": "integrated-cases",
+        "question": "A Lyme treatment plan has been selected. Which action best closes responsibility for diagnostic results and treatment follow-up?",
+        "choices": [
+          "Document the regimen and administration, response checkpoint, red flags, pending results, and who reviews and acts on each result.",
+          "End the plan when the prescription is issued and leave pending results without an assigned reviewer.",
+          "Follow antibody titers until negative as the sole measure of treatment success.",
+          "Use the same follow-up plan for every manifestation without considering unresolved safety issues."
+        ],
+        "answer": 0,
+        "rationale": "Assigning result ownership and response checkpoints is a practical clinical application of manifestation-specific care. CDC states that antibodies can persist and cannot determine cure. This handoff framework is an application, not a quoted guideline requirement.",
+        "reviewHref": "#integrated-cases"
+      },
+      "SHA256": "6eb4579b42ed142f3dc6c15ea949468afcaa62a10a8216d6bee76a1797c62979"
+    },
+    {
+      "id": "lyme-147",
+      "wholeQuestion": {
+        "id": "lyme-147",
+        "lesson": "integrated-cases",
+        "question": "Which assessment best supports diagnostic and treatment ownership during Lyme follow-up?",
+        "choices": [
+          "Review the diagnosis and test timing, prior infection, exact therapy and adherence, objective trajectory, unresolved safety issues, pending results, and the follow-up owner.",
+          "Assess antibody magnitude alone and omit the objective clinical course.",
+          "Disregard prior therapy and adherence once a prescription appears in the record.",
+          "Assume every pending result will be acted on without identifying who is responsible."
+        ],
+        "answer": 0,
+        "rationale": "Follow-up combines clinical trajectory and an executable care plan; antibody titers cannot determine cure. Explicit pending-result ownership is a practical clinical application. It does not replace reassessment for objective new disease or treatment failure.",
+        "reviewHref": "#integrated-cases"
+      },
+      "SHA256": "2cc693212468d3cf7f95974f5c514f26e017c43483a71654528c141c34925dc4"
+    }
+  ],
+  "sourceNativeReview": [
+    {
+      "file": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-lyme-historical-review-20261012/evidence/private-lyme-sources-v1/book-page-396.png",
+      "SHA256": "b678679982ddf4d1fd54a4948ac72e286cac3d09ddcf8ed06e1c76c2da9887e8",
+      "actualNativeReviewPassed": true,
+      "pdfPage": 396,
+      "printedPage": 388
+    }
+  ],
+  "nativeCapturesActuallyInspected": 32,
+  "remainingGates": [
+    "Scoped commits/pushes and production verification",
+    "Ledger reconciliation and external archive"
+  ]
+}
