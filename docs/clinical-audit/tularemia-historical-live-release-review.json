@@ -1,6 +1,6 @@
 {
-  "status": "source_build_actual_native_passed_public_pending",
-  "checkedUTC": "2026-10-12T21:31:52.873342+00:00",
+  "status": "verified_scoped_public_release",
+  "checkedUTC": "2026-10-12T21:37:42.543698+00:00",
   "questionIds": [
     "tularemia-007",
     "tularemia-015",
@@ -61,7 +61,10 @@
     "tularemia-qualified-review-v1.json": "a50d9464d94c1825fb520adf820e05c9fe4527d9e42289e83769e46d96baa5e7",
     "main-integration-tularemia-v1.json": "61cb4a796dc9de79dcdd6cffc459b14053f51d36b52b73c61c21024701b3ab3b",
     "browser-tularemia-main-v1.json": "03dc5d15143b9f62228025e15cc8bb3c1d73c8bdb5640dccd638fcc15f368673",
-    "actual-native-tularemia-complete-v1.json": "96b346b2046e598f616f280d8d9507b1a497f3f0bada6b9bead1765fc76a7277"
+    "actual-native-tularemia-complete-v1.json": "96b346b2046e598f616f280d8d9507b1a497f3f0bada6b9bead1765fc76a7277",
+    "browser-tularemia-live-v1.json": "fad4af140ef9f5036bffcffc07618be59749a6fe87bcca5517b2152a1ce866ad",
+    "public-pixel-comparison-tularemia-v1.json": "5d20e2940f6de0a1bc04bf61d1ecea2ec8428b916c2f371b599905752841b9f1",
+    "original-preservation-tularemia-v1.json": "419d11369d645cf6646f5a90e0f6a5dd70f8ba57ec9e7ffc70ee132de208db85"
   },
   "selected30WholeObjectsExact": true,
   "entireCumulativePoolExact": true,
@@ -70,6 +73,82 @@
   "chaptersVerified": 7,
   "wholeModuleVerified": false,
   "wholeChapterVerified": false,
-  "productionLiveVerified": false,
-  "wholeGoalComplete": false
+  "productionLiveVerified": true,
+  "wholeGoalComplete": false,
+  "release": {
+    "mainCommit": "40aa6af5134b12f806931adb87873495e5595944",
+    "auditReviewCommit": "d4458d16b3b5d1bc850a178e83d029afcb0408c1",
+    "exactRemoteMainVerified": true,
+    "liveBrowserPassed": true,
+    "publicCapturesRGBIdenticalToActuallyInspectedMain": 50,
+    "extraPublicDifferences": 0,
+    "newestFirstAndSearchRelevanceVerified": true
+  },
+  "olderAuditDifferencesPreserved": [
+    {
+      "id": "tularemia-071",
+      "status": "older_audit_difference_preserved_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "id": "tularemia-075",
+      "status": "older_audit_difference_preserved_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "id": "tularemia-083",
+      "status": "older_audit_difference_preserved_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "id": "tularemia-085",
+      "status": "older_audit_difference_preserved_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "id": "tularemia-086",
+      "status": "older_audit_difference_preserved_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "id": "tularemia-087",
+      "status": "older_audit_difference_preserved_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "id": "tularemia-089",
+      "status": "older_audit_difference_preserved_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "id": "tularemia-093",
+      "status": "older_audit_difference_preserved_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "id": "tularemia-094",
+      "status": "older_audit_difference_preserved_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "id": "tularemia-095",
+      "status": "older_audit_difference_preserved_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "id": "tularemia-096",
+      "status": "older_audit_difference_preserved_not_published_here",
+      "absentFromMain": false
+    }
+  ],
+  "remainingHistoricalQuestions": 13,
+  "limits": "Nine whole questions/36 choices, four teaching bodies and one scoped key point only. No whole module or chapter closure. Unreviewed older Audit differences remain preserved and are not published here. The selected30remain exact; no cumulative pool objects changed; all1184pool objects remain exact.",
+  "sourceDiscrepanciesAndLimits": [
+    "The whole-book text locator found PDF396/printed388. That table gives organism and an older divided aminoglycoside treatment regimen; it does not support the detailed exposure, diagnosis, or prophylaxis questions. Locator absence is not proof of absence in scanned material.",
+    "Approved CDC sources supply the reviewed exposure/diagnosis/prophylaxis claims; occupational guidance is dated September16,2026 and event guidance August27,2026.",
+    "CDC reducing-risk summary says no person-to-person transmission; the2025 MMWR documents rare direct-inoculation and transplant-associated transmission and no respiratory transmission. The more specific report controls the repaired absolute claim.",
+    "PEP choice is risk-dependent and criteria are not fully standardized. Routine PrEP guidance is not an absolute prohibition covering unprotected contaminated environmental-response work.",
+    "Table2 adult PEP doses/durations and relevant notes were actually inspected; unrelated pediatric rows and existing treatment-dose questions are not newly qualified.",
+    "Four whole teaching bodies and one scoped key point are revised; other teaching, checks, figures and questions remain unchanged and unqualified by this unit. No whole lesson/module/chapter or full-goal closure."
+  ]
 }

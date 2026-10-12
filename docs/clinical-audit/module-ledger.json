@@ -38200,7 +38200,8 @@
       "status": "reviewing",
       "evidence": [
         "enteral-nutrition-broader-tickborne-tularemia-review.json",
-        "final-primary-live-release-review.json"
+        "final-primary-live-release-review.json",
+        "tularemia-historical-live-release-review.json"
       ],
       "broaderEnteralAdministrationReview": {
         "evidence": "enteral-nutrition-broader-tickborne-tularemia-review.json",
@@ -38285,6 +38286,23 @@
         ],
         "productionLiveVerified": true,
         "mainCommit": "266ece8b784eb07862d618ba6c28d91f1cb487cc",
+        "wholeModuleVerified": false
+      },
+      "historicalTularemiaScopedReview": {
+        "evidence": "tularemia-historical-live-release-review.json",
+        "verifiedQuestionIds": [
+          "tularemia-007",
+          "tularemia-015",
+          "tularemia-019",
+          "tularemia-043",
+          "tularemia-051",
+          "tularemia-055",
+          "tularemia-135",
+          "tularemia-143",
+          "tularemia-147"
+        ],
+        "productionLiveVerified": true,
+        "mainCommit": "40aa6af5134b12f806931adb87873495e5595944",
         "wholeModuleVerified": false
       }
     },
