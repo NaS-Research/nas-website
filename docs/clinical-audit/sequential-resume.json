@@ -90,7 +90,7 @@
     "dependencyPrintedPage": 150,
     "dependencyPdfPage": 158,
     "sectionAudit": "Most recent completed dependency: whole nutrition-screening-assessment module;105 complete questions,420 choices,six whole lessons/checks/figures,15 references and30 independent calculations source/product/live verified. The determining-fluid-needs checklist entry and broader Chapter11 work remain open.",
-    "nextAction": "Continue earliest unfinished historical whole-question candidate in semantic-whole-object-inventory-v10.json, then remaining secondary semantic relevance/source review. Preserve Chapter1 entry15, Chapter11 feeding dependency and iv-fluid-selection checkpoints.52historical candidates remain; olderAudit/public differences require exact release reconciliation. Full82chapters/232modules goal remains active.",
+    "nextAction": "Continue earliest unfinished historical whole-question candidate in semantic-whole-object-inventory-v11.json, then remaining secondary semantic relevance/source review. Preserve Chapter1 entry15, Chapter11 feeding dependency and iv-fluid-selection checkpoints.49historical candidates remain; olderAudit/public differences require exact release reconciliation. Full82chapters/232modules goal remains active.",
     "nextDependencyPrintedPage": 161,
     "nextDependencyPdfPage": 169
   },
@@ -181,13 +181,13 @@
       "total": 232,
       "moduleCountPercent": 29.74
     },
-    "interpretation": "69/232whole modules and7/82chapters verified. Three historical meningitis questions live verified;52historical candidates remain. Selected30/10 unchanged. No new whole module/chapter closure.",
-    "checkedAt": "2026-10-11T22:13:15.384372+00:00",
+    "interpretation": "69/232whole modules and7/82chapters verified. Three historical hap questions live verified;49historical candidates remain. Selected30/10 unchanged. No new whole module/chapter closure.",
+    "checkedAt": "2026-10-12T15:20:11.428260+00:00",
     "wholeModulesVerified": 69,
     "wholeModulesTotal": 232,
     "moduleCountPercent": 29.74
   },
-  "lastVerifiedLogicalUnit": "Three historical meningitis whole questions/12choices (two revised, one retained) : source, guarded build and actual desktop/mobile/live checks passed; Main 98ccee789e5358ba059904e4100355e6517f3ac1. No whole module/chapter closure.",
+  "lastVerifiedLogicalUnit": "Three historical hap whole questions/12choices (three revised) : source, guarded build and actual desktop/mobile/live checks passed; Main 028cc4936b739df21205a2064111a3a9addbac7b. No whole module/chapter closure.",
   "lastVerifiedSections": {
     "enteral-nutrition": {
       "evidence": "enteral-nutrition-renal-solute-review.json",
@@ -14101,6 +14101,9 @@
     "hhs-08-application",
     "hhs-08-case",
     "hhs-08-safety",
+    "hospital-ventilator-associated-pneumonia-017",
+    "hospital-ventilator-associated-pneumonia-065",
+    "hospital-ventilator-associated-pneumonia-113",
     "hospital-ventilator-associated-pneumonia-152",
     "hospital-ventilator-associated-pneumonia-157",
     "icu-pad-15-case",
@@ -39262,8 +39265,8 @@
   },
   "currentFeedingSemanticCoverageReconciliation": {
     "managedModule": "feeding-semantic-coverage-reconciliation-20261011",
-    "externalReceipt": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-meningitis-historical-review-20261011/evidence/completion-meningitis-v1.json",
-    "status": "three_meningitis_historical_questions_live_qualified_remaining52_open",
+    "externalReceipt": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-hap-historical-review-20261012/evidence/completion-hap-v1.json",
+    "status": "three_hap_historical_questions_live_qualified_remaining52_open",
     "counts": {
       "historicalRows": 233,
       "historicalChangedWholeObjects": 27,
@@ -39272,9 +39275,9 @@
       "retainedSecondaryRows": 2046,
       "currentFocusedRows": 405,
       "currentSecondaryLocatingRows": 1881,
-      "priorUnregisteredHistoricalStillPending": 52,
-      "historicalCurrentExactReleaseBindings": 80,
-      "historicalPriorUnregisteredNowExactBound": 78,
+      "priorUnregisteredHistoricalStillPending": 49,
+      "historicalCurrentExactReleaseBindings": 83,
+      "historicalPriorUnregisteredNowExactBound": 81,
       "changedWholeObjectsWithoutCurrentExactReleaseBinding": 35
     },
     "retainedExactWholeQuestionReleaseBindings": 48,
@@ -40318,5 +40321,57 @@
     ],
     "remainingHistoricalQuestions": 52,
     "limits": "Three whole questions/12 choices (two revised, one retained) only. No whole module or chapter closure. Unreviewed older Audit differences remain preserved and are not published here; the previously revised follow-up question143 is part of this freshly reviewed release. The selected30remain exact; no cumulative pool objects changed; all1184pool objects remain exact."
+  },
+  "latestHistoricalHapScopedRelease": {
+    "status": "verified_scoped_public_release",
+    "checkedUTC": "2026-10-12T15:20:11.428260+00:00",
+    "questionIds": [
+      "hospital-ventilator-associated-pneumonia-017",
+      "hospital-ventilator-associated-pneumonia-065",
+      "hospital-ventilator-associated-pneumonia-113"
+    ],
+    "wholeQuestionsReviewed": 3,
+    "revisedQuestions": 3,
+    "retainedQuestions": 0,
+    "individualChoicesReviewed": 12,
+    "sourceNativePagesActuallyInspected": 4,
+    "mainBase": "98ccee789e5358ba059904e4100355e6517f3ac1",
+    "nativeCapturesActuallyInspected": 16,
+    "evidenceSHA256": {
+      "hap-qualified-review-v2.json": "2b38c8b6caad1d0c89a8f06d8efc8892e78f0c705c296ef976829e8c2b4a08f8",
+      "main-integration-hap-v1.json": "3da68b3320432c79e7c6213b12f23eea77bd5560b50a45444a21177ed0acb923",
+      "browser-hap-main-v1.json": "a8a772a929cf4c27cb88f283c270f1f3d6e1cb352f1bab0edcf69ecae391fb0e",
+      "actual-native-hap-complete-v1.json": "d50444a01320c5626db7185ff4f32fd551e801d372d2daaec6a67d0acacfa0c9",
+      "browser-hap-live-v1.json": "7a202007217ca97b9705ba7cbf4197a192b9af94c5af2a2907e046e160121e22",
+      "public-pixel-comparison-hap-v1.json": "f728013b9ecf14ee9efbc6184615ec983afe2ac97bc85528697f5fee0ea627ed",
+      "original-preservation-hap-v1.json": "28e21439e923099dfa9d4aa3f3a413191d00447b17c0ab2f1a2ca2c1d4414cfe"
+    },
+    "selected30WholeObjectsExact": true,
+    "entireCumulativePoolExact": true,
+    "other231ModulesExact": true,
+    "wholeModulesVerified": 69,
+    "chaptersVerified": 7,
+    "wholeModuleVerified": false,
+    "wholeChapterVerified": false,
+    "productionLiveVerified": true,
+    "wholeGoalComplete": false,
+    "release": {
+      "mainCommit": "028cc4936b739df21205a2064111a3a9addbac7b",
+      "auditReviewCommit": "396c91d8cd2e4c93558b189703d688d30ad58a00",
+      "exactRemoteMainVerified": true,
+      "liveBrowserPassed": true,
+      "publicCapturesRGBIdenticalToActuallyInspectedMain": 16,
+      "extraPublicDifferences": 0,
+      "newestFirstAndSearchRelevanceVerified": true
+    },
+    "olderAuditDifferencesPreserved": [
+      {
+        "id": "hospital-ventilator-associated-pneumonia-152",
+        "status": "older_audit_difference_preserved_not_published_here",
+        "absentFromMain": false
+      }
+    ],
+    "remainingHistoricalQuestions": 49,
+    "limits": "Three whole questions/12 choices (three revised) only. No whole module or chapter closure. Unreviewed older Audit differences remain preserved and are not published here. The selected30remain exact; no cumulative pool objects changed; all1184pool objects remain exact."
   }
 }

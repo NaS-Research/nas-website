@@ -36648,7 +36648,8 @@
       "evidence": [
         "enteral-nutrition-broader-meningitis-hap-review.json",
         "final-primary-live-release-review.json",
-        "hap-prevention-live-review.json"
+        "hap-prevention-live-review.json",
+        "hap-historical-live-release-review.json"
       ],
       "broaderEnteralAdministrationReview": {
         "evidence": "enteral-nutrition-broader-meningitis-hap-review.json",
@@ -36708,6 +36709,17 @@
         "wholeModuleVerified": false,
         "productionLiveVerified": true,
         "mainCommit": "df54257a96c12caf32af184c2d8a395652f0eafa"
+      },
+      "historicalHapScopedReview": {
+        "evidence": "hap-historical-live-release-review.json",
+        "verifiedQuestionIds": [
+          "hospital-ventilator-associated-pneumonia-017",
+          "hospital-ventilator-associated-pneumonia-065",
+          "hospital-ventilator-associated-pneumonia-113"
+        ],
+        "productionLiveVerified": true,
+        "mainCommit": "028cc4936b739df21205a2064111a3a9addbac7b",
+        "wholeModuleVerified": false
       }
     },
     {
