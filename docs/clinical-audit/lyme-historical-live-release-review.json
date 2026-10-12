@@ -1,6 +1,6 @@
 {
-  "status": "source_build_actual_native_passed_public_pending",
-  "checkedUTC": "2026-10-12T20:19:10.314686+00:00",
+  "status": "verified_scoped_public_release",
+  "checkedUTC": "2026-10-12T20:22:41.844674+00:00",
   "questionIds": [
     "lyme-034",
     "lyme-035",
@@ -38,7 +38,10 @@
     "lyme-qualified-review-v2.json": "ca5e365c28f53b1143978863ed2a6c9027d2c88c634d580eaad9e03257bc277b",
     "main-integration-lyme-v1.json": "76cb1427a818a4cfc160789f688090050d967e9cf5434a31827e7e6b27672b2a",
     "browser-lyme-main-v1.json": "70c8ffb2f47610a05283f6a7b62e3936ffa3c6b6f7fb40ac9179f9aae2f0a022",
-    "actual-native-lyme-complete-v1.json": "97f6ff68ab85a304ba945da4fac6fd13c3db19573f0179a5d74c269d5ba11506"
+    "actual-native-lyme-complete-v1.json": "97f6ff68ab85a304ba945da4fac6fd13c3db19573f0179a5d74c269d5ba11506",
+    "browser-lyme-live-v1.json": "904793bf3175c21185e768b8384e9b352a420ba1e03378411cb2aba56f3f38dc",
+    "public-pixel-comparison-lyme-v1.json": "97c17cf105211580b1bac0a2b28017de482ee9621e1ab099d77717e875d393dd",
+    "original-preservation-lyme-v1.json": "5bed4bf8ea321920ae3f8378d70942b6d365842c8ed277f7ac7d6e4717c3e957"
   },
   "selected30WholeObjectsExact": true,
   "entireCumulativePoolExact": true,
@@ -47,6 +50,37 @@
   "chaptersVerified": 7,
   "wholeModuleVerified": false,
   "wholeChapterVerified": false,
-  "productionLiveVerified": false,
-  "wholeGoalComplete": false
+  "productionLiveVerified": true,
+  "wholeGoalComplete": false,
+  "release": {
+    "mainCommit": "a7bd8eeed662eb06647b9eb260b2e08f1bc88840",
+    "auditReviewCommit": "3d789eaaab1531ca65da4778b047892f5319b4f8",
+    "exactRemoteMainVerified": true,
+    "liveBrowserPassed": true,
+    "publicCapturesRGBIdenticalToActuallyInspectedMain": 32,
+    "extraPublicDifferences": 0,
+    "newestFirstAndSearchRelevanceVerified": true
+  },
+  "olderAuditDifferencesPreserved": [
+    {
+      "id": "lyme-061",
+      "status": "older_audit_difference_preserved_not_published_here",
+      "absentFromMain": false
+    },
+    {
+      "id": "lyme-064",
+      "status": "older_audit_difference_preserved_not_published_here",
+      "absentFromMain": false
+    }
+  ],
+  "remainingHistoricalQuestions": 25,
+  "limits": "Six whole questions/24 choices and two source-qualified teaching-body corrections only. No whole module or chapter closure. Unreviewed older Audit differences remain preserved and are not published here. The selected30remain exact; no cumulative pool objects changed; all1184pool objects remain exact.",
+  "sourceDiscrepanciesAndLimits": [
+    "Book PDF396/printed388 gives localized Lyme regimens and a brief rash/EIA illustration; it does not establish the full clinical diagnosis, arthritis response or result-ownership pathways. Previously authorized official primary guidance supports those retained claims.",
+    "IDSA2020 V supports clinical diagnosis for compatible EM plus potential endemic exposure; atypical lesions have a different testing pathway.",
+    "IDSA2020 XXIII states a knowledge gap for observation versus another oral course after mild partial response; XXIV specialist referral follows one oral AND one IV course and is weak/very-low certainty.",
+    "CDC2024 testing states antibodies can persist for months to years and cannot determine cure.",
+    "Explicit result ownership and named follow-up checkpoints are practical clinical applications, not direct guideline requirements.",
+    "No whole associated lesson, whole module, whole chapter or full goal is newly certified."
+  ]
 }

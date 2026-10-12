@@ -90,7 +90,7 @@
     "dependencyPrintedPage": 150,
     "dependencyPdfPage": 158,
     "sectionAudit": "Most recent completed dependency: whole nutrition-screening-assessment module;105 complete questions,420 choices,six whole lessons/checks/figures,15 references and30 independent calculations source/product/live verified. The determining-fluid-needs checklist entry and broader Chapter11 work remain open.",
-    "nextAction": "Continue earliest unfinished historical whole-question candidate in semantic-whole-object-inventory-v14.json, then remaining secondary semantic relevance/source review. Preserve Chapter1 entry15, Chapter11 feeding dependency and iv-fluid-selection checkpoints.31historical candidates remain; olderAudit/public differences require exact release reconciliation. Full82chapters/232modules goal remains active.",
+    "nextAction": "Continue earliest unfinished historical whole-question candidate in semantic-whole-object-inventory-v15.json, then remaining secondary semantic relevance/source review. Preserve Chapter1 entry15, Chapter11 feeding dependency and iv-fluid-selection checkpoints.25historical candidates remain; olderAudit/public differences require exact release reconciliation. Full82chapters/232modules goal remains active.",
     "nextDependencyPrintedPage": 161,
     "nextDependencyPdfPage": 169
   },
@@ -181,13 +181,13 @@
       "total": 232,
       "moduleCountPercent": 29.74
     },
-    "interpretation": "69/232whole modules and7/82chapters verified. Six historical rickettsial questions and two teaching bodies live verified;31historical candidates remain. Selected30/10 unchanged. No new whole module/chapter closure.",
-    "checkedAt": "2026-10-12T19:52:06.870354+00:00",
+    "interpretation": "69/232whole modules and7/82chapters verified. Six historical lyme questions and two teaching bodies live verified;25historical candidates remain. Selected30/10 unchanged. No new whole module/chapter closure.",
+    "checkedAt": "2026-10-12T20:22:41.844674+00:00",
     "wholeModulesVerified": 69,
     "wholeModulesTotal": 232,
     "moduleCountPercent": 29.74
   },
-  "lastVerifiedLogicalUnit": "Six historical rickettsial whole questions/24choices and two teaching bodies : source, guarded build and actual desktop/mobile/live checks passed; Main 526b4884a31f74fd91058aa9fa2c89dd740aaa88. No whole module/chapter closure.",
+  "lastVerifiedLogicalUnit": "Six historical lyme whole questions/24choices and two teaching bodies : source, guarded build and actual desktop/mobile/live checks passed; Main a7bd8eeed662eb06647b9eb260b2e08f1bc88840. No whole module/chapter closure.",
   "lastVerifiedSections": {
     "enteral-nutrition": {
       "evidence": "enteral-nutrition-renal-solute-review.json",
@@ -14367,10 +14367,16 @@
     "lefamulin-pharmacology-155",
     "lefamulin-pharmacology-156",
     "lefamulin-pharmacology-case-158",
+    "lyme-034",
+    "lyme-035",
     "lyme-061",
     "lyme-062",
     "lyme-063",
     "lyme-064",
+    "lyme-110",
+    "lyme-111",
+    "lyme-146",
+    "lyme-147",
     "masld-001",
     "masld-002",
     "masld-003",
@@ -39283,8 +39289,8 @@
   },
   "currentFeedingSemanticCoverageReconciliation": {
     "managedModule": "feeding-semantic-coverage-reconciliation-20261011",
-    "externalReceipt": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-rickettsial-historical-review-20261012/evidence/completion-rickettsial-v1.json",
-    "status": "six_rickettsial_historical_questions_and_two_teaching_bodies_live_qualified_remaining31_open",
+    "externalReceipt": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/modules/feeding-lyme-historical-review-20261012/evidence/completion-lyme-v1.json",
+    "status": "six_lyme_historical_questions_and_two_teaching_bodies_live_qualified_remaining25_open",
     "counts": {
       "historicalRows": 233,
       "historicalChangedWholeObjects": 27,
@@ -39293,9 +39299,9 @@
       "retainedSecondaryRows": 2046,
       "currentFocusedRows": 405,
       "currentSecondaryLocatingRows": 1881,
-      "priorUnregisteredHistoricalStillPending": 31,
-      "historicalCurrentExactReleaseBindings": 101,
-      "historicalPriorUnregisteredNowExactBound": 99,
+      "priorUnregisteredHistoricalStillPending": 25,
+      "historicalCurrentExactReleaseBindings": 107,
+      "historicalPriorUnregisteredNowExactBound": 105,
       "changedWholeObjectsWithoutCurrentExactReleaseBinding": 35
     },
     "retainedExactWholeQuestionReleaseBindings": 48,
@@ -40709,6 +40715,92 @@
       "Rapid doxycycline desensitization evidence in CDC2016 is limited to individual immediate-hypersensitivity case reports. Do not generalize it to every severe reaction.",
       "No full chapter or whole module newly certified; other teaching, worked examples, visuals and embedded checks remain unchanged and require their own coverage.",
       "Book printed388 lists ehrlichiosis doxycycline for7-14days, while the retained duration lesson uses a minimum5-7days with clinical improvement and at least3days beyond fever, reflecting CDC guidance. Full disease-duration reconciliation remains outside this six-question unit; no new duration qualification here."
+    ]
+  },
+  "latestHistoricalLymeScopedRelease": {
+    "status": "verified_scoped_public_release",
+    "checkedUTC": "2026-10-12T20:22:41.844674+00:00",
+    "questionIds": [
+      "lyme-034",
+      "lyme-035",
+      "lyme-110",
+      "lyme-111",
+      "lyme-146",
+      "lyme-147"
+    ],
+    "wholeQuestionsReviewed": 6,
+    "revisedQuestions": 6,
+    "retainedQuestions": 0,
+    "individualChoicesReviewed": 24,
+    "teachingBodiesReviewedAndCorrected": [
+      {
+        "module": "lyme-disease",
+        "lesson": "lyme-arthritis",
+        "heading": "Treat and grade response",
+        "before": "Initial Lyme arthritis receives 28 days of oral doxycycline, amoxicillin, or cefuroxime. Partial improvement can be observed or receive a second oral course. Minimal response can receive IV ceftriaxone for 14 to 28 days after reassessment.",
+        "after": "Initial Lyme arthritis receives 28 days of oral therapy. For mild residual swelling after the first oral course, evidence does not establish observation versus a second course; reassess adherence, other causes, joint findings, and patient preferences. No or minimal response can warrant 2 to 4 weeks of IV ceftriaxone after reassessment.",
+        "source": "IDSA2020 XXIII and XXIV; partial-response knowledge gap and oral-plus-IV failure boundary; weak/very-low certainty referral"
+      },
+      {
+        "module": "lyme-disease",
+        "lesson": "lyme-arthritis",
+        "heading": "Stop antibiotics after adequate oral and IV care",
+        "before": "Persistent synovitis after an adequate oral course and an adequate IV course is managed as postantibiotic inflammatory arthritis with rheumatology, not repeated antimicrobial cycles.",
+        "after": "After failure of one oral antibiotic course and one IV course, the guideline suggests rheumatology or another trained specialist for consideration of DMARDs, biologic agents, intraarticular steroids, or synovectomy. This is a weak recommendation with very low-quality evidence. It is distinct from residual swelling after the first oral course.",
+        "source": "IDSA2020 XXIII and XXIV; partial-response knowledge gap and oral-plus-IV failure boundary; weak/very-low certainty referral"
+      }
+    ],
+    "sourceNativePagesActuallyInspected": 1,
+    "mainBase": "526b4884a31f74fd91058aa9fa2c89dd740aaa88",
+    "nativeCapturesActuallyInspected": 32,
+    "evidenceSHA256": {
+      "lyme-qualified-review-v2.json": "ca5e365c28f53b1143978863ed2a6c9027d2c88c634d580eaad9e03257bc277b",
+      "main-integration-lyme-v1.json": "76cb1427a818a4cfc160789f688090050d967e9cf5434a31827e7e6b27672b2a",
+      "browser-lyme-main-v1.json": "70c8ffb2f47610a05283f6a7b62e3936ffa3c6b6f7fb40ac9179f9aae2f0a022",
+      "actual-native-lyme-complete-v1.json": "97f6ff68ab85a304ba945da4fac6fd13c3db19573f0179a5d74c269d5ba11506",
+      "browser-lyme-live-v1.json": "904793bf3175c21185e768b8384e9b352a420ba1e03378411cb2aba56f3f38dc",
+      "public-pixel-comparison-lyme-v1.json": "97c17cf105211580b1bac0a2b28017de482ee9621e1ab099d77717e875d393dd",
+      "original-preservation-lyme-v1.json": "5bed4bf8ea321920ae3f8378d70942b6d365842c8ed277f7ac7d6e4717c3e957"
+    },
+    "selected30WholeObjectsExact": true,
+    "entireCumulativePoolExact": true,
+    "other231ModulesExact": true,
+    "wholeModulesVerified": 69,
+    "chaptersVerified": 7,
+    "wholeModuleVerified": false,
+    "wholeChapterVerified": false,
+    "productionLiveVerified": true,
+    "wholeGoalComplete": false,
+    "release": {
+      "mainCommit": "a7bd8eeed662eb06647b9eb260b2e08f1bc88840",
+      "auditReviewCommit": "3d789eaaab1531ca65da4778b047892f5319b4f8",
+      "exactRemoteMainVerified": true,
+      "liveBrowserPassed": true,
+      "publicCapturesRGBIdenticalToActuallyInspectedMain": 32,
+      "extraPublicDifferences": 0,
+      "newestFirstAndSearchRelevanceVerified": true
+    },
+    "olderAuditDifferencesPreserved": [
+      {
+        "id": "lyme-061",
+        "status": "older_audit_difference_preserved_not_published_here",
+        "absentFromMain": false
+      },
+      {
+        "id": "lyme-064",
+        "status": "older_audit_difference_preserved_not_published_here",
+        "absentFromMain": false
+      }
+    ],
+    "remainingHistoricalQuestions": 25,
+    "limits": "Six whole questions/24 choices and two source-qualified teaching-body corrections only. No whole module or chapter closure. Unreviewed older Audit differences remain preserved and are not published here. The selected30remain exact; no cumulative pool objects changed; all1184pool objects remain exact.",
+    "sourceDiscrepanciesAndLimits": [
+      "Book PDF396/printed388 gives localized Lyme regimens and a brief rash/EIA illustration; it does not establish the full clinical diagnosis, arthritis response or result-ownership pathways. Previously authorized official primary guidance supports those retained claims.",
+      "IDSA2020 V supports clinical diagnosis for compatible EM plus potential endemic exposure; atypical lesions have a different testing pathway.",
+      "IDSA2020 XXIII states a knowledge gap for observation versus another oral course after mild partial response; XXIV specialist referral follows one oral AND one IV course and is weak/very-low certainty.",
+      "CDC2024 testing states antibodies can persist for months to years and cannot determine cure.",
+      "Explicit result ownership and named follow-up checkpoints are practical clinical applications, not direct guideline requirements.",
+      "No whole associated lesson, whole module, whole chapter or full goal is newly certified."
     ]
   }
 }
