@@ -1,14 +1,14 @@
 {
-  "status": "nine_tularemia_historical_questions_live_qualified_remaining13_open",
-  "checkedUTC": "2026-10-12T21:37:42.543698+00:00",
+  "status": "nine_antifungal_questions_six_historical_candidates_live_qualified_remaining7_open",
+  "checkedUTC": "2026-10-12T22:18:12.594460+00:00",
   "sourceHEAD": "a403e8e2da7679186f4244847635a73c400d7633",
   "scope": "All current232 modules and whole bank fields, historical233 rows, focused416 and secondary2046 retained rows. Rebuild locating inventory, compare exact whole objects and bind48 completed source/render/live releases. Keyword results and retained ID labels are not clinical qualification.",
   "modules": 232,
   "wholeBankObjects": 28012,
   "selectedCumulativeWholeObjectsExact": true,
   "priorRegistryIds": 1510,
-  "retainedExactPublishedWholeQuestionBindings": 355,
-  "registryIdsAfter": 1863,
+  "retainedExactPublishedWholeQuestionBindings": 364,
+  "registryIdsAfter": 1872,
   "archives": [
     {
       "path": "/Volumes/AGNDJ 6TB/NaS-Work/Learn/archives/feeding-primary-nutrition-question-review-20261011",
@@ -716,9 +716,9 @@
     "retainedSecondaryRows": 2046,
     "currentFocusedRows": 405,
     "currentSecondaryLocatingRows": 1881,
-    "priorUnregisteredHistoricalStillPending": 13,
-    "historicalCurrentExactReleaseBindings": 119,
-    "historicalPriorUnregisteredNowExactBound": 117,
+    "priorUnregisteredHistoricalStillPending": 7,
+    "historicalCurrentExactReleaseBindings": 125,
+    "historicalPriorUnregisteredNowExactBound": 123,
     "changedWholeObjectsWithoutCurrentExactReleaseBinding": 35
   },
   "currentPrimaryQuestionInventory": {
@@ -770,7 +770,6 @@
     }
   ],
   "remainingHistoricalUnregisteredPendingByModule": {
-    "systemic-antifungal-foundations": 6,
     "triazole-antifungal-pharmacology": 4,
     "cytomegalovirus-pharmacotherapy": 3
   },
@@ -2764,6 +2763,193 @@
       "PEP choice is risk-dependent and criteria are not fully standardized. Routine PrEP guidance is not an absolute prohibition covering unprotected contaminated environmental-response work.",
       "Table2 adult PEP doses/durations and relevant notes were actually inspected; unrelated pediatric rows and existing treatment-dose questions are not newly qualified.",
       "Four whole teaching bodies and one scoped key point are revised; other teaching, checks, figures and questions remain unchanged and unqualified by this unit. No whole lesson/module/chapter or full-goal closure."
+    ]
+  },
+  "latestHistoricalAntifungalRelease": {
+    "status": "verified_scoped_public_release",
+    "checkedUTC": "2026-10-12T22:18:12.594460+00:00",
+    "questionIds": [
+      "antifungal-foundations-005",
+      "antifungal-foundations-007",
+      "antifungal-foundations-045",
+      "antifungal-foundations-047",
+      "antifungal-foundations-085",
+      "antifungal-foundations-086",
+      "antifungal-foundations-087",
+      "antifungal-foundations-088",
+      "antifungal-foundations-177"
+    ],
+    "wholeQuestionsReviewed": 9,
+    "revisedQuestions": 9,
+    "retainedQuestions": 0,
+    "individualChoicesReviewed": 36,
+    "teachingBodiesReviewedAndCorrected": [
+      {
+        "lesson": "susceptibility-resistance",
+        "heading": "Label C auris limits honestly",
+        "before": "Formal CLSI C auris breakpoints remain unavailable. CDC tentative breakpoints use expert opinion and related species, so response, identification, public health, and expert context remain visible.",
+        "after": "C auris criteria depend on the antifungal. CLSI has an established susceptible-only criterion for rezafungin; CDC provides tentative criteria for several other drugs using expert opinion and related species. Their correlation with clinical outcomes is uncertain, so identify the drug and criterion and retain clinical, laboratory and expert context.",
+        "sources": [
+          "CDC antifungal susceptibility testing, updated 2026-10-01: detailed Current breakpoint guidelines",
+          "CLSI AST newsletter November 2025 PDF 7: rezafungin susceptible-only criterion"
+        ]
+      }
+    ],
+    "scopedKeyPointCorrections": [
+      {
+        "lesson": "susceptibility-resistance",
+        "index": 2,
+        "before": "C auris criteria are tentative.",
+        "after": "C auris criteria depend on the drug and standard."
+      }
+    ],
+    "embeddedChecksReviewedAndCorrected": [
+      {
+        "lesson": "susceptibility-resistance",
+        "before": {
+          "question": "What is true about C auris breakpoints?",
+          "choices": [
+            "CDC uses tentative criteria because formal CLSI species breakpoints remain unavailable",
+            "They are identical to every Candida species",
+            "No susceptibility testing is useful",
+            "Colonization requires treatment"
+          ],
+          "answer": 0,
+          "rationale": "The evidence status of the tentative criteria must remain explicit.",
+          "reviewHref": "#susceptibility-resistance"
+        },
+        "after": {
+          "question": "Which statement accurately distinguishes current C auris susceptibility criteria?",
+          "choices": [
+            "CLSI has a rezafungin-specific susceptible-only criterion; CDC criteria for several other drugs remain tentative",
+            "No CLSI criterion exists for C auris with any antifungal",
+            "One species criterion applies equally to all antifungal drugs",
+            "CDC tentative criteria guarantee the clinical outcome"
+          ],
+          "answer": 0,
+          "rationale": "Current detailed CDC guidance and CLSI distinguish the rezafungin-specific susceptible-only criterion from tentative criteria for other drugs. Select the criterion for the tested drug and keep the clinical limitations explicit.",
+          "reviewHref": "#susceptibility-resistance"
+        },
+        "allFourChoicesReviewed": true,
+        "sources": [
+          "CDC antifungal susceptibility testing, updated 2026-10-01: detailed Current breakpoint guidelines",
+          "CLSI AST newsletter November 2025 PDF 7: rezafungin susceptible-only criterion"
+        ]
+      }
+    ],
+    "necessaryCumulativeDerivatives": [
+      {
+        "status": "source_reviewed_native_release_pending",
+        "before": {
+          "id": "cumulative-systemic-antifungal-foundations-antifungal-foundations-047",
+          "lesson": "diagnostic-evidence",
+          "question": "Which assessment is most appropriate for beta glucan?",
+          "choices": [
+            "Assess dialysis filters, gauze, blood products, drugs, bacterial infection, prophylaxis, and pretest probability",
+            "Assess species confirmation, drug MIC, prior exposure, response, outbreak, and public health guidance",
+            "Assess formulation, meals, acid suppression, tube feeds, mucositis, nausea, access, and teach back",
+            "Assess diagnosis, specimen, exposure, MIC, site, source, concentration, interaction, adherence, immunity, and timing"
+          ],
+          "answer": 0,
+          "rationale": "The marker can indicate fungal invasion but not the organism or site",
+          "reviewHref": "/learn/pharmacy/modules/systemic-antifungal-foundations",
+          "module": "Systemic Antifungal Foundations"
+        },
+        "after": {
+          "id": "cumulative-systemic-antifungal-foundations-antifungal-foundations-047",
+          "lesson": "diagnostic-evidence",
+          "question": "Which assessment is most appropriate when interpreting a serum beta-D-glucan result?",
+          "choices": [
+            "Review clinical probability, other evidence, prior antifungals, and possible false-positive exposures such as dialysis, glucan-containing materials, albumin or immunoglobulin",
+            "Assume a positive result is specific for Candida and omit review of other evidence",
+            "Ignore dialysis and glucan-containing materials because they cannot affect interpretation",
+            "Use a negative result to exclude infection without considering prior antifungal treatment"
+          ],
+          "answer": 0,
+          "rationale": "IDSA lists false-positive contexts including hemodialysis, albumin or immunoglobulin, glucan-containing materials, some infections and selected antibiotics. These are interpretation concerns, not a guarantee that every exposure produces a false positive. Consider pretest probability and corroborating evidence; prior antifungals can reduce test sensitivity.",
+          "reviewHref": "/learn/pharmacy/modules/systemic-antifungal-foundations",
+          "module": "Systemic Antifungal Foundations"
+        },
+        "sources": [
+          "IDSA 2016 candidiasis: beta-D-glucan, PDF 15-16"
+        ],
+        "allFourChoicesReviewed": true,
+        "stableIdKeyAndAnchorPreserved": true,
+        "other1183ObjectsExact": true,
+        "selected30ObjectsExact": true
+      }
+    ],
+    "sourceNativePagesActuallyInspected": 6,
+    "mainBase": "40aa6af5134b12f806931adb87873495e5595944",
+    "nativeCapturesActuallyInspected": 54,
+    "evidenceSHA256": {
+      "antifungal-qualified-review-v1.json": "2192f0a651061f5a3edbe8f56debafc04725ce1a2d102e9f3b41a787b93551e2",
+      "main-integration-antifungal-v1.json": "117c042819fabf75f5bc1730bc41a3471ad5cff3793764fdbd122eac4d67e71f",
+      "browser-antifungal-main-v1.json": "43720f52eb2dea13e49caa110aed61b887b988b235d58668fc51b3b31ddc0db6",
+      "actual-native-antifungal-complete-v1.json": "5ea851cd86dd99356a90ff41583dc5a7aba1a9a9e4c8878e89033774b4e72400",
+      "browser-antifungal-live-v1.json": "fd649dc7cd2a0ab8eec77d7ae3bf1b71ee86c627b7afc20f923b08244a805c43",
+      "public-pixel-comparison-antifungal-v1.json": "9ab195eaa701573954335bd79a1bb0fd441c8b9d9e1a50bbead03b412ea70d1c",
+      "original-preservation-antifungal-v1.json": "78882f7c243e121c2c7ec5aa052e7c6a6ed89f4324e0edfe73e1442fbe33963a"
+    },
+    "selected30WholeObjectsExact": true,
+    "other1183CumulativePoolObjectsExact": true,
+    "necessaryCumulativeDerivativeReviewed": true,
+    "other231ModulesExact": true,
+    "wholeModulesVerified": 69,
+    "chaptersVerified": 7,
+    "wholeModuleVerified": false,
+    "wholeChapterVerified": false,
+    "productionLiveVerified": true,
+    "wholeGoalComplete": false,
+    "release": {
+      "mainCommit": "8d9844666167e2b60ea869810098721800702a39",
+      "auditReviewCommit": "f776a4f84f2ae84fbaaa3a0df8c5a1df4d034ff0",
+      "exactRemoteMainVerified": true,
+      "liveBrowserPassed": true,
+      "publicCapturesRGBIdenticalToActuallyInspectedMain": 54,
+      "extraPublicDifferences": 0,
+      "newestFirstAndSearchRelevanceVerified": true
+    },
+    "olderAuditDifferencesPreserved": [
+      {
+        "id": "antifungal-foundations-113",
+        "status": "older_audit_difference_preserved_not_published_here"
+      },
+      {
+        "id": "antifungal-foundations-114",
+        "status": "older_audit_difference_preserved_not_published_here"
+      },
+      {
+        "id": "antifungal-foundations-115",
+        "status": "older_audit_difference_preserved_not_published_here"
+      },
+      {
+        "id": "antifungal-foundations-116",
+        "status": "older_audit_difference_preserved_not_published_here"
+      },
+      {
+        "id": "antifungal-foundations-125",
+        "status": "older_audit_difference_preserved_not_published_here"
+      },
+      {
+        "id": "antifungal-foundations-126",
+        "status": "older_audit_difference_preserved_not_published_here"
+      },
+      {
+        "id": "antifungal-foundations-127",
+        "status": "older_audit_difference_preserved_not_published_here"
+      },
+      {
+        "id": "antifungal-foundations-128",
+        "status": "older_audit_difference_preserved_not_published_here"
+      }
+    ],
+    "remainingHistoricalQuestions": 7,
+    "limits": "Nine whole questions/36 choices, one teaching body, one key point and one embedded check only. No whole module or chapter closure. Unreviewed older Audit differences remain preserved and are not published here. The selected30remain exact; one necessary cumulative beta-glucan copy is corrected; the other1183pool objects remain exact.",
+    "sourceDiscrepanciesAndLimits": [
+      "CDC at-a-glance retains a blanket no-CLSI statement contradicted by its detailed current guidelines. Use the detailed drug-specific distinction corroborated by CLSI; do not infer current FDA recognition from a 2025 newsletter.",
+      "Nine whole bank questions, one necessary reused pool object, one teaching body, one key point, one embedded check and its associated generic figure only. No whole lesson, module, chapter or goal closure. Other175 bank questions, other231 modules, other1183 pool objects and selected30 exact.",
+      "Old blanket claim occurs as an incorrect option in an unrelated CYP question; preserved without certifying that whole question."
     ]
   }
 }

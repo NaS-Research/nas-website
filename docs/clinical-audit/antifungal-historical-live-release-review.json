@@ -1,6 +1,6 @@
 {
-  "status": "source_build_actual_native_passed_public_pending",
-  "checkedUTC": "2026-10-12T22:11:41.295470+00:00",
+  "status": "verified_scoped_public_release",
+  "checkedUTC": "2026-10-12T22:18:12.594460+00:00",
   "questionIds": [
     "antifungal-foundations-005",
     "antifungal-foundations-007",
@@ -119,7 +119,10 @@
     "antifungal-qualified-review-v1.json": "2192f0a651061f5a3edbe8f56debafc04725ce1a2d102e9f3b41a787b93551e2",
     "main-integration-antifungal-v1.json": "117c042819fabf75f5bc1730bc41a3471ad5cff3793764fdbd122eac4d67e71f",
     "browser-antifungal-main-v1.json": "43720f52eb2dea13e49caa110aed61b887b988b235d58668fc51b3b31ddc0db6",
-    "actual-native-antifungal-complete-v1.json": "5ea851cd86dd99356a90ff41583dc5a7aba1a9a9e4c8878e89033774b4e72400"
+    "actual-native-antifungal-complete-v1.json": "5ea851cd86dd99356a90ff41583dc5a7aba1a9a9e4c8878e89033774b4e72400",
+    "browser-antifungal-live-v1.json": "fd649dc7cd2a0ab8eec77d7ae3bf1b71ee86c627b7afc20f923b08244a805c43",
+    "public-pixel-comparison-antifungal-v1.json": "9ab195eaa701573954335bd79a1bb0fd441c8b9d9e1a50bbead03b412ea70d1c",
+    "original-preservation-antifungal-v1.json": "78882f7c243e121c2c7ec5aa052e7c6a6ed89f4324e0edfe73e1442fbe33963a"
   },
   "selected30WholeObjectsExact": true,
   "other1183CumulativePoolObjectsExact": true,
@@ -129,6 +132,56 @@
   "chaptersVerified": 7,
   "wholeModuleVerified": false,
   "wholeChapterVerified": false,
-  "productionLiveVerified": false,
-  "wholeGoalComplete": false
+  "productionLiveVerified": true,
+  "wholeGoalComplete": false,
+  "release": {
+    "mainCommit": "8d9844666167e2b60ea869810098721800702a39",
+    "auditReviewCommit": "f776a4f84f2ae84fbaaa3a0df8c5a1df4d034ff0",
+    "exactRemoteMainVerified": true,
+    "liveBrowserPassed": true,
+    "publicCapturesRGBIdenticalToActuallyInspectedMain": 54,
+    "extraPublicDifferences": 0,
+    "newestFirstAndSearchRelevanceVerified": true
+  },
+  "olderAuditDifferencesPreserved": [
+    {
+      "id": "antifungal-foundations-113",
+      "status": "older_audit_difference_preserved_not_published_here"
+    },
+    {
+      "id": "antifungal-foundations-114",
+      "status": "older_audit_difference_preserved_not_published_here"
+    },
+    {
+      "id": "antifungal-foundations-115",
+      "status": "older_audit_difference_preserved_not_published_here"
+    },
+    {
+      "id": "antifungal-foundations-116",
+      "status": "older_audit_difference_preserved_not_published_here"
+    },
+    {
+      "id": "antifungal-foundations-125",
+      "status": "older_audit_difference_preserved_not_published_here"
+    },
+    {
+      "id": "antifungal-foundations-126",
+      "status": "older_audit_difference_preserved_not_published_here"
+    },
+    {
+      "id": "antifungal-foundations-127",
+      "status": "older_audit_difference_preserved_not_published_here"
+    },
+    {
+      "id": "antifungal-foundations-128",
+      "status": "older_audit_difference_preserved_not_published_here"
+    }
+  ],
+  "remainingHistoricalQuestions": 7,
+  "limits": "Nine whole questions/36 choices, one teaching body, one key point and one embedded check only. No whole module or chapter closure. Unreviewed older Audit differences remain preserved and are not published here. The selected30remain exact; one necessary cumulative beta-glucan copy is corrected; the other1183pool objects remain exact.",
+  "sourceDiscrepanciesAndLimits": [
+    "CDC at-a-glance retains a blanket no-CLSI statement contradicted by its detailed current guidelines. Use the detailed drug-specific distinction corroborated by CLSI; do not infer current FDA recognition from a 2025 newsletter.",
+    "Nine whole bank questions, one necessary reused pool object, one teaching body, one key point, one embedded check and its associated generic figure only. No whole lesson, module, chapter or goal closure. Other175 bank questions, other231 modules, other1183 pool objects and selected30 exact.",
+    "Old blanket claim occurs as an incorrect option in an unrelated CYP question; preserved without certifying that whole question."
+  ]
 }
