@@ -1,3 +1,4 @@
+import { completePageMetadata } from "@/lib/pageMetadata.mjs";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -16,7 +17,7 @@ export async function generateMetadata({ params }) {
   const project = getResearchProject(slug);
   if (!project) return {};
 
-  return {
+  return completePageMetadata({
     title: `${project.id}: ${project.shortTitle} | NaS Research`,
     description: project.description,
     alternates: { canonical: `/research/projects/${project.slug}` },
@@ -26,7 +27,7 @@ export async function generateMetadata({ params }) {
       type: "article",
       url: `/research/projects/${project.slug}`,
     },
-  };
+  });
 }
 
 export default async function ResearchProjectPage({ params }) {

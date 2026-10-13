@@ -1,10 +1,11 @@
+import { completePageMetadata } from "@/lib/pageMetadata.mjs";
 import LegalPage from "@/components/LegalPage";
 
-export const metadata = {
+export const metadata = completePageMetadata({
   title: "Privacy Policy | NaS Research",
   description: "How NaS Research collects, uses, protects, and shares information through nasresearch.bio.",
   alternates: { canonical: "/legal/privacy" },
-};
+});
 
 const sections = [
   {

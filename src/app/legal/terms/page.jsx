@@ -1,10 +1,11 @@
+import { completePageMetadata } from "@/lib/pageMetadata.mjs";
 import LegalPage from "@/components/LegalPage";
 
-export const metadata = {
+export const metadata = completePageMetadata({
   title: "Terms of Use | NaS Research",
   description: "Terms governing access to nasresearch.bio, NaS Research publications, and public research interfaces.",
   alternates: { canonical: "/legal/terms" },
-};
+});
 
 const sections = [
   {

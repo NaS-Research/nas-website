@@ -1,3 +1,4 @@
+import { completePageMetadata } from "@/lib/pageMetadata.mjs";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Footer from "@/components/Footer";
@@ -11,13 +12,13 @@ export async function generateMetadata({ params }) {
   const { slug } = await params;
   const lesson = getPharmacyLesson(slug);
   if (!lesson) return {};
-  return {
+  return completePageMetadata({
     title: `${lesson.title} | NaS Learn`,
     description: lesson.description,
     alternates: { canonical: `/learn/pharmacy/${lesson.slug}` },
     openGraph: { title: `${lesson.title} | NaS Learn`, description: lesson.description, type: "article", images: [] },
-    twitter: { card: "summary", title: `${lesson.title} | NaS Learn`, description: lesson.description, images: [] },
-  };
+    twitter: { card: "summary_large_image", title: `${lesson.title} | NaS Learn`, description: lesson.description, images: [] },
+  });
 }
 
 function LessonSection({ section }) {

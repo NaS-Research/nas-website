@@ -26,7 +26,7 @@ export default function sitemap() {
     { path: "/legal/terms", changeFrequency: "yearly", priority: 0.3 },
   ];
 
-  const publicationPages = researchItems.filter((item) => !item.noindex).map((item) => ({
+  const publicationPages = researchItems.filter((item) => !item.noindex && item.publicationStatus !== "draft").map((item) => ({
     url: `${baseUrl}/research/${item.slug}`,
     lastModified: new Date(item.updatedDateISO || item.dateISO),
     changeFrequency: "monthly",

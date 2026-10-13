@@ -1,10 +1,11 @@
+import { completePageMetadata } from "@/lib/pageMetadata.mjs";
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import "./products.css";
 
 const description = "Tools for research and healthcare. Explore NaS Denials, our approach to connecting specialty denial cases, supporting evidence, and human review.";
-export const metadata = { title: "Products | NaS Research", description, alternates: { canonical: "/products" }, openGraph: { title: "Products | NaS Research", description, url: "/products", type: "website" } };
+export const metadata = completePageMetadata({ title: "Products | NaS Research", description, alternates: { canonical: "/products" }, openGraph: { title: "Products | NaS Research", description, url: "/products", type: "website" } });
 
 function Arrow() { return <span aria-hidden="true">↗</span>; }
 

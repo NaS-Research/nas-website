@@ -1,3 +1,4 @@
+import { completePageMetadata } from "@/lib/pageMetadata.mjs";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import { researchItems } from "@/data/researchLibrary";
@@ -6,17 +7,18 @@ import { pharmacyLessons } from "@/data/pharmacyLearning";
 import { pharmacyModules } from "@/data/pharmacyModules";
 import { coreDrugs } from "@/data/drugLibrary";
 
-export const metadata = {
+export const metadata = completePageMetadata({
   title: "Sitemap | NaS Research",
   description: "A complete directory of NaS Research pages, programs, publications, and legal information.",
   alternates: { canonical: "/sitemap" },
-};
+});
 
 const groups = [
   {
     title: "NaS",
     links: [
       { label: "Home", href: "/", detail: "The work and current publications" },
+      { label: "Workspace", href: "/workspace", detail: "Research tools and learning resources" },
       { label: "About NaS", href: "/about", detail: "Mission, direction, and long-term vision" },
       { label: "Work with NaS", href: "/support", detail: "Ways to strengthen the research" },
     ],
@@ -109,7 +111,7 @@ export default function SitemapPage() {
             <h2>Publications</h2>
           </header>
           <div className="sitemap-links">
-            {researchItems.filter((item) => !item.noindex).map((item) => (
+            {researchItems.filter((item) => !item.noindex && item.publicationStatus !== "draft").map((item) => (
               <Link href={`/research/${item.slug}`} key={item.slug}>
                 <span>
                   <strong>{item.title}</strong>

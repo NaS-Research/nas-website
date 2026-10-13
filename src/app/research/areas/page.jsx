@@ -1,8 +1,9 @@
+import { completePageMetadata } from "@/lib/pageMetadata.mjs";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import "./areas.css";
 const description = "Explore NaS research in oncology and genomics, and the scientific interests guiding our longer-term direction.";
-export const metadata = {title:"Research Areas | NaS Research",description,alternates:{canonical:"/research/areas"},openGraph:{title:"Research areas | NaS Research",description,url:"/research/areas"}};
+export const metadata = completePageMetadata({title:"Research Areas | NaS Research",description,alternates:{canonical:"/research/areas"},openGraph:{title:"Research areas | NaS Research",description,url:"/research/areas"}});
 const areas = [
  {name:"Autoimmune & Inflammatory Disease",description:"Immune regulation, autoimmunity, and the mechanisms of inflammation."},
  {name:"Chronic & Metabolic Disease",description:"Chronic disease and the biology of metabolism."},
