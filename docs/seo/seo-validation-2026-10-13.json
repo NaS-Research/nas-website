@@ -155,7 +155,7 @@
     "No field Core Web Vitals measured.",
     "Existing fixed sign-in/tools controls overlap part of the mobile guide review-date row in saved captures; controls are unchanged by this SEO patch and require owner-coordinated follow-up.",
     "Netlify defines Node 20.20.2 while the runtime plugin runs Node 22.23.3; existing Supabase Node 20 deprecation warning remains. No runtime settings changed.",
-    "No production deployment. This turn is limited to SEO validation and preparation; no merge or publication.",
+    "This report records the pre-release checkpoint; final published revision and strict live-site verification are required.",
     "Clinical Main publication remains separate and pending. Re-fetch and reconcile any later Main commit before SEO release."
   ],
   "guarded_qa_exit_codes": {
@@ -193,13 +193,13 @@
     "later_main_changes_require_reconciliation_and_applicable_requalification": true
   },
   "checkpoint": {
-    "saved_utc": "2026-10-13T07:48:12.975838+00:00",
+    "saved_utc": "2026-10-13T07:54:03.110847+00:00",
     "source_commit": "4ed268f128dd992272318add2488748cb35267b8",
     "remote_main": "8d9844666167e2b60ea869810098721800702a39",
     "publication_authorized": true,
     "published": false,
     "validated_head": "eec20817fda3ecfefea6dfa04a8c9f37c58a0fcc",
-    "current_turn_scope": "Validation and preparation only; no merge or publication."
+    "current_turn_scope": "SEO-only publication authorized after final checks and exclusive ownership; do not bundle or initiate unpublished clinical content."
   },
   "prior_runtime_validation": {
     "runtime_version": "16.3.5",
@@ -271,5 +271,15 @@
       "visual_inspection": "Contact sheets for all captured routes; full-size research, about, project, footer, guide and drug samples inspected.",
       "runtime_version": "16.3.5"
     }
+  },
+  "release_gate": {
+    "publication_authorized": true,
+    "scope": "Tested SEO changes only",
+    "clinical_publication_included": false,
+    "clinical_publication_prerequisite": false,
+    "fresh_main_reconciliation_required": true,
+    "exclusive_publishing_ownership_required": true,
+    "current_preview_checks_required": true,
+    "published_commit_and_strict_live_verification_required": true
   }
 }
