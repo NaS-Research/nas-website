@@ -38534,20 +38534,68 @@
       "lessons": [
         {
           "slug": "azole-target-sar",
-          "status": "unreviewed"
+          "status": "reviewing",
+          "wholeLessonVerified": false,
+          "productValidationPending": true,
+          "wholeLessonSourceReview": {
+            "questions": 17,
+            "teachingBodies": 4,
+            "checkAndFigureSourceReviewed": true,
+            "receiptSHA256": "b3177bd7b5cc3d30a2f0c9172e24488b23da2adbebdc6f8912f71b5bdbd3ed95"
+          }
         },
         {
           "slug": "spectrum-clinical-role",
-          "status": "unreviewed"
+          "status": "reviewing",
+          "wholeLessonVerified": false,
+          "productValidationPending": true,
+          "wholeLessonSourceReview": {
+            "questions": 17,
+            "teachingBodies": 4,
+            "checkAndFigureSourceReviewed": true,
+            "receiptSHA256": "071f2d0fcbbe5d8cc898337bd215fdd3639e41262db6b0a7723e39a90098359b"
+          }
         },
         {
           "slug": "fluconazole-exposure",
-          "status": "unreviewed"
+          "status": "reviewing",
+          "latestScopedEvidence": "triazole-antifungal-complete-review-20261012-progress.json",
+          "sourceReviewedWholeQuestionIds": [
+            "triazole-pharmacology-033",
+            "triazole-pharmacology-034",
+            "triazole-pharmacology-035",
+            "triazole-pharmacology-036",
+            "triazole-pharmacology-037",
+            "triazole-pharmacology-038",
+            "triazole-pharmacology-039",
+            "triazole-pharmacology-040",
+            "triazole-pharmacology-041",
+            "triazole-pharmacology-042",
+            "triazole-pharmacology-043",
+            "triazole-pharmacology-044",
+            "triazole-pharmacology-045",
+            "triazole-pharmacology-046",
+            "triazole-pharmacology-047",
+            "triazole-pharmacology-048",
+            "triazole-pharmacology-163",
+            "triazole-pharmacology-164"
+          ],
+          "wholeLessonVerified": false,
+          "productValidationPending": true,
+          "latestWholeLessonSourceReview": {
+            "receiptSHA256": "677e3ee2177a86425094ce228e68afe66d6992d46380413253f9eafe8eb13095",
+            "teachingBodies": 4,
+            "questions": 18,
+            "choices": 72,
+            "metadataCheckAndFigureSourceReviewed": true,
+            "wholeLessonVerified": false,
+            "productValidationPending": true
+          }
         },
         {
           "slug": "itraconazole-formulations",
-          "status": "verified",
-          "latestScopedEvidence": "enteral-nutrition-broader-itraconazole-tdm-review.json",
+          "status": "reviewing",
+          "latestScopedEvidence": "triazole-antifungal-complete-review-20261012-progress.json",
           "verifiedBodyHeadings": [
             "Name the complete product",
             "Teach opposing administration rules",
@@ -38555,8 +38603,8 @@
             "Interpret the assay correctly"
           ],
           "embeddedCheckVerified": true,
-          "wholeLessonVerified": true,
-          "figureVerified": true,
+          "wholeLessonVerified": false,
+          "figureVerified": false,
           "metadataStatementsVerified": 12,
           "metadataStatementsPending": 3,
           "verifiedQuestionIds": [
@@ -38585,7 +38633,79 @@
             "application",
             "concepts[4]",
             "keyPoints[3]"
-          ]
+          ],
+          "priorScopedReviewBeforeWholeModuleReaudit": {
+            "slug": "itraconazole-formulations",
+            "status": "verified",
+            "latestScopedEvidence": "enteral-nutrition-broader-itraconazole-tdm-review.json",
+            "verifiedBodyHeadings": [
+              "Name the complete product",
+              "Teach opposing administration rules",
+              "Protect the heart",
+              "Interpret the assay correctly"
+            ],
+            "embeddedCheckVerified": true,
+            "wholeLessonVerified": true,
+            "figureVerified": true,
+            "metadataStatementsVerified": 12,
+            "metadataStatementsPending": 3,
+            "verifiedQuestionIds": [
+              "triazole-pharmacology-049",
+              "triazole-pharmacology-050",
+              "triazole-pharmacology-051",
+              "triazole-pharmacology-052",
+              "triazole-pharmacology-053",
+              "triazole-pharmacology-054",
+              "triazole-pharmacology-055",
+              "triazole-pharmacology-056",
+              "triazole-pharmacology-057",
+              "triazole-pharmacology-058",
+              "triazole-pharmacology-059",
+              "triazole-pharmacology-060",
+              "triazole-pharmacology-061",
+              "triazole-pharmacology-062",
+              "triazole-pharmacology-063",
+              "triazole-pharmacology-064",
+              "triazole-pharmacology-165",
+              "triazole-pharmacology-166"
+            ],
+            "remainingBody": null,
+            "remainingQuestionIds": [],
+            "remainingMetadata": [
+              "application",
+              "concepts[4]",
+              "keyPoints[3]"
+            ]
+          },
+          "productValidationPending": true,
+          "sourceReviewedWholeQuestionIds": [
+            "triazole-pharmacology-049",
+            "triazole-pharmacology-050",
+            "triazole-pharmacology-051",
+            "triazole-pharmacology-052",
+            "triazole-pharmacology-053",
+            "triazole-pharmacology-054",
+            "triazole-pharmacology-055",
+            "triazole-pharmacology-056",
+            "triazole-pharmacology-057",
+            "triazole-pharmacology-058",
+            "triazole-pharmacology-059",
+            "triazole-pharmacology-060",
+            "triazole-pharmacology-165",
+            "triazole-pharmacology-166",
+            "triazole-pharmacology-061",
+            "triazole-pharmacology-062",
+            "triazole-pharmacology-063",
+            "triazole-pharmacology-064"
+          ],
+          "currentWholeModuleReaudit": {
+            "sourceReviewedQuestions": 18,
+            "sourceReviewedChoices": 72,
+            "wholeLessonSourceReviewed": true,
+            "nativeMonitoringRenderRecovered": true,
+            "wholeLessonVerified": false,
+            "productValidationPending": true
+          }
         },
         {
           "slug": "voriconazole-precision",
@@ -38595,13 +38715,48 @@
             "Coordinate voriconazole with meals and tube feeds"
           ],
           "embeddedCheckVerified": false,
-          "wholeLessonVerified": false
+          "wholeLessonVerified": false,
+          "productValidationPending": true,
+          "latestWholeQuestionSourceReview": {
+            "questionIDs": [
+              "triazole-pharmacology-065",
+              "triazole-pharmacology-066",
+              "triazole-pharmacology-067",
+              "triazole-pharmacology-068",
+              "triazole-pharmacology-069",
+              "triazole-pharmacology-070",
+              "triazole-pharmacology-071",
+              "triazole-pharmacology-072",
+              "triazole-pharmacology-073",
+              "triazole-pharmacology-074",
+              "triazole-pharmacology-075",
+              "triazole-pharmacology-076",
+              "triazole-pharmacology-077",
+              "triazole-pharmacology-078",
+              "triazole-pharmacology-079",
+              "triazole-pharmacology-080",
+              "triazole-pharmacology-167",
+              "triazole-pharmacology-168"
+            ],
+            "questions": 18,
+            "choices": 72,
+            "receiptSHA256": "b23c2d8b778962e922468536eea1c05c7f1cda33016b6002701c049c8afdb323"
+          },
+          "latestWholeLessonSourceReview": {
+            "receiptSHA256": "4e65e592d5fbf8fb949bca83be916dd18e419cd9fd046401b4844871bbc35f2a",
+            "teachingBodies": 5,
+            "questions": 18,
+            "choices": 72,
+            "metadataCheckAndFigureSourceReviewed": true,
+            "wholeLessonVerified": false,
+            "productValidationPending": true
+          }
         },
         {
           "slug": "posaconazole-delivery",
-          "status": "verified",
+          "status": "reviewing",
           "latestScopedEvidence": "enteral-nutrition-broader-antifungal-exposure-review.json",
-          "wholeLessonVerified": true,
+          "wholeLessonVerified": false,
           "verifiedBodyHeadings": [
             "Stop unsafe substitution",
             "Use the current tablet instruction",
@@ -38635,23 +38790,130 @@
             "cumulative-triazole-antifungal-pharmacology-triazole-pharmacology-089"
           ],
           "remainingBody": null,
-          "remainingQuestionIds": []
+          "remainingQuestionIds": [],
+          "productValidationPending": true,
+          "latestWholeQuestionSourceReview": {
+            "questions": 18,
+            "choices": 72,
+            "receiptSHA256": "468a84d81222f98aca6e63b9b912444ed80a2bb2bedc24712d14bed7e9fc7967"
+          },
+          "latestWholeLessonSourceReview": {
+            "receiptSHA256": "0187a6aa7a3ce28b4dae3a46fb4876dc5af8c047f78b84b4051b78f70fb66622",
+            "teachingBodies": 4,
+            "questions": 18,
+            "choices": 72,
+            "metadataCheckAndFigureSourceReviewed": true,
+            "wholeLessonVerified": false,
+            "productValidationPending": true
+          }
         },
         {
           "slug": "isavuconazole-system",
-          "status": "unreviewed"
+          "status": "reviewing",
+          "wholeLessonVerified": false,
+          "productValidationPending": true,
+          "latestWholeQuestionSourceReview": {
+            "questionIDs": [
+              "triazole-pharmacology-097",
+              "triazole-pharmacology-098",
+              "triazole-pharmacology-099",
+              "triazole-pharmacology-100",
+              "triazole-pharmacology-101",
+              "triazole-pharmacology-102",
+              "triazole-pharmacology-103",
+              "triazole-pharmacology-104",
+              "triazole-pharmacology-105",
+              "triazole-pharmacology-106",
+              "triazole-pharmacology-107",
+              "triazole-pharmacology-108",
+              "triazole-pharmacology-109",
+              "triazole-pharmacology-110",
+              "triazole-pharmacology-111",
+              "triazole-pharmacology-112",
+              "triazole-pharmacology-171",
+              "triazole-pharmacology-172"
+            ],
+            "questions": 18,
+            "choices": 72,
+            "receiptSHA256": "148b4fc7e18b75880ab9f79d14e45b4c0ca77c12127563e3190daee2506805c8"
+          },
+          "latestWholeLessonSourceReview": {
+            "receiptSHA256": "a4453ddbe53cf46ca558b51f8b1c679a45c264b432c4485aac977c53bf364ec9",
+            "teachingBodies": 4,
+            "questions": 18,
+            "choices": 72,
+            "metadataCheckAndFigureSourceReviewed": true,
+            "wholeLessonVerified": false,
+            "productValidationPending": true
+          }
         },
         {
           "slug": "interactions-electrophysiology",
-          "status": "unreviewed"
+          "status": "reviewing",
+          "wholeLessonVerified": false,
+          "productValidationPending": true,
+          "wholeLessonSourceReview": {
+            "questions": 17,
+            "choices": 68,
+            "teachingBodies": 4,
+            "checkAndFigureSourceReviewed": true,
+            "receiptSHA256": "7913faece7af42892a483a9c1f7e22bf1be43159514ac9af94cbaf108b7ec73b"
+          }
         },
         {
           "slug": "tdm-organ-monitoring",
-          "status": "unreviewed"
+          "status": "reviewing",
+          "wholeLessonVerified": false,
+          "productValidationPending": true,
+          "latestReproductiveSourceReview": {
+            "questionIDs": [
+              "triazole-pharmacology-141",
+              "triazole-pharmacology-142",
+              "triazole-pharmacology-143",
+              "triazole-pharmacology-144"
+            ],
+            "questions": 4,
+            "choices": 16,
+            "teachingBodySourceReviewed": true,
+            "receiptSHA256": "658bd1eb9e9783bab0694b076332db4863e258c7a1e9728aaf48c19d2cb444fd"
+          },
+          "latestMonitoringQuestionSourceReview": {
+            "questionIDs": [
+              "triazole-pharmacology-129",
+              "triazole-pharmacology-130",
+              "triazole-pharmacology-131",
+              "triazole-pharmacology-132",
+              "triazole-pharmacology-133",
+              "triazole-pharmacology-134",
+              "triazole-pharmacology-135",
+              "triazole-pharmacology-136",
+              "triazole-pharmacology-137",
+              "triazole-pharmacology-138",
+              "triazole-pharmacology-139",
+              "triazole-pharmacology-140",
+              "triazole-pharmacology-174"
+            ],
+            "questions": 13,
+            "choices": 52,
+            "receiptSHA256": "c6918f33cbf1446d33b29d040ba1e405b549f4880e9ee98abddd2c4001992c31"
+          },
+          "wholeLessonSourceReview": {
+            "teachingBodies": 4,
+            "checkAndFigureSourceReviewed": true,
+            "receiptSHA256": "2853b38f9eef63fea523fe348148d76490e1c0efaca10fdb61ee90baf4593338"
+          }
         },
         {
           "slug": "integration-transition",
-          "status": "unreviewed"
+          "status": "reviewing",
+          "wholeLessonVerified": false,
+          "productValidationPending": true,
+          "wholeLessonSourceReview": {
+            "questions": 18,
+            "teachingBodies": 4,
+            "checkAndFigureSourceReviewed": true,
+            "receiptSHA256": "071f2d0fcbbe5d8cc898337bd215fdd3639e41262db6b0a7723e39a90098359b"
+          }
         }
       ],
       "questions": 176,
@@ -38897,6 +39159,43 @@
         "noNewQuestionIds": true,
         "originalClinicalScopeRetained": true,
         "unrelatedDraftsPreserved": true
+      },
+      "latestWholeModuleReviewProgress": "triazole-antifungal-complete-review-20261012-progress.json",
+      "latestWholeModuleReauditProgress": "triazole-antifungal-complete-review-20261012-progress.json",
+      "wholeModuleVerified": false,
+      "currentWholeModuleReview": {
+        "status": "source_build_main_actual_native_passed_live_archive_pending",
+        "checkedUTC": "2026-10-13T14:22:01.094119+00:00",
+        "moduleSlug": "triazole-antifungal-pharmacology",
+        "wholeQuestionsReviewed": 176,
+        "individualChoicesReviewed": 704,
+        "wholeLessonsSourceAndProductReviewed": 10,
+        "teachingBodiesReviewed": 48,
+        "other231ModulesExact": true,
+        "selected30WholeObjectsExact": true,
+        "mainBase": "e2e5e4d50c5081c22ccd6ecc5f5af6c84fd74206",
+        "mainNativeCaptureCount": 146,
+        "actualFreshCapturesIndividuallyInspected": 2,
+        "exactHistoricalPixelEquivalenceCount": 144,
+        "nativeReviewMethod": "Full fresh integrated QA at both widths; every changed fresh capture actually opened and inspected; all remaining fresh captures proved exact PNG-byte identity to previously individually inspected captures. Historical copy finding retained and corrected in new evidence.",
+        "evidenceSHA256": {
+          "triazole-qualified-review-v1.json": "f0b4d184b8bb4284b5973a904345cf5aa94b58f192c0d9659095ad7bdec4b3e4",
+          "main-integration-triazole-v3.json": "a1ab7b2d868d750321ca4bd962ba8cf23be08706cd172f5c7b20719afe3d35f5",
+          "browser-complete-triazole-main-v4.json": "95673508b8e80a76d0dc41a4d7105a16fd01e7998eec8a8abd7cb8c4b5099089",
+          "actual-native-complete-triazole-main-v4.json": "b3af623bb70b7bd18133aeb3969d93af44c8fcc35cf2633ad587fe227f34bae8",
+          "exact-main-runtime-triazole-v1.json": "21dc8b92d2d6ac07ae2e75561d89f030667d230f154be95771702a7ee272f76f",
+          "question107-editorial-spacing-review-v1.json": "dc52198d557caaf673b0250b1bc45490aa5bc0888a68a360cbd5fb1048e59aa4",
+          "fluconazole-three-spaces-scoped-qualified-v1.json": "2e79b57d93968e0cb208b46bcab889c337a4ac11450a16d09b2b5fd116844e11"
+        },
+        "sourceLimit": "Unavailable original SAR paper full figures/tables are not claimed as inspected; unsupported ring-count causal generalization removed. Retained target teaching uses inspected book/current labels and independently checked deposited experimental structure. No universal affinity, clinical-outcome or dose conclusion inferred from a structure. Current product/indication-specific dose teaching and renal measures distinguish label examples from syndrome guidance. No new pediatric or compounding algorithm.",
+        "productionLiveVerified": false,
+        "wholeModuleVerified": false,
+        "wholeChapterVerified": false,
+        "wholeGoalComplete": false,
+        "remaining": [
+          "Exact Audit/Main pushes and actual production content/recency/relevance checks",
+          "Verified external lifecycle archive and completion ledgers"
+        ]
       }
     },
     {
