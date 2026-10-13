@@ -11,7 +11,12 @@
     "skipped_checks": 0,
     "complete": true,
     "passed": true,
-    "runtime_version": "16.3.5"
+    "runtime_version": "16.3.6",
+    "source": "Netlify PR preview",
+    "head_sha": "eec20817fda3ecfefea6dfa04a8c9f37c58a0fcc",
+    "netlify_deploy_id": "6acdc26cbc7d444df3c2b19d",
+    "report": ".external-work/seo-preview-full-http-v1/outputs/search-discovery.json",
+    "preview_indexing_protection": "Observed host-wide X-Robots-Tag: noindex is recorded separately; HTML directives remain strict. Production verification has no header exception."
   },
   "visual_validation": {
     "rendered_cases": 44,
@@ -69,8 +74,19 @@
     "missing_alt_attributes": 0,
     "broken_loaded_images": 0,
     "horizontal_overflow_cases": 0,
-    "visual_inspection": "Contact sheets for all captured routes; full-size research, about, project, footer, guide and drug samples inspected.",
-    "runtime_version": "16.3.5"
+    "visual_inspection": "Both contact sheets reviewed for all 44 viewport captures; full-size research desktop/mobile, footer desktop/mobile, about desktop, project/guide/drug mobile and live research baseline inspected.",
+    "runtime_version": "16.3.6",
+    "source": "Netlify PR preview",
+    "head_sha": "eec20817fda3ecfefea6dfa04a8c9f37c58a0fcc",
+    "netlify_deploy_id": "6acdc26cbc7d444df3c2b19d",
+    "report": ".external-work/seo-preview-browser44-v1/outputs/visual-audit.json",
+    "finished_utc": "2026-10-13T07:43:56.033Z",
+    "slot": {
+      "start_utc": "2026-10-13T07:38:00+00:00",
+      "end_utc": "2026-10-13T07:58:00+00:00",
+      "released_utc": "2026-10-13T07:45:17+00:00",
+      "cleanup": "Guarded wrapper exited 0; no owned SEO browser processes; ports 50161 and 50170 free."
+    }
   },
   "build": {
     "exit_code": 0,
@@ -135,10 +151,12 @@
     "research_items_with_bylines": 11
   },
   "limitations": [
-    "Exact Next 16.3.6 build passed; repeat rendered route/browser validation on this build before merge/publication. Existing 563-route/44-browser evidence is from Next 16.3.5.",
     "Clinical accuracy and credentialed authorship/review were not independently verified.",
     "No field Core Web Vitals measured.",
-    "No production deployment."
+    "Existing fixed sign-in/tools controls overlap part of the mobile guide review-date row in saved captures; controls are unchanged by this SEO patch and require owner-coordinated follow-up.",
+    "Netlify defines Node 20.20.2 while the runtime plugin runs Node 22.23.3; existing Supabase Node 20 deprecation warning remains. No runtime settings changed.",
+    "No production deployment. This turn is limited to SEO validation and preparation; no merge or publication.",
+    "Clinical Main publication remains separate and pending. Re-fetch and reconcile any later Main commit before SEO release."
   ],
   "guarded_qa_exit_codes": {
     "search_discovery_exit": 0,
@@ -154,15 +172,104 @@
     "log": ".external-work/seo-build-v1/outputs/build.log"
   },
   "exact_runtime_rendered_validation": {
-    "status": "pending",
+    "status": "passed",
     "runtime_version": "16.3.6",
-    "reason": "User requested a safe checkpoint and model handoff after the active build."
+    "validated_head": "eec20817fda3ecfefea6dfa04a8c9f37c58a0fcc",
+    "netlify_deploy_id": "6acdc26cbc7d444df3c2b19d",
+    "full_http": {
+      "sitemap_urls": 563,
+      "drug_routes": 300,
+      "failed_checks": 0,
+      "skipped_checks": 0
+    },
+    "browser": {
+      "rendered_cases": 44,
+      "exit_code": 0,
+      "failed_checks": 0,
+      "page_errors": 0
+    },
+    "main_fresh_fetch": "8d9844666167e2b60ea869810098721800702a39",
+    "main_fresh_fetch_utc": "2026-10-13T07:48:12.975838+00:00",
+    "later_main_changes_require_reconciliation_and_applicable_requalification": true
   },
   "checkpoint": {
-    "saved_utc": "2026-10-13T05:15:49.888299+00:00",
+    "saved_utc": "2026-10-13T07:48:12.975838+00:00",
     "source_commit": "4ed268f128dd992272318add2488748cb35267b8",
     "remote_main": "8d9844666167e2b60ea869810098721800702a39",
     "publication_authorized": true,
-    "published": false
+    "published": false,
+    "validated_head": "eec20817fda3ecfefea6dfa04a8c9f37c58a0fcc",
+    "current_turn_scope": "Validation and preparation only; no merge or publication."
+  },
+  "prior_runtime_validation": {
+    "runtime_version": "16.3.5",
+    "automated_route_validation": {
+      "sitemap_urls": 563,
+      "drug_routes": 300,
+      "failed_checks": 0,
+      "skipped_checks": 0,
+      "complete": true,
+      "passed": true,
+      "runtime_version": "16.3.5"
+    },
+    "visual_validation": {
+      "rendered_cases": 44,
+      "routes": [
+        "/",
+        "/about",
+        "/products",
+        "/support",
+        "/workspace",
+        "/research",
+        "/research/areas",
+        "/research/clinvar-conflict-atlas",
+        "/research/projects/nas-brca-001",
+        "/learn",
+        "/learn/library",
+        "/learn/watch",
+        "/learn/pharmacy/drug-formulations-and-routes",
+        "/learn/pharmacy/modules/hypertension-foundations-chronic-therapy",
+        "/learn/pharmacy/drugs",
+        "/learn/pharmacy/drugs/acetaminophen",
+        "/learn/pharmacy/atlas",
+        "/learn/pharmacy/review",
+        "/sitemap",
+        "/legal/privacy",
+        "/login",
+        "/seo-audit-not-found-20261013"
+      ],
+      "viewports": {
+        "desktop": "1440x1000",
+        "mobile": "390x844"
+      },
+      "checks": [
+        {
+          "failed": false,
+          "check": "research load more, search, layouts and title sorting",
+          "viewport": "desktop"
+        },
+        {
+          "failed": false,
+          "check": "live research baseline screenshot",
+          "viewport": "desktop"
+        },
+        {
+          "failed": false,
+          "check": "research load more, search, layouts and title sorting",
+          "viewport": "mobile"
+        },
+        {
+          "failed": false,
+          "check": "live research baseline screenshot",
+          "viewport": "mobile"
+        }
+      ],
+      "console_errors": 0,
+      "missing_alt_attributes": 0,
+      "broken_loaded_images": 0,
+      "horizontal_overflow_cases": 0,
+      "visual_inspection": "Contact sheets for all captured routes; full-size research, about, project, footer, guide and drug samples inspected.",
+      "runtime_version": "16.3.5"
+    }
   }
 }
