@@ -73,7 +73,7 @@ export async function generateMetadata({ params }) {
   return {
     title: `${item.title} | NaS Research`,
     description: item.abstract,
-    ...(item.publicationStatus === "draft" ? { robots: { index: false, follow: false } } : {}),
+    ...(item.noindex || item.publicationStatus === "draft" ? { robots: { index: false, follow: false } } : {}),
     authors: item.authors.map((name) => ({ name })),
     alternates: { canonical: `/research/${item.slug}` },
     openGraph: {

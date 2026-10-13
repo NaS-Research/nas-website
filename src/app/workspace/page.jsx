@@ -1,3 +1,4 @@
+import { completePageMetadata } from "@/lib/pageMetadata.mjs";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import WorkspaceAtmosphere from "./WorkspaceAtmosphere";
@@ -7,7 +8,7 @@ import { getDrugAtlasLesson } from "@/data/drugAtlas";
 import "./workspace.css";
 
 const description = "A place for scientific work. Tools, knowledge, and room to pursue your next question. Explore the NaS workspace for researchers, clinicians, and students.";
-export const metadata = { title: "Workspace | NaS Research", description, alternates: { canonical: "/workspace" }, openGraph: { title: "Workspace | NaS Research", description, url: "/workspace" } };
+export const metadata = completePageMetadata({ title: "Workspace | NaS Research", description, alternates: { canonical: "/workspace" }, openGraph: { title: "Workspace | NaS Research", description, url: "/workspace" } });
 function Arrow() { return <span aria-hidden="true">↗</span>; }
 const paths = [
   { name: "Investigate", text: "Follow a question through evidence, methods, and published research.", href: "/research", link: "Explore the research" },

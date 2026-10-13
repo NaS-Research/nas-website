@@ -1,13 +1,15 @@
+import { researchSummaries } from "@/lib/researchSummaries.mjs";
+import { completePageMetadata } from "@/lib/pageMetadata.mjs";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import ResearchLibrary from "@/components/research/ResearchLibrary";
 import { researchItems, researchTypes } from "@/data/researchLibrary";
 
-export const metadata = {
+export const metadata = completePageMetadata({
   alternates: { canonical: "/research" },
   title: "Research Library | NaS Research",
   description: "Browse research reports, white papers, research notes, releases, and essays from NaS Research.",
-};
+});
 
 export default async function ResearchPage({ searchParams }) {
   const filters = await searchParams;
@@ -16,7 +18,7 @@ export default async function ResearchPage({ searchParams }) {
       <header className="research-index-header research-index-header--minimal"><div className="nas-shell research-heading-row"><h1>Research</h1><Link href="/research/areas">Research areas <span aria-hidden="true">↗</span></Link></div></header>
 
       <div data-page-main className="nas-shell research-index-main">
-        <ResearchLibrary items={researchItems} types={researchTypes} initialArea={typeof filters.area === "string" ? filters.area : "All areas"} initialType={typeof filters.type === "string" ? filters.type : "All"} />
+        <ResearchLibrary items={researchSummaries(researchItems)} types={researchTypes} initialArea={typeof filters.area === "string" ? filters.area : "All areas"} initialType={typeof filters.type === "string" ? filters.type : "All"} />
       </div>
       <Footer />
     </div>

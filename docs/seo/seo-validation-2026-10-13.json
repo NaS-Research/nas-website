@@ -1,0 +1,135 @@
+{
+  "date": "2026-10-13",
+  "site": "https://nasresearch.bio",
+  "base_commit": "8d9844666167e2b60ea869810098721800702a39",
+  "branch": "codex/seo-20261013",
+  "deployed": false,
+  "automated_route_validation": {
+    "sitemap_urls": 563,
+    "drug_routes": 300,
+    "failed_checks": 0,
+    "skipped_checks": 0,
+    "complete": true,
+    "passed": true
+  },
+  "visual_validation": {
+    "rendered_cases": 44,
+    "routes": [
+      "/",
+      "/about",
+      "/products",
+      "/support",
+      "/workspace",
+      "/research",
+      "/research/areas",
+      "/research/clinvar-conflict-atlas",
+      "/research/projects/nas-brca-001",
+      "/learn",
+      "/learn/library",
+      "/learn/watch",
+      "/learn/pharmacy/drug-formulations-and-routes",
+      "/learn/pharmacy/modules/hypertension-foundations-chronic-therapy",
+      "/learn/pharmacy/drugs",
+      "/learn/pharmacy/drugs/acetaminophen",
+      "/learn/pharmacy/atlas",
+      "/learn/pharmacy/review",
+      "/sitemap",
+      "/legal/privacy",
+      "/login",
+      "/seo-audit-not-found-20261013"
+    ],
+    "viewports": {
+      "desktop": "1440x1000",
+      "mobile": "390x844"
+    },
+    "checks": [
+      {
+        "failed": false,
+        "check": "research load more, search, layouts and title sorting",
+        "viewport": "desktop"
+      },
+      {
+        "failed": false,
+        "check": "live research baseline screenshot",
+        "viewport": "desktop"
+      },
+      {
+        "failed": false,
+        "check": "research load more, search, layouts and title sorting",
+        "viewport": "mobile"
+      },
+      {
+        "failed": false,
+        "check": "live research baseline screenshot",
+        "viewport": "mobile"
+      }
+    ],
+    "console_errors": 0,
+    "missing_alt_attributes": 0,
+    "broken_loaded_images": 0,
+    "horizontal_overflow_cases": 0,
+    "visual_inspection": "Contact sheets for all captured routes; full-size research, about, project, footer, guide and drug samples inspected."
+  },
+  "build": {
+    "exit_code": 0,
+    "seconds": 219.68,
+    "next_version": "16.3.5",
+    "worker_limit": 1,
+    "memory_limit_mb": 4096,
+    "catalog_unchanged": true,
+    "log": ".external-work/seo-build-v1/outputs/build.log"
+  },
+  "research_html": {
+    "pages": [
+      {
+        "source": "live",
+        "url": "https://nasresearch.bio/research",
+        "status": 200,
+        "uncompressed_response_bytes": 281799
+      },
+      {
+        "source": "local",
+        "url": "http://127.0.0.1:50170/research",
+        "status": 200,
+        "uncompressed_response_bytes": 39416
+      }
+    ],
+    "reduction_bytes": 242383,
+    "reduction_percent": 86.01
+  },
+  "social_gaps_before": {
+    "unique_pages": 13,
+    "missing_og_image": 9,
+    "missing_og_url": 6
+  },
+  "social_gaps_after": {
+    "unique_pages": 0,
+    "missing_og_image": 0,
+    "missing_og_url": 0
+  },
+  "focused_tests": {
+    "metadata_and_summary_contract": "passed",
+    "research_taxonomy_11_entries": "passed",
+    "search_parser_fixtures": "passed",
+    "diff_whitespace": "passed"
+  },
+  "provenance_structure": {
+    "drug_monographs_with_sources": 300,
+    "drug_source_entries": 1208,
+    "drug_disclosure_blocks_with_citations": 6911,
+    "unknown_drug_source_ids": 0,
+    "modules_with_references": 232,
+    "module_reference_entries": 2985,
+    "research_items_with_bylines": 11
+  },
+  "limitations": [
+    "Build/browser validation used existing external Next 16.3.5; repository pins 16.3.6. Repeat exact locked environment before release.",
+    "Clinical accuracy and credentialed authorship/review were not independently verified.",
+    "No field Core Web Vitals measured.",
+    "No production deployment."
+  ],
+  "guarded_qa_exit_codes": {
+    "search_discovery_exit": 0,
+    "visual_exit": 0
+  }
+}

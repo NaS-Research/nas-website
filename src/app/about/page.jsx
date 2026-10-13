@@ -1,3 +1,4 @@
+import { completePageMetadata } from "@/lib/pageMetadata.mjs";
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "@/components/Footer";
@@ -5,7 +6,7 @@ import ArtworkFilm from "@/components/research/ArtworkFilm";
 import "./about.css";
 
 const description = "Explore NaS today and its long-term vision: a life sciences institution connecting research, education, robotics, biological collections, and computing in Chicago.";
-export const metadata = { title: "About | NaS Research", description, alternates: { canonical: "/about" }, openGraph: { title: "About NaS Research", description, url: "/about", type: "website" } };
+export const metadata = completePageMetadata({ title: "About | NaS Research", description, alternates: { canonical: "/about" }, openGraph: { title: "About NaS Research", description, url: "/about", type: "website" } });
 
 export default function AboutPage() {
   return <div className="nas-page about-nas"><div data-page-main>
