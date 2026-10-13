@@ -10,7 +10,8 @@
     "failed_checks": 0,
     "skipped_checks": 0,
     "complete": true,
-    "passed": true
+    "passed": true,
+    "runtime_version": "16.3.5"
   },
   "visual_validation": {
     "rendered_cases": 44,
@@ -68,16 +69,27 @@
     "missing_alt_attributes": 0,
     "broken_loaded_images": 0,
     "horizontal_overflow_cases": 0,
-    "visual_inspection": "Contact sheets for all captured routes; full-size research, about, project, footer, guide and drug samples inspected."
+    "visual_inspection": "Contact sheets for all captured routes; full-size research, about, project, footer, guide and drug samples inspected.",
+    "runtime_version": "16.3.5"
   },
   "build": {
     "exit_code": 0,
-    "seconds": 219.68,
-    "next_version": "16.3.5",
+    "seconds": 453.67,
+    "next_version": "16.3.6",
+    "swc_version": "16.3.6",
+    "node_version": "v24.19.0",
+    "npm_version": "12.2.0",
     "worker_limit": 1,
     "memory_limit_mb": 4096,
-    "catalog_unchanged": true,
-    "log": ".external-work/seo-build-v1/outputs/build.log"
+    "source_hashes_unchanged": {
+      "package.json": true,
+      "package-lock.json": true,
+      "src/data/learningCatalogMetadata.json": true
+    },
+    "passed": true,
+    "log": ".external-work/seo-next1636-build-v1/outputs/build.log",
+    "timing_note": "Elapsed build phase includes required storage budget scans; not compiler-only timing.",
+    "source_commit": "4ed268f128dd992272318add2488748cb35267b8"
   },
   "research_html": {
     "pages": [
@@ -123,7 +135,7 @@
     "research_items_with_bylines": 11
   },
   "limitations": [
-    "Build/browser validation used existing external Next 16.3.5; repository pins 16.3.6. Repeat exact locked environment before release.",
+    "Exact Next 16.3.6 build passed; repeat rendered route/browser validation on this build before merge/publication. Existing 563-route/44-browser evidence is from Next 16.3.5.",
     "Clinical accuracy and credentialed authorship/review were not independently verified.",
     "No field Core Web Vitals measured.",
     "No production deployment."
@@ -131,5 +143,26 @@
   "guarded_qa_exit_codes": {
     "search_discovery_exit": 0,
     "visual_exit": 0
+  },
+  "initial_build": {
+    "exit_code": 0,
+    "seconds": 219.68,
+    "next_version": "16.3.5",
+    "worker_limit": 1,
+    "memory_limit_mb": 4096,
+    "catalog_unchanged": true,
+    "log": ".external-work/seo-build-v1/outputs/build.log"
+  },
+  "exact_runtime_rendered_validation": {
+    "status": "pending",
+    "runtime_version": "16.3.6",
+    "reason": "User requested a safe checkpoint and model handoff after the active build."
+  },
+  "checkpoint": {
+    "saved_utc": "2026-10-13T05:15:49.888299+00:00",
+    "source_commit": "4ed268f128dd992272318add2488748cb35267b8",
+    "remote_main": "8d9844666167e2b60ea869810098721800702a39",
+    "publication_authorized": true,
+    "published": false
   }
 }
