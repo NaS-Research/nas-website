@@ -2,7 +2,7 @@ export function paidUsage(value){
  if(!value||!['actual','estimate'].includes(value.kind)||!['api','metered'].includes(value.billingType))return null;
  if(typeof value.amountUsd!=='number'||!Number.isFinite(value.amountUsd)||value.amountUsd<=0)return null;
  for(const key of ['provider','service','provenance','recordId'])if(typeof value[key]!=='string'||!value[key].trim()||value[key].length>240)return null;
- if(!Number.isFinite(Date.parse(value.asOf)))return null;
+ if(!Number.isFinite(Date.parse(value.asOf))||Date.parse(value.asOf)>Date.now()+30000)return null;
  if(value.kind==='estimate'&&(typeof value.basis!=='string'||!value.basis.trim()||value.basis.length>500))return null;
  return {kind:value.kind,billingType:value.billingType,amountUsd:value.amountUsd,provider:value.provider,service:value.service,provenance:value.provenance,recordId:value.recordId,asOf:value.asOf,basis:value.kind==='estimate'?value.basis:null,scope:value.scope==='exclusive'?'exclusive':'unconfirmed'};
 }
@@ -34,7 +34,8 @@ export function activityNodes(rows,now=Date.now()){
    const status=!sourceFresh(row,now)||observationStale?'offline':!observationKnown?'unknown':['running','done','failed','waiting','needs_you','idle','blocked'].includes(reported)?reported:'unknown';
    nodes.set(id,{id,parentId:job.parentId!==undefined&&job.parentId!==null?String(row.device)+':'+String(job.parentId):null,
     name:String(job.name||'Unnamed worker').slice(0,140),task:String(job.task||'Task not reported').slice(0,240),
-    model:typeof job.model==='string'?job.model.slice(0,100):null,kind:['agent','person'].includes(job.kind)?job.kind:'job',
+    model:typeof job.model==='string'&&job.model.trim()&&job.model.length<=100&&typeof job.modelProvenance==='string'&&job.modelProvenance.trim()&&job.modelProvenance.length<=240?job.model:null,
+    modelProvenance:typeof job.modelProvenance==='string'?job.modelProvenance.slice(0,240):null,kind:['agent','person'].includes(job.kind)?job.kind:'job',
     source:row.source,device:row.device,status,
     paidUsage:usage,costUsd:usage?.amountUsd??null,
     elapsedSeconds:typeof job.elapsedSeconds==='number'&&Number.isFinite(job.elapsedSeconds)&&job.elapsedSeconds>=0?job.elapsedSeconds:null,

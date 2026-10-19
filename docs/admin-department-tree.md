@@ -38,3 +38,25 @@ All local review assets are outside app/public routes. Production contains only 
 ## Worker activity wording
 
 Worker cards use Active, Idle and Blocked only for corresponding actual observations; completed, failed, waiting and offline states retain their meaning. A fresh transport alone never establishes Active or Idle. Missing worker activity says Activity unavailable instead of a false zero. Department summaries count observed agent/person workers separately from guarded process jobs; an explicitly observed idle or blocked worker can support a zero active-worker count. Worker cards show the current reported task, state and latest update time.
+
+## Serialized event store and bounded retention
+
+The producer writer and collector share `scripts/admin_activity_events.py`. A stable, owner-private advisory lock serializes read/merge/write operations across producers; atomic replacement and directory sync prevent partial JSON reads. Event IDs retain their place in the snapshot. Older or duplicate observations cannot replace newer ones. Corrupt, oversized, symlinked, hard-linked or non-private files fail closed. The publisher holds a separate lifetime lease so a second process cannot compete for the same source rows.
+
+The snapshot allows 100 records and 48 KiB. Unresolved records (including stale/unknown/blocked work) are never evicted to make space. Up to 20 terminal records from the last seven days remain visible; older/excess terminal editions are saved in the sibling owner-private `*.archive/` directory before replacement. The archive has a 16 MiB budget and never deletes earlier editions automatically. At a capacity limit, writing fails without replacing the prior snapshot. A crash between archiving and replacement can leave a duplicate archived edition, but cannot remove the previous snapshot. Review capacity explicitly rather than silently dropping work.
+
+`report-task-event.py --stdin` accepts one bounded allowlisted event object. Optional `kind` is agent, person or job. A model is forwarded only together with `modelProvenance`, such as an actual runtime response field. The same paid-usage contract above is forwarded with its provenance and receipt identity; this validates the supplied record, not an independent provider invoice. Unknown fields, transcript content, command arguments and secrets are not copied. Do not supply a fabricated model or receipt to fill a missing field.
+
+The collector prioritizes explicit observations over fallback runner jobs, deduplicates a job against its own observed runner PID, and publishes omission counts and event-store health. A bounded payload cannot evict explicit observations. A failed read preserves cached observations as unknown without changing their original timestamps.
+
+## Actual process producer and coverage boundary
+
+`scripts/run-reported-job.py` wraps an already authorized subprocess under the approved external runner. It observes the real child start, a live-process poll (10 seconds by default), and the actual exit code. It emits a **job**, not an agent, and reports no model or cost. A process poll establishes only that this process exists. Interruption is unknown rather than successful completion; a killed producer eventually becomes stale. Telemetry failure after launch does not kill the authorized subprocess.
+
+To observe a normal website build, invoke `npm run build:reported` in this repository through the required external runner, with `NAS_ACTIVITY_EVENT_FILE` pointing to the existing owner-private event JSON on the approved volume. This wraps the unchanged `npm run build`, including its storage prehook. It is opt-in: the Netlify build command and ordinary builds are unchanged. Do not point test fixtures at the production event file.
+
+This Mac publisher runs every 20 seconds and the protected admin page polls every 10 seconds. An observation normally becomes visible within about 30 seconds plus request time; live-process elapsed observations can add the producer's 10-second poll interval. This is polling, not an immediate event subscription. It requires the private publisher process and Mac to remain available.
+
+Official Codex hooks document SessionStart, SubagentStart/Stop, tool and stop events with shared model metadata. They require a trusted hook configuration in the runtime that launches the worker. `codex exec --json` and App Server expose streams for runs/connections they own. This delegated cloud task has no configured or accessible callback stream in this checkout. No global hooks, cloud subscription, new credentials or model runs were installed for this change. To add coverage, connect each real coordinator's supported events to the allowlisted writer (with genuine worker/parent/assignment identities), or an approved authenticated publisher in that runtime. A local build observer does not establish company-wide or cloud-worker coverage.
+
+References: [Codex hooks](https://learn.chatgpt.com/docs/hooks), [non-interactive JSON events](https://learn.chatgpt.com/docs/non-interactive-mode), [App Server](https://learn.chatgpt.com/docs/app-server).

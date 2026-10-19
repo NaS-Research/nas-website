@@ -16,3 +16,13 @@ assert.equal(raw[0].costUsd,null);assert.equal(raw[1].costUsd,.25);
 assert.equal(zoomView({scale:1,x:0,y:0},100,{x:10,y:10}).scale,2.5);
 assert.equal(zoomView({scale:1,x:0,y:0},.0001,{x:10,y:10}).scale,.35);
 console.log('PASS: only sourced paid API/metered actuals or labeled estimates; subscription/legacy/zero costs rejected; no inclusive double counting; zoom limits');
+
+const modelRows=activityNodes([{source:'website',device:'test',received_at:new Date().toISOString(),payload:{jobs:[
+ {id:'unprovenanced',model:'unsupported-slug'},
+ {id:'provenanced',model:'observed-model',modelProvenance:'Isolated test runtime response field'}
+]}}]);
+assert.equal(modelRows[0].model,null);
+assert.equal(modelRows[1].model,'observed-model');
+assert.equal(modelRows[1].modelProvenance,'Isolated test runtime response field');
+assert.equal(paidUsage({...record,asOf:new Date(Date.now()+90000).toISOString()}),null);
+console.log('PASS: models require supplied runtime provenance and future paid-usage records are rejected');
