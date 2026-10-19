@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import "./navigation.css";
+import { useMember } from "./member/MemberProvider";
 
 const navigation = [
   { label: "Research", href: "/research" },
@@ -32,6 +33,8 @@ function isActivePath(pathname, href) {
 
 export default function Navbar({ authEnabled = false }) {
   const pathname = usePathname();
+  const member = useMember();
+  const showLogin = !authEnabled || (member?.status !== "loading" && !member?.authenticated);
   const headerRef = useRef(null);
   const triggerRef = useRef(null);
   const isHome = pathname === "/";
@@ -156,7 +159,7 @@ export default function Navbar({ authEnabled = false }) {
           })}
         </div>
 
-        <Link href={authEnabled ? "/account" : "/login"} className="nas-nav-login">Log in</Link>
+        {showLogin && <Link href="/login" className="nas-nav-login">Log in</Link>}
         <Link href={authEnabled ? "/account" : "/workspace"} className="nas-nav-workspace" onClick={() => setMenuOpen(false)}>Workspace <span aria-hidden="true">↗</span></Link>
         <button ref={triggerRef} type="button" className="nas-nav-toggle"
           aria-label={menuOpen ? "Close navigation" : "Open navigation"}

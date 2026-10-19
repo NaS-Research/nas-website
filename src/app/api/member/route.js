@@ -14,11 +14,11 @@ const enrich=row=>({...row,item:memberCatalog.get(row.path)});
 export async function GET(request){
  const current=memberCatalog.get(new URL(request.url).searchParams.get('path'))||null;
  try {
-  const auth=await session(); if(!auth)return respond({error:'Sign in to save your work.',current},401);
+  const auth=await session(); if(!auth)return respond({error:'Sign in to save your work.',authenticated:false,current},401);
   const {data,error}=await auth.client.from('member_items').select('*').eq('user_id',auth.user.id).order('updated_at',{ascending:false});
-  if(error)return respond({error:'Your account storage is not available yet. Please try again later.',current},503);
+  if(error)return respond({error:'Your account storage is not available yet. Please try again later.',authenticated:true,current},503);
   const path=new URL(request.url).searchParams.get('path');
-  return respond({userId:auth.user.id,items:data.filter(r=>memberCatalog.has(r.path)).map(enrich),current:memberCatalog.get(path)||null});
+  return respond({authenticated:true,userId:auth.user.id,items:data.filter(r=>memberCatalog.has(r.path)).map(enrich),current:memberCatalog.get(path)||null});
  }catch{return respond({error:'Unable to load your workspace. Please try again.',current},503);}
 }
 export async function POST(request){
