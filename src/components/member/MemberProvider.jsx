@@ -13,7 +13,7 @@ export default function MemberProvider({children}){
   setState({status:'loading',items:[],current:null});setMessage('');setSaving(false);pending.current=0;setSaveError(false);
   fetch(`/api/member?path=${encodeURIComponent(pathname)}`,{cache:'no-store',signal:controller.signal}).then(async r=>{
    const body=await r.json();if(gen!==generation.current)return;
-   setState({status:r.ok?'ready':r.status===401?'guest':'error',items:body.items||[],current:body.current||null,userId:body.userId||null,authenticated:body.authenticated===true});
+   setState({status:r.ok?'ready':r.status===401?'guest':'error',items:body.items||[],current:body.current||null,userId:body.userId||null,authenticated:body.authenticated===true,role:body.role==='admin'?'admin':null});
    if(!r.ok && r.status!==401)setMessage(body.error);
   }).catch(e=>{if(e.name!=='AbortError' && gen===generation.current){setState({status:'error',items:[],current:null});setMessage('Unable to connect. Your changes have not been saved.');}});
   return ()=>controller.abort();

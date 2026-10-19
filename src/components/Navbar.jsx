@@ -159,6 +159,7 @@ export default function Navbar({ authEnabled = false }) {
           })}
         </div>
 
+        {member?.role==="admin" && <Link href="/account/admin" className="nas-nav-admin">Admin</Link>}
         {showLogin && <Link href="/login" className="nas-nav-login">Log in</Link>}
         <Link href={authEnabled ? "/account" : "/workspace"} className="nas-nav-workspace" onClick={() => setMenuOpen(false)}>Workspace <span aria-hidden="true">↗</span></Link>
         <button ref={triggerRef} type="button" className="nas-nav-toggle"
