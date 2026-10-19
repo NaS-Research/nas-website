@@ -9,16 +9,18 @@ def elapsed_seconds(value):
  return days*86400+sum(number*60**power for power,number in enumerate(reversed(parts)))
 def classify(project,job):
  if '/CVA' in project or '/Learn' in project:return 'research'
- if re.search(r'(website|navbar|google-login|admin-activity|seo-|auth-)',job):return 'website'
+ if re.search(r'(website|navbar|google-login|admin-activity|admin-agent-tree|seo-|auth-)',job):return 'website'
  return 'video'
 def collect_jobs():
- result=subprocess.run(['ps','-axo','pid=,etime=,command='],capture_output=True,text=True,check=True)
+ result=subprocess.run(['ps','-axo','pid=,ppid=,etime=,command='],capture_output=True,text=True,check=True)
+ processes={}
  sources={source:[] for source in ('website','research','video')}
- seen=set()
  for line in result.stdout.splitlines():
-  fields=line.strip().split(None,2)
-  if len(fields)!=3:continue
-  pid,elapsed,command=fields
+  fields=line.strip().split(None,3)
+  if len(fields)==4:processes[fields[0]]={'parent':fields[1],'elapsed':fields[2],'command':fields[3]}
+ tracked={}
+ for pid,process in processes.items():
+  command=process['command']
   if 'external-project-runner.py' not in command:continue
   try:args=shlex.split(command)
   except ValueError:continue
@@ -30,11 +32,17 @@ def collect_jobs():
    end=next((index for index in range(start,len(flags)) if flags[index].startswith('--')),len(flags))
    project=' '.join(flags[start:end]);job=flags[flags.index('--job')+1]
   except (ValueError,IndexError,StopIteration):continue
-  if not project.startswith('/Volumes/AGNDJ 6TB/NaS-Work/') or job.startswith('admin-activity-monitor'):continue
-  if pid in seen:continue
-  seen.add(pid);source=classify(project,job)
-  sources[source].append({'id':pid,'name':job[:120],'workflow':source,'elapsedSeconds':elapsed_seconds(elapsed)})
+  if not project.startswith('/Volumes/AGNDJ 6TB/NaS-Work/') or job.startswith('admin-activity-monitor') or job.startswith('admin-agent-tree-monitor'):continue
+  source=classify(project,job)
+  entry={'id':pid,'name':job[:120],'workflow':source,'kind':'job','status':'running','elapsedSeconds':elapsed_seconds(process['elapsed']),'parentId':None}
+  sources[source].append(entry);tracked[pid]=entry
+ for pid,entry in tracked.items():
+  parent=processes[pid]['parent'];seen={pid}
+  while parent in processes and parent not in seen:
+   if parent in tracked:entry['parentId']=parent;break
+   seen.add(parent);parent=processes[parent]['parent']
  return sources
+
 def snapshot():
  sources=collect_jobs();http_status=None
  try:

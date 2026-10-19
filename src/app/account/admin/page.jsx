@@ -2,6 +2,7 @@ import {redirect,notFound} from 'next/navigation';
 import {adminSession} from '@/lib/auth/admin';
 import ActivityConsole from '@/components/admin/ActivityConsole';
 import '@/components/admin/activity.css';
+import '@/components/admin/agent-tree.css';
 export const dynamic='force-dynamic';
 export const metadata={title:'Activity | NaS Admin',robots:{index:false,follow:false}};
 export default async function AdminPage(){

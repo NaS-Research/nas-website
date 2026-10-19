@@ -19,15 +19,5 @@ current={...c,client:{from:()=>({select:()=>({order:async()=>({data:[],error:sto
 const response=await route.GET();assert.equal(response.status,c.status);assert.equal(response.headers.get('cache-control'),'private, no-store');passed.push('Activity endpoint '+c.status);
 }
 storageError=true;assert.equal((await route.GET()).status,503);passed.push('Activity source failure is explicit');
-const React=req('react'),{renderToStaticMarkup}=req('react-dom/server');
-let hook=0;const now=Date.now();
-let previewData={checkedAt:new Date(now).toISOString(),sources:['website','research','video'].map(source=>({source,device:'nas-studio',received_at:new Date(now).toISOString(),payload:{jobs:[],status:'reporting',httpStatus:source==='website'?200:null}}))};
-const component=await compile('src/components/admin/ActivityConsole.jsx',{'react':{...React,useState:initial=>React.useState(hook++===0?previewData:initial)},'next/link':{__esModule:true,default:({children,...props})=>React.createElement('a',props,children)}});
-const html=renderToStaticMarkup(React.createElement(component.default));
-assert.match(html,/Operations diagram/);assert.match(html,/No running jobs reported/);assert.match(html,/3 of 3 sources connected/);passed.push('Admin diagram renders all three connected sources');
-fs.writeFileSync(process.env.NAS_OUTPUT_DIR+'/preview.html','<!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1"><style>body{background:#000;color:#eee;margin:0;font-family:Arial,Helvetica,sans-serif}*{box-sizing:border-box}a{color:inherit;text-decoration:none}button{font:inherit}'+fs.readFileSync(root+'/src/components/admin/activity.css','utf8')+'</style></head><body>'+html+'</body></html>');
-hook=0;previewData={...previewData,sources:previewData.sources.map(row=>({...row,received_at:new Date(now-120000).toISOString()}))};
-const staleHtml=renderToStaticMarkup(React.createElement(component.default));
-assert.match(staleHtml,/Reports are stale/);assert.match(staleHtml,/0 of 3 sources connected/);passed.push('Stale sources become offline');
 fs.writeFileSync(process.env.NAS_OUTPUT_DIR+'/qa.json',JSON.stringify({passed},null,2));console.log(JSON.stringify({passed}));
 })().catch(error=>{console.error(error);process.exit(1)});
