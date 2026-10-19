@@ -13,11 +13,16 @@ user={id:'test',user_metadata:{role:'admin'}};assert.equal((await auth.adminSess
 role='admin';assert.equal((await auth.adminSession()).isAdmin,true);passed.push('Database membership grants admin');
 roleError={message:'unavailable'};assert.equal((await auth.adminSession()).isAdmin,false);passed.push('Role lookup failure denies access');
 let current={user:null,isAdmin:false},storageError=false;
-const route=await compile('src/app/api/admin/activity/route.js',{'next/server':{NextResponse:{json:(body,options)=>Response.json(body,options)}},'@/lib/auth/admin':{adminSession:async()=>current}});
+const route=await compile('src/app/api/admin/activity/route.js',{'next/server':{NextResponse:{json:(body,options)=>Response.json(body,options)}},'@/lib/auth/admin':{adminSession:async()=>current},'@/lib/admin/organization':{organization:{version:1,nodes:[]}}});
 for(const c of [{user:null,isAdmin:false,status:401},{user:{id:'ordinary'},isAdmin:false,status:403},{user:{id:'owner'},isAdmin:true,status:200}]){
 current={...c,client:{from:()=>({select:()=>({order:async()=>({data:[],error:storageError?{}:null})})})}};
-const response=await route.GET();assert.equal(response.status,c.status);assert.equal(response.headers.get('cache-control'),'private, no-store');passed.push('Activity endpoint '+c.status);
+const response=await route.GET();assert.equal(response.status,c.status);assert.equal('organization' in await response.json(),c.status===200);assert.equal(response.headers.get('cache-control'),'private, no-store');passed.push('Activity endpoint '+c.status);
 }
 storageError=true;assert.equal((await route.GET()).status,503);passed.push('Activity source failure is explicit');
+const Console=()=>null;
+const page=await compile('src/app/account/admin/page.jsx',{'next/navigation':{redirect:path=>{throw Error('redirect:'+path)},notFound:()=>{throw Error('not-found')}},'@/lib/auth/admin':{adminSession:async()=>current},'@/components/admin/ActivityConsole':Console,'@/components/admin/activity.css':{},'@/components/admin/agent-tree.css':{}});
+current={user:null,isAdmin:false};await assert.rejects(page.default(),/redirect:\/login/);passed.push('Direct admin page redirects anonymous access');
+current={user:{id:'ordinary'},isAdmin:false};await assert.rejects(page.default(),/not-found/);passed.push('Direct admin page rejects ordinary member');
+current={user:{id:'owner'},isAdmin:true};assert.equal((await page.default()).type,Console);passed.push('Direct admin page renders for verified admin');
 fs.writeFileSync(process.env.NAS_OUTPUT_DIR+'/qa.json',JSON.stringify({passed},null,2));console.log(JSON.stringify({passed}));
 })().catch(error=>{console.error(error);process.exit(1)});

@@ -1,47 +1,91 @@
 'use client';
 import {useEffect,useMemo,useRef,useState} from 'react';
-import {activityNodes,layoutTree} from '@/lib/admin/agent-tree.mjs';
-const labels={website:'Website',research:'Research',video:'Video'};
-const money=value=>value===null?'Usage not reported':'$'+value.toFixed(2);
-const elapsed=seconds=>seconds>=60?Math.floor(seconds/60)+'m '+Math.floor(seconds%60)+'s':Math.floor(seconds)+'s';
-export default function AgentTree({sources,now,interrupted=false}){
- const nodes=useMemo(()=>activityNodes(sources,now),[sources,now]);
- const [collapsed,setCollapsed]=useState(new Set()),[selected,setSelected]=useState(null),[view,setView]=useState({x:40,y:40,scale:1}),[size,setSize]=useState({width:1000,height:650});
- const canvas=useRef(null),drag=useRef(null);
+import {activityNodes,departmentTree,layoutTree,sourceFresh,usageTotals,zoomView} from '@/lib/admin/agent-tree.mjs';
+const money=value=>value===null?'Cost not reported':value>0&&value<.01?'<$0.01':'$'+value.toFixed(2);
+const elapsed=seconds=>seconds===null?'Time not reported':seconds>=60?Math.floor(seconds/60)+'m '+Math.floor(seconds%60)+'s':Math.floor(seconds)+'s';
+const stateLabel={running:'Running',done:'Done',needs_you:'Needs you',waiting:'Waiting',failed:'Failed',offline:'Offline',unknown:'Unknown',active:'Active',reporting:'Reporting',reported:'Reported',unconnected:'Not connected',unmapped:'Mapping needed'};
+export default function AgentTree({sources=[],organization=null,now=Date.now(),interrupted=false,loading=false}){
+ const jobs=useMemo(()=>activityNodes(sources,now),[sources,now]);
+ const nodes=useMemo(()=>departmentTree(organization,jobs,sources,now),[organization,jobs,sources,now]);
+ const [collapsed,setCollapsed]=useState(new Set()),[selected,setSelected]=useState(null),[view,setView]=useState({x:40,y:90,scale:1}),[size,setSize]=useState({width:0,height:0}),[exploring,setExploring]=useState(false);
+ const initialized=useRef(false),initializedView=useRef(false),canvas=useRef(null),drag=useRef(null);
+ useEffect(()=>{
+  if(organization&&!initialized.current){initialized.current=true;setCollapsed(new Set(organization.nodes.filter(node=>node.kind==='department').map(node=>node.id)));}
+ },[organization]);
  const graph=useMemo(()=>layoutTree(nodes,collapsed),[nodes,collapsed]);
- const key=graph.nodes.map(node=>node.id+':'+node.x+':'+node.y).join('|');
- const chosen=nodes.find(node=>node.id===selected);
- const running=nodes.filter(node=>node.status==='running').length;
- const knownCosts=nodes.filter(node=>node.costUsd!==null),cost=knownCosts.reduce((sum,node)=>sum+node.costUsd,0);
- function fit(){
-  const scale=Math.max(.3,Math.min(1.1,(size.width-70)/graph.width,(size.height-70)/graph.height));
-  setView({scale,x:(size.width-graph.width*scale)/2,y:Math.max(25,(size.height-graph.height*scale)/2)});
+ const agents=jobs.filter(node=>node.kind==='agent').length,running=jobs.filter(node=>node.status==='running').length,needsYou=jobs.filter(node=>node.status==='needs_you').length;
+ const costs=usageTotals(jobs),freshCount=sources.filter(row=>sourceFresh(row,now)).length;
+ const last=sources.reduce((latest,row)=>Math.max(latest,Date.parse(row.received_at)||0),0);
+ useEffect(()=>{
+  const observer=new ResizeObserver(([entry])=>setSize({width:entry.contentRect.width,height:entry.contentRect.height}));
+  if(canvas.current)observer.observe(canvas.current);return()=>observer.disconnect();
+ },[]);
+ // Position the initial root once. Neither expansion, refresh, selection nor resize resets the camera.
+ useEffect(()=>{
+  if(!initializedView.current&&size.width&&nodes.length){
+   initializedView.current=true;setView({scale:1,x:(size.width-graph.width)/2,y:90});
+  }
+ },[size.width,nodes.length,graph.width]);
+ useEffect(()=>{
+  const element=canvas.current;if(!element)return;
+  function wheel(event){
+   if(!event.ctrlKey&&!event.metaKey&&document.activeElement!==element)return;
+   event.preventDefault();
+   const rect=element.getBoundingClientRect(),delta=event.deltaY*(event.deltaMode===1?16:event.deltaMode===2?rect.height:1);
+   const factor=Math.exp(-Math.max(-120,Math.min(120,delta))*.0025);
+   setView(old=>zoomView(old,factor,{x:event.clientX-rect.left,y:event.clientY-rect.top}));
+  }
+  element.addEventListener('wheel',wheel,{passive:false});return()=>element.removeEventListener('wheel',wheel);
+ },[]);
+ function zoom(factor){setView(old=>zoomView(old,factor,{x:size.width/2,y:size.height/2}));}
+ function toggle(id){setCollapsed(old=>{const next=new Set(old);next.has(id)?next.delete(id):next.add(id);return next;});}
+ function keyDown(event){
+  if(event.target!==canvas.current)return;
+  if(event.key==='Escape'){canvas.current.blur();setExploring(false);return;}
+  const moves={ArrowLeft:[40,0],ArrowRight:[-40,0],ArrowUp:[0,40],ArrowDown:[0,-40]};
+  if(moves[event.key]){event.preventDefault();const [x,y]=moves[event.key];setView(old=>({...old,x:old.x+x,y:old.y+y}));}
+  if(['+','=','-'].includes(event.key)){event.preventDefault();zoom(event.key==='-'?.85:1.18);}
  }
- useEffect(()=>{const observer=new ResizeObserver(([entry])=>setSize({width:entry.contentRect.width,height:entry.contentRect.height}));if(canvas.current)observer.observe(canvas.current);return()=>observer.disconnect();},[]);
- useEffect(()=>{fit();},[key,size.width,size.height]);
- function zoom(factor){
-  setView(old=>{const scale=Math.max(.25,Math.min(1.8,old.scale*factor)),ratio=scale/old.scale;return {scale,x:size.width/2-(size.width/2-old.x)*ratio,y:size.height/2-(size.height/2-old.y)*ratio};});
- }
- return <section className="agent-tree" aria-label="Interactive agent tree">
-  <header className="agent-tree-bar"><span><b aria-hidden="true">✦</b> Activity tree</span><div><span>{nodes.length} {nodes.some(node=>node.kind==='agent')?'agents / jobs':'jobs'}</span><span className="agent-running">{interrupted?'Connection interrupted':running+' running'}</span><span>{nodes.length&&knownCosts.length===nodes.length?money(cost):'Usage not reported'}</span></div></header>
-  <div ref={canvas} className="agent-tree-canvas" onPointerDown={event=>{if(event.target.closest('button,a'))return;drag.current={x:event.clientX,y:event.clientY,view};event.currentTarget.setPointerCapture(event.pointerId);}}
+ return <section className="agent-tree" aria-label="NaS departments and agent tree" aria-busy={loading}>
+  <header className="agent-tree-bar">
+   <a href="/account" title="Return to your NaS workspace"><b aria-hidden="true">✦</b> Agents</a>
+   <div className="agent-totals" aria-label="Reported activity totals">
+    <span>{agents} agents{jobs.length>agents?' · '+(jobs.length-agents)+' jobs':''}</span><span className="total-running">{interrupted?'Activity unknown':running+' running'}</span><span className="total-needs">{needsYou} needs you</span>
+    {costs.actualCount>0&&<span title="Reported actual paid API/metered usage; exclusive records only">Paid {money(costs.actualUsd)}</span>}
+    {costs.estimateCount>0&&<span title="Reported paid API/metered estimates; distinct from actual charges">Est. {money(costs.estimateUsd)}</span>}
+   </div>
+  </header>
+  <div ref={canvas} className="agent-tree-canvas" tabIndex={0} data-zoom={view.scale} data-pan-x={view.x} data-pan-y={view.y}
+   aria-label="Diagram. Click the canvas then scroll to zoom, or use Control or Command plus scroll. Drag to pan. Escape returns to page scrolling."
+   onFocus={event=>{if(event.target===canvas.current)setExploring(true);}} onBlur={event=>{if(event.target===canvas.current)setExploring(false);}} onKeyDown={keyDown}
+   onPointerDown={event=>{if(event.target.closest('button,a'))return;canvas.current.focus({preventScroll:true});drag.current={x:event.clientX,y:event.clientY,view};event.currentTarget.setPointerCapture(event.pointerId);}}
    onPointerMove={event=>{if(!drag.current)return;setView({...drag.current.view,x:drag.current.view.x+event.clientX-drag.current.x,y:drag.current.view.y+event.clientY-drag.current.y});}}
-   onPointerUp={()=>{drag.current=null;}} onPointerCancel={()=>{drag.current=null;}}
-   onWheel={event=>{if(event.ctrlKey||event.metaKey)zoom(event.deltaY<0?1.08:.92);}}>
-   {!nodes.length?<div className="agent-tree-empty"><span>✦</span><h2>No activity reported yet.</h2><p>New work will appear here when a connected source reports it.</p></div>:
-   <div className="agent-tree-scene" style={{width:graph.width,height:graph.height,transform:`translate(${view.x}px,${view.y}px) scale(${view.scale})`}}>
-    <svg className="agent-tree-lines" width={graph.width} height={graph.height} aria-hidden="true">{graph.edges.map(edge=>{const a=graph.nodes.find(node=>node.id===edge.from),b=graph.nodes.find(node=>node.id===edge.to),x=edge.nested?a.x+18:a.x+graph.nodeWidth/2,y=a.y+graph.nodeHeight,tx=edge.nested?b.x:b.x+graph.nodeWidth/2,ty=edge.nested?b.y+23:b.y;return <g key={edge.from+edge.to}><path d={edge.nested?`M${x} ${y} V${ty} H${tx}`:`M${x} ${y} V${y+24} H${tx} V${ty}`}/><circle cx={x} cy={y} r="3"/><circle cx={tx} cy={ty} r="3"/></g>;})}</svg>
-    {graph.nodes.map(node=><article key={node.id} className={'agent-card '+(node.id===selected?'selected':'')} style={{left:node.x,top:node.y,width:graph.nodeWidth,height:graph.nodeHeight}}>
-     <button className="agent-card-main" onClick={()=>setSelected(node.id)} aria-label={'Inspect '+node.name}>
-      <div className="agent-card-heading"><span className="agent-avatar" aria-hidden="true">{node.kind==='agent'?'✦':'◈'}</span><div><h3 title={node.name}>{node.name}</h3><p>{node.model||'Model not reported'}</p></div><span className={'agent-state '+(interrupted?'offline':node.status)}><i/>{interrupted?'Offline':node.status==='done'?'Done':node.status==='running'?'Running':node.status==='failed'?'Failed':node.status==='waiting'?'Waiting':'Offline'}</span></div>
-      <p className="agent-card-task"><span>{labels[node.source]||'NaS'}</span> {node.task}</p>
-     </button>
-     <footer><span>{node.costUsd===null?'—':money(node.costUsd)} <i>· {elapsed(node.elapsedSeconds)}</i></span>{node.childCount>0&&<button onClick={()=>setCollapsed(old=>{const next=new Set(old);if(next.has(node.id))next.delete(node.id);else next.add(node.id);return next;})} aria-expanded={!node.collapsed} aria-label={(node.collapsed?'Expand ':'Collapse ')+node.name}>{node.childCount}<span>{node.collapsed?'⌄':'⌃'}</span></button>}</footer>
-    </article>)}
+   onPointerUp={()=>{drag.current=null;}} onPointerCancel={()=>{drag.current=null;}}>
+   {!nodes.length?<div className="agent-tree-empty" role="status"><span>✦</span><p>{loading?'Connecting to reported activity…':interrupted?'Activity connection unavailable.':'No activity reported yet.'}</p></div>:
+   <div className="agent-tree-scene" style={{width:graph.width,height:graph.height,transform:'translate('+view.x+'px,'+view.y+'px) scale('+view.scale+')'}}>
+    <svg className="agent-tree-lines" width={graph.width} height={graph.height} aria-hidden="true">{graph.edges.map(edge=>{
+     const a=graph.nodes.find(node=>node.id===edge.from),b=graph.nodes.find(node=>node.id===edge.to),x=edge.nested?a.x+18:a.x+graph.nodeWidth/2,y=a.y+graph.nodeHeight,tx=edge.nested||edge.stacked?b.x:b.x+graph.nodeWidth/2,ty=edge.nested||edge.stacked?b.y+20:b.y;
+     const d=edge.stacked?'M'+x+' '+y+' V'+(y+17)+' H'+edge.laneX+' V'+ty+' H'+tx:edge.nested?'M'+x+' '+y+' V'+ty+' H'+tx:'M'+x+' '+y+' V'+(y+17)+' H'+tx+' V'+ty;
+     return <g key={edge.from+edge.to}><path d={d}/><circle cx={x} cy={y} r="2.4"/><circle cx={tx} cy={ty} r="2.4"/></g>;
+    })}</svg>
+    {graph.nodes.map(node=>{
+     const state=interrupted?'offline':node.status,usage=node.paidUsage;
+     const parent=nodes.find(parent=>parent.id===(node.runtimeParentId||(!node.structural?node.parentId:null)));
+     const usageDescription=usage?(usage.kind==='estimate'?'Estimated paid usage: ':'Actual paid usage: ')+money(usage.amountUsd)+'; '+usage.provider+' / '+usage.service+'; '+usage.provenance+'; as of '+usage.asOf+(usage.basis?'; basis: '+usage.basis:''):'Cost not reported';
+     const description=node.structural?node.task+' · '+node.reportedCount+' reported workers; coverage incomplete.':node.task+' · '+stateLabel[state]+'. Model: '+(node.model||'not reported')+'. '+usageDescription+'. Last report: '+new Date(node.observedAt||node.receivedAt).toLocaleString()+'. Source: '+(node.provenance||'Guarded runner observation')+'. Runtime parent: '+(parent&&!parent.structural?parent.name:'not reported')+'.';
+     return <article key={node.id} className={'agent-card '+(node.id===selected?'selected':'')+(node.structural?' structure-card':'')} style={{left:node.x,top:node.y,width:graph.nodeWidth,height:graph.nodeHeight}} title={description}>
+      <button className="agent-card-main" onClick={()=>{setSelected(node.id);if(node.structural&&node.childCount)toggle(node.id);}} aria-label={'Inspect '+node.name} aria-pressed={node.id===selected} aria-expanded={node.structural&&node.childCount?!node.collapsed:undefined}>
+       <div className="agent-card-heading"><span className={'agent-avatar '+(node.structural?'organization-avatar':'')} aria-hidden="true">{node.kind==='organization'?'✦':node.structural?'◆':node.kind==='agent'?'✳':node.kind==='person'?'●':'◈'}</span><div><h3>{node.name}</h3><p>{node.structural?node.kind==='group'?'Placement unconfirmed':node.kind[0].toUpperCase()+node.kind.slice(1):node.kind==='person'?'Person':node.model||'Model not reported'}</p></div><span className={'agent-state '+state}><i aria-hidden="true"/>{stateLabel[state]||'Unknown'}</span></div>
+       <p className="agent-card-task">{node.task}</p><span className="tree-sr-only">{description}</span>
+      </button>
+      <footer><span>{node.structural?node.reportedCount+' reported':usage?<span className={'agent-paid-cost '+usage.kind} title={usageDescription}>{usage.kind==='estimate'?'Est. ':''}{money(usage.amountUsd)}</span>:null}<i>{node.structural?' · Coverage partial':(usage?' · ':'')+elapsed(node.elapsedSeconds)}</i></span>{node.childCount>0&&<button onClick={()=>toggle(node.id)} aria-expanded={!node.collapsed} aria-label={(node.collapsed?'Expand ':'Collapse ')+node.name}>{node.childCount}<span aria-hidden="true">{node.collapsed?'⌄':'⌃'}</span></button>}</footer>
+     </article>;
+    })}
    </div>}
-   <nav className="agent-tree-controls" aria-label="Tree zoom"><button onClick={()=>zoom(.85)} aria-label="Zoom out">−</button><button onClick={fit}>Fit</button><button onClick={()=>zoom(1.18)} aria-label="Zoom in">+</button></nav>
-   <span className="agent-tree-pan-hint">Drag to explore</span>
+   <nav className="agent-tree-controls" aria-label="Tree zoom"><button onClick={()=>zoom(.85)} aria-label="Zoom out">−</button><button onClick={()=>zoom(1.18)} aria-label="Zoom in">+</button></nav>
+   <span className="tree-explore-hint">{exploring?'Scroll to zoom · Drag to pan · Esc to release':'Click canvas to explore · Ctrl/⌘ + scroll to zoom'}</span>
+   <output className="tree-sr-only" aria-label="Diagram zoom">{Math.round(view.scale*100)} percent</output>
+   <span className="tree-freshness" role="status" title={(organization?.coverageNote||'Only reported activity is shown.')+' '+sources.map(row=>row.source+': '+(sourceFresh(row,now)&&!interrupted?'reporting':'offline')).join('; ')}>{loading?'Connecting…':interrupted?'Connection interrupted':sources.length===0?'Sources not connected':freshCount===0?'Reports offline':freshCount+'/'+sources.length+' sources reporting'}{last>0?' · '+new Date(last).toLocaleTimeString():''}</span>
   </div>
-  {chosen&&<aside className="agent-inspector" aria-label="Selected activity"><button className="agent-inspector-close" aria-label="Close activity details" onClick={()=>setSelected(null)}>×</button><p className="activity-eyebrow">Activity details</p><h2>{chosen.name}</h2><p>{chosen.task}</p><dl><dt>Source</dt><dd>{labels[chosen.source]}</dd><dt>Model</dt><dd>{chosen.model||'Not reported'}</dd><dt>Usage</dt><dd>{money(chosen.costUsd)}</dd><dt>Started by</dt><dd>{nodes.find(node=>node.id===chosen.parentId)?.name||'Parent not reported'}</dd><dt>Last report</dt><dd>{new Date(chosen.receivedAt).toLocaleString()}</dd></dl></aside>}
  </section>;
 }

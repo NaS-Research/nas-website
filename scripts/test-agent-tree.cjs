@@ -21,6 +21,6 @@ const {code}=await swc.transform(fs.readFileSync(file,'utf8'),{filename:file,jsc
 const m=new Module(file+'.qa.cjs');m.require=id=>id==='@/lib/admin/agent-tree.mjs'?model:req(id);m._compile(code,file+'.qa.cjs');
 const React=req('react'),{renderToStaticMarkup}=req('react-dom/server');
 const html=renderToStaticMarkup(React.createElement(m.exports.default,{sources:rows,now}));
-assert.match(html,/Collapse Orchestrator/);assert.match(html,/Inspect Analyst/);assert.match(html,/Usage not reported/);assert.match(html,/3 running/);
+assert.match(html,/Collapse Orchestrator/);assert.match(html,/Inspect Analyst/);assert.match(html,/Cost not reported/);assert.match(html,/3 running/);
 console.log('PASS: tree layout, collapse, multi-level edges, cycle defense, missing parents, offline state, unknown usage, and actual card rendering');
 })();
