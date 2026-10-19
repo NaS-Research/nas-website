@@ -40,3 +40,20 @@ const eventRow={source:'website',device:'test',received_at:stamp,payload:{jobs:[
 assert.equal(activityNodes([eventRow],now)[0].status,'offline');
 eventRow.payload.jobs[0].status='done';assert.equal(activityNodes([eventRow],now)[0].status,'done');
 console.log('PASS: a fresh publisher receipt cannot make an old active task event appear live; explicit terminal events retained');
+
+const {activitySummary}=await import('../src/lib/admin/agent-tree.mjs');
+assert.equal(activitySummary(byId.get('dept:i')),'1 active worker');
+assert.equal(activitySummary(byId.get('team:v')),'1 active job');
+const emptyFeed=departmentTree(registry,[],rows.map(row=>({...row,payload:{jobs:[]}})),now);
+assert.ok(emptyFeed.every(node=>node.status==='unavailable'));
+assert.ok(emptyFeed.every(node=>activitySummary(node)==='Activity unavailable'));
+assert.equal(activitySummary(staleTree.find(node=>node.id==='dept:i')),'Activity unavailable');
+for(const [status,expected] of [['idle','idle'],['blocked','blocked'],['needs_you','blocked']]){
+ const evidenceRows=[{source:'research',device:'test',received_at:stamp,payload:{jobs:[{id:status,kind:'agent',teamId:'team:l',status,observedAt:stamp}]}}];
+ const evidenceJobs=activityNodes(evidenceRows,now),evidenceTree=departmentTree(registry,evidenceJobs,evidenceRows,now);
+ assert.equal(evidenceJobs[0].status,status);
+ assert.equal(evidenceTree.find(node=>node.id==='dept:i').status,expected);
+ assert.equal(activitySummary(evidenceTree.find(node=>node.id==='dept:i')),'0 active workers');
+}
+assert.equal(activitySummary(byId.get('dept:i'),true),'Activity unavailable');
+console.log('PASS: fresh connectivity does not imply activity; absent worker observations never produce a false zero; actual agent/person workers and process jobs stay distinct; explicit idle and blocked observations supported');

@@ -1,9 +1,9 @@
 'use client';
 import {useEffect,useMemo,useRef,useState} from 'react';
-import {activityNodes,departmentTree,layoutTree,sourceFresh,usageTotals,zoomView} from '@/lib/admin/agent-tree.mjs';
+import {activityNodes,activitySummary,departmentTree,layoutTree,sourceFresh,usageTotals,zoomView} from '@/lib/admin/agent-tree.mjs';
 const money=value=>value===null?'Cost not reported':value>0&&value<.01?'<$0.01':'$'+value.toFixed(2);
 const elapsed=seconds=>seconds===null?'Time not reported':seconds>=60?Math.floor(seconds/60)+'m '+Math.floor(seconds%60)+'s':Math.floor(seconds)+'s';
-const stateLabel={running:'Running',done:'Done',needs_you:'Needs you',waiting:'Waiting',failed:'Failed',offline:'Offline',unknown:'Unknown',active:'Active',reporting:'Reporting',reported:'Reported',unconnected:'Not connected',unmapped:'Mapping needed'};
+const stateLabel={running:'Active',done:'Done',needs_you:'Blocked',waiting:'Waiting',failed:'Failed',offline:'Offline',unknown:'Activity unavailable',active:'Active',reporting:'Reporting',reported:'Reported',unconnected:'Not connected',unmapped:'Activity unavailable',unavailable:'Activity unavailable',idle:'Idle',blocked:'Blocked'};
 export default function AgentTree({sources=[],organization=null,now=Date.now(),interrupted=false,loading=false}){
  const jobs=useMemo(()=>activityNodes(sources,now),[sources,now]);
  const nodes=useMemo(()=>departmentTree(organization,jobs,sources,now),[organization,jobs,sources,now]);
@@ -13,8 +13,9 @@ export default function AgentTree({sources=[],organization=null,now=Date.now(),i
   if(organization&&!initialized.current){initialized.current=true;setCollapsed(new Set(organization.nodes.filter(node=>node.kind==='department').map(node=>node.id)));}
  },[organization]);
  const graph=useMemo(()=>layoutTree(nodes,collapsed),[nodes,collapsed]);
- const agents=jobs.filter(node=>node.kind==='agent').length,running=jobs.filter(node=>node.status==='running').length,needsYou=jobs.filter(node=>node.status==='needs_you').length;
+ const agents=jobs.filter(node=>node.kind==='agent').length,running=jobs.filter(node=>node.status==='running').length,needsYou=jobs.filter(node=>['needs_you','blocked'].includes(node.status)).length;
  const costs=usageTotals(jobs),freshCount=sources.filter(row=>sourceFresh(row,now)).length;
+ const unavailable=interrupted||!jobs.length||jobs.every(node=>['offline','unknown'].includes(node.status));
  const last=sources.reduce((latest,row)=>Math.max(latest,Date.parse(row.received_at)||0),0);
  useEffect(()=>{
   const observer=new ResizeObserver(([entry])=>setSize({width:entry.contentRect.width,height:entry.contentRect.height}));
@@ -50,7 +51,7 @@ export default function AgentTree({sources=[],organization=null,now=Date.now(),i
   <header className="agent-tree-bar">
    <a href="/account" title="Return to your NaS workspace"><b aria-hidden="true">✦</b> Agents</a>
    <div className="agent-totals" aria-label="Reported activity totals">
-    <span>{agents} agents{jobs.length>agents?' · '+(jobs.length-agents)+' jobs':''}</span><span className="total-running">{interrupted?'Activity unknown':running+' running'}</span><span className="total-needs">{needsYou} needs you</span>
+    {unavailable?<span>Activity unavailable</span>:<><span>{agents} agent{agents===1?'':'s'}{jobs.length>agents?' · '+(jobs.length-agents)+' jobs':''}</span><span className="total-running">{running} active</span><span className="total-needs">{needsYou} blocked</span></>}
     {costs.actualCount>0&&<span title="Reported actual paid API/metered usage; exclusive records only">Paid {money(costs.actualUsd)}</span>}
     {costs.estimateCount>0&&<span title="Reported paid API/metered estimates; distinct from actual charges">Est. {money(costs.estimateUsd)}</span>}
    </div>
@@ -72,20 +73,20 @@ export default function AgentTree({sources=[],organization=null,now=Date.now(),i
      const state=interrupted?'offline':node.status,usage=node.paidUsage;
      const parent=nodes.find(parent=>parent.id===(node.runtimeParentId||(!node.structural?node.parentId:null)));
      const usageDescription=usage?(usage.kind==='estimate'?'Estimated paid usage: ':'Actual paid usage: ')+money(usage.amountUsd)+'; '+usage.provider+' / '+usage.service+'; '+usage.provenance+'; as of '+usage.asOf+(usage.basis?'; basis: '+usage.basis:''):'Cost not reported';
-     const description=node.structural?node.task+' · '+node.reportedCount+' reported workers; coverage incomplete.':node.task+' · '+stateLabel[state]+'. Model: '+(node.model||'not reported')+'. '+usageDescription+'. Last report: '+new Date(node.observedAt||node.receivedAt).toLocaleString()+'. Source: '+(node.provenance||'Guarded runner observation')+'. Runtime parent: '+(parent&&!parent.structural?parent.name:'not reported')+'.';
+     const description=node.structural?node.task+' · '+activitySummary(node,interrupted)+'. Only observed workers/jobs are counted; coverage is incomplete.':node.task+' · '+stateLabel[state]+'. Model: '+(node.model||'not reported')+'. '+usageDescription+'. Last report: '+new Date(node.observedAt||node.receivedAt).toLocaleString()+'. Source: '+(node.provenance||'Guarded runner observation')+'. Runtime parent: '+(parent&&!parent.structural?parent.name:'not reported')+'.';
      return <article key={node.id} className={'agent-card '+(node.id===selected?'selected':'')+(node.structural?' structure-card':'')} style={{left:node.x,top:node.y,width:graph.nodeWidth,height:graph.nodeHeight}} title={description}>
       <button className="agent-card-main" onClick={()=>{setSelected(node.id);if(node.structural&&node.childCount)toggle(node.id);}} aria-label={'Inspect '+node.name} aria-pressed={node.id===selected} aria-expanded={node.structural&&node.childCount?!node.collapsed:undefined}>
        <div className="agent-card-heading"><span className={'agent-avatar '+(node.structural?'organization-avatar':'')} aria-hidden="true">{node.kind==='organization'?'✦':node.structural?'◆':node.kind==='agent'?'✳':node.kind==='person'?'●':'◈'}</span><div><h3>{node.name}</h3><p>{node.structural?node.kind==='group'?'Placement unconfirmed':node.kind[0].toUpperCase()+node.kind.slice(1):node.kind==='person'?'Person':node.model||'Model not reported'}</p></div><span className={'agent-state '+state}><i aria-hidden="true"/>{stateLabel[state]||'Unknown'}</span></div>
        <p className="agent-card-task">{node.task}</p><span className="tree-sr-only">{description}</span>
       </button>
-      <footer><span>{node.structural?node.reportedCount+' reported':usage?<span className={'agent-paid-cost '+usage.kind} title={usageDescription}>{usage.kind==='estimate'?'Est. ':''}{money(usage.amountUsd)}</span>:null}<i>{node.structural?' · Coverage partial':(usage?' · ':'')+elapsed(node.elapsedSeconds)}</i></span>{node.childCount>0&&<button onClick={()=>toggle(node.id)} aria-expanded={!node.collapsed} aria-label={(node.collapsed?'Expand ':'Collapse ')+node.name}>{node.childCount}<span aria-hidden="true">{node.collapsed?'⌄':'⌃'}</span></button>}</footer>
+      <footer><span>{node.structural?activitySummary(node,interrupted):usage?<span className={'agent-paid-cost '+usage.kind} title={usageDescription}>{usage.kind==='estimate'?'Est. ':''}{money(usage.amountUsd)}</span>:null}<i>{node.structural?'':(usage?' · ':'')+(node.elapsedSeconds===null?'':elapsed(node.elapsedSeconds)+' · ')+(state==='offline'?'Last seen ':'Updated ')+new Date(node.observedAt||node.receivedAt).toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'})}</i></span>{node.childCount>0&&<button onClick={()=>toggle(node.id)} aria-expanded={!node.collapsed} aria-label={(node.collapsed?'Expand ':'Collapse ')+node.name}>{node.childCount}<span aria-hidden="true">{node.collapsed?'⌄':'⌃'}</span></button>}</footer>
      </article>;
     })}
    </div>}
    <nav className="agent-tree-controls" aria-label="Tree zoom"><button onClick={()=>zoom(.85)} aria-label="Zoom out">−</button><button onClick={()=>zoom(1.18)} aria-label="Zoom in">+</button></nav>
    <span className="tree-explore-hint">{exploring?'Scroll to zoom · Drag to pan · Esc to release':'Click canvas to explore · Ctrl/⌘ + scroll to zoom'}</span>
    <output className="tree-sr-only" aria-label="Diagram zoom">{Math.round(view.scale*100)} percent</output>
-   <span className="tree-freshness" role="status" title={(organization?.coverageNote||'Only reported activity is shown.')+' '+sources.map(row=>row.source+': '+(sourceFresh(row,now)&&!interrupted?'reporting':'offline')).join('; ')}>{loading?'Connecting…':interrupted?'Connection interrupted':sources.length===0?'Sources not connected':freshCount===0?'Reports offline':freshCount+'/'+sources.length+' sources reporting'}{last>0?' · '+new Date(last).toLocaleTimeString():''}</span>
+   <span className="tree-freshness" role="status" title={(organization?.coverageNote||'Only reported activity is shown.')+' '+sources.map(row=>row.source+': '+(sourceFresh(row,now)&&!interrupted?'reporting':'offline')).join('; ')}>{loading?'Connecting…':interrupted?'Connection interrupted':sources.length===0||freshCount===0?'Activity unavailable':freshCount<sources.length?'Some activity unavailable':'Activity updated'}{last>0?' · '+new Date(last).toLocaleTimeString():''}</span>
   </div>
  </section>;
 }

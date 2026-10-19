@@ -20,7 +20,7 @@ def write_event(path,entry):
 def main():
  parser=argparse.ArgumentParser(description=__doc__)
  parser.add_argument('--event-file',required=True);parser.add_argument('--task-id',required=True);parser.add_argument('--name',required=True);parser.add_argument('--task',required=True)
- parser.add_argument('--state',required=True,choices=['running','waiting','needs_you','done','failed','unknown'])
+ parser.add_argument('--state',required=True,choices=['running','waiting','needs_you','done','failed','unknown','idle','blocked'])
  parser.add_argument('--source',choices=['website','research','video'],default='website')
  parser.add_argument('--provenance',required=True);parser.add_argument('--team-id');parser.add_argument('--department-id');parser.add_argument('--parent-task-id')
  args=parser.parse_args()

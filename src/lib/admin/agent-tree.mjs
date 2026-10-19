@@ -31,7 +31,7 @@ export function activityNodes(rows,now=Date.now()){
    const reported=job.status==='needs-you'?'needs_you':job.status;
    const observationKnown=job.observedAt===undefined||(Number.isFinite(Date.parse(job.observedAt))&&Date.parse(job.observedAt)<=now+30000);
    const observationStale=job.observedAt!==undefined&&!['done','failed'].includes(reported)&&!sourceFresh({received_at:job.observedAt},now);
-   const status=!sourceFresh(row,now)||observationStale?'offline':!observationKnown?'unknown':['running','done','failed','waiting','needs_you'].includes(reported)?reported:'unknown';
+   const status=!sourceFresh(row,now)||observationStale?'offline':!observationKnown?'unknown':['running','done','failed','waiting','needs_you','idle','blocked'].includes(reported)?reported:'unknown';
    nodes.set(id,{id,parentId:job.parentId!==undefined&&job.parentId!==null?String(row.device)+':'+String(job.parentId):null,
     name:String(job.name||'Unnamed worker').slice(0,140),task:String(job.task||'Task not reported').slice(0,240),
     model:typeof job.model==='string'?job.model.slice(0,100):null,kind:['agent','person'].includes(job.kind)?job.kind:'job',
@@ -51,7 +51,7 @@ export function activityNodes(rows,now=Date.now()){
 }
 export function departmentTree(registry,jobs,rows=[],now=Date.now()){
  if(!Array.isArray(registry?.nodes))return jobs;
- const structure=registry.nodes.map(node=>({...node,structural:true,model:null,costUsd:null,elapsedSeconds:null,reportedCount:0,runningCount:0,offlineCount:0,unknownCount:0,status:'unconnected'}));
+ const structure=registry.nodes.map(node=>({...node,structural:true,model:null,costUsd:null,elapsedSeconds:null,reportedCount:0,runningCount:0,blockedCount:0,waitingCount:0,offlineCount:0,unknownCount:0,observedWorkerCount:0,activeWorkerCount:0,observedJobCount:0,activeJobCount:0,status:'unavailable'}));
  const byId=new Map(structure.map(node=>[node.id,node]));
  const containers=new Map();
  for(const job of jobs){
@@ -67,24 +67,38 @@ export function departmentTree(registry,jobs,rows=[],now=Date.now()){
   let parent=all.get(job.parentId);const seen=new Set();
   while(parent&&!seen.has(parent.id)){
    seen.add(parent.id);
-   if(parent.structural){parent.reportedCount++;if(job.status==='running')parent.runningCount++;if(job.status==='offline')parent.offlineCount++;if(job.status==='unknown')parent.unknownCount++;}
+   if(parent.structural){
+    parent.reportedCount++;
+    if(job.status==='running')parent.runningCount++;
+    if(['needs_you','blocked'].includes(job.status))parent.blockedCount++;
+    if(job.status==='waiting')parent.waitingCount++;
+    if(job.status==='offline')parent.offlineCount++;
+    if(job.status==='unknown')parent.unknownCount++;
+    if(!['offline','unknown'].includes(job.status)){
+     if(['agent','person'].includes(job.kind)){parent.observedWorkerCount++;if(job.status==='running')parent.activeWorkerCount++;}
+     else{parent.observedJobCount++;if(job.status==='running')parent.activeJobCount++;}
+    }
+   }
    parent=all.get(parent.parentId);
   }
  }
  for(const node of structure){
-
   if(node.runningCount)node.status='active';
-  else if(node.reportedCount)node.status=node.offlineCount===node.reportedCount?'offline':node.unknownCount?'unknown':'reported';
-  else if(node.coverageMode==='source'){
-   const row=rows.find(row=>row.source===node.source);node.status=!row?'unconnected':sourceFresh(row,now)?'reporting':'offline';
-  }
-  if(node.coverageMode==='assignment'&&!node.reportedCount){const row=rows.find(row=>row.source===node.source);node.status=!row?'unconnected':sourceFresh(row,now)?'unmapped':'offline';}
-  if(node.kind==='organization'){
-   node.status=rows.length===0?'unconnected':rows.some(row=>sourceFresh(row,now))?'reporting':'offline';
-   node.task='Departments and teams · '+rows.filter(row=>sourceFresh(row,now)).length+' sources reporting';
-  }
+  else if(node.blockedCount)node.status='blocked';
+  else if(node.waitingCount)node.status='waiting';
+  else if(node.reportedCount&&node.offlineCount===node.reportedCount)node.status='offline';
+  else if(node.reportedCount&&!node.unknownCount&&!node.offlineCount)node.status='idle';
+  else node.status='unavailable';
+  // Transport freshness never establishes that workers are active or idle.
+  if(node.kind==='organization')node.task='Departments and teams';
  }
  return [...structure,...placed];
+}
+export function activitySummary(node,interrupted=false){
+ if(interrupted||['offline','unknown','unavailable'].includes(node.status))return 'Activity unavailable';
+ if(node.observedWorkerCount>0)return node.activeWorkerCount+' active worker'+(node.activeWorkerCount===1?'':'s');
+ if(node.observedJobCount>0)return node.activeJobCount+' active job'+(node.activeJobCount===1?'':'s');
+ return 'Activity unavailable';
 }
 export function layoutTree(nodes,collapsed=new Set()){
  const W=190,H=104,GAP=32,LEVEL=44,INDENT=18,STACK=14;

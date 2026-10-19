@@ -59,7 +59,7 @@ def collect_task_events(path):
   result=[]
   for event in document['tasks']:
    if not isinstance(event,dict) or event.get('source') not in ('website','research','video') or not isinstance(event.get('id'),str) or not event['id'].startswith('task:'):continue
-   if event.get('status') not in ('running','waiting','needs_you','done','failed','unknown'):continue
+   if event.get('status') not in ('running','waiting','needs_you','done','failed','unknown','idle','blocked'):continue
    observed=datetime.datetime.fromisoformat(event['observedAt'])
    if observed.tzinfo is None or (observed-datetime.datetime.now(datetime.timezone.utc)).total_seconds()>30:continue
    if any(not isinstance(event.get(key),str) or not event[key].strip() or len(event[key])>limit for key,limit in [('id',200),('name',140),('task',240),('provenance',240)]):continue
