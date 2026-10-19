@@ -9,3 +9,7 @@ export function siteOrigin() {
 export function providerEnabled(provider) {
  return authReady() && ['google','apple'].includes(provider) && process.env[`NAS_AUTH_${provider.toUpperCase()}_ENABLED`] === 'true';
 }
+
+export function emailEnabled() {
+ return authReady() && process.env.NAS_AUTH_EMAIL_ENABLED === 'true';
+}

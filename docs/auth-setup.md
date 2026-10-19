@@ -50,3 +50,16 @@ Server-only Supabase client with HttpOnly, SameSite=Lax, production Secure cooki
 ## Scientist account profiles
 
 Registration collects full name and optional institutional affiliation in Supabase user metadata. These fields are display-only and do not confer a scientist role, staff access, or institutional verification. Private workspace access still uses the server-verified user ID and database ownership policies. Never authorize from profile metadata. The October 10 account-screen candidate does not activate registration or claim production sign-in verification; configuration and activation checks above remain required.
+
+
+## Google launch candidate — October 19, 2026
+
+NaS Supabase project: mwjbecfyflaltxvxerje. Google is reported enabled by the public Auth settings endpoint. The personal-workspace migration is applied with ownership RLS. The automatic-RLS event trigger has client execution revoked; it remains installed.
+
+Email/password authentication now requires NAS_AUTH_EMAIL_ENABLED=true separately, in both the UI and Server Action. Leave this unset until SMTP, recovery templates, and signup abuse controls are tested. Google-only activation uses NAS_AUTH_ENABLED=true and NAS_AUTH_GOOGLE_ENABLED=true; Apple remains unset.
+
+This candidate updates the public privacy and account terms for Google identity, essential session cookies, Supabase, workspace records, and owner-verified deletion requests. Account deletion is requested using the published contact email. Operationally: verify ownership, revoke sessions, delete the auth user, and verify cascading workspace deletion. Access tokens may remain valid until expiry; never promise immediate token invalidation.
+
+Do not call the Google client secret verified until a real authorization-code exchange succeeds. Before launch, verify Google audience/publishing settings, perform an end-to-end login and logout with the owner's test account, confirm cookies and private responses, and inspect the actual Netlify deployment. The OAuth client secret belongs only in Supabase.
+
+Verified locally on October 19: matching lockfile and Next 16.3.6 build; three configuration tests; member validation/resume tests; seven production-server HTTP checks including the actual multipart Google Server Action, S256 PKCE redirect, HttpOnly/Secure/SameSite verifier cookie, account redirect, API 401/no-store, fixed callback destinations, and public research access. Live Supabase ownership tests passed with rolled-back synthetic users; security advisors returned no findings. Real Google callback and hosting activation remain unverified.

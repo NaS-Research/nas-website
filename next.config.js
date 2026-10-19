@@ -3,7 +3,7 @@ const production = process.env.NODE_ENV === "production";
 // This baseline restricts destinations; nonce-based script enforcement remains separate work.
 const csp = [
   "default-src 'self'", "base-uri 'self'", "object-src 'none'",
-  "frame-ancestors 'self'", "form-action 'self'",
+  "frame-ancestors 'self'", "form-action 'self' https://mwjbecfyflaltxvxerje.supabase.co https://accounts.google.com",
   `script-src 'self' 'unsafe-inline' ${production ? "'wasm-unsafe-eval'" : "'unsafe-eval'"} https://static.sketchfab.com`,
   "style-src 'self' 'unsafe-inline'", "img-src 'self' data: blob:",
   "font-src 'self' data:", "media-src 'self' blob:",

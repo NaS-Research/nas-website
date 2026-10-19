@@ -23,7 +23,7 @@ const sections = [
       "We collect information you choose to provide when you contact us by email. This may include your name, email address, affiliation, the contents of your message, and any attachments you send.",
       "The public website does not currently provide a working Nicole chat service. Drug searches and label requests are handled by our website and sent to U.S. National Library of Medicine services (RxNorm and DailyMed) and the U.S. Food and Drug Administration (openFDA). Use drug names only; do not enter patient details or other sensitive information.",
       "Our hosting and security providers may automatically process basic technical information needed to deliver and protect the site. This can include an IP address, browser and device information, requested pages, timestamps, referring pages, and error or security logs.",
-      "The website does not currently offer user accounts, accept payments, or collect information through a general web form.",
+      "If you create a NaS account with Google, we receive your Google account identifier, email address, and basic profile information such as your name and profile image. Google verifies your sign-in; NaS does not receive your Google password or access to your Gmail messages. We store reading progress, saved resources, and notes that you choose to keep in your private workspace. The website does not accept payments.",
     ],
   },
   {
@@ -31,7 +31,7 @@ const sections = [
     title: "Cookies and similar technologies",
     paragraphs: [
       "NaS does not currently use targeted advertising cookies or intentionally deploy nonessential analytics cookies on this website. Essential technologies used by hosting, delivery, and security providers may operate to make the site available and protect it from misuse.",
-      "Pharmacy assessments save progress in your browser’s local storage. This progress is not an account or a server backup; clearing site data removes it. Some anatomy views load an embedded Sketchfab viewer, which makes requests to Sketchfab and may use its own browser technologies. Our website is hosted by Netlify.",
+      "Pharmacy assessments save progress in your browser’s local storage. This progress is not an account or a server backup; clearing site data removes it. Some anatomy views load an embedded Sketchfab viewer, which makes requests to Sketchfab and may use its own browser technologies. Our website is hosted by Netlify. Signed-in accounts use essential session cookies and Supabase for authentication and private workspace storage. These cookies maintain your sign-in and protect account access.",
       "If our use of cookies or analytics changes materially, we will update this policy and provide any choices required by applicable law.",
     ],
   },
@@ -39,7 +39,7 @@ const sections = [
     id: "how-we-use-information",
     title: "How we use information",
     paragraphs: [
-      "We use information to operate, maintain, secure, and improve the website; provide educational search results; answer correspondence; understand interest in our work; investigate errors or misuse; and comply with legal obligations.",
+      "We use account information to authenticate you, synchronize your private workspace, and let you return to saved work. We also use information to operate, maintain, secure, and improve the website; provide educational search results; answer correspondence; understand interest in our work; investigate errors or misuse; and comply with legal obligations.",
       "We do not use information submitted through this website to provide medical care, diagnose a condition, or make a clinical decision about an individual.",
     ],
   },
@@ -56,7 +56,7 @@ const sections = [
     id: "retention",
     title: "Retention",
     paragraphs: [
-      "We retain information only for as long as reasonably necessary for the purpose for which it was collected, including correspondence, security, recordkeeping, and legal obligations. Service providers may retain technical logs according to their own retention schedules.",
+      "Account profile and workspace records remain associated with your account until you remove them or request account deletion, subject to legal requirements and limited backup retention. We retain other information only for as long as reasonably necessary for the purpose for which it was collected, including correspondence, security, recordkeeping, and legal obligations. Service providers may retain technical logs according to their own retention schedules.",
       "When information is no longer needed, we take reasonable steps to delete or deidentify it. Limited copies may remain temporarily in backups or where retention is required by law.",
     ],
   },
@@ -79,7 +79,7 @@ const sections = [
     id: "choices",
     title: "Your choices and rights",
     paragraphs: [
-      "You may ask us to access, correct, or delete personal information you have provided to us. You may also ask a privacy question or withdraw consent where consent is the basis for processing. We will respond as required by applicable law and may need to verify your identity before completing a request.",
+      "You may ask us to access, correct, or delete personal information you have provided to us. To request deletion of your NaS account and its private workspace, email the contact below from your account email address; we verify ownership before processing the request. Removing NaS access in Google settings stops future Google authorization but does not itself delete your NaS account. You may also ask a privacy question or withdraw consent where consent is the basis for processing. We will respond as required by applicable law and may need to verify your identity before completing a request.",
       "You can control browser technologies through your browser settings. Disabling essential technologies may affect how the site functions.",
     ],
   },
@@ -113,7 +113,7 @@ export default function PrivacyPolicyPage() {
       eyebrow="Legal · NaS Research"
       title="Privacy Policy"
       summary="How information is handled when you visit NaS, use our educational tools, or contact us."
-      effectiveDate="September 17, 2026"
+      effectiveDate="October 19, 2026"
       sections={sections}
     />
   );

@@ -1,9 +1,9 @@
 'use server';
 import { redirect } from 'next/navigation';
 import { authClient } from '@/lib/auth/server';
-import { authReady,providerEnabled,siteOrigin } from '@/lib/auth/config.mjs';
+import { providerEnabled,siteOrigin,emailEnabled } from '@/lib/auth/config.mjs';
 export async function authenticate(previous,form) {
- if (!authReady()) return {error:'Sign-in is not available yet. Please check back soon.'};
+ if (!emailEnabled()) return {error:'Sign-in is not available yet. Please check back soon.'};
  const mode=String(form.get('mode')||'login');
  if (!['login','signup','reset','update'].includes(mode)) return {error:'Please try again.'};
  const email=String(form.get('email')||'').trim();
@@ -42,7 +42,7 @@ export async function socialSignIn(form) {
  const provider=String(form.get('provider'));
  if(!providerEnabled(provider)) redirect('/login?error=unavailable');
  const client=await authClient();
- const {data,error}=await client.auth.signInWithOAuth({provider,options:{redirectTo:`${siteOrigin()}/auth/callback`}});
+ const {data,error}=await client.auth.signInWithOAuth({provider,options:{scopes:'openid email profile',redirectTo:`${siteOrigin()}/auth/callback`}});
  if(error||!data.url) redirect('/login?error=oauth');
  redirect(data.url);
 }

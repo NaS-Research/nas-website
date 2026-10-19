@@ -2,10 +2,16 @@
 import {useActionState,useState} from 'react';
 import Link from 'next/link';
 import {authenticate,socialSignIn} from './actions';
-export default function AuthForm({mode,ready,google,apple}) {
+export default function AuthForm({mode,ready,email,google,apple}) {
  const [state,action,pending]=useActionState(authenticate,{});
  const [showPassword,setShowPassword]=useState(false);
  const signup=mode==='signup',reset=mode==='reset',update=mode==='update';
+ if(!email) return <>
+  {ready&&google&&<div className="auth-social"><form action={socialSignIn}><input type="hidden" name="provider" value="google"/><button>Continue with Google</button></form></div>}
+  {ready&&google&&<p className="auth-provider-note">Use your Google account to sign in or create a NaS account.</p>}
+  <p className="auth-provider-note">By continuing, you agree to the <Link href="/legal/terms">Terms</Link> and acknowledge the <Link href="/legal/privacy">Privacy Policy</Link>.</p>
+ </>;
+
  return <>
  {!reset&&!update&&(google||apple)&&<><div className="auth-social">{[['google','Google',google],['apple','Apple',apple]].filter(x=>x[2]).map(([id,name])=><form action={socialSignIn} key={id}><input type="hidden" name="provider" value={id}/><button>Continue with {name}</button></form>)}</div><div className="auth-divider">or use email</div></>}
  <form action={action} className="auth-form"><input type="hidden" name="mode" value={mode}/>
