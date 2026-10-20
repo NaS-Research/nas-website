@@ -24,24 +24,25 @@ export const organization = {
 // authenticated runtime snapshot after admin authorization, never a public roster file.
 const roleNames={'scientific-research':'Scientific Research',scripting:'Scripting','visual-production':'Visual Production',narration:'Narration',editing:'Editing',qa:'QA',publishing:'Publishing'};
 export function organizationForSources(sources=[],privateConfig=process.env.NAS_ADMIN_ORGANIZATION_JSON){
- const records=new Map();
- for(const row of sources||[]){
+ const privateData=privateStructure(privateConfig),records=new Map();
+ // Saved configuration survives an unavailable runtime transport. Newer verified reads win.
+ for(const row of [{payload:{runtime:{sourceRuntime:'nas-core',roleConfigurations:privateData.roleConfigurations||[]}}},...(sources||[])]){
   const runtime=row.payload?.runtime;
   if(runtime?.sourceRuntime!=='nas-core'||!Array.isArray(runtime.roleConfigurations))continue;
   for(const record of runtime.roleConfigurations.slice(0,20)){
    if(typeof record?.id!=='string'||typeof record.configuredActive!=='boolean'||!Number.isFinite(Date.parse(record.observedAt)))continue;
    let name,parentId,configuration=record.configuredActive?'configured':'inactive';
-   if(record.id==='role:institute-lead'&&record.registryId==='institute-lead'){name='Institute lead';parentId='dept:institute';}
+   if(record.id==='role:company-director'&&record.registryId==='company-director'){name='Company director';parentId='dept:corporate';if(record.configuredActive)configuration='deterministic';}
+   else if(record.id==='role:institute-lead'&&record.registryId==='institute-lead'){name='Institute lead';parentId='dept:institute';}
    else if(record.id==='role:video-supervisor'&&record.registryId==='department-director'){name='Video supervisor';parentId='team:video';if(record.configuredActive)configuration='deterministic';}
    else{if(!record.id.startsWith('role:video:'))continue;const key=record.id.replace(/^role:video:/,'');if(!roleNames[key]||record.registryId!=='future-'+key)continue;name=roleNames[key];parentId='role:video-supervisor';}
-   const node={id:record.id,parentId,kind:'role',name,configuration,registryId:record.registryId,configurationObservedAt:record.observedAt,configurationProvenance:'Core /registry via existing observer reader',task:configuration==='deterministic'?'Department director · deterministic routing':configuration==='configured'?'Configured enabled · execution observed separately':'Planned · configured inactive'};
+   const node={id:record.id,parentId,kind:'role',name,configuration,registryId:record.registryId,configurationObservedAt:record.observedAt,configurationProvenance:record.provenance||'Core /registry via existing observer reader',task:configuration==='deterministic'?'Deterministic routing · execution observed separately':configuration==='configured'?'Configured enabled · execution observed separately':'Planned · configured inactive'};
    if(!records.has(node.id)||Date.parse(records.get(node.id).configurationObservedAt)<Date.parse(node.configurationObservedAt))records.set(node.id,node);
   }
  }
  // A missing parent never promotes a role to an invented organizational placement.
- const order=['role:institute-lead','role:video-supervisor',...Object.keys(roleNames).map(key=>'role:video:'+key)];
+ const order=['role:company-director','role:institute-lead','role:video-supervisor',...Object.keys(roleNames).map(key=>'role:video:'+key)];
  const nodes=[...organization.nodes,...[...records.values()].sort((a,b)=>order.indexOf(a.id)-order.indexOf(b.id))],ids=new Set(nodes.map(node=>node.id));
- const privateData=privateStructure(privateConfig);
  return {...organization,nodes:[...nodes.filter(node=>!node.parentId||ids.has(node.parentId)),...privateData.nodes],taskReferences:privateData.taskReferences,privateConfigurationState:privateData.state};
 }
 
@@ -70,6 +71,17 @@ export function privateStructure(raw){
    seen.add(record.id);
    return {id:record.id,projectId:record.projectId,title:record.title,observedState:record.observedState,observedAt:record.observedAt,provenance:record.provenance,entityKind:'codex_thread',liveConnected:false};
   });
-  return {nodes,taskReferences,state:'available'};
+  const roleConfigurations=[];
+  if(data.roleSnapshot!==undefined){
+   const snapshot=data.roleSnapshot,special={'company-director':'role:company-director','department-director':'role:video-supervisor','institute-lead':'role:institute-lead'};
+   if(!snapshot||!validText(snapshot.provenance,240)||!Number.isFinite(Date.parse(snapshot.observedAt))||Date.parse(snapshot.observedAt)>Date.now()+30000||!snapshot.states||typeof snapshot.states!=='object'||Array.isArray(snapshot.states)||Object.keys(snapshot.states).length>20)throw Error();
+   for(const [registryId,configuredActive] of Object.entries(snapshot.states)){
+    const roleKey=registryId.replace(/^future-/,'');
+    const id=special[registryId]||(registryId.startsWith('future-')&&roleNames[roleKey]?'role:video:'+roleKey:null);
+    if(!id||typeof configuredActive!=='boolean')throw Error();
+    roleConfigurations.push({id,registryId,configuredActive,observedAt:snapshot.observedAt,provenance:snapshot.provenance});
+   }
+  }
+  return {nodes,taskReferences,roleConfigurations,state:'available'};
  }catch{return empty('invalid');}
 }

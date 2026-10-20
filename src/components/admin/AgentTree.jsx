@@ -8,10 +8,8 @@ export default function AgentTree({sources=[],organization=null,now=Date.now(),i
  const jobs=useMemo(()=>activityNodes(sources,now),[sources,now]);
  const nodes=useMemo(()=>departmentTree(organization,jobs,sources,now),[organization,jobs,sources,now]);
  const [collapsed,setCollapsed]=useState(new Set()),[selected,setSelected]=useState(null),[view,setView]=useState({x:40,y:90,scale:1}),[size,setSize]=useState({width:0,height:0}),[exploring,setExploring]=useState(false);
- const initialized=useRef(false),initializedView=useRef(false),canvas=useRef(null),drag=useRef(null);
- useEffect(()=>{
-  if(organization&&!initialized.current){initialized.current=true;setCollapsed(new Set(organization.nodes.filter(node=>node.kind==='department').map(node=>node.id)));}
- },[organization]);
+ const initializedView=useRef(false),canvas=useRef(null),drag=useRef(null);
+ // Show configured structure initially; explicit user collapses persist across refreshes.
  const graph=useMemo(()=>layoutTree(organization?nodes.filter(node=>node.structural):nodes,collapsed),[nodes,collapsed]);
  const selectedNode=nodes.find(node=>node.id===selected),executions=selectedNode?.structural?hierarchyExecutions(nodes,selected):selectedNode?[selectedNode]:[];
  const taskReferences=(organization?.taskReferences||[]).filter(record=>{

@@ -32,7 +32,7 @@ const root=process.cwd(),req=Module.createRequire(root+'/package.json');
  const Tree=(await compile('src/components/admin/AgentTree.jsx',{'react':react,'@/lib/admin/agent-tree.mjs':model})).default;
  function walk(node,predicate){if(!node)return null;if(Array.isArray(node)){for(const item of node){const found=walk(item,predicate);if(found)return found;}return null;}if(typeof node!=='object')return null;if(predicate(node))return node;return walk(node.props?.children,predicate);}
  let activeOrganization=organization,tree;function render(){cursor=0;pending=[];tree=Tree({organization:activeOrganization,sources:rows,now});walk(tree,n=>n.props?.className==='agent-tree-canvas').props.ref.current=element;pending.forEach(fn=>fn());}
- render();render();render();const diagram=walk(tree,n=>n.props?.className==='agent-tree-canvas');assert.equal(walk(diagram,n=>['tree-freshness','tree-explore-hint','agent-tree-bar','agent-tree-controls'].includes(n.props?.className)),null);assert.ok(walk(tree,n=>n.props?.className==='agent-tree-meta'));walk(tree,n=>n.props?.['aria-label']==='Expand NaS Institute').props.onClick();render();
+ render();render();render();const diagram=walk(tree,n=>n.props?.className==='agent-tree-canvas');assert.equal(walk(diagram,n=>['tree-freshness','tree-explore-hint','agent-tree-bar','agent-tree-controls'].includes(n.props?.className)),null);assert.ok(walk(tree,n=>n.props?.className==='agent-tree-meta'));assert.ok(walk(tree,n=>n.props?.['aria-label']==='Collapse NaS Institute'),'Configured hierarchy starts expanded');
  for(const label of expected)assert.ok(walk(tree,n=>n.type==='h3'&&n.props.children===label),'Rendered canonical role: '+label);
  assert.equal(walk(tree,n=>n.type==='h3'&&n.props.children==='Episode-specific temporary agent'),null);
  walk(tree,n=>n.props?.['aria-label']==='Inspect QA').props.onClick();render();
@@ -61,4 +61,18 @@ const root=process.cwd(),req=Module.createRequire(root+'/package.json');
  assert.match(privateHtml,/Approved organization structure · not connected/);assert.match(privateHtml,/Reserved identity/);assert.match(privateHtml,/Saved example task/);assert.match(privateHtml,/Last observed: active/);assert.match(privateHtml,/Current task activity is unavailable/);assert.match(privateHtml,/codex_thread/);
  assert.doesNotMatch(privateCanvas,/Saved example task/);assert.equal(model.hierarchyExecutions(privateNodes,'fixture-company').length,0);
  console.log('PASS: private deployment-only portfolio/company/project structure; disconnected runtime, bounded validation and fail-closed metadata; saved task references appear only in details, never live workers or pipeline roles');
+
+ const fallback={...privateConfig,roleSnapshot:{observedAt:stamp,provenance:'Verified saved registry configuration',states:{'company-director':true,'department-director':true,'institute-lead':false,...Object.fromEntries(Object.keys({'scientific-research':1,scripting:1,'visual-production':1,narration:1,editing:1,qa:1,publishing:1}).map(key=>['future-'+key,false]))}}};
+ const saved=JSON.stringify(fallback),offlineRegistry=registryModule.organizationForSources([{payload:{runtime:{sourceRuntime:'nas-core',state:'unavailable',roleConfigurations:[]}}}],saved);
+ const persistentRoles=offlineRegistry.nodes.filter(n=>n.kind==='role');assert.equal(persistentRoles.length,10);assert.equal(persistentRoles.filter(n=>n.configuration==='inactive').length,8);assert.equal(persistentRoles.filter(n=>n.configuration==='deterministic').length,2);
+ assert.deepEqual(offlineRegistry.nodes.filter(n=>n.id.startsWith('role:video:')).map(n=>n.name),expected);
+ assert.equal(model.departmentTree(offlineRegistry,[],[],now).filter(n=>n.kind==='role'&&n.status==='running').length,0);
+ assert.equal(registryModule.organizationForSources([],saved).nodes.filter(n=>n.kind==='role').length,10);
+ const newer={payload:{runtime:{sourceRuntime:'nas-core',roleConfigurations:[{id:'role:institute-lead',registryId:'institute-lead',configuredActive:true,observedAt:new Date(now+1000).toISOString()}]}}};
+ assert.equal(registryModule.organizationForSources([newer],saved).nodes.find(n=>n.id==='role:institute-lead').configuration,'configured');
+ const older={source:'video',device:'test',received_at:stamp,payload:{runtime:{sourceRuntime:'nas-core',state:'available',checkedAt:stamp,roleConfigurations:[{id:'role:institute-lead',registryId:'institute-lead',configuredActive:true,observedAt:new Date(now-1000).toISOString()}]}}};
+ assert.equal(model.departmentTree(registryModule.organizationForSources([older],saved),[],[older],now).find(n=>n.id==='role:institute-lead').configuration,'inactive');
+ activeOrganization=offlineRegistry;render();assert.ok(walk(tree,n=>n.type==='h3'&&n.props.children==='Company director'));for(const label of expected)assert.ok(walk(tree,n=>n.type==='h3'&&n.props.children===label));
+ console.log('PASS: all ten verified permanent routing/planned roles remain visible without runtime metadata; eight inactive configurations, two deterministic routing roles, zero fabricated running instances; newer configuration overrides saved snapshot');
+
 })().catch(e=>{console.error(e);process.exit(1)});

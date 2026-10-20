@@ -10,6 +10,7 @@ CREDENTIALS = pathlib.Path('/Users/agndj/Documents/Codex/2026-10-13/task-5/nas-c
 BASE = 'http://127.0.0.1:18766'
 ROUTES = {'/registry', '/status', '/tasks?limit=20'}
 ROLE_IDS = {"future-"+role: "role:video:"+role for role in ('scientific-research','scripting','visual-production','narration','editing','qa','publishing')}
+SPECIAL_ROLE_IDS = {'company-director':'role:company-director','department-director':'role:video-supervisor','institute-lead':'role:institute-lead'}
 
 _NOW = object()
 
@@ -112,7 +113,7 @@ class CoreObserver:
                 else:
                     event['placement']='unassigned'
                 records.append(event)
-            configurations=[{'id':ROLE_IDS.get(a['id'], 'role:video-supervisor' if a['id']=='department-director' else 'role:institute-lead'),'registryId':a['id'],'configuredActive':a.get('active') is True,'observedAt':checked} for a in agents.values() if a['id'] in ROLE_IDS or a['id'] in {'department-director','institute-lead'}]
+            configurations=[{'id':ROLE_IDS.get(a['id'], SPECIAL_ROLE_IDS.get(a['id'])),'registryId':a['id'],'configuredActive':a.get('active') is True,'observedAt':checked} for a in agents.values() if a['id'] in ROLE_IDS or a['id'] in SPECIAL_ROLE_IDS]
             self.cached=records
             self.metadata={'state':'available','checkedAt':checked,'sourceObservedAt':stamp(status.get('timestamp')),'sourceRuntime':'nas-core','epoch':epoch,'registryCount':len(agents),'departmentRegistryCount':sum(a.get('org_id')=='educational-video-production' for a in agents.values()),'operatorIdentityCount':sum(a['id'].startswith('nas035-') and a['id'].endswith('-owner') or a['id']=='source-review-owner' for a in agents.values()),'workerCount':len(workers),'taskCounts':{clean(k,40):v for k,v in status.get('tasks',{}).items() if isinstance(v,int)},'roleConfigurations':configurations,'taskListLimit':20,'codexCollaboration':'separate producer required','effectiveModel':'unavailable from these endpoints'}
             return records,self.metadata

@@ -73,7 +73,7 @@ export function departmentTree(registry,jobs,rows=[],now=Date.now()){
  if(!Array.isArray(registry?.nodes))return jobs;
  const structure=registry.nodes.map(node=>({...node,structural:true,model:null,costUsd:null,elapsedSeconds:null,reportedCount:0,runningCount:0,blockedCount:0,waitingCount:0,offlineCount:0,unknownCount:0,observedWorkerCount:0,activeWorkerCount:0,observedJobCount:0,activeJobCount:0,status:'unavailable'}));
  const byId=new Map(structure.map(node=>[node.id,node]));
- for(const row of rows){const runtime=row.payload?.runtime;if(runtime?.state!=='available'||!sourceFresh({received_at:runtime.checkedAt},now)||!sourceFresh(row,now))continue;for(const configuration of runtime.roleConfigurations||[]){const node=byId.get(configuration.id);if(node?.kind!=='role')continue;node.configuration=node.configuration==='deterministic'&&configuration.configuredActive?'deterministic':configuration.configuredActive?'configured':'inactive';node.configurationObservedAt=configuration.observedAt;node.configurationProvenance='Core /registry via existing observer reader';}}
+ for(const row of rows){const runtime=row.payload?.runtime;if(runtime?.state!=='available'||!sourceFresh({received_at:runtime.checkedAt},now)||!sourceFresh(row,now))continue;for(const configuration of runtime.roleConfigurations||[]){const node=byId.get(configuration.id);if(node?.kind!=='role'||typeof configuration.configuredActive!=='boolean'||!Number.isFinite(Date.parse(configuration.observedAt))||Date.parse(node.configurationObservedAt)>Date.parse(configuration.observedAt))continue;node.configuration=node.configuration==='deterministic'&&configuration.configuredActive?'deterministic':configuration.configuredActive?'configured':'inactive';node.configurationObservedAt=configuration.observedAt;node.configurationProvenance='Core /registry via existing observer reader';}}
  const containers=new Map();
  for(const job of jobs){
   const team=byId.get(job.teamId),department=byId.get(job.departmentId),fallback=byId.get(registry.sourceAssignments?.[job.source]);
@@ -114,7 +114,7 @@ export function departmentTree(registry,jobs,rows=[],now=Date.now()){
   // Transport freshness never establishes that workers are active or idle.
   if(node.kind==='organization')node.task='Departments and teams';
   if(node.connected===false)node.status='unconnected';
-  if(node.kind==='role'){node.status=node.configuration==='deterministic'?'deterministic':node.configuration==='configured'?'configured':'inactive';node.task=node.configuration==='deterministic'?'Department director · deterministic routing':node.configuration==='configured'?'Configured enabled · execution observed separately':'Planned · configured inactive';}
+  if(node.kind==='role'){node.status=node.configuration==='deterministic'?'deterministic':node.configuration==='configured'?'configured':'inactive';node.task=node.configuration==='deterministic'?'Deterministic routing · execution observed separately':node.configuration==='configured'?'Configured enabled · execution observed separately':'Planned · configured inactive';}
  }
  return [...structure,...placed];
 }
