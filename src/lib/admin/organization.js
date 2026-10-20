@@ -23,7 +23,7 @@ export const organization = {
 // Generic role labels/mappings only. Actual role records are supplied by the private,
 // authenticated runtime snapshot after admin authorization, never a public roster file.
 const roleNames={'scientific-research':'Scientific Research',scripting:'Scripting','visual-production':'Visual Production',narration:'Narration',editing:'Editing',qa:'QA',publishing:'Publishing'};
-export function organizationForSources(sources=[]){
+export function organizationForSources(sources=[],privateConfig=process.env.NAS_ADMIN_ORGANIZATION_JSON){
  const records=new Map();
  for(const row of sources||[]){
   const runtime=row.payload?.runtime;
@@ -41,5 +41,35 @@ export function organizationForSources(sources=[]){
  // A missing parent never promotes a role to an invented organizational placement.
  const order=['role:institute-lead','role:video-supervisor',...Object.keys(roleNames).map(key=>'role:video:'+key)];
  const nodes=[...organization.nodes,...[...records.values()].sort((a,b)=>order.indexOf(a.id)-order.indexOf(b.id))],ids=new Set(nodes.map(node=>node.id));
- return {...organization,nodes:nodes.filter(node=>!node.parentId||ids.has(node.parentId))};
+ const privateData=privateStructure(privateConfig);
+ return {...organization,nodes:[...nodes.filter(node=>!node.parentId||ids.has(node.parentId)),...privateData.nodes],taskReferences:privateData.taskReferences,privateConfigurationState:privateData.state};
+}
+
+// Private approved structure is deployment configuration, never a public repository roster.
+// Called only by the admin-authorized API. Configuration cannot establish runtime activity.
+export function privateStructure(raw){
+ const empty=state=>({nodes:[],taskReferences:[],state});
+ if(!raw)return empty('not_configured');
+ try{
+  if(typeof raw!=='string'||Buffer.byteLength(raw,'utf8')>16000)throw Error();
+  const data=JSON.parse(raw),baseIds=new Set(organization.nodes.map(node=>node.id));
+  const validText=(value,max)=>typeof value==='string'&&value.trim().length>0&&value.length<=max&&!/[\u0000-\u001f]/.test(value);
+  const validId=value=>validText(value,100)&&/^[a-z0-9][a-z0-9:_-]*$/.test(value);
+  if(data.version!==1||!Array.isArray(data.nodes)||!data.nodes.length||data.nodes.length>20||!Array.isArray(data.taskReferences)||data.taskReferences.length>20)throw Error();
+  const nodes=data.nodes.map(node=>{
+   if(!validId(node.id)||baseIds.has(node.id)||!validId(node.parentId)||!['portfolio','company','project'].includes(node.kind)||!validText(node.name,140)||!validText(node.task,240)||node.connected!==false||!validText(node.provenance,240)||!Number.isFinite(Date.parse(node.observedAt))||Date.parse(node.observedAt)>Date.now()+30000)throw Error();
+   return {id:node.id,parentId:node.parentId,kind:node.kind,name:node.name,task:node.task,connected:false,configuration:'approved-reserved',configurationObservedAt:node.observedAt,configurationProvenance:node.provenance,registryId:node.id,referencePath:validText(node.referencePath,300)?node.referencePath:null};
+  });
+  const byId=new Map(nodes.map(node=>[node.id,node]));if(byId.size!==nodes.length)throw Error();
+  for(const node of nodes){
+   if(node.kind==='portfolio'?node.parentId!=='org:nas':byId.get(node.parentId)?.kind!==(node.kind==='company'?'portfolio':'company'))throw Error();
+  }
+  const seen=new Set();
+  const taskReferences=data.taskReferences.map(record=>{
+   if(!validId(record.id)||seen.has(record.id)||byId.get(record.projectId)?.kind!=='project'||!validText(record.title,140)||!['active','idle','waiting','notLoaded','unknown'].includes(record.observedState)||!Number.isFinite(Date.parse(record.observedAt))||Date.parse(record.observedAt)>Date.now()+30000||!validText(record.provenance,240))throw Error();
+   seen.add(record.id);
+   return {id:record.id,projectId:record.projectId,title:record.title,observedState:record.observedState,observedAt:record.observedAt,provenance:record.provenance,entityKind:'codex_thread',liveConnected:false};
+  });
+  return {nodes,taskReferences,state:'available'};
+ }catch{return empty('invalid');}
 }

@@ -113,6 +113,7 @@ export function departmentTree(registry,jobs,rows=[],now=Date.now()){
   else node.status='unavailable';
   // Transport freshness never establishes that workers are active or idle.
   if(node.kind==='organization')node.task='Departments and teams';
+  if(node.connected===false)node.status='unconnected';
   if(node.kind==='role'){node.status=node.configuration==='deterministic'?'deterministic':node.configuration==='configured'?'configured':'inactive';node.task=node.configuration==='deterministic'?'Department director · deterministic routing':node.configuration==='configured'?'Configured enabled · execution observed separately':'Planned · configured inactive';}
  }
  return [...structure,...placed];
@@ -126,6 +127,7 @@ export function workerCounts(node,interrupted=false){
  return {total:null,observed:node.observedWorkerCount||0,active:!interrupted&&node.observedWorkerCount>0?node.activeWorkerCount:null,attention:interrupted?null:node.blockedCount||0};
 }
 export function activitySummary(node,interrupted=false){
+ if(node.connected===false)return 'Runtime not connected';
  if(interrupted||['offline','unknown','unavailable'].includes(node.status))return 'Activity unavailable';
  if(node.observedWorkerCount>0)return node.activeWorkerCount+' active worker'+(node.activeWorkerCount===1?'':'s');
  if(node.observedJobCount>0)return node.activeJobCount+' active job'+(node.activeJobCount===1?'':'s');
@@ -135,11 +137,12 @@ export function layoutTree(nodes,collapsed=new Set()){
  const W=246,H=140,GAP=44,LEVEL=72,INDENT=24,STACK=24;
  const byId=new Map(nodes.map(node=>[node.id,node])),children=new Map();
  for(const node of nodes){const key=byId.has(node.parentId)?node.parentId:null;if(!children.has(key))children.set(key,[]);children.get(key).push(node);}
- // Alphabetize department columns only; retain team/role pipeline and runtime order.
+ // Alphabetize department/portfolio columns only; retain nested and runtime order.
  for(const [parentId,siblings] of children){
   if(byId.get(parentId)?.kind!=='organization')continue;
-  const departments=siblings.filter(node=>node.kind==='department').sort((a,b)=>a.name.localeCompare(b.name,'en',{sensitivity:'base'})||a.id.localeCompare(b.id));
-  let index=0;children.set(parentId,siblings.map(node=>node.kind==='department'?departments[index++]:node));
+  const isColumn=node=>['department','portfolio'].includes(node.kind);
+  const departments=siblings.filter(isColumn).sort((a,b)=>a.name.localeCompare(b.name,'en',{sensitivity:'base'})||a.id.localeCompare(b.id));
+  children.set(parentId,[...departments,...siblings.filter(node=>!isColumn(node))]);
  }
  const positions=[],edges=[],measurements=new Map();
  const kids=node=>collapsed.has(node.id)?[]:children.get(node.id)||[];

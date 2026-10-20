@@ -12,12 +12,13 @@ assert.equal((await auth.adminSession()).isAdmin,false);passed.push('No session 
 user={id:'test',user_metadata:{role:'admin'}};assert.equal((await auth.adminSession()).isAdmin,false);passed.push('User-editable metadata cannot grant admin');
 role='admin';assert.equal((await auth.adminSession()).isAdmin,true);passed.push('Database membership grants admin');
 roleError={message:'unavailable'};assert.equal((await auth.adminSession()).isAdmin,false);passed.push('Role lookup failure denies access');
-let current={user:null,isAdmin:false},storageError=false;
-const route=await compile('src/app/api/admin/activity/route.js',{'next/server':{NextResponse:{json:(body,options)=>Response.json(body,options)}},'@/lib/auth/admin':{adminSession:async()=>current},'@/lib/admin/organization':{organizationForSources:()=>({version:1,nodes:[]})}});
+let current={user:null,isAdmin:false},storageError=false,organizationReads=0;
+const route=await compile('src/app/api/admin/activity/route.js',{'next/server':{NextResponse:{json:(body,options)=>Response.json(body,options)}},'@/lib/auth/admin':{adminSession:async()=>current},'@/lib/admin/organization':{organizationForSources:()=>{organizationReads++;return {version:1,nodes:[]};}}});
 for(const c of [{user:null,isAdmin:false,status:401},{user:{id:'ordinary'},isAdmin:false,status:403},{user:{id:'owner'},isAdmin:true,status:200}]){
 current={...c,client:{from:()=>({select:()=>({order:async()=>({data:[],error:storageError?{}:null})})})}};
 const response=await route.GET();assert.equal(response.status,c.status);assert.equal('organization' in await response.json(),c.status===200);assert.equal(response.headers.get('cache-control'),'private, no-store');passed.push('Activity endpoint '+c.status);
 }
+assert.equal(organizationReads,1);passed.push('Private organization configuration read only after verified admin access');
 storageError=true;assert.equal((await route.GET()).status,503);passed.push('Activity source failure is explicit');
 const Console=()=>null;
 const page=await compile('src/app/account/admin/page.jsx',{'next/navigation':{redirect:path=>{throw Error('redirect:'+path)},notFound:()=>{throw Error('not-found')}},'@/lib/auth/admin':{adminSession:async()=>current},'@/components/admin/ActivityConsole':Console,'@/components/admin/activity.css':{},'@/components/admin/agent-tree.css':{}});

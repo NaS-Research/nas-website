@@ -14,6 +14,10 @@ export default function AgentTree({sources=[],organization=null,now=Date.now(),i
  },[organization]);
  const graph=useMemo(()=>layoutTree(organization?nodes.filter(node=>node.structural):nodes,collapsed),[nodes,collapsed]);
  const selectedNode=nodes.find(node=>node.id===selected),executions=selectedNode?.structural?hierarchyExecutions(nodes,selected):selectedNode?[selectedNode]:[];
+ const taskReferences=(organization?.taskReferences||[]).filter(record=>{
+  let node=nodes.find(node=>node.id===record.projectId);const seen=new Set();
+  while(node&&!seen.has(node.id)){if(node.id===selected)return true;seen.add(node.id);node=nodes.find(parent=>parent.id===node.parentId);}return false;
+ });
  const agents=jobs.filter(node=>node.kind==='agent').length,running=jobs.filter(node=>node.status==='running').length,needsYou=jobs.filter(node=>['needs_you','blocked'].includes(node.status)).length;
  const people=jobs.filter(node=>node.kind==='person').length,jobCount=jobs.filter(node=>node.kind==='job').length,roleCount=organization?.nodes.filter(node=>node.kind==='role').length||0;
  const costs=usageTotals(jobs),freshCount=sources.filter(row=>sourceFresh(row,now)).length;
@@ -72,7 +76,7 @@ export default function AgentTree({sources=[],organization=null,now=Date.now(),i
      return <g key={edge.from+edge.to}><path d={d}/><circle cx={x} cy={y} r="2.4"/><circle cx={tx} cy={ty} r="2.4"/></g>;
     })}</svg>
     {graph.nodes.map(node=>{
-     const state=node.kind==='role'?node.status:interrupted?'offline':node.status,usage=node.paidUsage,workers=workerCounts(node,interrupted);
+     const state=node.connected===false?'unconnected':node.kind==='role'?node.status:interrupted?'offline':node.status,usage=node.paidUsage,workers=workerCounts(node,interrupted);
      const parent=nodes.find(parent=>parent.id===(node.runtimeParentId||(!node.structural?node.parentId:null)));
      const usageDescription=usage?(usage.kind==='estimate'?'Estimated paid usage: ':'Actual paid usage: ')+money(usage.amountUsd)+'; '+usage.provider+' / '+usage.service+'; '+usage.provenance+'; as of '+usage.asOf+(usage.basis?'; basis: '+usage.basis:''):'Cost not reported';
      const description=node.structural?node.task+' · '+activitySummary(node,interrupted)+'. Only observed workers/jobs are counted; coverage is incomplete.':node.task+' · '+stateLabel[state]+'. Model: '+(node.model||'not reported')+(node.model&&node.modelProvenance?' ('+node.modelProvenance+')':'')+'. '+usageDescription+'. Last report: '+new Date(node.observedAt||node.receivedAt).toLocaleString()+'. Source: '+(node.provenance||'Guarded runner observation')+'. Runtime parent: '+(parent&&!parent.structural?parent.name:'not reported')+'.';
@@ -98,8 +102,11 @@ export default function AgentTree({sources=[],organization=null,now=Date.now(),i
   {selectedNode?.structural&&<aside id="agent-details" className="agent-details" aria-label={selectedNode.name+' details'}>
    <header><div><small>{selectedNode.kind==='role'?'Permanent role':'Organization'}</small><h2>{selectedNode.name}</h2></div><button onClick={()=>setSelected(null)} aria-label="Close details">×</button></header>
    <p>{selectedNode.task}</p>
-   {selectedNode.registryId&&<p>Registry identity: <code>{selectedNode.registryId}</code>. Configuration does not establish a running model instance.</p>}
+   {selectedNode.registryId&&<p>{selectedNode.connected===false?'Reserved identity':'Registry identity'}: <code>{selectedNode.registryId}</code>. Configuration does not establish a running model instance.</p>}
+   {selectedNode.connected===false&&<p>Approved organization structure · not connected. Core admission/readback and collector verification are pending. This grouping does not establish employees, active agents, or runtime parent-child launches.</p>}
+   {selectedNode.referencePath&&<p>Company reference: <code>{selectedNode.referencePath}</code></p>}
    {selectedNode.configurationObservedAt&&<p>Configuration observed: {selectedNode.configurationObservedAt} · {selectedNode.configurationProvenance}. This timestamp is separate from worker activity.</p>}
+   {taskReferences.length>0&&<section aria-label="Observed task grouping"><h3>Observed task grouping</h3><p>Saved task references, separate from permanent roles and execution instances. Current task activity is unavailable until a reporting source is connected.</p>{taskReferences.map(record=><article className="execution-detail" key={record.id}><h4>{record.title}</h4><p>Last observed: {record.observedState} · {record.observedAt}</p><p>{record.entityKind} · {record.provenance}</p><p>Task identity: <code>{record.id}</code></p></article>)}</section>}
    <h3>Assignments & execution instances</h3>
    {!executions.length?<p>No execution observations assigned to this {selectedNode.kind}. {selectedNode.kind==='role'?'No agent is instantiated by this role definition.':''}</p>:executions.map(node=><article className="execution-detail" key={node.id}>
     <h4>{node.assignment||node.name}</h4><span className={'agent-state '+(interrupted?'offline':node.status)}>{stateLabel[interrupted?'offline':node.status]||'Unknown'}</span>

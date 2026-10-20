@@ -31,7 +31,7 @@ const root=process.cwd(),req=Module.createRequire(root+'/package.json');
  const element={getBoundingClientRect:()=>({left:0,top:0,height:760}),addEventListener(){},removeEventListener(){}};
  const Tree=(await compile('src/components/admin/AgentTree.jsx',{'react':react,'@/lib/admin/agent-tree.mjs':model})).default;
  function walk(node,predicate){if(!node)return null;if(Array.isArray(node)){for(const item of node){const found=walk(item,predicate);if(found)return found;}return null;}if(typeof node!=='object')return null;if(predicate(node))return node;return walk(node.props?.children,predicate);}
- let tree;function render(){cursor=0;pending=[];tree=Tree({organization,sources:rows,now});walk(tree,n=>n.props?.className==='agent-tree-canvas').props.ref.current=element;pending.forEach(fn=>fn());}
+ let activeOrganization=organization,tree;function render(){cursor=0;pending=[];tree=Tree({organization:activeOrganization,sources:rows,now});walk(tree,n=>n.props?.className==='agent-tree-canvas').props.ref.current=element;pending.forEach(fn=>fn());}
  render();render();render();const diagram=walk(tree,n=>n.props?.className==='agent-tree-canvas');assert.equal(walk(diagram,n=>['tree-freshness','tree-explore-hint','agent-tree-bar','agent-tree-controls'].includes(n.props?.className)),null);assert.ok(walk(tree,n=>n.props?.className==='agent-tree-meta'));walk(tree,n=>n.props?.['aria-label']==='Expand NaS Institute').props.onClick();render();
  for(const label of expected)assert.ok(walk(tree,n=>n.type==='h3'&&n.props.children===label),'Rendered canonical role: '+label);
  assert.equal(walk(tree,n=>n.type==='h3'&&n.props.children==='Episode-specific temporary agent'),null);
@@ -41,4 +41,24 @@ const root=process.cwd(),req=Module.createRequire(root+'/package.json');
  assert.match(html,/work observations require attention/);assert.match(html,/Total workers: unavailable/);assert.match(html,/Observed 1 · Active 1/);
  assert.match(html,/Configured inactive|Planned · configured inactive/);assert.ok(!/h3>Episode-specific/.test(html));
  console.log('PASS: exact canonical role names rendered, episodes only in details, inactive configuration separate from real executions, unassigned process stays unassigned, model/effort provenance and matching execution, pending next turn, stale evidence, read-only drawer');
+
+ const privateConfig={version:1,nodes:[
+  {id:'fixture-portfolio',parentId:'org:nas',kind:'portfolio',name:'Atlas Portfolio',task:'Approved structure',connected:false,observedAt:stamp,provenance:'Owner approval'},
+  {id:'fixture-company',parentId:'fixture-portfolio',kind:'company',name:'Example Company',task:'Company reporting pending',connected:false,observedAt:stamp,provenance:'Owner approval'},
+  {id:'fixture-project',parentId:'fixture-company',kind:'project',name:'Example App',task:'Application project',connected:false,observedAt:stamp,provenance:'Owner approval'}
+ ],taskReferences:[{id:'fixture-task',projectId:'fixture-project',title:'Saved example task',observedState:'active',observedAt:stamp,provenance:'Verified task snapshot'}]};
+ const raw=JSON.stringify(privateConfig),privateMapped=registryModule.organizationForSources([],raw);
+ assert.equal(privateMapped.privateConfigurationState,'available');assert.equal(privateMapped.taskReferences.length,1);
+ assert.equal(registryModule.organizationForSources([],'').taskReferences.length,0);
+ assert.equal(registryModule.organization.nodes.some(n=>n.id==='fixture-company'),false);
+ const malformed=[{}, {...privateConfig,nodes:[...privateConfig.nodes,privateConfig.nodes[0]]}, {...privateConfig,nodes:privateConfig.nodes.map(n=>({...n,connected:true}))}, {...privateConfig,nodes:privateConfig.nodes.map(n=>({...n,parentId:'missing'}))}, {...privateConfig,taskReferences:[{...privateConfig.taskReferences[0],projectId:'missing'}]}, {...privateConfig,taskReferences:[{...privateConfig.taskReferences[0],observedAt:'2999-01-01T00:00:00Z'}]}];
+ for(const invalid of ['broken','x'.repeat(16001),...malformed.map(value=>JSON.stringify(value))])assert.deepEqual(registryModule.privateStructure(invalid),{nodes:[],taskReferences:[],state:'invalid'});
+ const privateNodes=model.departmentTree(privateMapped,[],[],now),privateGraph=model.layoutTree(privateNodes);
+ for(const id of ['fixture-portfolio','fixture-company','fixture-project']){const node=privateNodes.find(n=>n.id===id);assert.equal(node.status,'unconnected');assert.equal(node.runningCount,0);assert.equal(model.activitySummary(node),'Runtime not connected');}
+ const columns=privateGraph.nodes.filter(n=>['department','portfolio'].includes(n.kind)).sort((a,b)=>a.x-b.x);assert.equal(columns[0].name,'Atlas Portfolio');assert.equal(new Set(columns.map(n=>n.y)).size,1);assert.ok(privateGraph.nodes.find(n=>n.id==='group:unassigned').x>columns.at(-1).x);
+ activeOrganization=privateMapped;render();walk(tree,n=>n.props?.['aria-label']==='Inspect Example Company').props.onClick();render();
+ const privateHtml=renderToStaticMarkup(tree),privateCanvas=renderToStaticMarkup(walk(tree,n=>n.props?.className==='agent-tree-canvas'));
+ assert.match(privateHtml,/Approved organization structure · not connected/);assert.match(privateHtml,/Reserved identity/);assert.match(privateHtml,/Saved example task/);assert.match(privateHtml,/Last observed: active/);assert.match(privateHtml,/Current task activity is unavailable/);assert.match(privateHtml,/codex_thread/);
+ assert.doesNotMatch(privateCanvas,/Saved example task/);assert.equal(model.hierarchyExecutions(privateNodes,'fixture-company').length,0);
+ console.log('PASS: private deployment-only portfolio/company/project structure; disconnected runtime, bounded validation and fail-closed metadata; saved task references appear only in details, never live workers or pipeline roles');
 })().catch(e=>{console.error(e);process.exit(1)});
