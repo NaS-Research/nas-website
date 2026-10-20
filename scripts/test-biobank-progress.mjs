@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';
+import {departmentProgress,departmentTree,activityNodes,scopeBlockers} from '../src/lib/admin/agent-tree.mjs';
+const now=Date.now(),stamp=new Date(now).toISOString();
+const report={departmentId:'dept:biobank',sourceState:'available',producer:'gemini',reportedAt:stamp,reportedState:'blocked',currentTask:{id:'BI-001',title:'Synthetic progress'},completedDeliverables:[{task_id:'BI-001',path:'results/fixture.md'}],blockers:[{task_id:'BI-005',reason:'Independent review unavailable'}],provenance:'Gemini self-reported department progress',executionState:'running'};
+const rows=[{source:'research',device:'fixture',received_at:stamp,payload:{jobs:[],departmentProgress:[report]}}];
+let progress=departmentProgress(rows,now).get('dept:biobank');assert.equal(progress.fresh,true);assert.equal(progress.executionState,'unknown');assert.equal(progress.blockers.length,1);
+const registry={nodes:[{id:'org',kind:'organization'},{id:'dept:biobank',parentId:'org',kind:'department'}]};
+let tree=departmentTree(registry,activityNodes(rows,now),rows,now),department=tree.find(n=>n.id==='dept:biobank');assert.equal(department.reportedCount,0);assert.equal(department.activeWorkerCount,0);assert.equal(department.runningCount,0);assert.equal(department.status,'unavailable');assert.equal(scopeBlockers(tree).length,0);assert.equal(department.progress.reportedState,'blocked');
+assert.equal(departmentProgress(rows,now+91000).get('dept:biobank').fresh,false);
+rows[0].received_at=new Date(now+91000).toISOString();assert.equal(departmentProgress(rows,now+91000).get('dept:biobank').fresh,false,'transport polling never renews producer time');
+rows[0].received_at=stamp;report.sourceState='unavailable';assert.equal(departmentProgress(rows,now).get('dept:biobank').fresh,false);
+report.sourceState='awaiting_report';report.producer='unknown';report.reportedAt=null;report.reportedState='unknown';report.currentTask=null;report.completedDeliverables=[];report.blockers=[];progress=departmentProgress(rows,now).get('dept:biobank');assert.equal(progress.hasReport,false);assert.equal(progress.fresh,false);
+report.reportedAt=stamp;assert.equal(departmentProgress(rows,now).size,0,'setup time must not become Gemini report');
+console.log('PASS: separate Gemini progress, original timestamp/stale transport, seed without observation, zero fabricated live workers/jobs/blockers');

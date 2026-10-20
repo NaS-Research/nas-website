@@ -1,3 +1,23 @@
+// Self-reported department progress is separate from execution identities and counts.
+export function departmentProgress(rows,now=Date.now()){
+ const result=new Map(),text=(v,max)=>typeof v==='string'&&v.trim()&&v.length<=max&&!/[\u0000-\u001f]/.test(v),id=v=>typeof v==='string'&&/^BI-[0-9]{3}$/.test(v);
+ for(const row of rows||[]){if(row.source!=='research')continue;
+  for(const report of Array.isArray(row.payload?.departmentProgress)?row.payload.departmentProgress.slice(0,1):[]){
+   if(report?.departmentId!=='dept:biobank'||!['available','awaiting_report','unavailable'].includes(report.sourceState)||!text(report.provenance,240))continue;
+   const seed=report.producer==='unknown'&&report.reportedAt===null;
+   if(!seed&&(report.producer!=='gemini'||typeof report.reportedAt!=='string'||!Number.isFinite(Date.parse(report.reportedAt))||Date.parse(report.reportedAt)>now+30000))continue;
+   if(!['working','waiting','blocked','done','unknown'].includes(report.reportedState))continue;
+   const task=report.currentTask;
+   if(task!==null&&(!task||!id(task.id)||!text(task.title,200)))continue;
+   if(!Array.isArray(report.completedDeliverables)||report.completedDeliverables.length>20||!Array.isArray(report.blockers)||report.blockers.length>20)continue;
+   if(report.completedDeliverables.some(r=>!r||!id(r.task_id)||!text(r.path,500)||!r.path.startsWith('results/')||r.path.split('/').some(p=>!p||p.startsWith('.'))||/[\\:%]/.test(r.path)))continue;
+   if(report.blockers.some(b=>!b||!id(b.task_id)||!text(b.reason,500)))continue;
+   if(seed&&(task!==null||report.completedDeliverables.length||report.blockers.length||report.reportedState!=='unknown'))continue;
+   result.set('dept:biobank',{...report,fresh:!seed&&report.sourceState==='available'&&sourceFresh(row,now)&&sourceFresh({received_at:report.reportedAt},now),hasReport:!seed,executionState:'unknown'});
+  }
+ }
+ return result;
+}
 export function blockerMetadata(value){
  if(!value||typeof value!=='object'||Array.isArray(value)||typeof value.provenance!=='string'||!value.provenance.trim()||value.provenance.length>240)return null;
  const result={provenance:value.provenance};
@@ -125,7 +145,9 @@ export function departmentTree(registry,jobs,rows=[],now=Date.now()){
    parent=all.get(parent.parentId);
   }
  }
+ const progress=departmentProgress(rows,now);
  for(const node of structure){
+  if(progress.has(node.id))node.progress=progress.get(node.id);
   if(node.runningCount)node.status='active';
   else if(node.blockedCount)node.status='blocked';
   else if(node.waitingCount)node.status='waiting';

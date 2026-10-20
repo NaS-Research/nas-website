@@ -25,3 +25,6 @@ assert result['research'][1]['parentId']=='101'
 assert result['video'][0]['parentId'] is None
 
 assert reporter.classify('/Volumes/AGNDJ 6TB/NaS-Work/Video','admin-agent-tree-final-build')=='website'
+
+rows.append("106 1 00:30 python3 /Volumes/AGNDJ 6TB/NaS-Work/tools/external-project-runner.py --project /Volumes/AGNDJ 6TB/NaS-Work/Video --job admin-agent-tree-biobank-reporter-test -- python3 report.py")
+assert all('reporter-test' not in job['name'] for jobs in reporter.collect_jobs().values() for job in jobs)

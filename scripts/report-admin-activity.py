@@ -33,7 +33,7 @@ def collect_jobs():
    end=next((index for index in range(start,len(flags)) if flags[index].startswith('--')),len(flags))
    project=' '.join(flags[start:end]);job=flags[flags.index('--job')+1]
   except (ValueError,IndexError,StopIteration):continue
-  if not project.startswith('/Volumes/AGNDJ 6TB/NaS-Work/') or job.startswith('admin-activity-monitor') or job.startswith('admin-agent-tree-monitor') or job.startswith('admin-agent-tree-department-reporter-handoff'):continue
+  if not project.startswith('/Volumes/AGNDJ 6TB/NaS-Work/') or job.startswith('admin-activity-monitor') or job.startswith('admin-agent-tree-monitor') or job.startswith('admin-agent-tree-department-reporter-handoff') or job.startswith(('admin-agent-tree-blocker-reporter','admin-agent-tree-biobank-reporter')):continue
   source=classify(project,job)
   entry={'id':pid,'name':job[:120],'workflow':source,'kind':'job','status':'running','elapsedSeconds':elapsed_seconds(process['elapsed']),'parentId':None}
   sources[source].append(entry);tracked[pid]=entry
@@ -64,7 +64,7 @@ def collect_task_events(path):
   TASK_EVENT_HEALTH = 'unavailable'
   return [{**event, 'status': 'unknown'} for event in TASK_EVENT_CACHE.get(key, [])]
 
-def snapshot(task_events=None, core_observer=None):
+def snapshot(task_events=None, core_observer=None, biobank_status=None):
  guarded = collect_jobs()
  events = collect_task_events(task_events)
  runtime = None
@@ -97,6 +97,8 @@ def snapshot(task_events=None, core_observer=None):
                                'omittedGuardedJobs':len(fallback)-len(included)}})
  if runtime is not None:
   next(report for report in reports if report['source']=='video')['runtime']=runtime
+ if biobank_status is not None:
+  next(report for report in reports if report['source']=='research')['departmentProgress']=[biobank_status.poll()]
  def size():
   return len(json.dumps(reports, separators=(',', ':'), ensure_ascii=True, allow_nan=False).encode())
  while size() > MAX_SNAPSHOT_BYTES:
@@ -126,12 +128,16 @@ def publish(config,reports):
  result=subprocess.run(['curl','--config','-'],input='\n'.join(lines),capture_output=True,text=True)
  if result.returncode:raise RuntimeError('Status publisher could not deliver its report (HTTP/API connection failed).')
 def main():
- parser=argparse.ArgumentParser();parser.add_argument('--config',required=True);parser.add_argument('--once',action='store_true');parser.add_argument('--interval',type=int,default=20);parser.add_argument('--task-events');parser.add_argument('--core-reader',action='store_true')
+ parser=argparse.ArgumentParser();parser.add_argument('--config',required=True);parser.add_argument('--once',action='store_true');parser.add_argument('--interval',type=int,default=20);parser.add_argument('--task-events');parser.add_argument('--core-reader',action='store_true');parser.add_argument('--biobank-status',action='store_true')
  args=parser.parse_args()
  core_observer=None
  if args.core_reader:
   from admin_core_observer import CoreObserver
   core_observer=CoreObserver()
+ biobank_status=None
+ if args.biobank_status:
+  from admin_biobank_status import BioBankStatus
+  biobank_status=BioBankStatus()
  # Hold the lease for the process lifetime. A second publisher must never overwrite these source-keyed rows.
  with private_lock(args.config,timeout=0,suffix='.publisher.lock'):
   config=read_private_json(args.config,limit=65536)
@@ -141,7 +147,7 @@ def main():
    if not isinstance(value,str) or not low<=len(value)<=high or '\n' in value or '\r' in value:raise EventStoreError('Invalid publisher configuration')
   while True:
    try:
-    reports=snapshot(args.task_events,core_observer);publish(config,reports)
+    reports=snapshot(args.task_events,core_observer,biobank_status);publish(config,reports)
     print(json.dumps({'reportedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'jobs':{r['source']:len(r['jobs']) for r in reports},'eventStore':TASK_EVENT_HEALTH}),flush=True)
    except Exception as error:
     print(json.dumps({'reporting':'offline','error':str(error)}),flush=True)

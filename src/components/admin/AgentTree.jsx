@@ -52,7 +52,7 @@ export default function AgentTree({sources=[],organization=null,now=Date.now(),i
   const opening=collapsed.has(id);setCollapsed(old=>{const next=new Set(old);next.has(id)?next.delete(id):next.add(id);return next;});
   if(opening&&inspectOnOpen&&scopeBlockers(nodes,id).length)revealBlockers(id);
  }
- function inspect(node){setSelected(node.id);if(node.structural&&node.childCount)toggle(node.id,false);if(node.structural&&scopeBlockers(nodes,node.id).length)revealBlockers(node.id);}
+ function inspect(node){setSelected(node.id);if(node.progress)setDetailsRequest(value=>value+1);if(node.structural&&node.childCount)toggle(node.id,false);if(node.structural&&scopeBlockers(nodes,node.id).length)revealBlockers(node.id);}
  function backToTree(){canvas.current?.scrollIntoView?.({block:'center',behavior:'smooth'});canvas.current?.focus?.({preventScroll:true});}
  async function copyTaskId(id){try{await navigator.clipboard.writeText(id);setCopyMessage('Task ID copied.');}catch{setCopyMessage('Copy unavailable. Select the task ID to copy it.');}}
  function keyDown(event){
@@ -92,7 +92,7 @@ export default function AgentTree({sources=[],organization=null,now=Date.now(),i
      return <article key={node.id} className={'agent-card '+(node.id===selected?'selected':'')+(node.structural?' structure-card':'')} style={{left:node.x,top:node.y,width:graph.nodeWidth,height:graph.nodeHeight}} title={description}>
       <button className="agent-card-main" onClick={()=>inspect(node)} aria-label={'Inspect '+node.name} aria-pressed={node.id===selected} aria-expanded={node.structural&&node.childCount?!node.collapsed:undefined}>
        <div className="agent-card-heading"><span className={'agent-avatar '+(node.structural?'organization-avatar':'')} aria-hidden="true">{node.kind==='organization'?'✦':node.structural?'◆':node.kind==='agent'?'✳':node.kind==='person'?'●':'◈'}</span><div><h3>{node.name}</h3><p>{node.structural?node.kind==='role'?node.configuration==='deterministic'?'Deterministic routing role':node.configuration==='configured'?'Configured role · execution separate':'Planned role · inactive':node.kind==='group'?'Placement unconfirmed':node.kind[0].toUpperCase()+node.kind.slice(1):node.kind==='person'?'Person':node.model||'Model not reported'}</p></div>{workers.attention>0&&<span className="agent-attention" role="img" aria-label={workers.attention+' work observations require attention'} title={workers.attention+' blocked or attention-needed observations; jobs are not worker headcount'}>!</span>}<span className={'agent-state '+state}><i aria-hidden="true"/>{stateLabel[state]||'Unknown'}</span></div>
-       <p className="agent-card-task">{node.kind==='role'?(node.reportedCount?'Latest work · '+(node.runningCount?'Active':node.offlineCount?'Stale':'Reported')+' · '+node.reportedCount+' observation'+(node.reportedCount===1?'':'s'):node.task):node.task}</p><span className="tree-sr-only">{description}</span>
+       <p className="agent-card-task">{node.progress?(node.progress.hasReport?'Gemini-reported: '+node.progress.reportedState+(node.progress.fresh&&!interrupted?'':' · stale/unavailable'):node.progress.sourceState==='awaiting_report'?'Gemini: awaiting first report':'Gemini report unavailable'):node.kind==='role'?(node.reportedCount?'Latest work · '+(node.runningCount?'Active':node.offlineCount?'Stale':'Reported')+' · '+node.reportedCount+' observation'+(node.reportedCount===1?'':'s'):node.task):node.task}</p><span className="tree-sr-only">{description}</span>
       </button>
       <footer><span>{node.kind==='department'?<span className="department-workers" title="No authoritative personnel roster is connected. Observed/active counts include only reported agent or person execution identities, never task jobs or configured roles."><span>Total workers: unavailable</span><span>Observed {workers.observed} · Active {workers.active??'—'}</span></span>:node.structural?activitySummary(node,interrupted):usage?<span className={'agent-paid-cost '+usage.kind} title={usageDescription}>{usage.kind==='estimate'?'Est. ':''}{money(usage.amountUsd)}</span>:null}<i>{node.structural?'':(usage?' · ':'')+(node.elapsedSeconds===null?'':elapsed(node.elapsedSeconds)+' · ')+(state==='offline'?'Last seen ':'Updated ')+new Date(node.observedAt||node.receivedAt).toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'})}</i></span><div className="agent-card-actions">{node.structural&&(node.blockedCount+node.staleBlockedCount)>0&&<button className="agent-card-blockers" onClick={()=>revealBlockers(node.id)} aria-label={'View '+(node.blockedCount||node.staleBlockedCount)+' '+(node.blockedCount?'blockers':'last known blockers')+' for '+node.name}>{node.blockedCount||node.staleBlockedCount} {node.blockedCount?'blockers':'last known'}</button>}{node.childCount>0&&<button onClick={()=>toggle(node.id)} aria-expanded={!node.collapsed} aria-label={(node.collapsed?'Expand ':'Collapse ')+node.name}>{node.childCount}<span aria-hidden="true">{node.collapsed?'⌄':'⌃'}</span></button>}</div></footer>
      </article>;
@@ -131,7 +131,20 @@ export default function AgentTree({sources=[],organization=null,now=Date.now(),i
     </article>;})}
     <p role="status">{copyMessage}</p>
    </section>}
-   {!blockers.length&&detailsRequest>0&&<p role="status">No reported blockers in this scope. The latest source report may have changed.</p>}
+   {!blockers.length&&!selectedNode?.progress&&detailsRequest>0&&<p role="status">No reported blockers in this scope. The latest source report may have changed.</p>}
+   {selectedNode?.progress&&<section className="department-progress" aria-label="Gemini-reported department progress">
+    <h3>Gemini-reported progress</h3>
+    <p>Self-reported department work. Live execution, model and process are unknown. This report does not add a running agent or worker.</p>
+    {!selectedNode.progress.hasReport?<p role="status">{selectedNode.progress.sourceState==='awaiting_report'?'Awaiting the first Gemini report. Department setup is complete; it is not a producer observation.':'Status file unavailable. No Gemini report is established.'}</p>:<>
+     <p><b>Reported state: {selectedNode.progress.reportedState}</b> · {selectedNode.progress.fresh&&!interrupted?'Fresh producer report':'Stale or unavailable producer report; current progress is unknown'}</p>
+     <p>Producer reported at: {selectedNode.progress.reportedAt}. Polling does not renew this timestamp.</p>
+     <h4>Current task</h4><p>{selectedNode.progress.currentTask?selectedNode.progress.currentTask.id+' · '+selectedNode.progress.currentTask.title:'Not reported'}</p>
+     <h4>Reported saved results</h4><p>Producer references only; contents, completion and scientific validity have not been independently verified.</p>
+     {selectedNode.progress.completedDeliverables.length?<ul>{selectedNode.progress.completedDeliverables.map((r,i)=><li key={i}>{r.task_id} · <code>{r.path}</code></li>)}</ul>:<p>No saved results reported.</p>}
+     <h4>Reported blockers</h4>{selectedNode.progress.blockers.length?<ul>{selectedNode.progress.blockers.map((b,i)=><li key={i}>{b.task_id} · {b.reason}</li>)}</ul>:<p>No blockers reported.</p>}
+    </>}
+    <p>Evidence: {selectedNode.progress.provenance}</p>
+   </section>}
    <p>{selectedNode?.task}</p>
    {selectedNode?.registryId&&<p>{selectedNode?.connected===false?'Reserved identity':'Registry identity'}: <code>{selectedNode?.registryId}</code>. Configuration does not establish a running model instance.</p>}
    {selectedNode?.connected===false&&<p>Approved organization structure · not connected. Core admission/readback and collector verification are pending. This grouping does not establish employees, active agents, or runtime parent-child launches.</p>}
