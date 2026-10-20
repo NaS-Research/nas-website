@@ -135,6 +135,12 @@ export function layoutTree(nodes,collapsed=new Set()){
  const W=246,H=140,GAP=44,LEVEL=72,INDENT=24,STACK=24;
  const byId=new Map(nodes.map(node=>[node.id,node])),children=new Map();
  for(const node of nodes){const key=byId.has(node.parentId)?node.parentId:null;if(!children.has(key))children.set(key,[]);children.get(key).push(node);}
+ // Alphabetize department columns only; retain team/role pipeline and runtime order.
+ for(const [parentId,siblings] of children){
+  if(byId.get(parentId)?.kind!=='organization')continue;
+  const departments=siblings.filter(node=>node.kind==='department').sort((a,b)=>a.name.localeCompare(b.name,'en',{sensitivity:'base'})||a.id.localeCompare(b.id));
+  let index=0;children.set(parentId,siblings.map(node=>node.kind==='department'?departments[index++]:node));
+ }
  const positions=[],edges=[],measurements=new Map();
  const kids=node=>collapsed.has(node.id)?[]:children.get(node.id)||[];
  function nestedSize(node){

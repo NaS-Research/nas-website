@@ -57,3 +57,29 @@ for(const [status,expected] of [['idle','idle'],['blocked','blocked'],['needs_yo
 }
 assert.equal(activitySummary(byId.get('dept:i'),true),'Activity unavailable');
 console.log('PASS: fresh connectivity does not imply activity; absent worker observations never produce a false zero; actual agent/person workers and process jobs stay distinct; explicit idle and blocked observations supported');
+
+// Input order must not control department columns, or reorder nested production stages.
+const unsorted=[
+ {id:'org',kind:'organization',name:'Company',parentId:null},
+ {id:'z',kind:'department',name:'Zeta',parentId:'org'},
+ {id:'r',kind:'department',name:'Research & Development',parentId:'org'},
+ {id:'n',kind:'department',name:'NaS Institute',parentId:'org'},
+ {id:'c',kind:'department',name:'Corporate',parentId:'org'},
+ {id:'b',kind:'department',name:'BioBank & Insights',parentId:'org'},
+ {id:'a',kind:'department',name:'RAAS',parentId:'org'},
+ {id:'unassigned',kind:'group',name:'Unassigned activity',parentId:'org'},
+ {id:'video',kind:'team',name:'Video team',parentId:'n'},
+ {id:'script',kind:'role',name:'Scripting',parentId:'video'},
+ {id:'edit',kind:'role',name:'Editing',parentId:'video'}
+];
+const expectedDepartments=['BioBank & Insights','Corporate','NaS Institute','RAAS','Research & Development','Zeta'];
+for(const collapsed of [new Set(),new Set(['n'])]){
+ const graph=layoutTree(unsorted,collapsed);
+ const departments=graph.nodes.filter(node=>node.kind==='department').sort((a,b)=>a.x-b.x);
+ assert.deepEqual(departments.map(node=>node.name),expectedDepartments);
+ assert.equal(new Set(departments.map(node=>node.y)).size,1);
+ assert.ok(graph.nodes.find(node=>node.id==='unassigned').x>departments.at(-1).x);
+ if(!collapsed.size)assert.ok(graph.nodes.find(node=>node.id==='script').y<graph.nodes.find(node=>node.id==='edit').y);
+}
+assert.equal(unsorted[1].name,'Zeta');
+console.log('PASS: alphabetical horizontal department columns across expansion; unassigned group stays last, nested role order and input registry preserved');

@@ -29,6 +29,7 @@ const root=process.cwd(),req=Module.createRequire(root+'/package.json');
  walk(tree,n=>n.props?.['aria-label']==='Expand Institute').props.onClick();render();
  walk(tree,n=>n.props?.['aria-label']==='Inspect Learn').props.onClick();render();assert.deepEqual(view(),expected);
  props={...props,sources:[{source:'research',device:'test',received_at:new Date().toISOString(),payload:{jobs:[{id:'test-event',teamId:'team:l',name:'Test event',status:'running'}]}}]};render();render();assert.deepEqual(view(),expected);
+ props={...props,organization:{...registry,nodes:[...registry.nodes].reverse()}};render();assert.deepEqual(view(),expected);
  resize([{contentRect:{width:420,height:600}}]);render();assert.deepEqual(view(),expected);
  assert.equal(walk(tree,n=>n.type==='button'&&n.props.children==='Fit'),null);
  assert.equal(listeners.get('wheel').options.passive,false);
