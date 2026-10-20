@@ -34,6 +34,14 @@ class ObserverTests(unittest.TestCase):
         data['/status']['workers'][0]['heartbeat_at']=now-100
         records,_=observer.poll();self.assertEqual(records[0]['status'],'unknown');self.assertEqual(records[1]['status'],'unknown')
 
+    def test_review_blockers_forward_only_explicit_safe_fields(self):
+        now=time.time()
+        task={'id':'review-task','agent_id':'video-native-worker','title':'Example review','status':'needs_review','worker_id':None,'updated_at':now-86400,'history':[{'id':8,'actor':'previous-worker','detail':{'error_code':'productive_stall','outcome':'needs_review','secret':'NEVER FORWARD'}}],'payload':{'secret':'NEVER FORWARD'},'result':{'secret':'NEVER FORWARD'}}
+        data={'/registry':{'agents':[{'id':'video-native-worker','org_id':'educational-video-production','active':True}]},'/status':{'timestamp':now,'workers':[],'tasks':{},'video_authority_epochs':[]},'/tasks?limit=20':[task]}
+        observer=module.CoreObserver(lambda route:copy.deepcopy(data[route]));records,_=observer.poll();blocker=records[0]['blocker']
+        self.assertEqual(records[0]['status'],'needs_you');self.assertEqual(blocker['taskId'],'review-task');self.assertEqual(blocker['registryIdentityId'],'video-native-worker');self.assertEqual(blocker['workerAssignment'],'unassigned');self.assertNotIn('workerId',blocker);self.assertEqual(blocker['lastActor'],'previous-worker');self.assertEqual(blocker['reasonCode'],'productive_stall');self.assertNotIn('requiredPerson',blocker);self.assertNotIn('nextAction',blocker);self.assertNotIn('NEVER FORWARD',str(records))
+        task['history'][-1]['detail']['error_code']='bad token=private';records,_=observer.poll();self.assertNotIn('reasonCode',records[0]['blocker'])
+
     def test_get_only_and_redirect_rejection(self):
         with self.assertRaises(ValueError):module.stamp(None)
         with self.assertRaises(ValueError):module.fetch('/reconcile','never-send')

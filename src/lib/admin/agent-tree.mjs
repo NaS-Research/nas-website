@@ -1,3 +1,23 @@
+export function blockerMetadata(value){
+ if(!value||typeof value!=='object'||Array.isArray(value)||typeof value.provenance!=='string'||!value.provenance.trim()||value.provenance.length>240)return null;
+ const result={provenance:value.provenance};
+ for(const [key,limit] of Object.entries({taskId:200,registryIdentityId:200,workerId:200,lastActor:200,reasonCode:100,reason:600,nextAction:600,requiredPerson:140,recordedState:60})){
+  const field=value[key];if(typeof field==='string'&&field.trim()&&field.length<=limit&&!/[\u0000-\u001f]/.test(field))result[key]=field;
+ }
+ if(['reported','unassigned'].includes(value.workerAssignment))result.workerAssignment=value.workerAssignment;
+ if(typeof value.taskUrl==='string'&&value.taskUrl.length<=1000&&typeof value.taskUrlProvenance==='string'&&value.taskUrlProvenance.trim()&&value.taskUrlProvenance.length<=240){
+  try{const url=new URL(value.taskUrl);if(url.protocol==='https:'&&!url.username&&!url.password&&!/token|secret|password|signature|authorization|api[_-]?key/i.test(url.hash)&&![...url.searchParams.keys()].some(k=>/token|secret|password|signature|authorization|api[_-]?key/i.test(k))){result.taskUrl=url.href;result.taskUrlProvenance=value.taskUrlProvenance;}}catch{}
+ }
+ return result;
+}
+export function scopeBlockers(nodes,id=null){
+ const candidates=id?hierarchyExecutions(nodes,id):nodes.filter(node=>!node.structural);
+ return candidates.filter(node=>['needs_you','blocked'].includes(node.status)||['offline','unknown'].includes(node.status)&&['needs_you','blocked'].includes(node.reportedStatus)).sort((a,b)=>Number(['offline','unknown'].includes(a.status))-Number(['offline','unknown'].includes(b.status))||(Date.parse(b.stateChangedAt||b.observedAt)||0)-(Date.parse(a.stateChangedAt||a.observedAt)||0)||a.id.localeCompare(b.id));
+}
+export function blockerRecord(node,interrupted=false){
+ const data=node.blocker||{},sourceId=node.sourceRuntime==='nas-core'?node.id.match(/:task:core:operation:([a-z0-9-]+)$/i)?.[1]:null;
+ return {id:data.taskId||sourceId||node.executionId||node.id,title:node.assignment||node.name,stale:interrupted||['offline','unknown'].includes(node.status),state:data.recordedState==='needs_review'?'Needs review':'Blocked',reason:data.reason||null,reasonCode:data.reasonCode||null,nextAction:data.nextAction||null,requiredPerson:data.requiredPerson||null,worker:data.workerId||(['agent','person'].includes(node.kind)?node.name:null),workerAssignment:data.workerAssignment||null,registryIdentityId:data.registryIdentityId||null,lastActor:data.lastActor||null,taskUrl:data.taskUrl||null,taskUrlProvenance:data.taskUrlProvenance||null,provenance:data.provenance||node.provenance||'Source not reported'};
+}
 export function paidUsage(value){
  if(!value||!['actual','estimate'].includes(value.kind)||!['api','metered'].includes(value.billingType))return null;
  if(typeof value.amountUsd!=='number'||!Number.isFinite(value.amountUsd)||value.amountUsd<=0)return null;
@@ -50,7 +70,7 @@ export function activityNodes(rows,now=Date.now()){
     name:String(job.name||'Unnamed worker').slice(0,140),task:String(job.task||'Task not reported').slice(0,240),
     model:typeof job.model==='string'&&job.model.trim()&&job.model.length<=100&&typeof job.modelProvenance==='string'&&job.modelProvenance.trim()&&job.modelProvenance.length<=240?job.model:null,
     modelProvenance:typeof job.modelProvenance==='string'?job.modelProvenance.slice(0,240):null,kind:['agent','person'].includes(job.kind)?job.kind:'job',
-    source:row.source,device:row.device,status,
+    source:row.source,device:row.device,status,reportedStatus:['running','done','failed','waiting','needs_you','idle','blocked','cancelled'].includes(reported)?reported:null,blocker:blockerMetadata(job.blocker),
     roleId:typeof job.roleId==='string'?job.roleId:null,assignment:typeof job.assignment==='string'?job.assignment.slice(0,240):null,placement:job.placement==='unassigned'?'unassigned':null,
     sourceRuntime:typeof job.sourceRuntime==='string'?job.sourceRuntime.slice(0,200):null,epoch:typeof job.epoch==='string'?job.epoch.slice(0,200):null,originEventId:typeof job.originEventId==='string'?job.originEventId.slice(0,200):null,
     entityKind:typeof job.entityKind==='string'?job.entityKind:null,executionId:typeof job.executionId==='string'?job.executionId:null,
@@ -71,7 +91,7 @@ export function activityNodes(rows,now=Date.now()){
 }
 export function departmentTree(registry,jobs,rows=[],now=Date.now()){
  if(!Array.isArray(registry?.nodes))return jobs;
- const structure=registry.nodes.map(node=>({...node,structural:true,model:null,costUsd:null,elapsedSeconds:null,reportedCount:0,runningCount:0,blockedCount:0,waitingCount:0,offlineCount:0,unknownCount:0,observedWorkerCount:0,activeWorkerCount:0,observedJobCount:0,activeJobCount:0,status:'unavailable'}));
+ const structure=registry.nodes.map(node=>({...node,structural:true,model:null,costUsd:null,elapsedSeconds:null,reportedCount:0,runningCount:0,blockedCount:0,staleBlockedCount:0,waitingCount:0,offlineCount:0,unknownCount:0,observedWorkerCount:0,activeWorkerCount:0,observedJobCount:0,activeJobCount:0,status:'unavailable'}));
  const byId=new Map(structure.map(node=>[node.id,node]));
  for(const row of rows){const runtime=row.payload?.runtime;if(runtime?.state!=='available'||!sourceFresh({received_at:runtime.checkedAt},now)||!sourceFresh(row,now))continue;for(const configuration of runtime.roleConfigurations||[]){const node=byId.get(configuration.id);if(node?.kind!=='role'||typeof configuration.configuredActive!=='boolean'||!Number.isFinite(Date.parse(configuration.observedAt))||Date.parse(node.configurationObservedAt)>Date.parse(configuration.observedAt))continue;node.configuration=node.configuration==='deterministic'&&configuration.configuredActive?'deterministic':configuration.configuredActive?'configured':'inactive';node.configurationObservedAt=configuration.observedAt;node.configurationProvenance='Core /registry via existing observer reader';}}
  const containers=new Map();
@@ -93,6 +113,7 @@ export function departmentTree(registry,jobs,rows=[],now=Date.now()){
     parent.reportedCount++;
     if(job.status==='running')parent.runningCount++;
     if(['needs_you','blocked'].includes(job.status))parent.blockedCount++;
+    if(['offline','unknown'].includes(job.status)&&['needs_you','blocked'].includes(job.reportedStatus))parent.staleBlockedCount++;
     if(job.status==='waiting')parent.waitingCount++;
     if(job.status==='offline')parent.offlineCount++;
     if(job.status==='unknown')parent.unknownCount++;

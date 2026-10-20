@@ -71,6 +71,11 @@ class EventTests(unittest.TestCase):
         self.assertEqual(events.paid_usage({**usage,'kind':'estimate','basis':'Provided price times observed units'})['kind'],'estimate')
         self.assertEqual(events.paid_usage({**usage,'scope':'inclusive'})['scope'],'unconfirmed')
 
+    def test_explicit_blocker_metadata_is_bounded(self):
+        events.write_event(self.path,entry('blocked',status='blocked',blocker={'taskId':'source-task','reasonCode':'native_process_failed','reason':'Reported failure','nextAction':'Inspect the existing receipt','requiredPerson':'Recorded reviewer','workerAssignment':'unassigned','provenance':'Explicit source event','secret':'NEVER FORWARD'}))
+        record=events.read_events(self.path)[0]['blocker'];self.assertEqual(record['taskId'],'source-task');self.assertEqual(record['workerAssignment'],'unassigned');self.assertNotIn('secret',record)
+        events.write_event(self.path,entry('missing',status='blocked',blocker={'reason':'Unattributed reason'}));self.assertNotIn('blocker',events.read_events(self.path)[1])
+
     def test_execution_model_observations(self):
         actual={'model':'GPT-6.1 Sol','reasoningEffort':'High','executionId':'turn:actual','observedAt':events.stamp(),'provenance':'Verified actual execution','secret':'never-forward'}
         request={**actual,'reasoningEffort':'Ultra','appliesTo':'next-turn'}

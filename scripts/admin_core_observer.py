@@ -106,6 +106,19 @@ class CoreObserver:
                 history=task.get('history')
                 if isinstance(history,list) and history and isinstance(history[-1],dict):
                     event['originEventId']=clean(history[-1].get('id'))
+                if status_name in {'needs_review','blocked'}:
+                    # Only explicit identity/review fields; never forward raw payloads/results/logs.
+                    latest=history[-1] if isinstance(history,list) and history and isinstance(history[-1],dict) else {}
+                    detail=latest.get('detail') if isinstance(latest.get('detail'),dict) else {}
+                    blocker={'taskId':clean(task['id']), 'recordedState':clean(status_name,60),
+                             'registryIdentityId':clean(task.get('agent_id')), 'provenance':'Core /tasks task identity and latest history event',
+                             'workerAssignment':'reported' if isinstance(task.get('worker_id'),str) and task['worker_id'] else 'unassigned' if 'worker_id' in task and task['worker_id'] is None else None}
+                    if isinstance(task.get('worker_id'),str) and task['worker_id']:
+                        blocker['workerId']=clean(task['worker_id'])
+                    if isinstance(latest.get('actor'),str):blocker['lastActor']=clean(latest['actor'])
+                    code=detail.get('error_code')
+                    if isinstance(code,str) and code and len(code)<=100 and all(c.isascii() and (c.isalnum() or c in '_:-') for c in code):blocker['reasonCode']=code
+                    event['blocker']={k:v for k,v in blocker.items() if v is not None and v!=''}
                 if task.get('agent_id') in ROLE_IDS:
                     event['roleId']=ROLE_IDS[task['agent_id']]
                 elif agent.get('org_id')=='educational-video-production':

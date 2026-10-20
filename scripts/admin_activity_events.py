@@ -83,6 +83,23 @@ def normalize_event(value, stored=False):
         raise EventStoreError('Invalid worker kind')
     result = {key: value[key] for key in ('id', 'name', 'task', 'provenance', 'source', 'status', 'observedAt')}
     result.update(kind=kind, origin='guarded-process' if value.get('origin') == 'guarded-process' and kind == 'job' else 'producer-task-event')
+    blocker=value.get('blocker')
+    if isinstance(blocker,dict) and text(blocker.get('provenance'),240):
+        detail={'provenance':blocker['provenance']}
+        for key,limit in [('taskId',200),('registryIdentityId',200),('workerId',200),('lastActor',200),('reasonCode',100),('reason',600),('nextAction',600),('requiredPerson',140),('recordedState',60)]:
+            if text(blocker.get(key),limit):detail[key]=blocker[key]
+        if blocker.get('workerAssignment') in {'reported','unassigned'}:detail['workerAssignment']=blocker['workerAssignment']
+        if text(blocker.get('taskUrl'),1000) and text(blocker.get('taskUrlProvenance'),240):
+            from urllib.parse import urlsplit,parse_qsl
+            try:
+                url=urlsplit(blocker['taskUrl'])
+                forbidden=('token','secret','password','signature','authorization','api_key','apikey')
+                if url.scheme=='https' and url.hostname and not url.username and not url.password and not any(any(word in key.lower().replace('-','_') for word in forbidden) for key,_ in parse_qsl(url.query)) and not any(word in url.fragment.lower() for word in forbidden):
+                    detail.update(taskUrl=blocker['taskUrl'],taskUrlProvenance=blocker['taskUrlProvenance'])
+            except ValueError:
+                pass
+        # Links are additionally checked by the private UI; no arbitrary URL is auto-opened.
+        result['blocker']=detail
     for key in ('teamId', 'departmentId', 'parentId', 'roleId', 'executionId', 'sourceRuntime', 'epoch', 'originEventId'):
         if key in value:
             if not text(value[key], 200):
