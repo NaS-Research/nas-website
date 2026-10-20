@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import {lifecycleFixture} from './fixtures/video-lifecycle-fixture.mjs';
+import {activityNodes,departmentTree,scopeBlockers,videoLifecycle} from '../src/lib/admin/agent-tree.mjs';
+const now=Date.now(),stamp=new Date(now).toISOString();
+const r=lifecycleFixture(now);
+const row={source:'video',device:'fixture',received_at:stamp,payload:{videoLifecycle:r,jobs:[{id:'old-review',kind:'job',status:'needs_you',observedAt:stamp,sourceRuntime:'nas-core',entityKind:'operator_operation',projectId:'fixture-old-project',projectName:'Synthetic previous project',teamId:'team:video'},{id:'prep-task',kind:'job',status:'done',observedAt:stamp,sourceRuntime:'nas-core',entityKind:'operator_operation',projectId:'fixture-prep-project',teamId:'team:video'}]}};
+const registry={nodes:[{id:'org',kind:'organization'},{id:'team:video',parentId:'org',kind:'team'}]};
+let report=videoLifecycle([row],now).get('team:video');assert.equal(report.fresh,true);assert.equal(report.executionWorker,null);assert.equal(report.workerAssignedToOperation,false);assert.doesNotMatch(JSON.stringify(report),/DO NOT FORWARD/);
+let tree=departmentTree(registry,activityNodes([row],now),[row],now),team=tree.find(n=>n.id==='team:video');assert.equal(team.blockedCount,0);assert.equal(team.savedReviewCount,1);assert.equal(scopeBlockers(tree).length,0);assert.equal(scopeBlockers(tree,null,true).length,1);assert.equal(scopeBlockers(tree,null,true)[0].historicalRecord,true);assert.equal(team.activeWorkerCount,0);assert.equal(tree.find(n=>n.id==='fixture:old-review').reportedStatus,'needs_you');
+assert.equal(videoLifecycle([row],now+900000).get('team:video').fresh,false,'exact expiry is stale');row.received_at=new Date(now+900000).toISOString();assert.equal(videoLifecycle([row],now+900000).get('team:video').fresh,false,'polling never extends expiry');
+row.received_at=stamp;r.recordedState='running';assert.equal(videoLifecycle([row],now).get('team:video').sourceState,'unavailable');r.recordedState='admitted_not_started';
+r.sourceState='unavailable';tree=departmentTree(registry,activityNodes([row],now),[row],now);assert.equal(scopeBlockers(tree).length,0);assert.equal(scopeBlockers(tree,null,true).length,1,'unclassified persisted review stays discoverable without becoming current video blocker');assert.equal(tree.find(n=>n.id==='fixture:old-review').historicalRecord,false);
+console.log('PASS: owner TTL/exact expiry, null execution, idle company worker separate, historical/unclassified saved reviews retained without current blocker counts, explicit projection');

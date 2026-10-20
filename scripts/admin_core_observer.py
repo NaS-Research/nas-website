@@ -74,6 +74,7 @@ class CoreObserver:
             if not isinstance(registry,dict) or not isinstance(status,dict) or not isinstance(tasks,list):
                 raise ValueError('Unexpected Core response shape')
             agents={a['id']:a for a in registry.get('agents',[]) if isinstance(a,dict) and isinstance(a.get('id'),str)}
+            projects={p['id']:p for p in registry.get('projects',[]) if isinstance(p,dict) and isinstance(p.get('id'),str)}
             workers=status.get('workers',[])
             if not isinstance(workers,list):
                 raise ValueError('Invalid worker records')
@@ -103,6 +104,10 @@ class CoreObserver:
                     lease=task.get('lease_expires_at')
                     state='running' if isinstance(heartbeat,(int,float)) and 0<=now-heartbeat<=90 and isinstance(lease,(int,float)) and lease>now else 'unknown'
                 event={'id':'task:core:operation:'+clean(task['id'],100),'name':'Persisted operation','assignment':clean(task.get('title'),240) or 'Assignment title unavailable','task':'Persisted task state: '+clean(status_name,60),'source':'video','kind':'job','entityKind':'operator_operation','status':state,'observedAt':stamp(heartbeat) if status_name=='running' and state=='running' else stamp(),'stateChangedAt':stamp(task.get('updated_at')),'provenance':'Core /tasks persisted-state read; updated_at retained separately; reader observer','sourceRuntime':'nas-core','epoch':epoch}
+                project_id=task.get('project_id')
+                if isinstance(project_id,str) and project_id:
+                    event['projectId']=clean(project_id)
+                    if isinstance(projects.get(project_id,{}).get('name'),str):event['projectName']=clean(projects[project_id]['name'],240)
                 history=task.get('history')
                 if isinstance(history,list) and history and isinstance(history[-1],dict):
                     event['originEventId']=clean(history[-1].get('id'))

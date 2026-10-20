@@ -1,3 +1,18 @@
+// The owner lifecycle is a dated report, never an execution instance or launch authority.
+export function videoLifecycle(rows,now=Date.now()){
+ const reports=new Map(),text=(v,n)=>typeof v==='string'&&v.trim()&&v.length<=n&&!/[\u0000-\u001f]/.test(v);
+ for(const row of rows||[]){const r=row.source==='video'?row.payload?.videoLifecycle:null;if(!r||r.schemaVersion!==1||r.teamId!=='team:video'||!text(r.pipelineId,100))continue;
+  const unavailable={teamId:r.teamId,pipelineId:r.pipelineId,sourceState:'unavailable',fresh:false};
+  if(r.sourceState==='unavailable'){reports.set(r.teamId,unavailable);continue;}
+  const observed=Date.parse(r.observedAt),expiry=Date.parse(r.expiresAt);
+  const fields={operationId:100,operationName:240,recordedAt:40,sourceProjectId:200,sourceProjectName:240,preparationTaskId:200,preparationAgentId:200,responsibleRole:140,recordedActor:140,responsibilityEvidence:500,observedWorkerId:200,workerVerifiedAt:40,workerHeartbeatAt:40,reasonCode:100,reason:600,nextAction:600,nextActionCode:100,laterGate:100,nextActionRole:140,evidenceReference:240,provenance:240};
+  if(!['available','stale'].includes(r.sourceState)||r.recordedState!=='admitted_not_started'||!Number.isFinite(observed)||!Number.isFinite(expiry)||observed>now+60000||expiry<observed||expiry-observed>900000||Object.entries(fields).some(([k,n])=>!text(r[k],n))||r.executionTaskId!==null||r.executionWorker!==null||r.namedPerson!==null||r.reviewer!==null||r.workerAssignedToOperation!==false||r.observedWorkerState!=='idle'||!Number.isInteger(r.observedWorkerPid)||r.observedWorkerPid<1||r.observedWorkerPid>=2**31){reports.set(r.teamId,unavailable);continue;}
+  if(!Array.isArray(r.historicalProjects)||r.historicalProjects.length>10||r.historicalProjects.some(p=>!text(p?.projectId,200)||!Number.isSafeInteger(p.persistedNeedsReviewCount)||p.persistedNeedsReviewCount<0)||['internal','external'].some(key=>!r.resources?.[key]||!Number.isSafeInteger(r.resources[key].availableBytes)||r.resources[key].availableBytes<0||!Number.isSafeInteger(r.resources[key].requiredBytes)||r.resources[key].requiredBytes<0)){reports.set(r.teamId,unavailable);continue;}
+  const report={...unavailable,sourceState:r.sourceState,observedAt:r.observedAt,expiresAt:r.expiresAt,recordedState:r.recordedState,fresh:r.sourceState==='available'&&now<expiry&&sourceFresh(row,now),executionTaskId:null,executionWorker:null,namedPerson:null,reviewer:null,observedWorkerState:'idle',observedWorkerPid:r.observedWorkerPid,workerAssignedToOperation:false,historicalProjects:r.historicalProjects.map(p=>({projectId:p.projectId,persistedNeedsReviewCount:p.persistedNeedsReviewCount})),resources:{internal:{availableBytes:r.resources.internal.availableBytes,requiredBytes:r.resources.internal.requiredBytes},external:{availableBytes:r.resources.external.availableBytes,requiredBytes:r.resources.external.requiredBytes}},historyHead:Number.isInteger(r.historyHead)?r.historyHead:null,queueCountAtObservation:Number.isInteger(r.queueCountAtObservation)?r.queueCountAtObservation:null};
+  for(const key of Object.keys(fields))report[key]=r[key];reports.set(r.teamId,report);
+ }
+ return reports;
+}
 // Self-reported department progress is separate from execution identities and counts.
 export function departmentProgress(rows,now=Date.now()){
  const result=new Map(),text=(v,max)=>typeof v==='string'&&v.trim()&&v.length<=max&&!/[\u0000-\u001f]/.test(v),id=v=>typeof v==='string'&&/^BI-[0-9]{3}$/.test(v);
@@ -30,9 +45,9 @@ export function blockerMetadata(value){
  }
  return result;
 }
-export function scopeBlockers(nodes,id=null){
+export function scopeBlockers(nodes,id=null,savedReviews=false){
  const candidates=id?hierarchyExecutions(nodes,id):nodes.filter(node=>!node.structural);
- return candidates.filter(node=>['needs_you','blocked'].includes(node.status)||['offline','unknown'].includes(node.status)&&['needs_you','blocked'].includes(node.reportedStatus)).sort((a,b)=>Number(['offline','unknown'].includes(a.status))-Number(['offline','unknown'].includes(b.status))||(Date.parse(b.stateChangedAt||b.observedAt)||0)-(Date.parse(a.stateChangedAt||a.observedAt)||0)||a.id.localeCompare(b.id));
+ return candidates.filter(node=>(savedReviews?['persisted','historical'].includes(node.reviewScope):!['persisted','historical'].includes(node.reviewScope))&&(['needs_you','blocked'].includes(node.status)||['offline','unknown'].includes(node.status)&&['needs_you','blocked'].includes(node.reportedStatus))).sort((a,b)=>Number(['offline','unknown'].includes(a.status))-Number(['offline','unknown'].includes(b.status))||(Date.parse(b.stateChangedAt||b.observedAt)||0)-(Date.parse(a.stateChangedAt||a.observedAt)||0)||a.id.localeCompare(b.id));
 }
 export function blockerRecord(node,interrupted=false){
  const data=node.blocker||{},sourceId=node.sourceRuntime==='nas-core'?node.id.match(/:task:core:operation:([a-z0-9-]+)$/i)?.[1]:null;
@@ -91,6 +106,8 @@ export function activityNodes(rows,now=Date.now()){
     model:typeof job.model==='string'&&job.model.trim()&&job.model.length<=100&&typeof job.modelProvenance==='string'&&job.modelProvenance.trim()&&job.modelProvenance.length<=240?job.model:null,
     modelProvenance:typeof job.modelProvenance==='string'?job.modelProvenance.slice(0,240):null,kind:['agent','person'].includes(job.kind)?job.kind:'job',
     source:row.source,device:row.device,status,reportedStatus:['running','done','failed','waiting','needs_you','idle','blocked','cancelled'].includes(reported)?reported:null,blocker:blockerMetadata(job.blocker),
+    reviewScope:job.sourceRuntime==='nas-core'&&job.entityKind==='operator_operation'?'persisted':'current',
+    projectId:typeof job.projectId==='string'?job.projectId.slice(0,200):null,projectName:typeof job.projectName==='string'?job.projectName.slice(0,240):null,
     roleId:typeof job.roleId==='string'?job.roleId:null,assignment:typeof job.assignment==='string'?job.assignment.slice(0,240):null,placement:job.placement==='unassigned'?'unassigned':null,
     sourceRuntime:typeof job.sourceRuntime==='string'?job.sourceRuntime.slice(0,200):null,epoch:typeof job.epoch==='string'?job.epoch.slice(0,200):null,originEventId:typeof job.originEventId==='string'?job.originEventId.slice(0,200):null,
     entityKind:typeof job.entityKind==='string'?job.entityKind:null,executionId:typeof job.executionId==='string'?job.executionId:null,
@@ -111,9 +128,10 @@ export function activityNodes(rows,now=Date.now()){
 }
 export function departmentTree(registry,jobs,rows=[],now=Date.now()){
  if(!Array.isArray(registry?.nodes))return jobs;
- const structure=registry.nodes.map(node=>({...node,structural:true,model:null,costUsd:null,elapsedSeconds:null,reportedCount:0,runningCount:0,blockedCount:0,staleBlockedCount:0,waitingCount:0,offlineCount:0,unknownCount:0,observedWorkerCount:0,activeWorkerCount:0,observedJobCount:0,activeJobCount:0,status:'unavailable'}));
+ const structure=registry.nodes.map(node=>({...node,structural:true,model:null,costUsd:null,elapsedSeconds:null,reportedCount:0,runningCount:0,blockedCount:0,staleBlockedCount:0,savedReviewCount:0,historicalCount:0,waitingCount:0,offlineCount:0,unknownCount:0,observedWorkerCount:0,activeWorkerCount:0,observedJobCount:0,activeJobCount:0,status:'unavailable'}));
  const byId=new Map(structure.map(node=>[node.id,node]));
  for(const row of rows){const runtime=row.payload?.runtime;if(runtime?.state!=='available'||!sourceFresh({received_at:runtime.checkedAt},now)||!sourceFresh(row,now))continue;for(const configuration of runtime.roleConfigurations||[]){const node=byId.get(configuration.id);if(node?.kind!=='role'||typeof configuration.configuredActive!=='boolean'||!Number.isFinite(Date.parse(configuration.observedAt))||Date.parse(node.configurationObservedAt)>Date.parse(configuration.observedAt))continue;node.configuration=node.configuration==='deterministic'&&configuration.configuredActive?'deterministic':configuration.configuredActive?'configured':'inactive';node.configurationObservedAt=configuration.observedAt;node.configurationProvenance='Core /registry via existing observer reader';}}
+ const lifecycles=videoLifecycle(rows,now),historicalProjects=new Set([...lifecycles.values()].flatMap(r=>r.historicalProjects||[]).map(p=>p.projectId));
  const containers=new Map();
  for(const job of jobs){
   const team=byId.get(job.teamId),department=byId.get(job.departmentId),fallback=byId.get(registry.sourceAssignments?.[job.source]);
@@ -122,7 +140,8 @@ export function departmentTree(registry,jobs,rows=[],now=Date.now()){
  }
  const placed=jobs.map(job=>{
   const sameTeam=job.parentId&&containers.get(job.parentId)===containers.get(job.id);
-  return {...job,runtimeParentId:job.parentId,parentId:sameTeam?job.parentId:containers.get(job.id),relationship:sameTeam?'runtime':'assignment'};
+  const historicalRecord=job.sourceRuntime==='nas-core'&&historicalProjects.has(job.projectId);
+  return {...job,historicalRecord,reviewScope:historicalRecord?'historical':job.reviewScope,runtimeParentId:job.parentId,parentId:sameTeam?job.parentId:containers.get(job.id),relationship:sameTeam?'runtime':'assignment'};
  });
  const all=new Map([...structure,...placed].map(node=>[node.id,node]));
  for(const job of placed){
@@ -130,10 +149,12 @@ export function departmentTree(registry,jobs,rows=[],now=Date.now()){
   while(parent&&!seen.has(parent.id)){
    seen.add(parent.id);
    if(parent.structural){
+    if(['persisted','historical'].includes(job.reviewScope)&&(['needs_you','blocked'].includes(job.status)||['needs_you','blocked'].includes(job.reportedStatus)))parent.savedReviewCount++;
+    if(job.historicalRecord){parent.historicalCount++;parent=all.get(parent.parentId);continue;}
     parent.reportedCount++;
     if(job.status==='running')parent.runningCount++;
-    if(['needs_you','blocked'].includes(job.status))parent.blockedCount++;
-    if(['offline','unknown'].includes(job.status)&&['needs_you','blocked'].includes(job.reportedStatus))parent.staleBlockedCount++;
+    if(job.reviewScope!=='persisted'&&['needs_you','blocked'].includes(job.status))parent.blockedCount++;
+    if(job.reviewScope!=='persisted'&&['offline','unknown'].includes(job.status)&&['needs_you','blocked'].includes(job.reportedStatus))parent.staleBlockedCount++;
     if(job.status==='waiting')parent.waitingCount++;
     if(job.status==='offline')parent.offlineCount++;
     if(job.status==='unknown')parent.unknownCount++;
@@ -148,6 +169,7 @@ export function departmentTree(registry,jobs,rows=[],now=Date.now()){
  const progress=departmentProgress(rows,now);
  for(const node of structure){
   if(progress.has(node.id))node.progress=progress.get(node.id);
+  if(lifecycles.has(node.id))node.videoLifecycle=lifecycles.get(node.id);
   if(node.runningCount)node.status='active';
   else if(node.blockedCount)node.status='blocked';
   else if(node.waitingCount)node.status='waiting';

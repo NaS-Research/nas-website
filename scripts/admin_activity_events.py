@@ -100,11 +100,12 @@ def normalize_event(value, stored=False):
                 pass
         # Links are additionally checked by the private UI; no arbitrary URL is auto-opened.
         result['blocker']=detail
-    for key in ('teamId', 'departmentId', 'parentId', 'roleId', 'executionId', 'sourceRuntime', 'epoch', 'originEventId'):
+    for key in ('teamId', 'departmentId', 'parentId', 'roleId', 'executionId', 'sourceRuntime', 'epoch', 'originEventId', 'projectId'):
         if key in value:
             if not text(value[key], 200):
                 raise EventStoreError('Invalid assignment or parent')
             result[key] = value[key]
+    if text(value.get('projectName'),240):result['projectName']=value['projectName']
     if result.get('parentId') == result['id']:
         raise EventStoreError('An event cannot be its own parent')
     for key in ('processId', 'runnerPid'):
