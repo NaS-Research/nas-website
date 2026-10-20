@@ -22,6 +22,20 @@ export function sourceFresh(row,now=Date.now()){
  const age=now-Date.parse(row?.received_at);
  return Number.isFinite(age)&&age>=-30000&&age<=90000;
 }
+export function modelObservation(value,executionId,now=Date.now(),effective=false){
+ if(!value||typeof value.model!=='string'||!value.model.trim()||value.model.length>100||typeof value.provenance!=='string'||!value.provenance.trim()||value.provenance.length>240)return null;
+ const time=Date.parse(value.observedAt);if(!Number.isFinite(time)||time>now+30000)return null;
+ if(effective&&(!executionId||value.executionId!==executionId||value.appliesTo==='next-turn'))return null;
+ const effort=typeof value.reasoningEffort==='string'&&/^[a-zA-Z0-9 _-]{1,30}$/.test(value.reasoningEffort)?value.reasoningEffort:null;
+ return {model:value.model,reasoningEffort:effort,provenance:value.provenance,observedAt:value.observedAt,executionId:value.executionId||null,appliesTo:['configuration','current-turn','next-turn'].includes(value.appliesTo)?value.appliesTo:'configuration',fresh:now-time<=90000};
+}
+export function executionModel(node){
+ const effective=node.runtimeModel;
+ if(effective&&(effective.fresh||['done','failed'].includes(node.status))&&!['offline','unknown'].includes(node.status))return effective.model+' · '+(effective.reasoningEffort||'Reasoning unavailable');
+ // Provider model receipts are independent of requested agent settings.
+ if(node.kind==='job'&&node.model)return node.model+' · Reasoning unavailable';
+ return 'Model / reasoning unavailable';
+}
 export function activityNodes(rows,now=Date.now()){
  const nodes=new Map();
  for(const row of rows||[]){
@@ -30,15 +44,20 @@ export function activityNodes(rows,now=Date.now()){
    const id=String(row.device)+':'+String(job.id),usage=paidUsage(job.paidUsage);
    const reported=job.status==='needs-you'?'needs_you':job.status;
    const observationKnown=job.observedAt===undefined||(Number.isFinite(Date.parse(job.observedAt))&&Date.parse(job.observedAt)<=now+30000);
-   const observationStale=job.observedAt!==undefined&&!['done','failed'].includes(reported)&&!sourceFresh({received_at:job.observedAt},now);
-   const status=!sourceFresh(row,now)||observationStale?'offline':!observationKnown?'unknown':['running','done','failed','waiting','needs_you','idle','blocked'].includes(reported)?reported:'unknown';
+   const observationStale=job.observedAt!==undefined&&!['done','failed','cancelled'].includes(reported)&&!sourceFresh({received_at:job.observedAt},now);
+   const status=!sourceFresh(row,now)||observationStale?'offline':!observationKnown?'unknown':['running','done','failed','waiting','needs_you','idle','blocked','cancelled'].includes(reported)?reported:'unknown';
    nodes.set(id,{id,parentId:job.parentId!==undefined&&job.parentId!==null?String(row.device)+':'+String(job.parentId):null,
     name:String(job.name||'Unnamed worker').slice(0,140),task:String(job.task||'Task not reported').slice(0,240),
     model:typeof job.model==='string'&&job.model.trim()&&job.model.length<=100&&typeof job.modelProvenance==='string'&&job.modelProvenance.trim()&&job.modelProvenance.length<=240?job.model:null,
     modelProvenance:typeof job.modelProvenance==='string'?job.modelProvenance.slice(0,240):null,kind:['agent','person'].includes(job.kind)?job.kind:'job',
     source:row.source,device:row.device,status,
+    roleId:typeof job.roleId==='string'?job.roleId:null,assignment:typeof job.assignment==='string'?job.assignment.slice(0,240):null,placement:job.placement==='unassigned'?'unassigned':null,
+    sourceRuntime:typeof job.sourceRuntime==='string'?job.sourceRuntime.slice(0,200):null,epoch:typeof job.epoch==='string'?job.epoch.slice(0,200):null,originEventId:typeof job.originEventId==='string'?job.originEventId.slice(0,200):null,
+    entityKind:typeof job.entityKind==='string'?job.entityKind:null,executionId:typeof job.executionId==='string'?job.executionId:null,
+    runtimeModel:modelObservation(job.runtimeModel,job.executionId,now,true),requestedModel:modelObservation(job.requestedModel,job.executionId,now),
     paidUsage:usage,costUsd:usage?.amountUsd??null,
     elapsedSeconds:typeof job.elapsedSeconds==='number'&&Number.isFinite(job.elapsedSeconds)&&job.elapsedSeconds>=0?job.elapsedSeconds:null,
+    stateChangedAt:typeof job.stateChangedAt==='string'?job.stateChangedAt:null,heartbeatAt:typeof job.heartbeatAt==='string'?job.heartbeatAt:null,
     observedAt:typeof job.observedAt==='string'?job.observedAt:null,provenance:typeof job.provenance==='string'?job.provenance.slice(0,240):null,
     teamId:typeof job.teamId==='string'?job.teamId:null,departmentId:typeof job.departmentId==='string'?job.departmentId:null,receivedAt:row.received_at});
   }
@@ -54,10 +73,12 @@ export function departmentTree(registry,jobs,rows=[],now=Date.now()){
  if(!Array.isArray(registry?.nodes))return jobs;
  const structure=registry.nodes.map(node=>({...node,structural:true,model:null,costUsd:null,elapsedSeconds:null,reportedCount:0,runningCount:0,blockedCount:0,waitingCount:0,offlineCount:0,unknownCount:0,observedWorkerCount:0,activeWorkerCount:0,observedJobCount:0,activeJobCount:0,status:'unavailable'}));
  const byId=new Map(structure.map(node=>[node.id,node]));
+ for(const row of rows){const runtime=row.payload?.runtime;if(runtime?.state!=='available'||!sourceFresh({received_at:runtime.checkedAt},now)||!sourceFresh(row,now))continue;for(const configuration of runtime.roleConfigurations||[]){const node=byId.get(configuration.id);if(node?.kind!=='role')continue;node.configuration=node.configuration==='deterministic'&&configuration.configuredActive?'deterministic':configuration.configuredActive?'configured':'inactive';node.configurationObservedAt=configuration.observedAt;node.configurationProvenance='Core /registry via existing observer reader';}}
  const containers=new Map();
  for(const job of jobs){
   const team=byId.get(job.teamId),department=byId.get(job.departmentId),fallback=byId.get(registry.sourceAssignments?.[job.source]);
-  containers.set(job.id,team?.kind==='team'?team.id:department?.kind==='department'?department.id:fallback?.id||'group:unassigned');
+  const role=byId.get(job.roleId);
+  containers.set(job.id,job.placement==='unassigned'?'group:unassigned':role?.kind==='role'?role.id:team?.kind==='team'?team.id:department?.kind==='department'?department.id:fallback?.id||'group:unassigned');
  }
  const placed=jobs.map(job=>{
   const sameTeam=job.parentId&&containers.get(job.parentId)===containers.get(job.id);
@@ -92,8 +113,17 @@ export function departmentTree(registry,jobs,rows=[],now=Date.now()){
   else node.status='unavailable';
   // Transport freshness never establishes that workers are active or idle.
   if(node.kind==='organization')node.task='Departments and teams';
+  if(node.kind==='role'){node.status=node.configuration==='deterministic'?'deterministic':node.configuration==='configured'?'configured':'inactive';node.task=node.configuration==='deterministic'?'Department director · deterministic routing':node.configuration==='configured'?'Configured enabled · execution observed separately':'Planned · configured inactive';}
  }
  return [...structure,...placed];
+}
+export function hierarchyExecutions(nodes,id){
+ const byId=new Map(nodes.map(node=>[node.id,node]));
+ return nodes.filter(node=>{if(node.structural)return false;let parent=byId.get(node.parentId);const seen=new Set();while(parent&&!seen.has(parent.id)){if(parent.id===id)return true;seen.add(parent.id);parent=byId.get(parent.parentId);}return false;});
+}
+export function workerCounts(node,interrupted=false){
+ // Registry definitions, jobs, and temporary task identities cannot establish a personnel roster.
+ return {total:null,observed:node.observedWorkerCount||0,active:!interrupted&&node.observedWorkerCount>0?node.activeWorkerCount:null,attention:interrupted?null:node.blockedCount||0};
 }
 export function activitySummary(node,interrupted=false){
  if(interrupted||['offline','unknown','unavailable'].includes(node.status))return 'Activity unavailable';
@@ -102,7 +132,7 @@ export function activitySummary(node,interrupted=false){
  return 'Activity unavailable';
 }
 export function layoutTree(nodes,collapsed=new Set()){
- const W=190,H=104,GAP=32,LEVEL=44,INDENT=18,STACK=14;
+ const W=246,H=140,GAP=44,LEVEL=72,INDENT=24,STACK=24;
  const byId=new Map(nodes.map(node=>[node.id,node])),children=new Map();
  for(const node of nodes){const key=byId.has(node.parentId)?node.parentId:null;if(!children.has(key))children.set(key,[]);children.get(key).push(node);}
  const positions=[],edges=[],measurements=new Map();
@@ -114,12 +144,6 @@ export function layoutTree(nodes,collapsed=new Set()){
  }
  function rootSize(node){
   const descendants=kids(node),sizes=descendants.map(nestedSize);
-  if(node.kind==='organization'&&sizes.length>3){
-   const lanes=[[],[],[]];descendants.forEach((child,index)=>lanes[index%3].push(child));
-   const laneSizes=lanes.map(lane=>({width:Math.max(W,...lane.map(child=>measurements.get(child.id).width)),height:lane.reduce((sum,child)=>sum+measurements.get(child.id).height+STACK,0)-STACK}));
-   const value={lanes,laneSizes,width:laneSizes.reduce((sum,size)=>sum+size.width,0)+2*GAP,height:H+LEVEL+Math.max(...laneSizes.map(size=>size.height))};
-   measurements.set(node.id,value);return value;
-  }
   const value={width:Math.max(W,sizes.reduce((sum,size)=>sum+size.width,0)+Math.max(0,sizes.length-1)*GAP),height:H+(sizes.length?LEVEL+Math.max(...sizes.map(size=>size.height)):0)};
   measurements.set(node.id,value);return value;
  }
@@ -131,9 +155,7 @@ export function layoutTree(nodes,collapsed=new Set()){
  const roots=children.get(null)||[];roots.forEach(rootSize);let cursor=0,height=H;
  for(const root of roots){
   const size=measurements.get(root.id);add(root,cursor+(size.width-W)/2,0);let column=cursor;
-  if(size.lanes){
-   size.lanes.forEach((lane,index)=>{let row=H+LEVEL;lane.forEach((child,offset)=>{placeNested(child,column,row);edges.push({from:root.id,to:child.id,nested:false,stacked:offset>0,laneX:column-12,kind:'organization'});row+=measurements.get(child.id).height+STACK;});column+=size.laneSizes[index].width+GAP;});
-  }else for(const child of kids(root)){placeNested(child,column,H+LEVEL);edges.push({from:root.id,to:child.id,nested:false,kind:child.relationship||'organization'});column+=measurements.get(child.id).width+GAP;}
+  for(const child of kids(root)){placeNested(child,column,H+LEVEL);edges.push({from:root.id,to:child.id,nested:false,kind:child.relationship||'organization'});column+=measurements.get(child.id).width+GAP;}
   cursor+=size.width+GAP*2;height=Math.max(height,size.height);
  }
  return {nodes:positions,edges,width:Math.max(W,cursor-GAP*2),height,nodeWidth:W,nodeHeight:H};

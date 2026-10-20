@@ -1,6 +1,6 @@
 import {NextResponse} from 'next/server';
 import {adminSession} from '@/lib/auth/admin';
-import {organization} from '@/lib/admin/organization';
+import {organizationForSources} from '@/lib/admin/organization';
 export const dynamic='force-dynamic';
 const respond=(body,status=200)=>NextResponse.json(body,{status,headers:{'Cache-Control':'private, no-store'}});
 export async function GET(){
@@ -10,6 +10,6 @@ export async function GET(){
   if(!session.isAdmin)return respond({error:'Administrator access required.'},403);
   const {data,error}=await session.client.from('admin_activity_snapshots').select('source,device,received_at,payload').order('source');
   if(error)return respond({error:'Activity is temporarily unavailable.'},503);
-  return respond({sources:data,organization,checkedAt:new Date().toISOString()});
+  return respond({sources:data,organization:organizationForSources(data),checkedAt:new Date().toISOString()});
  }catch{return respond({error:'Activity is temporarily unavailable.'},503);}
 }

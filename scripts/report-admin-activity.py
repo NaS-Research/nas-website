@@ -64,9 +64,13 @@ def collect_task_events(path):
   TASK_EVENT_HEALTH = 'unavailable'
   return [{**event, 'status': 'unknown'} for event in TASK_EVENT_CACHE.get(key, [])]
 
-def snapshot(task_events=None):
+def snapshot(task_events=None, core_observer=None):
  guarded = collect_jobs()
  events = collect_task_events(task_events)
+ runtime = None
+ if core_observer:
+  core_events,runtime = core_observer.poll()
+  events += core_events
  # A lifecycle record can enrich its own observed runner, without duplicating that job.
  linked = {(event['source'], event.get('runnerPid')) for event in events
            if event.get('kind') == 'job' and event.get('origin') == 'guarded-process'
@@ -91,6 +95,8 @@ def snapshot(task_events=None):
                   'jobs':observed+included,
                   'telemetry':{'coverage':'partial','eventStore':TASK_EVENT_HEALTH,
                                'omittedGuardedJobs':len(fallback)-len(included)}})
+ if runtime is not None:
+  next(report for report in reports if report['source']=='video')['runtime']=runtime
  def size():
   return len(json.dumps(reports, separators=(',', ':'), ensure_ascii=True, allow_nan=False).encode())
  while size() > MAX_SNAPSHOT_BYTES:
@@ -120,8 +126,12 @@ def publish(config,reports):
  result=subprocess.run(['curl','--config','-'],input='\n'.join(lines),capture_output=True,text=True)
  if result.returncode:raise RuntimeError('Status publisher could not deliver its report (HTTP/API connection failed).')
 def main():
- parser=argparse.ArgumentParser();parser.add_argument('--config',required=True);parser.add_argument('--once',action='store_true');parser.add_argument('--interval',type=int,default=20);parser.add_argument('--task-events')
+ parser=argparse.ArgumentParser();parser.add_argument('--config',required=True);parser.add_argument('--once',action='store_true');parser.add_argument('--interval',type=int,default=20);parser.add_argument('--task-events');parser.add_argument('--core-reader',action='store_true')
  args=parser.parse_args()
+ core_observer=None
+ if args.core_reader:
+  from admin_core_observer import CoreObserver
+  core_observer=CoreObserver()
  # Hold the lease for the process lifetime. A second publisher must never overwrite these source-keyed rows.
  with private_lock(args.config,timeout=0,suffix='.publisher.lock'):
   config=read_private_json(args.config,limit=65536)
@@ -131,7 +141,7 @@ def main():
    if not isinstance(value,str) or not low<=len(value)<=high or '\n' in value or '\r' in value:raise EventStoreError('Invalid publisher configuration')
   while True:
    try:
-    reports=snapshot(args.task_events);publish(config,reports)
+    reports=snapshot(args.task_events,core_observer);publish(config,reports)
     print(json.dumps({'reportedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'jobs':{r['source']:len(r['jobs']) for r in reports},'eventStore':TASK_EVENT_HEALTH}),flush=True)
    except Exception as error:
     print(json.dumps({'reporting':'offline','error':str(error)}),flush=True)

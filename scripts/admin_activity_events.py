@@ -18,8 +18,8 @@ MAX_TASKS = 100
 TERMINAL_KEEP = 20
 TERMINAL_DAYS = 7
 MAX_ARCHIVE_BYTES = 16 * 1024 * 1024
-STATES = {'running', 'waiting', 'needs_you', 'done', 'failed', 'unknown', 'idle', 'blocked'}
-TERMINAL = {'done', 'failed'}
+STATES = {'running', 'waiting', 'needs_you', 'done', 'failed', 'unknown', 'idle', 'blocked', 'cancelled'}
+TERMINAL = {'done', 'failed', 'cancelled'}
 SOURCES = {'website', 'research', 'video'}
 
 class EventStoreError(ValueError):
@@ -83,7 +83,7 @@ def normalize_event(value, stored=False):
         raise EventStoreError('Invalid worker kind')
     result = {key: value[key] for key in ('id', 'name', 'task', 'provenance', 'source', 'status', 'observedAt')}
     result.update(kind=kind, origin='guarded-process' if value.get('origin') == 'guarded-process' and kind == 'job' else 'producer-task-event')
-    for key in ('teamId', 'departmentId', 'parentId'):
+    for key in ('teamId', 'departmentId', 'parentId', 'roleId', 'executionId', 'sourceRuntime', 'epoch', 'originEventId'):
         if key in value:
             if not text(value[key], 200):
                 raise EventStoreError('Invalid assignment or parent')
@@ -99,6 +99,29 @@ def normalize_event(value, stored=False):
         result['elapsedSeconds'] = val
     if text(value.get('model'), 100) and text(value.get('modelProvenance'), 240):
         result.update(model=value['model'], modelProvenance=value['modelProvenance'])
+    for key in ('stateChangedAt', 'heartbeatAt'):
+        if key in value:
+            timestamp(value[key])
+            result[key] = value[key]
+    if text(value.get('assignment'), 240):
+        result['assignment'] = value['assignment']
+    if value.get('placement') == 'unassigned':
+        result['placement'] = 'unassigned'
+    if value.get('entityKind') in {'worker_process', 'codex_subagent', 'operator_operation'}:
+        result['entityKind'] = value['entityKind']
+    for field in ('runtimeModel', 'requestedModel'):
+        item = value.get(field)
+        if isinstance(item, dict) and text(item.get('model'), 100) and text(item.get('provenance'), 240):
+            timestamp(item.get('observedAt'))
+            if field == 'runtimeModel' and (not result.get('executionId') or (item.get('executionId') != result['executionId'] or item.get('appliesTo') == 'next-turn')):
+                raise EventStoreError('Effective model observation must match the actual execution identity')
+            model = {key: item[key] for key in ('model', 'provenance', 'observedAt')}
+            if text(item.get('reasoningEffort'), 30):
+                model['reasoningEffort'] = item['reasoningEffort']
+            if text(item.get('executionId'), 200):
+                model['executionId'] = item['executionId']
+            model['appliesTo'] = item.get('appliesTo') if item.get('appliesTo') in {'configuration', 'current-turn', 'next-turn'} else 'configuration'
+            result[field] = model
     usage = paid_usage(value.get('paidUsage'))
     if usage:
         result['paidUsage'] = usage

@@ -13,7 +13,7 @@ user={id:'test',user_metadata:{role:'admin'}};assert.equal((await auth.adminSess
 role='admin';assert.equal((await auth.adminSession()).isAdmin,true);passed.push('Database membership grants admin');
 roleError={message:'unavailable'};assert.equal((await auth.adminSession()).isAdmin,false);passed.push('Role lookup failure denies access');
 let current={user:null,isAdmin:false},storageError=false;
-const route=await compile('src/app/api/admin/activity/route.js',{'next/server':{NextResponse:{json:(body,options)=>Response.json(body,options)}},'@/lib/auth/admin':{adminSession:async()=>current},'@/lib/admin/organization':{organization:{version:1,nodes:[]}}});
+const route=await compile('src/app/api/admin/activity/route.js',{'next/server':{NextResponse:{json:(body,options)=>Response.json(body,options)}},'@/lib/auth/admin':{adminSession:async()=>current},'@/lib/admin/organization':{organizationForSources:()=>({version:1,nodes:[]})}});
 for(const c of [{user:null,isAdmin:false,status:401},{user:{id:'ordinary'},isAdmin:false,status:403},{user:{id:'owner'},isAdmin:true,status:200}]){
 current={...c,client:{from:()=>({select:()=>({order:async()=>({data:[],error:storageError?{}:null})})})}};
 const response=await route.GET();assert.equal(response.status,c.status);assert.equal('organization' in await response.json(),c.status===200);assert.equal(response.headers.get('cache-control'),'private, no-store');passed.push('Activity endpoint '+c.status);

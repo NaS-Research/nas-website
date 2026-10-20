@@ -71,6 +71,21 @@ class EventTests(unittest.TestCase):
         self.assertEqual(events.paid_usage({**usage,'kind':'estimate','basis':'Provided price times observed units'})['kind'],'estimate')
         self.assertEqual(events.paid_usage({**usage,'scope':'inclusive'})['scope'],'unconfirmed')
 
+    def test_execution_model_observations(self):
+        actual={'model':'GPT-6.1 Sol','reasoningEffort':'High','executionId':'turn:actual','observedAt':events.stamp(),'provenance':'Verified actual execution','secret':'never-forward'}
+        request={**actual,'reasoningEffort':'Ultra','appliesTo':'next-turn'}
+        events.write_event(self.path,entry('runtime',roleId='role:video:qa',executionId='turn:actual',runtimeModel=actual,requestedModel=request,sourceRuntime='codex',epoch='epoch',originEventId='event:1'))
+        record=events.read_events(self.path)[0]
+        self.assertEqual(record['runtimeModel']['reasoningEffort'],'High')
+        self.assertEqual(record['requestedModel']['appliesTo'],'next-turn')
+        self.assertEqual(record['originEventId'],'event:1')
+        self.assertNotIn('secret',str(record))
+        for bad in [{**actual,'executionId':'other'}, {**actual,'appliesTo':'next-turn'}, {**actual,'observedAt':'bad'}]:
+            with self.assertRaises(events.EventStoreError):
+                events.write_event(self.path,entry('bad',executionId='turn:actual',runtimeModel=bad))
+        events.write_event(self.path,entry('cancelled',status='cancelled'))
+        self.assertEqual(events.read_events(self.path)[1]['status'],'cancelled')
+
     def test_invalid_core_and_paths(self):
         for change in [{'source':'invented'},{'status':'imagined'},{'id':'wrong'},
                        {'kind':'supervisor'},{'name':'x'*141},{'observedAt':'not-a-time'},
