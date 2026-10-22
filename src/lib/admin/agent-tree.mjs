@@ -107,7 +107,7 @@ export function activityNodes(rows,now=Date.now()){
     reportedRuntimeParentId:job.parentId!==undefined&&job.parentId!==null&&['string','number'].includes(typeof job.parentId)&&String(job.parentId).length<=200&&String(job.parentId)!==String(job.id)?String(row.device)+':'+String(job.parentId):null,
     name:String(job.name||'Unnamed worker').slice(0,140),task:String(job.task||'Task not reported').slice(0,240),
     model:typeof job.model==='string'&&job.model.trim()&&job.model.length<=100&&typeof job.modelProvenance==='string'&&job.modelProvenance.trim()&&job.modelProvenance.length<=240?job.model:null,
-    modelProvenance:typeof job.modelProvenance==='string'?job.modelProvenance.slice(0,240):null,kind:['agent','person'].includes(job.kind)?job.kind:'job',
+    modelProvenance:typeof job.modelProvenance==='string'?job.modelProvenance.slice(0,240):null,kind:['operator_operation','tool_job'].includes(job.entityKind)?'job':['agent','person'].includes(job.kind)?job.kind:'job',
     source:row.source,device:row.device,status,reportedStatus:['running','done','failed','waiting','needs_you','idle','blocked','cancelled'].includes(reported)?reported:reported==='unknown'&&['running','done','failed','waiting','needs_you','idle','blocked','cancelled'].includes(job.lastKnownStatus)?job.lastKnownStatus:null,blocker:blockerMetadata(job.blocker),
     reviewScope:job.sourceRuntime==='nas-core'&&job.entityKind==='operator_operation'?'persisted':'current',
     projectId:typeof job.projectId==='string'?job.projectId.slice(0,200):null,projectName:typeof job.projectName==='string'?job.projectName.slice(0,240):null,
@@ -182,7 +182,7 @@ export function departmentTree(registry,jobs,rows=[],now=Date.now()){
   // Transport freshness never establishes that workers are active or idle.
   if(node.kind==='organization')node.task='Departments and teams';
   if(node.connected===false)node.status='unconnected';
-  if(node.kind==='role'){node.status=node.configuration==='deterministic'?'deterministic':node.configuration==='configured'?'configured':'inactive';node.task=node.configuration==='deterministic'?'Deterministic routing · execution observed separately':node.configuration==='configured'?'Configured enabled · execution observed separately':'Planned · configured inactive';}
+  if(node.kind==='role'){node.status=node.configuration==='deterministic'?'deterministic':node.configuration==='configured'?'configured':node.configuration==='planned'?'planned':'inactive';node.task=node.responsibility||(node.configuration==='deterministic'?'Deterministic routing · execution observed separately':node.configuration==='configured'?'Configured enabled · execution observed separately':'Planned · configured inactive');}
  }
  return [...structure,...placed];
 }

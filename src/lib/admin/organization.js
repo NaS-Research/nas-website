@@ -2,7 +2,7 @@ import 'server-only';
 // Organization names are already public on /about. No employee or agent roster is embedded.
 // The owner explicitly places both Learn content and Video under NaS Institute.
 export const organization = {
- version: 2,
+ version: 3,
  nodes: [
   {id:'org:nas',parentId:null,kind:'organization',name:'NaS',task:'Departments and teams'},
   {id:'dept:corporate',parentId:'org:nas',kind:'department',name:'Corporate',task:'Corporate oversight'},
@@ -20,11 +20,43 @@ export const organization = {
  coverageNote:'Canonical roles are distinct from execution instances. Local runtime observations poll every 20 seconds; this page polls every 10 seconds. Nonterminal observations expire after 90 seconds. Codex collaboration and effective model coverage remain incomplete.'
 };
 
-// Generic role labels/mappings only. Actual role records are supplied by the private,
-// authenticated runtime snapshot after admin authorization, never a public roster file.
-const roleNames={'scientific-research':'Scientific Research',scripting:'Scripting','visual-production':'Visual Production',narration:'Narration',editing:'Editing',qa:'QA',publishing:'Publishing'};
+// Owner-requested reporting structure. Server-only planning data, returned only after
+// admin authorization. Profiles do not configure a worker or prove model transport.
+const roleNames={'scientific-research':'Research',scripting:'Script','visual-production':'Visual Production Supervisor',narration:'Narration',editing:'Editing',qa:'Final QA',publishing:'Publishing'};
+const role = (id,name,parentId,reportsToId,effort,responsibility,extra={}) => ({
+ id,name,parentId,reportsToId,kind:'role',configuration:'planned',task:responsibility,
+ responsibility,planProvenance:'Owner-requested video hierarchy and model profiles',
+ plannedProfile:{model:'gpt-6.1-sol',reasoningEffort:effort,state:'requested',effective:false},...extra
+});
+export const videoRolePlan = [
+ role('role:company-director','NaS Research Director','dept:corporate',null,'high','Overall Research direction and Institute oversight'),
+ role('role:institute-lead','Institute Lead','dept:institute','role:company-director','high','Supervise Institute teams and delivery'),
+ role('role:video-supervisor','Video Director','team:video','role:institute-lead','high','Direct video delivery and review stage handoffs'),
+ role('role:video:scientific-research','Research','role:video-supervisor','role:video-supervisor','high','Verify accuracy and deliver the science brief before Script'),
+ role('role:video:scripting','Script','role:video-supervisor','role:video-supervisor','medium','Write the script from the reviewed science brief'),
+ role('role:video:visual-production','Visual Production Supervisor','role:video-supervisor','role:video-supervisor','high','Supervise visual assets, scene design and animation'),
+ role('role:video:asset-library','Asset and Scene Library Artist','role:video:visual-production','role:video:visual-production','medium','Create and curate reusable assets and scenes',{requestedSchedule:'24/7 requested; not activated'}),
+ role('role:video:scene-animation','Scene Animation Artist','role:video:visual-production','role:video:visual-production','medium','Animate approved scenes for the script'),
+ role('role:video:narration','Narration','role:video-supervisor','role:video-supervisor','medium','Prepare narration from the approved script'),
+ role('role:video:editing','Editing','role:video-supervisor','role:video-supervisor','medium','Assemble approved scenes and narration'),
+ role('role:video:qa','Final QA','role:video-supervisor','role:video-supervisor','high','Review scientific accuracy, audiovisual quality and release readiness'),
+ role('role:video:publishing','Publishing','role:video-supervisor','role:video-supervisor','medium','Prepare the release after Final QA and owner authorization')
+];
+export const videoWorkflow = {
+ state:'planned',provenance:'Owner-requested workflow; no runtime or service activation',
+ library:{referencePath:'/Volumes/AGNDJ 6TB/NaS-Media-Library',state:'Owner reports workspace created; collector not connected'},
+ stages:[
+  {id:'science-brief',name:'Science brief',roleIds:['role:video:scientific-research'],requires:[],output:'Reviewed science brief before script writing'},
+  {id:'script',name:'Script',roleIds:['role:video:scripting'],requires:['science-brief'],output:'Approved script for visuals and narration'},
+  {id:'visuals',name:'Visual production',roleIds:['role:video:visual-production','role:video:asset-library','role:video:scene-animation'],requires:['script'],output:'Approved reusable assets and animated scenes'},
+  {id:'narration',name:'Narration',roleIds:['role:video:narration'],requires:['script'],output:'Approved narration; may proceed alongside visual production'},
+  {id:'editing',name:'Editing',roleIds:['role:video:editing'],requires:['visuals','narration'],output:'Assembled video'},
+  {id:'final-qa',name:'Final QA',roleIds:['role:video:qa'],requires:['editing'],output:'Scientific and audiovisual review'},
+  {id:'publishing',name:'Publishing',roleIds:['role:video:publishing'],requires:['final-qa'],output:'Owner-authorized release; no automatic publishing'}
+ ]
+};
 export function organizationForSources(sources=[],privateConfig=process.env.NAS_ADMIN_ORGANIZATION_JSON){
- const privateData=privateStructure(privateConfig),records=new Map();
+ const privateData=privateStructure(privateConfig),records=new Map(videoRolePlan.map(node=>[node.id,{...node,plannedProfile:{...node.plannedProfile}}]));
  // Saved configuration survives an unavailable runtime transport. Newer verified reads win.
  for(const row of [{payload:{runtime:{sourceRuntime:'nas-core',roleConfigurations:privateData.roleConfigurations||[]}}},...(sources||[])]){
   const runtime=row.payload?.runtime;
@@ -32,18 +64,18 @@ export function organizationForSources(sources=[],privateConfig=process.env.NAS_
   for(const record of runtime.roleConfigurations.slice(0,20)){
    if(typeof record?.id!=='string'||typeof record.configuredActive!=='boolean'||!Number.isFinite(Date.parse(record.observedAt)))continue;
    let name,parentId,configuration=record.configuredActive?'configured':'inactive';
-   if(record.id==='role:company-director'&&record.registryId==='company-director'){name='Company director';parentId='dept:corporate';if(record.configuredActive)configuration='deterministic';}
-   else if(record.id==='role:institute-lead'&&record.registryId==='institute-lead'){name='Institute lead';parentId='dept:institute';}
-   else if(record.id==='role:video-supervisor'&&record.registryId==='department-director'){name='Video supervisor';parentId='team:video';if(record.configuredActive)configuration='deterministic';}
+   if(record.id==='role:company-director'&&record.registryId==='company-director'){name='NaS Research Director';parentId='dept:corporate';if(record.configuredActive)configuration='deterministic';}
+   else if(record.id==='role:institute-lead'&&record.registryId==='institute-lead'){name='Institute Lead';parentId='dept:institute';}
+   else if(record.id==='role:video-supervisor'&&record.registryId==='department-director'){name='Video Director';parentId='team:video';if(record.configuredActive)configuration='deterministic';}
    else{if(!record.id.startsWith('role:video:'))continue;const key=record.id.replace(/^role:video:/,'');if(!roleNames[key]||record.registryId!=='future-'+key)continue;name=roleNames[key];parentId='role:video-supervisor';}
-   const node={id:record.id,parentId,kind:'role',name,configuration,registryId:record.registryId,configurationObservedAt:record.observedAt,configurationProvenance:record.provenance||'Core /registry via existing observer reader',task:configuration==='deterministic'?'Deterministic routing · execution observed separately':configuration==='configured'?'Configured enabled · execution observed separately':'Planned · configured inactive'};
-   if(!records.has(node.id)||Date.parse(records.get(node.id).configurationObservedAt)<Date.parse(node.configurationObservedAt))records.set(node.id,node);
+   const node={...records.get(record.id),id:record.id,parentId,kind:'role',name,configuration,registryId:record.registryId,configurationObservedAt:record.observedAt,configurationProvenance:record.provenance||'Core /registry via existing observer reader',task:configuration==='deterministic'?'Deterministic routing · execution observed separately':configuration==='configured'?'Configured enabled · execution observed separately':'Planned · configured inactive'};
+   if(!records.get(node.id)?.configurationObservedAt||Date.parse(records.get(node.id).configurationObservedAt)<Date.parse(node.configurationObservedAt))records.set(node.id,node);
   }
  }
  // A missing parent never promotes a role to an invented organizational placement.
- const order=['role:company-director','role:institute-lead','role:video-supervisor',...Object.keys(roleNames).map(key=>'role:video:'+key)];
+ const order=videoRolePlan.map(node=>node.id);
  const nodes=[...organization.nodes,...[...records.values()].sort((a,b)=>order.indexOf(a.id)-order.indexOf(b.id))],ids=new Set(nodes.map(node=>node.id));
- return {...organization,nodes:[...nodes.filter(node=>!node.parentId||ids.has(node.parentId)),...privateData.nodes],taskReferences:privateData.taskReferences,privateConfigurationState:privateData.state};
+ return {...organization,videoWorkflow,nodes:[...nodes.filter(node=>!node.parentId||ids.has(node.parentId)),...privateData.nodes],taskReferences:privateData.taskReferences,privateConfigurationState:privateData.state};
 }
 
 // Private approved structure is deployment configuration, never a public repository roster.
@@ -53,7 +85,7 @@ export function privateStructure(raw){
  if(!raw)return empty('not_configured');
  try{
   if(typeof raw!=='string'||Buffer.byteLength(raw,'utf8')>16000)throw Error();
-  const data=JSON.parse(raw),baseIds=new Set(organization.nodes.map(node=>node.id));
+  const data=JSON.parse(raw),baseIds=new Set([...organization.nodes,...videoRolePlan].map(node=>node.id));
   const validText=(value,max)=>typeof value==='string'&&value.trim().length>0&&value.length<=max&&!/[\u0000-\u001f]/.test(value);
   const validId=value=>validText(value,100)&&/^[a-z0-9][a-z0-9:_-]*$/.test(value);
   if(data.version!==1||!Array.isArray(data.nodes)||!data.nodes.length||data.nodes.length>20||!Array.isArray(data.taskReferences)||data.taskReferences.length>20)throw Error();

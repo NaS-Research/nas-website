@@ -3,14 +3,41 @@ const root=process.cwd(),req=Module.createRequire(root+'/package.json');
 (async()=>{
  const model=await import(pathToFileURL(root+'/src/lib/admin/agent-tree.mjs')),swc=req('next/dist/build/swc');await swc.loadBindings();
  async function compile(name,mocks={}){const file=root+'/'+name;const{code}=await swc.transform(fs.readFileSync(file,'utf8'),{filename:file,jsc:{parser:{syntax:'ecmascript',jsx:true},transform:{react:{runtime:'automatic'}}},module:{type:'commonjs'}});const m=new Module(file+'.qa.cjs');m.require=id=>Object.hasOwn(mocks,id)?mocks[id]:req(id);m._compile(code,file+'.qa.cjs');return m.exports;}
- const registryModule=await compile('src/lib/admin/organization.js',{'server-only':{}}),expected=['Scientific Research','Scripting','Visual Production','Narration','Editing','QA','Publishing'];
+ const registryModule=await compile('src/lib/admin/organization.js',{'server-only':{}}),expected=['Research','Script','Visual Production Supervisor','Asset and Scene Library Artist','Scene Animation Artist','Narration','Editing','Final QA','Publishing'];
  const configurationTime=new Date().toISOString(),configurationRows=[{payload:{runtime:{sourceRuntime:'nas-core',roleConfigurations:[{id:'role:institute-lead',registryId:'institute-lead',configuredActive:false,observedAt:configurationTime},{id:'role:video-supervisor',registryId:'department-director',configuredActive:true,observedAt:configurationTime},...Object.entries({'scientific-research':'Scientific Research',scripting:'Scripting','visual-production':'Visual Production',narration:'Narration',editing:'Editing',qa:'QA',publishing:'Publishing'}).map(([key])=>({id:'role:video:'+key,registryId:'future-'+key,configuredActive:false,observedAt:configurationTime}))]}}}];
  const organization=registryModule.organizationForSources(configurationRows);
  const reversed=structuredClone(configurationRows);reversed[0].payload.runtime.roleConfigurations.reverse();assert.deepEqual(registryModule.organizationForSources(reversed).nodes.filter(n=>n.id.startsWith('role:video:')).map(n=>n.name),expected);
  assert.equal(registryModule.organization.nodes.filter(n=>n.kind==='role').length,0);
- assert.equal(registryModule.organizationForSources([]).nodes.filter(n=>n.kind==='role').length,0);
- assert.equal(registryModule.organizationForSources([{payload:{runtime:{sourceRuntime:'wrong',roleConfigurations:configurationRows[0].payload.runtime.roleConfigurations}}}]).nodes.filter(n=>n.kind==='role').length,0);
+ assert.equal(registryModule.organizationForSources([]).nodes.filter(n=>n.kind==='role'&&n.configuration==='planned').length,12);
+ assert.equal(registryModule.organizationForSources([{payload:{runtime:{sourceRuntime:'wrong',roleConfigurations:configurationRows[0].payload.runtime.roleConfigurations}}}]).nodes.filter(n=>n.kind==='role'&&n.configuration==='planned').length,12);
  assert.deepEqual(organization.nodes.filter(n=>n.id.startsWith('role:video:')).map(n=>n.name),expected);
+ const plans=registryModule.organizationForSources([],'');
+ const plannedRoles=plans.nodes.filter(n=>n.kind==='role');
+ assert.equal(plannedRoles.length,12);assert.ok(plannedRoles.every(n=>n.plannedProfile.model==='gpt-6.1-sol'&&n.plannedProfile.effective===false&&n.configuration==='planned'));
+ const planned=id=>plannedRoles.find(n=>n.id===id);
+ assert.equal(planned('role:company-director').reportsToId,null);
+ assert.equal(planned('role:institute-lead').reportsToId,'role:company-director');
+ assert.equal(planned('role:video-supervisor').reportsToId,'role:institute-lead');
+ for(const id of ['asset-library','scene-animation']){
+  assert.equal(planned('role:video:'+id).parentId,'role:video:visual-production');
+  assert.equal(planned('role:video:'+id).reportsToId,'role:video:visual-production');
+  assert.equal(planned('role:video:'+id).plannedProfile.reasoningEffort,'medium');
+ }
+ assert.equal(planned('role:video:visual-production').plannedProfile.reasoningEffort,'high');
+ assert.equal(planned('role:video:scientific-research').plannedProfile.reasoningEffort,'high');
+ assert.equal(planned('role:video:qa').plannedProfile.reasoningEffort,'high');
+ for(const id of ['scripting','narration','editing','publishing'])assert.equal(planned('role:video:'+id).plannedProfile.reasoningEffort,'medium');
+ assert.match(planned('role:video:asset-library').requestedSchedule,/24\/7 requested; not activated/);
+ const stages=plans.videoWorkflow.stages;
+ assert.deepEqual(stages.find(s=>s.id==='script').requires,['science-brief']);
+ assert.deepEqual(stages.find(s=>s.id==='editing').requires,['visuals','narration']);
+ assert.deepEqual(stages.find(s=>s.id==='publishing').requires,['final-qa']);
+ const seen=new Set();for(const stage of stages){assert.ok(stage.requires.every(id=>seen.has(id)));seen.add(stage.id);assert.ok(stage.roleIds.every(id=>planned(id)));}
+ assert.deepEqual(plans.nodes.filter(n=>n.kind!=='role'),registryModule.organization.nodes,'unrelated department/team structure unchanged');
+ assert.ok(model.departmentTree(plans,[],[],Date.now()).filter(n=>n.kind==='role').every(n=>n.status==='planned'&&n.runningCount===0&&n.observedWorkerCount===0));
+ const operations=Array.from({length:8},(_,i)=>({id:'stage'+i,kind:'agent',entityKind:'operator_operation',status:'done'}));
+ assert.ok(model.activityNodes([{source:'video',device:'fixture',received_at:new Date().toISOString(),payload:{jobs:operations}}]).every(n=>n.kind==='job'));
+ console.log('PASS: requested reporting chain, 12 plans, high/medium profiles, visual creators, gated science-to-release workflow, eight stage jobs never staff, unrelated departments preserved');
  const now=Date.now(),stamp=new Date(now).toISOString(),effective={model:'GPT-6.1 Sol',reasoningEffort:'High',provenance:'Verified execution notification',observedAt:stamp,executionId:'turn:actual'};
  const rows=[{source:'video',device:'proof',received_at:stamp,payload:{jobs:[{id:'instance',name:'Episode-specific temporary agent',assignment:'Episode 035',task:'Actual review',kind:'agent',status:'running',observedAt:stamp,roleId:'role:video:qa',executionId:'turn:actual',runtimeModel:effective,requestedModel:{...effective,model:'GPT-6.1 Sol',reasoningEffort:'Ultra',appliesTo:'next-turn'}},{id:'attention-job',name:'Persisted attention task',kind:'job',teamId:'team:video',status:'needs_you',observedAt:stamp},{id:'worker',name:'Company worker',kind:'job',placement:'unassigned',status:'idle',observedAt:stamp}]}}];
  const jobs=model.activityNodes(rows,now),nodes=model.departmentTree(organization,jobs,rows,now),graph=model.layoutTree(nodes.filter(n=>n.structural));
@@ -35,12 +62,24 @@ const root=process.cwd(),req=Module.createRequire(root+'/package.json');
  render();render();render();const diagram=walk(tree,n=>n.props?.className==='agent-tree-canvas');assert.equal(walk(diagram,n=>['tree-freshness','tree-explore-hint','agent-tree-bar','agent-tree-controls'].includes(n.props?.className)),null);assert.ok(walk(tree,n=>n.props?.className==='agent-tree-meta'));assert.ok(walk(tree,n=>n.props?.['aria-label']==='Collapse NaS Institute'),'Configured hierarchy starts expanded');
  for(const label of expected)assert.ok(walk(tree,n=>n.type==='h3'&&n.props.children===label),'Rendered canonical role: '+label);
  assert.equal(walk(tree,n=>n.type==='h3'&&n.props.children==='Episode-specific temporary agent'),null);
- walk(tree,n=>n.props?.['aria-label']==='Inspect QA').props.onClick();render();
+ walk(tree,n=>n.props?.['aria-label']==='Inspect Final QA').props.onClick();render();
  const React=req('react'),{renderToStaticMarkup}=req('react-dom/server'),html=renderToStaticMarkup(tree);
  assert.match(html,/Episode 035/);assert.match(html,/GPT-6.1 Sol · High/);assert.match(html,/Pending next turn/);assert.match(html,/Ultra/);assert.match(html,/turn:actual/);assert.match(html,/Verified execution notification/);
  assert.match(html,/work observations require attention/);assert.match(html,/Total workers: unavailable/);assert.match(html,/Observed 1 · Active 1/);
- assert.match(html,/Configured inactive|Planned · configured inactive/);assert.ok(!/h3>Episode-specific/.test(html));
+ assert.match(html,/Planned role · inactive/);assert.ok(!/h3>Episode-specific/.test(html));
+ assert.match(html,/Video hierarchy &amp; workflow/);assert.match(html,/Reporting hierarchy/);assert.match(html,/Workflow gates/);
+ assert.match(html,/24\/7 requested; not activated/);assert.match(html,/Requested profile: gpt-6.1-sol/);assert.match(html,/runtime parent-child launches/);
+ assert.match(html,/NaS-Media-Library/);assert.match(html,/Technical fixtures/);assert.match(html,/effective model and reasoning require a verified execution observation/);
  console.log('PASS: exact canonical role names rendered, episodes only in details, inactive configuration separate from real executions, unassigned process stays unassigned, model/effort provenance and matching execution, pending next turn, stale evidence, read-only drawer');
+
+ const planView=walk(tree,n=>typeof n.type==='function'&&n.type.name==='VideoWorkflow');
+ const planMarkup=planView.type(planView.props);
+ walk(planMarkup,n=>n.type==='button'&&n.props.children==='Asset and Scene Library Artist').props.onClick();render();
+ const artistHtml=renderToStaticMarkup(tree);
+ assert.match(artistHtml,/Asset and Scene Library Artist details/);assert.match(artistHtml,/gpt-6.1-sol · medium/);
+ assert.match(artistHtml,/Reports to: Visual Production Supervisor/);assert.match(artistHtml,/No execution observations assigned to this/);
+ assert.equal(nodes.find(n=>n.id==='role:video:asset-library').status,'planned');
+ console.log('PASS: hierarchy role selection opens the planned artist details with medium profile and no fabricated execution');
 
  const privateConfig={version:1,nodes:[
   {id:'fixture-portfolio',parentId:'org:nas',kind:'portfolio',name:'Atlas Portfolio',task:'Approved structure',connected:false,observedAt:stamp,provenance:'Owner approval'},
@@ -51,7 +90,7 @@ const root=process.cwd(),req=Module.createRequire(root+'/package.json');
  assert.equal(privateMapped.privateConfigurationState,'available');assert.equal(privateMapped.taskReferences.length,1);
  assert.equal(registryModule.organizationForSources([],'').taskReferences.length,0);
  assert.equal(registryModule.organization.nodes.some(n=>n.id==='fixture-company'),false);
- const malformed=[{}, {...privateConfig,nodes:[...privateConfig.nodes,privateConfig.nodes[0]]}, {...privateConfig,nodes:privateConfig.nodes.map(n=>({...n,connected:true}))}, {...privateConfig,nodes:privateConfig.nodes.map(n=>({...n,parentId:'missing'}))}, {...privateConfig,taskReferences:[{...privateConfig.taskReferences[0],projectId:'missing'}]}, {...privateConfig,taskReferences:[{...privateConfig.taskReferences[0],observedAt:'2999-01-01T00:00:00Z'}]}];
+ const malformed=[{}, {...privateConfig,nodes:[{...privateConfig.nodes[0],id:'role:company-director'}]}, {...privateConfig,nodes:[...privateConfig.nodes,privateConfig.nodes[0]]}, {...privateConfig,nodes:privateConfig.nodes.map(n=>({...n,connected:true}))}, {...privateConfig,nodes:privateConfig.nodes.map(n=>({...n,parentId:'missing'}))}, {...privateConfig,taskReferences:[{...privateConfig.taskReferences[0],projectId:'missing'}]}, {...privateConfig,taskReferences:[{...privateConfig.taskReferences[0],observedAt:'2999-01-01T00:00:00Z'}]}];
  for(const invalid of ['broken','x'.repeat(16001),...malformed.map(value=>JSON.stringify(value))])assert.deepEqual(registryModule.privateStructure(invalid),{nodes:[],taskReferences:[],state:'invalid'});
  const privateNodes=model.departmentTree(privateMapped,[],[],now),privateGraph=model.layoutTree(privateNodes);
  for(const id of ['fixture-portfolio','fixture-company','fixture-project']){const node=privateNodes.find(n=>n.id===id);assert.equal(node.status,'unconnected');assert.equal(node.runningCount,0);assert.equal(model.activitySummary(node),'Runtime not connected');}
@@ -64,15 +103,15 @@ const root=process.cwd(),req=Module.createRequire(root+'/package.json');
 
  const fallback={...privateConfig,roleSnapshot:{observedAt:stamp,provenance:'Verified saved registry configuration',states:{'company-director':true,'department-director':true,'institute-lead':false,...Object.fromEntries(Object.keys({'scientific-research':1,scripting:1,'visual-production':1,narration:1,editing:1,qa:1,publishing:1}).map(key=>['future-'+key,false]))}}};
  const saved=JSON.stringify(fallback),offlineRegistry=registryModule.organizationForSources([{payload:{runtime:{sourceRuntime:'nas-core',state:'unavailable',roleConfigurations:[]}}}],saved);
- const persistentRoles=offlineRegistry.nodes.filter(n=>n.kind==='role');assert.equal(persistentRoles.length,10);assert.equal(persistentRoles.filter(n=>n.configuration==='inactive').length,8);assert.equal(persistentRoles.filter(n=>n.configuration==='deterministic').length,2);
+ const persistentRoles=offlineRegistry.nodes.filter(n=>n.kind==='role');assert.equal(persistentRoles.length,12);assert.equal(persistentRoles.filter(n=>n.configuration==='inactive').length,8);assert.equal(persistentRoles.filter(n=>n.configuration==='deterministic').length,2);
  assert.deepEqual(offlineRegistry.nodes.filter(n=>n.id.startsWith('role:video:')).map(n=>n.name),expected);
  assert.equal(model.departmentTree(offlineRegistry,[],[],now).filter(n=>n.kind==='role'&&n.status==='running').length,0);
- assert.equal(registryModule.organizationForSources([],saved).nodes.filter(n=>n.kind==='role').length,10);
+ assert.equal(registryModule.organizationForSources([],saved).nodes.filter(n=>n.kind==='role').length,12);
  const newer={payload:{runtime:{sourceRuntime:'nas-core',roleConfigurations:[{id:'role:institute-lead',registryId:'institute-lead',configuredActive:true,observedAt:new Date(now+1000).toISOString()}]}}};
  assert.equal(registryModule.organizationForSources([newer],saved).nodes.find(n=>n.id==='role:institute-lead').configuration,'configured');
  const older={source:'video',device:'test',received_at:stamp,payload:{runtime:{sourceRuntime:'nas-core',state:'available',checkedAt:stamp,roleConfigurations:[{id:'role:institute-lead',registryId:'institute-lead',configuredActive:true,observedAt:new Date(now-1000).toISOString()}]}}};
  assert.equal(model.departmentTree(registryModule.organizationForSources([older],saved),[],[older],now).find(n=>n.id==='role:institute-lead').configuration,'inactive');
- activeOrganization=offlineRegistry;render();assert.ok(walk(tree,n=>n.type==='h3'&&n.props.children==='Company director'));for(const label of expected)assert.ok(walk(tree,n=>n.type==='h3'&&n.props.children===label));
- console.log('PASS: all ten verified permanent routing/planned roles remain visible without runtime metadata; eight inactive configurations, two deterministic routing roles, zero fabricated running instances; newer configuration overrides saved snapshot');
+ activeOrganization=offlineRegistry;render();assert.ok(walk(tree,n=>n.type==='h3'&&n.props.children==='NaS Research Director'));for(const label of expected)assert.ok(walk(tree,n=>n.type==='h3'&&n.props.children===label));
+ console.log('PASS: ten registry-backed roles and two owner-planned visual roles remain visible without runtime metadata; eight inactive configurations, two deterministic routing roles, zero fabricated running instances; planned profiles remain separate; newer configuration overrides saved snapshot');
 
 })().catch(e=>{console.error(e);process.exit(1)});
