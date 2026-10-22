@@ -5,6 +5,7 @@ import json
 import multiprocessing as mp
 import os
 import pathlib
+import queue
 import subprocess
 import sys
 import tempfile
@@ -23,13 +24,36 @@ def entry(identity, status='running', **extra):
             'task':'Validate private observations', 'status':status, 'observedAt':events.stamp(),
             'provenance':'Isolated unit-test observation', **extra}
 
-def concurrent_writer(path, worker, barrier, errors):
+def retry_busy(action, deadline, clock=time.monotonic, pause=time.sleep):
+    """Test caller backpressure, without changing the store's per-call deadline."""
+    retries = 0
+    while True:
+        if clock() >= deadline:
+            raise TimeoutError('Isolated event-store caller deadline exceeded')
+        try:
+            return action(), retries
+        except events.EventStoreError as error:
+            # Never retry validation, capacity, I/O or unexpected failures.
+            if type(error) is not events.EventStoreError or str(error) != 'Private event-store lock is busy':
+                raise
+            if clock() >= deadline:
+                raise
+            retries += 1
+            pause(.02)
+
+def concurrent_writer(path, worker, entries, barrier, results, deadline):
+    completed, retries, error = 0, 0, None
     try:
-        barrier.wait()
-        for i in range(6):
-            events.write_event(path, entry(str(worker)+'-'+str(i)))
-    except BaseException as error:
-        errors.put(type(error).__name__)
+        barrier.wait(timeout=10)
+        for observation in entries:
+            # Retry the exact observation: polling must not renew observedAt.
+            _, busy = retry_busy(lambda: events.write_event(path, observation), deadline)
+            retries += busy
+            completed += 1
+    except BaseException as failure:
+        error = {'type':type(failure).__name__, 'message':str(failure)}
+    finally:
+        results.put({'worker':worker, 'completed':completed, 'busyRetries':retries, 'error':error})
 
 def hold_lock(path, ready, release, suffix='.lock'):
     with events.private_lock(path, suffix=suffix):
@@ -175,23 +199,85 @@ class EventTests(unittest.TestCase):
                 events.write_event(self.path,entry('too-large'))
         self.assertEqual(self.path.read_bytes(),saved)
 
+    def test_busy_retry_is_bounded_and_preserves_failures(self):
+        observation = entry('frozen-observation')
+        seen = []
+        def transient():
+            seen.append(observation.copy())
+            if len(seen) == 1:
+                raise events.EventStoreError('Private event-store lock is busy')
+            return True
+        self.assertEqual(retry_busy(transient, 10, clock=lambda:0, pause=lambda _:None), (True, 1))
+        self.assertEqual(seen, [observation, observation])
+        for failure in [events.EventStoreError('Private JSON is invalid'), events.CapacityError('capacity'), OSError('I/O failed')]:
+            action = mock.Mock(side_effect=failure)
+            with self.assertRaises(type(failure)):
+                retry_busy(action, 10, clock=lambda:0, pause=lambda _:None)
+            self.assertEqual(action.call_count, 1)
+        action = mock.Mock(side_effect=events.EventStoreError('Private event-store lock is busy'))
+        ticks = iter([0, 11])
+        with self.assertRaisesRegex(events.EventStoreError, 'lock is busy'):
+            retry_busy(action, 10, clock=lambda:next(ticks), pause=lambda _:self.fail('No retry after deadline'))
+        self.assertEqual(action.call_count, 1)
+        with self.assertRaises(TimeoutError):
+            retry_busy(lambda:self.fail('No action after deadline'), 10, clock=lambda:11)
+
     def test_concurrent_writers_and_readers(self):
-        context=mp.get_context('fork')
-        barrier=context.Barrier(13)
-        errors=context.Queue()
-        children=[context.Process(target=concurrent_writer,args=(str(self.path),i,barrier,errors)) for i in range(12)]
-        for child in children:child.start()
-        barrier.wait()
-        while any(child.is_alive() for child in children):
-            if self.path.exists():
-                self.assertTrue(all(task['id'].startswith('task:') for task in events.read_events(self.path)))
-            time.sleep(.005)
-        for child in children:
-            child.join(5)
-            self.assertEqual(child.exitcode,0)
-        self.assertTrue(errors.empty())
-        self.assertEqual(len(events.read_events(self.path)),72)
-        self.assertEqual(len({task['id'] for task in events.read_events(self.path)}),72)
+        context = mp.get_context('fork')
+        barrier, results = context.Barrier(13), context.Queue()
+        observations = [[entry(str(worker)+'-'+str(i)) for i in range(6)] for worker in range(12)]
+        expected = {item['id']:item for batch in observations for item in batch}
+        deadline = time.monotonic() + 40
+        children = [context.Process(target=concurrent_writer,
+                    args=(str(self.path), worker, observations[worker], barrier, results, deadline))
+                    for worker in range(12)]
+        reports, snapshots, read_retries = [], 0, 0
+        try:
+            for child in children:
+                child.start()
+            barrier.wait(timeout=10)
+            while any(child.is_alive() for child in children):
+                self.assertLess(time.monotonic(), deadline, 'Concurrent fixture exceeded bounded completion deadline')
+                if self.path.exists():
+                    tasks, busy = retry_busy(lambda:events.read_events(self.path), deadline)
+                    read_retries += busy
+                    self.assertEqual(len(tasks), len({task['id'] for task in tasks}))
+                    for task in tasks:
+                        self.assertIn(task['id'], expected)
+                        self.assertEqual({k:v for k,v in task.items() if k!='writtenAt'},
+                                         events.normalize_event(expected[task['id']]))
+                    snapshots += 1
+                time.sleep(.005)
+            for child in children:
+                child.join(2)
+                self.assertEqual(child.exitcode, 0)
+            # Queue.empty() is not a reliable cross-process completion assertion.
+            for _ in children:
+                try:
+                    reports.append(results.get(timeout=2))
+                except queue.Empty:
+                    self.fail('Missing writer result')
+            self.assertEqual({r['worker'] for r in reports}, set(range(12)))
+            self.assertTrue(all(r['error'] is None for r in reports), reports)
+            self.assertTrue(all(r['completed']==6 for r in reports), reports)
+            self.assertGreater(snapshots, 0, 'Concurrent readers must inspect committed snapshots')
+            final = events.read_events(self.path)
+            self.assertEqual(len(final), 72)
+            self.assertEqual({task['id'] for task in final}, set(expected))
+            for task in final:
+                self.assertEqual({k:v for k,v in task.items() if k!='writtenAt'},
+                                 events.normalize_event(expected[task['id']]))
+            print(json.dumps({'concurrentWriters':12,'exactRecords':len(final),'readSnapshots':snapshots,'readerBusyRetries':read_retries,'writerBusyRetries':sum(r['busyRetries'] for r in reports)}), flush=True)
+        finally:
+            for child in children:
+                if child.pid is None:
+                    continue
+                if child.is_alive():
+                    child.terminate()
+                child.join(3)
+                if child.is_alive():
+                    child.kill(); child.join(3)
+            results.close(); results.join_thread()
 
     def test_lock_contention_and_publisher_lease(self):
         context=mp.get_context('fork')
