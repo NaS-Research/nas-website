@@ -27,6 +27,8 @@ with tempfile.TemporaryDirectory(prefix='isolated-video-observation-') as direct
  repeated=snapshot()
  assert store.stat().st_mode & 0o077 == 0
  result={'first':first,'replay':replay,'initial':initial,'repeated':repeated}
+ if request.get('observedTerminal'):
+  emit(request['observedTerminal']);result['terminal']=snapshot()
  if request['syntheticTransitions']:
   from datetime import timedelta
   later=(events.timestamp(observation['observedAt'])+timedelta(seconds=2)).isoformat()
@@ -40,8 +42,8 @@ with tempfile.TemporaryDirectory(prefix='isolated-video-observation-') as direct
   store.write_text('{invalid');result['unavailable']=snapshot()
  print(json.dumps(result))
 `;
-function collect(observation,syntheticTransitions=false){
- const result=spawnSync(python,['-B','-c',bridge],{cwd:root,input:JSON.stringify({observation,syntheticTransitions}),encoding:'utf8',timeout:30000,maxBuffer:1024*1024});
+function collect(observation,syntheticTransitions=false,observedTerminal=null){
+ const result=spawnSync(python,['-B','-c',bridge],{cwd:root,input:JSON.stringify({observation,syntheticTransitions,observedTerminal}),encoding:'utf8',timeout:30000,maxBuffer:1024*1024});
  assert.ifError(result.error);assert.equal(result.status,0,result.stderr);return JSON.parse(result.stdout);
 }
 (async()=>{
@@ -85,20 +87,31 @@ function collect(observation,syntheticTransitions=false){
   assert.equal(stale.find(n=>n.id==='team:video').activeWorkerCount,0);
   assert.equal(tree(result.initial,base+90001,base).find(n=>n.id===id).status,'offline');
   if(result.terminal){
-   const terminal=tree(result.terminal,base+180000).find(n=>n.id===id);
+   const terminalTime=Date.parse(event(result.terminal).observedAt);
+   const terminal=tree(result.terminal,terminalTime+180000).find(n=>n.id===id);
    assert.equal(terminal.status,'done');
+   assert.equal(terminal.executionId,observation.executionId);
+   assert.equal(result.terminal.find(r=>r.source==='video').jobs.length,1);
+  }
+  if(result.unavailable){
    const unknown=tree(result.unavailable,base+2000).find(n=>n.id===id);
    assert.equal(unknown.status,'unknown');
    assert.equal(unknown.observedAt,event(result.terminal).observedAt);
   }
-  const current=tree(result.initial,Date.now()).find(n=>n.id===id);
-  receipts.push({label,id:observation.id,executionId:observation.executionId,roleId:worker.roleId,observedAt:observation.observedAt,observedState:worker.status,stateAtTestTime:current.status,selectedModel:worker.requestedModel.model,selectedEffort:worker.requestedModel.reasoningEffort,effectiveModelVerified:false,continuousTransport:false});
+  const current=tree(result.terminal||result.initial,Date.now()).find(n=>n.id===id);
+  receipts.push({label,id:observation.id,executionId:observation.executionId,roleId:worker.roleId,initialObservedAt:observation.observedAt,initialObservedState:worker.status,latestObservedAt:current.observedAt,stateAtTestTime:current.status,selectedModel:worker.requestedModel.model,selectedEffort:worker.requestedModel.reasoningEffort,effectiveModelVerified:false,continuousTransport:false});
  }
  inspect(synthetic,collect(synthetic,true),'synthetic lifecycle acceptance');
  if(process.argv[2]){
-  const supplied=JSON.parse(fs.readFileSync(process.argv[2],'utf8'));
+  const input=JSON.parse(fs.readFileSync(process.argv[2],'utf8'));
+  const supplied=Array.isArray(input)?input[0]:input,terminal=Array.isArray(input)?input[1]:null;
+  if(Array.isArray(input))assert.equal(input.length,2);
   assert.equal(supplied.roleId,'role:video:asset-library');assert.equal(supplied.source,'video');assert.equal(supplied.status,'running');
-  inspect(supplied,collect(supplied),'dated parent observation; isolated store only');
+  if(terminal){
+   for(const key of ['id','executionId','source','roleId'])assert.equal(terminal[key],supplied[key]);
+   assert.equal(terminal.status,'done');assert.ok(Date.parse(terminal.observedAt)>Date.parse(supplied.observedAt));
+  }
+  inspect(supplied,collect(supplied,false,terminal),'dated parent observation; isolated store only');
  }
  fs.writeFileSync(path.join(process.env.NAS_OUTPUT_DIR,'video-task-integration.json'),JSON.stringify({passed:true,checkedAt:new Date().toISOString(),receipts},null,2),{mode:0o600});
  console.log('PASS: existing stdin event producer -> private isolated store -> collector -> one artist execution; selected model separate; replay preserves time; stale/offline/unknown/terminal states; unrelated source preserved; no new transport');
