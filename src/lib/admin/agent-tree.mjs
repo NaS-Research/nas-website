@@ -75,7 +75,9 @@ export function zoomView(view,factor,point){
 }
 export function sourceFresh(row,now=Date.now()){
  const age=now-Date.parse(row?.received_at);
- return Number.isFinite(age)&&age>=-30000&&age<=90000;
+ const captured=row?.payload?.telemetry?.capturedAt;
+ const captureAge=now-Date.parse(captured);
+ return Number.isFinite(age)&&age>=-30000&&age<=90000&&(captured===undefined||(Number.isFinite(captureAge)&&captureAge>=-30000&&captureAge<=90000));
 }
 export function modelObservation(value,executionId,now=Date.now(),effective=false){
  if(!value||typeof value.model!=='string'||!value.model.trim()||value.model.length>100||typeof value.provenance!=='string'||!value.provenance.trim()||value.provenance.length>240)return null;
@@ -102,10 +104,11 @@ export function activityNodes(rows,now=Date.now()){
    const observationStale=job.observedAt!==undefined&&!['done','failed','cancelled'].includes(reported)&&!sourceFresh({received_at:job.observedAt},now);
    const status=!sourceFresh(row,now)||observationStale?'offline':!observationKnown?'unknown':['running','done','failed','waiting','needs_you','idle','blocked','cancelled'].includes(reported)?reported:'unknown';
    nodes.set(id,{id,parentId:job.parentId!==undefined&&job.parentId!==null?String(row.device)+':'+String(job.parentId):null,
+    reportedRuntimeParentId:job.parentId!==undefined&&job.parentId!==null&&['string','number'].includes(typeof job.parentId)&&String(job.parentId).length<=200&&String(job.parentId)!==String(job.id)?String(row.device)+':'+String(job.parentId):null,
     name:String(job.name||'Unnamed worker').slice(0,140),task:String(job.task||'Task not reported').slice(0,240),
     model:typeof job.model==='string'&&job.model.trim()&&job.model.length<=100&&typeof job.modelProvenance==='string'&&job.modelProvenance.trim()&&job.modelProvenance.length<=240?job.model:null,
     modelProvenance:typeof job.modelProvenance==='string'?job.modelProvenance.slice(0,240):null,kind:['agent','person'].includes(job.kind)?job.kind:'job',
-    source:row.source,device:row.device,status,reportedStatus:['running','done','failed','waiting','needs_you','idle','blocked','cancelled'].includes(reported)?reported:null,blocker:blockerMetadata(job.blocker),
+    source:row.source,device:row.device,status,reportedStatus:['running','done','failed','waiting','needs_you','idle','blocked','cancelled'].includes(reported)?reported:reported==='unknown'&&['running','done','failed','waiting','needs_you','idle','blocked','cancelled'].includes(job.lastKnownStatus)?job.lastKnownStatus:null,blocker:blockerMetadata(job.blocker),
     reviewScope:job.sourceRuntime==='nas-core'&&job.entityKind==='operator_operation'?'persisted':'current',
     projectId:typeof job.projectId==='string'?job.projectId.slice(0,200):null,projectName:typeof job.projectName==='string'?job.projectName.slice(0,240):null,
     roleId:typeof job.roleId==='string'?job.roleId:null,assignment:typeof job.assignment==='string'?job.assignment.slice(0,240):null,placement:job.placement==='unassigned'?'unassigned':null,
@@ -141,7 +144,7 @@ export function departmentTree(registry,jobs,rows=[],now=Date.now()){
  const placed=jobs.map(job=>{
   const sameTeam=job.parentId&&containers.get(job.parentId)===containers.get(job.id);
   const historicalRecord=job.sourceRuntime==='nas-core'&&historicalProjects.has(job.projectId);
-  return {...job,historicalRecord,reviewScope:historicalRecord?'historical':job.reviewScope,runtimeParentId:job.parentId,parentId:sameTeam?job.parentId:containers.get(job.id),relationship:sameTeam?'runtime':'assignment'};
+  return {...job,historicalRecord,reviewScope:historicalRecord?'historical':job.reviewScope,runtimeParentId:job.reportedRuntimeParentId||job.parentId,parentId:sameTeam?job.parentId:containers.get(job.id),relationship:sameTeam?'runtime':'assignment'};
  });
  const all=new Map([...structure,...placed].map(node=>[node.id,node]));
  for(const job of placed){

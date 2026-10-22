@@ -62,7 +62,7 @@ def read_status(root=ROOT):
     folder=root/'status';info=folder.lstat()
     if not stat.S_ISDIR(info.st_mode) or info.st_uid!=os.getuid() or info.st_mode&0o077:raise ValueError('Status directory is not owner-private')
     directory=os.open(folder,os.O_RDONLY|os.O_DIRECTORY|os.O_NOFOLLOW|os.O_CLOEXEC)
-    try:fd=os.open('department-status.json',os.O_RDONLY|os.O_NOFOLLOW|os.O_CLOEXEC,dir_fd=directory)
+    try:fd=os.open('department-status.json',os.O_RDONLY|os.O_NONBLOCK|os.O_NOFOLLOW|os.O_CLOEXEC,dir_fd=directory)
     finally:os.close(directory)
     with os.fdopen(fd,'rb') as stream:
         info=os.fstat(stream.fileno())

@@ -1,26 +1,23 @@
 'use client';
 import {useEffect,useState} from 'react';
+import {startActivityPolling} from '@/lib/admin/activity-poller.mjs';
 import AgentTree from './AgentTree';
+import ConnectionStatus from './ConnectionStatus';
 export default function ActivityConsole(){
- const [data,setData]=useState(null),[error,setError]=useState(''),[now,setNow]=useState(Date.now()),[retry,setRetry]=useState(0),[loading,setLoading]=useState(true);
+ const [data,setData]=useState(null),[now,setNow]=useState(Date.now()),[retry,setRetry]=useState(0),[loading,setLoading]=useState(true),[connection,setConnection]=useState({state:'connecting',message:''});
  useEffect(()=>{
-  let stopped=false,controller;
-  async function update(){
-   controller?.abort();controller=new AbortController();
-   try{
-    const response=await fetch('/api/admin/activity',{cache:'no-store',signal:controller.signal});
-    if(response.status===401||response.status===403){if(!stopped)setData(null);}
-    if(!response.ok)throw Error(response.status===403?'Administrator access required.':response.status===401?'Session ended. Sign in again.':'Connection interrupted. Last report retained.');
-    const next=await response.json();
-    if(!stopped){setData(next);setError('');setNow(Date.now());}
-   }catch(e){if(!stopped&&e.name!=='AbortError')setError(e.message);}
-   finally{if(!stopped)setLoading(false);}
-  }
-  update();const timer=setInterval(update,10000),clock=setInterval(()=>setNow(Date.now()),5000);
-  return()=>{stopped=true;controller?.abort();clearInterval(timer);clearInterval(clock);};
+  const stop=startActivityPolling({
+   onSnapshot:next=>{setData(next);setNow(Date.now());},
+   onState:state=>{setConnection(previous=>({...previous,...state}));setLoading(false);setNow(Date.now());},
+   onAuthLost:()=>setData(null)
+  });
+  const clock=setInterval(()=>setNow(Date.now()),5000);
+  return()=>{stop();clearInterval(clock);};
  },[retry]);
+ const interrupted=connection.state!=='connected',error=connection.message;
  return <div className="activity-page">
-  <AgentTree sources={data?.sources||[]} organization={data?.organization} now={now} interrupted={!!error} loading={loading}/>
-  {error&&<div className="tree-notice" role="alert">{error}<button onClick={()=>{setLoading(true);setRetry(n=>n+1);}}>Retry</button><a href="/login">Sign in</a></div>}
+  <ConnectionStatus sources={data?.sources||[]} now={now} connection={connection}/>
+  <AgentTree sources={data?.sources||[]} organization={data?.organization} now={now} interrupted={interrupted} loading={loading}/>
+  {error&&<div className="tree-notice" role="alert">{error}<button onClick={()=>{setLoading(true);setConnection(previous=>({...previous,state:'connecting',message:''}));setRetry(n=>n+1);}}>Retry</button>{connection.state==='unauthorized'&&<a href="/login">Sign in</a>}</div>}
  </div>;
 }

@@ -17,7 +17,7 @@ assert result['video'][0]['name']=='brain-render'
 assert result['website'][0]['elapsedSeconds']==83
 assert result['research'][1]['elapsedSeconds']==90123
 assert 'never-report-this' not in str(result)
-assert all(set(job)=={'id','name','workflow','elapsedSeconds','parentId','kind','status'} for jobs in result.values() for job in jobs)
+assert all(set(job)=={'id','name','workflow','elapsedSeconds','parentId','kind','status','observedAt','provenance'} for jobs in result.values() for job in jobs)
 print('PASS: spaced paths, all three workflows, elapsed time, monitor exclusion and no command/token disclosure')
 
 assert result['research'][0]['parentId']=='100'

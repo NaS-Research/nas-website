@@ -32,7 +32,7 @@ class NoRedirect(urllib.request.HTTPRedirectHandler):
         return None
 
 def reader_token():
-    fd = os.open(CREDENTIALS, os.O_RDONLY | os.O_NOFOLLOW | os.O_CLOEXEC)
+    fd = os.open(CREDENTIALS, os.O_RDONLY | os.O_NONBLOCK | os.O_NOFOLLOW | os.O_CLOEXEC)
     with os.fdopen(fd, 'rb') as source:
         info=os.fstat(source.fileno())
         if not stat.S_ISREG(info.st_mode) or info.st_uid!=os.getuid() or info.st_mode & 0o077 or info.st_nlink!=1:
@@ -98,7 +98,7 @@ class CoreObserver:
                     continue
                 agent=agents.get(task.get('agent_id'),{})
                 status_name=task.get('status')
-                state={'succeeded':'done','failed':'failed','cancelled':'cancelled','needs_review':'needs_you','queued':'waiting'}.get(status_name,'unknown')
+                state={'succeeded':'done','failed':'failed','cancelled':'cancelled','needs_review':'needs_you','blocked':'blocked','queued':'waiting'}.get(status_name,'unknown')
                 if status_name=='running':
                     heartbeat=next((w.get('heartbeat_at') for w in workers if w.get('id')==task.get('worker_id') and w.get('task_id')==task['id'] and w.get('state')=='busy'),None)
                     lease=task.get('lease_expires_at')
@@ -138,4 +138,4 @@ class CoreObserver:
         except Exception as error:
             # Retain original event timestamps; an unsuccessful poll never renews evidence.
             metadata={**self.metadata,'state':'unavailable','checkedAt':checked,'errorType':type(error).__name__}
-            return [{**event,'status':'unknown'} for event in self.cached],metadata
+            return [{**event,'lastKnownStatus':event['status'],'status':'unknown'} for event in self.cached],metadata

@@ -1,5 +1,8 @@
 """Read-only activity reporter. Never launches, stops, or resumes production work."""
-import argparse,datetime,json,os,pathlib,re,shlex,subprocess,time
+import argparse,datetime,json,os,pathlib,re,shlex,subprocess,time,uuid
+PUBLISHER_SESSION = str(uuid.uuid4())
+PROCESS_HEALTH = {"state":"unavailable"}
+def stamp():return datetime.datetime.now(datetime.timezone.utc).isoformat()
 from admin_activity_events import EventStoreError, private_lock, read_events, read_private_json
 ROOTS={'Learn':'research','CVA':'research','Video':'video'}
 def elapsed_seconds(value):
@@ -9,11 +12,16 @@ def elapsed_seconds(value):
  parts=[int(p) for p in value.split(':')]
  return days*86400+sum(number*60**power for power,number in enumerate(reversed(parts)))
 def classify(project,job):
- if '/CVA' in project or '/Learn' in project:return 'research'
+ root=pathlib.PurePosixPath(project).name
+ if root in {'CVA','Learn'}:return 'research'
+ if root!='Video':return None
  if re.search(r'(website|navbar|google-login|admin-activity|admin-agent-tree|seo-|auth-)',job):return 'website'
  return 'video'
 def collect_jobs():
- result=subprocess.run(['ps','-axo','pid=,ppid=,etime=,command='],capture_output=True,text=True,check=True)
+ global PROCESS_HEALTH
+ PROCESS_HEALTH={'state':'unavailable','checkedAt':stamp(),'unmappedRunnerCount':0}
+ result=subprocess.run(['ps','-axo','pid=,ppid=,etime=,command='],capture_output=True,text=True,check=True,timeout=4)
+ observed=stamp()
  processes={}
  sources={source:[] for source in ('website','research','video')}
  for line in result.stdout.splitlines():
@@ -35,13 +43,17 @@ def collect_jobs():
   except (ValueError,IndexError,StopIteration):continue
   if not project.startswith('/Volumes/AGNDJ 6TB/NaS-Work/') or job.startswith('admin-activity-monitor') or job.startswith('admin-agent-tree-monitor') or job.startswith('admin-agent-tree-department-reporter-handoff') or job.startswith(('admin-agent-tree-blocker-reporter','admin-agent-tree-biobank-reporter')):continue
   source=classify(project,job)
-  entry={'id':pid,'name':job[:120],'workflow':source,'kind':'job','status':'running','elapsedSeconds':elapsed_seconds(process['elapsed']),'parentId':None}
+  if source is None:
+   PROCESS_HEALTH['unmappedRunnerCount']+=1
+   continue
+  entry={'id':pid,'name':job[:120],'workflow':source,'kind':'job','status':'running','elapsedSeconds':elapsed_seconds(process['elapsed']),'parentId':None,'observedAt':observed,'provenance':'Guarded runner process census; organization mapping is partial'}
   sources[source].append(entry);tracked[pid]=entry
  for pid,entry in tracked.items():
   parent=processes[pid]['parent'];seen={pid}
   while parent in processes and parent not in seen:
    if parent in tracked:entry['parentId']=parent;break
    seen.add(parent);parent=processes[parent]['parent']
+ PROCESS_HEALTH.update(state='available',observedAt=observed)
  return sources
 
 TASK_EVENT_CACHE = {}
@@ -62,11 +74,16 @@ def collect_task_events(path):
   return result
  except (OSError, ValueError, TypeError):
   TASK_EVENT_HEALTH = 'unavailable'
-  return [{**event, 'status': 'unknown'} for event in TASK_EVENT_CACHE.get(key, [])]
+  return [{**event, 'lastKnownStatus':event['status'], 'status': 'unknown'} for event in TASK_EVENT_CACHE.get(key, [])]
 
 def snapshot(task_events=None, core_observer=None, biobank_status=None, video_lifecycle=None):
- guarded = collect_jobs()
- events = collect_task_events(task_events)
+ captured_at=stamp()
+ try:
+  guarded = collect_jobs()
+ except (OSError,ValueError,subprocess.SubprocessError):
+  guarded={source:[] for source in ('website','research','video')}
+  PROCESS_HEALTH.update(state='unavailable',checkedAt=stamp())
+ events = list(collect_task_events(task_events))
  runtime = None
  if core_observer:
   core_events,runtime = core_observer.poll()
@@ -78,14 +95,18 @@ def snapshot(task_events=None, core_observer=None, biobank_status=None, video_li
            and (datetime.datetime.now(datetime.timezone.utc)-datetime.datetime.fromisoformat(event['observedAt'].replace('Z','+00:00'))).total_seconds() <= 90}
  http_status = None
  try:
-  result = subprocess.run(['curl','--compressed','--max-time','15','-sS','-o','/dev/null','-w','%{http_code}','https://nasresearch.bio/'],capture_output=True,text=True,check=True)
+  result = subprocess.run(['curl','--compressed','--max-time','15','-sS','-o','/dev/null','-w','%{http_code}','https://nasresearch.bio/'],capture_output=True,text=True,check=True,timeout=17)
   http_status = int(result.stdout)
- except (subprocess.SubprocessError, ValueError):
+ except (OSError, subprocess.SubprocessError, ValueError):
   pass
  reports = []
  fallback_ids = set()
  for source in ('website', 'research', 'video'):
   observed = [event for event in events if event['source'] == source]
+  omitted_observations=max(0,len(observed)-100)
+  if omitted_observations:
+   # Preserve unresolved work first, with newest evidence next. Never modify the local store.
+   observed=sorted(sorted(observed,key=lambda e:e.get('observedAt',''),reverse=True),key=lambda e:e.get('status') not in {'running','blocked','needs_you','waiting','unknown'})[:100]
   fallback = [job for job in guarded[source] if (source, job['id']) not in linked]
   slots = max(0, 100-len(observed))
   included = fallback[:slots]
@@ -94,6 +115,8 @@ def snapshot(task_events=None, core_observer=None, biobank_status=None, video_li
                   'httpStatus':http_status if source=='website' else None,
                   'jobs':observed+included,
                   'telemetry':{'coverage':'partial','eventStore':TASK_EVENT_HEALTH,
+                               'capturedAt':captured_at,'publisherSession':PUBLISHER_SESSION,
+                               'processCensus':dict(PROCESS_HEALTH),'omittedObservations':omitted_observations,
                                'omittedGuardedJobs':len(fallback)-len(included)}})
  if runtime is not None:
   next(report for report in reports if report['source']=='video')['runtime']=runtime
@@ -114,9 +137,13 @@ def snapshot(task_events=None, core_observer=None, biobank_status=None, video_li
     removed = True
     break
   if not removed:
-   raise RuntimeError('Private event snapshot exceeds the publisher budget; observations retained locally')
+   candidates=[r for r in reports if r['jobs']]
+   if not candidates:raise RuntimeError('Private metadata exceeds publisher budget')
+   report=max(candidates,key=lambda r:len(json.dumps(r['jobs'])))
+   report['jobs'].pop()
+   report['telemetry']['omittedObservations']+=1
  for report in reports:
-  if report['telemetry']['omittedGuardedJobs'] or TASK_EVENT_HEALTH == 'unavailable':
+  if report['telemetry']['omittedGuardedJobs'] or report['telemetry']['omittedObservations'] or PROCESS_HEALTH['state']!='available' or TASK_EVENT_HEALTH == 'unavailable' or report.get('runtime',{}).get('state')=='unavailable':
    report['status'] = 'issue'
  return reports
 
@@ -127,7 +154,7 @@ def publish(config,reports):
  lines=['url = '+json.dumps(curl['url']),'request = "POST"','silent','show-error','fail-with-body','max-time = 25']
  lines += ['header = '+json.dumps(header) for header in curl['header']]
  lines += ['data = '+json.dumps(json.dumps(request,separators=(',',':')))]
- result=subprocess.run(['curl','--config','-'],input='\n'.join(lines),capture_output=True,text=True)
+ result=subprocess.run(['curl','--config','-'],input='\n'.join(lines),capture_output=True,text=True,timeout=30)
  if result.returncode:raise RuntimeError('Status publisher could not deliver its report (HTTP/API connection failed).')
 def main():
  parser=argparse.ArgumentParser();parser.add_argument('--config',required=True);parser.add_argument('--once',action='store_true');parser.add_argument('--interval',type=int,default=20);parser.add_argument('--task-events');parser.add_argument('--core-reader',action='store_true');parser.add_argument('--biobank-status',action='store_true');parser.add_argument('--video-lifecycle',action='store_true')
@@ -156,7 +183,7 @@ def main():
     reports=snapshot(args.task_events,core_observer,biobank_status,video_lifecycle);publish(config,reports)
     print(json.dumps({'reportedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'jobs':{r['source']:len(r['jobs']) for r in reports},'eventStore':TASK_EVENT_HEALTH}),flush=True)
    except Exception as error:
-    print(json.dumps({'reporting':'offline','error':str(error)}),flush=True)
+    print(json.dumps({'reporting':'offline','errorType':type(error).__name__}),flush=True)
     if args.once:raise SystemExit(1)
    if args.once:return
    time.sleep(max(10,args.interval))

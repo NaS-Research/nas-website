@@ -159,7 +159,7 @@ def checked_path(path):
     return parent / path.name
 
 def private_fd(path, flags, create=False):
-    flags |= getattr(os, 'O_NOFOLLOW', 0) | getattr(os, 'O_CLOEXEC', 0)
+    flags |= getattr(os, 'O_NOFOLLOW', 0) | getattr(os, 'O_CLOEXEC', 0) | os.O_NONBLOCK
     if create:
         flags |= os.O_CREAT
     fd = os.open(path, flags, 0o600)
