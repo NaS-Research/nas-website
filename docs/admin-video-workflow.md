@@ -8,6 +8,20 @@ All twelve plan profiles request `gpt-6.1-sol`. Direction, supervision, Research
 
 The workflow expresses dependencies, not completed gates: Research science brief → Script → Visual Production and Narration → Editing → Final QA → owner-authorized Publishing. Technical fixtures and operator operations remain task jobs, never extra staff or role definitions. Historical records are retained.
 
+## Library production cadence
+
+The agreed library cadence is one environment per day. The Scene Animation Artist works one day behind the environment creator, using an explicitly reviewed, version-pinned environment. Library preparation is a separate workstream from the per-video Script dependency above. Elapsed time or the next calendar day never promotes an unfinished or unreviewed environment; animation waits until the required reviewed version is available. This documents the workflow only and installs no schedule or automatic gate transition.
+
+An observed environment-creation task belongs only to the Asset and Scene Library Artist assignment. It does not establish activity for any other role or activate 24/7 transport. Continuous dashboard reporting requires the owner's sanitized, timestamped execution observations; this documentation is not a heartbeat. The existing environment owner remains its sole writer.
+
+## Existing task-event integration
+
+No new adapter is required for the current observation shape. `scripts/report-task-event.py --event-file <approved-private-store> --stdin` already preserves an explicitly supplied `observedAt`, `roleId`, `executionId`, source state and provenance. The existing collector's `--task-events` input forwards that record to the existing private backend interface. This command describes the existing interface, not authorization to write a live store. Do not use the CLI's convenience flags for a dated third-party observation: that mode stamps the time of invocation.
+
+Use one stable `task:` identity with `source: video`, `roleId: role:video:asset-library`, the actual turn in `executionId`, and source-derived `observedAt`. Include only verified parent, epoch, heartbeat or origin-event identities; absence is preferable to invention. An observer's description of the work may be used for `task`, but must not be represented as a verified native task title. Selected creation settings belong in `requestedModel` with provenance and the corresponding execution identity; they do not justify `runtimeModel`. An admitted/actual model needs independent execution-bound evidence. Do not duplicate the task across supervisor or other role cards.
+
+The bounded `scripts/test-video-task-integration.cjs` acceptance exercises the actual stdin CLI, private isolated event store, collector and tree projection. It verifies a single directly assigned execution, unchanged unrelated website records, idempotent replay with the original timestamp, expiry after 90 seconds despite fresh publisher receipts, transport interruption, unknown state on input failure, and synthetic terminal transitions. Stale active counts remain unavailable, not a claim of zero workers. Optional explicit sanitized fixtures are tested in isolated stores only; real task records are kept outside the repository and public bundles. No network request, live backend write, scheduler or ongoing observation producer is installed by the test.
+
 ## Activation boundary
 
 Deploying this website change requires separate owner authorization. The display needs no database migration, publisher restart, secret, permission, service or library access. Retain the existing private backend and publisher freshness rules.
