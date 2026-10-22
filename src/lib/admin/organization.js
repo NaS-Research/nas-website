@@ -35,6 +35,7 @@ export const videoRolePlan = [
  role('role:video:scientific-research','Research','role:video-supervisor','role:video-supervisor','high','Verify accuracy and deliver the science brief before Script'),
  role('role:video:scripting','Script','role:video-supervisor','role:video-supervisor','medium','Write the script from the reviewed science brief'),
  role('role:video:visual-production','Visual Production Supervisor','role:video-supervisor','role:video-supervisor','high','Supervise visual assets, scene design and animation'),
+ role('role:video:anatomy-histology-cell-biology','Anatomy, Histology & Cell Biology Specialist','role:video:visual-production','role:video:visual-production','high','Prepare the source-linked environment specification before creation and review actual visual output afterward',{qualification:'AI specialist role; not licensed clinician sign-off. No assigned execution is established.'}),
  role('role:video:asset-library','Asset and Scene Library Artist','role:video:visual-production','role:video:visual-production','medium','Create and curate reusable assets and scenes',{requestedSchedule:'24/7 requested; not activated'}),
  role('role:video:scene-animation','Scene Animation Artist','role:video:visual-production','role:video:visual-production','medium','Animate approved scenes for the script'),
  role('role:video:narration','Narration','role:video-supervisor','role:video-supervisor','medium','Prepare narration from the approved script'),
@@ -45,6 +46,17 @@ export const videoRolePlan = [
 export const videoWorkflow = {
  state:'planned',provenance:'Owner-requested workflow; no runtime or service activation',
  library:{referencePath:'/Volumes/AGNDJ 6TB/NaS-Media-Library',state:'Owner reports workspace created; collector not connected'},
+ libraryWorkflow:{
+  cadence:'One environment per day. Animation works one day behind, using a reviewed, version-pinned environment. Calendar age never promotes unfinished work.',
+  currentWork:'Preserve safe vessel progress and reconcile it against the scientific brief before acceptance. No existing artifact is discarded by this plan.',
+  briefRequirements:['Source links','Tissue layers','Cell types','Morphology','Relative scale','Normal versus pathological appearance','Explicit display conventions'],
+  stages:[
+   {id:'environment-brief',name:'Environment scientific brief',roleIds:['role:video:anatomy-histology-cell-biology'],requires:[],output:'Source-linked specification must be ready before a new environment is created'},
+   {id:'environment-creation',name:'Environment creation',roleIds:['role:video:asset-library'],requires:['environment-brief'],output:'Versioned candidate built from the ready scientific brief'},
+   {id:'environment-review',name:'Review actual visuals',roleIds:['role:video:anatomy-histology-cell-biology','role:video:visual-production'],requires:['environment-creation'],output:'Review rendered evidence against the brief; record corrections and acceptance evidence'},
+   {id:'environment-animation',name:'Animation handoff',roleIds:['role:video:scene-animation'],requires:['environment-review'],output:'One day behind creation, using the reviewed version; unfinished environments remain blocked'}
+  ]
+ },
  stages:[
   {id:'science-brief',name:'Science brief',roleIds:['role:video:scientific-research'],requires:[],output:'Reviewed science brief before script writing'},
   {id:'script',name:'Script',roleIds:['role:video:scripting'],requires:['science-brief'],output:'Approved script for visuals and narration'},
