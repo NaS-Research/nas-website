@@ -1,0 +1,12 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {createRequire} from 'node:module';
+const req=createRequire(new URL('../package.json',import.meta.url));
+const {Group,Mesh,PlaneGeometry,MeshBasicMaterial}=req('three');
+import {REGIONS} from '../src/lib/anatomy-studio/regions.mjs';
+import {ATELIER_ORGANS} from '../src/lib/anatomy-studio/registry.mjs';
+import {buildRegionAnchors} from '../src/lib/anatomy-studio/region-anchors.mjs';
+test('all admitted organs have referenced region notes and unique identities',()=>{assert.deepEqual(Object.keys(REGIONS).sort(),ATELIER_ORGANS.map(x=>x.id).sort());for(const rows of Object.values(REGIONS)){assert(rows.length>=2);assert.equal(new Set(rows.map(x=>x.id)).size,rows.length);for(const row of rows){assert(row.position.length===3&&row.position.every(Number.isFinite));assert(row.label&&row.description&&row.short);assert.match(row.sourceURL,/^https:\/\/(openstax\.org|www\.nei\.nih\.gov)\//);}}});
+test('annotations are projected onto geometry without changing it',()=>{const root=new Group(),geometry=new PlaneGeometry(2,2),mesh=new Mesh(geometry,new MeshBasicMaterial());root.add(mesh);const original=Array.from(geometry.attributes.position.array);const [a]=buildRegionAnchors(root,[{id:'a',position:[.3,.4,.7]}]);assert(Math.abs(a.position[0]-.3)<1e-6);assert(Math.abs(a.position[1]-.4)<1e-6);assert(Math.abs(a.position[2]-.025)<1e-6);assert.equal(a.anchorMethod,'front-surface-ray');assert.deepEqual(Array.from(geometry.attributes.position.array),original);geometry.dispose();mesh.material.dispose();});
+test('off-silhouette annotations attach to an actual vertex instead of floating',()=>{const root=new Group(),geometry=new PlaneGeometry(2,2),mesh=new Mesh(geometry,new MeshBasicMaterial());root.add(mesh);const [a]=buildRegionAnchors(root,[{id:'edge',position:[3,3,1]}]);assert.equal(a.anchorMethod,'nearest-surface-vertex');assert.deepEqual(a.position.map(x=>Math.round(x*1000)/1000),[1,1,.025]);assert.throws(()=>buildRegionAnchors(root,[{position:[NaN,0,0]}]),/Invalid/);geometry.dispose();mesh.material.dispose();});
+test('no markers invent exposed mitral valve, renal medulla or pancreatic duct',()=>{assert(!REGIONS.heart.some(x=>x.id==='mitral'));assert(!REGIONS.kidneys.some(x=>x.id==='medulla'));assert(!REGIONS.pancreas.some(x=>x.id==='duct'));});
