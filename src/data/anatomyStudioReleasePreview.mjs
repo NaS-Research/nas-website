@@ -8,8 +8,18 @@ export const anatomyStudioReleasePreview = {
   "authors": [
     "NaS Research"
   ],
-  "version": "0.2.2-preview",
+  "version": "0.2.3-preview",
   "revisionHistory": [
+    {
+      "version": "0.2.3-preview",
+      "dateISO": "2026-11-03",
+      "note": "Two border-free organ stills and three automatically prepared inline models, with a front-limited static heart cutaway and clean descriptive captions."
+    },
+    {
+      "version": "0.2.2-preview",
+      "dateISO": "2026-11-03",
+      "note": "Prior verified unlisted edition with three sourced organ stills and five on-request interactive models; preserved in release history."
+    },
     {
       "version": "0.2.1-preview",
       "dateISO": "2026-11-03",
@@ -86,7 +96,8 @@ export const anatomyStudioReleasePreview = {
       "title": "Explore the studio today",
       "paragraphs": [
         "The current studio presents organ models with selected anatomical landmarks linked to concise explanations.",
-        "The article preview presents a curated selection of organ and cell models together with an artery environment. These views are limited to rotation and load individually on request; download sizes are shown before activation."
+        "The article preview presents a lymphocyte, a normal red blood cell and an internal-heart cutaway. Each view prepares as the gallery approaches the screen, one model at a time. The cell models can be rotated freely; the heart remains within a limited front-facing view so that the cut surfaces remain visible.",
+        "Different views support different questions. The red blood cell view makes its biconcave form visible, while the heart cutaway opens a view into its interior. These are educational representations. They do not reproduce every anatomical detail or demonstrate physiological behavior, and the static heart model does not simulate a heartbeat."
       ]
     },
     {
@@ -94,10 +105,11 @@ export const anatomyStudioReleasePreview = {
       "title": "Building BioBank",
       "paragraphs": [
         "BioBank is being developed as a shared collection for NaS Research. Its initial computational resources can be used in educational videos, written explanations and interactive learning modules.",
-        "Selected organ models, including the eye and lung shown here, were sourced from Anatomy Atelier, a publicly available project by thebuggeddev. Their visual quality provides a reference for development of NaS’s model collection. The artery, lymphocyte and red blood cell previews are Tripo-derived models incorporated or refined through the NaS workflow.",
+        "Selected organ models, including the eye and lung shown here, were sourced from the Anatomy Atelier project. Their visual detail provides a reference for the development of NaS’s model collection. The cell models and internal-heart cutaway were produced through a Tripo-based workflow and, where applicable, refined in the NaS workflow.",
         "A single model can support several forms of communication. A video may present a guided view of a structure; a lesson may use a still image; an interactive viewer may allow a learner to examine the same model directly. These uses require different choices of framing, detail and explanation.",
         "The initial organ and cell models are a starting point. Further computational work may include more detailed internal anatomy, biological environments and guided presentations. These are areas of development rather than features already available in the current studio.",
-        "The broader vision extends across many forms of life, biological materials and systems. The work presented here is computational. Physical collections form part of the longer-term vision and would be developed as the library expands."
+        "The broader vision extends across many forms of life, biological materials and systems. The work presented here is computational. Physical collections form part of the longer-term vision and would be developed as the library expands.",
+        "A useful biological model must be more than a convincing image. Its origin, intended scale, visible structures and limitations determine which explanations it can support. A surface illustration may communicate shape well while leaving out tissue layers, microscopic organization or variation between individuals. We are developing the collection with those distinctions in mind, keeping model files and their provenance together as the library grows."
       ]
     },
     {

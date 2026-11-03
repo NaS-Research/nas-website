@@ -5,6 +5,7 @@ import {Bounds, OrbitControls, useBounds} from '@react-three/drei';
 import {Spherical, Vector3} from 'three';
 import StudioHotspots from './StudioHotspots';
 import {appearance, indexScene} from '@/lib/anatomy-studio/selection.mjs';
+import {frontOrbitWindow,clampFrontOrbit} from '@/lib/anatomy-release-preview/orbit-window.mjs';
 
 export class ViewportBoundary extends Component {
  state = {failed:false};
@@ -50,9 +51,12 @@ function Heart({model, structures, selection, onSelect, preserveMaterials=false}
  }} onPointerCancel={() => {pointer.current=null;}} />;
 }
 function Scene({model, structures, selection, reducedMotion, command, onSelect, onContextLost, autoRotate, regions, selectedRegion, onSelectRegion, onClearRegion, onLearnRegion, showRegions, preserveMaterials, orbitOptions={}, interactionMode='standard', onViewState}) {
- const controls = useRef(); const bounds = useBounds(); const {camera, gl, invalidate} = useThree();
+ const controls = useRef(); const bounds = useBounds(); const {camera, gl, invalidate,size} = useThree();
+ const frontWindow=useMemo(()=>frontOrbitWindow(orbitOptions),[orbitOptions]);
+ const resetFront=()=>{bounds.refresh(model).clip();const fit=bounds.getSize(),direction=new Vector3(...orbitOptions.frontDirection).normalize();bounds.moveTo(fit.center.clone().addScaledVector(direction,fit.distance)).lookAt({target:fit.center});invalidate();};
+ useEffect(()=>{if(frontWindow)resetFront();},[model,frontWindow,bounds,size.width,size.height]);
  const viewScale=useMemo(()=>new Vector3(),[]),viewFrame=useRef(0);
- useFrame(()=>{if(onViewState&&controls.current){const object=model.children[0]||model;onViewState({frame:++viewFrame.current,position:camera.position.toArray(),distance:camera.position.distanceTo(controls.current.target),fov:camera.fov,scale:object.getWorldScale(viewScale).toArray(),target:controls.current.target.toArray()});}});
+ useFrame(()=>{if(frontWindow&&controls.current){const orbit=controls.current,offset=camera.position.clone().sub(orbit.target),actual=new Spherical().setFromVector3(offset),limited=clampFrontOrbit(actual,frontWindow);if(Math.abs(actual.theta-limited.theta)>1e-8||Math.abs(actual.phi-limited.phi)>1e-8){actual.theta=limited.theta;actual.phi=limited.phi;camera.position.copy(new Vector3().setFromSpherical(actual).add(orbit.target));orbit.update();invalidate();}}if(onViewState&&controls.current){const object=model.children[0]||model;onViewState({frame:++viewFrame.current,theta:controls.current.getAzimuthalAngle(),phi:controls.current.getPolarAngle(),orbitWindow:frontWindow,position:camera.position.toArray(),distance:camera.position.distanceTo(controls.current.target),fov:camera.fov,scale:object.getWorldScale(viewScale).toArray(),target:controls.current.target.toArray()});}});
  useEffect(() => {
   const canvas=gl.domElement;
   const lost=event => {event.preventDefault();onContextLost();};
@@ -62,7 +66,7 @@ function Scene({model, structures, selection, reducedMotion, command, onSelect, 
  useEffect(() => {
   const orbit = controls.current; if (!orbit || !command) return;
   if(interactionMode==='rotation-only'&&!['left','right','up','down','reset'].includes(command.type))return;
-  if (command.type==='reset') {bounds.refresh().clip().fit();invalidate();return;}
+  if (command.type==='reset') {if(frontWindow)resetFront();else bounds.refresh().clip().fit();invalidate();return;}
   // Match a real pointer interaction so Bounds cancels any pending initial fit.
   orbit.dispatchEvent({type:'start'});
   const offset = camera.position.clone().sub(orbit.target), spherical=new Spherical().setFromVector3(offset);
@@ -72,14 +76,14 @@ function Scene({model, structures, selection, reducedMotion, command, onSelect, 
   if (command.type==='down') spherical.phi=Math.min(Math.PI-.08,spherical.phi+.15);
   if (command.type==='in') spherical.radius=Math.max(.01,spherical.radius*.85);
   if (command.type==='out') spherical.radius=Math.min(100,spherical.radius/ .85);
-  camera.position.copy(new Vector3().setFromSpherical(spherical).add(orbit.target));
+  const limited=clampFrontOrbit(spherical,frontWindow);spherical.theta=limited.theta;spherical.phi=limited.phi;camera.position.copy(new Vector3().setFromSpherical(spherical).add(orbit.target));
   if (command.type.startsWith('pan-')) {
    const right=new Vector3().setFromMatrixColumn(camera.matrix,0).multiplyScalar(spherical.radius*.06*(command.type==='pan-left'?-1:1));
    camera.position.add(right);orbit.target.add(right);
   }
   orbit.update();orbit.dispatchEvent({type:'end'});invalidate();
- }, [command,camera,bounds,invalidate,interactionMode]);
- return <><ambientLight intensity={.65}/><directionalLight position={[2,3,4]} intensity={1.6}/><directionalLight position={[-3,1,-2]} intensity={.5}/><Heart preserveMaterials={preserveMaterials} model={model} structures={structures} selection={selection} onSelect={onSelect}/><StudioHotspots model={model} regions={regions} selectedRegion={selectedRegion} onSelectRegion={onSelectRegion} onClearRegion={onClearRegion} onLearnRegion={onLearnRegion} hidden={!showRegions || selection.hidden.length>0}/><OrbitControls ref={controls} makeDefault enableZoom={interactionMode!=='rotation-only'&&orbitOptions.enableZoom!==false} enableRotate autoRotate={Boolean(autoRotate && !reducedMotion)} autoRotateSpeed={.6} enableDamping={!reducedMotion} dampingFactor={.12} minDistance={orbitOptions.minDistance??0} maxDistance={orbitOptions.maxDistance??Infinity} enablePan={interactionMode!=='rotation-only'&&orbitOptions.enablePan!==false}/></>;
+ }, [command,camera,bounds,invalidate,interactionMode,frontWindow]);
+ return <><ambientLight intensity={.65}/><directionalLight position={[2,3,4]} intensity={1.6}/><directionalLight position={[-3,1,-2]} intensity={.5}/><Heart preserveMaterials={preserveMaterials} model={model} structures={structures} selection={selection} onSelect={onSelect}/><StudioHotspots model={model} regions={regions} selectedRegion={selectedRegion} onSelectRegion={onSelectRegion} onClearRegion={onClearRegion} onLearnRegion={onLearnRegion} hidden={!showRegions || selection.hidden.length>0}/><OrbitControls ref={controls} makeDefault enableZoom={interactionMode!=='rotation-only'&&orbitOptions.enableZoom!==false} enableRotate autoRotate={Boolean(autoRotate && !reducedMotion)} autoRotateSpeed={.6} enableDamping={!reducedMotion} dampingFactor={.12} minDistance={orbitOptions.minDistance??0} maxDistance={orbitOptions.maxDistance??Infinity} minAzimuthAngle={frontWindow?.minTheta??-Infinity} maxAzimuthAngle={frontWindow?.maxTheta??Infinity} minPolarAngle={frontWindow?.minPhi??0} maxPolarAngle={frontWindow?.maxPhi??Math.PI} enablePan={interactionMode!=='rotation-only'&&orbitOptions.enablePan!==false}/></>;
 }
 // Canvas fallback is mounted as DOM children even when WebGL works. It must stay side-effect free.
 export function GraphicsFallback(){return <p role="alert">3D graphics are unavailable in this browser.</p>;}

@@ -59,7 +59,7 @@ export const previewSlides = [
 ];
 export const previewDemo = null;
 export const physicianPerspective = {
-  "quote": "The visual models make complex structures easier to explore. I’m excited to see them grow as a teaching resource.",
+  "quote": "The visual models make complex concepts more accessible. I’m excited to see the collection grow as a teaching resource.",
   "attribution": "— Courtney Mangum, MD",
   "status": "proposed-private-preview",
   "reviewerApproved": false,
