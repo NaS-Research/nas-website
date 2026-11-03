@@ -1,0 +1,21 @@
+"use client";
+import {useCallback,useEffect,useMemo,useRef,useState} from 'react';
+import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js';
+import {MeshoptDecoder} from 'three/examples/jsm/libs/meshopt_decoder.module.js';
+import {Box3,Group,Vector3} from 'three';
+import StudioViewport from '@/components/anatomy-studio/StudioViewport';
+import {createOrganLoader} from '@/lib/anatomy-studio/loader.mjs';
+import {initialSelection,indexScene} from '@/lib/anatomy-studio/selection.mjs';
+import {modelKeyCommand,articleRotationCommand,articleRotationProfile} from '@/lib/anatomy-release-preview/interactive-model.mjs';
+import styles from './interactive-model.module.css';
+import {disposeArticleModel as disposeModel} from '@/lib/anatomy-release-preview/model-resources.mjs';
+// Reuse the existing Studio parser normalization, source indexing and disposal contract.
+async function parseModel(bytes,asset){const gltf=await new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).parseAsync(bytes,''),root=new Group();root.name=asset.id;const box=new Box3().setFromObject(gltf.scene),size=box.getSize(new Vector3()),center=box.getCenter(new Vector3());if(![...size,...center].every(Number.isFinite)||Math.max(size.x,size.y,size.z)<=0)throw Error('The model has invalid bounds.');const scale=3.8/Math.max(size.x,size.y,size.z);gltf.scene.scale.setScalar(scale);gltf.scene.position.copy(center.multiplyScalar(-scale));root.add(gltf.scene);try{indexScene(root,asset.structures);return root;}catch(e){disposeModel(root);throw e;}}
+export default function ArticleModelRuntime({asset,onExit}){const [load,setLoad]=useState({status:'idle'}),[command,setCommand]=useState(null),[reduced,setReduced]=useState(true),serial=useRef(0),stage=useRef(null);const orbitProfile=useMemo(()=>articleRotationProfile(asset),[asset]),selection=useMemo(()=>initialSelection(),[]),loader=useMemo(()=>createOrganLoader({parse:parseModel,dispose:disposeModel,notify:setLoad}),[]);
+ useEffect(()=>{const m=matchMedia('(prefers-reduced-motion: reduce)'),update=()=>setReduced(m.matches);update();m.addEventListener('change',update);return()=>m.removeEventListener('change',update);},[]);
+ useEffect(()=>{loader.load(asset);return()=>loader.dispose();},[asset,loader]);
+ useEffect(()=>{if(load.status==='ready')stage.current?.focus({preventScroll:true});},[load.status]);
+ const graphicsError=useCallback(message=>{loader.reset();setLoad({status:'error',message});},[loader]);const contextLost=useCallback(()=>loader.contextLost(),[loader]);const send=type=>{const action=articleRotationCommand(type);if(action)setCommand({type:action,serial:++serial.current});};const ready=load.status==='ready';
+ const reportView=useCallback(view=>{if(stage.current)stage.current.dataset.viewState=JSON.stringify(view);},[]);
+ return <div className={styles.runtime} data-model-status={load.status}>{ready?<><div className={styles.canvas+' '+styles.rotationOnly} ref={stage} tabIndex={0} role="group" aria-label={asset.label+' model. Arrow keys rotate, zero resets, Escape returns to reading.'} onKeyDown={e=>{if(e.target!==e.currentTarget)return;const action=modelKeyCommand(e.key);if(action){e.preventDefault();send(action);}}}><StudioViewport model={load.model} structures={asset.structures} selection={selection} reducedMotion={reduced} command={command} interactionMode="rotation-only" onViewState={reportView} orbitOptions={orbitProfile} label={'Interactive '+asset.label.toLowerCase()+' model'} preserveMaterials={asset.preserveMaterials!==false} autoRotate={false} onSelect={()=>{}} onContextLost={contextLost} onError={graphicsError} regions={[]} selectedRegion={null} showRegions={false}/></div><div className={styles.controls} aria-label="Model controls"><button type="button" onClick={()=>send('left')} aria-label="Rotate model left">←</button><button type="button" onClick={()=>send('right')} aria-label="Rotate model right">→</button><button type="button" onClick={()=>send('reset')}>Reset view</button></div></>:<div className={styles.message}><p role={['error','context-lost','blocked'].includes(load.status)?'alert':'status'}>{load.message||'Loading reviewed model…'}</p>{['error','context-lost'].includes(load.status)&&<button type="button" onClick={()=>loader.load(asset)}>Try again</button>}<button type="button" onClick={onExit}>Continue reading</button></div>}</div>;
+}
