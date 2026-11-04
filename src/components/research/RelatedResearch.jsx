@@ -16,7 +16,7 @@ export default function RelatedResearch({ items }) {
             <div className="related-research__art"><PublicationArtwork slug={item.slug} /></div>
             <p className="related-research__area">{item.area}</p>
             <h3>{item.shortTitle ?? item.title}</h3>
-            <div className="related-research__meta"><span>{item.type}</span><time dateTime={item.dateISO}>{item.date}</time></div>
+            <div className="related-research__meta"><span>{item.type}</span></div>
             <span className="related-research__read">Read article <span aria-hidden="true">↗</span></span>
           </Link>
         ))}

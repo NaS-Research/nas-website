@@ -113,14 +113,6 @@ export default async function ResearchProjectPage({ params }) {
                 <dd>{fact.value}</dd>
               </div>
             ))}
-            <div>
-              <dt>Public record updated</dt>
-              <dd>
-                <time dateTime={project.updatedDateISO}>
-                  {project.updatedDate}
-                </time>
-              </dd>
-            </div>
           </dl>
         </section>
 

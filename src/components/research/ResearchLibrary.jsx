@@ -130,7 +130,7 @@ export default function ResearchLibrary({ items, types, initialArea = "All areas
               <PublicationArtwork slug={item.slug} />
               <div className="research-result__meta">
                 <span>{item.area}</span>
-                <time dateTime={item.dateISO}>{item.date}</time>
+
               </div>
               <div className="research-result__content">
                 <p className="research-result__type">{item.type}</p>

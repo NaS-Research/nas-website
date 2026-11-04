@@ -1,3 +1,4 @@
+import {researchPresentationHistory} from '@/data/researchPresentationHistory.mjs';
 import PublicationContents from "@/components/research/PublicationContents";
 import RelatedResearch from "@/components/research/RelatedResearch";
 import { getRelatedResearch } from "@/lib/relatedResearch.mjs";
@@ -138,10 +139,7 @@ export default async function ResearchPublicationPage({ params }) {
   const publicationDetails = (<>
           <div className="publication-byline">
             <p>By {item.authors.join(", ")}{item.affiliation && <span> · {item.affiliation}</span>}</p>
-            <p>
-              {[item.version ? `${pdfUrl ? "Web version" : "Version"} ${item.version}` : null, item.readTime].filter(Boolean).join(" · ")}
-              {item.updatedDate ? ` · Updated ${item.updatedDate}` : ""}
-            </p>
+            {item.readTime && <p>{item.readTime}</p>}
           </div>
           <PublicationActions citation={isResearchPublication ? citation : undefined} pdfUrl={pdfUrl} pdfVersion={item.pdfVersion} />
           {item.reviewState && <p className="publication-review-state">{item.reviewState}</p>}
@@ -149,7 +147,7 @@ export default async function ResearchPublicationPage({ params }) {
   </>);
 
   return (
-    <div className={`nas-page publication-page${hasImmersiveHero ? " publication-page--immersive" : ""}${isPaperArticle ? " publication-page--paper" : ""}${item.theme === "dark" ? " publication-page--dark" : ""}`}>
+    <div data-presentation-version={researchPresentationHistory[0].version} className={`nas-page publication-page${hasImmersiveHero ? " publication-page--immersive" : ""}${isPaperArticle ? " publication-page--paper" : ""}${item.theme === "dark" ? " publication-page--dark" : ""}`}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }} />
       <header className={`publication-hero ${isOriginStory ? "publication-hero--origin" : ""} ${hasHeroVideo ? "publication-hero--place" : ""} ${hasHeroImage ? "publication-hero--visual" : ""}`}>
         {hasImmersiveHero && <>
@@ -186,7 +184,7 @@ export default async function ResearchPublicationPage({ params }) {
           <Link href="/research" className="publication-back">← Research library</Link>
           {isPaperArticle && !hasImmersiveHero && <Image className="publication-paper-mark" src="/assets/images/NaSLogo-transparent-hd.png" alt="NaS gold emblem" width={76} height={76} priority />}
           <div className="publication-meta-line">
-            <time dateTime={item.dateISO}>{item.date}</time>
+
             <Link href={`/research?area=${encodeURIComponent(item.area)}`}>{item.area}</Link>
             <Link href={`/research?type=${encodeURIComponent(item.type)}`}>{item.type}</Link>
           </div>
@@ -287,7 +285,7 @@ export default async function ResearchPublicationPage({ params }) {
           {isResearchPublication && <section id="citation" className="publication-section publication-citation">
             <p className="publication-section-label">Publication details</p>
             <h2>Cite this work</h2>
-            <p className="publication-citation__text">{citation}</p>
+            <p className="publication-citation__text">Copy the full citation for this work.</p>
             <PublicationActions citation={citation} pdfUrl={pdfUrl} pdfVersion={item.pdfVersion}  />
             {publicationArtwork[item.slug]?.creditUrl && <p className="publication-note"><a href={publicationArtwork[item.slug].creditUrl}>Artwork credits and license ↗</a></p>}
             {item.reproducibilityUrl && <a className="publication-resource-link" href={item.reproducibilityUrl}>Download data and analysis <span aria-hidden="true">↗</span></a>}

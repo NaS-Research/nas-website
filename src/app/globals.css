@@ -593,8 +593,15 @@ body {
 }
 
 ::selection {
-  background: var(--nas-gold);
-  color: var(--nas-black);
+  background: #fff;
+  color: #000;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: #fff;
+  color: #000;
+  text-shadow: none;
 }
 
 .nas-navbar {

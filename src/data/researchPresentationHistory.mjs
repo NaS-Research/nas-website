@@ -1,0 +1,1 @@
+export const researchPresentationHistory=Object.freeze([{version:'1.1.1',dateISO:'2026-11-04',scope:'Research/article templates and cards',note:'Text selection uses white with black text; visible dates and version labels removed; stored dates, sorting, citation strings, scientific content and existing PDF editions unchanged.'}]);

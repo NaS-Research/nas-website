@@ -8,8 +8,10 @@ export const anatomyStudioReleasePreview = {
   "authors": [
     "NaS Research"
   ],
-  "version": "0.2.3-preview",
+  "version": "0.2.5-preview",
   "revisionHistory": [
+    {"version":"0.2.5-preview","dateISO":"2026-11-04","note":"Presentation update: clean metadata, overlapping title and reading surface, staggered eye/lung imagery and silent model preparation with reviewed stills. Model files, scientific limitations and internal provenance retained."},
+    {"version":"0.2.4-preview","dateISO":"2026-11-04","note":"Mobile-sized exact-geometry delivery exports and bounded loading, with matched mobile and desktop appearance review. Desktop original assets retained."},
     {
       "version": "0.2.3-preview",
       "dateISO": "2026-11-03",

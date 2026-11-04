@@ -115,7 +115,7 @@ export default function SitemapPage() {
               <Link href={`/research/${item.slug}`} key={item.slug}>
                 <span>
                   <strong>{item.title}</strong>
-                  <small>{item.type} · {item.date}</small>
+                  <small>{item.type}</small>
                 </span>
                 <span aria-hidden="true">↗</span>
               </Link>

@@ -12,6 +12,7 @@ const csp = [
   ...(production ? ["upgrade-insecure-requests"] : []),
 ].join("; ");
 module.exports = {
+  experimental: {cpus:1, webpackMemoryOptimizations:true},
   poweredByHeader: false,
   async redirects() {
     return [
@@ -34,6 +35,9 @@ module.exports = {
       { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
       { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=(), payment=()" },
       ...(production ? [{ key: "Strict-Transport-Security", value: "max-age=31536000" }] : []),
-    ] }];
+    ] }, {source:"/anatomy-release-preview/models/mobile/:path*",headers:[
+      {key:"Cache-Control",value:"public, max-age=31536000, immutable"},
+      {key:"Content-Type",value:"model/gltf-binary"}
+    ]}];
   },
 };
