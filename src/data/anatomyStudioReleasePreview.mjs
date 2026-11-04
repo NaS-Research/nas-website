@@ -9,8 +9,9 @@ export const anatomyStudioReleasePreview = {
   "authors": [
     "NaS Research"
   ],
-  "version": "0.2.6-preview",
+  "version": "0.2.7-preview",
   "revisionHistory": [
+    {"version":"0.2.7-preview","dateISO":"2026-11-04","note":"Contain Related research artwork on standalone article entry by loading the artwork component’s own layout stylesheet. Existing images, models and article content retained."},
     {"version":"0.2.6-preview","dateISO":"2026-11-04","note":"Add linked Scientific Infrastructure and Releases categories, shared related reading, relocate the proposed physician quotation into Building BioBank, and retain preparation stills until the initial interactive view settles. Existing model stills retained; replacement native captures are a separate pending asset update."},
     {"version":"0.2.5-preview","dateISO":"2026-11-04","note":"Presentation update: clean metadata, overlapping title and reading surface, staggered eye/lung imagery and silent model preparation with reviewed stills. Model files, scientific limitations and internal provenance retained."},
     {"version":"0.2.4-preview","dateISO":"2026-11-04","note":"Mobile-sized exact-geometry delivery exports and bounded loading, with matched mobile and desktop appearance review. Desktop original assets retained."},

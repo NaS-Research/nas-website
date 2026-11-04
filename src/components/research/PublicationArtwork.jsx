@@ -1,4 +1,5 @@
 import Image from "next/image";
+import "./publication-artwork.css";
 import WorkspacePreviewFilm from "@/components/sections/WorkspacePreviewFilm";
 import CityCoverVideo from "./CityCoverVideo";
 import ArtworkFilm from "./ArtworkFilm";
