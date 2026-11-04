@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import "./navigation.css";
+import SiteSearch from "./search/SiteSearch";
 import { useMember } from "./member/MemberProvider";
 
 const navigation = [
@@ -37,6 +38,8 @@ export default function Navbar({ authEnabled = false }) {
   const showLogin = !authEnabled || (member?.status !== "loading" && !member?.authenticated);
   const headerRef = useRef(null);
   const triggerRef = useRef(null);
+  const searchTriggerRef = useRef(null);
+  const [searchOpen, setSearchOpen] = useState(false);
   const isHome = pathname === "/";
   const [homeHeroVisible, setHomeHeroVisible] = useState(isHome);
   const [show, setShow] = useState(true);
@@ -74,7 +77,7 @@ export default function Navbar({ authEnabled = false }) {
       const currentY = window.scrollY;
       setScrolled(currentY > 24);
 
-      if (!menuOpen) {
+      if (!menuOpen && !searchOpen) {
         if (currentY > lastY + 10 && currentY > 120) {
           setShow(false);
         } else if (currentY < lastY - 10) {
@@ -88,10 +91,11 @@ export default function Navbar({ authEnabled = false }) {
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
-  }, [menuOpen]);
+  }, [menuOpen, searchOpen]);
 
   useEffect(() => {
     setMenuOpen(false);
+    setSearchOpen(false);
     setShow(true);
   }, [pathname]);
 
@@ -121,7 +125,7 @@ export default function Navbar({ authEnabled = false }) {
 
   return (
     <header ref={headerRef}
-      className={`nas-navbar ${show || menuOpen ? "nas-navbar--visible" : "nas-navbar--hidden"} ${
+      className={`nas-navbar ${show || menuOpen || searchOpen ? "nas-navbar--visible" : "nas-navbar--hidden"} ${
         scrolled ? "nas-navbar--scrolled" : ""
       } ${menuOpen ? "nas-navbar--open" : ""}`}
     >
@@ -159,6 +163,11 @@ export default function Navbar({ authEnabled = false }) {
           })}
         </div>
 
+        <button ref={searchTriggerRef} type="button" className="nas-nav-search" aria-label="Search NaS"
+          aria-expanded={searchOpen} aria-haspopup="dialog" aria-controls="nas-site-search"
+          onClick={() => {setMenuOpen(false);setSearchOpen(true);setShow(true);}}>
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg>
+        </button>
         {member?.role==="admin" && <Link href="/account/admin" className="nas-nav-admin">Admin</Link>}
         {showLogin && <Link href="/login" className="nas-nav-login">Log in</Link>}
         <Link href={authEnabled ? "/account" : "/workspace"} className="nas-nav-workspace" onClick={() => setMenuOpen(false)}>Workspace <span aria-hidden="true">↗</span></Link>
@@ -169,6 +178,7 @@ export default function Navbar({ authEnabled = false }) {
           {menuOpen ? "Close" : "Menu"}<span aria-hidden="true">{menuOpen ? "×" : "☰"}</span>
         </button>
       </nav>
+      {searchOpen && <SiteSearch onClose={() => setSearchOpen(false)} returnFocusRef={searchTriggerRef} />}
       {menuOpen && <>
         <div className="nas-nav-backdrop" onClick={() => { setMenuOpen(false); triggerRef.current?.focus(); }} />
         <div id="nas-navigation-panel" className="nas-nav-panel">

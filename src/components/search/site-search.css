@@ -1,0 +1,40 @@
+.nas-navbar .nas-nav-search{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;flex:0 0 44px;margin-left:1.1rem;border:0;background:none;color:#999;cursor:pointer;transition:color .3s ease,opacity .3s ease}
+.nas-nav-search:hover{color:#fff}.nas-nav-search:active{opacity:.6}.nas-nav-search svg{width:19px;height:19px}
+.nas-search{position:fixed;inset:0;margin:0;padding:0;border:0;width:100%;max-width:none;height:100%;height:100dvh;max-height:none;background:#000;color:#f5f5f5;overflow:auto;overscroll-behavior:contain;font-family:inherit}
+.nas-search::backdrop{background:#000}.nas-search:not([open]){display:none}
+.nas-search__top{display:flex;align-items:center;justify-content:space-between;max-width:1280px;margin:auto;padding:1.1rem clamp(1.5rem,5vw,4rem)}
+.nas-search__brand{color:#fff;font-size:1.2rem;font-weight:600;letter-spacing:-.055em;text-decoration:none}
+.nas-search button,.nas-search a{ -webkit-tap-highlight-color:transparent}
+.nas-search__close{width:44px;height:44px;display:grid;place-items:center;border:0;background:none;color:#999;cursor:pointer;font-size:1.8rem;line-height:1;transition:color .3s ease,opacity .3s ease}
+.nas-search__close:hover{color:#fff}.nas-search__close:active{opacity:.6}
+.nas-search__body{width:min(100% - 3rem,780px);margin:clamp(3rem,8vh,7rem) auto 5rem}
+.nas-search__form{display:flex;align-items:center;gap:1rem;border-bottom:1px solid #333;padding-bottom:.8rem}
+.nas-search__field{position:relative;flex:1;min-width:0;display:block;font-size:clamp(1.3rem,3vw,2.15rem);line-height:1.4;letter-spacing:-.035em}
+.nas-search__field input{position:relative;display:block;width:100%;min-width:0;padding:0;border:0;background:transparent;color:#fff;outline:none;font:inherit;letter-spacing:inherit;line-height:inherit;border-radius:0;box-shadow:none;appearance:none}
+.nas-search__field input::-webkit-search-cancel-button{display:none}
+.nas-search__prompt{position:absolute;inset:0;overflow:hidden;white-space:nowrap;color:#888;pointer-events:none;animation:nas-search-prompt .45s ease both}
+.nas-search__submit{flex:0 0 38px;width:38px;height:38px;border:0;border-radius:50%;background:#eee;color:#000;font-size:1.7rem;line-height:1;cursor:pointer;transition:background .25s ease,opacity .25s ease,transform .2s ease}
+.nas-search__submit:disabled{opacity:.4;cursor:default}.nas-search__submit:not(:disabled):hover{background:#ccc}.nas-search__submit:not(:disabled):active{transform:scale(.94)}
+.nas-search__discover{margin-top:3.5rem}.nas-search__discover>p,.nas-search__eyebrow{color:#999;font-size:.9rem;margin:0 0 1.6rem}
+.nas-search__discover>div{display:grid;grid-template-columns:1fr 1fr;gap:0 2rem}
+.nas-search__discover a{display:flex;justify-content:space-between;padding:1.4rem 0;border-bottom:1px solid #292929;color:#ddd;text-decoration:none;transition:color .3s ease,opacity .3s ease}
+.nas-search__discover a:hover{color:#fff;opacity:.75}
+.nas-search__matches{margin-top:3rem}.nas-search__matches h1{font-size:clamp(1.8rem,4vw,2.3rem);font-weight:400;line-height:1.25;letter-spacing:-.04em;margin:0 0 3rem;overflow-wrap:anywhere}
+#nas-search-results{border-top:1px solid #333;padding-top:2rem;min-height:8rem}
+.nas-search__matches ul{list-style:none;margin:0;padding:0}.nas-search__matches li{border-bottom:1px solid #333}
+.nas-search__result{position:relative;display:block;padding:.2rem 3rem 2rem 0;margin-top:1.8rem;color:inherit;text-decoration:none;transition:opacity .3s ease}
+.nas-search__result:hover{opacity:.72}.nas-search__result:active{opacity:.5}
+.nas-search__category{color:#999;font-size:.85rem}.nas-search__result h2{font-size:clamp(1.2rem,2vw,1.4rem);font-weight:400;line-height:1.35;letter-spacing:-.025em;margin:.65rem 0}
+.nas-search__result p{font-size:.95rem;line-height:1.75;color:#bbb;margin:0;max-width:650px}.nas-search__arrow{position:absolute;right:.2rem;top:.3rem;color:#888}
+.nas-search__message{font-size:1rem;line-height:1.7;color:#aaa;padding:1rem 0}
+.nas-search__message button{color:#eee;background:none;border:0;padding:.5rem 0;cursor:pointer;font:inherit}
+.nas-search a:focus-visible,.nas-search button:focus-visible{outline:2px solid #fff;outline-offset:5px}.nas-search__field:focus-within{outline:none}
+.nas-search__sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+@keyframes nas-search-prompt{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+@media(max-width:767px){.nas-navbar .nas-nav-search{margin-left:auto;width:40px;flex-basis:40px}.nas-nav-search~.nas-nav-login,.nas-nav-search~.nas-nav-admin,.nas-nav-search~.nas-nav-workspace{margin-left:0}.nas-search__body{margin-top:3.5rem}.nas-search__result{padding-right:1.8rem}.nas-search__discover>div{grid-template-columns:1fr}.nas-search__field{font-size:1.3rem}}
+@media(prefers-reduced-motion:reduce){.nas-search *, .nas-nav-search{animation:none!important;transition:none!important}}
+
+.nas-search__form:focus-within{border-bottom-color:#aaa}
+
+@media(max-width:767px){.nas-navbar .nas-navbar__brand{width:2.5rem;height:2.5rem}.nas-navbar .nas-nav-toggle{font-size:0;gap:0;padding-left:.6rem;width:36px;justify-content:center}.nas-navbar .nas-nav-workspace{padding:.55rem .65rem}}
+@media(max-width:359px){.nas-navbar .nas-nav-workspace{display:none}}

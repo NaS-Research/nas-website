@@ -9,7 +9,7 @@ export default function LearningVideoCard({ video }) {
         <div className={styles.thumbnail}>
           <Image src={`https://i.ytimg.com/vi/${video.id}/hq720.jpg`} alt="" fill sizes="(max-width: 640px) 100vw, (max-width: 1000px) 50vw, 33vw" />
         </div>
-        <p className={styles.subject}>{video.subject}</p>
+        {video.subject && <p className={styles.subject}>{video.subject}</p>}
         <h3>{video.title}</h3>
         {video.description && <p className={styles.description}>{video.description}</p>}
         <span className={styles.watchLink}>Watch on YouTube <span aria-hidden="true">↗</span></span>
