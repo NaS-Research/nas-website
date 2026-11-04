@@ -9,8 +9,9 @@ export const anatomyStudioReleasePreview = {
   "authors": [
     "NaS Research"
   ],
-  "version": "0.2.9-preview",
+  "version": "0.2.10-preview",
   "revisionHistory": [
+    {"version":"0.2.10-preview","dateISO":"2026-11-04","note":"Replace the temporary red-blood-cell and internal-heart preparation posters with responsive1920/3840 lossless derivatives of native3840x2160 actual-model captures using canonical camera/lighting. Native-size derivatives are RGBA-pixel-identical to the retained masters. No captured UI, crop or masking; original masters, prior posters and model files retained."},
     {"version":"0.2.9-preview","dateISO":"2026-11-04","note":"Remove captured corner instructions from the three temporary model poster presentations without cropping or altering model pixels outside that empty UI corner. Original PNGs and all model assets retained; native high-resolution replacements remain separate."},
     {"version":"0.2.8-preview","dateISO":"2026-11-04","note":"Fix initial model handoff being starved by unchanged render-loop view notifications. Compare actual camera/model transforms before extending settling; retain no-zoom rotation behavior and remove the redundant live corner hint. Existing poster images retained pending clean native captures."},
     {"version":"0.2.7-preview","dateISO":"2026-11-04","note":"Contain Related research artwork on standalone article entry by loading the artwork component’s own layout stylesheet. Existing images, models and article content retained."},
