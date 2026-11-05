@@ -1,6 +1,6 @@
 // Original NaS artwork; conceptual images do not represent measured outcomes.
 export const publicationArtwork = {
-  "introducing-anatomy-studio": { src: "/research/anatomy-studio/cover-v1.png", alt: "Pencil studies of a heart, neuron, cell, insect wing, microbe and flower on an ivory background", contain: true },
+  "introducing-anatomy-studio": { src: "/research/anatomy-studio/cover-v2-landscape.png", width: 1672, height: 941, alt: "Pencil studies of a heart, neuron, cell, insect wing, microbe and flower on an ivory background", contain: true },
   "clinvar-conflict-atlas": { src: "/research/nas-cva-001/artwork/cva-refined-cover-poster.webp", alt: "A folded network of blue molecular nodes with gold and red clusters against black", contain: true },
   "ai-hospital-billing-evidence": {
     src: "/research/ai-hospital-billing/cover-v2/poster-960.webp",

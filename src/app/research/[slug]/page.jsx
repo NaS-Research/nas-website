@@ -89,6 +89,7 @@ export async function generateMetadata({ params }) {
       images: [
         {
           url: publicationArtwork[item.slug]?.src || "/og.png",
+          ...(publicationArtwork[item.slug]?.width ? { width: publicationArtwork[item.slug].width, height: publicationArtwork[item.slug].height } : {}),
           alt: `${item.title} by NaS Research`,
         },
       ],

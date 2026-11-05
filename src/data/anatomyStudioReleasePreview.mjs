@@ -153,9 +153,10 @@ export const anatomyStudioReleasePreview = {
 
 export const anatomyStudioReleasePublic = {
  ...anatomyStudioReleasePreview,
- version:'1.0.0', publicationStatus:'published', noindex:false,
+ version:'1.0.1', publicationStatus:'published', noindex:false,
  date:'November 5, 2026',dateISO:'2026-11-05',
  revisionHistory:[
+  {version:'1.0.1',dateISO:'2026-11-05',note:'Approved landscape cover and Anatomy homepage feature layout updated.'},
   {version:'1.0.0',dateISO:'2026-11-05',note:'Public edition candidate with rich article layout, compact preload and borderless model focus. Unconfirmed physician quotation omitted; prior review editions retained.'},
  ]
 };

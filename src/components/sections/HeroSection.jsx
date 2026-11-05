@@ -103,7 +103,7 @@ export default function HeroSection() {
         </div>
 
         <div className={`home-carousel__visual home-carousel__visual--${activeSlide.visual}`} aria-hidden={!(["workflow", "cva", "bbb"].includes(activeSlide.visual))}>
-          {activeSlide.visual === "anatomy" && <figure className="home-anatomy-visual"><Image src={anatomyArtwork.src} alt="" fill sizes="(max-width: 767px) 88vw, 42vw" priority={index === activeIndex} /></figure>}
+          {activeSlide.visual === "anatomy" && <figure className="home-anatomy-visual"><Image src={anatomyArtwork.src} alt="" fill sizes="(max-width: 767px) 92vw, 52vw" priority={index === activeIndex} /></figure>}
           {activeSlide.visual === "mark" && (
             <div className="home-mark">
               <div className="home-mark__halo" />
