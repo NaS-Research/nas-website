@@ -1,3 +1,4 @@
+import {anatomyStudioReleasePublic} from './anatomyStudioReleasePreview.mjs';
 import { cvaRelease } from "./cvaRelease.mjs";
 import { availableResearchTypes, validateResearchTaxonomy } from "@/data/researchTaxonomy.mjs";
 import { cortexPaperSections } from "@/data/cortexPaper";
@@ -9,6 +10,7 @@ import { bbbRelease } from "@/data/bbbRelease";
 import { aiHospitalBillingEssay } from "@/data/aiHospitalBillingEssay";
 
 export const researchItems = [
+  anatomyStudioReleasePublic,
   cvaRelease,
   aiHospitalBillingEssay,
   {

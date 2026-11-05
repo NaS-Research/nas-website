@@ -1,6 +1,4 @@
-import {createArticleByteStore} from './byte-store.mjs';
-// Actual compressed mobile candidates are28.7/56.2/31.4MB. Bound retained mobile bytes to64MiB;
-// keep all original assets out of this cache and avoid uncached discarded prewarm downloads.
-export const ARTICLE_MOBILE_COMPRESSED_CACHE_LIMIT=64*1024*1024;
+import {createArticlePreloadStore,ARTICLE_PRELOAD_CACHE_LIMIT} from './preload-store.mjs';
+export const ARTICLE_MOBILE_COMPRESSED_CACHE_LIMIT=ARTICLE_PRELOAD_CACHE_LIMIT;
 export const retainArticleMobileBytes=asset=>asset.deliveryTier==='mobile';
-export function createArticleDeliveryByteStore(options={}){return createArticleByteStore({...options,maxBytes:ARTICLE_MOBILE_COMPRESSED_CACHE_LIMIT,canRetain:retainArticleMobileBytes,prefetchUnretained:false});}
+export function createArticleDeliveryByteStore(options={}){return createArticlePreloadStore(options);}

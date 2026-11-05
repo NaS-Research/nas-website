@@ -3,11 +3,11 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import DenialsWorkflowFigure from "@/components/research/DenialsWorkflowFigure";
 import CvaHeroVisual from "@/components/research/CvaHeroVisual";
 import { publicationArtwork } from "@/data/publicationArtwork";
 
 const bbbArtwork = publicationArtwork["blood-brain-barrier-prediction-audit"];
+const anatomyArtwork = publicationArtwork["introducing-anatomy-studio"];
 
 
 
@@ -33,13 +33,13 @@ const slides = [
     visual: "cva",
   },
   {
-    id: "denials",
-    eyebrow: "New design partner release",
-    title: "Introducing NaS Denials",
-    summary: "Software for specialty denial prevention and human-reviewed appeals.",
-    primary: { href: "/research/introducing-nas-denials", label: "Read the release" },
-    secondary: { href: "/research/papers/introducing-nas-denials.pdf", label: "View the paper" },
-    visual: "workflow",
+    id: "anatomy-studio",
+    eyebrow: "NaS Learn · Release",
+    title: "Introducing Anatomy Studio",
+    summary: "The first part of BioBank, NaS Research’s developing biological library.",
+    primary: { href: "/research/introducing-anatomy-studio", label: "Read the release" },
+    secondary: { href: "/learn/anatomy", label: "Explore the Studio" },
+    visual: "anatomy",
   },
 
 ];
@@ -103,7 +103,7 @@ export default function HeroSection() {
         </div>
 
         <div className={`home-carousel__visual home-carousel__visual--${activeSlide.visual}`} aria-hidden={!(["workflow", "cva", "bbb"].includes(activeSlide.visual))}>
-          {activeSlide.visual === "workflow" && <DenialsWorkflowFigure compact theme="dark" />}
+          {activeSlide.visual === "anatomy" && <figure className="home-anatomy-visual"><Image src={anatomyArtwork.src} alt="" fill sizes="(max-width: 767px) 88vw, 42vw" priority={index === activeIndex} /></figure>}
           {activeSlide.visual === "mark" && (
             <div className="home-mark">
               <div className="home-mark__halo" />
