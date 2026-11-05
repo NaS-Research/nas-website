@@ -1,5 +1,10 @@
 // Independently authored NaS loader contract; no script-injection/bundle fallback.
 import {deliveryBlock} from './registry.mjs';
+// Existing NaS production origins plus this same project's supported PR previews.
+// Model URLs still must be same-origin; foreign Netlify projects remain blocked.
+export function publicStudioHostAllowed(hostname) {
+ return ['nasresearch.bio','www.nasresearch.bio','127.0.0.1','localhost','[::1]'].includes(hostname) || /^deploy-preview-[1-9][0-9]*--nasresearch\.netlify\.app$/.test(hostname);
+}
 export function createOrganLoader({fetcher = fetch, readBytes, onBytesRejected, parse, dispose, notify, digest = async bytes => {
  const hash = await crypto.subtle.digest('SHA-256', bytes);
  return Array.from(new Uint8Array(hash), byte => byte.toString(16).padStart(2, '0')).join('');
@@ -15,7 +20,7 @@ export function createOrganLoader({fetcher = fetch, readBytes, onBytesRejected, 
   notify({status:'loading', message:`Loading ${asset.label.toLowerCase()} anatomy…`});
   try {
    if (asset.deliveryScope === 'loopback-admin-only' && !['127.0.0.1','localhost','[::1]'].includes(window.location.hostname)) throw new Error('These assets are admitted for local private review only.');
-   if(asset.deliveryScope==='nas-public-website' && !['nasresearch.bio','www.nasresearch.bio','127.0.0.1','localhost','[::1]'].includes(window.location.hostname)) throw new Error('This release is configured for the NaS website.');
+   if(asset.deliveryScope==='nas-public-website' && !publicStudioHostAllowed(window.location.hostname)) throw new Error('This release is configured for the NaS website.');
    const url = new URL(asset.deliveryURL, window.location.origin);
    if (url.origin !== window.location.origin) throw new Error('Model must use the admitted same-origin mount.');
    let bytes;
