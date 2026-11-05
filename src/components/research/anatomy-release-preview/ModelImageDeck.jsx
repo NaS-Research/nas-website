@@ -17,8 +17,11 @@ export default function ModelImageDeck({slides}){
  useEffect(()=>{setDeliveryTier(deliverySession.choose(window));},[deliverySession]);
  const deliverySlides=useMemo(()=>resolvePrivateDeliverySlides(slides,deliveryTier,mobileDeliveryManifest,{enabled:process.env.NEXT_PUBLIC_NAS_ANATOMY_DELIVERY_QA==='1',hostname:typeof window==='undefined'?'':window.location.hostname}),[slides,deliveryTier]);
  const byteStore=useMemo(()=>createArticleDeliveryByteStore(),[]),selectedAsset=useRef(null);selectedAsset.current=deliverySlides[active]?.interactiveAsset;
- useEffect(()=>{const visibility=()=>{if(deliveryTier&&document.visibilityState==='visible'){byteStore.resume();if(selectedAsset.current)byteStore.prefetch(selectedAsset.current).catch(()=>{});}else byteStore.pause();},hide=()=>byteStore.pause();visibility();document.addEventListener('visibilitychange',visibility);document.addEventListener('freeze',hide);window.addEventListener('pagehide',hide);window.addEventListener('pageshow',visibility);return()=>{document.removeEventListener('visibilitychange',visibility);document.removeEventListener('freeze',hide);window.removeEventListener('pagehide',hide);window.removeEventListener('pageshow',visibility);byteStore.clear();};},[byteStore,deliveryTier]);
- useEffect(()=>{if(deliveryTier&&!moving&&document.visibilityState==='visible'&&selectedAsset.current){byteStore.resume();byteStore.prefetch(selectedAsset.current).catch(()=>{});}},[active,moving,byteStore,deliveryTier]);
+ useEffect(()=>{const visibility=()=>{if(deliveryTier&&document.visibilityState==='visible'){
+ byteStore.resume();byteStore.warmAll(deliverySlides.map(s=>s.interactiveAsset).filter(Boolean));
+ import('./ArticleModelRuntime').catch(()=>{});
+ }else byteStore.pause();},hide=()=>byteStore.pause();visibility();document.addEventListener('visibilitychange',visibility);document.addEventListener('freeze',hide);window.addEventListener('pagehide',hide);window.addEventListener('pageshow',visibility);return()=>{document.removeEventListener('visibilitychange',visibility);document.removeEventListener('freeze',hide);window.removeEventListener('pagehide',hide);window.removeEventListener('pageshow',visibility);byteStore.clear();};},[byteStore,deliveryTier,deliverySlides]);
+
  const track=loop?[...deliverySlides.slice(-2),...deliverySlides,...deliverySlides.slice(0,2)]:deliverySlides;
  const realIndex=t=>((t-shift)%count+count)%count;
  const target=t=>{const e=rail.current;return e?.children[t]?centeredScrollLeft(e.children[t],e):0;};

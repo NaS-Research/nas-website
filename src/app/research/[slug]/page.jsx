@@ -1,3 +1,4 @@
+import AnatomyStudioReleasePreview from '@/components/research/anatomy-release-preview/AnatomyStudioReleasePreview';
 import {researchPresentationHistory} from '@/data/researchPresentationHistory.mjs';
 import PublicationContents from "@/components/research/PublicationContents";
 import RelatedResearch from "@/components/research/RelatedResearch";
@@ -105,6 +106,8 @@ export default async function ResearchPublicationPage({ params }) {
   const { slug } = await params;
   const item = getResearchItem(slug);
   if (!item) notFound();
+
+  if (slug === 'introducing-anatomy-studio') return <AnatomyStudioReleasePreview published/>;
 
   const isResearchPublication = ["Publications", "Research Notes"].includes(item.type) || Boolean(item.citable);
   const pdfUrl = getResearchPdfUrl(item);

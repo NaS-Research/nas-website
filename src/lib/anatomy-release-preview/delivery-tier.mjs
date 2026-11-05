@@ -18,8 +18,8 @@ export function mobileDeliveryGeometryReady(base,record) {
 export function mobileDeliveryReady(base,record) {return mobileDeliveryGeometryReady(base,record)&&record.matchedViewAppearanceAccepted===true&&hash(record.appearanceReceiptSHA256);}
 export function resolveArticleDeliveryAsset(base,tier,manifest) {
  if(!articleModelReady(base))return null;
- if(tier==='desktop')return base;
- if(tier!=='mobile'||manifest?.version!==1||!Array.isArray(manifest.assets))return null;
+ // Use the reviewed compact delivery on desktop too; preserve the original source identity.
+ if(!['mobile','desktop'].includes(tier)||manifest?.version!==1||!Array.isArray(manifest.assets))return null;
  const matches=manifest.assets.filter(a=>a?.modelId===base.id);if(matches.length!==1||!mobileDeliveryReady(base,matches[0]))return null;
  const a=matches[0];
  // Restrict substitutions to delivery fields. Keep logical ID, shape controls, captions and rights.

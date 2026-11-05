@@ -1,4 +1,5 @@
 import {deliveryBlock} from '../anatomy-studio/registry.mjs';
+import {publicStudioHostAllowed} from '../anatomy-studio/loader.mjs';
 // Article-owned JS cache only; browser HTTP-cache retention is browser-managed.
 export const ARTICLE_BYTE_CACHE_LIMIT = 16 * 1024 * 1024;
 const cancelled = () => new DOMException('The model request was cancelled.', 'AbortError');
@@ -17,7 +18,7 @@ export function createArticleByteStore({fetcher=fetch, maxBytes=ARTICLE_BYTE_CAC
   const blocked=deliveryBlock(asset); if(blocked)throw Error(blocked);
   const size=asset.bytes, base=origin(), host=new URL(base).hostname;
   if(asset.deliveryScope==='loopback-admin-only'&&!['127.0.0.1','localhost','[::1]'].includes(host))throw Error('These assets are admitted for local private review only.');
-  if(asset.deliveryScope==='nas-public-website'&&!['nasresearch.bio','www.nasresearch.bio','127.0.0.1','localhost','[::1]'].includes(host))throw Error('This release is configured for the NaS website.');
+  if(asset.deliveryScope==='nas-public-website'&&!publicStudioHostAllowed(host))throw Error('This release is configured for the NaS website.');
   if(!Number.isSafeInteger(size)||size<=0||size>asset.byteBudget)throw Error('The model exceeds its admitted byte budget.');
   const url=new URL(asset.deliveryURL,base);if(url.origin!==base)throw Error('Model must use the admitted same-origin mount.');
   url.searchParams.set('v',asset.sourceSHA256);return {size,url};

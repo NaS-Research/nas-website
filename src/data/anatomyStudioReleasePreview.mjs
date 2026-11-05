@@ -9,9 +9,13 @@ export const anatomyStudioReleasePreview = {
   "authors": [
     "NaS Research"
   ],
-  "version": "0.2.12-preview",
+  "version": "0.2.15-preview",
   "revisionHistory": [
+    {"version":"0.2.15-preview","dateISO":"2026-11-05","note":"Keep the full private revision history in the review edition only. The planned first public edition carries its own public revision record and omits unconfirmed physician quotation and draft attribution notes."},
+    {"version":"0.2.14-preview","dateISO":"2026-11-05","note":"Reconcile pending public-article code with deployed071b924 Studio release and live border removal; keep unconfirmed physician quotation draft-only. Approved cover pixels and final publication checks remain pending."},
+    {"version":"0.2.13-preview","dateISO":"2026-11-05","note":"Compose the two preserved, previously unbuilt preload and borderless-focus changes; retain draft quotation only in the review edition."},
     {"version":"0.2.12-preview","dateISO":"2026-11-04","note":"Remove the light model-canvas focus/active outline and touch highlight from the article slideshow. Keep the model presentation black without borders or shadows; retain keyboard focusability, rotation, reset and model assets. Separate earlier preload candidate remains preserved and unbuilt."},
+    {"version":"0.2.11-preview","dateISO":"2026-11-04","note":"Preload all three reviewed compact model files when the article opens on mobile and desktop, with sequential downloads and a bounded encoded-byte cache. One decoded scene remains active at a time; original models and prior editions retained."},
     {"version":"0.2.10-preview","dateISO":"2026-11-04","note":"Replace the temporary red-blood-cell and internal-heart preparation posters with responsive1920/3840 lossless derivatives of native3840x2160 actual-model captures using canonical camera/lighting. Native-size derivatives are RGBA-pixel-identical to the retained masters. No captured UI, crop or masking; original masters, prior posters and model files retained."},
     {"version":"0.2.9-preview","dateISO":"2026-11-04","note":"Remove captured corner instructions from the three temporary model poster presentations without cropping or altering model pixels outside that empty UI corner. Original PNGs and all model assets retained; native high-resolution replacements remain separate."},
     {"version":"0.2.8-preview","dateISO":"2026-11-04","note":"Fix initial model handoff being starved by unchanged render-loop view notifications. Compare actual camera/model transforms before extending settling; retain no-zoom rotation behavior and remove the redundant live corner hint. Existing poster images retained pending clean native captures."},
@@ -105,7 +109,7 @@ export const anatomyStudioReleasePreview = {
       "title": "Explore the studio today",
       "paragraphs": [
         "The current studio presents organ models with selected anatomical landmarks linked to concise explanations.",
-        "The article preview presents a lymphocyte, a normal red blood cell and an internal-heart cutaway. Each view prepares as the gallery approaches the screen, one model at a time. The cell models can be rotated freely; the heart remains within a limited front-facing view so that the cut surfaces remain visible.",
+        "The article presents a lymphocyte, a normal red blood cell and an internal-heart cutaway. Their compact files begin downloading when the page opens; the selected model becomes interactive once its view is ready. The cell models can be rotated freely; the heart remains within a limited front-facing view so that the cut surfaces remain visible.",
         "Different views support different questions. The red blood cell view makes its biconcave form visible, while the heart cutaway opens a view into its interior. These are educational representations. They do not reproduce every anatomical detail or demonstrate physiological behavior, and the static heart model does not simulate a heartbeat."
       ]
     },
@@ -144,4 +148,14 @@ export const anatomyStudioReleasePreview = {
   },
   "homepageExcerpt": "Anatomy Studio brings computational organ models into NaS Learn as the first part of BioBank, the institute’s developing biological library.",
   "metaDescription": "Anatomy Studio is the first part of NaS Research BioBank, a developing biological library beginning with computational models, environments and educational assets."
+};
+
+
+export const anatomyStudioReleasePublic = {
+ ...anatomyStudioReleasePreview,
+ version:'1.0.0', publicationStatus:'published', noindex:false,
+ date:'November 5, 2026',dateISO:'2026-11-05',
+ revisionHistory:[
+  {version:'1.0.0',dateISO:'2026-11-05',note:'Public edition candidate with rich article layout, compact preload and borderless model focus. Unconfirmed physician quotation omitted; prior review editions retained.'},
+ ]
 };
