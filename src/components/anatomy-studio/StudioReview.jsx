@@ -4,7 +4,7 @@ import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js';
 import {MeshoptDecoder} from 'three/examples/jsm/libs/meshopt_decoder.module.js';
 import {Box3,Group,Vector3} from 'three';
 import {REGIONS} from '@/lib/anatomy-studio/regions.mjs';
-import {ATELIER_ORGANS} from '@/lib/anatomy-studio/registry.mjs';
+import {PRIVATE_STUDIO_MODELS,sortStudioModels} from '@/lib/anatomy-studio/studio-model-catalog.mjs';
 import {PUBLIC_STUDIO_ORGANS} from '@/lib/anatomy-studio/public-registry.mjs';
 import {initialSelection, reduceSelection, searchStructures, indexScene} from '@/lib/anatomy-studio/selection.mjs';
 import {createOrganLoader} from '@/lib/anatomy-studio/loader.mjs';
@@ -45,9 +45,9 @@ function Icon({name,size=20}) {
  return <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{paths[name] || paths.grid}</svg>;
 }
 export default function StudioReview({publicAccess=false}) {
- const catalog=publicAccess?PUBLIC_STUDIO_ORGANS:ATELIER_ORGANS;
+ const catalog=publicAccess?PUBLIC_STUDIO_ORGANS:PRIVATE_STUDIO_MODELS;
  const [organId,setOrganId]=useState('heart');
- const organ=catalog.find(item=>item.id===organId),info=ORGAN_INFO[organId];
+ const organ=catalog.find(item=>item.id===organId),info=ORGAN_INFO[organId]||organ.studioInfo;
  const [load,setLoad]=useState({status:'idle',message:'Preparing the explorer…'});
  const [selection,setSelection]=useState(initialSelection);
  const [query,setQuery]=useState('');
@@ -55,13 +55,16 @@ export default function StudioReview({publicAccess=false}) {
  const [autoRotate,setAutoRotate]=useState(false);
  const [regionId,setRegionId]=useState(null);
  const [showRegions,setShowRegions]=useState(true);
- const regions=REGIONS[organId];
+ const regions=REGIONS[organId]||[];
  const selectedRegion=regions.find(item=>item.id===regionId);
  const detailHeading=useRef(null);
  const selectRegion=id=>{if(!regions.some(item=>item.id===id))return;setRegionId(id);setAutoRotate(false);};
  const learnRegion=()=>{detailHeading.current?.focus({preventScroll:true});detailHeading.current?.scrollIntoView({behavior:reducedMotion?'auto':'smooth',block:'nearest'});};
  const [cameraCommand,setCameraCommand]=useState(null);
- const stage=useRef(null);
+ const stage=useRef(null),libraryList=useRef(null);
+ const reportView=useCallback(view=>{if(stage.current)stage.current.dataset.viewState=JSON.stringify(view);},[]);
+ useEffect(()=>{if(stage.current)delete stage.current.dataset.viewState;},[organId]);
+ useEffect(()=>{const list=libraryList.current,selected=list?.querySelector('[aria-pressed="true"]');if(!list||!selected)return;const viewport=list.getBoundingClientRect(),item=selected.getBoundingClientRect();if(item.top<viewport.top)list.scrollTop-=viewport.top-item.top;else if(item.bottom>viewport.bottom)list.scrollTop+=item.bottom-viewport.bottom;},[organId,query]);
  const loader=useMemo(()=>createOrganLoader({parse:parseModel,dispose:disposeModel,notify:setLoad}),[]);
  const ids=useMemo(()=>new Set(organ.structures.map(part=>part.id)),[organ]);
  const dispatch=useCallback(event=>setSelection(state=>reduceSelection(state,event,ids)),[ids]);
@@ -72,45 +75,45 @@ export default function StudioReview({publicAccess=false}) {
  const choose=id=>{if(id===organId)return;setRegionId(null);setAutoRotate(false);setSelection(initialSelection());setCameraCommand(null);setOrganId(id);};
  const command=type=>setCameraCommand({type,serial:Date.now()+Math.random()});
  const reset=()=>{setRegionId(null);dispatch({type:'reset'});command('reset');};
- const visibleOrgans=[...catalog].sort((a,b)=>a.label.localeCompare(b.label,'en')).filter(item=>`${item.label} ${ORGAN_INFO[item.id].system}`.toLowerCase().includes(query.trim().toLowerCase()));
+ const visibleOrgans=sortStudioModels(catalog).filter(item=>`${item.label} ${(ORGAN_INFO[item.id]||item.studioInfo).system}`.toLowerCase().includes(query.trim().toLowerCase()));
  const hidden=selection.hidden.includes(organ.id);
  return <section className={styles.studio} aria-labelledby="studio-title">
   <header className={styles.appbar}>
    <div className={styles.brand}><h1 id="studio-title">The Anatomy Studio</h1></div>
-   <label className={styles.search}><Icon name="search" size={17}/><span className={styles.srOnly}>Search organs or systems</span><input value={query} onChange={e=>setQuery(e.target.value)} type="search" placeholder="Search organs, systems…"/></label>
+   <label className={styles.search}><Icon name="search" size={17}/><span className={styles.srOnly}>Search models or systems</span><input value={query} onChange={e=>setQuery(e.target.value)} type="search" placeholder="Search models, systems…"/></label>
   </header>
   <div className={styles.workspace}>
-   <aside className={styles.library} aria-label="Organ library">
-    <div className={styles.panelHeading}><h2>Organ library</h2><Icon name="book" size={16}/></div>
-    <nav aria-label="Choose an organ" className={styles.organList}>{visibleOrgans.map(item=><button key={item.id} type="button" aria-pressed={item.id===organId} onClick={()=>choose(item.id)} className={styles.organItem}><img src={`/studio/anatomy/atelier/thumbs/${item.id}.webp`} alt="" width="44" height="44"/><span><strong>{item.label}</strong><small>{ORGAN_INFO[item.id].system}</small></span><span className={styles.selectedDot} aria-hidden="true"/></button>)}</nav>
-    {!visibleOrgans.length&&<p className={styles.empty} role="status">No organs match your search.</p>}
+   <aside className={styles.library} aria-label="Model library">
+    <div className={styles.panelHeading}><h2>Model library</h2><Icon name="book" size={16}/></div>
+    <nav aria-label="Choose a model" tabIndex={0} ref={libraryList} className={styles.organList}>{visibleOrgans.map(item=><button key={item.id} type="button" aria-pressed={item.id===organId} onClick={()=>choose(item.id)} className={styles.organItem}>{item.thumbnailURL||!item.studioInfo?<img src={item.thumbnailURL||`/studio/anatomy/atelier/thumbs/${item.id}.webp`} alt="" width="44" height="44" loading="lazy"/>:<span className={styles.modelIcon} aria-hidden="true"><Icon name="grid"/></span>}<span><strong>{item.label}</strong><small>{(ORGAN_INFO[item.id]||item.studioInfo).system}</small></span><span className={styles.selectedDot} aria-hidden="true"/></button>)}</nav>
+    {!visibleOrgans.length&&<p className={styles.empty} role="status">No models match your search.</p>}
    </aside>
-   <div className={styles.stage} ref={stage}>
+   <div className={styles.stage} ref={stage} data-studio-model={organ.id} data-model-status={ready?'ready':load.status} data-ready-model={ready?load.assetId:undefined}>
     <div className={styles.stageTop}><span><i/>3D explorer</span><button className={styles.iconButton} type="button" aria-label="Expand model view" title="Expand view" onClick={()=>{if(document.fullscreenElement)document.exitFullscreen();else stage.current?.requestFullscreen?.();}}><Icon name="expand" size={17}/></button></div>
     <div className={styles.toolRail} aria-label="Model tools">
      <button type="button" disabled={!ready} onClick={()=>command('right')} aria-label="Rotate right"><Icon name="rotate"/><span>Rotate</span></button>
-     <button type="button" disabled={!ready} onClick={()=>command('in')} aria-label="Zoom in"><Icon name="zoom"/><span>Zoom in</span></button>
-     <button type="button" disabled={!ready} onClick={()=>command('out')} aria-label="Zoom out"><Icon name="minus"/><span>Zoom out</span></button>
-     <button type="button" aria-pressed={showRegions} onClick={()=>setShowRegions(value=>!value)} aria-label="Toggle region markers"><Icon name="grid"/><span>Labels</span></button>
+     <button type="button" disabled={!ready||organ.viewMode==='front-cutaway-orbit'} onClick={()=>command('in')} aria-label="Zoom in"><Icon name="zoom"/><span>Zoom in</span></button>
+     <button type="button" disabled={!ready||organ.viewMode==='front-cutaway-orbit'} onClick={()=>command('out')} aria-label="Zoom out"><Icon name="minus"/><span>Zoom out</span></button>
+     <button type="button" disabled={!regions.length} aria-pressed={showRegions&&regions.length>0} onClick={()=>setShowRegions(value=>!value)} aria-label="Toggle region markers"><Icon name="grid"/><span>Labels</span></button>
      <button type="button" disabled={!ready} aria-pressed={hidden} onClick={()=>{if(hidden)dispatch({type:'reset'});else{dispatch({type:'select',id:organ.id});dispatch({type:'hide'});}}}><Icon name="eye"/><span>{hidden?'Show':'Hide'}</span></button>
      <span className={styles.railRule}/>
      <button type="button" disabled={!ready} onClick={reset} aria-label="Reset view"><Icon name="reset"/><span>Reset</span></button>
     </div>
     <div className={styles.viewport}>
-     {ready?<StudioViewport model={load.model} structures={organ.structures} selection={selection} reducedMotion={reducedMotion} regions={regions} selectedRegion={regionId} showRegions={showRegions} onSelectRegion={selectRegion} onClearRegion={()=>setRegionId(null)} onLearnRegion={learnRegion} autoRotate={autoRotate} command={cameraCommand} onSelect={id=>dispatch({type:'select',id})} onContextLost={()=>loader.contextLost()} onError={message=>{loader.reset();setLoad({status:'error',message});}}/>:<div className={styles.message}><span className={styles.loadingMark} aria-hidden="true">✦</span><h2>{['error','context-lost','blocked'].includes(load.status)?'The model is unavailable.':`Preparing the ${organ.label.toLowerCase()}…`}</h2><p role="status" aria-live="polite">{load.message}</p>{['error','context-lost'].includes(load.status)&&<button type="button" onClick={()=>{dispatch({type:'reset'});loader.load(organ);}}>Try again</button>}</div>}
+     {ready?<StudioViewport onViewState={reportView} preserveMaterials={organ.preserveMaterials===true} orbitOptions={organ.viewProfile||{}} interactionMode={organ.viewMode==='front-cutaway-orbit'?'rotation-only':'standard'} model={load.model} structures={organ.structures} selection={selection} reducedMotion={reducedMotion} regions={regions} selectedRegion={regionId} showRegions={showRegions} onSelectRegion={selectRegion} onClearRegion={()=>setRegionId(null)} onLearnRegion={learnRegion} autoRotate={autoRotate} command={cameraCommand} onSelect={id=>dispatch({type:'select',id})} onContextLost={()=>loader.contextLost()} onError={message=>{loader.reset();setLoad({status:'error',message});}}/>:<div className={styles.message}><span className={styles.loadingMark} aria-hidden="true">✦</span><h2>{['error','context-lost','blocked'].includes(load.status)?'The model is unavailable.':`Preparing the ${organ.label.toLowerCase()}…`}</h2><p role="status" aria-live="polite">{load.message}</p>{['error','context-lost'].includes(load.status)&&<button type="button" onClick={()=>{dispatch({type:'reset'});loader.load(organ);}}>Try again</button>}</div>}
     </div>
-    <div className={styles.stageBottom}><div><span>Select a dot to explore</span><strong>{organ.label}</strong></div><button className={styles.autoRotate} type="button" role="switch" aria-checked={autoRotate} disabled={!ready||reducedMotion} title={reducedMotion?'Reduced motion is enabled':'Slowly rotate the organ'} onClick={()=>setAutoRotate(value=>!value)}><Icon name="rotate" size={14}/><span>Auto rotate</span><i/></button></div>
+    <div className={styles.stageBottom}><div><span>Select a dot to explore</span><strong>{organ.label}</strong></div><button className={styles.autoRotate} type="button" role="switch" aria-checked={autoRotate} disabled={!ready||reducedMotion||organ.viewMode==='front-cutaway-orbit'} title={reducedMotion?'Reduced motion is enabled':'Slowly rotate the organ'} onClick={()=>setAutoRotate(value=>!value)}><Icon name="rotate" size={14}/><span>Auto rotate</span><i/></button></div>
    </div>
-   <aside className={styles.details} aria-label="About this organ">
+   <aside className={styles.details} aria-label="About this model">
     <div className={styles.detailTitle}>{selectedRegion&&<button className={styles.backToOrgan} type="button" onClick={()=>setRegionId(null)}>← {organ.label} overview</button>}<p className={styles.eyebrow}>{selectedRegion?'Explore a region':`The ${organ.label.toLowerCase()}`}</p><h2 ref={detailHeading} tabIndex={-1} className={selectedRegion?styles.regionTitle:undefined}>{selectedRegion?.label||organ.label}</h2><p className={styles.subtitle}>{selectedRegion?.short||info.subtitle}</p></div>
     <p className={styles.description}>{selectedRegion?.description||info.description}</p>
     {selectedRegion&&<a className={styles.referenceLink} href={selectedRegion.sourceURL} target="_blank" rel="noreferrer">{selectedRegion.sourceLabel} <span aria-hidden="true">↗</span></a>}
-    <div className={styles.regionIndex}><h3>Explore this organ</h3><nav aria-label={`Regions of ${organ.label}`}>{regions.map(region=><button type="button" key={region.id} aria-pressed={region.id===regionId} onClick={()=>selectRegion(region.id)}><i aria-hidden="true"/><span>{region.label}</span><span aria-hidden="true">↗</span></button>)}</nav></div>
-    <div className={styles.facts}><h3>At a glance</h3><div><span>System</span><strong>{info.system}</strong></div><div><span>View</span><strong>Illustrative surface model</strong></div></div>
-    <div className={styles.detailNote}><Icon name="eye" size={18}/><p>Markers identify illustrative regions, not separately segmented tissues. Rotate the model to see different surfaces.</p></div>
+    {regions.length>0&&<div className={styles.regionIndex}><h3>Explore this organ</h3><nav aria-label={`Regions of ${organ.label}`}>{regions.map(region=><button type="button" key={region.id} aria-pressed={region.id===regionId} onClick={()=>selectRegion(region.id)}><i aria-hidden="true"/><span>{region.label}</span><span aria-hidden="true">↗</span></button>)}</nav></div>}
+    <div className={styles.facts}><h3>At a glance</h3><div><span>System</span><strong>{info.system}</strong></div><div><span>View</span><strong>{info.view||'Illustrative surface model'}</strong></div></div>
+    <div className={styles.detailNote}><Icon name="eye" size={18}/><p>{regions.length?'Markers identify illustrative regions, not separately segmented tissues. Rotate the model to see different surfaces.':'Rotate the model to examine its visible form. This illustration does not simulate cell function or physiology.'}</p></div>
     <div className={styles.detailFoot}><span>NaS Research</span><span>{publicAccess?"Anatomy Studio":"Private preview"}</span></div>
    </aside>
   </div>
-  <footer className={styles.credit}><span>Drag to rotate · Scroll to zoom · Right-drag to pan</span></footer>
+  <footer className={styles.credit}><span>{organ.viewMode==='front-cutaway-orbit'?'Drag to rotate':'Drag to rotate · Scroll to zoom · Right-drag to pan'}</span></footer>
  </section>;
 }
