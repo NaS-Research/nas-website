@@ -25,14 +25,18 @@ test("rejects unsafe and nonpublic paths",()=>{for(const href of ["//example.com
 test("response projection does not expose index internals",()=>assert.deepEqual(Object.keys(searchPublicIndex(index,"brain")[0]).sort(),["category","description","href","title"]));
 test("limit is bounded",()=>assert.ok(searchPublicIndex(index,"brain",100).length<=30));
 test("real catalog contains research, product, modules, guides, models and drug pages",()=>{
- for(const href of ["/research","/products#denials","/learn/pharmacy/atlas","/learn/anatomy","/learn/library","/learn/pharmacy/drugs/metformin"])assert.ok(publicSearchIndex.some(row=>row.href===href),href);
+ for(const href of ["/research","/products#denials","/learn/anatomy","/learn/library","/learn/pharmacy/drugs/metformin"])assert.ok(publicSearchIndex.some(row=>row.href===href),href);
  assert.ok(publicSearchIndex.some(row=>row.href.startsWith("/learn/pharmacy/modules/")));
  assert.ok(searchPublicIndex(publicSearchIndex,"clinvar").some(row=>row.href.startsWith("/research/")));
 });
 test("real catalog never exposes Anatomy preview, Studio, auth, drafts, model bytes or records",()=>{
  assert.ok(publicSearchIndex.every(row=>safeSearchHref(row.href)));
- assert.ok(publicSearchIndex.every(row=>!/(?:anatomy-studio|\.glb|\.pdf|preview|account|admin)/i.test(row.href)));
+ assert.ok(publicSearchIndex.every(row=>!/(?:\.glb|\.pdf|preview|account|admin)/i.test(row.href)));
  assert.deepEqual(searchPublicIndex(publicSearchIndex,"0.2.5-preview"),[]);
+});
+test("legacy Human Atlas searches lead to Anatomy Studio",()=>{
+ assert.equal(searchPublicIndex(publicSearchIndex,"human atlas")[0]?.href,"/learn/anatomy");
+ assert.ok(publicSearchIndex.every(row=>row.href!=="/learn/pharmacy/atlas"));
 });
 test("known module and drug queries return relevant real links",()=>{
  assert.ok(searchPublicIndex(publicSearchIndex,"acid base").some(row=>/acid-base/.test(row.href)));
