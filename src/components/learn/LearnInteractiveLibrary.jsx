@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Link from "next/link";
 import styles from "./LearnInteractiveLibrary.module.css";
 
 const previews = [
@@ -37,7 +36,6 @@ export default function LearnInteractiveLibrary() {
         <h2 id="interactive-library-title">Learn by<br />doing.</h2>
         <p className={styles.description}>Explore biological systems, test mechanisms, and build understanding.</p>
         <p className={styles.detail}>Follow a signal. Change a condition. Connect the mechanism to the response.</p>
-        <Link href="/learn/anatomy" className="learning-primary-link">Explore the Anatomy Studio <span aria-hidden="true">↗</span></Link>
         <dl className={styles.subjects}>
           <div><dt>Follow a signal</dt><dd>From cardiac conduction to cellular responses.</dd></div>
           <div><dt>Explore a change</dt><dd>Explore complementary bases and receptor activation.</dd></div>

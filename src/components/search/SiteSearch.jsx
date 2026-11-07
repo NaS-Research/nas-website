@@ -64,7 +64,7 @@ export default function SiteSearch({onClose, returnFocusRef}) {
       </form>
       <p className="nas-search__sr" role="status" aria-live="polite">{status==="ready" ? (results.length ? "Search results updated." : "No matching pages found.") : status==="loading" ? "Searching." : ""}</p>
       {status==="idle" && <div className="nas-search__discover"><p>Where would you like to begin?</p><div>{[
-        ["Research","/research"],["Products","/products"],["Learning Library","/learn/library"],["Human Atlas","/learn/pharmacy/atlas"],
+        ["Research","/research"],["Products","/products"],["Learning Library","/learn/library"],["Anatomy Studio", "/learn/anatomy"],
       ].map(([title,href])=><Link href={href} key={href} onClick={close}>{title}<span aria-hidden="true">↗</span></Link>)}</div></div>}
       {query.trim() && <section className="nas-search__matches" aria-label="Search results">
         <p className="nas-search__eyebrow">Your search</p><h1>{submitted || query.trim()}</h1>

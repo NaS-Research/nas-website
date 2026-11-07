@@ -5,8 +5,8 @@ import { scrollPageTo } from "@/lib/pageScroll.mjs";
 import "./footer.css";
 
 const groups = [
-  { title: "Research", links: [["Publications", "/research"], ["Research areas", "/research/areas"], ["Products", "/products"], ["NaS Cortex", "/research/introducing-nas-cortex"], ["NaS Denials", "/research/introducing-nas-denials"]] },
-  { title: "Workspace", links: [["Explore workspace", "/workspace"], ["Learn", "/learn"], ["Learning Library", "/learn/library"], ["Watch", "/learn/watch"], ["Human Atlas", "/learn/pharmacy/atlas"], ["Drug Library", "/learn/pharmacy/drugs"]] },
+  { title: "Research", links: [["Research library", "/research"], ["Research areas", "/research/areas"], ["Products", "/products"], ["NaS Cortex", "/research/introducing-nas-cortex"], ["NaS Denials", "/research/introducing-nas-denials"]] },
+  { title: "Workspace", links: [["Explore workspace", "/workspace"], ["Learn", "/learn"], ["Learning Library", "/learn/library"], ["Watch", "/learn/watch"], ["Anatomy Studio", "/learn/anatomy"], ["Drug Library", "/learn/pharmacy/drugs"]] },
   { title: "About NaS", links: [["Our purpose", "/about"], ["Work with NaS", "/support"], ["Page directory", "/sitemap"]] },
 ];
 
