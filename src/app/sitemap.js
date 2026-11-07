@@ -16,7 +16,7 @@ export default function sitemap() {
     { path: "/learn/watch", changeFrequency: "weekly", priority: 0.8 },
     { path: "/learn/library", changeFrequency: "weekly", priority: 0.85 },
     { path: "/learn", changeFrequency: "weekly", priority: 0.8 },
-    { path: "/learn/pharmacy/atlas", changeFrequency: "weekly", priority: 0.85 },
+    { path: "/learn/anatomy", changeFrequency: "weekly", priority: 0.85 },
     { path: "/learn/pharmacy/drugs", changeFrequency: "weekly", priority: 0.85 },
     { path: "/learn/pharmacy/review", changeFrequency: "monthly", priority: 0.8 },
     { path: "/about", changeFrequency: "monthly", priority: 0.7 },

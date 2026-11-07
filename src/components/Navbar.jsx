@@ -16,7 +16,7 @@ const navigation = [
 const sections = [
  { title:"Discover", links:[["Research library","/research"],["Research areas","/research/areas"],["Product overview","/products"]] },
  { title:"The institution", links:[["Our purpose","/about"],["Work with NaS","/support"]] },
- { title:"Learn", links:[["Learning Library","/learn/library"],["Human Atlas","/learn/pharmacy/atlas"],["Drug Library","/learn/pharmacy/drugs"],["Knowledge Review","/learn/pharmacy/review"]] },
+ { title:"Learn", links:[["Learning Library","/learn/library"],["Anatomy Studio", "/learn/anatomy"],["Drug Library","/learn/pharmacy/drugs"],["Knowledge Review","/learn/pharmacy/review"]] },
 ];
 
 function isActivePath(pathname, href) {
@@ -189,7 +189,7 @@ export default function Navbar({ authEnabled = false }) {
               <div>{sections.slice(0,2).map(section => <div className="nas-nav-group" key={section.title}><h2>{section.title}</h2>{section.links.map(([label,href]) => <Link key={href} href={href}>{label}</Link>)}</div>)}</div>
               <div className="nas-nav-group"><h2>{sections[2].title}</h2>{sections[2].links.map(([label,href]) => <Link key={href} href={href}>{label}</Link>)}</div>
             </div>
-            <div className="nas-nav-bottom"><span>Research and tools for the life sciences.</span><Link href="/workspace">Open Workspace ↗</Link></div>
+            <div className="nas-nav-bottom"><span>Research and tools for the life sciences.</span><Link href={authEnabled ? "/account" : "/workspace"}>Open Workspace ↗</Link></div>
           </nav>
         </div>
       </>}
