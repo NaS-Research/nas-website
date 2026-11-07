@@ -61,7 +61,12 @@ export const previewDemo = null;
 export const physicianPerspective = {
   "quote": "The visual models make complex concepts more accessible. I’m excited to see the collection grow as a teaching resource.",
   "attribution": "— Courtney Mangum, MD",
-  "status": "proposed-private-preview",
-  "reviewerApproved": false,
-  "privateDisplayApprovedByFounder": true
+  "status": "approved-for-publication",
+  "reviewerApproved": true,
+  "privateDisplayApprovedByFounder": true,
+  "publicDisplayApprovedByFounder": true
 };
+
+export function physicianPerspectiveVisible(published, perspective = physicianPerspective) {
+  return Boolean(perspective && (!published || (perspective.reviewerApproved === true && perspective.publicDisplayApprovedByFounder === true)));
+}
