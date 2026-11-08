@@ -5,19 +5,19 @@ import {ATELIER_ORGANS,deliveryBlock} from '../src/lib/anatomy-studio/registry.m
 import {PUBLIC_STUDIO_ORGANS} from '../src/lib/anatomy-studio/public-registry.mjs';
 import {articleModelAssets,articleRotationProfile} from '../src/lib/anatomy-release-preview/interactive-model.mjs';
 import {mobileDeliveryManifest} from '../src/lib/anatomy-release-preview/mobile-delivery-manifest.mjs';
-test('13 unique approved subjects use final display-label ABC order',()=>{
- assert.equal(PRIVATE_STUDIO_MODELS.length,13);assert.equal(new Set(PRIVATE_STUDIO_MODELS.map(a=>a.id)).size,13);
- assert.deepEqual(PRIVATE_STUDIO_MODELS.map(a=>a.label),['Brain','Eosinophil','Eye','Heart','Heart cutaway','Intestine','Kidneys','Liver','Lungs','Lymphocyte','Pancreas','Red blood cell','Skin']);
+test('15 unique approved subjects are alphabetical, with resting platelet first',()=>{
+ assert.equal(PRIVATE_STUDIO_MODELS.length,15);assert.equal(new Set(PRIVATE_STUDIO_MODELS.map(a=>a.id)).size,15);
+ assert.deepEqual(PRIVATE_STUDIO_MODELS.map(a=>a.label),['Brain','Eosinophil','Eye','Heart','Heart cutaway','Intestine','Kidneys','Liver','Lungs','Lymphocyte','Pancreas','Platelet (resting)','Platelet (activated)','Red blood cell','Skin']);
 });
 test('original nine identities and private permissions survive explicit public promotion',()=>{
  for(const original of ATELIER_ORGANS){assert.equal(PRIVATE_STUDIO_MODELS.find(a=>a.id===original.id),original);assert.equal(PUBLIC_STUDIO_ORGANS.find(a=>a.id===original.id).sourceSHA256,original.sourceSHA256);}
- assert.equal(PUBLIC_STUDIO_ORGANS.length,13);
- for(const a of PRIVATE_STUDIO_MODELS.filter(a=>['eosinophil','lymphocyte','normal-rbc','internal-heart-cutaway'].includes(a.id))){assert.equal(a.deliveryScope,'loopback-admin-only');assert.equal(a.publicationApproved,false);}
+ assert.equal(PUBLIC_STUDIO_ORGANS.length,15);
+ for(const a of PRIVATE_STUDIO_MODELS.filter(a=>['eosinophil','lymphocyte','normal-rbc','internal-heart-cutaway','platelet-resting','platelet-activated'].includes(a.id))){assert.equal(a.deliveryScope,'loopback-admin-only');assert.equal(a.publicationApproved,false);}
 });
 
-test('only four additions are admitted and all explicitly excluded subjects are absent',()=>{
+test('only six additions are admitted and all explicitly excluded subjects are absent',()=>{
  const original=new Set(ATELIER_ORGANS.map(a=>a.id));
- assert.deepEqual(PRIVATE_STUDIO_MODELS.filter(a=>!original.has(a.id)).map(a=>a.id).sort(),['eosinophil','internal-heart-cutaway','lymphocyte','normal-rbc']);
+ assert.deepEqual(PRIVATE_STUDIO_MODELS.filter(a=>!original.has(a.id)).map(a=>a.id).sort(),['eosinophil','internal-heart-cutaway','lymphocyte','normal-rbc','platelet-activated','platelet-resting']);
  for(const id of ['neutrophil','monocyte','sickled-rbc','basophil','artery','macrophage'])assert(!PRIVATE_STUDIO_MODELS.some(a=>a.id===id));
 });
 test('reused compact files preserve exact identities, model roots, materials and front-heart constraints',()=>{
