@@ -33,6 +33,7 @@ const eosinophil=Object.freeze({
 const platelets=Object.freeze([
  Object.freeze({
   id:"platelet-resting",label:"Platelet (resting)",
+  thumbnailURL:"/studio/anatomy/nas/platelet-resting.webp",
   deliveryURL:"/studio/anatomy/nas/platelet-resting-e8e5e937a06d16eb.glb",sourceSHA256:"e8e5e937a06d16eb71c1f90ba8472530885a4888d3f63ab882fa67f071a2d8f7",
   bytes:32659172,byteBudget:32659172,deliveryApproved:true,
   deliveryScope:'loopback-admin-only',publicationApproved:false,
@@ -44,6 +45,7 @@ const platelets=Object.freeze([
  }),
  Object.freeze({
   id:"platelet-activated",label:"Platelet (activated)",
+  thumbnailURL:"/studio/anatomy/nas/platelet-activated.webp",
   deliveryURL:"/studio/anatomy/nas/platelet-activated-ec1dda33154a0d58.glb",sourceSHA256:"ec1dda33154a0d58d507afdbe313d5eed759a84795e83efdc6e8674a46b7ee44",
   bytes:31588576,byteBudget:31588576,deliveryApproved:true,
   deliveryScope:'loopback-admin-only',publicationApproved:false,
