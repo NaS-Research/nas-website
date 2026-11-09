@@ -20,7 +20,7 @@ const sections = [
     id: "accounts",
     title: "Your NaS account",
     paragraphs: [
-      "You may use a Google account to sign in to a private NaS workspace. Keep your Google account secure, provide accurate information, and do not share another person's account or misrepresent an affiliation. A profile or affiliation does not establish verified researcher status or institutional endorsement.",
+      "You may sign in to a private NaS workspace with email and password or with Google. Keep your sign-in credentials secure, provide accurate information, and do not share another person's account or misrepresent an affiliation. A profile or affiliation does not establish verified researcher status or institutional endorsement.",
       "Your saved resources, notes, and reading progress are for your own research and learning. Do not store patient information, confidential records, or material you do not have permission to provide. You retain rights in the notes you submit and permit NaS and its service providers to process them to operate your workspace.",
       "You can request account deletion using the contact in our Privacy Policy. We may restrict access where needed to investigate misuse, protect accounts, or meet legal requirements.",
     ],
