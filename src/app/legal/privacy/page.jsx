@@ -23,6 +23,7 @@ const sections = [
       "We collect information you choose to provide when you contact us by email. This may include your name, email address, affiliation, the contents of your message, and any attachments you send.",
       "The public website does not currently provide a working Nicole chat service. Drug searches and label requests are handled by our website and sent to U.S. National Library of Medicine services (RxNorm and DailyMed) and the U.S. Food and Drug Administration (openFDA). Use drug names only; do not enter patient details or other sensitive information.",
       "Our hosting and security providers may automatically process basic technical information needed to deliver and protect the site. This can include an IP address, browser and device information, requested pages, timestamps, referring pages, and error or security logs.",
+      "If you create a NaS account with email and password, we collect your email address, name, and any affiliation you provide. Supabase handles password verification. Resend delivers account confirmation and password reset emails.",
       "If you create a NaS account with Google, we receive your Google account identifier, email address, and basic profile information such as your name and profile image. Google verifies your sign-in; NaS does not receive your Google password or access to your Gmail messages. We store reading progress, saved resources, and notes that you choose to keep in your private workspace. The website does not accept payments.",
     ],
   },
