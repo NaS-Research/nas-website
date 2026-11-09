@@ -13,8 +13,8 @@ export default function LearnAnatomyStudio() {
           <Link href="/learn/anatomy" className="learning-primary-link">Open Anatomy Studio <span aria-hidden="true">↗</span></Link>
         </div>
         <figure className={styles.model}>
-          <Image src="/anatomy-release-preview/model-stills/internal-heart-cutaway-native-1920-9cdb0f92662fc5dd.webp" alt="Three-dimensional heart cutaway showing the inner chambers" width={1920} height={1080} sizes="(max-width: 800px) 92vw, 53vw" />
-          <figcaption>Heart cutaway</figcaption>
+          <Image src="/assets/images/anatomy-studio/kidneys-studio-1920-0bdbf1f5d14cdd3c.webp" alt="Three-dimensional model of both kidneys with their blood vessels and ureters" width={1920} height={1080} sizes="(max-width: 800px) 92vw, 53vw" />
+          <figcaption>Kidneys</figcaption>
         </figure>
       </div>
     </section>
