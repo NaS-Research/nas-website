@@ -1,6 +1,9 @@
-import Image from "next/image";
 import Link from "next/link";
+import { InteractiveModel } from "@/components/research/anatomy-release-preview/ArticleInteractiveModel";
+import { PUBLIC_STUDIO_ORGANS } from "@/lib/anatomy-studio/public-registry.mjs";
 import styles from "./LearnAnatomyStudio.module.css";
+
+const kidneyModel = PUBLIC_STUDIO_ORGANS.find(model => model.id === "kidneys");
 
 export default function LearnAnatomyStudio() {
   return (
@@ -13,7 +16,7 @@ export default function LearnAnatomyStudio() {
           <Link href="/learn/anatomy" className="learning-primary-link">Open Anatomy Studio <span aria-hidden="true">↗</span></Link>
         </div>
         <figure className={styles.model}>
-          <Image src="/assets/images/anatomy-studio/kidneys-studio-1920-0bdbf1f5d14cdd3c.webp" alt="Three-dimensional model of both kidneys with their blood vessels and ureters" width={1920} height={1080} sizes="(max-width: 800px) 92vw, 53vw" />
+          <InteractiveModel asset={kidneyModel} />
           <figcaption>Kidneys</figcaption>
         </figure>
       </div>
