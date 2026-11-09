@@ -104,7 +104,7 @@ const sections = [
     paragraphs: [
       "For privacy questions or requests, contact NaS Research in Chicago, Illinois at:",
     ],
-    email: "dalronj.robertson@gmail.com",
+    email: "dalron@nasresearch.bio",
   },
 ];
 

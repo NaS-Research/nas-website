@@ -130,7 +130,7 @@ const sections = [
     paragraphs: [
       "Questions about these terms may be sent to NaS Research in Chicago, Illinois at:",
     ],
-    email: "dalronj.robertson@gmail.com",
+    email: "dalron@nasresearch.bio",
   },
 ];
 

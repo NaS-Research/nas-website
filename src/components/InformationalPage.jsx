@@ -13,7 +13,7 @@ export default function InformationalPage({
   closingTitle,
   closingCopy,
   actionLabel = "Contact NaS",
-  actionHref = "mailto:dalronj.robertson@gmail.com",
+  actionHref = "mailto:dalron@nasresearch.bio",
 }) {
   return (
     <div className="nas-page">
