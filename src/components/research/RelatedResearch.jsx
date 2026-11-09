@@ -8,7 +8,7 @@ export default function RelatedResearch({ items }) {
     <section className="nas-shell related-research" aria-labelledby="related-research-title" id="related-research">
       <div className="related-research__header">
         <h2 id="related-research-title">Related research</h2>
-        <Link href="/research">View all research <span aria-hidden="true">↗</span></Link>
+        <Link href="/research" aria-label="View all research">View all <span aria-hidden="true">↗</span></Link>
       </div>
       <div className="related-research__grid">
         {items.map(item => (
