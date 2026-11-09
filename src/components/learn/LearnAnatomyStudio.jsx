@@ -17,7 +17,7 @@ export default function LearnAnatomyStudio() {
         </div>
         <figure className={styles.model}>
           <InteractiveModel asset={kidneyModel} />
-          <figcaption>Kidneys</figcaption>
+          <figcaption>Rotate the model to see how blood vessels and ureters connect to the kidneys.</figcaption>
         </figure>
       </div>
     </section>
