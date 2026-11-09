@@ -47,11 +47,6 @@ export default function LearningPage() {
 
         <LearnVideos />
 
-        <LearnAnatomyStudio />
-
-        <LearnInteractiveLibrary />
-
-
         <section className="learning-standard">
           <div className="nas-shell learning-standard__grid">
             <div><p className="nas-section-label">The NaS standard</p><h2>Designed to be learned, checked, and revised.</h2></div>
@@ -62,6 +57,11 @@ export default function LearningPage() {
             </div>
           </div>
         </section>
+
+        <LearnAnatomyStudio />
+
+        <LearnInteractiveLibrary />
+
 
         <LearnDrugLibrary />
       </div>
