@@ -36,6 +36,7 @@ export default function ArticleToolbar({item}) {
         title={item.title}
         url={url}
       />}
+      {!hasAudio && <ArticleByline item={item}/>}
       {hasAudio && <ArticleAudioPlayer
         key={item.slug}
         src={item.narrationSrc}

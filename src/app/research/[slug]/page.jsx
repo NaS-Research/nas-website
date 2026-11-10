@@ -146,7 +146,7 @@ export default async function ResearchPublicationPage({ params }) {
   const related = getRelatedResearch(item, researchItems);
 
   const publicationDetails = (<>
-          <ArticleByline item={item}/>
+          {item.narrationSrc && <ArticleByline item={item}/>}
           {articleToolbar}
           {item.reviewState && <p className="publication-review-state">{item.reviewState}</p>}
   </>);
