@@ -106,3 +106,15 @@
 @media (prefers-reduced-motion: reduce) {
   .wave i { transition: none; }
 }
+
+/* Leave both sets of controls reachable where the fixed tools would cross the player. */
+@media (min-width: 768px) and (max-width: 1540px) {
+  :global(body):has(.capsule:not([hidden])) :global(.personal-tools:has(button)) {
+    bottom: calc(6rem + env(safe-area-inset-bottom));
+  }
+}
+@media (min-width: 768px) and (max-width: 1160px) {
+  :global(body):has(.capsule:not([hidden])) :global(.personal-tools:not(:has(button))) {
+    bottom: calc(6rem + env(safe-area-inset-bottom));
+  }
+}
