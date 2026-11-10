@@ -5,6 +5,8 @@ import {createPortal} from 'react-dom';
 import styles from './article-audio.module.css';
 import {clampAudioTime, formatAudioTime} from './audio-time.mjs';
 
+// Voice bands in Hz; each bar measures a different part of the same signal.
+const VOICE_BANDS = [90, 220, 440, 850, 1600, 3200];
 const SPEEDS = [0.75, 1, 1.25, 1.5, 1.75, 2];
 
 function Icon({name}) {
@@ -19,20 +21,25 @@ function Icon({name}) {
   return <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{shapes[name]}</svg>;
 }
 
-export default function ArticleAudioPlayer({src, title}) {
+export default function ArticleAudioPlayer({src, title, cover}) {
   const media = useRef(null);
   const inline = useRef(null);
   const inlinePlay = useRef(null);
   const dock = useRef(null);
+  const wave = useRef(null);
+  const graph = useRef(null);
   const [pastAudio, setPastAudio] = useState(false);
   const [dockDismissed, setDockDismissed] = useState(false);
   const [started, setStarted] = useState(false);
   const [paused, setPaused] = useState(true);
+  const [playing, setPlaying] = useState(false);
   const [time, setTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const [speed, setSpeed] = useState(1);
   const [copied, setCopied] = useState(false);
   const [error, setError] = useState('');
+
+  const showDock = started && pastAudio && !dockDismissed;
 
   const syncTime = useCallback(() => {
     const audio = media.current;
@@ -97,6 +104,71 @@ export default function ArticleAudioPlayer({src, title}) {
       ?.focus({preventScroll: true});
   }
 
+  useEffect(() => () => {
+    if (graph.current) void graph.current.context.close().catch(() => {});
+  }, []);
+
+  useEffect(() => {
+    const analyser = graph.current?.analyser;
+    if (!showDock || !playing || !analyser) return;
+    const preference = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const bars = Array.from(wave.current.children);
+    const levels = new Uint8Array(analyser.frequencyBinCount);
+    const binsPerHz = analyser.fftSize / analyser.context.sampleRate;
+    let frame;
+    let last = 0;
+
+    function draw(now) {
+      if (preference.matches || media.current?.paused) return;
+      if (now - last >= 30) {
+        last = now;
+        analyser.getByteFrequencyData(levels);
+        for (const [index, bar] of bars.entries()) {
+          const low = Math.max(1, Math.round(VOICE_BANDS[index] * binsPerHz));
+          const high = Math.max(low + 1, Math.round(VOICE_BANDS[index + 1] * binsPerHz));
+          let peak = 0;
+          for (let bin = low; bin < high; bin++) peak = Math.max(peak, levels[bin]);
+          bar.style.setProperty('--level', (0.22 + 0.78 * peak / 255).toFixed(3));
+        }
+      }
+      frame = requestAnimationFrame(draw);
+    }
+
+    function updateMotion() {
+      cancelAnimationFrame(frame);
+      for (const bar of bars) bar.style.removeProperty('--level');
+      if (!preference.matches) frame = requestAnimationFrame(draw);
+    }
+
+    preference.addEventListener('change', updateMotion);
+    updateMotion();
+    return () => {
+      preference.removeEventListener('change', updateMotion);
+      cancelAnimationFrame(frame);
+      for (const bar of bars) bar.style.removeProperty('--level');
+    };
+  }, [showDock, playing]);
+
+  function startAudioGraph(audio) {
+    const Context = window.AudioContext || window.webkitAudioContext;
+    if (!graph.current && Context) {
+      const context = new Context();
+      const analyser = context.createAnalyser();
+      analyser.fftSize = 1024;
+      analyser.smoothingTimeConstant = 0.6;
+      try {
+        const source = context.createMediaElementSource(audio);
+        source.connect(analyser);
+        analyser.connect(context.destination);
+        graph.current = {context, analyser};
+      } catch {
+        void context.close().catch(() => {});
+      }
+    }
+    const context = graph.current?.context;
+    if (context?.state !== 'running') void context?.resume().catch(() => {});
+  }
+
   function seek(value) {
     const audio = media.current;
     if (!Number.isFinite(audio.duration) || audio.duration <= 0) return;
@@ -116,6 +188,7 @@ export default function ArticleAudioPlayer({src, title}) {
       return;
     }
     setDockDismissed(false);
+    try { startAudioGraph(audio); } catch { /* Native playback remains available. */ }
     try {
       await audio.play();
     } catch (playbackError) {
@@ -172,17 +245,16 @@ export default function ArticleAudioPlayer({src, title}) {
       style={{'--audio-progress': (duration ? 100 * time / duration : 0) + '%'}}
       onChange={event => seek(event.target.valueAsNumber)} />
   );
-  const showDock = started && pastAudio && !dockDismissed;
-
   return (
     <section ref={inline} className={styles.audio} data-article-audio aria-label="Article narration">
       <audio ref={media} src={src} preload="metadata"
         onLoadedMetadata={syncTime} onDurationChange={syncTime} onTimeUpdate={syncTime}
         onPlay={() => setPaused(false)}
-        onPlaying={() => setStarted(true)}
-        onPause={() => setPaused(true)}
-        onEnded={() => {setPaused(true); syncTime();}}
-        onError={() => {setPaused(true); setError('Article narration is unavailable.');}}
+        onPlaying={() => {setStarted(true); setPlaying(true);}}
+        onWaiting={() => setPlaying(false)}
+        onPause={() => {setPaused(true); setPlaying(false);}}
+        onEnded={() => {setPaused(true); setPlaying(false); syncTime();}}
+        onError={() => {setPaused(true); setPlaying(false); setError('Article narration is unavailable.');}}
       />
       <div inert={showDock}>
         <div className={styles.row}>
@@ -209,10 +281,15 @@ export default function ArticleAudioPlayer({src, title}) {
               dismissDock();
             }
           }}>
+          <img className={styles.dockCover} src={cover} alt="" width="44" height="44" />
           <div className={styles.dockHeader}>
-            <strong title={title}>{title}</strong><span>{elapsed}</span>
+            <strong>{title}</strong>
+            <span ref={wave} className={styles.wave} aria-hidden="true"><i/><i/><i/><i/><i/></span>
           </div>
-          {timeline}
+          <div className={styles.dockProgress}>
+            <span>{elapsed}</span>
+            {timeline}
+          </div>
           <div className={styles.dockTransport}>
             {rewind}
             <button type="button" className={styles.dockPlay} aria-label={playbackLabel} onClick={toggle}>{playbackIcon}</button>
