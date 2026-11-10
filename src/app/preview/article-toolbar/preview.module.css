@@ -1,2 +1,12 @@
 .preview{min-height:100vh;background:#000;color:#f5f5f3;padding:clamp(130px,20vh,220px) clamp(24px,4vw,70px) 100px;text-align:center}.tags{display:flex;align-items:center;justify-content:center;gap:24px;color:#a3a3a3;font-size:15px}.tags span{color:#5c5750}.preview h1{max-width:1300px;margin:44px auto 32px;font-size:clamp(42px,5.3vw,78px);font-weight:450;letter-spacing:-.055em;line-height:1.06}.abstract{max-width:1060px;margin:0 auto;color:#bcbcbc;font-size:clamp(18px,1.9vw,25px);line-height:1.65;letter-spacing:-.02em}.byline{display:flex;justify-content:center;align-items:baseline;gap:14px;margin:40px auto 0;color:#c0bcb5;font-size:16px}.byline span{color:#5c5750}.byline small{font-size:14px;color:#96918a}.toolbar{max-width:1060px;margin:52px auto 0}.toolbar>[data-article-audio]{width:100%;margin:0}.actions{display:flex;align-items:center;justify-content:flex-end;gap:clamp(16px,2vw,30px)}.actions button{gap:7px!important;white-space:nowrap;font-size:14px!important;color:#c7c2ba!important;transition:color .25s ease}.actions button:hover{color:#fff!important}.actions svg{width:16px;height:16px;color:#b49a75}.note{margin:65px 0 0;font-size:11px;letter-spacing:.04em;color:#66615a}@media(max-width:760px){.toolbar>[data-article-audio]>div:first-child{flex-wrap:wrap;gap:16px}.actions{flex-wrap:wrap;justify-content:flex-start;gap:16px}.preview{padding-top:130px}.preview h1{margin-top:30px}.byline{margin-top:28px}.toolbar{margin-top:36px}}
 .byline{flex-direction:column;align-items:center;gap:8px}.byline>span{color:#c0bcb5}.toolbar{border-top:1px solid rgba(199,160,105,.19);padding-top:18px}.toolbar>[data-article-audio]{border-top:0;padding-top:0}
+
+@media(max-width:760px){
+ .toolbar>[data-article-audio]>div:first-of-type{display:flex;flex-direction:column;align-items:center;gap:0}
+ .toolbar>[data-article-audio]>div:first-of-type>div:first-child{display:contents}
+ .toolbar [data-started]{order:1;justify-content:center;width:100%}
+ .toolbar input[aria-label="Seek narration"]{order:2;width:100%;max-width:360px;margin:20px auto 0}
+ .actions{order:3;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%;max-width:400px;margin:24px auto 0;gap:6px 18px}
+ .actions button{justify-content:center;min-height:44px;min-width:0}
+ .actions button:last-child:nth-child(odd){grid-column:1/-1}
+}
