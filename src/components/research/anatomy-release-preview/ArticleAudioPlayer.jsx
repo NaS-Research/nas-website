@@ -309,27 +309,25 @@ export default function ArticleAudioPlayer({src, title, cover}) {
             {timeline}
           </div>
           <div className={styles.dockTransport}>
+            {rewind}
             <button type="button" className={styles.dockPlay} aria-label={playbackLabel} onClick={toggle}>
               <span>{playbackIcon}</span>
             </button>
-            <details ref={dockOptions} className={styles.dockOptions} onBlur={event => {
-              if (event.relatedTarget && !event.currentTarget.contains(event.relatedTarget)) {
-                event.currentTarget.open = false;
-              }
-            }}>
-              <summary aria-label="Playback options"><Icon name="more"/></summary>
-              <div className={styles.optionsPanel}>
-                <div className={styles.optionRow}>
-                  <span>Skip 15s</span>
-                  <div className={styles.optionSkips}>{rewind}{forward}</div>
-                </div>
-                <label className={styles.optionRow}>Playback speed {speedControl}</label>
-                <button type="button" className={styles.closeOption} onClick={dismissDock}>
-                  <Icon name="close"/> Close player
-                </button>
-              </div>
-            </details>
+            {forward}
           </div>
+          <details ref={dockOptions} className={styles.dockOptions} onBlur={event => {
+            if (event.relatedTarget && !event.currentTarget.contains(event.relatedTarget)) {
+              event.currentTarget.open = false;
+            }
+          }}>
+            <summary aria-label="Playback options"><Icon name="more"/></summary>
+            <div className={styles.optionsPanel}>
+              <label className={styles.optionRow}>Playback speed {speedControl}</label>
+              <button type="button" className={styles.closeOption} onClick={dismissDock}>
+                <Icon name="close"/> Close player
+              </button>
+            </div>
+          </details>
           {error && <p className={styles.dockError} role="status">{error}</p>}
         </section>,
         document.body
