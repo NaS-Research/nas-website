@@ -15,6 +15,7 @@ function Icon({name}) {
     pause: <path d="M9 5v14m6-14v14" strokeWidth="3"/>,
     back: <><path d="M4 10a8 8 0 1 1 2 9M4 4v6h6"/><text x="12.5" y="15" textAnchor="middle" fill="currentColor" stroke="none" fontSize="7.5">15</text></>,
     forward: <><path d="M20 10a8 8 0 1 0-2 9m2-15v6h-6"/><text x="11.5" y="15" textAnchor="middle" fill="currentColor" stroke="none" fontSize="7.5">15</text></>,
+    more: <path d="M5 12h.01m6.99 0h.01m6.99 0h.01" strokeWidth="3" />,
     close: <path d="m7 7 10 10M17 7 7 17"/>,
     link: <path d="m10 13 4-4m-6 6-1 1a3.5 3.5 0 0 1-5-5l4-4a3.5 3.5 0 0 1 5 0m2 2 1-1a3.5 3.5 0 0 1 5 5l-4 4a3.5 3.5 0 0 1-5 0" transform="translate(1 1)"/>,
   };
@@ -26,6 +27,7 @@ export default function ArticleAudioPlayer({src, title, cover}) {
   const inline = useRef(null);
   const inlinePlay = useRef(null);
   const dock = useRef(null);
+  const dockOptions = useRef(null);
   const wave = useRef(null);
   const graph = useRef(null);
   const [pastAudio, setPastAudio] = useState(false);
@@ -96,6 +98,16 @@ export default function ArticleAudioPlayer({src, title, cover}) {
       window.cancelAnimationFrame(frame);
     };
   }, [started, dockDismissed]);
+
+  useEffect(() => {
+    if (!showDock) return;
+    function closeOutside(event) {
+      const options = dockOptions.current;
+      if (options?.open && !options.contains(event.target)) options.open = false;
+    }
+    document.addEventListener('pointerdown', closeOutside);
+    return () => document.removeEventListener('pointerdown', closeOutside);
+  }, [showDock]);
 
   function dismissDock() {
     media.current.pause();
@@ -278,7 +290,13 @@ export default function ArticleAudioPlayer({src, title, cover}) {
           onKeyDown={event => {
             if (event.key === 'Escape' && event.target.tagName !== 'SELECT') {
               event.preventDefault();
-              dismissDock();
+              const options = dockOptions.current;
+              if (options?.open) {
+                options.open = false;
+                options.querySelector('summary')?.focus();
+              } else {
+                dismissDock();
+              }
             }
           }}>
           <img className={styles.dockCover} src={cover} alt="" width="44" height="44" />
@@ -291,14 +309,27 @@ export default function ArticleAudioPlayer({src, title, cover}) {
             {timeline}
           </div>
           <div className={styles.dockTransport}>
-            {rewind}
-            <button type="button" className={styles.dockPlay} aria-label={playbackLabel} onClick={toggle}>{playbackIcon}</button>
-            {forward}
-            {speedControl}
+            <button type="button" className={styles.dockPlay} aria-label={playbackLabel} onClick={toggle}>
+              <span>{playbackIcon}</span>
+            </button>
+            <details ref={dockOptions} className={styles.dockOptions} onBlur={event => {
+              if (event.relatedTarget && !event.currentTarget.contains(event.relatedTarget)) {
+                event.currentTarget.open = false;
+              }
+            }}>
+              <summary aria-label="Playback options"><Icon name="more"/></summary>
+              <div className={styles.optionsPanel}>
+                <div className={styles.optionRow}>
+                  <span>Skip 15s</span>
+                  <div className={styles.optionSkips}>{rewind}{forward}</div>
+                </div>
+                <label className={styles.optionRow}>Playback speed {speedControl}</label>
+                <button type="button" className={styles.closeOption} onClick={dismissDock}>
+                  <Icon name="close"/> Close player
+                </button>
+              </div>
+            </details>
           </div>
-          <button type="button" className={styles.dockClose} aria-label="Close audio player" onClick={dismissDock}>
-            <Icon name="close"/>
-          </button>
           {error && <p className={styles.dockError} role="status">{error}</p>}
         </section>,
         document.body

@@ -6,6 +6,15 @@ export function siteOrigin() {
  if (url.protocol !== 'https:' && !['localhost','127.0.0.1'].includes(url.hostname)) throw new Error('HTTPS required');
  return url.origin;
 }
+export function isSiteOrigin(origin) {
+ if (!origin) return false;
+ try {
+  return origin === siteOrigin();
+ } catch {
+  return false;
+ }
+}
+
 export function providerEnabled(provider) {
  return authReady() && ['google','apple'].includes(provider) && process.env[`NAS_AUTH_${provider.toUpperCase()}_ENABLED`] === 'true';
 }
