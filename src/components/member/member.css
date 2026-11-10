@@ -29,6 +29,7 @@
     bottom: calc(1rem + env(safe-area-inset-bottom));
     max-width: calc(100vw - 9rem);
   }
+  .personal-tools--article .personal-tools-panel { right: auto; left: 0; }
 }
 @media (prefers-reduced-motion: reduce) {
   .personal-tools--article > :is(button, a) { transition: none; }
