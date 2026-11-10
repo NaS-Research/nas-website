@@ -1,4 +1,5 @@
 import AnatomyStudioReleasePreview from '@/components/research/anatomy-release-preview/AnatomyStudioReleasePreview';
+import ArticleAudioPlayer from '@/components/research/anatomy-release-preview/ArticleAudioPlayer';
 import {researchPresentationHistory} from '@/data/researchPresentationHistory.mjs';
 import PublicationContents from "@/components/research/PublicationContents";
 import RelatedResearch from "@/components/research/RelatedResearch";
@@ -108,7 +109,16 @@ export default async function ResearchPublicationPage({ params }) {
   const item = getResearchItem(slug);
   if (!item) notFound();
 
-  if (slug === 'introducing-anatomy-studio') return <AnatomyStudioReleasePreview published/>;
+  if (slug === 'introducing-anatomy-studio') {
+    const audioPlayer = (
+      <ArticleAudioPlayer
+        src="/research/anatomy-studio/anatomy-studio-narration.mp3"
+        title={item.title}
+        cover={publicationArtwork[slug].src}
+      />
+    );
+    return <AnatomyStudioReleasePreview published audioPlayer={audioPlayer} />;
+  }
 
   const isResearchPublication = ["Publications", "Research Notes"].includes(item.type) || Boolean(item.citable);
   const pdfUrl = getResearchPdfUrl(item);
