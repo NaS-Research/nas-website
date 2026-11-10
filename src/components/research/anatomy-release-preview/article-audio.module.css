@@ -122,11 +122,11 @@
   width: min(26rem, 100% - 2rem);
   margin-inline: auto;
   display: grid;
-  grid-template-columns: 44px minmax(0, 1fr) auto;
-  grid-template-areas: "cover heading transport" "cover timeline transport";
+  grid-template-columns: 44px minmax(0, 1fr) 44px;
+  grid-template-areas: "cover heading options" "cover timeline options" "transport transport transport";
   align-items: center;
   column-gap: .5rem;
-  padding: .55rem .25rem .55rem .6rem;
+  padding: .45rem .6rem;
   border: 1px solid #c7a0693b;
   border-radius: 1rem;
   background: #171512;
@@ -172,7 +172,7 @@
 }
 .dockProgress span { min-width: 3.6ch; color: #bcb8b1; font-size: .6875rem; font-variant-numeric: tabular-nums; }
 .dock .timeline { flex: 1; min-width: 0; height: 24px; margin: 0; }
-.dockTransport { grid-area: transport; display: flex; align-items: center; }
+.dockTransport { grid-area: transport; display: flex; align-items: center; justify-content: center; }
 .dock button, .dockOptions summary {
   display: grid;
   width: 44px;
@@ -199,6 +199,7 @@
 }
 .dockPlay:hover span { background: #494135; }
 .dockPlay svg, .dockOptions summary svg { width: 18px; height: 18px; }
+.dockOptions { grid-area: options; }
 .dockOptions summary { list-style: none; }
 .dockOptions summary::-webkit-details-marker { display: none; }
 .dockOptions summary:hover, .dockOptions[open] summary { background: #ffffff15; }
@@ -216,7 +217,6 @@
   font-size: .8125rem;
 }
 .optionRow { display: flex; min-height: 44px; align-items: center; justify-content: space-between; gap: .25rem; padding-left: .45rem; }
-.optionSkips { display: flex; }
 .dock .speed { min-width: 52px; min-height: 38px; padding-inline: .35rem; border-color: #ffffff38; font-size: .75rem; }
 .dock .closeOption {
   display: flex;
@@ -244,11 +244,11 @@
 }
 @media (min-width: 768px) and (max-width: 840px) {
   :global(body):has(.dock) :global(.personal-tools:has(button)) {
-    bottom: calc(7rem + env(safe-area-inset-bottom));
+    bottom: calc(8.5rem + env(safe-area-inset-bottom));
   }
 }
 @media (min-width: 768px) and (max-width: 1160px) {
   :global(body):has(.dock) :global(.personal-tools:not(:has(button))) {
-    bottom: calc(7rem + env(safe-area-inset-bottom));
+    bottom: calc(8.5rem + env(safe-area-inset-bottom));
   }
 }
