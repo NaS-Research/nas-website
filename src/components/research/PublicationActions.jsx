@@ -52,14 +52,14 @@ export default function PublicationActions({citation, pdfUrl, dataUrl, dataLabel
           {compact && <ActionIcon name="pdf"/>}View PDF{!compact && " ↗"}
         </a>
       )}
-      {citation && <button className={compact ? undefined : "publication-action"} type="button" onClick={() => copy(citation, "citation")}>
+      {citation && <button className={compact ? undefined : "publication-action"} type="button" data-action="citation" onClick={() => copy(citation, "citation")}>
         {compact && <ActionIcon name="citation"/>}{copied === "citation" ? "Copied" : "Copy citation"}
       </button>}
       {dataUrl && <a href={dataUrl} className={compact ? undefined : "publication-action"} aria-label="Download data and analysis">
         {compact && <ActionIcon name="data"/>}{dataLabel}
       </a>}
-      <button className={compact ? undefined : "publication-action"} type="button" onClick={sharePublication}>
-        {compact && <ActionIcon name="share"/>}{copied === "link" ? "Link copied" : "Share"}
+      <button className={compact ? undefined : "publication-action"} type="button" data-action="share" onClick={sharePublication}>
+        {compact && <ActionIcon name="share"/>}{copied === "link" ? (compact ? "Copied" : "Link copied") : "Share"}
       </button>
       <span className={styles.status} role="status">{copied === "citation" ? "Citation copied." : copied === "link" ? "Article link copied." : ""}</span>
       {error && <p className={styles.error} role="alert">{error}</p>}
