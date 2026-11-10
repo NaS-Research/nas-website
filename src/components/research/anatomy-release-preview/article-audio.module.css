@@ -67,7 +67,7 @@
 .capsule button:disabled { opacity: .4; cursor: default; }
 .launcher:hover, .capsule button:hover:not(:disabled) { background: #242424; }
 .capsule .play:hover:not(:disabled) { background: #cecece; }
-.audio :focus-visible { outline: 2px solid #e2c79a; outline-offset: 2px; }
+.audio :focus-visible, .capsule :focus-visible { outline: 2px solid #e2c79a; outline-offset: 2px; }
 .timeline { grid-area: timeline; min-width: 0; display: grid; }
 .timeline input {
   appearance: none;

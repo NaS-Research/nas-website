@@ -1,6 +1,7 @@
 'use client';
 
 import {useCallback, useEffect, useRef, useState} from 'react';
+import {createPortal} from 'react-dom';
 import styles from './article-audio.module.css';
 import {clampAudioTime, formatAudioTime} from './audio-time.mjs';
 
@@ -29,12 +30,18 @@ export default function ArticleAudioPlayer({src, title, cover}) {
   const focusOnOpen = useRef(false);
   const attempt = useRef(0);
   const [open, setOpen] = useState(true);
+  const [portalRoot, setPortalRoot] = useState(null);
   const [paused, setPaused] = useState(true);
   const [playing, setPlaying] = useState(false);
   const [time, setTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const [speed, setSpeed] = useState(1);
   const [status, setStatus] = useState('');
+
+  useEffect(() => {
+    // Keep playback controls above the article body as it scrolls over the sticky hero.
+    setPortalRoot(document.body);
+  }, []);
 
   useEffect(() => () => {
     if (graph.current) void graph.current.context.close().catch(() => {});
@@ -176,7 +183,7 @@ export default function ArticleAudioPlayer({src, title, cover}) {
         <Icon name="audio" /> Listen to article
       </button>
       <span className={styles.srOnly} role="status">{status}</span>
-      <section id="article-audio-controls" className={styles.capsule} hidden={!open}
+      {portalRoot && createPortal(<section id="article-audio-controls" className={styles.capsule} hidden={!open}
         aria-label="Article narration" data-playing={playing}
         onKeyDown={event => {
           if (event.key === 'Escape' && event.target.tagName !== 'SELECT') {
@@ -221,7 +228,7 @@ export default function ArticleAudioPlayer({src, title, cover}) {
         <button type="button" className={styles.close} aria-label="Close audio player" onClick={close}>
           <Icon name="close" />
         </button>
-      </section>
+      </section>, portalRoot)}
     </div>
   );
 }
