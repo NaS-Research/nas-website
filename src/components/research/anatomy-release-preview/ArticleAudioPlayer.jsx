@@ -20,7 +20,7 @@ function Icon({name}) {
   return <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{shapes[name]}</svg>;
 }
 
-export default function ArticleAudioPlayer({src, title, cover, actions = null, readingEstimate = null}) {
+export default function ArticleAudioPlayer({src, title, cover, actions = null}) {
   const media = useRef(null);
   const inline = useRef(null);
   const inlinePlay = useRef(null);
@@ -258,7 +258,6 @@ export default function ArticleAudioPlayer({src, title, cover, actions = null, r
         onEnded={() => {setPaused(true); setPlaying(false); syncTime();}}
         onError={() => {setPaused(true); setPlaying(false); setError('Article narration is unavailable.');}}
       />
-      {readingEstimate}
       <div inert={showDock}>
         <div className={styles.row}>
           <div className={styles.transport} data-started={started}>
