@@ -17,13 +17,15 @@ export default function ArticleToolbar({item}) {
       compact
       citation={getArticleCitation(item)}
       pdfUrl={getResearchPdfUrl(item)}
+      dataUrl={item.narrationSrc ? undefined : item.reproducibilityUrl}
+      dataLabel={item.reproducibilityLabel}
       title={item.title}
       url={`https://nasresearch.bio/research/${item.slug}`}
     />
   );
 
   return (
-    <div className={styles.toolbar} data-article-toolbar>
+    <div className={`${styles.toolbar}${item.narrationSrc ? "" : ` ${styles.resourcesOnly}`}`} data-article-toolbar>
       {item.narrationSrc ? (
         <ArticleAudioPlayer
           key={item.slug}
@@ -37,7 +39,7 @@ export default function ArticleToolbar({item}) {
           {actions}
         </div>
       )}
-      {item.reproducibilityUrl && <a className={styles.dataDownload} href={item.reproducibilityUrl}>
+      {item.narrationSrc && item.reproducibilityUrl && <a className={styles.dataDownload} href={item.reproducibilityUrl}>
         {item.reproducibilityLabel || "Download data & analysis"}
         <span aria-hidden="true">↗</span>
       </a>}
