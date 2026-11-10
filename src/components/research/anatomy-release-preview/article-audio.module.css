@@ -199,14 +199,13 @@
 }
 .dockPlay:hover span { background: #494135; }
 .dockPlay svg, .dockOptions summary svg { width: 18px; height: 18px; }
-.dockOptions { position: relative; }
 .dockOptions summary { list-style: none; }
 .dockOptions summary::-webkit-details-marker { display: none; }
 .dockOptions summary:hover, .dockOptions[open] summary { background: #ffffff15; }
 .optionsPanel {
   position: absolute;
-  right: 0;
-  bottom: calc(100% + .65rem);
+  right: .35rem;
+  bottom: calc(100% + .4rem);
   width: 13rem;
   padding: .35rem .5rem;
   background: #1b1814;

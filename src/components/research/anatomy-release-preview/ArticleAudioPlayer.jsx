@@ -320,7 +320,7 @@ export default function ArticleAudioPlayer({src, title, cover}) {
               <summary aria-label="Playback options"><Icon name="more"/></summary>
               <div className={styles.optionsPanel}>
                 <div className={styles.optionRow}>
-                  <span>Skip 15 seconds</span>
+                  <span>Skip 15s</span>
                   <div className={styles.optionSkips}>{rewind}{forward}</div>
                 </div>
                 <label className={styles.optionRow}>Playback speed {speedControl}</label>
