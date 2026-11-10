@@ -26,10 +26,9 @@ export default function ArticleAudioPlayer({src, title, cover}) {
   const media = useRef(null);
   const inline = useRef(null);
   const inlinePlay = useRef(null);
-  const inlineOptions = useRef(null);
-  const focusInline = useRef(false);
   const dock = useRef(null);
   const dockOptions = useRef(null);
+  const wave = useRef(null);
   const graph = useRef(null);
   const [pastAudio, setPastAudio] = useState(false);
   const [dockDismissed, setDockDismissed] = useState(false);
@@ -101,31 +100,14 @@ export default function ArticleAudioPlayer({src, title, cover}) {
   }, [started, dockDismissed]);
 
   useEffect(() => {
-    if (!started) return;
-    const options = showDock ? dockOptions.current : inlineOptions.current;
-    if (showDock && inlineOptions.current?.open) inlineOptions.current.open = false;
-
+    if (!showDock) return;
     function closeOutside(event) {
+      const options = dockOptions.current;
       if (options?.open && !options.contains(event.target)) options.open = false;
     }
-
     document.addEventListener('pointerdown', closeOutside);
     return () => document.removeEventListener('pointerdown', closeOutside);
-  }, [started, showDock]);
-
-  useEffect(() => {
-    if (focusInline.current) {
-      focusInline.current = false;
-      inlinePlay.current?.focus({preventScroll: true});
-    }
-  }, [started]);
-
-  function dismissInline() {
-    media.current.pause();
-    setError('');
-    focusInline.current = true;
-    setStarted(false);
-  }
+  }, [showDock]);
 
   function dismissDock() {
     media.current.pause();
@@ -140,11 +122,9 @@ export default function ArticleAudioPlayer({src, title, cover}) {
 
   useEffect(() => {
     const analyser = graph.current?.analyser;
-    if (!started || !playing || !analyser) return;
-    const activePlayer = showDock ? dock.current : inline.current;
-    const bars = activePlayer?.querySelectorAll('[data-audio-wave] i');
-    if (!bars?.length) return;
+    if (!showDock || !playing || !analyser) return;
     const preference = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const bars = Array.from(wave.current.children);
     const levels = new Uint8Array(analyser.frequencyBinCount);
     const binsPerHz = analyser.fftSize / analyser.context.sampleRate;
     let frame;
@@ -179,7 +159,7 @@ export default function ArticleAudioPlayer({src, title, cover}) {
       cancelAnimationFrame(frame);
       for (const bar of bars) bar.style.removeProperty('--level');
     };
-  }, [started, showDock, playing]);
+  }, [showDock, playing]);
 
   function startAudioGraph(audio) {
     const Context = window.AudioContext || window.webkitAudioContext;
@@ -219,7 +199,6 @@ export default function ArticleAudioPlayer({src, title, cover}) {
       audio.pause();
       return;
     }
-    if (!started) focusInline.current = document.activeElement === inlinePlay.current;
     setDockDismissed(false);
     try { startAudioGraph(audio); } catch { /* Native playback remains available. */ }
     try {
@@ -254,11 +233,11 @@ export default function ArticleAudioPlayer({src, title, cover}) {
   const elapsed = formatAudioTime(time);
   const total = duration ? formatAudioTime(duration) : '–:––';
   const rewind = (
-    <button type="button" aria-label="Rewind 15 seconds" disabled={!duration}
+    <button type="button" className={styles.skip} aria-label="Rewind 15 seconds" disabled={!duration}
       onClick={() => seek(media.current.currentTime - 15)}><Icon name="back"/></button>
   );
   const forward = (
-    <button type="button" aria-label="Forward 15 seconds" disabled={!duration}
+    <button type="button" className={styles.skip} aria-label="Forward 15 seconds" disabled={!duration}
       onClick={() => seek(media.current.currentTime + 15)}><Icon name="forward"/></button>
   );
   const speedControl = (
@@ -278,71 +257,8 @@ export default function ArticleAudioPlayer({src, title, cover}) {
       style={{'--audio-progress': (duration ? 100 * time / duration : 0) + '%'}}
       onChange={event => seek(event.target.valueAsNumber)} />
   );
-  const shareLabel = copied ? 'Link copied' : 'Share';
-  const shareText = copied ? 'Copied' : 'Share';
-
-  function renderPlayer(floating) {
-    const optionsRef = floating ? dockOptions : inlineOptions;
-    const dismiss = floating ? dismissDock : dismissInline;
-
-    return (
-      <section ref={floating ? dock : undefined}
-        className={styles.player + ' ' + (floating ? styles.dock : styles.inlinePlayer)}
-        aria-label={floating ? 'Article mini player' : undefined}
-        onKeyDown={event => {
-          if (event.key !== 'Escape' || event.target.tagName === 'SELECT') return;
-          event.preventDefault();
-          const options = optionsRef.current;
-          if (options?.open) {
-            options.open = false;
-            options.querySelector('summary')?.focus();
-          } else {
-            dismiss();
-          }
-        }}>
-        <img className={styles.dockCover} src={cover} alt="" width="44" height="44" />
-        <div className={styles.dockHeader}>
-          <strong>{title}</strong>
-          <span data-audio-wave className={styles.wave} aria-hidden="true"><i/><i/><i/><i/><i/></span>
-        </div>
-        <div className={styles.dockProgress}>
-          <span>{elapsed}</span>
-          {timeline}
-        </div>
-        <div className={styles.dockTransport}>
-          {rewind}
-          <button ref={floating ? undefined : inlinePlay} type="button" className={styles.dockPlay}
-            aria-label={playbackLabel} onClick={toggle}>
-            <span>{playbackIcon}</span>
-          </button>
-          {forward}
-        </div>
-        <details ref={optionsRef} className={styles.dockOptions} onBlur={event => {
-          if (event.relatedTarget && !event.currentTarget.contains(event.relatedTarget)) {
-            event.currentTarget.open = false;
-          }
-        }}>
-          <summary aria-label="Playback options"><Icon name="more"/></summary>
-          <div className={styles.optionsPanel}>
-            <label className={styles.optionRow}>Playback speed {speedControl}</label>
-            {!floating && (
-              <button type="button" className={styles.optionButton} aria-label={shareLabel} onClick={share}>
-                <Icon name="link"/> {shareText}
-              </button>
-            )}
-            <button type="button" className={styles.optionButton} onClick={dismiss}>
-              <Icon name="close"/> Close player
-            </button>
-          </div>
-        </details>
-        {error && floating === showDock && <p className={styles.dockError} role="status">{error}</p>}
-      </section>
-    );
-  }
-
   return (
-    <section ref={inline} className={styles.audio} data-article-audio data-expanded={started || undefined}
-      aria-label="Article narration">
+    <section ref={inline} className={styles.audio} data-article-audio aria-label="Article narration">
       <audio ref={media} src={src} preload="metadata"
         onLoadedMetadata={syncTime} onDurationChange={syncTime} onTimeUpdate={syncTime}
         onPlay={() => setPaused(false)}
@@ -352,25 +268,72 @@ export default function ArticleAudioPlayer({src, title, cover}) {
         onEnded={() => {setPaused(true); setPlaying(false); syncTime();}}
         onError={() => {setPaused(true); setPlaying(false); setError('Article narration is unavailable.');}}
       />
-      {started ? (
-        <div inert={showDock}>{renderPlayer(false)}</div>
-      ) : (
+      <div inert={showDock}>
         <div className={styles.row}>
-          <div className={styles.transport}>
-            <button ref={inlinePlay} type="button" className={styles.play} onClick={toggle}>
+          <div className={styles.transport} data-started={started}>
+            <button ref={inlinePlay} type="button" className={styles.play}
+              aria-label={started ? playbackLabel : 'Listen to article'} onClick={toggle}>
               <span className={styles.playIcon}>{playbackIcon}</span>
-              <span>Listen to article</span>
+              {!started && <span>Listen to article</span>}
             </button>
-            <span className={styles.time}>{total}</span>
+            <span className={styles.time}>{started ? elapsed : total}</span>
+            {started && <>{rewind}{forward}{speedControl}</>}
           </div>
-          <button type="button" className={styles.share} aria-label={shareLabel} onClick={share}>
-            <Icon name="link"/><span>{shareText}</span>
+          <button type="button" className={styles.share} aria-label={copied ? 'Link copied' : 'Share'} onClick={share}>
+            <Icon name="link" /><span>{copied ? 'Copied' : 'Share'}</span>
           </button>
         </div>
+        {started && timeline}
+      </div>
+      {showDock && createPortal(
+        <section ref={dock} className={styles.dock} aria-label="Article mini player"
+          onKeyDown={event => {
+            if (event.key === 'Escape' && event.target.tagName !== 'SELECT') {
+              event.preventDefault();
+              const options = dockOptions.current;
+              if (options?.open) {
+                options.open = false;
+                options.querySelector('summary')?.focus();
+              } else {
+                dismissDock();
+              }
+            }
+          }}>
+          <img className={styles.dockCover} src={cover} alt="" width="44" height="44" />
+          <div className={styles.dockHeader}>
+            <strong>{title}</strong>
+            <span ref={wave} className={styles.wave} aria-hidden="true"><i/><i/><i/><i/><i/></span>
+          </div>
+          <div className={styles.dockProgress}>
+            <span>{elapsed}</span>
+            {timeline}
+          </div>
+          <div className={styles.dockTransport}>
+            {rewind}
+            <button type="button" className={styles.dockPlay} aria-label={playbackLabel} onClick={toggle}>
+              <span>{playbackIcon}</span>
+            </button>
+            {forward}
+          </div>
+          <details ref={dockOptions} className={styles.dockOptions} onBlur={event => {
+            if (event.relatedTarget && !event.currentTarget.contains(event.relatedTarget)) {
+              event.currentTarget.open = false;
+            }
+          }}>
+            <summary aria-label="Playback options"><Icon name="more"/></summary>
+            <div className={styles.optionsPanel}>
+              <label className={styles.optionRow}>Playback speed {speedControl}</label>
+              <button type="button" className={styles.closeOption} onClick={dismissDock}>
+                <Icon name="close"/> Close player
+              </button>
+            </div>
+          </details>
+          {error && <p className={styles.dockError} role="status">{error}</p>}
+        </section>,
+        document.body
       )}
-      {showDock && createPortal(renderPlayer(true), document.body)}
       <span className={styles.srOnly} role="status">{copied ? 'Article link copied.' : ''}</span>
-      {error && !started && <p className={styles.error} role="status">{error}</p>}
+      {error && !showDock && <p className={styles.error} role="status">{error}</p>}
     </section>
   );
 }
