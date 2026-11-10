@@ -19,6 +19,7 @@ const reviewed=articleModelAssets.map(base=>{
 });
 const eosinophil=Object.freeze({
  id:'eosinophil',label:'Eosinophil',
+ thumbnailURL:'/studio/anatomy/nas/eosinophil.webp',
  deliveryURL:'/studio/anatomy/nas/eosinophil-c817e35642155ba2.glb',
  sourceSHA256:'c817e35642155ba29145198bfb1908aec7b86f99c179bbcbb1dd82b4d5b40faf',
  bytes:61249636,byteBudget:61249636,deliveryApproved:true,
