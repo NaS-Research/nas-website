@@ -6,7 +6,7 @@ export default function Preview(){return <main className={styles.preview}>
 <div className={styles.tags}>Scientific Infrastructure <span>·</span> Releases</div>
 <h1>Introducing Anatomy Studio</h1>
 <p className={styles.abstract}>Anatomy Studio is the first part of BioBank, NaS Research’s developing biological library. It begins with computational models for education and research communication.</p>
-<p className={styles.byline}>By NaS Research <span>·</span> <small>3 min read</small></p>
+<p className={styles.byline}><span>By NaS Research</span><small>3 min read</small></p>
 <div className={styles.toolbar}><ArticleAudioPlayer src="/research/anatomy-studio/anatomy-studio-narration.mp3" title="Introducing Anatomy Studio" cover="/og.png" actions={<div className={styles.actions} aria-label="Placeholder article resources">{[["pdf","View PDF"],["data","Data & analysis"],["citation","Copy citation"],["share","Share"]].map(([kind,label])=><button type="button" key={kind} title="Layout preview only"><Icon kind={kind}/>{label}</button>)}</div>}/></div>
 <p className={styles.note}>Layout preview · PDF and data actions are placeholders</p>
 </main>}
