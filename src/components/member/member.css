@@ -22,6 +22,15 @@
 .personal-tools--article > a { gap: .45rem; padding-inline: .65rem; }
 .personal-tools--article > a span:last-child { color: var(--nas-gold-light); }
 .personal-tools--article > span:not(.sr-only) { width: 100%; padding: .15rem .4rem .35rem; }
+@media (max-width: 767px) {
+  .personal-tools--article {
+    right: auto;
+    left: 1rem;
+    bottom: calc(1rem + env(safe-area-inset-bottom));
+    max-width: calc(100vw - 9rem);
+  }
+  .personal-tools--article .personal-tools-panel { right: auto; left: 0; }
+}
 @media (prefers-reduced-motion: reduce) {
   .personal-tools--article > :is(button, a) { transition: none; }
 }

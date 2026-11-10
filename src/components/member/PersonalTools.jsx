@@ -5,8 +5,10 @@ import {BookmarkIcon} from '@heroicons/react/24/outline';
 import {BookmarkIcon as SavedBookmarkIcon} from '@heroicons/react/24/solid';
 import {useMember} from './MemberProvider';
 export default function PersonalTools(){
- const member=useMember();const item=member.current;
- const articleTools=member.authenticated && (item?.type==='article'||item?.type==='paper');
+ const member=useMember();
+ const item=member.current?.path===member.pathname ? member.current : null;
+ const isArticle=item?.type==='article'||item?.type==='paper';
+ const articleTools=member.authenticated && isArticle;
  const record=member.items.find(r=>r.path===item?.path);
  const [open,setOpen]=useState(false);const [section,setSection]=useState('');const [draft,setDraft]=useState('');const [dirty,setDirty]=useState(false);
  const last=useRef('');const saveRef=useRef(member.save);saveRef.current=member.save;
@@ -30,8 +32,8 @@ export default function PersonalTools(){
  if(!item)return null;
  async function saveNote(){if(await member.save(item.path,'note',{section,text:draft}))setDirty(false);}
  const saved=Boolean(record?.saved);
- return <aside className={articleTools?'personal-tools personal-tools--article':'personal-tools'} aria-label="Your saved work">
-  {member.status==='guest'?<Link href="/login">Sign in to save your place ↗</Link>:<>
+ return <aside className={isArticle?'personal-tools personal-tools--article':'personal-tools'} aria-label="Your saved work">
+  {member.status==='guest'?<Link href="/login">{isArticle?'Sign in to save':'Sign in to save your place'} ↗</Link>:<>
    <button type="button" disabled={member.status!=='ready'||member.saving} aria-pressed={saved}
     aria-label={articleTools?'Save for later':undefined}
     title={articleTools?(saved?'Remove bookmark':'Save for later'):undefined}

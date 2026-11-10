@@ -153,6 +153,7 @@ export const anatomyStudioReleasePreview = {
 
 export const anatomyStudioReleasePublic = {
  ...anatomyStudioReleasePreview,
+ narrationSrc:'/research/anatomy-studio/anatomy-studio-narration.mp3',
  version:'1.0.2', publicationStatus:'published', noindex:false,
  date:'November 7, 2026',dateISO:'2026-11-07',
  revisionHistory:[

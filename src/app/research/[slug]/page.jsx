@@ -109,14 +109,16 @@ export default async function ResearchPublicationPage({ params }) {
   const item = getResearchItem(slug);
   if (!item) notFound();
 
-  if (slug === 'introducing-anatomy-studio') {
-    const audioPlayer = (
-      <ArticleAudioPlayer
-        src="/research/anatomy-studio/anatomy-studio-narration.mp3"
-        title={item.title}
-        cover={publicationArtwork[slug].src}
-      />
-    );
+  const audioPlayer = item.narrationSrc ? (
+    <ArticleAudioPlayer
+      key={item.slug}
+      src={item.narrationSrc}
+      title={item.title}
+      cover={publicationArtwork[item.slug]?.src || "/og.png"}
+    />
+  ) : null;
+
+  if (slug === "introducing-anatomy-studio") {
     return <AnatomyStudioReleasePreview published audioPlayer={audioPlayer} />;
   }
 
@@ -204,7 +206,7 @@ export default async function ResearchPublicationPage({ params }) {
           </div>
           <h1>{item.title}</h1>
           <p className="publication-abstract">{item.abstract}</p>
-          {!hasImmersiveHero && publicationDetails}
+          {!hasImmersiveHero && <>{publicationDetails}{audioPlayer}</>}
         </div>
       </header>
 
@@ -216,7 +218,7 @@ export default async function ResearchPublicationPage({ params }) {
         <PublicationContents sections={item.sections.map(({ id, title, level }) => ({ id, title: publicationSectionTitle(title), level }))} hasSources={Boolean(item.sources?.length)} hasCitation={isResearchPublication} summaryLabel={openingLabel} />
 
         <article className="publication-body">
-          {hasImmersiveHero && <div className="publication-reading-details">{publicationDetails}</div>}
+          {hasImmersiveHero && <div className="publication-reading-details">{publicationDetails}{audioPlayer}</div>}
           <section id="summary" className="publication-summary">
             <p className="publication-section-label">{openingLabel}</p>
             <p>{item.summary}</p>
