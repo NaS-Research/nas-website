@@ -228,14 +228,17 @@ export default function ArticleAudioPlayer({src, title, cover}) {
       onClick={() => seek(media.current.currentTime + 15)}><Icon name="forward"/></button>
   );
   const speedControl = (
-    <select className={styles.speed} aria-label="Playback speed" value={speed}
-      onChange={event => {
-        const value = Number(event.target.value);
-        media.current.playbackRate = value;
-        setSpeed(value);
-      }}>
-      {SPEEDS.map(value => <option key={value} value={value}>{value}×</option>)}
-    </select>
+    <div className={styles.speed}>
+      <span className={styles.speedValue} aria-hidden="true">{speed}×</span>
+      <select aria-label="Playback speed" value={speed}
+        onChange={event => {
+          const value = Number(event.target.value);
+          media.current.playbackRate = value;
+          setSpeed(value);
+        }}>
+        {SPEEDS.map(value => <option key={value} value={value}>{value}×</option>)}
+      </select>
+    </div>
   );
   const timeline = (
     <input className={styles.timeline} type="range" aria-label="Seek narration"

@@ -13,7 +13,7 @@
 }
 .row { justify-content: space-between; gap: .5rem; }
 .transport { gap: .6rem; }
-.audio button, .speed {
+.audio button {
   min-height: 44px;
   padding: 0;
   border: 0;
@@ -59,19 +59,38 @@
 .skip { width: 44px; border-radius: 50%; }
 .audio .skip:hover:not(:disabled) { background: #28231d; }
 .speed {
-  appearance: none;
-  min-width: 62px;
-  min-height: 38px;
-  padding: 0 .45rem;
-  border: 1px solid #ffffff70;
-  border-radius: 999px;
-  color-scheme: dark;
-  font-size: .875rem;
-  text-align: center;
+  position: relative;
+  display: grid;
+  place-items: center;
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
 }
-.speed:hover { background: #262626; border-color: #d0d0d0; }
-.audio .speed { background: #171512; border-color: #c7a06950; color: #e9e3da; }
-.audio .speed:hover { background: #28231d; border-color: #c7a06980; }
+.speedValue {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 26px;
+  border-radius: .5rem;
+  background: #28231d;
+  color: #e4d4bd;
+  font-size: .75rem;
+  font-weight: 550;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+.speed select {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  color-scheme: dark;
+  font-size: 16px;
+  cursor: pointer;
+}
+.speed:hover .speedValue { background: #3a3127; }
+.speed:has(select:focus-visible) .speedValue { outline: 2px solid #e2c79a; outline-offset: 2px; }
 .share { gap: .5rem; min-width: 44px; border-radius: .45rem; }
 .audio .share:hover { color: #c4c4c4; }
 
@@ -113,7 +132,6 @@
   .time { padding-left: .45rem; font-size: .8125rem; }
   .transport[data-started=true] .time { padding-right: .35rem; }
   .skip { width: 40px; }
-  .speed { min-width: 48px; min-height: 44px; padding-inline: .25rem; font-size: .8125rem; }
 }
 @media (max-width: 370px) {
   .share span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
@@ -208,17 +226,7 @@
 }
 .dockPlay:hover span { background: #494135; }
 .dockPlay svg { width: 18px; height: 18px; }
-.dock .speed {
-  grid-area: speed;
-  width: 44px;
-  min-width: 0;
-  min-height: 44px;
-  padding-inline: .15rem;
-  border-color: #c7a06950;
-  color: #e9e3da;
-  font-size: .75rem;
-}
-.dock .speed:hover { background: #28231d; border-color: #c7a06980; }
+.dock .speed { grid-area: speed; }
 .dock :focus-visible { outline: 2px solid #e2c79a; outline-offset: 3px; }
 .dockError { grid-column: 1 / -1; margin: .35rem 0; color: #e2c79a; font-size: .8125rem; }
 
