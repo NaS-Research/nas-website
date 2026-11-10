@@ -7,6 +7,7 @@
   color: #f2f2f2;
   text-align: left;
 }
+.audio[data-expanded] { padding-top: 0; border-top: 0; }
 .row, .transport {
   display: flex;
   align-items: center;
@@ -48,15 +49,6 @@
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
-.transport[data-started=true] .time {
-  min-width: 4ch;
-  padding-left: 0;
-  padding-right: .6rem;
-  border-left: 0;
-  border-right: 1px solid #ffffff2e;
-}
-.skip { width: 44px; border-radius: 50%; }
-.audio .skip:hover:not(:disabled) { background: #262626; }
 .speed {
   appearance: none;
   min-width: 62px;
@@ -104,8 +96,6 @@
   .play { gap: .55rem; }
   .playIcon { width: 44px; height: 44px; flex-basis: 44px; }
   .time { padding-left: .45rem; font-size: .8125rem; }
-  .transport[data-started=true] .time { padding-right: .35rem; }
-  .skip { width: 40px; }
   .speed { min-width: 48px; min-height: 44px; padding-inline: .25rem; font-size: .8125rem; }
 }
 @media (max-width: 370px) {
@@ -120,6 +110,12 @@
   z-index: 35;
   inset: auto 0 calc(1rem + env(safe-area-inset-bottom));
   width: min(23rem, 100% - 2rem);
+}
+.inlinePlayer {
+  position: relative;
+  width: min(23rem, 100%);
+}
+.player {
   margin-inline: auto;
   display: grid;
   grid-template-columns: 44px minmax(0, 1fr) 44px;
@@ -173,9 +169,9 @@
   min-width: 0;
 }
 .dockProgress span { min-width: 3.6ch; color: #bcb8b1; font-size: .6875rem; font-variant-numeric: tabular-nums; }
-.dock .timeline { flex: 1; min-width: 0; height: 24px; margin: 0; }
+.player .timeline { flex: 1; min-width: 0; height: 24px; margin: 0; }
 .dockTransport { grid-area: transport; display: flex; align-items: center; justify-content: center; }
-.dock button, .dockOptions summary {
+.player button, .dockOptions summary {
   display: grid;
   width: 44px;
   height: 44px;
@@ -187,9 +183,9 @@
   background: transparent;
   cursor: pointer;
 }
-.dock button:disabled { opacity: .4; cursor: default; }
-.dock button:hover:not(:disabled) { background: #ffffff15; }
-.dock .dockPlay:hover { background: transparent; }
+.player button:disabled { opacity: .4; cursor: default; }
+.player button:hover:not(:disabled) { background: #ffffff15; }
+.player .dockPlay:hover { background: transparent; }
 .dockPlay span {
   display: grid;
   width: 34px;
@@ -219,8 +215,8 @@
   font-size: .8125rem;
 }
 .optionRow { display: flex; min-height: 44px; align-items: center; justify-content: space-between; gap: .25rem; padding-left: .45rem; }
-.dock .speed { min-width: 52px; min-height: 38px; padding-inline: .35rem; border-color: #ffffff38; font-size: .75rem; }
-.dock .closeOption {
+.player .speed { min-width: 52px; min-height: 38px; padding-inline: .35rem; border-color: #ffffff38; font-size: .75rem; }
+.player .optionButton {
   display: flex;
   width: 100%;
   align-items: center;
@@ -230,8 +226,8 @@
   border-radius: .45rem;
   font: inherit;
 }
-.closeOption svg { width: 16px; height: 16px; }
-.dock :focus-visible { outline: 2px solid #e2c79a; outline-offset: 3px; }
+.optionButton svg { width: 16px; height: 16px; }
+.player :focus-visible { outline: 2px solid #e2c79a; outline-offset: 3px; }
 .dockError { grid-column: 1 / -1; margin: .35rem 0; color: #e2c79a; font-size: .8125rem; }
 
 @media (max-width: 767px) {
