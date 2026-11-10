@@ -1,0 +1,79 @@
+.toolbar {
+  width: min(100%, 860px);
+  margin: clamp(2rem, 4vw, 3.25rem) auto 0;
+  padding-top: 1rem;
+  border-top: 1px solid #c7a06940;
+  color: #e9e4db;
+  text-align: left;
+}
+.readingEstimate {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  margin: 0;
+  color: #99958e;
+  font-size: .75rem;
+  font-weight: 400;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+.readingEstimate svg { opacity: .8; flex-shrink: 0; }
+.resourceRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .5rem 2rem;
+}
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 1.35rem;
+  min-width: 0;
+}
+.actions :is(a, button) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .4rem;
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  color: #c7c2ba;
+  font: inherit;
+  font-size: .8125rem;
+  font-weight: 400;
+  line-height: 1.4;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 220ms ease, opacity 220ms ease;
+}
+.actions :is(a, button):hover { color: #fffaf1; }
+.actions :is(a, button):active { opacity: .6; }
+.actions :is(a, button):focus-visible { outline: 2px solid #d5b47a; outline-offset: 4px; border-radius: 3px; }
+.actions svg { width: 15px; height: 15px; flex-shrink: 0; color: #b49a75; }
+.actions .pdf { color: #e7d4b5; }
+.status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.actions .error { flex-basis: 100%; margin: .25rem 0; color: #dfb98a; font-size: .75rem; }
+@media (max-width: 600px) {
+  .toolbar { margin-top: 2rem; padding-top: .9rem; }
+  .resourceRow { gap: .45rem; }
+  .actions { justify-content: flex-start; column-gap: 1.15rem; }
+  .resourceRow .actions { flex-basis: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .actions :is(a, button) { transition: none; }
+}

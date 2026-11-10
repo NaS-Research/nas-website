@@ -20,7 +20,7 @@ function Icon({name}) {
   return <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{shapes[name]}</svg>;
 }
 
-export default function ArticleAudioPlayer({src, title, cover}) {
+export default function ArticleAudioPlayer({src, title, cover, actions = null, readingEstimate = null}) {
   const media = useRef(null);
   const inline = useRef(null);
   const inlinePlay = useRef(null);
@@ -248,7 +248,7 @@ export default function ArticleAudioPlayer({src, title, cover}) {
       onChange={event => seek(event.target.valueAsNumber)} />
   );
   return (
-    <section ref={inline} className={styles.audio} data-article-audio aria-label="Article narration">
+    <section ref={inline} className={styles.audio} data-article-audio data-integrated={actions ? true : undefined} aria-label="Article narration">
       <audio ref={media} src={src} preload="metadata"
         onLoadedMetadata={syncTime} onDurationChange={syncTime} onTimeUpdate={syncTime}
         onPlay={() => setPaused(false)}
@@ -258,6 +258,7 @@ export default function ArticleAudioPlayer({src, title, cover}) {
         onEnded={() => {setPaused(true); setPlaying(false); syncTime();}}
         onError={() => {setPaused(true); setPlaying(false); setError('Article narration is unavailable.');}}
       />
+      {readingEstimate}
       <div inert={showDock}>
         <div className={styles.row}>
           <div className={styles.transport} data-started={started}>
@@ -269,9 +270,9 @@ export default function ArticleAudioPlayer({src, title, cover}) {
             <span className={styles.time}>{started ? elapsed : total}</span>
             {started && <>{rewind}{forward}{speedControl}</>}
           </div>
-          <button type="button" className={styles.share} aria-label={copied ? 'Link copied' : 'Share'} onClick={share}>
+          {actions || <button type="button" className={styles.share} aria-label={copied ? 'Link copied' : 'Share'} onClick={share}>
             <Icon name="link" /><span>{copied ? 'Copied' : 'Share'}</span>
-          </button>
+          </button>}
         </div>
         {started && timeline}
       </div>
