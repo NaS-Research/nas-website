@@ -114,7 +114,6 @@ export default async function ResearchPublicationPage({ params }) {
       <ArticleAudioPlayer
         src="/research/anatomy-studio/anatomy-studio-narration.mp3"
         title={item.title}
-        cover={publicationArtwork[slug].src}
       />
     );
     return <AnatomyStudioReleasePreview published audioPlayer={audioPlayer} />;
