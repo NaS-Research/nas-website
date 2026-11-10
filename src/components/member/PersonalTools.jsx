@@ -1,7 +1,7 @@
 'use client';
 import {useEffect,useRef,useState} from 'react';
 import Link from 'next/link';
-import {BookmarkIcon, PencilSquareIcon} from '@heroicons/react/24/outline';
+import {BookmarkIcon} from '@heroicons/react/24/outline';
 import {BookmarkIcon as SavedBookmarkIcon} from '@heroicons/react/24/solid';
 import {useMember} from './MemberProvider';
 export default function PersonalTools(){
@@ -10,7 +10,10 @@ export default function PersonalTools(){
  const record=member.items.find(r=>r.path===item?.path);
  const [open,setOpen]=useState(false);const [section,setSection]=useState('');const [draft,setDraft]=useState('');const [dirty,setDirty]=useState(false);
  const last=useRef('');const saveRef=useRef(member.save);saveRef.current=member.save;
- useEffect(()=>{setOpen(false);setDirty(false);setSection('');setDraft('');last.current='';},[member.pathname]);
+ useEffect(()=>{
+  const editArticleNote=member.pathname?.startsWith('/research/') && new URLSearchParams(window.location.search).has('edit-note');
+  setOpen(editArticleNote);setDirty(false);setSection('');setDraft('');last.current='';
+ },[member.pathname]);
  useEffect(()=>{if(!dirty)setDraft(record?.notes?.[section]||'');},[record,section,dirty]);
  useEffect(()=>{
   if(member.status!=='ready'||item?.type!=='module')return;
@@ -35,19 +38,19 @@ export default function PersonalTools(){
     onClick={()=>member.save(item.path,'save',{saved:!saved})}>
     {articleTools?(saved?<SavedBookmarkIcon aria-hidden="true"/>:<BookmarkIcon aria-hidden="true"/>):(saved?'✓ Saved':'＋ Save for later')}
    </button>
-   <button type="button" aria-expanded={open} aria-label={articleTools?'Notes & progress':undefined}
-    title={articleTools?'Notes & progress':undefined} onClick={()=>setOpen(!open)}>
-    {articleTools?<PencilSquareIcon aria-hidden="true"/>:'Notes & progress'}
-   </button>
-   <Link href="/account" aria-label={articleTools?'Your workspace':undefined}>
-    {articleTools?<><span>Workspace</span><span aria-hidden="true">↗</span></>:'Your workspace ↗'}
-   </Link>
+   {articleTools
+    ? <Link href="/account?tab=saved"><span>View saved</span><span aria-hidden="true">↗</span></Link>
+    : <>
+      <button type="button" aria-expanded={open} onClick={()=>setOpen(!open)}>Notes & progress</button>
+      <Link href="/account">Your workspace ↗</Link>
+     </>}
    {open && <div className="personal-tools-panel"><strong>{item.title}</strong>
     {record?.progress?.lastSection && <Link href={`${item.path}#${encodeURIComponent(record.progress.lastSection)}`}>Resume saved section ↗</Link>}
     {item.type==='module' && <button disabled={member.status!=='ready'||member.saving} onClick={()=>member.save(item.path,'progress',{completed:!record?.progress?.completed})}>{record?.progress?.completed?'✓ Completed · Mark in progress':'Mark module complete'}</button>}
     <label>Note for<select value={section} disabled={dirty} onChange={e=>setSection(e.target.value)}><option value="">This item</option>{item.sections.map(id=><option key={id} value={id}>{id.replaceAll('-',' ')}</option>)}</select></label>
     <label>Private note<textarea value={draft} maxLength={5000} onChange={e=>{setDraft(e.target.value);setDirty(true);}} placeholder="What would you like to remember?" /></label>
     <button disabled={!dirty||member.saving||member.status!=='ready'} onClick={saveNote}>Save note</button>{dirty&&<small>Unsaved note. Save before leaving this page.</small>}
+    {articleTools&&<button type="button" onClick={()=>setOpen(false)}>Close notes</button>}
     <p role="status">{member.message}</p>{member.status==='error'&&<button onClick={member.retry}>Reconnect</button>}
    </div>}
    {!open && <span className={articleTools&&!member.saveError&&member.status==='ready'?'sr-only':undefined} role="status">{member.message}</span>}

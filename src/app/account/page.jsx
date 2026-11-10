@@ -7,11 +7,12 @@ import {signOut} from '@/app/login/actions';
 import '@/app/login/auth.css';
 export const metadata={title:'Your workspace | NaS',robots:{index:false,follow:false}};
 export const dynamic='force-dynamic';
-export default async function AccountPage(){
+export default async function AccountPage({searchParams}){
  if(!authReady())redirect('/login');
  const session=await adminSession();const {user}=session;
  if(!user)redirect('/login');
  const profileName=user.user_metadata?.full_name;
  const displayName=typeof profileName==='string'&&profileName.trim()?profileName.trim().slice(0,100):user.email;
- return <><MemberHome /><div className="member-account-bar">{session.isAdmin&&<Link href="/account/admin">Admin activity ↗</Link>}<span className="member-identity">Signed in as {displayName}</span>{emailEnabled()&&<Link href="/login?mode=reset">Reset password</Link>}<form action={signOut}><button>Log out</button></form></div></>;
+ const {tab}=await searchParams;
+ return <><MemberHome initialTab={tab==='saved'?'Saved':'Continue'} /><div className="member-account-bar">{session.isAdmin&&<Link href="/account/admin">Admin activity ↗</Link>}<span className="member-identity">Signed in as {displayName}</span>{emailEnabled()&&<Link href="/login?mode=reset">Reset password</Link>}<form action={signOut}><button>Log out</button></form></div></>;
 }

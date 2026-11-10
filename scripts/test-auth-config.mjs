@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {authReady,providerEnabled,siteOrigin,emailEnabled} from '../src/lib/auth/config.mjs';
+import {authReady,providerEnabled,siteOrigin,emailEnabled,isSiteOrigin} from '../src/lib/auth/config.mjs';
 test('auth fails closed until explicitly activated and configured',()=>{
  for(const k of ['NAS_AUTH_ENABLED','SUPABASE_URL','SUPABASE_PUBLISHABLE_KEY','NAS_SITE_URL','NAS_AUTH_GOOGLE_ENABLED','NAS_AUTH_APPLE_ENABLED','NAS_AUTH_EMAIL_ENABLED'])delete process.env[k];
  assert.equal(authReady(),false);
@@ -16,6 +16,18 @@ test('callback origin requires HTTPS outside local development',()=>{
  process.env.NAS_SITE_URL='http://example.com';assert.throws(siteOrigin);
  process.env.NAS_SITE_URL='https://nasresearch.bio/path';assert.equal(siteOrigin(),'https://nasresearch.bio');
  process.env.NAS_SITE_URL='http://localhost:3000';assert.equal(siteOrigin(),'http://localhost:3000');
+});
+
+test('member writes recognize only the configured public origin',()=>{
+ process.env.NAS_SITE_URL='https://nasresearch.bio';
+ assert.equal(isSiteOrigin('https://nasresearch.bio'),true);
+ assert.equal(isSiteOrigin('http://nasresearch.bio'),false);
+ assert.equal(isSiteOrigin('https://nasresearch.bio.example.com'),false);
+ assert.equal(isSiteOrigin(null),false);
+ process.env.NAS_SITE_URL='http://localhost:3000';
+ assert.equal(isSiteOrigin('http://localhost:3000'),true);
+ delete process.env.NAS_SITE_URL;
+ assert.equal(isSiteOrigin('https://nasresearch.bio'),false);
 });
 
 test('email authentication remains closed during the Google-only launch',()=>{

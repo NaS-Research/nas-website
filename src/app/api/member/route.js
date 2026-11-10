@@ -1,5 +1,5 @@
 import {NextResponse} from 'next/server';
-import {authReady} from '@/lib/auth/config.mjs';
+import {authReady,isSiteOrigin} from '@/lib/auth/config.mjs';
 import {authClient} from '@/lib/auth/server';
 import {memberCatalog} from '@/lib/member/catalog';
 import {validateMutation} from '@/lib/member/validation.mjs';
@@ -24,7 +24,8 @@ export async function GET(request){
  }catch{return respond({error:'Unable to load your workspace. Please try again.',current},503);}
 }
 export async function POST(request){
- if(request.headers.get('origin')!==new URL(request.url).origin)return respond({error:'Invalid request origin.'},403);
+ // The hosting adapter can pass an internal URL to this handler.
+ if(!isSiteOrigin(request.headers.get('origin')))return respond({error:'Invalid request origin.'},403);
  if(!request.headers.get('content-type')?.includes('application/json'))return respond({error:'JSON required.'},415);
  try {
   const auth=await session(); if(!auth)return respond({error:'Your session has ended. Sign in again to save.'},401);
