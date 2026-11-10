@@ -13,7 +13,7 @@ function ActionIcon({name}) {
   return <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">{paths[name]}</svg>;
 }
 
-export default function PublicationActions({citation, pdfUrl, dataUrl, dataLabel = "Data & analysis", title, url, compact = false}) {
+export default function PublicationActions({citation, pdfUrl, dataUrl, dataLabel = "Data & analysis", title, url, compact = false, prominentPdf = false, hideShare = false}) {
   const [copied, setCopied] = useState("");
   const [error, setError] = useState("");
   const timer = useRef(null);
@@ -46,21 +46,21 @@ export default function PublicationActions({citation, pdfUrl, dataUrl, dataLabel
   }
 
   return (
-    <div className={compact ? styles.actions : "publication-actions"} aria-label="Article resources">
+    <div className={compact ? styles.actions : "publication-actions"} aria-label="Article resources" data-prominent-pdf={prominentPdf}>
       {pdfUrl && (
         <a className={compact ? styles.pdf : "publication-action publication-action--primary"} href={pdfUrl} target="_blank" rel="noreferrer">
           {compact && <ActionIcon name="pdf"/>}View PDF{!compact && " ↗"}
         </a>
       )}
-      {citation && <button className={compact ? undefined : "publication-action"} type="button" data-action="citation" onClick={() => copy(citation, "citation")}>
-        {compact && <ActionIcon name="citation"/>}{copied === "citation" ? "Copied" : "Copy citation"}
-      </button>}
       {dataUrl && <a href={dataUrl} className={compact ? undefined : "publication-action"} aria-label="Download data and analysis">
         {compact && <ActionIcon name="data"/>}{dataLabel}
       </a>}
-      <button className={compact ? undefined : "publication-action"} type="button" data-action="share" onClick={sharePublication}>
+      {citation && <button className={compact ? undefined : "publication-action"} type="button" data-action="citation" onClick={() => copy(citation, "citation")}>
+        {compact && <ActionIcon name="citation"/>}{copied === "citation" ? "Copied" : "Copy citation"}
+      </button>}
+      {!hideShare && <button className={compact ? undefined : "publication-action"} type="button" data-action="share" onClick={sharePublication}>
         {compact && <ActionIcon name="share"/>}{copied === "link" ? (compact ? "Copied" : "Link copied") : "Share"}
-      </button>
+      </button>}
       <span className={styles.status} role="status">{copied === "citation" ? "Citation copied." : copied === "link" ? "Article link copied." : ""}</span>
       {error && <p className={styles.error} role="alert">{error}</p>}
     </div>

@@ -1,37 +1,35 @@
 .toolbar {
   width: min(100%, 860px);
-  margin: clamp(2rem, 4vw, 3.25rem) auto 0;
-  padding-top: 1rem;
-  border-top: 1px solid #c7a06940;
+  margin: 1.75rem auto 0;
   color: #e9e4db;
   text-align: left;
 }
-.resourcesOnly {
-  margin-top: 1.4rem;
-  padding-top: 0;
-  border-top: 0;
+.toolbar[data-audio-only="true"] {
+  margin-top: 2.75rem;
+  padding-top: .9rem;
+  border-top: 1px solid #c7a06940;
 }
-.readingEstimate {
-  margin: .55rem 0 0;
-  color: #99958e;
-  font-size: .75rem;
-  font-weight: 400;
-  line-height: 1.5;
+.toolbar > [data-article-audio] { width: 100%; margin: 2.75rem 0 0; }
+.toolbar[data-audio-only="true"] > [data-article-audio] { margin-top: 0; }
+.byline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: .35rem .65rem;
+  flex-shrink: 0;
+  margin-top: 2rem;
+  color: #c0bcb5;
+  font-size: .875rem;
+  line-height: 1.6;
   text-align: center;
 }
-:global(.publication-byline) > .readingEstimate { margin: 0; }
-.resourceRow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: .5rem 2rem;
-}
-.resourceRow .actions { justify-content: center; }
+.metadataDot { color: #5c5750; }
+.readingEstimate { color: #96918a; font-size: .8125rem; white-space: nowrap; }
 .actions {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   column-gap: 1.35rem;
   min-width: 0;
@@ -73,35 +71,26 @@
   white-space: nowrap;
 }
 .actions .error { flex-basis: 100%; margin: .25rem 0; color: #dfb98a; font-size: .75rem; }
-.dataDownload {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: .4rem;
-  width: fit-content;
-  min-height: 44px;
-  margin: .7rem auto 0;
-  color: #a6a098;
-  font-size: .8125rem;
-  line-height: 1.4;
-  text-decoration: none;
-  transition: color 220ms ease, opacity 220ms ease;
+.actions[data-prominent-pdf="true"] .pdf {
+  min-height: 46px;
+  padding-inline: 1.15rem;
+  border: 1px solid #c7a0692b;
+  border-radius: 999px;
+  background: #27231e;
+  color: #f2ece2;
+  transition: background 220ms ease, color 220ms ease, opacity 220ms ease;
 }
-.dataDownload:hover { color: #e7d4b5; }
-.dataDownload:active { opacity: .6; }
-.dataDownload:focus-visible { outline: 2px solid #d5b47a; outline-offset: 4px; border-radius: 3px; }
+.actions[data-prominent-pdf="true"] .pdf:hover { background: #3b3329; color: #fff; }
 @media (max-width: 600px) {
-  .toolbar { margin-top: 2rem; padding-top: .9rem; }
-  .resourcesOnly { margin-top: 1.25rem; padding-top: 0; }
-  .resourceRow { gap: .45rem; }
-  .resourceRow .actions:has(a[aria-label="Download data and analysis"]) {
+  .toolbar { margin-top: 1.5rem; }
+  .toolbar[data-audio-only="true"] { margin-top: 2rem; }
+  .actions { justify-content: center; gap: .3rem .8rem; width: 100%; }
+  .actions[data-prominent-pdf="true"]:has(a[aria-label="Download data and analysis"]) {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     column-gap: 1rem;
   }
-  .actions { justify-content: center; column-gap: .8rem; width: 100%; }
-  .resourceRow .actions { flex-basis: 100%; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .actions :is(a, button), .dataDownload { transition: none; }
+  .actions :is(a, button) { transition: none; }
 }

@@ -1,5 +1,5 @@
 import AnatomyStudioReleasePreview from '@/components/research/anatomy-release-preview/AnatomyStudioReleasePreview';
-import ArticleToolbar, {ArticleReadingEstimate} from "@/components/research/ArticleToolbar";
+import ArticleToolbar, {ArticleByline} from "@/components/research/ArticleToolbar";
 import {getArticleCitation} from "@/lib/articleTools.mjs";
 import {researchPresentationHistory} from '@/data/researchPresentationHistory.mjs';
 import PublicationContents from "@/components/research/PublicationContents";
@@ -146,10 +146,7 @@ export default async function ResearchPublicationPage({ params }) {
   const related = getRelatedResearch(item, researchItems);
 
   const publicationDetails = (<>
-          <div className="publication-byline">
-            <p>By {item.authors.join(", ")}{item.affiliation && <span> · {item.affiliation}</span>}</p>
-            <ArticleReadingEstimate item={item}/>
-          </div>
+          <ArticleByline item={item}/>
           {articleToolbar}
           {item.reviewState && <p className="publication-review-state">{item.reviewState}</p>}
   </>);
