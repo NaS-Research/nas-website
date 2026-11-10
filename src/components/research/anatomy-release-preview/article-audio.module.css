@@ -3,11 +3,10 @@
   flex-shrink: 0;
   margin-top: clamp(2.25rem, 5vw, 4.5rem);
   padding-top: .9rem;
-  border-top: 1px solid #ffffff27;
+  border-top: 1px solid #c7a06940;
   color: #f2f2f2;
   text-align: left;
 }
-.audio[data-expanded] { padding-top: 0; border-top: 0; }
 .row, .transport {
   display: flex;
   align-items: center;
@@ -35,20 +34,30 @@
   flex: 0 0 46px;
   place-items: center;
   border-radius: 50%;
-  background: #262626;
+  background: #353028;
+  color: #eee8df;
   transition: background .2s;
 }
-.play:hover .playIcon { background: #3b3b3b; }
-.play:active .playIcon { background: #505050; }
+.play:hover .playIcon { background: #494135; }
+.play:active .playIcon { background: #574b3b; }
 
 .time {
   padding-left: .75rem;
-  border-left: 1px solid #ffffff2e;
-  color: #dadada;
+  border-left: 1px solid #c7a06938;
+  color: #d3bea0;
   font-size: .9375rem;
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
+.transport[data-started=true] .time {
+  min-width: 4ch;
+  padding-left: 0;
+  padding-right: .6rem;
+  border-left: 0;
+  border-right: 1px solid #c7a06938;
+}
+.skip { width: 44px; border-radius: 50%; }
+.audio .skip:hover:not(:disabled) { background: #28231d; }
 .speed {
   appearance: none;
   min-width: 62px;
@@ -61,6 +70,8 @@
   text-align: center;
 }
 .speed:hover { background: #262626; border-color: #d0d0d0; }
+.audio .speed { background: #171512; border-color: #c7a06950; color: #e9e3da; }
+.audio .speed:hover { background: #28231d; border-color: #c7a06980; }
 .share { gap: .5rem; min-width: 44px; border-radius: .45rem; }
 .audio .share:hover { color: #c4c4c4; }
 
@@ -74,6 +85,10 @@
   cursor: pointer;
   --audio-track: linear-gradient(to right, #eee 0 var(--audio-progress), #555 var(--audio-progress) 100%);
 }
+.audio .timeline {
+  --audio-track: linear-gradient(to right, var(--nas-gold) 0 var(--audio-progress), #40382e var(--audio-progress) 100%);
+  --audio-thumb: var(--nas-gold);
+}
 .timeline:disabled { cursor: default; }
 .timeline::-webkit-slider-runnable-track { height: 3px; background: var(--audio-track); border-radius: 999px; }
 .timeline::-moz-range-track { height: 3px; background: var(--audio-track); border-radius: 999px; }
@@ -83,9 +98,9 @@
   height: 11px;
   margin-top: -4px;
   border-radius: 50%;
-  background: #eee;
+  background: var(--audio-thumb, #eee);
 }
-.timeline::-moz-range-thumb { width: 11px; height: 11px; border: 0; border-radius: 50%; background: #eee; }
+.timeline::-moz-range-thumb { width: 11px; height: 11px; border: 0; border-radius: 50%; background: var(--audio-thumb, #eee); }
 .error { margin: .55rem 0 0; color: #e2c79a; font-size: .8125rem; }
 .srOnly { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 
@@ -96,6 +111,8 @@
   .play { gap: .55rem; }
   .playIcon { width: 44px; height: 44px; flex-basis: 44px; }
   .time { padding-left: .45rem; font-size: .8125rem; }
+  .transport[data-started=true] .time { padding-right: .35rem; }
+  .skip { width: 40px; }
   .speed { min-width: 48px; min-height: 44px; padding-inline: .25rem; font-size: .8125rem; }
 }
 @media (max-width: 370px) {
@@ -110,16 +127,10 @@
   z-index: 35;
   inset: auto 0 calc(1rem + env(safe-area-inset-bottom));
   width: min(23rem, 100% - 2rem);
-}
-.inlinePlayer {
-  position: relative;
-  width: min(23rem, 100%);
-}
-.player {
   margin-inline: auto;
   display: grid;
   grid-template-columns: 44px minmax(0, 1fr) 44px;
-  grid-template-areas: "cover heading options" "cover timeline options" "transport transport transport";
+  grid-template-areas: "cover heading speed" "cover timeline speed" "transport transport transport";
   align-items: center;
   column-gap: .5rem;
   padding: .45rem .6rem;
@@ -169,9 +180,9 @@
   min-width: 0;
 }
 .dockProgress span { min-width: 3.6ch; color: #bcb8b1; font-size: .6875rem; font-variant-numeric: tabular-nums; }
-.player .timeline { flex: 1; min-width: 0; height: 24px; margin: 0; }
+.dock .timeline { flex: 1; min-width: 0; height: 24px; margin: 0; }
 .dockTransport { grid-area: transport; display: flex; align-items: center; justify-content: center; }
-.player button, .dockOptions summary {
+.dock button {
   display: grid;
   width: 44px;
   height: 44px;
@@ -183,9 +194,9 @@
   background: transparent;
   cursor: pointer;
 }
-.player button:disabled { opacity: .4; cursor: default; }
-.player button:hover:not(:disabled) { background: #ffffff15; }
-.player .dockPlay:hover { background: transparent; }
+.dock button:disabled { opacity: .4; cursor: default; }
+.dock button:hover:not(:disabled) { background: #ffffff15; }
+.dock .dockPlay:hover { background: transparent; }
 .dockPlay span {
   display: grid;
   width: 34px;
@@ -196,38 +207,19 @@
   background: #353028;
 }
 .dockPlay:hover span { background: #494135; }
-.dockPlay svg, .dockOptions summary svg { width: 18px; height: 18px; }
-.dockOptions { grid-area: options; }
-.dockOptions summary { list-style: none; }
-.dockOptions summary::-webkit-details-marker { display: none; }
-.dockOptions summary:hover, .dockOptions[open] summary { background: #ffffff15; }
-.optionsPanel {
-  position: absolute;
-  right: .35rem;
-  bottom: calc(100% + .4rem);
-  width: 13rem;
-  padding: .35rem .5rem;
-  background: #1b1814;
-  border: 1px solid #c7a06950;
-  border-radius: .75rem;
-  box-shadow: 0 8px 24px #0009;
+.dockPlay svg { width: 18px; height: 18px; }
+.dock .speed {
+  grid-area: speed;
+  width: 44px;
+  min-width: 0;
+  min-height: 44px;
+  padding-inline: .15rem;
+  border-color: #c7a06950;
   color: #e9e3da;
-  font-size: .8125rem;
+  font-size: .75rem;
 }
-.optionRow { display: flex; min-height: 44px; align-items: center; justify-content: space-between; gap: .25rem; padding-left: .45rem; }
-.player .speed { min-width: 52px; min-height: 38px; padding-inline: .35rem; border-color: #ffffff38; font-size: .75rem; }
-.player .optionButton {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  gap: .45rem;
-  margin-top: .25rem;
-  padding-inline: .45rem;
-  border-radius: .45rem;
-  font: inherit;
-}
-.optionButton svg { width: 16px; height: 16px; }
-.player :focus-visible { outline: 2px solid #e2c79a; outline-offset: 3px; }
+.dock .speed:hover { background: #28231d; border-color: #c7a06980; }
+.dock :focus-visible { outline: 2px solid #e2c79a; outline-offset: 3px; }
 .dockError { grid-column: 1 / -1; margin: .35rem 0; color: #e2c79a; font-size: .8125rem; }
 
 @media (max-width: 767px) {
