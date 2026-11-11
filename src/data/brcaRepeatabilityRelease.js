@@ -1,5 +1,6 @@
 export const brcaRepeatabilityRelease = {
   slug: "pam50-technical-repeatability",
+  narrationSrc: "/research/nas-brca-002/pam50-ellen-v4.mp3",
   title: "Technical-repeat sensitivity of fixed-reference PAM50 subtyping",
   shortTitle: "PAM50 technical repeatability",
   type: "Publications",
