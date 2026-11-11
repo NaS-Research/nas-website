@@ -70,3 +70,8 @@ html:has(.publication-page), body:has(.publication-page) { overflow-x: clip; }
 
 /* Shared editorial summary sizing: keep the dek distinct from body copy. */
 .publication-page .publication-abstract{max-width:56rem;font-size:clamp(1.25rem,2.2vw,1.75rem);line-height:1.55}
+
+/* Resource actions follow the rendered lead visual, never inline article figures. */
+.publication-toolbar-after-artwork{width:min(calc(100% - 48px),1060px);margin:2.5rem auto 3rem}
+.publication-toolbar-after-artwork>[data-article-toolbar]{margin-top:0}
+@media(max-width:600px){.publication-toolbar-after-artwork{margin:1.75rem auto 2.25rem}}
