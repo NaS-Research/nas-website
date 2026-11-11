@@ -5,11 +5,12 @@ import quoteStyles from './platform-perspectives.module.css';
 import ComputingBenchmark from './ComputingBenchmark';
 import ArticleToolbar,{ArticleByline} from '@/components/research/ArticleToolbar';
 import PublicationSourceGroups from '@/components/research/PublicationSourceGroups';
-import PublicationActions from '@/components/research/PublicationActions';
-import {getArticleCitation} from '@/lib/articleTools.mjs';
 import {researchPresentationHistory} from '@/data/researchPresentationHistory.mjs';
 import '@/app/research/[slug]/publication-refinements.css';
 import Footer from '@/components/Footer';
+import RelatedResearch from '@/components/research/RelatedResearch';
+import {getRelatedResearch} from '@/lib/relatedResearch.mjs';
+import {researchItems} from '@/data/researchLibrary';
 import PublicationContents from '@/components/research/PublicationContents';
 import MobileContents from '@/components/research/MobileContents';
 import '@/components/research/publication-navigation.css';
@@ -46,7 +47,7 @@ const sources=[
 ];
 export default function ComputingMilestoneArticle(){
  const contents=article.sections;
- const citation=getArticleCitation(item);
+ const related=getRelatedResearch({...item,area:article.category},researchItems,3);
  const structuredData={'@context':'https://schema.org','@type':'Article',headline:article.title,description:article.subtitle,dateCreated:item.dateISO,creativeWorkStatus:'Draft',url:canonicalUrl,mainEntityOfPage:canonicalUrl,author:{'@type':'Organization',name:article.byline},publisher:{'@type':'Organization',name:'NaS Research',url:'https://nasresearch.bio'},image:'https://nasresearch.bio/research/building-the-next-stage-of-nas-computing/cover.svg'};
  return <><div className={'nas-page publication-page '+styles.page} data-article-slug={article.slug} data-presentation-version={researchPresentationHistory[0].version}>
   <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(structuredData).replace(/</g,'\\u003c')}}/>
@@ -58,15 +59,14 @@ export default function ComputingMilestoneArticle(){
   </div></header>
   <figure className={styles.cover}><img src="/research/building-the-next-stage-of-nas-computing/cover.svg" width="1600" height="900" alt="Sixteen gigabytes of unified memory at the starting point and ninety-six gigabytes in the M5 Ultra workstation configuration."/><figcaption>A larger computational foundation for the next questions.</figcaption></figure>
   <div className="publication-toolbar-after-artwork" data-toolbar-placement="after-lead-visual"><ArticleToolbar item={item}/></div>
-  <MobileContents sections={contents} hasSources hasCitation summaryLabel="Introduction"/>
-  <div className="nas-shell publication-layout"><PublicationContents sections={contents} hasSources hasCitation summaryLabel="Introduction"/>
+  <MobileContents sections={contents} hasSources hasCitation={false} summaryLabel="Introduction"/>
+  <div className="nas-shell publication-layout"><PublicationContents sections={contents} hasSources hasCitation={false} summaryLabel="Introduction"/>
    <article className="publication-body" aria-label={article.title}>
     <section id="summary" className="publication-summary"><p className="publication-section-label">Introduction</p>{article.intro.map((text,index)=><p key={index}><Inline text={text}/></p>)}</section>
     {article.sections.map((section,index)=><Fragment key={section.id}>{index===1&&<PlatformPerspectives/>}<section className={'publication-section'+(index===0?' '+quoteStyles.beforeQuote:'')} id={section.id}><h2>{section.title}</h2>{section.paragraphs.map((text,i)=><p key={i}><Inline text={text}/></p>)}{index===1&&<ComputingBenchmark/>}{index===2&&<Workflow/>}</section></Fragment>)}
     <section id="sources" className="publication-section publication-sources"><h2>Sources and further reading</h2><p>Platform specifications and perspectives are distinguished from NaS’s institutional plans. Links open in a new tab.</p><PublicationSourceGroups sources={sources} groups={[{title:'Platform specifications and industry perspectives',numbers:[1,2,3,4,5,6]},{title:'NaS context and institutional direction',numbers:[7,8,9]}]}/></section>
-    <section id="citation" className="publication-section publication-citation"><p className="publication-section-label">Publication details</p><h2>Cite this work</h2><p className="publication-citation__text">{citation}</p><PublicationActions citation={citation} title={article.title} url={canonicalUrl}/></section>
-    <aside className={styles.status}><span>Next stage</span><p>Workload-specific evaluation will establish the capabilities of the new platform. Research remains paused.</p></aside>
    </article>
   </div>
+  <RelatedResearch items={related}/>
  </div><Footer/></>;
 }

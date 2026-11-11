@@ -1,6 +1,5 @@
 import AnatomyStudioReleasePreview from '@/components/research/anatomy-release-preview/AnatomyStudioReleasePreview';
 import ArticleToolbar, {ArticleByline} from "@/components/research/ArticleToolbar";
-import {getArticleCitation} from "@/lib/articleTools.mjs";
 import {researchPresentationHistory} from '@/data/researchPresentationHistory.mjs';
 import PublicationContents from "@/components/research/PublicationContents";
 import RelatedResearch from "@/components/research/RelatedResearch";
@@ -22,14 +21,13 @@ import Footer from "@/components/Footer";
 import CortexNativeVisual from "@/components/research/CortexNativeVisual";
 import DenialsWorkflowFigure from "@/components/research/DenialsWorkflowFigure";
 import BbbStudyVisual from "@/components/research/BbbStudyVisual";
-import PublicationActions from "@/components/research/PublicationActions";
 import EvidenceFigure from "@/components/research/EvidenceFigure";
 import CvaCoverVisual from "@/components/research/CvaCoverVisual";
 import PublicationFigureGallery from "@/components/research/PublicationFigureGallery";
 import PublicationSourceGroups from "@/components/research/PublicationSourceGroups";
 import { Fragment } from "react";
 import { getResearchItem, researchItems, researchDrafts } from "@/data/researchLibrary";
-import { getResearchPdfUrl, getResearchOpeningLabel } from "@/data/researchTaxonomy.mjs";
+import { getResearchOpeningLabel } from "@/data/researchTaxonomy.mjs";
 
 function SourceReferences({ references = [] }) {
   if (!references.length) return null;
@@ -116,7 +114,6 @@ export default async function ResearchPublicationPage({ params }) {
   }
 
   const isResearchPublication = ["Publications", "Research Notes"].includes(item.type) || Boolean(item.citable);
-  const pdfUrl = getResearchPdfUrl(item);
   const openingLabel = getResearchOpeningLabel(item);
   const isPaperArticle = item.variant === "paper";
   const isOriginStory = item.variant === "institutional-origin";
@@ -126,7 +123,6 @@ export default async function ResearchPublicationPage({ params }) {
   const hasStandaloneArtwork = !hasImmersiveHero && !hasHeroVideo && item.showArticleArtwork !== false && Boolean(publicationArtwork[item.slug]);
   const hasLeadVisual = hasStandaloneArtwork || hasHeroVideo || hasImmersiveHero || item.coverVisual === "cva-molecular-network";
   const ReadingSurface = hasImmersiveHero ? "div" : Fragment;
-  const citation = getArticleCitation(item);
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -209,9 +205,9 @@ export default async function ResearchPublicationPage({ params }) {
       {item.coverVisual === "cva-molecular-network" && <CvaCoverVisual />}
       {hasLeadVisual && !hasImmersiveHero && <div className="publication-toolbar-after-artwork" data-toolbar-placement="after-lead-visual">{articleToolbar}</div>}
       <ReadingSurface {...(hasImmersiveHero ? { className: "publication-reading-surface" } : {})}>
-      <MobileContents sections={item.sections.map(({ id, title }) => ({ id, title }))} hasSources={Boolean(item.sources?.length)} hasCitation={isResearchPublication} summaryLabel={openingLabel} />
+      <MobileContents sections={item.sections.map(({ id, title }) => ({ id, title }))} hasSources={Boolean(item.sources?.length)} hasCitation={false} summaryLabel={openingLabel} />
       <div className="nas-shell publication-layout">
-        <PublicationContents sections={item.sections.map(({ id, title, level }) => ({ id, title: publicationSectionTitle(title), level }))} hasSources={Boolean(item.sources?.length)} hasCitation={isResearchPublication} summaryLabel={openingLabel} />
+        <PublicationContents sections={item.sections.map(({ id, title, level }) => ({ id, title: publicationSectionTitle(title), level }))} hasSources={Boolean(item.sources?.length)} hasCitation={false} summaryLabel={openingLabel} />
 
         <article className="publication-body">
           {hasImmersiveHero && <div className="publication-reading-details">{publicationDetails}</div>}
@@ -294,19 +290,10 @@ export default async function ResearchPublicationPage({ params }) {
             </section>
           )}
 
-          {isResearchPublication && <section id="citation" className="publication-section publication-citation">
-            <p className="publication-section-label">Publication details</p>
-            <h2>Cite this work</h2>
-            <p className="publication-citation__text">Copy the full citation for this work.</p>
-            <PublicationActions citation={citation} pdfUrl={pdfUrl} pdfVersion={item.pdfVersion}  />
-            {publicationArtwork[item.slug]?.creditUrl && <p className="publication-note"><a href={publicationArtwork[item.slug].creditUrl}>Artwork credits and license ↗</a></p>}
-            {item.reproducibilityUrl && <a className="publication-resource-link" href={item.reproducibilityUrl}>Download data and analysis <span aria-hidden="true">↗</span></a>}
-            <p className="publication-note">
-              {item.publicationNote ?? "This web publication is the current version of record. Updates will be reflected through the document’s version history."}
-            </p>
-          </section>}
-
-          {!isResearchPublication && publicationArtwork[item.slug]?.creditUrl && <p className="publication-note"><a href={publicationArtwork[item.slug].creditUrl}>Artwork credits and license ↗</a></p>}
+          {publicationArtwork[item.slug]?.creditUrl && <p className="publication-note"><a href={publicationArtwork[item.slug].creditUrl}>Artwork credits and license ↗</a></p>}
+          {isResearchPublication && <p className="publication-note">
+            {item.publicationNote ?? "This web publication is the current version of record. Updates will be reflected through the document’s version history."}
+          </p>}
 
           {item.revisionNote && <p className="publication-note">{item.revisionNote}</p>}
 
