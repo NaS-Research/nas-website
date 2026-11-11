@@ -1,5 +1,6 @@
 export const atlasRelease = {
   "slug": "alphagenome-atlas-rnu4-2",
+  narrationSrc: "/research/atlas-rnu42/alphagenome-atlas-rnu4-2-edward-v4.mp3",
   "title": "AlphaGenome Atlas in RNU4-2: a focused computational benchmark",
   "shortTitle": "AlphaGenome Atlas in RNU4-2",
   "type": "Research Notes",
