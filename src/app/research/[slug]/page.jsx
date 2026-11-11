@@ -1,5 +1,6 @@
 import AnatomyStudioReleasePreview from '@/components/research/anatomy-release-preview/AnatomyStudioReleasePreview';
-import ArticleAudioPlayer from '@/components/research/anatomy-release-preview/ArticleAudioPlayer';
+import ArticleToolbar, {ArticleByline} from "@/components/research/ArticleToolbar";
+import {getArticleCitation} from "@/lib/articleTools.mjs";
 import {researchPresentationHistory} from '@/data/researchPresentationHistory.mjs';
 import PublicationContents from "@/components/research/PublicationContents";
 import RelatedResearch from "@/components/research/RelatedResearch";
@@ -109,17 +110,9 @@ export default async function ResearchPublicationPage({ params }) {
   const item = getResearchItem(slug);
   if (!item) notFound();
 
-  const audioPlayer = item.narrationSrc ? (
-    <ArticleAudioPlayer
-      key={item.slug}
-      src={item.narrationSrc}
-      title={item.title}
-      cover={publicationArtwork[item.slug]?.src || "/og.png"}
-    />
-  ) : null;
-
+  const articleToolbar = <ArticleToolbar item={item}/>;
   if (slug === "introducing-anatomy-studio") {
-    return <AnatomyStudioReleasePreview published audioPlayer={audioPlayer} />;
+    return <AnatomyStudioReleasePreview published articleToolbar={articleToolbar}/>;
   }
 
   const isResearchPublication = ["Publications", "Research Notes"].includes(item.type) || Boolean(item.citable);
@@ -131,7 +124,7 @@ export default async function ResearchPublicationPage({ params }) {
   const hasHeroImage = false;
   const hasImmersiveHero = item.slug === "blood-brain-barrier-prediction-audit";
   const ReadingSurface = hasImmersiveHero ? "div" : Fragment;
-  const citation = `${item.authors.join(", ")} (${item.date.slice(-4)}). ${item.title}. NaS Research. ${item.version ? `Version ${item.version}. ` : ""}${item.publicationStatus === "draft" ? "Draft. " : ""}https://nasresearch.bio/research/${item.slug}`;
+  const citation = getArticleCitation(item);
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -153,13 +146,9 @@ export default async function ResearchPublicationPage({ params }) {
   const related = getRelatedResearch(item, researchItems);
 
   const publicationDetails = (<>
-          <div className="publication-byline">
-            <p>By {item.authors.join(", ")}{item.affiliation && <span> · {item.affiliation}</span>}</p>
-            {item.readTime && <p>{item.readTime}</p>}
-          </div>
-          <PublicationActions citation={isResearchPublication ? citation : undefined} pdfUrl={pdfUrl} pdfVersion={item.pdfVersion} />
+          <ArticleByline item={item}/>
+          {articleToolbar}
           {item.reviewState && <p className="publication-review-state">{item.reviewState}</p>}
-          {item.reproducibilityUrl && <a className="publication-reproduce" href={item.reproducibilityUrl}>Download data and analysis ↗</a>}
   </>);
 
   return (
@@ -206,7 +195,7 @@ export default async function ResearchPublicationPage({ params }) {
           </div>
           <h1>{item.title}</h1>
           <p className="publication-abstract">{item.abstract}</p>
-          {!hasImmersiveHero && <>{publicationDetails}{audioPlayer}</>}
+          {!hasImmersiveHero && <>{publicationDetails}</>}
         </div>
       </header>
 
@@ -218,7 +207,7 @@ export default async function ResearchPublicationPage({ params }) {
         <PublicationContents sections={item.sections.map(({ id, title, level }) => ({ id, title: publicationSectionTitle(title), level }))} hasSources={Boolean(item.sources?.length)} hasCitation={isResearchPublication} summaryLabel={openingLabel} />
 
         <article className="publication-body">
-          {hasImmersiveHero && <div className="publication-reading-details">{publicationDetails}{audioPlayer}</div>}
+          {hasImmersiveHero && <div className="publication-reading-details">{publicationDetails}</div>}
           <section id="summary" className="publication-summary">
             <p className="publication-section-label">{openingLabel}</p>
             <p>{item.summary}</p>

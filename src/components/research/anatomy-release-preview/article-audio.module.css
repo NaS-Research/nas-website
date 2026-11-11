@@ -250,3 +250,18 @@
     bottom: calc(8.5rem + env(safe-area-inset-bottom));
   }
 }
+
+.audio[data-integrated] {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.audio[data-integrated] .row { flex-wrap: wrap; column-gap: 1.75rem; row-gap: .35rem; }
+.audio[data-integrated] .row > :last-child { margin-left: auto; }
+@media (max-width: 600px) {
+  .audio[data-integrated] .row > :last-child {
+    flex-basis: 100%;
+    margin-left: 0;
+  }
+}

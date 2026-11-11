@@ -41,7 +41,7 @@ export default function PersonalTools(){
     {articleTools?(saved?<SavedBookmarkIcon aria-hidden="true"/>:<BookmarkIcon aria-hidden="true"/>):(saved?'✓ Saved':'＋ Save for later')}
    </button>
    {articleTools
-    ? <Link href="/account?tab=saved"><span>View saved</span><span aria-hidden="true">↗</span></Link>
+    ? <Link href="/account"><span>Workspace</span><span aria-hidden="true">↗</span></Link>
     : <>
       <button type="button" aria-expanded={open} onClick={()=>setOpen(!open)}>Notes & progress</button>
       <Link href="/account">Your workspace ↗</Link>
