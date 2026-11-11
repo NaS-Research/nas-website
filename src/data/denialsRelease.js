@@ -1,5 +1,6 @@
 export const denialsRelease = {
   slug: "introducing-nas-denials",
+  narrationSrc: "/research/denials/nas-denials-ellen-v4.mp3",
   title: "Introducing NaS Denials",
   shortTitle: "NaS Denials",
   type: "Releases",
