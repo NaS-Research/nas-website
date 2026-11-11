@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import {Fragment} from 'react';
 import PlatformPerspectives from './PlatformPerspectives';
+import quoteStyles from './platform-perspectives.module.css';
 import ComputingBenchmark from './ComputingBenchmark';
 import ArticleToolbar,{ArticleByline} from '@/components/research/ArticleToolbar';
 import PublicationSourceGroups from '@/components/research/PublicationSourceGroups';
@@ -61,7 +62,7 @@ export default function ComputingMilestoneArticle(){
   <div className="nas-shell publication-layout"><PublicationContents sections={contents} hasSources hasCitation summaryLabel="Introduction"/>
    <article className="publication-body" aria-label={article.title}>
     <section id="summary" className="publication-summary"><p className="publication-section-label">Introduction</p>{article.intro.map((text,index)=><p key={index}><Inline text={text}/></p>)}</section>
-    {article.sections.map((section,index)=><Fragment key={section.id}>{index===1&&<PlatformPerspectives/>}<section className="publication-section" id={section.id}><h2>{section.title}</h2>{section.paragraphs.map((text,i)=><p key={i}><Inline text={text}/></p>)}{index===1&&<ComputingBenchmark/>}{index===2&&<Workflow/>}</section></Fragment>)}
+    {article.sections.map((section,index)=><Fragment key={section.id}>{index===1&&<PlatformPerspectives/>}<section className={'publication-section'+(index===0?' '+quoteStyles.beforeQuote:'')} id={section.id}><h2>{section.title}</h2>{section.paragraphs.map((text,i)=><p key={i}><Inline text={text}/></p>)}{index===1&&<ComputingBenchmark/>}{index===2&&<Workflow/>}</section></Fragment>)}
     <section id="sources" className="publication-section publication-sources"><h2>Sources and further reading</h2><p>Platform specifications and perspectives are distinguished from NaS’s institutional plans. Links open in a new tab.</p><PublicationSourceGroups sources={sources} groups={[{title:'Platform specifications and industry perspectives',numbers:[1,2,3,4,5,6]},{title:'NaS context and institutional direction',numbers:[7,8,9]}]}/></section>
     <section id="citation" className="publication-section publication-citation"><p className="publication-section-label">Publication details</p><h2>Cite this work</h2><p className="publication-citation__text">{citation}</p><PublicationActions citation={citation} title={article.title} url={canonicalUrl}/></section>
     <aside className={styles.status}><span>Next stage</span><p>Workload-specific evaluation will establish the capabilities of the new platform. Research remains paused.</p></aside>
