@@ -1,5 +1,6 @@
 export const bbbRelease = {
   "slug": "blood-brain-barrier-prediction-audit",
+  "narrationSrc": "/research/bbb-audit/bbb-article-mark-v4.mp3",
   "title": "Testing the limits of blood-brain barrier prediction",
   "shortTitle": "The limits of blood-brain barrier prediction",
   "type": "Publications",
