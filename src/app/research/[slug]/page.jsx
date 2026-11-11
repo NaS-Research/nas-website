@@ -123,6 +123,8 @@ export default async function ResearchPublicationPage({ params }) {
   const hasHeroVideo = Boolean(item.heroVideo);
   const hasHeroImage = false;
   const hasImmersiveHero = item.slug === "blood-brain-barrier-prediction-audit";
+  const hasStandaloneArtwork = !hasImmersiveHero && !hasHeroVideo && item.showArticleArtwork !== false && Boolean(publicationArtwork[item.slug]);
+  const hasLeadVisual = hasStandaloneArtwork || hasHeroVideo || hasImmersiveHero || item.coverVisual === "cva-molecular-network";
   const ReadingSurface = hasImmersiveHero ? "div" : Fragment;
   const citation = getArticleCitation(item);
   const structuredData = {
@@ -195,12 +197,17 @@ export default async function ResearchPublicationPage({ params }) {
           </div>
           <h1>{item.title}</h1>
           <p className="publication-abstract">{item.abstract}</p>
-          {!hasImmersiveHero && <>{publicationDetails}</>}
+          {!hasImmersiveHero && <>
+            <ArticleByline item={item}/>
+            {!hasLeadVisual && articleToolbar}
+            {item.reviewState && <p className="publication-review-state">{item.reviewState}</p>}
+          </>}
         </div>
       </header>
 
-      {!hasImmersiveHero && !hasHeroVideo && item.showArticleArtwork !== false && <PublicationArtwork slug={item.slug} hero />}
+      {hasStandaloneArtwork && <PublicationArtwork slug={item.slug} hero />}
       {item.coverVisual === "cva-molecular-network" && <CvaCoverVisual />}
+      {hasLeadVisual && !hasImmersiveHero && <div className="publication-toolbar-after-artwork" data-toolbar-placement="after-lead-visual">{articleToolbar}</div>}
       <ReadingSurface {...(hasImmersiveHero ? { className: "publication-reading-surface" } : {})}>
       <MobileContents sections={item.sections.map(({ id, title }) => ({ id, title }))} hasSources={Boolean(item.sources?.length)} hasCitation={isResearchPublication} summaryLabel={openingLabel} />
       <div className="nas-shell publication-layout">
