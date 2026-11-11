@@ -189,6 +189,7 @@ export const researchItems = [
   },
   {
     slug: "chicago-our-chosen-home",
+    narrationSrc: "/research/chicago-our-chosen-home/chicago-our-chosen-home-article-audio.mp3",
     title: "Chicago: Our Chosen Home",
     shortTitle: "Chicago: Our Chosen Home",
     type: "Essays",
