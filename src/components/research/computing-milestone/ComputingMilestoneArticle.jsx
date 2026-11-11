@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ComputingBenchmark from './ComputingBenchmark';
 import ArticleToolbar,{ArticleByline} from '@/components/research/ArticleToolbar';
 import PublicationSourceGroups from '@/components/research/PublicationSourceGroups';
 import PublicationActions from '@/components/research/PublicationActions';
@@ -22,16 +23,6 @@ function Inline({text}) {
   });
 }
 
-function CapacityFigures(){return <figure className={styles.comparison} aria-labelledby="capacity-title">
- <p className={styles.eyebrow}>Configured capacity</p><h3 id="capacity-title">More room for the work.</h3>
- <div className={styles.memoryHeading}><span>Unified memory</span><strong>16 GB → 96 GB</strong><span>6× capacity</span></div>
- <div className={styles.memoryRows} aria-hidden="true"><p>M1 Mac mini</p><div className={styles.memoryUnits}><span>16 GB</span></div><p>Mac Studio configuration</p><div className={styles.memoryUnits}>{Array.from({length:6},(_,i)=><span key={i}>16 GB</span>)}</div></div>
- <p className={styles.figureNote}>Each unit represents 16 GB. Configured capacity, not a performance benchmark.</p>
- <div className={styles.storageHeading}><span>Internal storage</span><strong>256 GB → 2 TB</strong></div>
- <div className={styles.storageRows} aria-hidden="true"><div><span>M1 Mac mini</span><strong>256 GB</strong></div><div className={styles.storageTrack}><span style={{width:'12.8%'}}/></div><div><span>Mac Studio configuration</span><strong>2 TB</strong></div><div className={styles.storageTrack}><span style={{width:'100%'}}/></div><div className={styles.storageAxis}><span>0 GB</span><span>2 TB</span></div></div>
- <table className={styles.srOnly}><caption>Configured workstation capacity</caption><thead><tr><th>Workstation</th><th>Unified memory</th><th>Internal SSD</th></tr></thead><tbody><tr><th>M1 Mac mini</th><td>16 GB</td><td>256 GB</td></tr><tr><th>Mac Studio configuration</th><td>96 GB</td><td>2 TB</td></tr></tbody></table>
- <figcaption>Nominal internal SSD capacity; formatted capacity is lower. Previous configuration: NaS. Platform: <a href="https://www.apple.com/mac-studio/specs/">Apple specifications</a>. Memory and storage capacity do not establish workload speed.</figcaption>
- </figure>;}
 const steps=[['Scientific','questions'],['Data &','knowledge'],['Models &','methods'],['Evaluation'],['Research','tools']];
 function Workflow(){return <figure className={styles.workflow} aria-labelledby="workflow-title"><p className={styles.eyebrow}>From question to tool</p><h3 id="workflow-title">A connected research cycle</h3>
  <svg className={styles.workflowDesktop} viewBox="0 0 1000 240" aria-hidden="true"><defs><marker id="workflow-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="none" stroke="currentColor"/></marker></defs>{steps.map((label,i)=><g key={i}>{i<4&&<path d={'M'+(110+i*200)+' 105H'+(285+i*200)} markerEnd="url(#workflow-arrow)"/>}<circle cx={100+i*200} cy="105" r="5"/><text x={100+i*200} y="85" textAnchor="middle" className={styles.stepNumber}>{String(i+1).padStart(2,'0')}</text><text x={100+i*200} y="145" textAnchor="middle">{label.map((line,j)=><tspan key={line} x={100+i*200} dy={j?'1.35em':0}>{line}</tspan>)}</text></g>)}<path d="M700 94V40H500V94" markerEnd="url(#workflow-arrow)"/><text x="600" y="24" textAnchor="middle" className={styles.feedbackLabel}>Evaluate and refine</text></svg>
@@ -73,7 +64,7 @@ export default function ComputingMilestoneArticle(){
   <div className="nas-shell publication-layout"><PublicationContents sections={contents} hasSources hasCitation summaryLabel="Introduction"/>
    <article className="publication-body" aria-label={article.title}>
     <section id="summary" className="publication-summary"><p className="publication-section-label">Introduction</p>{article.intro.map((text,index)=><p key={index}><Inline text={text}/></p>)}</section>
-    {article.sections.map((section,index)=><section className="publication-section" key={section.id} id={section.id}><h2>{section.title}</h2>{section.paragraphs.map((text,i)=><p key={i}><Inline text={text}/></p>)}{index===1&&<CapacityFigures/>}{index===2&&<Workflow/>}</section>)}
+    {article.sections.map((section,index)=><section className="publication-section" key={section.id} id={section.id}><h2>{section.title}</h2>{section.paragraphs.map((text,i)=><p key={i}><Inline text={text}/></p>)}{index===1&&<ComputingBenchmark/>}{index===2&&<Workflow/>}</section>)}
     <Industry/>
     <section id="sources" className="publication-section publication-sources"><h2>Sources and further reading</h2><p>Platform specifications and perspectives are distinguished from NaS’s institutional plans. Links open in a new tab.</p><PublicationSourceGroups sources={sources} groups={[{title:'Platform specifications and industry perspectives',numbers:[1,2,3]},{title:'NaS context and institutional direction',numbers:[4,5,6]}]}/></section>
     <section id="citation" className="publication-section publication-citation"><p className="publication-section-label">Publication details</p><h2>Cite this work</h2><p className="publication-citation__text">{citation}</p><PublicationActions citation={citation} title={article.title} url={canonicalUrl}/></section>
