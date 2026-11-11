@@ -1,0 +1,4 @@
+import ComputingMilestoneArticle from '@/components/research/computing-milestone/ComputingMilestoneArticle';
+import {computingMilestoneArticle as article} from '@/data/computingMilestoneArticle.mjs';
+export const metadata={title:article.title+' | NaS Research',description:article.subtitle,authors:[{name:article.byline}],robots:{index:false,follow:false,noarchive:true,googleBot:{index:false,follow:false,noimageindex:true}},alternates:{canonical:'/preview/building-the-next-stage-of-nas-computing'},openGraph:{title:article.title,description:article.subtitle,url:'/preview/building-the-next-stage-of-nas-computing',type:'article',images:[{url:'/research/building-the-next-stage-of-nas-computing/cover.svg',width:1600,height:900}]}};
+export default function Page(){return <ComputingMilestoneArticle/>;}
