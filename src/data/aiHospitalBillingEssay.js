@@ -2,6 +2,7 @@ import { aiHospitalBillingCohortTable } from "./aiHospitalBillingEvidence.js";
 
 export const aiHospitalBillingEssay = {
   slug: "ai-hospital-billing-evidence",
+  narrationSrc: "/research/ai-hospital-billing/hospital-billing-narration.mp3",
   title: "AI, Hospital Billing, and the Standard of Evidence",
   shortTitle: "AI and hospital billing",
   type: "Essays",
