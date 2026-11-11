@@ -241,7 +241,7 @@ export default function ArticleAudioPlayer({src, title, cover, actions = null}) 
     </div>
   );
   const timeline = (
-    <input className={styles.timeline} type="range" aria-label="Seek narration"
+    <input className={styles.timeline} data-audio-progress type="range" aria-label="Seek narration"
       aria-valuetext={elapsed + ' of ' + total}
       min={0} max={duration || 1} step="any" value={time} disabled={!duration}
       style={{'--audio-progress': (duration ? 100 * time / duration : 0) + '%'}}
@@ -258,9 +258,9 @@ export default function ArticleAudioPlayer({src, title, cover, actions = null}) 
         onEnded={() => {setPaused(true); setPlaying(false); syncTime();}}
         onError={() => {setPaused(true); setPlaying(false); setError('Article narration is unavailable.');}}
       />
-      <div inert={showDock}>
-        <div className={styles.row}>
-          <div className={styles.transport} data-started={started}>
+      <div inert={showDock} data-audio-inline-body>
+        <div className={styles.row} data-audio-row>
+          <div className={styles.transport} data-started={started} data-audio-transport>
             <button ref={inlinePlay} type="button" className={styles.play}
               aria-label={started ? playbackLabel : 'Listen to article'} onClick={toggle}>
               <span className={styles.playIcon}>{playbackIcon}</span>

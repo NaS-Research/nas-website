@@ -77,7 +77,9 @@ export default function Navbar({ authEnabled = false }) {
       const currentY = window.scrollY;
       setScrolled(currentY > 24);
 
-      if (!menuOpen && !searchOpen) {
+      if (pathname.startsWith("/research/")) {
+        setShow(true);
+      } else if (!menuOpen && !searchOpen) {
         if (currentY > lastY + 10 && currentY > 120) {
           setShow(false);
         } else if (currentY < lastY - 10) {
@@ -91,7 +93,7 @@ export default function Navbar({ authEnabled = false }) {
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
-  }, [menuOpen, searchOpen]);
+  }, [menuOpen, searchOpen, pathname]);
 
   useEffect(() => {
     setMenuOpen(false);

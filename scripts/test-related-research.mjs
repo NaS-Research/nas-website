@@ -4,7 +4,7 @@ import { publicationArtwork } from '../src/data/publicationArtwork.js';
 import { researchTopics } from '../src/data/researchTopics.mjs';
 import { getRelatedResearch } from '../src/lib/relatedResearch.mjs';
 for (const item of researchItems) {
-  assert(researchTopics[item.slug]?.length);
+  assert((item.topics ?? researchTopics[item.slug])?.length || item.area, 'Article needs topics or an area for related-reading fallback');
   const related = getRelatedResearch(item, researchItems);
   assert.equal(related.length, 3);
   assert.equal(new Set(related.map(x => x.slug)).size, 3);
