@@ -354,6 +354,7 @@ export const researchItems = [
   },
   {
     slug: "why-nas-exists",
+    narrationSrc: "/research/why-nas-exists/why-nas-exists-monika-v4.mp3",
     title: "Why NaS Exists",
     shortTitle: "Why NaS Exists",
     type: "Essays",
