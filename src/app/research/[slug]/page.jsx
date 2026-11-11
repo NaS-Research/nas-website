@@ -154,7 +154,7 @@ export default async function ResearchPublicationPage({ params }) {
   </>);
 
   return (
-    <div data-presentation-version={researchPresentationHistory[0].version} className={`nas-page publication-page${hasImmersiveHero ? " publication-page--immersive" : ""}${isPaperArticle ? " publication-page--paper" : ""}${item.theme === "dark" ? " publication-page--dark" : ""}`}>
+    <div data-article-slug={item.slug} data-presentation-version={researchPresentationHistory[0].version} className={`nas-page publication-page${hasImmersiveHero ? " publication-page--immersive" : ""}${isPaperArticle ? " publication-page--paper" : ""}${item.theme === "dark" ? " publication-page--dark" : ""}`}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }} />
       <header className={`publication-hero ${isOriginStory ? "publication-hero--origin" : ""} ${hasHeroVideo ? "publication-hero--place" : ""} ${hasHeroImage ? "publication-hero--visual" : ""}`}>
         {hasImmersiveHero && <>
