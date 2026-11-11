@@ -44,7 +44,7 @@ const sources=[
  {title:'About NaS Research',url:'https://nasresearch.bio/about',role:'Institutional vision and long-term ambitions.'}
 ];
 export default function ComputingMilestoneArticle(){
- const contents=article.sections.flatMap((section,index)=>index===1?[{id:'industry-perspective',title:'Views on the platform'},section]:[section]);
+ const contents=article.sections;
  const citation=getArticleCitation(item);
  const structuredData={'@context':'https://schema.org','@type':'Article',headline:article.title,description:article.subtitle,dateCreated:item.dateISO,creativeWorkStatus:'Draft',url:canonicalUrl,mainEntityOfPage:canonicalUrl,author:{'@type':'Organization',name:article.byline},publisher:{'@type':'Organization',name:'NaS Research',url:'https://nasresearch.bio'},image:'https://nasresearch.bio/research/building-the-next-stage-of-nas-computing/cover.svg'};
  return <><div className={'nas-page publication-page '+styles.page} data-article-slug={article.slug} data-presentation-version={researchPresentationHistory[0].version}>

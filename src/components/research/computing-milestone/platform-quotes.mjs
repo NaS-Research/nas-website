@@ -1,4 +1,4 @@
-export const QUOTE_HOLD_MS=3000;
+export const QUOTE_HOLD_MS=4000;
 export const QUOTE_SLIDE_MS=1200;
 export const platformQuotes=Object.freeze([
  {id:'srouji',quote:'the new Mac Studio is our most powerful Mac ever.',name:'Johny Srouji',role:'Chief hardware officer · Apple',sourceNumber:2,url:'https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/',date:'2026-08-25',context:'Manufacturer statement about the product family, not the specific NaS configuration or an endorsement of NaS.'},
@@ -8,5 +8,5 @@ export const platformQuotes=Object.freeze([
  {id:'viticci',quote:'the M5 Ultra Mac Studio is a dream machine for local AI agents.',name:'Federico Viticci',role:'Founder and editor-in-chief · MacStories',sourceNumber:6,url:'https://www.macstories.net/stories/m5-ultra-mac-studio-review-the-dream-mac-for-local-ai-agents/',date:'2026-09-21',context:'Excerpt from a first-person review of a 256 GB M5 Ultra system, distinct from NaS’s 96 GB configuration.'}
 ]);
 export function nextQuote(index,step,count=platformQuotes.length){return ((index+step)%count+count)%count;}
-export function shouldRotate({paused,reducedMotion,visible,inView,hovering}){return !paused&&reducedMotion===false&&visible&&inView&&!hovering;}
-export function quoteRotationDelay(first,reducedMotion=false){return QUOTE_HOLD_MS+(first||reducedMotion?0:QUOTE_SLIDE_MS);}
+export function shouldRotate({paused,reducedMotion,visible,inView,hovering,focused=false}){return !paused&&reducedMotion===false&&visible&&inView&&!hovering&&!focused;}
+export function quoteRotationDelay(){return QUOTE_HOLD_MS;}
