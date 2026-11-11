@@ -451,6 +451,7 @@ export const researchItems = [
   },
   {
     slug: "why-hyde-park",
+    narrationSrc: "/research/hyde-park/why-hyde-park-mark-v4.mp3",
     title: "Why Hyde Park",
     shortTitle: "Why Hyde Park",
     type: "Essays",
