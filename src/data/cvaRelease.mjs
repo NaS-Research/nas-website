@@ -24,6 +24,7 @@ const figure = (name, alt, caption, afterParagraph) => ({
 });
 export const cvaRelease = {
   slug: "clinvar-conflict-atlas",
+  narrationSrc: "/research/nas-cva-001/clinvar-conflict-atlas-ellen-v4.mp3",
   title: "The ClinVar Conflict Atlas",
   shortTitle: "The ClinVar Conflict Atlas",
   type: "Publications", area: "Genomics",
