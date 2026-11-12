@@ -21,7 +21,7 @@ export default function ComputingHeroFilm({introSrc, loopSrc, poster, width = 38
       if (motion.matches || document.hidden) pageReveal?.finish(motion.matches ? 'reduced-motion' : 'background');
       player.setEnvironment({visible, hidden: document.hidden, reduced: motion.matches});
     };
-    const observer = new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; if (!visible) pageReveal?.finish('offscreen'); update(); }, {threshold: .05});
+    const observer = new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; if (!visible) pageReveal?.finish('offscreen', false); update(); }, {threshold: .05});
     observer.observe(root.current);
     motion.addEventListener('change', update); document.addEventListener('visibilitychange', update);
     update();

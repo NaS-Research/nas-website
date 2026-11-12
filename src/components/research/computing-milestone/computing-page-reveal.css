@@ -16,7 +16,7 @@ html:has([data-computing-page]):focus-within{--nas-computing-page-opacity:1!impo
 }
 
 /* The natural header height is preserved inside an animatable grid row. */
-[data-computing-heading-stage]{display:grid;grid-template-rows:var(--nas-computing-heading-rows,1fr);transition:grid-template-rows var(--nas-computing-stage-transition,0s);animation:var(--nas-computing-heading-safety,none)}
+.publication-page[data-computing-page]>[data-computing-heading-stage]{display:grid;grid-template-rows:var(--nas-computing-heading-rows,1fr);transition:grid-template-rows var(--nas-computing-stage-transition,0s),opacity var(--nas-computing-page-transition,180ms linear);animation:var(--nas-computing-heading-safety,none),var(--nas-computing-page-safety,none)}
 [data-computing-heading-clip]{min-height:0;overflow:clip}
 [data-computing-visual]{min-height:var(--nas-computing-stage-space,0px);display:flex;align-items:center;justify-content:center;transition:min-height var(--nas-computing-stage-transition,0s);animation:var(--nas-computing-stage-safety,none)}
 @keyframes nas-computing-heading-safety{to{grid-template-rows:1fr}}
