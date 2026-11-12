@@ -1,0 +1,16 @@
+/* Visible by default: no script, blocked script or unsupported selector => usable article. */
+html:has([data-computing-page]),html:has([data-computing-page]) body,[data-computing-page]{background:#000}
+html:has([data-computing-page]) :is(.nas-navbar,.personal-tools,.site-closing,.nas-skip-link),
+[data-computing-page]>:not([data-computing-visual]):not(script),
+[data-computing-visual] :is(figcaption,button){
+ opacity:var(--nas-computing-page-opacity,1);
+ transition:opacity var(--nas-computing-page-transition,180ms linear);
+ /* Independent CSS safety if JavaScript dies after arming the effect. */
+ animation:var(--nas-computing-page-safety,none);
+}
+html:has([data-computing-page]):focus-within{--nas-computing-page-opacity:1!important;--nas-computing-page-transition:0s!important}
+@keyframes nas-computing-reveal-safety{to{opacity:1}}
+@media(prefers-reduced-motion:reduce){
+ html:has([data-computing-page]){--nas-computing-page-opacity:1!important;--nas-computing-page-transition:0s!important}
+ html:has([data-computing-page]) :is(.nas-navbar,.personal-tools,.site-closing,.nas-skip-link),[data-computing-page]>:not([data-computing-visual]):not(script),[data-computing-visual] :is(figcaption,button){animation:none;opacity:1;transition:none}
+}

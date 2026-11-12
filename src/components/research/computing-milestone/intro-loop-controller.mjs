@@ -1,5 +1,6 @@
 // A two-layer handoff retains the intro's final frame until the hold presents.
-export function createIntroLoopController({intro, hold, introSrc, loopSrc, reveal, onBlocked = () => {}, onFailure = () => {}}) {
+export function createIntroLoopController({intro, hold, introSrc, loopSrc, reveal, onBlocked = () => {}, onFailure = () => {}, onArrivalProgress = () => {}}) {
+  let introPresented = false;
   let phase = 'intro', visible = false, hidden = true, reduced = true;
   let paused = false, blocked = false, failed = false, destroyed = false, loaded = false;
   let pendingFrame = null, frameVideo = null, frameKind = null;
@@ -20,6 +21,7 @@ export function createIntroLoopController({intro, hold, introSrc, loopSrc, revea
       pendingFrame = null; frameVideo = null; frameKind = null;
       if (!eligible() || video !== active() || video.paused) return;
       reveal(video === intro ? 'intro' : 'loop');
+      if (video === intro) { introPresented = true; reportArrival(); }
       if (video === hold) phase = 'loop';
     };
     if (typeof video.requestVideoFrameCallback === 'function') {
@@ -60,18 +62,21 @@ export function createIntroLoopController({intro, hold, introSrc, loopSrc, revea
     }
     play(active());
   }
+  function reportArrival() {
+    if (!destroyed && introPresented && Number.isFinite(intro.duration) && intro.duration > 0) onArrivalProgress(Math.min(1, intro.currentTime / intro.duration));
+  }
   const onIntroPlaying = () => present(intro);
   const onHoldPlaying = () => present(hold);
   const onHoldReady = () => { if (phase !== 'intro') update(); };
   const onIntroEnd = () => {
     if (destroyed || phase !== 'intro') return;
-    cancelFrame(); phase = 'handoff'; update();
+    onArrivalProgress(1); cancelFrame(); phase = 'handoff'; update();
   };
   const onError = () => {
     if (destroyed) return;
     failed = true; update(); onFailure();
   };
-  const listeners = [[intro,'playing',onIntroPlaying],[hold,'playing',onHoldPlaying],
+  const listeners = [[intro,'timeupdate',reportArrival],[intro,'playing',onIntroPlaying],[hold,'playing',onHoldPlaying],
     [hold,'canplay',onHoldReady],[intro,'ended',onIntroEnd],[intro,'error',onError],[hold,'error',onError]];
   intro.muted = hold.muted = true;
   intro.defaultMuted = hold.defaultMuted = true;
