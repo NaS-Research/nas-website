@@ -1,11 +1,11 @@
-// Approved V3 media. Desktop 4K and small-screen 1080p pairs share timing.
+// Approved stronger-twinkle replacement pair. Original masters retained unchanged.
 export const computingHeroFilm = {
-  "introSrc": "/research/building-the-next-stage-of-nas-computing/starlight-v3/mac-starlight-arrival-4k.mp4",
-  "loopSrc": "/research/building-the-next-stage-of-nas-computing/starlight-v3/mac-starlight-loop-4k.mp4",
-  "smallIntroSrc": "/research/building-the-next-stage-of-nas-computing/starlight-v3/mac-starlight-arrival-1080p.mp4",
-  "smallLoopSrc": "/research/building-the-next-stage-of-nas-computing/starlight-v3/mac-starlight-loop-1080p.mp4",
-  "poster": "/research/building-the-next-stage-of-nas-computing/starlight-v3/poster-4k.png",
+  "introSrc": "/research/building-the-next-stage-of-nas-computing/starlight-twinkle-v4/mac-starlight-arrival-twinkle-4k.mp4",
+  "loopSrc": "/research/building-the-next-stage-of-nas-computing/starlight-twinkle-v4/mac-starlight-loop-twinkle-4k.mp4",
+  "smallIntroSrc": "/research/building-the-next-stage-of-nas-computing/starlight-twinkle-v4/mac-starlight-arrival-twinkle-1080p.mp4",
+  "smallLoopSrc": "/research/building-the-next-stage-of-nas-computing/starlight-twinkle-v4/mac-starlight-loop-twinkle-1080p.mp4",
+  "poster": "/research/building-the-next-stage-of-nas-computing/starlight-twinkle-v4/mac-starlight-twinkle-poster-4k.png",
   "width": 3840,
   "height": 2160,
-  "description": "White and warm-gold starlight forming the asymmetric outline of a Mac Studio against black."
+  "description": "Individually twinkling white and warm-gold stars forming the asymmetric outline of a Mac Studio against black."
 };
