@@ -3,15 +3,17 @@ import {useEffect, useRef, useState} from 'react';
 import {createIntroLoopController} from './intro-loop-controller.mjs';
 import styles from './computing-hero-film.module.css';
 
-export default function ComputingHeroFilm({introSrc, loopSrc, poster, width = 3840, height = 2160, description}) {
+export default function ComputingHeroFilm({introSrc, loopSrc, smallIntroSrc, smallLoopSrc, poster, width = 3840, height = 2160, description}) {
   const root = useRef(null), intro = useRef(null), hold = useRef(null), controller = useRef(null);
   const [layer, setLayer] = useState('poster');
   const [paused, setPaused] = useState(false), [blocked, setBlocked] = useState(false);
   const [reduced, setReduced] = useState(true), [failed, setFailed] = useState(false);
   useEffect(() => {
     const motion = matchMedia('(prefers-reduced-motion: reduce)');
+    // Select the matched pair once per mounted hero; resizing must not replay arrival.
+    const small = matchMedia('(max-width: 767px)').matches && smallIntroSrc && smallLoopSrc;
     let visible = false;
-    const player = createIntroLoopController({intro: intro.current, hold: hold.current, introSrc, loopSrc,
+    const player = createIntroLoopController({intro: intro.current, hold: hold.current, introSrc: small ? smallIntroSrc : introSrc, loopSrc: small ? smallLoopSrc : loopSrc,
       reveal: setLayer, onBlocked: () => setBlocked(true), onFailure: () => setFailed(true)});
     controller.current = player;
     const update = () => {
@@ -26,12 +28,12 @@ export default function ComputingHeroFilm({introSrc, loopSrc, poster, width = 38
       observer.disconnect(); motion.removeEventListener('change', update);
       document.removeEventListener('visibilitychange', update); player.destroy(); controller.current = null;
     };
-  }, [introSrc, loopSrc]);
+  }, [introSrc, loopSrc, smallIntroSrc, smallLoopSrc]);
   function toggle() {
     const next = blocked ? false : !paused;
     setPaused(next); setBlocked(false); controller.current?.setPaused(next);
   }
-  return <div ref={root} className={styles.film} style={{aspectRatio: `${width} / ${height}`}} data-film-layer={layer}>
+  return <div ref={root} className={styles.film} style={{aspectRatio: `${width} / ${height}`}} data-film-layer={layer} data-static-poster={failed || blocked}>
     <img src={poster} width={width} height={height} alt={description} className={styles.poster}/>
     <video ref={intro} width={width} height={height} muted playsInline preload="auto" disablePictureInPicture disableRemotePlayback
       aria-hidden="true" tabIndex={-1} className={styles.video} data-visible={layer === 'intro'}/>
