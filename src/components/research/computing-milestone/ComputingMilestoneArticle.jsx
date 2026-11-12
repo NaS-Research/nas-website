@@ -3,6 +3,8 @@ import {Fragment} from 'react';
 import PlatformPerspectives from './PlatformPerspectives';
 import quoteStyles from './platform-perspectives.module.css';
 import ComputingBenchmark from './ComputingBenchmark';
+import ComputingHeroFilm from './ComputingHeroFilm';
+import {computingHeroFilm} from '@/data/computingHeroFilm.mjs';
 import ArticleToolbar,{ArticleByline} from '@/components/research/ArticleToolbar';
 import PublicationSourceGroups from '@/components/research/PublicationSourceGroups';
 import {researchPresentationHistory} from '@/data/researchPresentationHistory.mjs';
@@ -57,7 +59,7 @@ export default function ComputingMilestoneArticle(){
    <div className="publication-meta-line"><Link href="/research?area=Scientific%20Infrastructure">{article.category}</Link><Link href="/research?type=Research%20Notes">{article.format}</Link></div>
    <h1>{article.title}</h1><p className="publication-abstract">{article.subtitle}</p><ArticleByline item={item}/>
   </div></header>
-  <figure className={styles.cover}><img src="/research/building-the-next-stage-of-nas-computing/cover.svg" width="1600" height="900" alt="Sixteen gigabytes of unified memory at the starting point and ninety-six gigabytes in the M5 Ultra workstation configuration."/><figcaption>A larger computational foundation for the next questions.</figcaption></figure>
+  <figure className={styles.cover}>{computingHeroFilm ? <ComputingHeroFilm {...computingHeroFilm}/> : <img src="/research/building-the-next-stage-of-nas-computing/cover.svg" width="1600" height="900" alt="Sixteen gigabytes of unified memory at the starting point and ninety-six gigabytes in the M5 Ultra workstation configuration."/>}<figcaption>A larger computational foundation for the next questions.</figcaption></figure>
   <div className="publication-toolbar-after-artwork" data-toolbar-placement="after-lead-visual"><ArticleToolbar item={item}/></div>
   <MobileContents sections={contents} hasSources hasCitation={false} summaryLabel="Introduction"/>
   <div className="nas-shell publication-layout"><PublicationContents sections={contents} hasSources hasCitation={false} summaryLabel="Introduction"/>
