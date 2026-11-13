@@ -48,7 +48,11 @@ export function installComputingReveal(win, doc) {
       dispose() { finish('navigation'); style.remove(); if (win.__nasComputingReveal === api) delete win.__nasComputingReveal; }
     };
     win.__nasComputingReveal = api;
-    for (const event of ['keydown','pointerdown','touchstart','wheel']) listen(doc,event,()=>finish('interaction'));
+    // Pointer focus, trackpad inertia and the click that opened this route are
+    // not requests to skip the arrival. Keep an intentional keyboard escape.
+    listen(doc,'keydown',event=>{
+      if (['Tab','Escape','ArrowDown','ArrowUp','PageDown','PageUp','Home','End',' ','k','K'].includes(event.key)) finish('interaction');
+    });
     // History and framework restoration can focus a mouse-clicked nav link.
     // Only intentional keyboard focus should skip the arrival.
     listen(doc,'focusin',event=>{ if (event.target?.matches?.(':focus-visible')) finish('interaction'); });

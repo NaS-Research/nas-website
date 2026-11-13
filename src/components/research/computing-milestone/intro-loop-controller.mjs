@@ -39,6 +39,9 @@ export function createIntroLoopController({intro, hold, introSrc, loopSrc, revea
     inFlight.add(video);
     Promise.resolve().then(() => eligible() ? video.play() : undefined).then(() => {
       inFlight.delete(video);
+      // React can reuse these DOM nodes for a newer visit before this promise
+      // settles. An obsolete controller must never pause the new playback.
+      if (destroyed) return;
       if (!eligible()) { video.pause(); return; }
       present(video);
     }).catch(error => {

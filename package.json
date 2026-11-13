@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "audit:pharmacy": "node --experimental-loader ./scripts/esm-alias-loader.mjs ./scripts/audit-pharmacy-assessments.mjs",
+    "test:computing-intro": "node --test scripts/tests/computing-intro.test.mjs",
     "test:brca-release": "node scripts/test-nas-brca-002-release.mjs",
     "dev": "next dev",
     "build": "next build --webpack",

@@ -10,33 +10,46 @@ export default function ComputingHeroFilm({introSrc, loopSrc, poster, width = 38
   const [paused, setPaused] = useState(false), [blocked, setBlocked] = useState(false);
   const [failed, setFailed] = useState(false);
   useLayoutEffect(() => {
-    // Retained media and a completed reveal belong to the previous visit.
-    if (window.__nasComputingReveal?.status().finished) window.__nasComputingReveal.dispose();
-    const pageReveal = window.__nasComputingReveal || installComputingReveal(window,document);
-    setLayer('poster'); setPaused(false); setBlocked(false); setFailed(false);
-    for (const video of [intro.current, hold.current]) {
-      video.pause();
-      try { video.currentTime = 0; } catch { /* An unloaded video starts at zero. */ }
-    }
     const motion = matchMedia('(prefers-reduced-motion: reduce)');
-    let visible = false;
-    if (pageReveal && !pageReveal.status().finished) window.scrollTo(0,0);
-    const player = createIntroLoopController({intro: intro.current, hold: hold.current, introSrc, loopSrc,
-      reveal: setLayer, onArrivalProgress: value => pageReveal?.progress(value),
-      onBlocked: () => { setBlocked(true); pageReveal?.finish('autoplay-blocked'); },
-      onFailure: () => { setFailed(true); pageReveal?.finish('media-error'); }});
-    controller.current = player;
+    let visible = false, player = null, pageReveal = null;
     const update = () => {
       if (motion.matches) pageReveal?.finish('reduced-motion');
-      player.setEnvironment({visible, hidden: document.hidden, reduced: motion.matches});
+      player?.setEnvironment({visible, hidden: document.hidden, reduced: motion.matches});
     };
+    function startVisit() {
+      // Both React route re-entry and browser back/forward cache restores own a
+      // fresh arrival. Destroy the old player BEFORE reusing its media nodes.
+      player?.destroy();
+      pageReveal?.dispose();
+      if (window.__nasComputingReveal?.status().finished) window.__nasComputingReveal.dispose();
+      pageReveal = window.__nasComputingReveal || installComputingReveal(window,document);
+      setLayer('poster'); setPaused(false); setBlocked(false); setFailed(false);
+      for (const video of [intro.current, hold.current]) {
+        video.pause();
+        try { video.currentTime = 0; } catch { /* An unloaded video starts at zero. */ }
+      }
+      if (pageReveal && !pageReveal.status().finished) window.scrollTo(0,0);
+      const rect = root.current.getBoundingClientRect();
+      visible = rect.bottom > 0 && rect.top < window.innerHeight;
+      player = createIntroLoopController({intro: intro.current, hold: hold.current, introSrc, loopSrc,
+        reveal: setLayer, onArrivalProgress: value => pageReveal?.progress(value),
+        onBlocked: () => { setBlocked(true); pageReveal?.finish('autoplay-blocked'); },
+        onFailure: () => { setFailed(true); pageReveal?.finish('media-error'); }});
+      controller.current = player;
+      update();
+    }
+    const onPageShow = event => { if (event.persisted) startVisit(); };
+    const onPageHide = () => player?.setEnvironment({visible, hidden: true, reduced: motion.matches});
     const observer = new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; update(); }, {threshold: .05});
     observer.observe(root.current);
     motion.addEventListener('change', update); document.addEventListener('visibilitychange', update);
-    update();
+    window.addEventListener('pageshow', onPageShow); window.addEventListener('pagehide', onPageHide);
+    startVisit();
     return () => {
       observer.disconnect(); motion.removeEventListener('change', update);
-      document.removeEventListener('visibilitychange', update); player.destroy(); controller.current = null; pageReveal?.dispose();
+      document.removeEventListener('visibilitychange', update);
+      window.removeEventListener('pageshow', onPageShow); window.removeEventListener('pagehide', onPageHide);
+      player?.destroy(); controller.current = null; pageReveal?.dispose();
     };
   }, [introSrc, loopSrc]);
   function toggle() {
