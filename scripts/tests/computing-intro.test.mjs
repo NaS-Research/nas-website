@@ -1,0 +1,132 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {installComputingReveal, computingRevealBoot} from '../../src/lib/computingPageReveal.mjs';
+import {createIntroLoopController} from '../../src/components/research/computing-milestone/intro-loop-controller.mjs';
+
+const tick = () => new Promise(resolve => setImmediate(resolve));
+const environment = {visible: true, hidden: false, reduced: false};
+class Target {
+  listeners = new Map();
+  addEventListener(name, fn) { if (!this.listeners.has(name)) this.listeners.set(name, new Set()); this.listeners.get(name).add(fn); }
+  removeEventListener(name, fn) { this.listeners.get(name)?.delete(fn); }
+  emit(name, event = {}) { for (const fn of [...(this.listeners.get(name) || [])]) fn(event); }
+}
+function page({hidden = false, reduced = false, hash = '', pathname = '/research/building-the-next-stage-of-nas-computing'} = {}) {
+  const win = new Target(), doc = new Target(), rules = new Map(), timers = new Map(), scrolls = [];
+  let nextTimer = 0;
+  Object.assign(win, {scrollY: 0, innerHeight: 800, location: {pathname, hash}, matchMedia: () => ({matches: reduced}),
+    setTimeout(fn) { timers.set(++nextTimer, fn); return nextTimer; }, clearTimeout(id) { timers.delete(id); }, scrollTo(value) { scrolls.push(value); this.scrollY = value.top; }});
+  Object.assign(doc, {hidden, head: {appendChild() {}}, createElement() {
+    return {sheet: {cssRules: [{style: {setProperty: (key, value) => rules.set(key, value)}}]}, remove() {}};
+  }});
+  return {win, doc, rules, timers, scrolls};
+}
+function media() {
+  const video = new Target();
+  Object.assign(video, {paused: true, readyState: 4, duration: 4, currentTime: 0, src: 'intro.mp4', frames: new Map(), nextFrame: 0,
+    loadCount: 0, pauseCount: 0, getAttribute(name) { return this[name]; }, load() { this.loadCount++; },
+    pause() { this.paused = true; this.pauseCount++; }, play() { this.paused = false; return Promise.resolve(); },
+    requestVideoFrameCallback(fn) { this.frames.set(++this.nextFrame, fn); return this.nextFrame; },
+    cancelVideoFrameCallback(id) { this.frames.delete(id); },
+    frame() { const callbacks = [...this.frames.values()]; this.frames.clear(); callbacks.forEach(fn => fn()); }
+  });
+  return video;
+}
+function player(intro = media(), hold = media(), options = {}) {
+  const layers = [], progress = [];
+  const controller = createIntroLoopController({intro, hold, introSrc: 'intro.mp4', loopSrc: 'loop.mp4',
+    reveal: layer => layers.push(layer), onArrivalProgress: value => progress.push(value), ...options});
+  return {intro, hold, controller, layers, progress};
+}
+
+test('pointer, touch, wheel and restored pointer focus do not skip arrival', () => {
+  const {win, doc} = page(); const reveal = installComputingReveal(win, doc);
+  for (const name of ['pointerdown', 'touchstart', 'wheel']) doc.emit(name);
+  doc.emit('focusin', {target: {matches: () => false}});
+  doc.emit('keydown', {key: 'Control'});
+  assert.deepEqual(reveal.status(), {finished: false, amount: 0, reason: 'arrival-pending'});
+  reveal.progress(.7); assert.equal(reveal.status().finished, false);
+  reveal.progress(.2); assert.equal(reveal.status().amount, .7);
+  reveal.progress(1); assert.equal(reveal.status().reason, 'arrival-complete');
+  reveal.dispose();
+});
+test('intentional keyboard navigation and keyboard focus retain immediate access', () => {
+  for (const key of ['Tab', 'Escape', 'ArrowDown', 'PageDown', ' ', 'k']) {
+    const {win, doc} = page(); const reveal = installComputingReveal(win, doc);
+    doc.emit('keydown', {key}); assert.equal(reveal.status().finished, true, key); reveal.dispose();
+  }
+  const {win, doc} = page(); const reveal = installComputingReveal(win, doc);
+  doc.emit('focusin', {target: {matches: () => true}}); assert.equal(reveal.status().finished, true); reveal.dispose();
+});
+test('each completed and disposed visit gets independent zero progress', () => {
+  const {win, doc} = page();
+  for (let visit = 0; visit < 5; visit++) {
+    const reveal = installComputingReveal(win, doc); assert.equal(reveal.status().amount, 0);
+    reveal.progress(1); reveal.dispose(); assert.equal(win.__nasComputingReveal, undefined);
+  }
+});
+test('reduced motion, deep links and unrelated pages remain immediately readable', () => {
+  for (const options of [{reduced: true}, {hash: '#sources'}, {pathname: '/research'}]) {
+    const {win, doc} = page(options); assert.equal(installComputingReveal(win, doc), null);
+  }
+});
+test('safety waits for visible time and still fails open on stalled media', () => {
+  const {win, doc, timers} = page({hidden: true}); const reveal = installComputingReveal(win, doc);
+  assert.equal(timers.size, 0); doc.hidden = false; doc.emit('visibilitychange'); assert.equal(timers.size, 1);
+  [...timers.values()][0](); assert.equal(reveal.status().reason, 'load-safety'); reveal.dispose();
+});
+test('boot is self-contained and stylesheet only overrides intentional keyboard focus', () => {
+  new Function('window', 'document', computingRevealBoot);
+  const css = readFileSync(new URL('../../src/components/research/computing-milestone/computing-page-reveal.css', import.meta.url), 'utf8');
+  assert.doesNotMatch(css, /:focus-within/); assert.match(css, /:has\(:focus-visible\)/);
+});
+test('intro uses decoded progress, retains its frame until loop presents, and pauses offscreen', async () => {
+  const p = player(); p.controller.setEnvironment(environment); await tick();
+  assert.equal(p.intro.loadCount, 0); assert.equal(p.hold.loadCount, 0);
+  p.intro.emit('playing'); p.intro.frame(); assert.equal(p.layers.at(-1), 'intro'); assert.equal(p.hold.loadCount, 1);
+  p.intro.currentTime = 2; p.intro.emit('timeupdate'); assert.equal(p.progress.at(-1), .5);
+  p.intro.emit('ended'); assert.equal(p.progress.at(-1), 1); assert.equal(p.layers.at(-1), 'intro');
+  await tick(); p.hold.frame(); assert.equal(p.layers.at(-1), 'loop');
+  p.controller.setEnvironment({...environment, hidden: true}); assert.equal(p.hold.paused, true);
+  p.controller.setEnvironment(environment); await tick(); assert.equal(p.hold.paused, false); p.controller.destroy();
+});
+test('destroyed pre-play microtask cannot pause media reused by the next visit', async () => {
+  const intro = media(), hold = media();
+  const old = player(intro, hold); old.controller.setEnvironment(environment); old.controller.destroy();
+  const fresh = player(intro, hold); fresh.controller.setEnvironment(environment);
+  await tick(); assert.equal(intro.paused, false); intro.frame(); assert.equal(fresh.layers.at(-1), 'intro'); fresh.controller.destroy();
+});
+test('late play resolution from an old visit cannot pause a new arrival', async () => {
+  const intro = media(), hold = media(); let settle;
+  intro.play = function() { this.paused = false; return new Promise(resolve => { settle = resolve; }); };
+  const old = player(intro, hold); old.controller.setEnvironment(environment); await tick(); old.controller.destroy();
+  const oldSettle = settle; intro.play = function() { this.paused = false; return Promise.resolve(); };
+  const fresh = player(intro, hold); fresh.controller.setEnvironment(environment); await tick();
+  oldSettle(); await tick(); assert.equal(intro.paused, false); fresh.controller.destroy();
+});
+test('autoplay rejection and media failures report safe fallbacks', async () => {
+  let blocked = 0, failed = 0; const intro = media(); intro.play = () => Promise.reject(new Error('NotAllowedError'));
+  const p = player(intro, media(), {onBlocked: () => blocked++, onFailure: () => failed++});
+  p.controller.setEnvironment(environment); await tick(); assert.equal(blocked, 1);
+  p.intro.emit('error'); assert.equal(failed, 1); assert.equal(p.layers.at(-1), 'poster'); p.controller.destroy();
+});
+
+
+test('opening centers the hidden natural-layout film, then scrolls to top with a slow fade', () => {
+  const {win, doc, rules, scrolls} = page(); const reveal = installComputingReveal(win, doc);
+  const visual = {getBoundingClientRect: () => ({top: 720 - win.scrollY, height: 800})};
+  reveal.prepare(visual);
+  assert.deepEqual(scrolls.at(-1), {top: 720, left: 0, behavior: 'instant'});
+  reveal.prepare(visual); // Re-centering after a framework layout commit is idempotent.
+  assert.equal(scrolls.at(-1).top, 720);
+  reveal.progress(.99);
+  assert.equal(scrolls.length, 2); assert.equal(reveal.status().finished, false);
+  reveal.progress(1);
+  assert.deepEqual(scrolls.at(-1), {top: 0, left: 0, behavior: 'smooth'});
+  assert.match(rules.get('--nas-computing-page-transition'), /^2200ms/);
+  assert.equal(rules.get('--nas-computing-page-opacity'), '1');
+  assert.match(rules.get('--nas-computing-stage-transition'), /^1600ms/);
+  reveal.prepare(visual); assert.equal(scrolls.length, 3); // Never re-center a finished visit.
+  reveal.dispose();
+});

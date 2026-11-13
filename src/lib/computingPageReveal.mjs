@@ -9,7 +9,7 @@ export function installComputingReveal(win, doc) {
     if (win.matchMedia('(prefers-reduced-motion: reduce)').matches) return null;
     style = doc.createElement('style');
     style.id = 'nas-computing-reveal-state';
-    style.textContent = ':root{--nas-computing-heading-rows:0fr;--nas-computing-stage-space:100svh;--nas-computing-stage-transition:1400ms cubic-bezier(.22,.61,.36,1);--nas-computing-heading-safety:nas-computing-heading-safety 0s 15s forwards;--nas-computing-stage-safety:nas-computing-stage-safety 0s 15s forwards;--nas-computing-page-opacity:0;--nas-computing-page-transition:0s;--nas-computing-page-safety:nas-computing-reveal-safety 0s 15s forwards}body{background:#000}.nas-navbar,.personal-tools,.nas-skip-link{opacity:var(--nas-computing-page-opacity,1);transition:opacity var(--nas-computing-page-transition,900ms cubic-bezier(.22,.61,.36,1));animation:var(--nas-computing-page-safety,none)}:root:has(:focus-visible){--nas-computing-page-opacity:1!important;--nas-computing-page-transition:0s!important;--nas-computing-heading-rows:1fr!important;--nas-computing-stage-space:0px!important;--nas-computing-stage-transition:0s!important}@keyframes nas-computing-reveal-safety{to{opacity:1}}';
+    style.textContent = ':root{--nas-computing-heading-rows:1fr;--nas-computing-stage-space:100svh;--nas-computing-stage-transition:0s;--nas-computing-heading-safety:nas-computing-heading-safety 0s 15s forwards;--nas-computing-stage-safety:nas-computing-stage-safety 0s 15s forwards;--nas-computing-page-opacity:0;--nas-computing-page-transition:0s;--nas-computing-page-safety:nas-computing-reveal-safety 0s 15s forwards}body{background:#000}.nas-navbar,.personal-tools,.nas-skip-link{opacity:var(--nas-computing-page-opacity,1);transition:opacity var(--nas-computing-page-transition,900ms cubic-bezier(.22,.61,.36,1));animation:var(--nas-computing-page-safety,none)}:root:has(:focus-visible){--nas-computing-page-opacity:1!important;--nas-computing-page-transition:0s!important;--nas-computing-heading-rows:1fr!important;--nas-computing-stage-space:0px!important;--nas-computing-stage-transition:0s!important}@keyframes nas-computing-reveal-safety{to{opacity:1}}';
     doc.head.appendChild(style);
     const rule = style.sheet?.cssRules[0]?.style;
     if (!rule) { style.remove(); return null; }
@@ -18,7 +18,10 @@ export function installComputingReveal(win, doc) {
     function finish(why = 'access', immediate = true) {
       if (finished) return;
       finished = true; amount = 1; reason = why;
-      if (!immediate) rule.setProperty('--nas-computing-page-transition', '900ms cubic-bezier(.22,.61,.36,1)');
+      if (!immediate) {
+        rule.setProperty('--nas-computing-page-transition', '2200ms ease-in-out');
+        rule.setProperty('--nas-computing-stage-transition', '1600ms cubic-bezier(.22,.61,.36,1)');
+      }
       if (immediate) {
         rule.setProperty('--nas-computing-page-transition', '0s');
         rule.setProperty('--nas-computing-stage-transition', '0s');
@@ -34,6 +37,15 @@ export function installComputingReveal(win, doc) {
       win.clearTimeout(timer); removeListeners();
     }
     const api = {
+      prepare(visual) {
+        if (finished || !visual) return;
+        // Keep the real heading in document flow, hidden above the viewport.
+        // Center the film first, so completion can genuinely scroll UP to the
+        // article's top instead of expanding a collapsed heading underneath it.
+        const rect = visual.getBoundingClientRect();
+        const top = Math.max(0, win.scrollY + rect.top + (rect.height - win.innerHeight) / 2);
+        win.scrollTo({top, left: 0, behavior: 'instant'});
+      },
       progress(value) {
         if (finished || !Number.isFinite(value)) return;
         // Monotonic media-time progress; loops and resumed playback never reset it.
@@ -48,7 +60,11 @@ export function installComputingReveal(win, doc) {
       dispose() { finish('navigation'); style.remove(); if (win.__nasComputingReveal === api) delete win.__nasComputingReveal; }
     };
     win.__nasComputingReveal = api;
-    for (const event of ['keydown','pointerdown','touchstart','wheel']) listen(doc,event,()=>finish('interaction'));
+    // Pointer focus, trackpad inertia and the click that opened this route are
+    // not requests to skip the arrival. Keep an intentional keyboard escape.
+    listen(doc,'keydown',event=>{
+      if (['Tab','Escape','ArrowDown','ArrowUp','PageDown','PageUp','Home','End',' ','k','K'].includes(event.key)) finish('interaction');
+    });
     // History and framework restoration can focus a mouse-clicked nav link.
     // Only intentional keyboard focus should skip the arrival.
     listen(doc,'focusin',event=>{ if (event.target?.matches?.(':focus-visible')) finish('interaction'); });

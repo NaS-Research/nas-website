@@ -10,33 +10,67 @@ export default function ComputingHeroFilm({introSrc, loopSrc, poster, width = 38
   const [paused, setPaused] = useState(false), [blocked, setBlocked] = useState(false);
   const [failed, setFailed] = useState(false);
   useLayoutEffect(() => {
-    // Retained media and a completed reveal belong to the previous visit.
-    if (window.__nasComputingReveal?.status().finished) window.__nasComputingReveal.dispose();
-    const pageReveal = window.__nasComputingReveal || installComputingReveal(window,document);
-    setLayer('poster'); setPaused(false); setBlocked(false); setFailed(false);
-    for (const video of [intro.current, hold.current]) {
-      video.pause();
-      try { video.currentTime = 0; } catch { /* An unloaded video starts at zero. */ }
-    }
     const motion = matchMedia('(prefers-reduced-motion: reduce)');
-    let visible = false;
-    if (pageReveal && !pageReveal.status().finished) window.scrollTo(0,0);
-    const player = createIntroLoopController({intro: intro.current, hold: hold.current, introSrc, loopSrc,
-      reveal: setLayer, onArrivalProgress: value => pageReveal?.progress(value),
-      onBlocked: () => { setBlocked(true); pageReveal?.finish('autoplay-blocked'); },
-      onFailure: () => { setFailed(true); pageReveal?.finish('media-error'); }});
-    controller.current = player;
+    let visible = false, visitReady = false, prepareFrame = null, player = null, pageReveal = null;
     const update = () => {
       if (motion.matches) pageReveal?.finish('reduced-motion');
-      player.setEnvironment({visible, hidden: document.hidden, reduced: motion.matches});
+      player?.setEnvironment({visible: visible && visitReady, hidden: document.hidden, reduced: motion.matches});
     };
-    const observer = new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; update(); }, {threshold: .05});
+    function startVisit() {
+      // Both React route re-entry and browser back/forward cache restores own a
+      // fresh arrival. Destroy the old player BEFORE reusing its media nodes.
+      player?.destroy();
+      if (prepareFrame !== null) window.cancelAnimationFrame(prepareFrame);
+      visitReady = false;
+      pageReveal?.dispose();
+      if (window.__nasComputingReveal?.status().finished) window.__nasComputingReveal.dispose();
+      pageReveal = window.__nasComputingReveal || installComputingReveal(window,document);
+      setLayer('poster'); setPaused(false); setBlocked(false); setFailed(false);
+      for (const video of [intro.current, hold.current]) {
+        video.pause();
+        try { video.currentTime = 0; } catch { /* An unloaded video starts at zero. */ }
+      }
+      const visual = root.current.closest('[data-computing-visual]');
+      pageReveal?.prepare(visual);
+      const rect = root.current.getBoundingClientRect();
+      visible = rect.bottom > 0 && rect.top < window.innerHeight;
+      player = createIntroLoopController({intro: intro.current, hold: hold.current, introSrc, loopSrc,
+        reveal: setLayer, onArrivalProgress: value => pageReveal?.progress(value),
+        onBlocked: () => { setBlocked(true); pageReveal?.finish('autoplay-blocked'); },
+        onFailure: () => { setFailed(true); pageReveal?.finish('media-error'); }});
+      controller.current = player;
+      // Next's own navigation scroll restoration runs during the same commit.
+      // Re-center before the first playback frame, after that restoration.
+      prepareFrame = window.requestAnimationFrame(() => {
+        prepareFrame = null;
+        pageReveal?.prepare(visual);
+        const rect = root.current.getBoundingClientRect();
+        visible = rect.bottom > 0 && rect.top < window.innerHeight;
+        visitReady = true;
+        update();
+      });
+      update();
+    }
+    const onPageShow = event => { if (event.persisted) startVisit(); };
+    const onPageHide = () => player?.setEnvironment({visible, hidden: true, reduced: motion.matches});
+    const observer = new IntersectionObserver(() => {
+      // Ignore incidental wheel events, but never strand a reader below an
+      // offscreen, paused arrival with invisible article text in either direction.
+      const rect = root.current.getBoundingClientRect();
+      visible = rect.bottom > 0 && rect.top < window.innerHeight;
+      if (visitReady && !visible && !document.hidden) pageReveal?.finish('scroll-away');
+      update();
+    }, {threshold: .05});
     observer.observe(root.current);
     motion.addEventListener('change', update); document.addEventListener('visibilitychange', update);
-    update();
+    window.addEventListener('pageshow', onPageShow); window.addEventListener('pagehide', onPageHide);
+    startVisit();
     return () => {
       observer.disconnect(); motion.removeEventListener('change', update);
-      document.removeEventListener('visibilitychange', update); player.destroy(); controller.current = null; pageReveal?.dispose();
+      document.removeEventListener('visibilitychange', update);
+      window.removeEventListener('pageshow', onPageShow); window.removeEventListener('pagehide', onPageHide);
+      if (prepareFrame !== null) window.cancelAnimationFrame(prepareFrame);
+      player?.destroy(); controller.current = null; pageReveal?.dispose();
     };
   }, [introSrc, loopSrc]);
   function toggle() {
