@@ -10,7 +10,14 @@ export default function ComputingHeroFilm({introSrc, loopSrc, poster, width = 38
   const [paused, setPaused] = useState(false), [blocked, setBlocked] = useState(false);
   const [failed, setFailed] = useState(false);
   useLayoutEffect(() => {
+    // Retained media and a completed reveal belong to the previous visit.
+    if (window.__nasComputingReveal?.status().finished) window.__nasComputingReveal.dispose();
     const pageReveal = window.__nasComputingReveal || installComputingReveal(window,document);
+    setLayer('poster'); setPaused(false); setBlocked(false); setFailed(false);
+    for (const video of [intro.current, hold.current]) {
+      video.pause();
+      try { video.currentTime = 0; } catch { /* An unloaded video starts at zero. */ }
+    }
     const motion = matchMedia('(prefers-reduced-motion: reduce)');
     let visible = false;
     if (pageReveal && !pageReveal.status().finished) window.scrollTo(0,0);
@@ -20,7 +27,7 @@ export default function ComputingHeroFilm({introSrc, loopSrc, poster, width = 38
       onFailure: () => { setFailed(true); pageReveal?.finish('media-error'); }});
     controller.current = player;
     const update = () => {
-      if (motion.matches || document.hidden) pageReveal?.finish(motion.matches ? 'reduced-motion' : 'background');
+      if (motion.matches) pageReveal?.finish('reduced-motion');
       player.setEnvironment({visible, hidden: document.hidden, reduced: motion.matches});
     };
     const observer = new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; update(); }, {threshold: .05});

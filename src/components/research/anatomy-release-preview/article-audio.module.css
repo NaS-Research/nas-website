@@ -141,6 +141,7 @@
 }
 
 .dock {
+  animation: dockEnter 460ms cubic-bezier(.22, 1, .36, 1) both;
   position: fixed;
   z-index: 35;
   inset: auto 0 calc(1rem + env(safe-area-inset-bottom));
@@ -264,4 +265,12 @@
     flex-basis: 100%;
     margin-left: 0;
   }
+}
+
+@keyframes dockEnter {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dock { animation: none; }
 }
