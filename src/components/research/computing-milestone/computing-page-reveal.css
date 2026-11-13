@@ -8,8 +8,8 @@ html:has([data-computing-page]) :is(.nas-navbar,.personal-tools,.site-closing,.n
  /* Independent CSS safety if JavaScript dies after arming the effect. */
  animation:var(--nas-computing-page-safety,none);
 }
-html:has([data-computing-page]):has(:focus-visible){--nas-computing-page-opacity:1!important;--nas-computing-page-transition:0s!important;--nas-computing-heading-rows:1fr!important;--nas-computing-stage-space:0px!important;--nas-computing-stage-transition:0s!important}
 @keyframes nas-computing-reveal-safety{to{opacity:1}}
+@keyframes nas-computing-reveal-safety-active{to{opacity:1}}
 @media(prefers-reduced-motion:reduce){
  html:has([data-computing-page]){--nas-computing-page-opacity:1!important;--nas-computing-page-transition:0s!important;--nas-computing-heading-rows:1fr!important;--nas-computing-stage-space:0px!important;--nas-computing-stage-transition:0s!important}
  html:has([data-computing-page]) :is(.nas-navbar,.personal-tools,.site-closing,.nas-skip-link),[data-computing-page]>:not([data-computing-visual]):not(script),[data-computing-visual] :is(figcaption,button){animation:none;opacity:1;transition:none}
@@ -21,5 +21,7 @@ html:has([data-computing-page]):has(:focus-visible){--nas-computing-page-opacity
 [data-computing-heading-clip]{min-height:0;overflow:clip}
 [data-computing-visual]{min-height:var(--nas-computing-stage-space,0px);display:flex;align-items:center;justify-content:center;transition:min-height var(--nas-computing-stage-transition,0s);animation:var(--nas-computing-stage-safety,none)}
 @keyframes nas-computing-heading-safety{to{grid-template-rows:1fr}}
+@keyframes nas-computing-heading-safety-active{to{grid-template-rows:1fr}}
 @keyframes nas-computing-stage-safety{to{min-height:0}}
+@keyframes nas-computing-stage-safety-active{to{min-height:0}}
 @media(prefers-reduced-motion:reduce){[data-computing-heading-stage]{grid-template-rows:1fr;transition:none;animation:none}[data-computing-visual]{min-height:0;transition:none;animation:none}}

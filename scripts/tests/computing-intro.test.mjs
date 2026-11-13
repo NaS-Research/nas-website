@@ -51,13 +51,11 @@ test('pointer, touch, wheel and restored pointer focus do not skip arrival', () 
   reveal.progress(1); assert.equal(reveal.status().reason, 'arrival-complete');
   reveal.dispose();
 });
-test('intentional keyboard navigation and keyboard focus retain immediate access', () => {
+test('intentional keyboard navigation retains immediate access', () => {
   for (const key of ['Tab', 'Escape', 'ArrowDown', 'PageDown', ' ', 'k']) {
     const {win, doc} = page(); const reveal = installComputingReveal(win, doc);
     doc.emit('keydown', {key}); assert.equal(reveal.status().finished, true, key); reveal.dispose();
   }
-  const {win, doc} = page(); const reveal = installComputingReveal(win, doc);
-  doc.emit('focusin', {target: {matches: () => true}}); assert.equal(reveal.status().finished, true); reveal.dispose();
 });
 test('each completed and disposed visit gets independent zero progress', () => {
   const {win, doc} = page();
@@ -76,10 +74,14 @@ test('safety waits for visible time and still fails open on stalled media', () =
   assert.equal(timers.size, 0); doc.hidden = false; doc.emit('visibilitychange'); assert.equal(timers.size, 1);
   [...timers.values()][0](); assert.equal(reveal.status().reason, 'load-safety'); reveal.dispose();
 });
-test('boot is self-contained and stylesheet only overrides intentional keyboard focus', () => {
-  new Function('window', 'document', computingRevealBoot);
+test('boot is self-contained and CSS focus heuristics cannot override the sequence', () => {
+  assert.doesNotMatch(computingRevealBoot, /:has\(:focus-visible\)/);
+  const {win, doc} = page();
+  new Function('window', 'document', computingRevealBoot)(win, doc);
+  assert.equal(win.__nasComputingReveal.status().finished, false);
+  win.__nasComputingReveal.dispose();
   const css = readFileSync(new URL('../../src/components/research/computing-milestone/computing-page-reveal.css', import.meta.url), 'utf8');
-  assert.doesNotMatch(css, /:focus-within/); assert.match(css, /:has\(:focus-visible\)/);
+  assert.doesNotMatch(css, /:focus-within|:has\(:focus-visible\)/);
 });
 test('intro uses decoded progress, retains its frame until loop presents, and pauses offscreen', async () => {
   const p = player(); p.controller.setEnvironment(environment); await tick();
@@ -128,5 +130,34 @@ test('opening centers the hidden natural-layout film, then scrolls to top with a
   assert.equal(rules.get('--nas-computing-page-opacity'), '1');
   assert.match(rules.get('--nas-computing-stage-transition'), /^1600ms/);
   reveal.prepare(visual); assert.equal(scrolls.length, 3); // Never re-center a finished visit.
+  reveal.dispose();
+});
+
+
+test('programmatic focus and unrelated script failures do not cancel a playing arrival', () => {
+  const {win, doc, scrolls} = page(); const reveal = installComputingReveal(win, doc);
+  reveal.prepare({getBoundingClientRect: () => ({top: 720, height: 800})});
+  reveal.progress(.2);
+  doc.emit('focusin', {target: {matches: () => true}});
+  win.emit('error', {message: 'Unrelated widget error'});
+  win.emit('error', {target: {tagName: 'SCRIPT'}});
+  win.emit('unhandledrejection', {reason: new Error('Unrelated fetch')});
+  assert.equal(reveal.status().finished, false);
+  reveal.progress(1);
+  assert.equal(reveal.status().reason, 'arrival-complete');
+  assert.deepEqual(scrolls.at(-1), {top: 0, left: 0, behavior: 'smooth'});
+  reveal.dispose();
+});
+
+test('advancing decoded media resets the stalled-loading watchdog', () => {
+  const {win, doc, timers, rules} = page(); const reveal = installComputingReveal(win, doc);
+  const initial = [...timers.keys()][0];
+  const initialCss = rules.get('--nas-computing-page-safety');
+  reveal.progress(.1);
+  assert.equal(timers.has(initial), false);
+  assert.notEqual(rules.get('--nas-computing-page-safety'), initialCss);
+  const advancing = [...timers.keys()][0];
+  reveal.progress(.2); assert.equal(timers.has(advancing), false);
+  [...timers.values()][0](); assert.equal(reveal.status().reason, 'load-safety');
   reveal.dispose();
 });

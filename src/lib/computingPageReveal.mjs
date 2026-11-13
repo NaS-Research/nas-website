@@ -3,13 +3,13 @@ export function installComputingReveal(win, doc) {
   const routes = ['/preview/building-the-next-stage-of-nas-computing','/research/building-the-next-stage-of-nas-computing'];
   if (!routes.includes(win.location.pathname.replace(/\/$/, '')) || win.location.hash) return null;
   if (win.__nasComputingReveal) return win.__nasComputingReveal;
-  let style, timer, finished = false, amount = 0, reason = 'arrival-pending';
+  let style, timer, safetyCycle = false, finished = false, amount = 0, reason = 'arrival-pending';
   const listeners = [];
   try {
     if (win.matchMedia('(prefers-reduced-motion: reduce)').matches) return null;
     style = doc.createElement('style');
     style.id = 'nas-computing-reveal-state';
-    style.textContent = ':root{--nas-computing-heading-rows:1fr;--nas-computing-stage-space:100svh;--nas-computing-stage-transition:0s;--nas-computing-heading-safety:nas-computing-heading-safety 0s 15s forwards;--nas-computing-stage-safety:nas-computing-stage-safety 0s 15s forwards;--nas-computing-page-opacity:0;--nas-computing-page-transition:0s;--nas-computing-page-safety:nas-computing-reveal-safety 0s 15s forwards}body{background:#000}.nas-navbar,.personal-tools,.nas-skip-link{opacity:var(--nas-computing-page-opacity,1);transition:opacity var(--nas-computing-page-transition,900ms cubic-bezier(.22,.61,.36,1));animation:var(--nas-computing-page-safety,none)}:root:has(:focus-visible){--nas-computing-page-opacity:1!important;--nas-computing-page-transition:0s!important;--nas-computing-heading-rows:1fr!important;--nas-computing-stage-space:0px!important;--nas-computing-stage-transition:0s!important}@keyframes nas-computing-reveal-safety{to{opacity:1}}';
+    style.textContent = ':root{--nas-computing-heading-rows:1fr;--nas-computing-stage-space:100svh;--nas-computing-stage-transition:0s;--nas-computing-heading-safety:nas-computing-heading-safety 0s 15s forwards;--nas-computing-stage-safety:nas-computing-stage-safety 0s 15s forwards;--nas-computing-page-opacity:0;--nas-computing-page-transition:0s;--nas-computing-page-safety:nas-computing-reveal-safety 0s 15s forwards}body{background:#000}.nas-navbar,.personal-tools,.nas-skip-link{opacity:var(--nas-computing-page-opacity,1);transition:opacity var(--nas-computing-page-transition,900ms cubic-bezier(.22,.61,.36,1));animation:var(--nas-computing-page-safety,none)}@keyframes nas-computing-reveal-safety{to{opacity:1}}@keyframes nas-computing-reveal-safety-active{to{opacity:1}}';
     doc.head.appendChild(style);
     const rule = style.sheet?.cssRules[0]?.style;
     if (!rule) { style.remove(); return null; }
@@ -50,6 +50,9 @@ export function installComputingReveal(win, doc) {
         if (finished || !Number.isFinite(value)) return;
         // Monotonic media-time progress; loops and resumed playback never reset it.
         const t = Math.max(amount, Math.min(1, Math.max(0, value)));
+        // The safety limit measures a stalled loader/player, not total time
+        // since navigation. A slow download must not consume the arrival's time.
+        if (t > amount || reason === 'arrival-pending') armSafety();
         amount = t; reason = 'arrival-playing';
         // Decoded media time determines completion. Never reveal on a wall-clock
         // estimate or while the Mac is still arriving.
@@ -65,21 +68,26 @@ export function installComputingReveal(win, doc) {
     listen(doc,'keydown',event=>{
       if (['Tab','Escape','ArrowDown','ArrowUp','PageDown','PageUp','Home','End',' ','k','K'].includes(event.key)) finish('interaction');
     });
-    // History and framework restoration can focus a mouse-clicked nav link.
-    // Only intentional keyboard focus should skip the arrival.
-    listen(doc,'focusin',event=>{ if (event.target?.matches?.(':focus-visible')) finish('interaction'); });
+    // Focus-visible is a browser heuristic, not proof of user intent. Safari
+    // can indicate programmatic/restored focus too. Keyboard access is handled
+    // by the actual keydown above; a focus event must not cancel this sequence.
     // A background visit waits for visibility; keep the same visible-time safety limit.
     function armSafety() {
       win.clearTimeout(timer);
       if (finished) return;
-      rule.setProperty('--nas-computing-heading-safety', doc.hidden ? 'none' : 'nas-computing-heading-safety 0s 15s forwards');
-      rule.setProperty('--nas-computing-stage-safety', doc.hidden ? 'none' : 'nas-computing-stage-safety 0s 15s forwards');
-      rule.setProperty('--nas-computing-page-safety', doc.hidden ? 'none' : 'nas-computing-reveal-safety 0s 15s forwards');
+      // Alternating equivalent names restarts the independent CSS watchdog as
+      // well as JS, retaining fail-open protection if JS subsequently stops.
+      safetyCycle = !safetyCycle;
+      const suffix = safetyCycle ? '-active' : '';
+      rule.setProperty('--nas-computing-heading-safety', doc.hidden ? 'none' : `nas-computing-heading-safety${suffix} 0s 15s forwards`);
+      rule.setProperty('--nas-computing-stage-safety', doc.hidden ? 'none' : `nas-computing-stage-safety${suffix} 0s 15s forwards`);
+      rule.setProperty('--nas-computing-page-safety', doc.hidden ? 'none' : `nas-computing-reveal-safety${suffix} 0s 15s forwards`);
       if (!doc.hidden) timer = win.setTimeout(()=>finish('load-safety'),15000);
     }
     listen(doc,'visibilitychange',armSafety);
-    listen(win,'error',event=>{ if (event.message || event.target?.tagName === 'SCRIPT') finish('script-failure'); });
-    listen(win,'unhandledrejection',()=>finish('script-failure'));
+    // Unrelated widgets/extensions can fail while this media remains healthy.
+    // Media errors have their own scoped fallback; the watchdog covers an
+    // actual startup failure without treating every global error as a skip.
     listen(win,'pagehide',()=>finish('navigation'));
     armSafety();
     return api;
