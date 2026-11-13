@@ -1,3 +1,5 @@
+import { learningVideoMetadataSnapshot } from "./learningVideoMetadataSnapshot.mjs";
+
 const subjects = new Map([
   ["anatomy", "Anatomy"], ["human anatomy", "Anatomy"],
   ["physiology", "Physiology"], ["pharmacology", "Pharmacology"],
@@ -40,10 +42,11 @@ export function videoSummary(description = "") {
 // A presentation contract shared by the carousel, library, and subject filter.
 // Generic fallbacks make no claims about unavailable video content.
 export function completeVideoMetadata(video) {
-  const description = videoSummary(video.description || "");
+  const backup = learningVideoMetadataSnapshot[video.id];
+  const description = videoSummary(video.description || backup?.description || "");
   return {
     ...video,
-    subject: video.subject?.trim() || videoSubject("", video.title),
+    subject: video.subject?.trim() || backup?.subject || videoSubject("", video.title),
     description: description || videoSummary(`Watch this NaS Research film: ${video.title || "explore the life sciences"}.`),
   };
 }
