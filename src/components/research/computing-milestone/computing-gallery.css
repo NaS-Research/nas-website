@@ -1,0 +1,39 @@
+.publication-body .cg-gallery,.cg-gallery{margin:clamp(32px,5vw,60px) 0 48px;width:100%;position:relative;container-type:inline-size;outline:none}
+.cg-frame{position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:clamp(12px,2vw,24px);background:#eee8df;isolation:isolate}
+.cg-slide{position:absolute;inset:0;opacity:0;visibility:hidden;pointer-events:none;transition:opacity 700ms cubic-bezier(.22,.61,.36,1),visibility 700ms}
+.cg-slide[data-active=true]{opacity:1;visibility:visible;pointer-events:auto;z-index:1}
+.cg-photo{display:block;width:100%;height:100%;object-fit:cover}
+.cg-screen{position:absolute;left:12.74%;top:7.23%;width:63.87%;height:61.53%;overflow:hidden;color:#dedad2;background:#000;font-family:Arial,sans-serif}
+.cg-screen video{position:absolute;inset:12% 10% 14%;width:80%;height:74%;object-fit:contain;background:#000}
+.cg-screen-heading{position:absolute;top:5%;left:4%;right:4%;display:flex;justify-content:space-between;font-size:1cqw;letter-spacing:.13em;color:#c4aa80;z-index:1}
+.cg-screen-heading span{font-size:.72cqw;color:#7a7770;letter-spacing:.1em}
+.cg-screen-footer{position:absolute;left:4%;right:4%;bottom:6%;font-size:1.1cqw;line-height:1.7;color:#d8d4cd}
+.cg-screen-footer span{display:block;color:#77756e;font-size:.72cqw;letter-spacing:.03em}
+.cg-dots{display:flex;justify-content:center;align-items:center;gap:0;padding:12px 0 3px;visibility:hidden}
+.cg-gallery[data-cg-enhanced=true] .cg-dots{visibility:visible}
+.cg-dots button{appearance:none;display:grid;place-items:center;width:22px;height:30px;border:0;background:transparent;padding:0;cursor:pointer;border-radius:50%}
+.cg-dots button span{display:block;width:8px;height:8px;border-radius:50%;background:#555;transition:background-color 350ms}
+.cg-dots button[aria-pressed=true] span{background:#aaa}
+.cg-dots button:hover span{background:#ddd}
+.cg-dots button:focus-visible{outline:1px solid #d4b17b;outline-offset:-3px}
+.cg-gallery:focus-visible .cg-frame{outline:1px solid #b59462;outline-offset:4px}
+.publication-body .cg-caption,.cg-caption{text-align:center;font-size:14px!important;line-height:1.6!important;color:#99958c!important;max-width:620px;margin:4px auto 0!important;padding:0 10px;min-height:3.2em}
+.cg-credit{display:block;width:fit-content;font:11px/1.5 Arial,sans-serif;color:#8f897c!important;margin:4px auto 0;text-decoration:none!important}
+.cg-credit[hidden]{display:none}.cg-credit:hover{color:#e0d6c4!important}
+.cg-sr{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.cg-research{display:grid;grid-template-columns:40% 60%;background:#f1eee7;font-family:Arial,sans-serif;color:#242522}
+.cg-method{padding:10% 6% 8% 12%;display:flex;flex-direction:column;justify-content:center}
+.cg-study{font-size:1.1cqw;color:#81705a;letter-spacing:.16em;margin-bottom:4cqw}
+.cg-research-title{font-size:4.8cqw;line-height:1.06;letter-spacing:-.055em;font-weight:500}
+.cg-stages{list-style:none!important;margin:3.2cqw 0 0!important;padding:0!important;display:grid;gap:1.4cqw}
+.cg-stages li{display:flex;align-items:center;gap:1cqw;margin:0!important;font-size:1.15cqw;color:#817e76;letter-spacing:-.01em;animation:cg-stage 3600ms ease-in-out infinite;animation-delay:calc(var(--step)*700ms);animation-play-state:paused}
+.cg-stage-dot{display:block;flex:none;width:.6cqw;height:.6cqw;border-radius:50%;background:#b8ad99;box-shadow:0 0 0 .35cqw #e2dcd0}
+.cg-method-note{font-size:.9cqw;margin-top:3.7cqw;color:#918978;letter-spacing:.02em}
+.cg-evidence{padding:9% 5% 7% 0;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.cg-evidence img{display:block;width:100%;height:auto;background:#fff;border-radius:8px;box-shadow:0 8px 40px #3b2a0c0d}
+.cg-evidence-note{margin-top:3cqw;text-align:center;font-size:1.35cqw;font-weight:500;line-height:1.6;color:#504d46}
+.cg-evidence-note span{font-weight:400;font-size:1cqw;color:#8a8172}
+.cg-gallery[data-cg-motion=true] .cg-slide[data-active=true] .cg-stages li{animation-play-state:running}
+@keyframes cg-stage{0%,10%,100%{color:#817e76;transform:translateX(0)}20%,38%{color:#8b6029;transform:translateX(.35cqw)}65%{color:#817e76;transform:translateX(0)}}
+@media(max-width:600px){.publication-body .cg-gallery,.cg-gallery{margin-top:30px;margin-bottom:36px}.cg-caption{font-size:12px!important}.cg-dots{padding-top:8px}}
+@media(prefers-reduced-motion:reduce){.cg-slide,.cg-dots button span{transition:none}.cg-stages li{animation:none}}

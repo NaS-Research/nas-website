@@ -1,3 +1,4 @@
+import ComputingMilestoneArticle from '@/components/research/computing-milestone/ComputingMilestoneArticle';
 import AnatomyStudioReleasePreview from '@/components/research/anatomy-release-preview/AnatomyStudioReleasePreview';
 import ArticleToolbar, {ArticleByline} from "@/components/research/ArticleToolbar";
 import {getArticleCitation} from "@/lib/articleTools.mjs";
@@ -109,6 +110,7 @@ export default async function ResearchPublicationPage({ params }) {
   const { slug } = await params;
   const item = getResearchItem(slug);
   if (!item) notFound();
+  if (item.slug === "building-the-next-stage-of-nas-computing") return <ComputingMilestoneArticle preview={false}/>;
 
   const articleToolbar = <ArticleToolbar item={item}/>;
   if (slug === "introducing-anatomy-studio") {

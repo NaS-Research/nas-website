@@ -26,7 +26,7 @@ export default function ArticleToolbar({item}) {
       key={item.slug}
       src={item.narrationSrc}
       title={item.title}
-      cover={publicationArtwork[item.slug]?.src || "/og.png"}
+      cover={item.narrationCover || publicationArtwork[item.slug]?.src || "/og.png"}
       actions={actions}
     /> : actions}
   </div>;

@@ -5,6 +5,8 @@ export const computingMilestoneArticle = {
   "category": "Scientific Infrastructure",
   "format": "Research Note",
   "byline": "NaS Research",
+  "narrationSrc": "/research/building-the-next-stage-of-nas-computing/narration-v1/computing-foundation-monika-v4-take-2.mp3",
+  "narrationCover": "/research/building-the-next-stage-of-nas-computing/starlight-twinkle-v4/mac-starlight-twinkle-poster-4k.png",
   "intro": [
     "NaS Research is investing in a new computational foundation: a Mac Studio powered by Apple’s M5 Ultra, with 96 GB of unified memory and 2 TB of internal storage. It will expand the local computing capacity available for model development, scientific analysis, research software, and the growing NaS workspace.",
     "This investment reflects a larger direction. We are building NaS as a life-sciences institution where research, intelligent systems, education, and experimental infrastructure reinforce one another. Computing is a shared foundation for that work: a place to develop methods, examine evidence, and turn ideas into systems that can be tested."
@@ -16,7 +18,7 @@ export const computingMilestoneArticle = {
       "paragraphs": [
         "Our early computational work began on an M1 Mac mini with 16 GB of memory and 256 GB of internal storage. That environment provided a starting point for experimentation, while making the limits of local capacity tangible.",
         "In [*The NaS Cortex: A Knowledge Architecture for the Life Sciences*](https://nasresearch.bio/research/introducing-nas-cortex), we described a knowledge architecture organized around specialized life-science domains and coordinated by Nicole. The work also identified memory and training time as practical constraints on development.",
-        "The new workstation advances the staged approach set out in that publication. The original roadmap considered a 512 GB M3 Ultra system; this investment takes a different configuration forward, with the same underlying aim: build a stronger environment for experimentation, then expand in response to the work.",
+        "Our earlier Cortex roadmap explored a 512 GB M3 Ultra workstation as part of a broader approach to local AI infrastructure. The next step is a different configuration: M5 Ultra with 96 GB of unified memory. It expands the working capacity of our 16 GB Mac mini sixfold, while leaving the larger memory-intensive ambitions of that roadmap distinct from this investment.",
         "The ambition behind Cortex remains broader than any one machine. It is to develop systems that can organize scientific knowledge, connect findings across domains, and support increasingly demanding research questions. Progress toward that ambition requires both computational capacity and rigorous evaluation."
       ]
     },
@@ -51,5 +53,14 @@ export const computingMilestoneArticle = {
       ]
     }
   ],
-  "sourceSHA256": "d39b1c7884d27db7e864db43b9f38ec215719e75692de3f692953822993aff46"
+  "sourceSHA256": "d39b1c7884d27db7e864db43b9f38ec215719e75692de3f692953822993aff46",
+  "editorialRevisions": [
+    {
+      "section": "the-next-step-beyond-the-prototype",
+      "original": "The new workstation advances the staged approach set out in that publication. The original roadmap considered a 512 GB M3 Ultra system; this investment takes a different configuration forward, with the same underlying aim: build a stronger environment for experimentation, then expand in response to the work.",
+      "replacement": "Our earlier Cortex roadmap explored a 512 GB M3 Ultra workstation as part of a broader approach to local AI infrastructure. The next step is a different configuration: M5 Ultra with 96 GB of unified memory. It expands the working capacity of our 16 GB Mac mini sixfold, while leaving the larger memory-intensive ambitions of that roadmap distinct from this investment.",
+      "source": "https://nasresearch.bio/research/introducing-nas-cortex",
+      "reason": "Explicit user-directed historical roadmap clarification; original approved source preserved."
+    }
+  ]
 };
