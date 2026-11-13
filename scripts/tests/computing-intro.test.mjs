@@ -161,3 +161,34 @@ test('advancing decoded media resets the stalled-loading watchdog', () => {
   [...timers.values()][0](); assert.equal(reveal.status().reason, 'load-safety');
   reveal.dispose();
 });
+
+test('an interrupted pending play retries after visibility returns instead of blocking autoplay', async () => {
+  const intro = media(); let rejectFirst, calls = 0, blocked = 0;
+  intro.play = function() {
+    this.paused = false;
+    if (++calls === 1) return new Promise((resolve, reject) => { rejectFirst = reject; });
+    return Promise.resolve();
+  };
+  const p = player(intro, media(), {onBlocked: () => blocked++});
+  p.controller.setEnvironment(environment); await tick();
+  p.controller.setEnvironment({...environment, hidden: true});
+  p.controller.setEnvironment(environment);
+  rejectFirst(Object.assign(new Error('Playback interrupted by pause'), {name: 'AbortError'}));
+  await tick();
+  assert.equal(blocked, 0); assert.equal(calls, 2); assert.equal(intro.paused, false);
+  p.controller.destroy();
+});
+
+test('a resolved interrupted play also resumes after visibility returns', async () => {
+  const intro = media(); let resolveFirst, calls = 0;
+  intro.play = function() {
+    this.paused = false;
+    if (++calls === 1) return new Promise(resolve => { resolveFirst = resolve; });
+    return Promise.resolve();
+  };
+  const p = player(intro);
+  p.controller.setEnvironment(environment); await tick();
+  p.controller.setEnvironment({...environment, hidden: true});
+  p.controller.setEnvironment(environment); resolveFirst(); await tick();
+  assert.equal(calls, 2); assert.equal(intro.paused, false); p.controller.destroy();
+});
