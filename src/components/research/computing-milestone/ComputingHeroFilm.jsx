@@ -11,15 +11,17 @@ export default function ComputingHeroFilm({introSrc, loopSrc, poster, width = 38
   const [failed, setFailed] = useState(false);
   useLayoutEffect(() => {
     const motion = matchMedia('(prefers-reduced-motion: reduce)');
-    let visible = false, player = null, pageReveal = null;
+    let visible = false, visitReady = false, prepareFrame = null, player = null, pageReveal = null;
     const update = () => {
       if (motion.matches) pageReveal?.finish('reduced-motion');
-      player?.setEnvironment({visible, hidden: document.hidden, reduced: motion.matches});
+      player?.setEnvironment({visible: visible && visitReady, hidden: document.hidden, reduced: motion.matches});
     };
     function startVisit() {
       // Both React route re-entry and browser back/forward cache restores own a
       // fresh arrival. Destroy the old player BEFORE reusing its media nodes.
       player?.destroy();
+      if (prepareFrame !== null) window.cancelAnimationFrame(prepareFrame);
+      visitReady = false;
       pageReveal?.dispose();
       if (window.__nasComputingReveal?.status().finished) window.__nasComputingReveal.dispose();
       pageReveal = window.__nasComputingReveal || installComputingReveal(window,document);
@@ -28,7 +30,8 @@ export default function ComputingHeroFilm({introSrc, loopSrc, poster, width = 38
         video.pause();
         try { video.currentTime = 0; } catch { /* An unloaded video starts at zero. */ }
       }
-      if (pageReveal && !pageReveal.status().finished) window.scrollTo(0,0);
+      const visual = root.current.closest('[data-computing-visual]');
+      pageReveal?.prepare(visual);
       const rect = root.current.getBoundingClientRect();
       visible = rect.bottom > 0 && rect.top < window.innerHeight;
       player = createIntroLoopController({intro: intro.current, hold: hold.current, introSrc, loopSrc,
@@ -36,6 +39,16 @@ export default function ComputingHeroFilm({introSrc, loopSrc, poster, width = 38
         onBlocked: () => { setBlocked(true); pageReveal?.finish('autoplay-blocked'); },
         onFailure: () => { setFailed(true); pageReveal?.finish('media-error'); }});
       controller.current = player;
+      // Next's own navigation scroll restoration runs during the same commit.
+      // Re-center before the first playback frame, after that restoration.
+      prepareFrame = window.requestAnimationFrame(() => {
+        prepareFrame = null;
+        pageReveal?.prepare(visual);
+        const rect = root.current.getBoundingClientRect();
+        visible = rect.bottom > 0 && rect.top < window.innerHeight;
+        visitReady = true;
+        update();
+      });
       update();
     }
     const onPageShow = event => { if (event.persisted) startVisit(); };
@@ -45,7 +58,7 @@ export default function ComputingHeroFilm({introSrc, loopSrc, poster, width = 38
       // offscreen, paused arrival with invisible article text.
       const rect = root.current.getBoundingClientRect();
       visible = rect.bottom > 0 && rect.top < window.innerHeight;
-      if (rect.bottom <= 0 && !document.hidden) pageReveal?.finish('scroll-away');
+      if (visitReady && rect.bottom <= 0 && !document.hidden) pageReveal?.finish('scroll-away');
       update();
     }, {threshold: .05});
     observer.observe(root.current);
@@ -56,6 +69,7 @@ export default function ComputingHeroFilm({introSrc, loopSrc, poster, width = 38
       observer.disconnect(); motion.removeEventListener('change', update);
       document.removeEventListener('visibilitychange', update);
       window.removeEventListener('pageshow', onPageShow); window.removeEventListener('pagehide', onPageHide);
+      if (prepareFrame !== null) window.cancelAnimationFrame(prepareFrame);
       player?.destroy(); controller.current = null; pageReveal?.dispose();
     };
   }, [introSrc, loopSrc]);

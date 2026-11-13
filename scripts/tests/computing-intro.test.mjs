@@ -13,14 +13,14 @@ class Target {
   emit(name, event = {}) { for (const fn of [...(this.listeners.get(name) || [])]) fn(event); }
 }
 function page({hidden = false, reduced = false, hash = '', pathname = '/research/building-the-next-stage-of-nas-computing'} = {}) {
-  const win = new Target(), doc = new Target(), rules = new Map(), timers = new Map();
+  const win = new Target(), doc = new Target(), rules = new Map(), timers = new Map(), scrolls = [];
   let nextTimer = 0;
-  Object.assign(win, {location: {pathname, hash}, matchMedia: () => ({matches: reduced}),
-    setTimeout(fn) { timers.set(++nextTimer, fn); return nextTimer; }, clearTimeout(id) { timers.delete(id); }, scrollTo() {}});
+  Object.assign(win, {scrollY: 0, innerHeight: 800, location: {pathname, hash}, matchMedia: () => ({matches: reduced}),
+    setTimeout(fn) { timers.set(++nextTimer, fn); return nextTimer; }, clearTimeout(id) { timers.delete(id); }, scrollTo(value) { scrolls.push(value); this.scrollY = value.top; }});
   Object.assign(doc, {hidden, head: {appendChild() {}}, createElement() {
     return {sheet: {cssRules: [{style: {setProperty: (key, value) => rules.set(key, value)}}]}, remove() {}};
   }});
-  return {win, doc, rules, timers};
+  return {win, doc, rules, timers, scrolls};
 }
 function media() {
   const video = new Target();
@@ -110,4 +110,23 @@ test('autoplay rejection and media failures report safe fallbacks', async () => 
   const p = player(intro, media(), {onBlocked: () => blocked++, onFailure: () => failed++});
   p.controller.setEnvironment(environment); await tick(); assert.equal(blocked, 1);
   p.intro.emit('error'); assert.equal(failed, 1); assert.equal(p.layers.at(-1), 'poster'); p.controller.destroy();
+});
+
+
+test('opening centers the hidden natural-layout film, then scrolls to top with a slow fade', () => {
+  const {win, doc, rules, scrolls} = page(); const reveal = installComputingReveal(win, doc);
+  const visual = {getBoundingClientRect: () => ({top: 720 - win.scrollY, height: 800})};
+  reveal.prepare(visual);
+  assert.deepEqual(scrolls.at(-1), {top: 720, left: 0, behavior: 'instant'});
+  reveal.prepare(visual); // Re-centering after a framework layout commit is idempotent.
+  assert.equal(scrolls.at(-1).top, 720);
+  reveal.progress(.99);
+  assert.equal(scrolls.length, 2); assert.equal(reveal.status().finished, false);
+  reveal.progress(1);
+  assert.deepEqual(scrolls.at(-1), {top: 0, left: 0, behavior: 'smooth'});
+  assert.match(rules.get('--nas-computing-page-transition'), /^2200ms/);
+  assert.equal(rules.get('--nas-computing-page-opacity'), '1');
+  assert.match(rules.get('--nas-computing-stage-transition'), /^1600ms/);
+  reveal.prepare(visual); assert.equal(scrolls.length, 3); // Never re-center a finished visit.
+  reveal.dispose();
 });
