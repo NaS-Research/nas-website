@@ -3,3 +3,10 @@
 .page .cover{width:min(calc(100% - 48px),1600px)}
 
 .page .status,.comparison,.workflow,.quoteGrid figure{border-top:0;border-bottom:0}
+
+/* Separate article sections through spacing, not decorative rules. */
+.page:global(.publication-page) :global(.publication-hero),
+.page:global(.publication-page) :global(.publication-summary),
+.page:global(.publication-page) :global(.publication-section),
+.page:global(.publication-page) :global(.publication-source-group),
+.page:global(.publication-page) :global(.related-research){border-block:0}
