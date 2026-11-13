@@ -102,3 +102,9 @@
  .home-carousel--anatomy-studio .home-carousel__copy{grid-column:1;grid-row:1}
  .home-carousel--anatomy-studio .home-carousel__visual{grid-column:1;grid-row:2;min-height:0}
 }
+
+/* Give only the ClinVar artwork more presence; preserve the copy grid. */
+.home-carousel--cva .home-cva-visual { transform: translateY(-1rem) scale(1.35); transform-origin: center; }
+@media(max-width:767px) {
+ .home-carousel--cva .home-cva-visual { transform: scale(1.12); }
+}
