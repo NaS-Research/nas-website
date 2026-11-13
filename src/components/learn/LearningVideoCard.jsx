@@ -1,8 +1,10 @@
+import { completeVideoMetadata } from "@/lib/youtubeVideoMetadata.mjs";
 import Image from "next/image";
 import { videoWatchUrl } from "@/data/learningVideos";
 import styles from "./LearningVideos.module.css";
 
-export default function LearningVideoCard({ video }) {
+export default function LearningVideoCard({ video: input }) {
+  const video = completeVideoMetadata(input);
   return (
     <article className={styles.card}>
       <a className={styles.videoLink} href={videoWatchUrl(video.id)} target="_blank" rel="noopener noreferrer" aria-label={`Watch ${video.title} on YouTube (opens in a new tab)`}>

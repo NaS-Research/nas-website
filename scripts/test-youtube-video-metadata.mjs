@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {videoSubject,videoSummary} from '../src/lib/youtubeVideoMetadata.mjs';
+import {videoSubject,videoSummary,completeVideoMetadata} from '../src/lib/youtubeVideoMetadata.mjs';
 import {parseYoutubeFeed} from '../src/lib/youtubeFeed.mjs';
 assert.equal(videoSubject('Subject: Human anatomy', 'Agonists and receptors'), 'Anatomy');
 assert.equal(videoSubject('Category: pharmacology', 'New lesson'), 'Pharmacology');
@@ -22,3 +22,9 @@ assert.equal(video.subject,'Anatomy');
 console.log('Video metadata: explicit subjects, title fallbacks, summary extraction, sentence boundaries, boilerplate exclusion, empty descriptions, and feed integration passed.');
 
 assert.equal(videoSummary('Subject: Anatomy\n\nSOURCES\nReference text'), '');
+
+for (const title of ['Heart Pressure Explained: Ventricles, Aorta and Pulmonary Artery','Nephron: How Your Kidneys Filter Blood','Kidney Hormones Made Simple','Heart Failure Explained']) {
+ const video=completeVideoMetadata({title,subject:' ',description:' '});
+ assert.equal(video.subject,'Physiology'); assert.ok(video.description.trim());
+}
+assert.equal(completeVideoMetadata({title:'Lesson',description:'Summary: A precise caption.',subject:'Pharmacology'}).description,'A precise caption.');

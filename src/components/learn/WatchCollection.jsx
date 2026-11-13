@@ -1,11 +1,13 @@
 "use client";
 
+import { completeVideoMetadata } from "@/lib/youtubeVideoMetadata.mjs";
 import { useState } from "react";
 import LearningVideoCard from "./LearningVideoCard";
 import styles from "./LearningVideos.module.css";
 
 
-export default function WatchCollection({ videos }) {
+export default function WatchCollection({ videos: input }) {
+  const videos = input.map(completeVideoMetadata);
   const subjects = [...new Set(videos.map((video) => video.subject))];
   const [query, setQuery] = useState("");
   const [subject, setSubject] = useState("All subjects");
