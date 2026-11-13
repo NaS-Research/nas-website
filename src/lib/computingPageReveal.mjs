@@ -19,7 +19,7 @@ export function installComputingReveal(win, doc) {
       if (finished) return;
       finished = true; amount = 1; reason = why;
       if (!immediate) {
-        rule.setProperty('--nas-computing-page-transition', '2200ms cubic-bezier(.22,.61,.36,1)');
+        rule.setProperty('--nas-computing-page-transition', '2200ms ease-in-out');
         rule.setProperty('--nas-computing-stage-transition', '1600ms cubic-bezier(.22,.61,.36,1)');
       }
       if (immediate) {

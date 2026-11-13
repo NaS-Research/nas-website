@@ -55,10 +55,10 @@ export default function ComputingHeroFilm({introSrc, loopSrc, poster, width = 38
     const onPageHide = () => player?.setEnvironment({visible, hidden: true, reduced: motion.matches});
     const observer = new IntersectionObserver(() => {
       // Ignore incidental wheel events, but never strand a reader below an
-      // offscreen, paused arrival with invisible article text.
+      // offscreen, paused arrival with invisible article text in either direction.
       const rect = root.current.getBoundingClientRect();
       visible = rect.bottom > 0 && rect.top < window.innerHeight;
-      if (visitReady && rect.bottom <= 0 && !document.hidden) pageReveal?.finish('scroll-away');
+      if (visitReady && !visible && !document.hidden) pageReveal?.finish('scroll-away');
       update();
     }, {threshold: .05});
     observer.observe(root.current);
