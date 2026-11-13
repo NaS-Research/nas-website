@@ -20,7 +20,7 @@ export default function ArticleToolbar({item}) {
     dataUrl={item.reproducibilityUrl}
     dataLabel="Data & analysis"
     title={item.title}
-    url={`https://nasresearch.bio/research/${item.slug}`}/>;
+    url={item.canonicalUrl || `https://nasresearch.bio/research/${item.slug}`}/>;
   return <div className={styles.toolbar} data-article-toolbar data-has-audio={hasAudio}>
     {hasAudio ? <ArticleAudioPlayer
       key={item.slug}

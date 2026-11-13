@@ -1,0 +1,12 @@
+export const QUOTE_HOLD_MS=4000;
+export const QUOTE_SLIDE_MS=1200;
+export const platformQuotes=Object.freeze([
+ {id:'srouji',quote:'the new Mac Studio is our most powerful Mac ever.',name:'Johny Srouji',role:'Chief hardware officer · Apple',sourceNumber:2,url:'https://www.apple.com/newsroom/2026/08/apple-introduces-new-mac-studio-with-m5-max-and-m5-ultra/',date:'2026-08-25',context:'Manufacturer statement about the product family, not the specific NaS configuration or an endorsement of NaS.'},
+ {id:'freedman',quote:'For local AI, the M5 Ultra is seriously impressive, though that may still be a niche use case for some.',name:'Andrew E. Freedman',role:'Senior editor · Tom’s Hardware',sourceNumber:3,url:'https://www.tomshardware.com/desktops/mini-pcs/apple-mac-studio-m5-ultra-review',date:'2026-09-21',context:'Review tested a 36-core CPU / 80-core GPU, 256 GB system, distinct from NaS’s 30/64-core, 96 GB configuration.'},
+ {id:'evans',quote:'It’s incredibly powerful and would crackle with energy if it weren’t so energy efficient.',name:'Jonny Evans',role:'AppleHolic writer · Computerworld',sourceNumber:4,url:'https://www.computerworld.com/article/4225059/review-m5-ultra-mac-studio-pure-unadulterated-power.html',date:'2026-09-22',context:'Review of a 36-core CPU / 80-core GPU, 256 GB, 4 TB machine, not the NaS configuration.'},
+ {id:'dibenedetto',quote:'I’ve never tested anything this fast before.',name:'Antonio G. Di Benedetto',role:'Laptop reviewer · The Verge',sourceNumber:5,url:'https://www.theverge.com/tech/998040/apple-mac-studio-m5-ultra-initial-impressions-testing-review',date:'2026-09-21',context:'Reviewer’s experience with a 36-core CPU / 80-core GPU, 256 GB, 4 TB review unit; not a universal ranking or NaS result.'},
+ {id:'viticci',quote:'the M5 Ultra Mac Studio is a dream machine for local AI agents.',name:'Federico Viticci',role:'Founder and editor-in-chief · MacStories',sourceNumber:6,url:'https://www.macstories.net/stories/m5-ultra-mac-studio-review-the-dream-mac-for-local-ai-agents/',date:'2026-09-21',context:'Excerpt from a first-person review of a 256 GB M5 Ultra system, distinct from NaS’s 96 GB configuration.'}
+]);
+export function nextQuote(index,step,count=platformQuotes.length){return ((index+step)%count+count)%count;}
+export function shouldRotate({paused,reducedMotion,visible,inView,hovering,focused=false}){return !paused&&reducedMotion===false&&visible&&inView&&!hovering&&!focused;}
+export function quoteRotationDelay(){return QUOTE_HOLD_MS;}

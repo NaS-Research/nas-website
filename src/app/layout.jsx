@@ -5,6 +5,7 @@ import "./globals.css";
 import "./accessibility.css";
 import "./publication-logo.css";
 import Navbar from "@/components/Navbar";
+import {computingRevealBoot} from "@/lib/computingPageReveal.mjs";
 import { authReady } from "@/lib/auth/config.mjs";
 import PageNavigationMotion from "@/components/PageNavigationMotion";
 
@@ -100,6 +101,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <script id="computing-reveal-boot" dangerouslySetInnerHTML={{__html: computingRevealBoot}}/>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
