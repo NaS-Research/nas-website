@@ -1,3 +1,4 @@
+import { verifiedFallback } from "@/lib/learningVideoCollection.mjs";
 import { getLatestLearningVideos } from "@/lib/learningVideoFeed";
 import { learningVideos } from "@/data/learningVideos";
 import Link from "next/link";
@@ -15,7 +16,7 @@ export const metadata = {
 export default async function WatchPage() {
   const latest = await getLatestLearningVideos();
   const latestIds = new Set(latest.map((video) => video.id));
-  const videos = [...latest, ...learningVideos.filter((video) => !latestIds.has(video.id))];
+  const videos = [...latest, ...verifiedFallback(learningVideos, Infinity).filter((video) => !latestIds.has(video.id))];
   return (
     <div className="nas-page learning-index-page">
       <header className="learning-index-hero">

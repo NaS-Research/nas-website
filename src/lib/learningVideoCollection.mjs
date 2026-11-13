@@ -1,3 +1,4 @@
+import { completeVideoMetadata, videoSubject, videoSummary } from './youtubeVideoMetadata.mjs';
 import { parseYoutubeFeed } from './youtubeFeed.mjs';
 
 export const learningChannelId = 'UCayPiGDDH9euWzwkb9tA6ug';
@@ -14,9 +15,9 @@ export const excludedShort = video => Boolean(video && (video.format === 'short'
 const validId = id => typeof id === 'string' && /^[\w-]{11}$/.test(id);
 const text = value => value?.simpleText || value?.content || value?.runs?.map(run => run.text).join('') || '';
 
-export function youtubePageData(html) {
+export function youtubePageData(html, player = false) {
   if (typeof html !== 'string' || html.length > 8 * 1024 * 1024) throw new Error('Invalid YouTube page size');
-  const marker = /(?:var\s+ytInitialData\s*=\s*|window\["ytInitialData"\]\s*=\s*)(\{)/.exec(html);
+  const marker = (player ? /(?:var\s+ytInitialPlayerResponse\s*=\s*|window\["ytInitialPlayerResponse"\]\s*=\s*)(\{)/ : /(?:var\s+ytInitialData\s*=\s*|window\["ytInitialData"\]\s*=\s*)(\{)/).exec(html);
   if (!marker) throw new Error('YouTube browse data unavailable');
   const start = marker.index + marker[0].length - 1;
   let depth = 0, quoted = false, escaped = false;
@@ -31,6 +32,12 @@ export function youtubePageData(html) {
     else if (char === '}' && --depth === 0) return JSON.parse(html.slice(start, i + 1));
   }
   throw new Error('Truncated YouTube browse data');
+}
+export function parseWatchVideoMetadata(html, id) {
+  const details = youtubePageData(html, true)?.videoDetails;
+  if (details?.videoId !== id || details?.channelId !== learningChannelId) throw new Error('Unexpected video metadata identity');
+  const description = details.shortDescription || '';
+  return { description: videoSummary(description), subject: videoSubject(description, details.title || '') };
 }
 const selectedTab = data => data?.contents?.twoColumnBrowseResultsRenderer?.tabs?.find(item => item.tabRenderer?.selected)?.tabRenderer;
 function videoFromContent(content) {
@@ -84,11 +91,11 @@ export function parseSubjectPlaylist(html, playlist) {
 const snapshotSubject = video => subjectPlaylists.find(playlist => playlist.id === video.subjectPlaylistId)?.title;
 export function verifiedFallback(catalog, limit = 9) {
   return catalog.filter(video => video.format === 'regular' && !excludedShort(video) && validId(video.id) && snapshotSubject(video))
-    .map(video => ({ ...video, subject: snapshotSubject(video) }))
+    .map(video => completeVideoMetadata({ ...video, subject: snapshotSubject(video) }))
     .sort((a, b) => (Date.parse(b.publishedAt) || 0) - (Date.parse(a.publishedAt) || 0)).slice(0, limit);
 }
 async function fetchText(fetcher, url) {
-  const response = await fetcher(url, { next: { revalidate: 3600 }, signal: AbortSignal.timeout(8000), headers: { 'Accept-Language': 'en-US,en;q=0.9' } });
+  const response = await fetcher(url, { next: { revalidate: 900 }, signal: AbortSignal.timeout(8000), headers: { 'Accept-Language': 'en-US,en;q=0.9' } });
   if (!response.ok) throw new Error(`YouTube returned ${response.status}`);
   const reader = response.body?.getReader();
   if (!reader) throw new Error('YouTube response stream unavailable');
@@ -123,17 +130,22 @@ export async function latestRegularLearningVideos({ fetcher = fetch, catalog, wa
   // Apply all contradictory format evidence before the collection limit/counts.
   const eligible = regular.value.filter(video => !excludedShort(video) &&
     !excludedShort(catalog.find(item => item.id === video.id)) && !excludedShort(uploads.get(video.id)));
-  return eligible.slice(0, 9).map(video => {
+  return Promise.all(eligible.slice(0, 9).map(async video => {
     const reviewed = catalog.find(item => item.id === video.id);
     const upload = uploads.get(video.id);
     const playlist = playlists.find(result => result.status === 'fulfilled' && result.value.videoIds.includes(video.id));
-    const subject = playlist?.value.title || (playlists.some(result => result.status !== 'fulfilled') && reviewed?.format === 'regular' ? snapshotSubject(reviewed) : undefined);
-    return {
+    let watch;
+    if (!reviewed?.description?.trim() && !upload?.description?.trim()) {
+      try { watch = parseWatchVideoMetadata(await fetchText(fetcher, `https://www.youtube.com/watch?v=${video.id}&hl=en`), video.id); }
+      catch { warn(`YouTube description unavailable for ${video.id}; using the nonempty presentation fallback.`); }
+    }
+    const subject = playlist?.value.title || (playlists.some(result => result.status !== 'fulfilled') && reviewed?.format === 'regular' ? snapshotSubject(reviewed) : undefined) || upload?.subject || watch?.subject || videoSubject('', video.title);
+    return completeVideoMetadata({
       ...reviewed, ...video, subject,
       publishedAt: upload?.publishedAt || reviewed?.publishedAt,
-      description: reviewed?.description || upload?.description || '',
+      description: reviewed?.description || upload?.description || watch?.description || '',
       format: 'regular',
-      subjectPlaylistId: playlist?.value.id || (subject ? reviewed?.subjectPlaylistId : undefined),
-    };
-  });
+      subjectPlaylistId: playlist?.value.id || (playlists.some(result => result.status !== 'fulfilled') ? reviewed?.subjectPlaylistId : undefined),
+    });
+  }));
 }

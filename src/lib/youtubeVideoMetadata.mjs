@@ -4,18 +4,19 @@ const subjects = new Map([
   ["therapeutics", "Therapeutics"], ["life sciences", "Life sciences"],
 ]);
 
-export function videoSubject(description, title) {
+export function videoSubject(description = "", title = "") {
   const explicit = description.match(/^(?:subject|category):\s*([^\r\n]+)/im)?.[1].trim().toLowerCase();
   if (subjects.has(explicit)) return subjects.get(explicit);
   // Title-based fallbacks are broad editorial labels, not YouTube categories.
   if (/\b(pharmacology|agonists?|antagonists?|receptors?|drug action)\b/i.test(title)) return "Pharmacology";
   if (/\b(opioids?|naloxone|treatment|therapeutics|therapy)\b/i.test(title)) return "Therapeutics";
+  if (/\b(physiology|nephron|kidney hormones|heart pressure|heart failure|filtration|reabsorption)\b/i.test(title)) return "Physiology";
   if (/\b(anatomy|chambers?|valves?|heart|lungs?|organs?|skeleton)\b/i.test(title)) return "Anatomy";
   if (/\b(physiology|homeostasis|blood flow|circulation)\b/i.test(title)) return "Physiology";
   return "Life sciences";
 }
 
-export function videoSummary(description) {
+export function videoSummary(description = "") {
   const explicit = description.match(/^summary:\s*([^\r\n]+)/im)?.[1];
   const openingContent = description.replace(/\r\n?/g, "\n").split(/^(?:chapters|sources|references|you will learn)\s*:?$/im)[0];
   const paragraphs = openingContent.split(/\n\s*\n/);
@@ -34,4 +35,15 @@ export function videoSummary(description) {
   if (result.trim()) return result.trim();
   const cut = text.slice(0, 217);
   return cut.slice(0, cut.lastIndexOf(" ") > 0 ? cut.lastIndexOf(" ") : cut.length).trimEnd() + "…";
+}
+
+// A presentation contract shared by the carousel, library, and subject filter.
+// Generic fallbacks make no claims about unavailable video content.
+export function completeVideoMetadata(video) {
+  const description = videoSummary(video.description || "");
+  return {
+    ...video,
+    subject: video.subject?.trim() || videoSubject("", video.title),
+    description: description || videoSummary(`Watch this NaS Research film: ${video.title || "explore the life sciences"}.`),
+  };
 }

@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {parseRegularVideoPage,parseSubjectPlaylist,latestRegularLearningVideos,subjectPlaylists,learningChannelId,verifiedFallback} from '../src/lib/learningVideoCollection.mjs';
+import {parseRegularVideoPage,parseSubjectPlaylist,latestRegularLearningVideos,subjectPlaylists,learningChannelId,verifiedFallback,parseWatchVideoMetadata} from '../src/lib/learningVideoCollection.mjs';
 import {learningVideos} from '../src/data/learningVideos.js';
 const regular='aaaaaaaaaaa',short='bbbbbbbbbbb',brief='ccccccccccc';
 const command=(id,url='/watch?v='+id,playlistId)=>({commandMetadata:{webCommandMetadata:{url}},watchEndpoint:{videoId:id,playlistId}});
@@ -46,17 +46,17 @@ test('classification outage never admits Atom uploads or unverified fallback ent
 });
 test('missing/ambiguous category membership is honest and deterministic',async()=>{
  let result=await latestRegularLearningVideos({fetcher:fetcher({pharma:null,fundamentals:null}),catalog:[],warn:()=>{}});
- assert.equal(result[0].subject,undefined);
+ assert.equal(result[0].subject,"Life sciences");
  result=await latestRegularLearningVideos({fetcher:fetcher({fundamentals:playlist(subjectPlaylists[1].id,'Life Sciences Fundamentals',[regular,brief])}),catalog:[],warn:()=>{}});
  assert.equal(result[0].subject,'Pharmacology');
 });
 test('successful current playlist response does not revive stale reviewed membership',async()=>{
  const result=await latestRegularLearningVideos({fetcher:fetcher({pharma:playlist(subjectPlaylists[0].id,'Pharmacology',[])}),catalog:[{id:regular,format:'regular',subjectPlaylistId:subjectPlaylists[0].id}],warn:()=>{}});
- assert.equal(result[0].subject,undefined);
+ assert.equal(result[0].subject,"Life sciences");
 });
 test('Atom outage still shows classified regular videos; title and watch identity retained',async()=>{
  const result=await latestRegularLearningVideos({fetcher:fetcher({feed:new Error('offline')}),catalog:[],warn:()=>{}});
- assert.deepEqual(result.map(v=>v.id),[regular,brief]);assert.equal(result[0].title,'Regular video');assert.equal(result[0].description,'');
+ assert.deepEqual(result.map(v=>v.id),[regular,brief]);assert.equal(result[0].title,'Regular video');assert.ok(result[0].description.length>0);
 });
 test('actual captured channel and playlist data: both asthma films Pharmacology, Short absent',{skip:!process.env.NAS_VIDEO_AUDIT},async()=>{
  const dir=process.env.NAS_VIDEO_AUDIT;
@@ -102,4 +102,22 @@ test('explicit new #Shorts format signal wins before slicing latest nine',async(
 test('cached Atom hashtag and explicit short catalog contradict an otherwise regular-shaped grid',async()=>{
  const third='normal00001';const result=await latestRegularLearningVideos({fetcher:fetcher({videos:videos([renderer(regular),renderer(brief),renderer(third)]),feed:'<feed>'+entry(regular,'Cached excerpt #Shorts')+'</feed>'}),catalog:[{id:brief,format:'short'}],warn:()=>{}});assert.deepEqual(result.map(v=>v.id),[third]);
  const fallback=verifiedFallback([{id:third,title:'Mistaken #Shorts row',format:'regular',subjectPlaylistId:subjectPlaylists[0].id}],Infinity);assert.equal(fallback.length,0);
+});
+
+const watchHTML=(id,description,channel=learningChannelId)=>'<script>var ytInitialPlayerResponse = '+JSON.stringify({videoDetails:{videoId:id,channelId:channel,title:'Nephron: How Kidneys Filter Blood',shortDescription:description}})+';</script>';
+test('new upload beyond Atom window retrieves its own caption; subject survives missing playlist',async()=>{
+ const base=fetcher({feed:'<feed></feed>',pharma:null,fundamentals:null});
+ const result=await latestRegularLearningVideos({fetcher:async url=>url.includes('/watch?')?new Response(watchHTML(new URL(url).searchParams.get('v'),'Subject: Physiology\nSummary: Follow filtration and reabsorption through the nephron.')):base(url),catalog:[],warn:()=>{}});
+ assert.equal(result[0].subject,'Physiology');
+ assert.equal(result[0].description,'Follow filtration and reabsorption through the nephron.');
+ assert.equal(result[0].subjectPlaylistId,undefined);
+});
+test('watch metadata identity is checked; unrelated recommendation data cannot be used',()=>{
+ assert.throws(()=>parseWatchVideoMetadata(watchHTML(brief,'Wrong video'),regular));
+ assert.throws(()=>parseWatchVideoMetadata(watchHTML(regular,'Wrong channel','UCother'),regular));
+ assert.throws(()=>parseWatchVideoMetadata('<html>Consent</html>',regular));
+});
+test('provider outages and empty descriptions always retain category and caption',async()=>{
+ const result=await latestRegularLearningVideos({fetcher:fetcher({feed:null,pharma:null,fundamentals:null}),catalog:[],warn:()=>{}});
+ assert(result.every(v=>v.subject.trim()&&v.description.trim()&&v.description.length<=220));
 });

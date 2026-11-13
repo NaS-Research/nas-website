@@ -1,16 +1,11 @@
-# Learn video collection
+# Learn video metadata contract
 
-The Learn slider reads NaS Research's public YouTube Atom feed on the server,
-refreshing hourly through Next.js revalidation. It sorts by publication date,
-shows up to nine uploads, and falls back to the reviewed catalog if the feed
-fails. No YouTube API key is needed. The feed exposes recent uploads only.
+Both the Learn carousel and Watch collection use the same completed metadata contract. Every regular video renders a nonempty subject and a short caption, including when YouTube is unavailable. Shorts classification still precedes the nine-video limit; no duration heuristic is used.
 
-`src/data/learningVideos.js` supplies reviewed subjects, short descriptions,
-and verified durations. New feed entries show their actual title and thumbnail
-with the neutral NaS Research label; durations are omitted until verified.
-The searchable Watch collection remains the reviewed library. Add new reviewed
-entries there to expand its subjects and keep an archive beyond the feed window.
+Sources, in priority order: verified subject-playlist membership (editorial subjects), a verified stored membership during playlist outages, description Subject/Category metadata and broad title-based editorial subjects. A broad fallback is not presented as verified playlist membership. The existing two mapped subject playlists are not a complete subject taxonomy.
 
-Desktop displays three cards, tablet two, and mobile one. Arrows move a visible
-page; native touch scrolling and keyboard arrows on the track are supported.
-Navigation stops at either end, and respects reduced motion. No autoplay.
+Captions use reviewed copy, then the recent Atom description. If a new film falls outside the Atom window (which also includes Shorts), its public watch-page player description is fetched with video and channel identity checks. Description Summary lines take priority; chapter lists, references and links are excluded. Captions are bounded to 220 characters. If all description sources fail or are empty, the card uses a neutral title-based caption rather than disappearing or inventing scientific claims.
+
+Fetches revalidate every 15 minutes with an eight-second timeout and eight-MiB response limit. They require no API key. YouTube changes/outages can affect source freshness; the final presentation fallback guarantees populated fields, not upstream availability. Add Subject and Summary lines to future YouTube descriptions to control exact editorial copy without a website release.
+
+Run node --test scripts/test-learning-video-collection.mjs and node scripts/test-youtube-video-metadata.mjs for regressions covering Shorts, missing playlists, Atom eviction, watch identity checks, outages, and empty fields.
