@@ -1,3 +1,4 @@
+import {computingMilestoneRelease} from './computingMilestoneRelease.mjs';
 import {anatomyStudioReleasePublic} from './anatomyStudioReleasePreview.mjs';
 import { cvaRelease } from "./cvaRelease.mjs";
 import { availableResearchTypes, validateResearchTaxonomy } from "@/data/researchTaxonomy.mjs";
@@ -10,6 +11,7 @@ import { bbbRelease } from "@/data/bbbRelease";
 import { aiHospitalBillingEssay } from "@/data/aiHospitalBillingEssay";
 
 export const researchItems = [
+  computingMilestoneRelease,
   anatomyStudioReleasePublic,
   cvaRelease,
   aiHospitalBillingEssay,

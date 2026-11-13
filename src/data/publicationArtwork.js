@@ -1,5 +1,6 @@
 // Original NaS artwork; conceptual images do not represent measured outcomes.
 export const publicationArtwork = {
+  "building-the-next-stage-of-nas-computing": {src:"/research/building-the-next-stage-of-nas-computing/starlight-twinkle-v4/mac-starlight-twinkle-poster-4k.png",width:3840,height:2160,coverFilm:"/research/building-the-next-stage-of-nas-computing/starlight-twinkle-v4/mac-starlight-loop-twinkle-4k.mp4",coverPoster:"/research/building-the-next-stage-of-nas-computing/starlight-twinkle-v4/mac-starlight-twinkle-poster-4k.png",alt:"White and warm gold starlight outlining a Mac Studio against black",contain:true,coverContain:true},
   "introducing-anatomy-studio": { src: "/research/anatomy-studio/cover-v2-landscape.png", width: 1672, height: 941, alt: "Pencil studies of a heart, neuron, cell, insect wing, microbe and flower on an ivory background", contain: true },
   "clinvar-conflict-atlas": { src: "/research/nas-cva-001/artwork/cva-refined-cover-poster.webp", alt: "A folded network of blue molecular nodes with gold and red clusters against black", contain: true },
   "ai-hospital-billing-evidence": {

@@ -1,3 +1,4 @@
+import {computingRevealBoot} from '@/lib/computingPageReveal.mjs';
 import MemberProvider from "@/components/member/MemberProvider";
 import PersonalTools from "@/components/member/PersonalTools";
 import "@/components/member/member.css";
@@ -116,6 +117,7 @@ export default function RootLayout({ children }) {
         <meta name="theme-color" content="#000000" />
       </head>
       <body className="bg-red-500 min-h-screen antialiased">
+        <script id="computing-reveal-boot" dangerouslySetInnerHTML={{__html:computingRevealBoot}}/>
         <a className="nas-skip-link" href="#main-content">Skip to content</a>
         <MemberProvider><Navbar authEnabled={authReady()} />
         <PageNavigationMotion />
