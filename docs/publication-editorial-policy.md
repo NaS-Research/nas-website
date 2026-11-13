@@ -20,3 +20,15 @@ receive a new version, and preserve previous editions in the external archive.
 
 All revised papers use the shared NaS publication renderer and palette at
 `../NaS-Core/workflows/publications/nas_paper_v1/README.md`.
+
+
+## Website spacing and separators
+
+Use whitespace and typography to separate article sections. Do not add faint
+white or gray decorative rules, whether solid or dashed, around sections or
+media. Black-background media must use a true black backing so rounded-edge
+antialiasing cannot reveal a pale frame.
+
+Preserve functional chart axes and connectors, table structure, navigation and
+selection states, resource-player controls, and visible keyboard focus feedback.
+Keep these web presentation choices separate from the shared PDF paper format.

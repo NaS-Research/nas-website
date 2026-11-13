@@ -1,7 +1,7 @@
 // The only timer is a fail-open safety limit, never the normal reveal clock.
 export function installComputingReveal(win, doc) {
   const routes = ['/preview/building-the-next-stage-of-nas-computing','/research/building-the-next-stage-of-nas-computing'];
-  if (!routes.includes(win.location.pathname.replace(/\/$/, '')) || doc.hidden) return null;
+  if (!routes.includes(win.location.pathname.replace(/\/$/, '')) || doc.hidden || win.location.hash) return null;
   if (win.__nasComputingReveal) return win.__nasComputingReveal;
   let style, timer, finished = false, amount = 0, reason = 'arrival-pending';
   const listeners = [];
@@ -9,7 +9,7 @@ export function installComputingReveal(win, doc) {
     if (win.matchMedia('(prefers-reduced-motion: reduce)').matches) return null;
     style = doc.createElement('style');
     style.id = 'nas-computing-reveal-state';
-    style.textContent = ':root{--nas-computing-heading-rows:0fr;--nas-computing-stage-space:100svh;--nas-computing-stage-transition:1400ms cubic-bezier(.22,.61,.36,1);--nas-computing-heading-safety:nas-computing-heading-safety 0s 6s forwards;--nas-computing-stage-safety:nas-computing-stage-safety 0s 6s forwards;--nas-computing-page-opacity:0;--nas-computing-page-transition:180ms linear;--nas-computing-page-safety:nas-computing-reveal-safety 0s 6s forwards}body{background:#000}.nas-navbar,.personal-tools,.nas-skip-link{opacity:var(--nas-computing-page-opacity,1);transition:opacity var(--nas-computing-page-transition,180ms linear);animation:var(--nas-computing-page-safety,none)}:root:focus-within{--nas-computing-page-opacity:1!important;--nas-computing-page-transition:0s!important;--nas-computing-heading-rows:1fr!important;--nas-computing-stage-space:0px!important;--nas-computing-stage-transition:0s!important}@keyframes nas-computing-reveal-safety{to{opacity:1}}';
+    style.textContent = ':root{--nas-computing-heading-rows:0fr;--nas-computing-stage-space:100svh;--nas-computing-stage-transition:1400ms cubic-bezier(.22,.61,.36,1);--nas-computing-heading-safety:nas-computing-heading-safety 0s 15s forwards;--nas-computing-stage-safety:nas-computing-stage-safety 0s 15s forwards;--nas-computing-page-opacity:0;--nas-computing-page-transition:900ms cubic-bezier(.22,.61,.36,1);--nas-computing-page-safety:nas-computing-reveal-safety 0s 15s forwards}body{background:#000}.nas-navbar,.personal-tools,.nas-skip-link{opacity:var(--nas-computing-page-opacity,1);transition:opacity var(--nas-computing-page-transition,900ms cubic-bezier(.22,.61,.36,1));animation:var(--nas-computing-page-safety,none)}:root:focus-within{--nas-computing-page-opacity:1!important;--nas-computing-page-transition:0s!important;--nas-computing-heading-rows:1fr!important;--nas-computing-stage-space:0px!important;--nas-computing-stage-transition:0s!important}@keyframes nas-computing-reveal-safety{to{opacity:1}}';
     doc.head.appendChild(style);
     const rule = style.sheet?.cssRules[0]?.style;
     if (!rule) { style.remove(); return null; }
@@ -29,6 +29,7 @@ export function installComputingReveal(win, doc) {
       rule.setProperty('--nas-computing-page-opacity', '1');
       rule.setProperty('--nas-computing-page-safety', 'none');
       rule.setProperty('--nas-computing-static-poster', '1');
+      if (why === 'arrival-complete' && !immediate) win.scrollTo({top:0,left:0,behavior:'smooth'});
       win.clearTimeout(timer); removeListeners();
     }
     const api = {
@@ -37,14 +38,8 @@ export function installComputingReveal(win, doc) {
         // Monotonic media-time progress; loops and resumed playback never reset it.
         const t = Math.max(amount, Math.min(1, Math.max(0, value)));
         amount = t; reason = 'arrival-playing';
-        // The Mac arrives first; the final 35% of the real arrival opens
-        // the heading above it and eases the page into its reading layout.
-        if (t >= .65) {
-          rule.setProperty('--nas-computing-heading-rows', '1fr');
-          rule.setProperty('--nas-computing-stage-space', '0px');
-        }
-        const reveal = Math.max(0, Math.min(1, (t - .65) / .35));
-        rule.setProperty('--nas-computing-page-opacity', String(reveal * reveal * (3 - 2 * reveal)));
+        // Decoded media time determines completion. Never reveal on a wall-clock
+        // estimate or while the Mac is still arriving.
         if (t === 1) finish('arrival-complete', false);
       },
       finish,
@@ -57,7 +52,7 @@ export function installComputingReveal(win, doc) {
     listen(win,'error',event=>{ if (event.message || event.target?.tagName === 'SCRIPT') finish('script-failure'); });
     listen(win,'unhandledrejection',()=>finish('script-failure'));
     listen(win,'pagehide',()=>finish('navigation'));
-    timer = win.setTimeout(()=>finish('load-safety'),6000);
+    timer = win.setTimeout(()=>finish('load-safety'),15000);
     return api;
   } catch {
     style?.remove(); win.clearTimeout(timer);

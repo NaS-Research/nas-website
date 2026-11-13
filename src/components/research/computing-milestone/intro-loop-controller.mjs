@@ -3,7 +3,7 @@ export function createIntroLoopController({intro, hold, introSrc, loopSrc, revea
   let introPresented = false;
   let phase = 'intro', visible = false, hidden = true, reduced = true;
   let paused = false, blocked = false, failed = false, destroyed = false, loaded = false;
-  let pendingFrame = null, frameVideo = null, frameKind = null;
+  let pendingFrame = null, frameVideo = null, frameKind = null, holdLoaded = false;
   const inFlight = new Set();
   const eligible = () => !destroyed && visible && !hidden && !reduced && !paused && !blocked && !failed;
   const active = () => phase === 'intro' ? intro : hold;
@@ -55,17 +55,20 @@ export function createIntroLoopController({intro, hold, introSrc, loopSrc, revea
     }
     if (!loaded) {
       loaded = true;
-      // Loading begins only when visible with motion permitted. Hold preloads
-      // during the introduction, never by substituting a new src at the seam.
-      intro.src = introSrc; hold.src = loopSrc;
-      intro.load(); hold.load();
+      // The server supplies the intro source so loading starts before hydration.
+      // Do not reset its in-flight download. The hold starts after playback begins.
+      if (intro.getAttribute('src') !== introSrc) { intro.src = introSrc; intro.load(); }
     }
     play(active());
   }
   function reportArrival() {
     if (!destroyed && introPresented && Number.isFinite(intro.duration) && intro.duration > 0) onArrivalProgress(Math.min(1, intro.currentTime / intro.duration));
   }
-  const onIntroPlaying = () => present(intro);
+  const onIntroPlaying = () => {
+    // Give the first decoded arrival frame priority over the large loop download.
+    if (!holdLoaded && eligible()) { holdLoaded = true; hold.src = loopSrc; hold.load(); }
+    present(intro);
+  };
   const onHoldPlaying = () => present(hold);
   const onHoldReady = () => { if (phase !== 'intro') update(); };
   const onIntroEnd = () => {

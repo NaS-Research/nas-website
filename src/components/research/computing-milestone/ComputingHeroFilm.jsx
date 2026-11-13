@@ -1,5 +1,6 @@
 "use client";
-import {useEffect, useRef, useState} from 'react';
+import {useLayoutEffect, useRef, useState} from 'react';
+import {installComputingReveal} from '@/lib/computingPageReveal.mjs';
 import {createIntroLoopController} from './intro-loop-controller.mjs';
 import styles from './computing-hero-film.module.css';
 
@@ -8,10 +9,11 @@ export default function ComputingHeroFilm({introSrc, loopSrc, poster, width = 38
   const [layer, setLayer] = useState('poster');
   const [paused, setPaused] = useState(false), [blocked, setBlocked] = useState(false);
   const [failed, setFailed] = useState(false);
-  useEffect(() => {
-    const pageReveal = window.__nasComputingReveal;
+  useLayoutEffect(() => {
+    const pageReveal = window.__nasComputingReveal || installComputingReveal(window,document);
     const motion = matchMedia('(prefers-reduced-motion: reduce)');
     let visible = false;
+    if (pageReveal && !pageReveal.status().finished) window.scrollTo(0,0);
     const player = createIntroLoopController({intro: intro.current, hold: hold.current, introSrc, loopSrc,
       reveal: setLayer, onArrivalProgress: value => pageReveal?.progress(value),
       onBlocked: () => { setBlocked(true); pageReveal?.finish('autoplay-blocked'); },
@@ -21,7 +23,7 @@ export default function ComputingHeroFilm({introSrc, loopSrc, poster, width = 38
       if (motion.matches || document.hidden) pageReveal?.finish(motion.matches ? 'reduced-motion' : 'background');
       player.setEnvironment({visible, hidden: document.hidden, reduced: motion.matches});
     };
-    const observer = new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; if (!visible) pageReveal?.finish('offscreen', false); update(); }, {threshold: .05});
+    const observer = new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; update(); }, {threshold: .05});
     observer.observe(root.current);
     motion.addEventListener('change', update); document.addEventListener('visibilitychange', update);
     update();
@@ -39,7 +41,7 @@ export default function ComputingHeroFilm({introSrc, loopSrc, poster, width = 38
     onKeyDown={event => { if (event.target === event.currentTarget && !event.repeat && (event.key === ' ' || event.key.toLowerCase() === 'k')) { event.preventDefault(); toggle(); } }}>
     <noscript><img src={poster} width={width} height={height} alt="" aria-hidden="true" className={styles.noScriptPoster}/></noscript>
     <img src={poster} width={width} height={height} alt={description} className={styles.poster}/>
-    <video ref={intro} width={width} height={height} muted playsInline preload="auto" disablePictureInPicture disableRemotePlayback
+    <video ref={intro} src={introSrc} width={width} height={height} muted playsInline preload="auto" disablePictureInPicture disableRemotePlayback
       aria-hidden="true" tabIndex={-1} className={styles.video} data-visible={layer === 'intro'}/>
     <video ref={hold} width={width} height={height} muted playsInline loop preload="auto" disablePictureInPicture disableRemotePlayback
       aria-hidden="true" tabIndex={-1} className={styles.video} data-visible={layer === 'loop'}/>
