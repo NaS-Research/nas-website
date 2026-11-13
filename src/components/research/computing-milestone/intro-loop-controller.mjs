@@ -5,6 +5,7 @@ export function createIntroLoopController({intro, hold, introSrc, loopSrc, revea
   let paused = false, blocked = false, failed = false, destroyed = false, loaded = false;
   let pendingFrame = null, frameVideo = null, frameKind = null, holdLoaded = false;
   const inFlight = new Set();
+  let playbackEpoch = 0;
   const eligible = () => !destroyed && visible && !hidden && !reduced && !paused && !blocked && !failed;
   const active = () => phase === 'intro' ? intro : hold;
   function cancelFrame() {
@@ -37,21 +38,29 @@ export function createIntroLoopController({intro, hold, introSrc, loopSrc, revea
     if (!eligible() || inFlight.has(video)) return;
     if (!video.paused) { present(video); return; }
     inFlight.add(video);
+    const attemptEpoch = playbackEpoch;
     Promise.resolve().then(() => eligible() ? video.play() : undefined).then(() => {
       inFlight.delete(video);
       // React can reuse these DOM nodes for a newer visit before this promise
       // settles. An obsolete controller must never pause the new playback.
       if (destroyed) return;
       if (!eligible()) { video.pause(); return; }
+      // A pause/visibility interruption may have settled after we became
+      // eligible again. That old attempt does not represent the resumed play.
+      if (attemptEpoch !== playbackEpoch) { update(); return; }
       present(video);
     }).catch(error => {
       inFlight.delete(video);
       if (!eligible()) return;
+      if (error?.name === 'AbortError' && attemptEpoch !== playbackEpoch) {
+        update(); return;
+      }
       blocked = true; intro.pause(); hold.pause(); cancelFrame(); onBlocked();
     });
   }
   function update() {
     if (!eligible()) {
+      playbackEpoch++;
       intro.pause(); hold.pause(); cancelFrame();
       if (reduced || failed) reveal('poster');
       return;

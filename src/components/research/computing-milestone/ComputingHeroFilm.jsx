@@ -11,7 +11,7 @@ export default function ComputingHeroFilm({introSrc, loopSrc, poster, width = 38
   const [failed, setFailed] = useState(false);
   useLayoutEffect(() => {
     const motion = matchMedia('(prefers-reduced-motion: reduce)');
-    let visible = false, visitReady = false, prepareFrame = null, player = null, pageReveal = null;
+    let visible = false, visitReady = false, scrollIntent = false, prepareFrame = null, player = null, pageReveal = null;
     const update = () => {
       if (motion.matches) pageReveal?.finish('reduced-motion');
       player?.setEnvironment({visible: visible && visitReady, hidden: document.hidden, reduced: motion.matches});
@@ -21,7 +21,7 @@ export default function ComputingHeroFilm({introSrc, loopSrc, poster, width = 38
       // fresh arrival. Destroy the old player BEFORE reusing its media nodes.
       player?.destroy();
       if (prepareFrame !== null) window.cancelAnimationFrame(prepareFrame);
-      visitReady = false;
+      visitReady = false; scrollIntent = false;
       pageReveal?.dispose();
       if (window.__nasComputingReveal?.status().finished) window.__nasComputingReveal.dispose();
       pageReveal = window.__nasComputingReveal || installComputingReveal(window,document);
@@ -53,21 +53,35 @@ export default function ComputingHeroFilm({introSrc, loopSrc, poster, width = 38
     }
     const onPageShow = event => { if (event.persisted) startVisit(); };
     const onPageHide = () => player?.setEnvironment({visible, hidden: true, reduced: motion.matches});
-    const observer = new IntersectionObserver(() => {
+    const checkVisibility = () => {
       // Ignore incidental wheel events, but never strand a reader below an
       // offscreen, paused arrival with invisible article text in either direction.
       const rect = root.current.getBoundingClientRect();
       visible = rect.bottom > 0 && rect.top < window.innerHeight;
-      if (visitReady && !visible && !document.hidden) pageReveal?.finish('scroll-away');
+      if (visitReady && scrollIntent && !visible && !document.hidden) pageReveal?.finish('scroll-away');
       update();
-    }, {threshold: .05});
+    };
+    const observer = new IntersectionObserver(checkVisibility, {threshold: .05});
+    const onScrollIntent = event => {
+      if (event.isTrusted === false) return;
+      scrollIntent = true; checkVisibility();
+    };
+    const onScrollbar = event => {
+      if (event.target === document.documentElement && event.clientX >= document.documentElement.clientWidth) onScrollIntent(event);
+    };
     observer.observe(root.current);
+    document.addEventListener('wheel', onScrollIntent, {passive: true});
+    document.addEventListener('touchmove', onScrollIntent, {passive: true});
+    document.addEventListener('pointerdown', onScrollbar, {passive: true});
     motion.addEventListener('change', update); document.addEventListener('visibilitychange', update);
     window.addEventListener('pageshow', onPageShow); window.addEventListener('pagehide', onPageHide);
     startVisit();
     return () => {
       observer.disconnect(); motion.removeEventListener('change', update);
       document.removeEventListener('visibilitychange', update);
+      document.removeEventListener('wheel', onScrollIntent);
+      document.removeEventListener('touchmove', onScrollIntent);
+      document.removeEventListener('pointerdown', onScrollbar);
       window.removeEventListener('pageshow', onPageShow); window.removeEventListener('pagehide', onPageHide);
       if (prepareFrame !== null) window.cancelAnimationFrame(prepareFrame);
       player?.destroy(); controller.current = null; pageReveal?.dispose();

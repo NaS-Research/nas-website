@@ -14,7 +14,11 @@ export default function ArticleVisitNavigation({paths}) {
     if (!articles.has(pathname) || location.hash) return;
     const restoration = history.scrollRestoration;
     history.scrollRestoration = 'manual';
-    window.scrollTo({top: 0, left: 0, behavior: 'instant'});
+    // The computing prelude owns its opening and completion scroll. A late
+    // hydration of this sibling must not reset that centered viewport.
+    if (pathname !== '/research/building-the-next-stage-of-nas-computing' || !window.__nasComputingReveal) {
+      window.scrollTo({top: 0, left: 0, behavior: 'instant'});
+    }
     return () => { history.scrollRestoration = restoration; };
   }, [pathname, articles]);
   useEffect(() => {
