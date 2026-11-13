@@ -1,7 +1,7 @@
 // The only timer is a fail-open safety limit, never the normal reveal clock.
 export function installComputingReveal(win, doc) {
   const routes = ['/preview/building-the-next-stage-of-nas-computing','/research/building-the-next-stage-of-nas-computing'];
-  if (!routes.includes(win.location.pathname.replace(/\/$/, '')) || doc.hidden || win.location.hash) return null;
+  if (!routes.includes(win.location.pathname.replace(/\/$/, '')) || win.location.hash) return null;
   if (win.__nasComputingReveal) return win.__nasComputingReveal;
   let style, timer, finished = false, amount = 0, reason = 'arrival-pending';
   const listeners = [];
@@ -9,7 +9,7 @@ export function installComputingReveal(win, doc) {
     if (win.matchMedia('(prefers-reduced-motion: reduce)').matches) return null;
     style = doc.createElement('style');
     style.id = 'nas-computing-reveal-state';
-    style.textContent = ':root{--nas-computing-heading-rows:0fr;--nas-computing-stage-space:100svh;--nas-computing-stage-transition:1400ms cubic-bezier(.22,.61,.36,1);--nas-computing-heading-safety:nas-computing-heading-safety 0s 15s forwards;--nas-computing-stage-safety:nas-computing-stage-safety 0s 15s forwards;--nas-computing-page-opacity:0;--nas-computing-page-transition:900ms cubic-bezier(.22,.61,.36,1);--nas-computing-page-safety:nas-computing-reveal-safety 0s 15s forwards}body{background:#000}.nas-navbar,.personal-tools,.nas-skip-link{opacity:var(--nas-computing-page-opacity,1);transition:opacity var(--nas-computing-page-transition,900ms cubic-bezier(.22,.61,.36,1));animation:var(--nas-computing-page-safety,none)}:root:focus-within{--nas-computing-page-opacity:1!important;--nas-computing-page-transition:0s!important;--nas-computing-heading-rows:1fr!important;--nas-computing-stage-space:0px!important;--nas-computing-stage-transition:0s!important}@keyframes nas-computing-reveal-safety{to{opacity:1}}';
+    style.textContent = ':root{--nas-computing-heading-rows:0fr;--nas-computing-stage-space:100svh;--nas-computing-stage-transition:1400ms cubic-bezier(.22,.61,.36,1);--nas-computing-heading-safety:nas-computing-heading-safety 0s 15s forwards;--nas-computing-stage-safety:nas-computing-stage-safety 0s 15s forwards;--nas-computing-page-opacity:0;--nas-computing-page-transition:900ms cubic-bezier(.22,.61,.36,1);--nas-computing-page-safety:nas-computing-reveal-safety 0s 15s forwards}body{background:#000}.nas-navbar,.personal-tools,.nas-skip-link{opacity:var(--nas-computing-page-opacity,1);transition:opacity var(--nas-computing-page-transition,900ms cubic-bezier(.22,.61,.36,1));animation:var(--nas-computing-page-safety,none)}:root:has(:focus-visible){--nas-computing-page-opacity:1!important;--nas-computing-page-transition:0s!important;--nas-computing-heading-rows:1fr!important;--nas-computing-stage-space:0px!important;--nas-computing-stage-transition:0s!important}@keyframes nas-computing-reveal-safety{to{opacity:1}}';
     doc.head.appendChild(style);
     const rule = style.sheet?.cssRules[0]?.style;
     if (!rule) { style.remove(); return null; }
@@ -44,15 +44,24 @@ export function installComputingReveal(win, doc) {
       },
       finish,
       status() { return {finished, amount, reason}; },
-      dispose() { finish('navigation'); style.remove(); delete win.__nasComputingReveal; }
+      dispose() { finish('navigation'); style.remove(); if (win.__nasComputingReveal === api) delete win.__nasComputingReveal; }
     };
     win.__nasComputingReveal = api;
     for (const event of ['keydown','focusin','pointerdown','touchstart','wheel']) listen(doc,event,()=>finish('interaction'));
-    listen(doc,'visibilitychange',()=>{ if (doc.hidden) finish('background'); });
+    // A background visit waits for visibility; keep the same visible-time safety limit.
+    function armSafety() {
+      win.clearTimeout(timer);
+      if (finished) return;
+      rule.setProperty('--nas-computing-heading-safety', doc.hidden ? 'none' : 'nas-computing-heading-safety 0s 15s forwards');
+      rule.setProperty('--nas-computing-stage-safety', doc.hidden ? 'none' : 'nas-computing-stage-safety 0s 15s forwards');
+      rule.setProperty('--nas-computing-page-safety', doc.hidden ? 'none' : 'nas-computing-reveal-safety 0s 15s forwards');
+      if (!doc.hidden) timer = win.setTimeout(()=>finish('load-safety'),15000);
+    }
+    listen(doc,'visibilitychange',armSafety);
     listen(win,'error',event=>{ if (event.message || event.target?.tagName === 'SCRIPT') finish('script-failure'); });
     listen(win,'unhandledrejection',()=>finish('script-failure'));
     listen(win,'pagehide',()=>finish('navigation'));
-    timer = win.setTimeout(()=>finish('load-safety'),15000);
+    armSafety();
     return api;
   } catch {
     style?.remove(); win.clearTimeout(timer);
