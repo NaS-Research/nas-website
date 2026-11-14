@@ -15,6 +15,6 @@ export default async function LoginPage({searchParams}) {
   <section className="auth-card" aria-labelledby="auth-title"><p className="auth-eyebrow auth-mobile-label">NaS Workspace</p><h1 id="auth-title">{titles[mode]}</h1><p className="auth-intro">{introductions[mode]}</p>
    {!ready&&<p className="auth-status" role="status">Account registration is not open yet.</p>}
    {params.error&&<p className="auth-status" role="alert">That sign-in link could not be completed. Please try again or request a new link.</p>}
-   <AuthForm key={mode} mode={mode} ready={ready} email={emailEnabled()} google={providerEnabled('google')} apple={providerEnabled('apple')}/><Link className="auth-back" href="/workspace">Explore the workspace <span aria-hidden="true">↗</span></Link>
+   <AuthForm key={mode} mode={mode} ready={ready} email={emailEnabled()} google={providerEnabled('google')} apple={providerEnabled('apple')} microsoft={providerEnabled('azure')}/><Link className="auth-back" href="/workspace">Explore the workspace <span aria-hidden="true">↗</span></Link>
   </section></div></main>;
 }
