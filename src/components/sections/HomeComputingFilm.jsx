@@ -7,15 +7,20 @@ import {createHomeComputingLoop} from "./home-computing-loop.mjs";
 import styles from "./HomeComputingFeature.module.css";
 
 export default function HomeComputingFilm() {
-  const video = useRef(null), controller = useRef(null);
+  const video = useRef(null), controller = useRef(null), pauseIntent = useRef(false);
   const [ready, setReady] = useState(false), [paused, setPaused] = useState(false);
   const [blocked, setBlocked] = useState(false), [failed, setFailed] = useState(false);
   const [reduced, setReduced] = useState(null);
   useEffect(() => {
     const element = video.current, motion = window.matchMedia("(prefers-reduced-motion: reduce)");
     let visible = false;
+    // Next can retain this component while deactivating/restarting its effect.
+    // Keep the reader's pause choice, but retry transient failures consistently.
+    if (element.error) { element.removeAttribute("src"); element.load(); }
+    setReady(element.readyState >= 2); setBlocked(false); setFailed(false);
     const player = createHomeComputingLoop({video: element, src: computingHeroFilm.loopSrc,
       onBlocked: () => setBlocked(true), onFailure: () => { setFailed(true); setReady(false); }});
+    player.setPaused(pauseIntent.current);
     controller.current = player;
     const update = () => {
       setReduced(motion.matches);
@@ -34,6 +39,7 @@ export default function HomeComputingFilm() {
   }, []);
   function toggle() {
     const next = blocked ? false : !paused;
+    pauseIntent.current = next;
     setPaused(next); setBlocked(false); controller.current?.setPaused(next);
   }
   return <div className={styles.media} data-home-computing-film>

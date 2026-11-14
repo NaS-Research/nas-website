@@ -85,3 +85,16 @@ test('errors stop playback and teardown removes listeners', async () => {
   p.controller.setEnvironment(active); await tick(); assert.equal(p.video.paused, true);
   p.controller.destroy(); assert.equal(p.video.events.size, 0);
 });
+
+
+test('retained homepage re-entry keeps explicit pause intent while resetting transient UI failures', async () => {
+  const film = readFileSync(new URL('../../src/components/sections/HomeComputingFilm.jsx', import.meta.url), 'utf8');
+  assert.match(film, /pauseIntent\.current = next/);
+  assert.match(film, /player\.setPaused\(pauseIntent\.current\)/);
+  assert.match(film, /setReady\(element\.readyState >= 2\); setBlocked\(false\); setFailed\(false\)/);
+  const video = media();
+  const old = player(video); old.controller.setEnvironment(active); await tick(); old.controller.setPaused(true); old.controller.destroy();
+  const retained = player(video); retained.controller.setPaused(true); retained.controller.setEnvironment(active); await tick();
+  assert.equal(video.paused, true);
+  retained.controller.setPaused(false); await tick(); assert.equal(video.paused, false); retained.controller.destroy();
+});
