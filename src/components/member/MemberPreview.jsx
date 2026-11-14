@@ -1,5 +1,6 @@
 'use client';
 import {useState} from 'react';
+import Link from 'next/link';
 import MemberHome from './MemberHome';
 import {MemberPreviewProvider} from './MemberProvider';
 const examples=[
@@ -7,4 +8,4 @@ const examples=[
  {path:'/research/pam50-technical-repeatability',item:{title:'PAM50 technical repeatability',type:'paper',sections:[]},saved:true,progress:{},notes:{},practices:{}},
  {path:'/learn/pharmacy/atlas',item:{title:'Human Atlas',type:'tool',sections:[]},saved:true,progress:{},notes:{},practices:{}},
 ];
-export default function MemberPreview(){const [items,setItems]=useState(examples);return <MemberPreviewProvider value={{status:'ready',items,message:'Design preview only. Sample entries are not account data.',saving:false,retry:()=>{},save:async(path,action,data)=>{if(action==='save')setItems(old=>old.map(i=>i.path===path?{...i,saved:data.saved}:i));return true;}}}><p style={{position:'relative',padding:'100px 24px 0',marginBottom:-100,color:'#c9b386',textAlign:'center',fontSize:12}}>Development preview · Sample content · No account data or syncing</p><MemberHome/></MemberPreviewProvider>}
+export default function MemberPreview(){const [empty,setEmpty]=useState(false);const [items,setItems]=useState(examples);return <MemberPreviewProvider value={{status:'ready',items:empty?[]:items,message:'',saving:false,retry:()=>{},save:async(path,action,data)=>{if(action==='save')setItems(old=>old.map(i=>i.path===path?{...i,saved:data.saved}:i));return true;}}}><div className="workspace-preview-controls"><span>Design preview · Sample account</span><div><button aria-pressed={!empty} onClick={()=>setEmpty(false)}>With activity</button><button aria-pressed={empty} onClick={()=>setEmpty(true)}>New account</button></div></div><MemberHome displayName="Dalron" accountControls={<><span>Sample account</span><Link href="/workspace">About the workspace ↗</Link></>}/></MemberPreviewProvider>}

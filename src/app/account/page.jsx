@@ -1,5 +1,6 @@
 import MemberHome from "@/components/member/MemberHome";
 import Link from 'next/link';
+import {memberName} from '@/lib/member/presentation.mjs';
 import {redirect} from 'next/navigation';
 import {adminSession} from '@/lib/auth/admin';
 import {authReady,emailEnabled} from '@/lib/auth/config.mjs';
@@ -11,8 +12,7 @@ export default async function AccountPage({searchParams}){
  if(!authReady())redirect('/login');
  const session=await adminSession();const {user}=session;
  if(!user)redirect('/login');
- const profileName=user.user_metadata?.full_name;
- const displayName=typeof profileName==='string'&&profileName.trim()?profileName.trim().slice(0,100):user.email;
+ const displayName=memberName(user);
  const {tab}=await searchParams;
- return <><MemberHome initialTab={tab==='saved'?'Saved':'Continue'} /><div className="member-account-bar">{session.isAdmin&&<Link href="/account/admin">Admin activity ↗</Link>}<span className="member-identity">Signed in as {displayName}</span>{emailEnabled()&&<Link href="/login?mode=reset">Reset password</Link>}<form action={signOut}><button>Log out</button></form></div></>;
+ return <MemberHome displayName={displayName} initialTab={tab==='saved'?'Saved':'Continue'} accountControls={<>{session.isAdmin&&<Link href="/account/admin">Admin activity ↗</Link>}<span className="member-identity">Signed in as {displayName||user.email}</span>{emailEnabled()&&<Link href="/login?mode=reset">Reset password</Link>}<form action={signOut}><button>Log out</button></form></>}/>;
 }
