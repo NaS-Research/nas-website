@@ -5,7 +5,7 @@ const csp = [
   "default-src 'self'", "base-uri 'self'", "object-src 'none'",
   "frame-ancestors 'self'", "form-action 'self' https://mwjbecfyflaltxvxerje.supabase.co https://accounts.google.com",
   `script-src 'self' 'unsafe-inline' ${production ? "'wasm-unsafe-eval'" : "'unsafe-eval'"} https://static.sketchfab.com`,
-  "style-src 'self' 'unsafe-inline'", "img-src 'self' data: blob:",
+  "style-src 'self' 'unsafe-inline'", "img-src 'self' data: blob: https://lh3.googleusercontent.com https://lh4.googleusercontent.com https://lh5.googleusercontent.com https://lh6.googleusercontent.com",
   "font-src 'self' data:", "media-src 'self' blob:",
   `connect-src 'self' blob:${production ? "" : " ws: wss:"}`,
   "frame-src 'self' https://sketchfab.com https://www.youtube-nocookie.com", "worker-src 'self' blob:",

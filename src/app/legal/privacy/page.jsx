@@ -21,10 +21,19 @@ const sections = [
     title: "Information we collect",
     paragraphs: [
       "We collect information you choose to provide when you contact us by email. This may include your name, email address, affiliation, the contents of your message, and any attachments you send.",
-      "The public website does not currently provide a working Nicole chat service. Drug searches and label requests are handled by our website and sent to U.S. National Library of Medicine services (RxNorm and DailyMed) and the U.S. Food and Drug Administration (openFDA). Use drug names only; do not enter patient details or other sensitive information.",
+      "Nicole processes messages you send and stores your conversations and named folders with your account. Drug searches and label requests are handled by our website and sent to U.S. National Library of Medicine services (RxNorm and DailyMed) and the U.S. Food and Drug Administration (openFDA). Use drug names only; do not enter patient details or other sensitive information.",
       "Our hosting and security providers may automatically process basic technical information needed to deliver and protect the site. This can include an IP address, browser and device information, requested pages, timestamps, referring pages, and error or security logs.",
       "If you create a NaS account with email and password, we collect your email address, name, and any affiliation you provide. Supabase handles password verification. Resend delivers account confirmation and password reset emails.",
       "If you create a NaS account with Google, we receive your Google account identifier, email address, and basic profile information such as your name and profile image. Google verifies your sign-in; NaS does not receive your Google password or access to your Gmail messages. We store reading progress, saved resources, and notes that you choose to keep in your private workspace. The website does not accept payments.",
+    ],
+  },
+  {
+    id: "nicole",
+    title: "Conversations with Nicole",
+    paragraphs: [
+      "Nicole is an educational and research assistant powered by OpenAI. When you send a message, we send your question, the current conversation history, relevant public NaS resource information and any public page you explicitly choose to include to OpenAI to generate a response. We do not include your saved notes, account profile or other conversations in the model request. A pseudonymous account identifier is included for abuse prevention.",
+      "Your conversation messages, responses, names and folders are saved with your NaS account using Supabase so you can return to them on another device. A browser-tab cache keeps your selected conversation and pending edits through navigation; it clears when you sign out. You can rename or delete individual conversations. Removing a folder keeps its conversations. Account deletion also removes your stored conversation library, subject to limited backup retention.",
+      "OpenAI processes requests under its applicable API terms and retention policies. We request that responses not be stored as retrievable response objects; this does not mean that OpenAI keeps no operational or abuse-monitoring records. Do not enter patient details or other sensitive personal information. Nicole can make mistakes and is not a substitute for professional medical advice or source verification.",
     ],
   },
   {
@@ -114,7 +123,7 @@ export default function PrivacyPolicyPage() {
       eyebrow="Legal · NaS Research"
       title="Privacy Policy"
       summary="How information is handled when you visit NaS, use our educational tools, or contact us."
-      effectiveDate="October 19, 2026"
+      effectiveDate="November 14, 2026"
       sections={sections}
     />
   );
