@@ -17,6 +17,7 @@ export function useNicoleLibrary(member){
    return;
   }
   if(!owner)return;
+  try{for(let i=sessionStorage.length-1;i>=0;i--){const key=sessionStorage.key(i);if((key?.startsWith(PREFIX)&&key!==PREFIX+owner)||(key?.startsWith('nas-nicole-v1:')&&key!=='nas-nicole-v1:'+owner))sessionStorage.removeItem(key);}}catch{}
   if(latest.current.owner===owner&&latest.current.ready&&loadedReload.current===reload)return;
   const generation=++epoch.current;const controller=new AbortController();blocked.current=true;saving.current=false;setError('');setStatus('Loading conversations…');setProfile(null);
   setState({owner,library:emptyLibrary(),activeId:null,ready:false});

@@ -30,12 +30,13 @@ export default function NicoleProvider({children}){
   }
  },[member.status,member.userId,chat.owner]);
  useEffect(()=>{
-  setIncludePage(false);
+  setIncludePage(false);setSidebar(false);
   const title=document.querySelector('main h1')?.textContent?.trim();
   const allowed=/^\/(research|learn)(\/|$)/.test(pathname)&&!/(?:^|\/)(preview|admin|studio)(?:\/|$)/.test(pathname);
   setPage(allowed&&title?{path:pathname,title:title.slice(0,180)}:null);
  },[pathname]);
  useEffect(()=>()=>active.current?.abort(),[]);
+ useEffect(()=>{const narrow=matchMedia('(max-width:900px)');const resize=()=>{if(!narrow.matches)setSidebar(false);};narrow.addEventListener('change',resize);return()=>narrow.removeEventListener('change',resize);},[]);
  useEffect(()=>{
   if(!open||full)return;
   const first=panel.current?.querySelector('textarea');first?.focus();
