@@ -5,24 +5,41 @@ export function installComputingReveal(win, doc) {
   if (win.__nasComputingReveal) return win.__nasComputingReveal;
   let style, timer, safetyCycle = false, finished = false, amount = 0, reason = 'arrival-pending';
   const listeners = [];
-  let scrollFrame;
+  let scrollFrame, visualStage, settleStage;
   const scrollListeners = [];
-  function stopScroll() {
+  function stopScroll(preservePosition = true) {
     if (scrollFrame !== undefined) win.cancelAnimationFrame(scrollFrame);
     scrollFrame = undefined;
+    const settle = settleStage; settleStage = undefined;
+    settle?.(preservePosition !== false);
     for (const [target, event, fn] of scrollListeners) target.removeEventListener(event, fn, true);
     scrollListeners.length = 0;
   }
-  function scrollToHeading() {
+  function scrollToHeading(rule, stage) {
     stopScroll();
     const startY = win.scrollY, started = win.performance.now(), duration = 2800;
-    if (startY <= 0) return;
+    if (stage) {
+      // The figure contains one film. Release the staging height without a
+      // visible jump if a reader interrupts midway; navigation must not scroll.
+      settleStage = preservePosition => {
+        const before = stage.film.getBoundingClientRect().top;
+        rule.setProperty('--nas-computing-stage-space', '0px');
+        const shift = stage.film.getBoundingClientRect().top - before;
+        if (preservePosition && !doc.hidden && Math.abs(shift) > .01) {
+          win.scrollTo({top: Math.max(0, win.scrollY + shift), left: 0, behavior: 'instant'});
+        }
+      };
+    }
+    if (startY <= 0) { stopScroll(false); return; }
     // Native smooth scrolling has a browser-selected (usually short) duration.
     // Smootherstep gives this slide a gentle ramp, with zero velocity and
     // acceleration at both ends, consistently across browsers.
     function frame(now) {
       const t = Math.min(1, Math.max(0, (now - started) / duration));
       const eased = t * t * t * (t * (t * 6 - 15) + 10);
+      // Stage and viewport share one clock: an independent fast stage collapse
+      // would pull the centered film the wrong way before the scroll ramps up.
+      if (stage) rule.setProperty('--nas-computing-stage-space', `${stage.start + (stage.end - stage.start) * eased}px`);
       win.scrollTo({top: startY * (1 - eased), left: 0, behavior: 'instant'});
       if (t < 1) scrollFrame = win.requestAnimationFrame(frame);
       else stopScroll();
@@ -33,8 +50,9 @@ export function installComputingReveal(win, doc) {
     }
     // Never compete with navigation, focus access, or an intentional gesture.
     for (const event of ['wheel', 'touchstart', 'pointerdown', 'keydown']) on(doc, event);
-    on(win, 'pagehide');
-    on(doc, 'visibilitychange', () => { if (doc.hidden) stopScroll(); });
+    on(win, 'resize'); // Measurements are no longer valid after a viewport change.
+    on(win, 'pagehide', () => stopScroll(false));
+    on(doc, 'visibilitychange', () => { if (doc.hidden) stopScroll(false); });
     scrollFrame = win.requestAnimationFrame(frame);
   }
   try {
@@ -49,30 +67,35 @@ export function installComputingReveal(win, doc) {
     function removeListeners() { for (const [target,event,fn] of listeners) target.removeEventListener(event,fn,true); listeners.length = 0; }
     function finish(why = 'access', immediate = true) {
       // An accessibility update can arrive after the reveal has started.
-      if (immediate) stopScroll();
+      if (immediate) stopScroll(why !== 'navigation');
       if (finished) return;
+      const film = visualStage?.firstElementChild;
+      const stage = why === 'arrival-complete' && !immediate && film ? {
+        film, start: visualStage.getBoundingClientRect().height, end: film.getBoundingClientRect().height
+      } : null;
       finished = true; amount = 1; reason = why;
       if (!immediate) {
         rule.setProperty('--nas-computing-page-transition', '2200ms ease-in-out');
-        rule.setProperty('--nas-computing-stage-transition', '1600ms cubic-bezier(.22,.61,.36,1)');
+        rule.setProperty('--nas-computing-stage-transition', '0s');
       }
       if (immediate) {
         rule.setProperty('--nas-computing-page-transition', '0s');
         rule.setProperty('--nas-computing-stage-transition', '0s');
       }
       rule.setProperty('--nas-computing-heading-rows', '1fr');
-      rule.setProperty('--nas-computing-stage-space', '0px');
+      rule.setProperty('--nas-computing-stage-space', stage ? `${stage.start}px` : '0px');
       rule.setProperty('--nas-computing-heading-safety', 'none');
       rule.setProperty('--nas-computing-stage-safety', 'none');
       rule.setProperty('--nas-computing-page-opacity', '1');
       rule.setProperty('--nas-computing-page-safety', 'none');
       rule.setProperty('--nas-computing-static-poster', '1');
       win.clearTimeout(timer); removeListeners();
-      if (why === 'arrival-complete' && !immediate) scrollToHeading();
+      if (why === 'arrival-complete' && !immediate) scrollToHeading(rule, stage);
     }
     const api = {
       prepare(visual) {
         if (finished || !visual) return;
+        visualStage = visual;
         // Keep the real heading in document flow, hidden above the viewport.
         // Center the film first, so completion can genuinely scroll UP to the
         // article's top instead of expanding a collapsed heading underneath it.
@@ -94,7 +117,7 @@ export function installComputingReveal(win, doc) {
       },
       finish,
       status() { return {finished, amount, reason}; },
-      dispose() { stopScroll(); finish('navigation'); style.remove(); if (win.__nasComputingReveal === api) delete win.__nasComputingReveal; }
+      dispose() { stopScroll(false); finish('navigation'); style.remove(); if (win.__nasComputingReveal === api) delete win.__nasComputingReveal; }
     };
     win.__nasComputingReveal = api;
     // Pointer focus, trackpad inertia and the click that opened this route are

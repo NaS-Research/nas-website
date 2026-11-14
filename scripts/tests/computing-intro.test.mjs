@@ -130,7 +130,7 @@ test('opening centers the hidden natural-layout film, then scrolls to top with a
   assert.deepEqual(scrolls.at(-1), {top: 0, left: 0, behavior: 'instant'});
   assert.match(rules.get('--nas-computing-page-transition'), /^2200ms/);
   assert.equal(rules.get('--nas-computing-page-opacity'), '1');
-  assert.match(rules.get('--nas-computing-stage-transition'), /^1600ms/);
+  assert.equal(rules.get('--nas-computing-stage-transition'), '0s');
   reveal.prepare(visual); assert.equal(scrolls.length, 3); // Never re-center a finished visit.
   reveal.dispose();
 });
@@ -219,11 +219,66 @@ test('heading slide relinquishes scrolling on input, hidden page, pagehide and d
     const count = scrolls.length;
     if (action === 'hidden') { doc.hidden = true; doc.emit('visibilitychange'); }
     else if (action === 'pagehide') win.emit('pagehide');
+    else if (action === 'resize') win.emit('resize');
     else if (action === 'dispose') reveal.dispose();
     else if (action === 'reduced-motion') reveal.finish('reduced-motion');
     else doc.emit(action);
     assert.equal(frames.size, 0, action);
     frame(2800); assert.equal(scrolls.length, count, action);
+    reveal.dispose();
+  }
+});
+
+
+function stagedPage() {
+  const env = page();
+  const {win, rules} = env;
+  win.innerHeight = 757;
+  const heading = 714, naturalHeight = 628;
+  const height = () => Math.max(naturalHeight, parseFloat(rules.get('--nas-computing-stage-space') ?? '757'));
+  const film = {getBoundingClientRect: () => ({height: naturalHeight, top: heading + (height() - naturalHeight) / 2 - win.scrollY})};
+  const visual = {firstElementChild: film, getBoundingClientRect: () => ({height: height(), top: heading - win.scrollY})};
+  return {...env, film, visual, height};
+}
+
+test('film geometry moves one way from the first frame while stage and scroll share the 2.8s ramp', () => {
+  const {win, doc, rules, frame, film, visual, height} = stagedPage();
+  const reveal = installComputingReveal(win, doc); reveal.prepare(visual);
+  const startTop = film.getBoundingClientRect().top;
+  assert.equal(startTop, 64.5);
+  reveal.progress(1);
+  assert.equal(film.getBoundingClientRect().top, startTop);
+  let priorTop = startTop, priorScroll = win.scrollY;
+  for (let now = 0; now <= 2800; now += 10) {
+    frame(now);
+    const t = now / 2800, eased = t*t*t*(t*(6*t-15)+10);
+    const top = film.getBoundingClientRect().top;
+    assert.ok(top >= priorTop - 1e-8, `film reversed at ${now}ms`);
+    assert.ok(win.scrollY <= priorScroll + 1e-8, `scroll reversed at ${now}ms`);
+    assert.ok(Math.abs(top - (64.5 + (714 - 64.5) * eased)) < 1e-7);
+    priorTop = top; priorScroll = win.scrollY;
+  }
+  assert.equal(win.scrollY, 0); assert.equal(height(), 628);
+  assert.equal(rules.get('--nas-computing-stage-space'), '0px');
+  assert.equal(rules.get('--nas-computing-page-transition'), '2200ms ease-in-out');
+  reveal.dispose();
+});
+
+test('interruption clears stage ownership without moving the film; navigation never adjusts scroll', () => {
+  for (const action of ['wheel', 'keydown', 'resize', 'reduced-motion', 'pagehide', 'dispose']) {
+    const {win, doc, rules, frame, frames, film, visual, scrolls} = stagedPage();
+    const reveal = installComputingReveal(win, doc); reveal.prepare(visual); reveal.progress(1); frame(700);
+    const before = film.getBoundingClientRect().top, count = scrolls.length;
+    if (action === 'dispose') reveal.dispose();
+    else if (action === 'pagehide') win.emit('pagehide');
+    else if (action === 'resize') win.emit('resize');
+    else if (action === 'reduced-motion') reveal.finish('reduced-motion');
+    else doc.emit(action);
+    assert.equal(frames.size, 0);
+    assert.equal(rules.get('--nas-computing-stage-space'), '0px');
+    if (action === 'pagehide' || action === 'dispose') assert.equal(scrolls.length, count);
+    else assert.ok(Math.abs(film.getBoundingClientRect().top - before) < 1e-7, action);
+    const stopped = scrolls.length; frame(2800); assert.equal(scrolls.length, stopped);
     reveal.dispose();
   }
 });
