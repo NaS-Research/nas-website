@@ -3,11 +3,11 @@ import {useActionState,useState} from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import {authenticate,socialSignIn} from './actions';
-export default function AuthForm({mode,ready,email,google,apple}) {
+export default function AuthForm({mode,ready,email,google,apple,microsoft}) {
  const [state,action,pending]=useActionState(authenticate,{});
  const [showPassword,setShowPassword]=useState(false);
  const signup=mode==='signup',reset=mode==='reset',update=mode==='update';
- const showSocial=ready&&!reset&&!update&&(google||apple);
+ const showSocial=ready&&!reset&&!update&&(google||apple||microsoft);
  const social=showSocial&&(
   <div className="auth-social">
    {google&&<form action={socialSignIn}>
@@ -15,6 +15,10 @@ export default function AuthForm({mode,ready,email,google,apple}) {
     <button type="submit" className="auth-google-button" aria-label="Sign in with Google" title="Sign in with Google">
      <Image src="/assets/images/google-sign-in-dark-round.svg" width={40} height={40} alt="" unoptimized />
     </button>
+   </form>}
+   {microsoft&&<form action={socialSignIn}>
+    <input type="hidden" name="provider" value="azure"/>
+    <button type="submit">Continue with Microsoft</button>
    </form>}
    {apple&&<form action={socialSignIn}>
     <input type="hidden" name="provider" value="apple"/>
@@ -24,7 +28,7 @@ export default function AuthForm({mode,ready,email,google,apple}) {
  );
  if(!email) return <>
   {social}
-  {ready&&google&&<p className="auth-provider-note">Use your Google account to sign in or create a NaS account.</p>}
+  {showSocial&&<p className="auth-provider-note">Use a connected account to sign in or create a NaS account.</p>}
   <p className="auth-provider-note">By continuing, you agree to the <Link href="/legal/terms">Terms</Link> and acknowledge the <Link href="/legal/privacy">Privacy Policy</Link>.</p>
  </>;
 

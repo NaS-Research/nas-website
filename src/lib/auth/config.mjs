@@ -16,7 +16,7 @@ export function isSiteOrigin(origin) {
 }
 
 export function providerEnabled(provider) {
- return authReady() && ['google','apple'].includes(provider) && process.env[`NAS_AUTH_${provider.toUpperCase()}_ENABLED`] === 'true';
+ return authReady() && ['google','apple','azure'].includes(provider) && process.env[`NAS_AUTH_${provider.toUpperCase()}_ENABLED`] === 'true';
 }
 
 export function emailEnabled() {
