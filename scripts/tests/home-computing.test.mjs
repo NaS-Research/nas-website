@@ -112,3 +112,11 @@ test('playback label is visually hidden except on keyboard focus; reduced-motion
   assert.match(focus, /clip-path: none/); assert.match(focus, /min-height: 44px/);
   assert.match(css, /@media \(prefers-reduced-motion: reduce\).*display: none/s);
 });
+
+
+test('the identity-to-Mac boundary has no decorative divider', () => {
+  const css = readFileSync(new URL('../../src/app/home-refinements.css', import.meta.url), 'utf8');
+  const identity = css.match(/\.home-research-identity \{([^}]+)\}/)[1];
+  assert.match(identity, /border-bottom: 0/);
+  assert.doesNotMatch(identity, /solid|dashed/);
+});
