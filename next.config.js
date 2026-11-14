@@ -12,6 +12,8 @@ const csp = [
   ...(production ? ["upgrade-insecure-requests"] : []),
 ].join("; ");
 module.exports = {
+  // Sample-only design review is available on deploy previews, never production.
+  env: { NAS_WORKSPACE_DESIGN_PREVIEW: process.env.CONTEXT === 'deploy-preview' ? 'true' : 'false' },
   experimental: {cpus:1, webpackMemoryOptimizations:true},
   poweredByHeader: false,
   async redirects() {
@@ -23,7 +25,6 @@ module.exports = {
       { source: "/research/nas-brca-002/reproducibility.zip", destination: "/research/nas-brca-002/reproducibility-v1.0.1.zip", permanent: true },
       { source: "/research/programs", destination: "/products", permanent: true },
       { source: "/contact", destination: "/support", permanent: true },
-      { source: "/nicole", destination: "/research", permanent: false },
     ];
   },
   images: { remotePatterns: [{ protocol: "https", hostname: "i.ytimg.com", port: "", pathname: "/vi/*/hq720.jpg", search: "" }] },
