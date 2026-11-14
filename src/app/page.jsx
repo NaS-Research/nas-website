@@ -8,7 +8,20 @@ import CurrentResearch from "@/components/sections/CurrentResearch";
 import WorkWithNas from "@/components/sections/WorkWithNas";
 import Footer from "@/components/Footer";
 
-export const metadata = { alternates: { canonical: "/" }, openGraph: { url: "/", siteName: "NaS Research", type: "website", images: [{ url: "/nas-logo-share-v1.png", width: 1200, height: 630, alt: "NaS Research" }] } };
+// Keep social-card branding concise without replacing the inherited SEO title.
+export const metadata = {
+  alternates: { canonical: "/" },
+  openGraph: {
+    title: "NaS Research",
+    url: "/", siteName: "NaS Research", type: "website",
+    images: [{ url: "/nas-logo-share-v1.png", width: 1200, height: 630, alt: "NaS Research" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "NaS Research",
+    images: ["/nas-logo-share-v1.png"],
+  },
+};
 
 export default function Home() {
   return (
