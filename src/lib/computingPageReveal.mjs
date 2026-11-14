@@ -1,10 +1,42 @@
-// The only timer is a fail-open safety limit, never the normal reveal clock.
+// Media progress starts the reveal; timers only provide fail-open protection.
 export function installComputingReveal(win, doc) {
   const routes = ['/preview/building-the-next-stage-of-nas-computing','/research/building-the-next-stage-of-nas-computing'];
   if (!routes.includes(win.location.pathname.replace(/\/$/, '')) || win.location.hash) return null;
   if (win.__nasComputingReveal) return win.__nasComputingReveal;
   let style, timer, safetyCycle = false, finished = false, amount = 0, reason = 'arrival-pending';
   const listeners = [];
+  let scrollFrame;
+  const scrollListeners = [];
+  function stopScroll() {
+    if (scrollFrame !== undefined) win.cancelAnimationFrame(scrollFrame);
+    scrollFrame = undefined;
+    for (const [target, event, fn] of scrollListeners) target.removeEventListener(event, fn, true);
+    scrollListeners.length = 0;
+  }
+  function scrollToHeading() {
+    stopScroll();
+    const startY = win.scrollY, started = win.performance.now(), duration = 2800;
+    if (startY <= 0) return;
+    // Native smooth scrolling has a browser-selected (usually short) duration.
+    // Smootherstep gives this slide a gentle ramp, with zero velocity and
+    // acceleration at both ends, consistently across browsers.
+    function frame(now) {
+      const t = Math.min(1, Math.max(0, (now - started) / duration));
+      const eased = t * t * t * (t * (t * 6 - 15) + 10);
+      win.scrollTo({top: startY * (1 - eased), left: 0, behavior: 'instant'});
+      if (t < 1) scrollFrame = win.requestAnimationFrame(frame);
+      else stopScroll();
+    }
+    function on(target, event, fn = stopScroll) {
+      target.addEventListener(event, fn, {capture: true, passive: true});
+      scrollListeners.push([target, event, fn]);
+    }
+    // Never compete with navigation, focus access, or an intentional gesture.
+    for (const event of ['wheel', 'touchstart', 'pointerdown', 'keydown']) on(doc, event);
+    on(win, 'pagehide');
+    on(doc, 'visibilitychange', () => { if (doc.hidden) stopScroll(); });
+    scrollFrame = win.requestAnimationFrame(frame);
+  }
   try {
     if (win.matchMedia('(prefers-reduced-motion: reduce)').matches) return null;
     style = doc.createElement('style');
@@ -16,6 +48,8 @@ export function installComputingReveal(win, doc) {
     function listen(target, event, fn) { target.addEventListener(event, fn, true); listeners.push([target,event,fn]); }
     function removeListeners() { for (const [target,event,fn] of listeners) target.removeEventListener(event,fn,true); listeners.length = 0; }
     function finish(why = 'access', immediate = true) {
+      // An accessibility update can arrive after the reveal has started.
+      if (immediate) stopScroll();
       if (finished) return;
       finished = true; amount = 1; reason = why;
       if (!immediate) {
@@ -33,8 +67,8 @@ export function installComputingReveal(win, doc) {
       rule.setProperty('--nas-computing-page-opacity', '1');
       rule.setProperty('--nas-computing-page-safety', 'none');
       rule.setProperty('--nas-computing-static-poster', '1');
-      if (why === 'arrival-complete' && !immediate) win.scrollTo({top:0,left:0,behavior:'smooth'});
       win.clearTimeout(timer); removeListeners();
+      if (why === 'arrival-complete' && !immediate) scrollToHeading();
     }
     const api = {
       prepare(visual) {
@@ -60,7 +94,7 @@ export function installComputingReveal(win, doc) {
       },
       finish,
       status() { return {finished, amount, reason}; },
-      dispose() { finish('navigation'); style.remove(); if (win.__nasComputingReveal === api) delete win.__nasComputingReveal; }
+      dispose() { stopScroll(); finish('navigation'); style.remove(); if (win.__nasComputingReveal === api) delete win.__nasComputingReveal; }
     };
     win.__nasComputingReveal = api;
     // Pointer focus, trackpad inertia and the click that opened this route are
@@ -92,7 +126,7 @@ export function installComputingReveal(win, doc) {
     armSafety();
     return api;
   } catch {
-    style?.remove(); win.clearTimeout(timer);
+    stopScroll(); style?.remove(); win.clearTimeout(timer);
     for (const [target,event,fn] of listeners) target.removeEventListener(event,fn,true);
     return null;
   }

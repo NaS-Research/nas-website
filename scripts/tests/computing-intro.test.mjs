@@ -13,14 +13,15 @@ class Target {
   emit(name, event = {}) { for (const fn of [...(this.listeners.get(name) || [])]) fn(event); }
 }
 function page({hidden = false, reduced = false, hash = '', pathname = '/research/building-the-next-stage-of-nas-computing'} = {}) {
-  const win = new Target(), doc = new Target(), rules = new Map(), timers = new Map(), scrolls = [];
-  let nextTimer = 0;
+  const win = new Target(), doc = new Target(), rules = new Map(), timers = new Map(), scrolls = [], frames = new Map();
+  let nextTimer = 0, nextFrame = 0, time = 0;
   Object.assign(win, {scrollY: 0, innerHeight: 800, location: {pathname, hash}, matchMedia: () => ({matches: reduced}),
+    performance: {now: () => time}, requestAnimationFrame(fn) { frames.set(++nextFrame, fn); return nextFrame; }, cancelAnimationFrame(id) { frames.delete(id); },
     setTimeout(fn) { timers.set(++nextTimer, fn); return nextTimer; }, clearTimeout(id) { timers.delete(id); }, scrollTo(value) { scrolls.push(value); this.scrollY = value.top; }});
   Object.assign(doc, {hidden, head: {appendChild() {}}, createElement() {
     return {sheet: {cssRules: [{style: {setProperty: (key, value) => rules.set(key, value)}}]}, remove() {}};
   }});
-  return {win, doc, rules, timers, scrolls};
+  return {win, doc, rules, timers, scrolls, frames, frame(now) { time = now; const callbacks = [...frames.values()]; frames.clear(); callbacks.forEach(fn => fn(now)); }};
 }
 function media() {
   const video = new Target();
@@ -116,7 +117,7 @@ test('autoplay rejection and media failures report safe fallbacks', async () => 
 
 
 test('opening centers the hidden natural-layout film, then scrolls to top with a slow fade', () => {
-  const {win, doc, rules, scrolls} = page(); const reveal = installComputingReveal(win, doc);
+  const {win, doc, rules, scrolls, frame} = page(); const reveal = installComputingReveal(win, doc);
   const visual = {getBoundingClientRect: () => ({top: 720 - win.scrollY, height: 800})};
   reveal.prepare(visual);
   assert.deepEqual(scrolls.at(-1), {top: 720, left: 0, behavior: 'instant'});
@@ -125,7 +126,8 @@ test('opening centers the hidden natural-layout film, then scrolls to top with a
   reveal.progress(.99);
   assert.equal(scrolls.length, 2); assert.equal(reveal.status().finished, false);
   reveal.progress(1);
-  assert.deepEqual(scrolls.at(-1), {top: 0, left: 0, behavior: 'smooth'});
+  frame(2800);
+  assert.deepEqual(scrolls.at(-1), {top: 0, left: 0, behavior: 'instant'});
   assert.match(rules.get('--nas-computing-page-transition'), /^2200ms/);
   assert.equal(rules.get('--nas-computing-page-opacity'), '1');
   assert.match(rules.get('--nas-computing-stage-transition'), /^1600ms/);
@@ -135,7 +137,7 @@ test('opening centers the hidden natural-layout film, then scrolls to top with a
 
 
 test('programmatic focus and unrelated script failures do not cancel a playing arrival', () => {
-  const {win, doc, scrolls} = page(); const reveal = installComputingReveal(win, doc);
+  const {win, doc, scrolls, frame} = page(); const reveal = installComputingReveal(win, doc);
   reveal.prepare({getBoundingClientRect: () => ({top: 720, height: 800})});
   reveal.progress(.2);
   doc.emit('focusin', {target: {matches: () => true}});
@@ -145,7 +147,8 @@ test('programmatic focus and unrelated script failures do not cancel a playing a
   assert.equal(reveal.status().finished, false);
   reveal.progress(1);
   assert.equal(reveal.status().reason, 'arrival-complete');
-  assert.deepEqual(scrolls.at(-1), {top: 0, left: 0, behavior: 'smooth'});
+  frame(2800);
+  assert.deepEqual(scrolls.at(-1), {top: 0, left: 0, behavior: 'instant'});
   reveal.dispose();
 });
 
@@ -191,4 +194,36 @@ test('a resolved interrupted play also resumes after visibility returns', async 
   p.controller.setEnvironment({...environment, hidden: true});
   p.controller.setEnvironment(environment); resolveFirst(); await tick();
   assert.equal(calls, 2); assert.equal(intro.paused, false); p.controller.destroy();
+});
+
+
+test('heading slide takes 2.8 seconds with a symmetric gentle acceleration and deceleration', () => {
+  const {win, doc, frame, frames} = page(); const reveal = installComputingReveal(win, doc);
+  win.scrollY = 1000;
+  reveal.progress(.99); assert.equal(frames.size, 0);
+  reveal.progress(1); assert.equal(win.scrollY, 1000);
+  const positions = [win.scrollY];
+  for (const now of [700, 1400, 2100, 2800]) { frame(now); positions.push(win.scrollY); }
+  assert.deepEqual(positions, [1000, 896.484375, 500, 103.515625, 0]);
+  assert.equal(frames.size, 0);
+  assert.ok(positions[0] - positions[1] < positions[1] - positions[2]);
+  assert.ok(positions[2] - positions[3] > positions[3] - positions[4]);
+  assert.equal(doc.listeners.get('wheel').size, 0);
+  reveal.dispose();
+});
+
+test('heading slide relinquishes scrolling on input, hidden page, pagehide and disposal', () => {
+  for (const action of ['wheel', 'touchstart', 'pointerdown', 'keydown', 'hidden', 'pagehide', 'reduced-motion', 'dispose']) {
+    const {win, doc, frame, frames, scrolls} = page(); const reveal = installComputingReveal(win, doc);
+    win.scrollY = 720; reveal.progress(1); frame(700);
+    const count = scrolls.length;
+    if (action === 'hidden') { doc.hidden = true; doc.emit('visibilitychange'); }
+    else if (action === 'pagehide') win.emit('pagehide');
+    else if (action === 'dispose') reveal.dispose();
+    else if (action === 'reduced-motion') reveal.finish('reduced-motion');
+    else doc.emit(action);
+    assert.equal(frames.size, 0, action);
+    frame(2800); assert.equal(scrolls.length, count, action);
+    reveal.dispose();
+  }
 });
