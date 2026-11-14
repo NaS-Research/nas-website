@@ -15,8 +15,8 @@ export default function NicoleProvider({children}){
  const [page,setPage]=useState(null);const [includePage,setIncludePage]=useState(false);
  const active=useRef(null);const sequence=useRef(0);const openingButton=useRef(null);const panel=useRef(null);const identity=useRef(null);
  const full=pathname==='/nicole';
- const userId=member.status==='guest'?null:member.userId||(member.status==='loading'?chat.owner:null);
- identity.current=userId;
+ const userId=member.status==='ready'?member.userId:null;
+ identity.current=member.status==='guest'?null:member.userId||(member.status==='loading'?chat.owner:null);
  useEffect(()=>{
   if(member.status==='loading')return;
   if(member.status==='guest'||(member.userId&&chat.owner!==member.userId)){
@@ -30,7 +30,7 @@ export default function NicoleProvider({children}){
  useEffect(()=>{
   setIncludePage(false);
   const title=document.querySelector('main h1')?.textContent?.trim();
-  const allowed=/^\/(research|learn)(\/|$)/.test(pathname)&&!/(preview|admin|studio)/.test(pathname);
+  const allowed=/^\/(research|learn)(\/|$)/.test(pathname)&&!/(?:^|\/)(preview|admin|studio)(?:\/|$)/.test(pathname);
   setPage(allowed&&title?{path:pathname,title:title.slice(0,180)}:null);
  },[pathname]);
  useEffect(()=>()=>active.current?.abort(),[]);
@@ -72,7 +72,7 @@ function ChatHeader({panel=false}){
 }
 export function NicoleEntry(){
  const chat=useContext(Context);const [question,setQuestion]=useState('');const id=useId();
- return <section className="nicole-entry" aria-label="Ask Nicole"><form onSubmit={e=>{e.preventDefault();chat.send(question,{expand:true});setQuestion('');}}><label htmlFor={id} className="sr-only">Your question for Nicole</label><textarea id={id} rows={2} maxLength={4000} placeholder="Ask Nicole anything about your next question…" value={question} onChange={e=>setQuestion(e.target.value)} onKeyDown={e=>{if(e.key==='Enter'&&!e.shiftKey&&!e.nativeEvent.isComposing){e.preventDefault();if(question.trim())e.currentTarget.form.requestSubmit();}}}/><div className="nicole-entry__footer"><span>Nicole <span className="nicole-subtle">· Your NaS assistant</span></span><button type="submit" aria-label="Send to Nicole" disabled={!question.trim()||chat.busy||chat.loading}><Icon name="send"/></button></div></form><div className="nicole-suggestions">{prompts.map((text,i)=><button key={text} disabled={chat.busy||chat.loading} onClick={()=>chat.send(questions[i],{expand:true})}>{text}</button>)}</div></section>;
+ return <section className="nicole-entry" aria-label="Ask Nicole"><form onSubmit={e=>{e.preventDefault();chat.send(question,{expand:true});setQuestion('');}}><label htmlFor={id} className="sr-only">Your question for Nicole</label><textarea id={id} rows={2} maxLength={4000} placeholder="Ask Nicole a question…" value={question} onChange={e=>setQuestion(e.target.value)} onKeyDown={e=>{if(e.key==='Enter'&&!e.shiftKey&&!e.nativeEvent.isComposing){e.preventDefault();if(question.trim())e.currentTarget.form.requestSubmit();}}}/><div className="nicole-entry__footer"><span>Nicole <span className="nicole-subtle">· Your NaS assistant</span></span><button type="submit" aria-label="Send to Nicole" disabled={!question.trim()||chat.busy||chat.loading}><Icon name="send"/></button></div></form><div className="nicole-suggestions">{prompts.map((text,i)=><button key={text} disabled={chat.busy||chat.loading} onClick={()=>chat.send(questions[i],{expand:true})}>{text}</button>)}</div></section>;
 }
 function safeHref(value){return /^https:\/\//.test(value)||/^\/(?!\/)/.test(value)&&!value.includes('\\')?value:null;}
 function Inline({text}){
