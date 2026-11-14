@@ -14,7 +14,8 @@
     "prestart": "node scripts/require-external-production.cjs",
     "preaudit:pharmacy": "node scripts/require-external-production.cjs",
     "catalog:refresh": "node --experimental-loader ./scripts/learning-catalog-loader.mjs scripts/update-learning-catalog.mjs",
-    "build:reported": "python3 scripts/run-reported-job.py --name \"NaS website production build\" --task \"Building the NaS website\" -- npm run build"
+    "build:reported": "python3 scripts/run-reported-job.py --name \"NaS website production build\" --task \"Building the NaS website\" -- npm run build",
+    "test:home-computing": "node --test scripts/tests/home-computing.test.mjs"
   },
   "repository": {
     "type": "git",

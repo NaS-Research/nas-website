@@ -4,7 +4,7 @@ import "./institute-intro.css";
 
 export default function Featured() {
   return (
-    <section id="next-section" className="home-workspace" aria-labelledby="home-workspace-title">
+    <section className="home-workspace" aria-labelledby="home-workspace-title">
       <div className="home-workspace__inner">
         <div className="home-workspace__copy">
           <p className="home-workspace__eyebrow">The NaS workspace</p>
