@@ -120,3 +120,13 @@ test('the identity-to-Mac boundary has no decorative divider', () => {
   assert.match(identity, /border-bottom: 0/);
   assert.doesNotMatch(identity, /solid|dashed/);
 });
+
+
+test('approved institute identity copy retains the About destination and two-column black layout', () => {
+  const home = readFileSync(new URL('../../src/app/page.jsx', import.meta.url), 'utf8');
+  const identity = home.match(/<section className="nas-shell home-research-identity"[^>]*>([\s\S]*?)<\/section>/)[1];
+  for (const text of ['NaS Research · Chicago', 'Science, built for what’s next.', 'NaS brings research, scientific tools, and learning together to explore questions that matter.', 'href="/about">Discover NaS']) assert.ok(identity.includes(text), text);
+  assert.doesNotMatch(identity, /Research for the|Get to know|<br/);
+  const css = readFileSync(new URL('../../src/app/home-refinements.css', import.meta.url), 'utf8');
+  assert.match(css, /\.home-research-identity \{ background: #000; display: grid; grid-template-columns: 1fr 1fr/);
+});
