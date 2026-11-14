@@ -1,6 +1,7 @@
 import "./home-refinements.css";
 import Link from "next/link";
 import HeroSection from "@/components/sections/HeroSection";
+import HomeComputingFeature from "@/components/sections/HomeComputingFeature";
 import Featured from "@/components/sections/Featured";
 import HomeLearnFeature from "@/components/sections/HomeLearnFeature";
 import HomeBillingFeature from "@/components/sections/HomeBillingFeature";
@@ -18,6 +19,7 @@ export default function Home() {
         components/sections/LegacyChatHero.jsx for a future public release.
       */}
       <HeroSection />
+      <HomeComputingFeature />
 
       <section className="nas-shell home-research-identity" aria-labelledby="home-research-identity-title">
         <div><p className="nas-kicker">NaS Research · Chicago</p><h2 id="home-research-identity-title">Research for the<br />life sciences.</h2></div>
