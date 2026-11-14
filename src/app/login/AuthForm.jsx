@@ -12,15 +12,23 @@ export default function AuthForm({mode,ready,email,google,apple,microsoft}) {
   <div className="auth-social">
    {google&&<form action={socialSignIn}>
     <input type="hidden" name="provider" value="google"/>
-    <button type="submit" className="auth-google-button" aria-label="Sign in with Google" title="Sign in with Google">
+    <button type="submit" className="auth-provider-button" aria-label="Sign in with Google" title="Sign in with Google">
      <Image src="/assets/images/google-sign-in-dark-round.svg" width={40} height={40} alt="" unoptimized />
     </button>
    </form>}
    {microsoft&&<form action={socialSignIn}>
     <input type="hidden" name="provider" value="azure"/>
-    <button type="submit">Continue with Microsoft</button>
+    <button type="submit" className="auth-provider-button" aria-label="Sign in with Microsoft" title="Sign in with Microsoft">
+     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true" focusable="false">
+      <circle cx="20" cy="20" r="19.5" fill="#131314" stroke="#8E918F"/>
+      <path fill="#F25022" d="M11 11h8.5v8.5H11z"/>
+      <path fill="#7FBA00" d="M20.5 11H29v8.5h-8.5z"/>
+      <path fill="#00A4EF" d="M11 20.5h8.5V29H11z"/>
+      <path fill="#FFB900" d="M20.5 20.5H29V29h-8.5z"/>
+     </svg>
+    </button>
    </form>}
-   {apple&&<form action={socialSignIn}>
+   {apple&&<form action={socialSignIn} className="auth-social-wide">
     <input type="hidden" name="provider" value="apple"/>
     <button type="submit">Continue with Apple</button>
    </form>}
