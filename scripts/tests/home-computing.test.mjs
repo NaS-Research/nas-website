@@ -130,3 +130,9 @@ test('approved institute identity copy retains the About destination and two-col
   const css = readFileSync(new URL('../../src/app/home-refinements.css', import.meta.url), 'utf8');
   assert.match(css, /\.home-research-identity \{ background: #000; display: grid; grid-template-columns: 1fr 1fr/);
 });
+
+
+test('workspace and Bring your perspective have no top divider', () => {
+  const css = readFileSync(new URL('../../src/app/home-refinements.css', import.meta.url), 'utf8');
+  assert.match(css, /\.home-workspace \.home-workspace__inner,\s*\.home-work--compact \.home-work__inner \{ border-top: 0; \}/);
+});

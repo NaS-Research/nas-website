@@ -108,3 +108,7 @@
 @media(max-width:767px) {
  .home-carousel--cva .home-cva-visual { transform: scale(1.12); }
 }
+
+/* Keep the requested homepage section transitions uninterrupted. */
+.home-workspace .home-workspace__inner,
+.home-work--compact .home-work__inner { border-top: 0; }
