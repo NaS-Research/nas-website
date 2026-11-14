@@ -7,6 +7,16 @@ export function memberName(user) {
   }
   return '';
 }
+// Prefer the account's given name; full identity remains available for account settings.
+export function memberFirstName(user) {
+ const metadata=user?.user_metadata||{};
+ for(const value of [metadata.given_name,metadata.first_name]){
+  if(typeof value!=='string')continue;
+  const name=value.replace(/[\u0000-\u001f\u007f]/g,'').trim().replace(/\s+/g,' ');
+  if(name&&!name.includes('@'))return Array.from(name).slice(0,100).join('');
+ }
+ return memberName(user).split(/\s+/)[0]||'';
+}
 export const resumePath = row => `${row.path}${row.progress?.lastSection ? '#' + encodeURIComponent(row.progress.lastSection) : ''}`;
 export const hasActivity = row => Boolean(row.progress?.lastSection || row.progress?.completed || Object.keys(row.practices || {}).length);
 export function workspaceLists(items) {
