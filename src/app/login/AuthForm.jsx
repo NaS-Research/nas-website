@@ -20,7 +20,7 @@ export default function AuthForm({mode,ready,email,google,apple,microsoft}) {
     <input type="hidden" name="provider" value="azure"/>
     <button type="submit" className="auth-provider-button" aria-label="Sign in with Microsoft" title="Sign in with Microsoft">
      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true" focusable="false">
-      <circle cx="20" cy="20" r="19.5" fill="#131314"/>
+      <circle cx="20" cy="20" r="19.5" fill="#131314" stroke="#8E918F"/>
       <path fill="#F25022" d="M11 11h8.5v8.5H11z"/>
       <path fill="#7FBA00" d="M20.5 11H29v8.5h-8.5z"/>
       <path fill="#00A4EF" d="M11 20.5h8.5V29H11z"/>
