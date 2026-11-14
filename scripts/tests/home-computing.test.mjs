@@ -17,11 +17,15 @@ function player(video = media()) {
   const controller = createHomeComputingLoop({video, src: computingHeroFilm.loopSrc, onBlocked: () => blocked++, onFailure: () => failed++});
   return {video, controller, state: () => ({blocked, failed})};
 }
-test('feature sits between unchanged hero and institute identity with the requested copy and story link', () => {
+test('loop replaces workspace slot, workspace replaces billing, and other sections retain their order', () => {
   const home = readFileSync(new URL('../../src/app/page.jsx', import.meta.url), 'utf8');
-  assert.ok(home.indexOf('<HeroSection />') < home.indexOf('<HomeComputingFeature />'));
-  assert.ok(home.indexOf('<HomeComputingFeature />') < home.indexOf('home-research-identity'));
+  const sections = ['<HeroSection />', 'home-research-identity', '<HomeComputingFeature />', '<HomeLearnFeature />', '<Featured />', '<CurrentResearch />', '<WorkWithNas />', '<Footer />'];
+  for (let i = 1; i < sections.length; i++) assert.ok(home.indexOf(sections[i - 1]) < home.indexOf(sections[i]), sections[i]);
+  assert.doesNotMatch(home, /HomeBillingFeature/);
+  const workspace = readFileSync(new URL('../../src/components/sections/Featured.jsx', import.meta.url), 'utf8');
+  assert.doesNotMatch(workspace, /id="next-section"/);
   const feature = readFileSync(new URL('../../src/components/sections/HomeComputingFeature.jsx', import.meta.url), 'utf8');
+  assert.match(feature, /id="next-section"/);
   for (const text of ['Building the next stage of NaS computing', 'The infrastructure behind what comes next.', 'Read the story', 'href="/research/building-the-next-stage-of-nas-computing"', 'aria-labelledby="home-computing-title"']) assert.ok(feature.includes(text), text);
 });
 test('poster, no initial video download, reduced-motion fallback and keyboard control are present', () => {

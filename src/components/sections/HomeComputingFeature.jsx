@@ -3,7 +3,7 @@ import HomeComputingFilm from "./HomeComputingFilm";
 import styles from "./HomeComputingFeature.module.css";
 
 export default function HomeComputingFeature() {
-  return <section className={styles.feature} aria-labelledby="home-computing-title" data-home-computing-feature>
+  return <section id="next-section" className={styles.feature} aria-labelledby="home-computing-title" data-home-computing-feature>
     <HomeComputingFilm />
     <div className={styles.copy}>
       <h2 id="home-computing-title">Building the next stage of NaS computing</h2>

@@ -4,7 +4,6 @@ import HeroSection from "@/components/sections/HeroSection";
 import HomeComputingFeature from "@/components/sections/HomeComputingFeature";
 import Featured from "@/components/sections/Featured";
 import HomeLearnFeature from "@/components/sections/HomeLearnFeature";
-import HomeBillingFeature from "@/components/sections/HomeBillingFeature";
 import CurrentResearch from "@/components/sections/CurrentResearch";
 import WorkWithNas from "@/components/sections/WorkWithNas";
 import Footer from "@/components/Footer";
@@ -19,15 +18,14 @@ export default function Home() {
         components/sections/LegacyChatHero.jsx for a future public release.
       */}
       <HeroSection />
-      <HomeComputingFeature />
 
       <section className="nas-shell home-research-identity" aria-labelledby="home-research-identity-title">
         <div><p className="nas-kicker">NaS Research · Chicago</p><h2 id="home-research-identity-title">Research for the<br />life sciences.</h2></div>
         <div><p>NaS Research is a life sciences research institute developing biomedical research, scientific tools, and learning resources. Explore our studies, examine the evidence, and follow the questions that guide our work.</p><Link href="/about">Get to know NaS Research <span aria-hidden="true">↗</span></Link></div>
       </section>
-      <Featured />
+      <HomeComputingFeature />
       <HomeLearnFeature />
-      <HomeBillingFeature />
+      <Featured />
       <CurrentResearch />
       <WorkWithNas />
 
