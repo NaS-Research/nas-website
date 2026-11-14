@@ -102,3 +102,13 @@ test('retained homepage re-entry keeps explicit pause intent while resetting tra
   assert.equal(video.paused, true);
   retained.controller.setPaused(false); await tick(); assert.equal(video.paused, false); retained.controller.destroy();
 });
+
+
+test('playback label is visually hidden except on keyboard focus; reduced-motion behavior remains', () => {
+  const css = readFileSync(new URL('../../src/components/sections/HomeComputingFeature.module.css', import.meta.url), 'utf8');
+  const base = css.match(/\.control \{([^}]+)\}/)[1];
+  assert.match(base, /width: 1px/); assert.match(base, /height: 1px/); assert.match(base, /clip-path: inset\(50%\)/);
+  const focus = css.match(/\.control:focus-visible \{([^}]+)\}/)[1];
+  assert.match(focus, /clip-path: none/); assert.match(focus, /min-height: 44px/);
+  assert.match(css, /@media \(prefers-reduced-motion: reduce\).*display: none/s);
+});
