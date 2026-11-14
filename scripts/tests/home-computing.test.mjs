@@ -102,3 +102,37 @@ test('retained homepage re-entry keeps explicit pause intent while resetting tra
   assert.equal(video.paused, true);
   retained.controller.setPaused(false); await tick(); assert.equal(video.paused, false); retained.controller.destroy();
 });
+
+
+test('playback label is visually hidden except on keyboard focus; reduced-motion behavior remains', () => {
+  const css = readFileSync(new URL('../../src/components/sections/HomeComputingFeature.module.css', import.meta.url), 'utf8');
+  const base = css.match(/\.control \{([^}]+)\}/)[1];
+  assert.match(base, /width: 1px/); assert.match(base, /height: 1px/); assert.match(base, /clip-path: inset\(50%\)/);
+  const focus = css.match(/\.control:focus-visible \{([^}]+)\}/)[1];
+  assert.match(focus, /clip-path: none/); assert.match(focus, /min-height: 44px/);
+  assert.match(css, /@media \(prefers-reduced-motion: reduce\).*display: none/s);
+});
+
+
+test('the identity-to-Mac boundary has no decorative divider', () => {
+  const css = readFileSync(new URL('../../src/app/home-refinements.css', import.meta.url), 'utf8');
+  const identity = css.match(/\.home-research-identity \{([^}]+)\}/)[1];
+  assert.match(identity, /border-bottom: 0/);
+  assert.doesNotMatch(identity, /solid|dashed/);
+});
+
+
+test('approved institute identity copy retains the About destination and two-column black layout', () => {
+  const home = readFileSync(new URL('../../src/app/page.jsx', import.meta.url), 'utf8');
+  const identity = home.match(/<section className="nas-shell home-research-identity"[^>]*>([\s\S]*?)<\/section>/)[1];
+  for (const text of ['NaS Research · Chicago', 'Science, built for what’s next.', 'NaS brings research, scientific tools, and learning together to explore questions that matter.', 'href="/about">Discover NaS']) assert.ok(identity.includes(text), text);
+  assert.doesNotMatch(identity, /Research for the|Get to know|<br/);
+  const css = readFileSync(new URL('../../src/app/home-refinements.css', import.meta.url), 'utf8');
+  assert.match(css, /\.home-research-identity \{ background: #000; display: grid; grid-template-columns: 1fr 1fr/);
+});
+
+
+test('workspace and Bring your perspective have no top divider', () => {
+  const css = readFileSync(new URL('../../src/app/home-refinements.css', import.meta.url), 'utf8');
+  assert.match(css, /\.home-workspace \.home-workspace__inner,\s*\.home-work--compact \.home-work__inner \{ border-top: 0; \}/);
+});

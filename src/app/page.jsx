@@ -20,8 +20,8 @@ export default function Home() {
       <HeroSection />
 
       <section className="nas-shell home-research-identity" aria-labelledby="home-research-identity-title">
-        <div><p className="nas-kicker">NaS Research · Chicago</p><h2 id="home-research-identity-title">Research for the<br />life sciences.</h2></div>
-        <div><p>NaS Research is a life sciences research institute developing biomedical research, scientific tools, and learning resources. Explore our studies, examine the evidence, and follow the questions that guide our work.</p><Link href="/about">Get to know NaS Research <span aria-hidden="true">↗</span></Link></div>
+        <div><p className="nas-kicker">NaS Research · Chicago</p><h2 id="home-research-identity-title">Science, built for what’s next.</h2></div>
+        <div><p>NaS brings research, scientific tools, and learning together to explore questions that matter.</p><Link href="/about">Discover NaS <span aria-hidden="true">↗</span></Link></div>
       </section>
       <HomeComputingFeature />
       <HomeLearnFeature />
