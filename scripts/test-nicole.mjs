@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import {validateNicoleInput,responseText} from '../src/lib/nicole/request.mjs';
 import {handleNicoleRequest} from '../src/lib/nicole/handler.mjs';
-import {generateNicoleAnswer} from '../src/lib/nicole/answer.mjs';
+import {generateNicoleAnswer,NICOLE_MODEL} from '../src/lib/nicole/answer.mjs';
 import {memberName,workspaceLists,resumePath} from '../src/lib/member/presentation.mjs';
 assert.equal(memberName({user_metadata:{full_name:'  Amina   Hassan  '}}),'Amina Hassan');
 assert.equal(memberName({user_metadata:{name:'李 明'}}),'李 明');
@@ -16,7 +16,7 @@ assert.equal(responseText({output:[{type:'reasoning',content:[{type:'output_text
 const rows=[{path:'/a',saved:true,progress:{lastSection:'one two'},notes:{x:'note'}},{path:'/b',progress:{completed:true},notes:{}},{path:'/c',saved:true,notes:{x:'   '}}];
 assert.equal(workspaceLists(rows).continued.length,1);assert.equal(workspaceLists(rows).history.length,2);assert.equal(workspaceLists(rows).saved.length,2);assert.equal(workspaceLists(rows).notes.length,1);assert.equal(resumePath(rows[0]),'/a#one%20two');
 let providerCalls=0,quotaCalls=0;
-const config={originAllowed:origin=>origin==='https://nasresearch.bio',authReady:()=>true,authClient:async()=>({auth:{getUser:async()=>({data:{user:{id:'owner'}}})},rpc:async()=>{quotaCalls++;return {data:true};}}),key:'test-key',model:'gpt-5-mini',contextFor:()=>({page:null}),generate:async()=>{providerCalls++;return {text:'Test answer',truncated:false};}};
+const config={originAllowed:origin=>origin==='https://nasresearch.bio',authReady:()=>true,authClient:async()=>({auth:{getUser:async()=>({data:{user:{id:'owner'}}})},rpc:async()=>{quotaCalls++;return {data:true};}}),key:'test-key',contextFor:()=>({page:null}),generate:async()=>{providerCalls++;return {text:'Test answer',truncated:false};}};
 const request=(body={question:'Test question',messages:[],userId:'owner'},origin='https://nasresearch.bio')=>new Request('https://nasresearch.bio/api/nicole',{method:'POST',headers:{origin,'content-type':'application/json'},body:JSON.stringify(body)});
 assert.equal((await handleNicoleRequest(request(undefined,'https://evil.test'),config)).status,403);
 assert.equal((await handleNicoleRequest(request(),{...config,authReady:()=>false})).status,401);
@@ -29,6 +29,6 @@ assert.equal((await handleNicoleRequest(request(),{...config,authClient:async()=
 assert.equal(providerCalls,0);
 const success=await handleNicoleRequest(request(),config);assert.equal(success.status,200);assert.equal(success.headers.get('Cache-Control'),'private, no-store');assert.equal((await success.json()).text,'Test answer');assert.equal(providerCalls,1);assert.equal(quotaCalls,1);
 let sent;await generateNicoleAnswer({key:'test',userId:'owner',input:{messages:[],question:'test'},fetcher:async(url,options)=>{sent=JSON.parse(options.body);return Response.json({output:[{type:'message',role:'assistant',content:[{type:'output_text',text:'Test'}]}]});}});
-assert.equal(sent.store,false);assert.equal(sent.max_output_tokens,1800);assert.equal(sent.safety_identifier.length,64);
+assert.equal(NICOLE_MODEL,'gpt-6-luna');assert.equal(sent.model,'gpt-6-luna');assert.equal(sent.store,false);assert.equal(sent.max_output_tokens,1800);assert.equal(sent.safety_identifier.length,64);
 await assert.rejects(()=>generateNicoleAnswer({key:'test',userId:'owner',input:{messages:[],question:'test'},fetcher:async()=>new Response('provider secret',{status:401})}),error=>!error.message.includes('secret'));
 console.log('Nicole tests passed: origin, authentication, account isolation, quotas, payload bounds, provider errors, private responses, names and library state.');

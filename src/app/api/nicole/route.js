@@ -11,4 +11,4 @@ function originAllowed(origin){
  // Preview hosts are bound by the hosting environment, not a request-supplied Host.
  return process.env.NAS_WORKSPACE_DESIGN_PREVIEW==='true'&&[process.env.DEPLOY_PRIME_URL,process.env.DEPLOY_URL].some(url=>{try{return origin===new URL(url).origin;}catch{return false;}});
 }
-export async function POST(request){return handleNicoleRequest(request,{originAllowed,authReady,authClient,key:process.env.OPENAI_API_KEY,model:process.env.NICOLE_MODEL||'gpt-5-mini',contextFor:nicoleContext,generate:generateNicoleAnswer});}
+export async function POST(request){return handleNicoleRequest(request,{originAllowed,authReady,authClient,key:process.env.OPENAI_API_KEY,contextFor:nicoleContext,generate:generateNicoleAnswer});}
