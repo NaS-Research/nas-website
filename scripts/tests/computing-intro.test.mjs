@@ -219,6 +219,7 @@ test('heading slide relinquishes scrolling on input, hidden page, pagehide and d
     const count = scrolls.length;
     if (action === 'hidden') { doc.hidden = true; doc.emit('visibilitychange'); }
     else if (action === 'pagehide') win.emit('pagehide');
+    else if (action === 'resize') win.emit('resize');
     else if (action === 'dispose') reveal.dispose();
     else if (action === 'reduced-motion') reveal.finish('reduced-motion');
     else doc.emit(action);
@@ -264,12 +265,13 @@ test('film geometry moves one way from the first frame while stage and scroll sh
 });
 
 test('interruption clears stage ownership without moving the film; navigation never adjusts scroll', () => {
-  for (const action of ['wheel', 'keydown', 'reduced-motion', 'pagehide', 'dispose']) {
+  for (const action of ['wheel', 'keydown', 'resize', 'reduced-motion', 'pagehide', 'dispose']) {
     const {win, doc, rules, frame, frames, film, visual, scrolls} = stagedPage();
     const reveal = installComputingReveal(win, doc); reveal.prepare(visual); reveal.progress(1); frame(700);
     const before = film.getBoundingClientRect().top, count = scrolls.length;
     if (action === 'dispose') reveal.dispose();
     else if (action === 'pagehide') win.emit('pagehide');
+    else if (action === 'resize') win.emit('resize');
     else if (action === 'reduced-motion') reveal.finish('reduced-motion');
     else doc.emit(action);
     assert.equal(frames.size, 0);

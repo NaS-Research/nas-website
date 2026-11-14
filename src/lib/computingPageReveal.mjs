@@ -50,6 +50,7 @@ export function installComputingReveal(win, doc) {
     }
     // Never compete with navigation, focus access, or an intentional gesture.
     for (const event of ['wheel', 'touchstart', 'pointerdown', 'keydown']) on(doc, event);
+    on(win, 'resize'); // Measurements are no longer valid after a viewport change.
     on(win, 'pagehide', () => stopScroll(false));
     on(doc, 'visibilitychange', () => { if (doc.hidden) stopScroll(false); });
     scrollFrame = win.requestAnimationFrame(frame);
