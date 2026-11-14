@@ -48,6 +48,8 @@ export function installComputingReveal(win, doc) {
     function listen(target, event, fn) { target.addEventListener(event, fn, true); listeners.push([target,event,fn]); }
     function removeListeners() { for (const [target,event,fn] of listeners) target.removeEventListener(event,fn,true); listeners.length = 0; }
     function finish(why = 'access', immediate = true) {
+      // An accessibility update can arrive after the reveal has started.
+      if (immediate) stopScroll();
       if (finished) return;
       finished = true; amount = 1; reason = why;
       if (!immediate) {

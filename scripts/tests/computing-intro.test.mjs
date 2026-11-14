@@ -213,13 +213,14 @@ test('heading slide takes 2.8 seconds with a symmetric gentle acceleration and d
 });
 
 test('heading slide relinquishes scrolling on input, hidden page, pagehide and disposal', () => {
-  for (const action of ['wheel', 'touchstart', 'pointerdown', 'keydown', 'hidden', 'pagehide', 'dispose']) {
+  for (const action of ['wheel', 'touchstart', 'pointerdown', 'keydown', 'hidden', 'pagehide', 'reduced-motion', 'dispose']) {
     const {win, doc, frame, frames, scrolls} = page(); const reveal = installComputingReveal(win, doc);
     win.scrollY = 720; reveal.progress(1); frame(700);
     const count = scrolls.length;
     if (action === 'hidden') { doc.hidden = true; doc.emit('visibilitychange'); }
     else if (action === 'pagehide') win.emit('pagehide');
     else if (action === 'dispose') reveal.dispose();
+    else if (action === 'reduced-motion') reveal.finish('reduced-motion');
     else doc.emit(action);
     assert.equal(frames.size, 0, action);
     frame(2800); assert.equal(scrolls.length, count, action);
