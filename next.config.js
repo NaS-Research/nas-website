@@ -13,7 +13,7 @@ const csp = [
 ].join("; ");
 module.exports = {
   // Sample-only design review is available on deploy previews, never production.
-  env: { NAS_WORKSPACE_DESIGN_PREVIEW: process.env.CONTEXT === 'deploy-preview' ? 'true' : 'false' },
+  env: { NAS_WORKSPACE_DESIGN_PREVIEW: process.env.CONTEXT === 'deploy-preview' ? 'true' : 'false', NAS_WORKSPACE_PREVIEW_ORIGIN: process.env.CONTEXT === 'deploy-preview' ? (process.env.DEPLOY_PRIME_URL || '') : '' },
   experimental: {cpus:1, webpackMemoryOptimizations:true},
   poweredByHeader: false,
   async redirects() {

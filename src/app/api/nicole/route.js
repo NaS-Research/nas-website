@@ -9,6 +9,6 @@ export const maxDuration=60;
 function originAllowed(origin){
  if(isSiteOrigin(origin))return true;
  // Preview hosts are bound by the hosting environment, not a request-supplied Host.
- return process.env.NAS_WORKSPACE_DESIGN_PREVIEW==='true'&&[process.env.DEPLOY_PRIME_URL,process.env.DEPLOY_URL].some(url=>{try{return origin===new URL(url).origin;}catch{return false;}});
+ return process.env.NAS_WORKSPACE_DESIGN_PREVIEW==='true'&&[process.env.NAS_WORKSPACE_PREVIEW_ORIGIN].some(url=>{try{return origin===new URL(url).origin;}catch{return false;}});
 }
 export async function POST(request){return handleNicoleRequest(request,{originAllowed,authReady,authClient,key:process.env.OPENAI_API_KEY,contextFor:nicoleContext,generate:generateNicoleAnswer});}
