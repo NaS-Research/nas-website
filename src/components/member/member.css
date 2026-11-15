@@ -19,3 +19,13 @@
 .personal-tools--article > .personal-tools-status{position:absolute;bottom:calc(100% + 10px);left:0;width:max-content;max-width:min(300px,calc(100vw - 32px));padding:10px 14px;border-radius:10px;background:#1b1915;color:#d9c8a7;font-size:11px;line-height:1.6;box-shadow:0 4px 20px #0006}
 @media(max-width:760px){.personal-tools--article{left:16px;right:auto;bottom:96px}}
 @media(prefers-reduced-motion:reduce){.personal-tools--article > :is(button,a){transition:none}}
+
+/* Center course controls on the measured reading column, rather than the viewport. */
+body aside.personal-tools.personal-tools--module[data-module-dock]{position:fixed;top:auto;left:var(--module-dock-center);right:auto;bottom:92px;transform:translateX(-50%);margin:0;width:max-content;max-width:var(--module-dock-max);padding:10px 16px;gap:16px;justify-content:center;border-radius:16px;z-index:45}
+.personal-tools--module>button,.personal-tools--module>a{white-space:nowrap;min-height:23px}
+.personal-tools--module>button[aria-pressed=true]{color:var(--nas-gold-light)}
+body aside.personal-tools--module[data-module-dock]>.personal-tools-panel{position:absolute;top:auto;bottom:calc(100% + 12px);left:50%;right:auto;transform:translateX(-50%);width:360px;max-width:min(var(--module-dock-max),calc(100vw - 32px));max-height:65dvh;overflow:auto;flex-basis:auto}
+.personal-tools--module>.personal-tools-status{position:absolute;bottom:calc(100% + 10px);left:50%;transform:translateX(-50%);width:max-content;max-width:var(--module-dock-max);padding:10px 14px;background:#1b1915;border-radius:10px;font-size:11px;line-height:1.6}
+@media(min-width:861px){.pharmacy-module-page .pharmacy-module-layout{grid-template-columns:minmax(12rem,17rem) minmax(0,1fr);gap:clamp(2.5rem,6vw,6rem)}}
+@media(min-width:861px) and (max-width:1100px){body aside.personal-tools.personal-tools--module[data-module-dock]{bottom:156px}}
+@media(max-width:860px){body aside.personal-tools.personal-tools--module[data-module-dock]{bottom:calc(16px + env(safe-area-inset-bottom));padding:10px 14px;gap:14px}}
