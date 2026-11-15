@@ -251,3 +251,5 @@
 .nicole-folder-submenu .nicole-folder-back{display:none}
 .nicole-menu-error{font-size:12px;color:#d4bc92;line-height:1.6;padding:7px 12px;margin:0}
 @media(max-width:599px){.nicole-folder-submenu .nicole-folder-back{display:flex;color:#aaa}}
+
+@media(max-width:599px){.nicole-options-menu:has(>.nicole-folder-submenu){padding:0;border:0;background:transparent;box-shadow:none}.nicole-options-menu:has(>.nicole-folder-submenu)>button{display:none}}
