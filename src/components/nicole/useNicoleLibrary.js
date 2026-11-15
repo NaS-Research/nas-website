@@ -28,7 +28,7 @@ export function useNicoleLibrary(member){
    loadedReload.current=reload;const remote=validateLibrary(body.library);let library=remote,activeId=remote.view?.activeId||null,cached;
    try{cached=JSON.parse(localStorage.getItem(PREFIX+owner)||sessionStorage.getItem(OLD_PREFIX+owner)||'null');}catch{}
    revision.current=body.revision;saved.current=remote;setProfile(body.profile);
-   if(cached){try{const local=validateLibrary(cached.library);activeId=cached.activeId;if(cached.dirty){library=local;if(cached.revision!==body.revision){blocked.current=true;setError('Your conversations changed in another tab or device. Download your unsaved copy before reloading.');}else blocked.current=false;}else blocked.current=false;}catch{blocked.current=false;}}
+   if(cached){try{const local=validateLibrary(cached.library);activeId=cached.activeId;if(cached.dirty){library=local;if(cached.revision!==body.revision&&JSON.stringify(local)===JSON.stringify(remote)){library=remote;blocked.current=false;}else if(cached.revision!==body.revision){blocked.current=true;setError('Your conversations changed in another tab or device. Download your unsaved copy before reloading.');}else blocked.current=false;}else blocked.current=false;}catch{blocked.current=false;}}
    else{
     blocked.current=false;
     try{const legacy=JSON.parse(sessionStorage.getItem('nas-nicole-v1:'+owner)||'null');if(!remote.conversations.length&&legacy?.messages?.length){const id=crypto.randomUUID();library=validateLibrary({folders:[],conversations:[{id,title:conversationTitle(legacy.messages.find(m=>m.role==='user')?.content),folderId:null,messages:legacy.messages}]});activeId=id;}}catch{}

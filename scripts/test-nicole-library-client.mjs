@@ -42,3 +42,8 @@ assert.equal(restarted.value.state.library.folders[0].name,'Exam prep','A browse
 assert.equal(restarted.value.state.activeId,id);restarted.tick();await settle();assert.equal(restarted.puts.length,1);restarted.puts[0].resolve();await settle();
 assert.equal(restarted.value.status,'Saved to your account');
 console.log('Return-login tests passed: cloud history/folders, last selected chat, open folders and durable browser recovery.');
+
+const acknowledged=JSON.parse(restarted.cache.get('nas-nicole-library-v3:owner'));acknowledged.dirty=true;acknowledged.revision--;
+const oldAckCache=new Map([['nas-nicole-library-v3:owner',JSON.stringify(acknowledged)]]);
+const reconciled=harness({...restarted.snapshot(),sharedCache:oldAckCache});await settle();assert.equal(reconciled.value.error,'');assert.equal(reconciled.value.status,'Saved to your account');assert.equal(reconciled.value.conflict,false);
+console.log('Recovery acknowledgement check passed: identical cloud/cache content does not create a false revision conflict.');
