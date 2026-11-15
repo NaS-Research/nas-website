@@ -1,6 +1,6 @@
 "use client";
 import {useEffect,useRef,useState} from 'react';
-import {emptyLibrary,validateLibrary} from '@/lib/nicole/library.mjs';
+import {emptyLibrary,validateLibrary,conversationTitle,upgradeConversationTitles} from '@/lib/nicole/library.mjs';
 const PREFIX='nas-nicole-library-v2:';
 export function useNicoleLibrary(member){
  const [state,setState]=useState({owner:null,library:emptyLibrary(),activeId:null,ready:false});
@@ -30,8 +30,9 @@ export function useNicoleLibrary(member){
    if(cached){try{const local=validateLibrary(cached.library);activeId=cached.activeId;if(cached.dirty){library=local;if(cached.revision!==body.revision){blocked.current=true;setError('Your conversations changed in another tab or device. Download your unsaved copy before reloading.');}else blocked.current=false;}else blocked.current=false;}catch{blocked.current=false;}}
    else{
     blocked.current=false;
-    try{const legacy=JSON.parse(sessionStorage.getItem('nas-nicole-v1:'+owner)||'null');if(!remote.conversations.length&&legacy?.messages?.length){const id=crypto.randomUUID();library=validateLibrary({folders:[],conversations:[{id,title:'Earlier conversation',folderId:null,messages:legacy.messages}]});activeId=id;}}catch{}
+    try{const legacy=JSON.parse(sessionStorage.getItem('nas-nicole-v1:'+owner)||'null');if(!remote.conversations.length&&legacy?.messages?.length){const id=crypto.randomUUID();library=validateLibrary({folders:[],conversations:[{id,title:conversationTitle(legacy.messages.find(m=>m.role==='user')?.content),folderId:null,messages:legacy.messages}]});activeId=id;}}catch{}
    }
+   library=upgradeConversationTitles(library);
    if(!library.conversations.some(c=>c.id===activeId))activeId=null;
    const next={owner,library,activeId,ready:true};latest.current=next;setState(next);setStatus(library===remote?'Saved to your account':'Unsaved changes');
   }).catch(e=>{if(e.name!=='AbortError'&&generation===epoch.current){setError(e.message);setStatus('Not connected');}});

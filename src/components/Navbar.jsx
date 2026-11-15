@@ -5,7 +5,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import "./navigation.css";
-import {NicoleNavControls} from "./nicole/NicoleProvider";
 import SiteSearch from "./search/SiteSearch";
 import { useMember } from "./member/MemberProvider";
 
@@ -33,7 +32,12 @@ function isActivePath(pathname, href) {
   return pathname === href || pathname.startsWith(`${href}/`);
 }
 
-export default function Navbar({ authEnabled = false }) {
+export default function Navbar(props) {
+  const pathname = usePathname();
+  return pathname === "/nicole" ? null : <SiteNavbar {...props}/>;
+}
+
+function SiteNavbar({ authEnabled = false }) {
   const pathname = usePathname();
   const member = useMember();
   const showLogin = !authEnabled || (member?.status !== "loading" && !member?.authenticated);
@@ -42,7 +46,6 @@ export default function Navbar({ authEnabled = false }) {
   const searchTriggerRef = useRef(null);
   const [searchOpen, setSearchOpen] = useState(false);
   const isHome = pathname === "/";
-  const isNicole = pathname === "/nicole";
   const [homeHeroVisible, setHomeHeroVisible] = useState(isHome);
   const [show, setShow] = useState(true);
   const [scrolled, setScrolled] = useState(false);
@@ -129,7 +132,7 @@ export default function Navbar({ authEnabled = false }) {
 
   return (
     <header ref={headerRef}
-      className={`nas-navbar ${isNicole ? "nas-navbar--nicole" : ""} ${show || menuOpen || searchOpen ? "nas-navbar--visible" : "nas-navbar--hidden"} ${
+      className={`nas-navbar ${show || menuOpen || searchOpen ? "nas-navbar--visible" : "nas-navbar--hidden"} ${
         scrolled ? "nas-navbar--scrolled" : ""
       } ${menuOpen ? "nas-navbar--open" : ""}`}
     >
@@ -152,7 +155,7 @@ export default function Navbar({ authEnabled = false }) {
         </Link>
 
         <div className="nas-navbar__links">
-          {navigation.filter(item=>!isNicole||item.label!=="Learn").map((item) => {
+          {navigation.map((item) => {
             const active = isActivePath(pathname, item.href);
             return (
               <Link
@@ -167,11 +170,11 @@ export default function Navbar({ authEnabled = false }) {
           })}
         </div>
 
-        {isNicole?<NicoleNavControls/>:<button ref={searchTriggerRef} type="button" className="nas-nav-search" aria-label="Search NaS"
+        <button ref={searchTriggerRef} type="button" className="nas-nav-search" aria-label="Search NaS"
           aria-expanded={searchOpen} aria-haspopup="dialog" aria-controls="nas-site-search"
           onClick={() => {setMenuOpen(false);setSearchOpen(true);setShow(true);}}>
           <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg>
-        </button>}
+        </button>
         {member?.role==="admin" && <Link href="/account/admin" className="nas-nav-admin">Admin</Link>}
         {showLogin && <Link href="/login" className="nas-nav-login">Log in</Link>}
         <Link href={authEnabled ? "/account" : "/workspace"} className="nas-nav-workspace" onClick={() => setMenuOpen(false)}>Workspace <span aria-hidden="true">↗</span></Link>
