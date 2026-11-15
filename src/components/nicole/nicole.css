@@ -241,3 +241,15 @@
 .nicole-options-menu .nicole-delete-option svg{color:inherit}
 .nicole-chat-action-dialog select{width:100%;padding:12px;background:#151515;border:1px solid #555;border-radius:10px;color:#eee;font:inherit;font-size:14px}
 .nicole-folder-heading:not(:first-child){margin-top:22px}
+
+.nicole-history-row>button:first-child{display:flex;align-items:center;gap:8px}
+.nicole-history-title{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0;flex:1}
+.nicole-history-row>button:first-child>svg{width:14px;height:14px;flex-shrink:0;color:#a9987d}
+.nicole-options-menu button>svg:last-child:not(:first-child){margin-left:auto;width:15px;height:15px}
+.nicole-folder-submenu{max-height:360px;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#555 transparent;z-index:1001}
+.nicole-folder-submenu button>span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.nicole-folder-submenu .nicole-folder-back{display:none}
+.nicole-menu-error{font-size:12px;color:#d4bc92;line-height:1.6;padding:7px 12px;margin:0}
+@media(max-width:599px){.nicole-folder-submenu .nicole-folder-back{display:flex;color:#aaa}}
+
+@media(max-width:599px){.nicole-options-menu:has(>.nicole-folder-submenu){padding:0;border:0;background:transparent;box-shadow:none}.nicole-options-menu:has(>.nicole-folder-submenu)>button{display:none}}

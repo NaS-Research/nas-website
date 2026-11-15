@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {emptyLibrary,libraryName,validateLibrary,accountProfile,branchConversation,conversationContext,searchConversations,conversationTitle,upgradeConversationTitles,withLibraryView,restoredConversation} from '../src/lib/nicole/library.mjs';
+import {emptyLibrary,libraryName,validateLibrary,accountProfile,branchConversation,conversationContext,searchConversations,conversationTitle,upgradeConversationTitles,withLibraryView,restoredConversation,toggleConversationPin,createLibraryFolder,moveConversationToFolder} from '../src/lib/nicole/library.mjs';
 import {handleLibrary} from '../src/lib/nicole/library-handler.mjs';
 const folder='12345678-1234-4123-8123-123456789abc',chat='22345678-1234-4123-8123-123456789abc';
 const library={folders:[{id:folder,name:'Physiology'}],conversations:[{id:chat,title:'Cardiovascular study plan',folderId:folder,messages:[{role:'user',content:'Help me study'},{role:'assistant',content:'Let’s begin.'}]}]};
@@ -66,3 +66,18 @@ assert.equal(restoredConversation(withLibraryView(library,null)),null,'An intent
 const pruned=withLibraryView({folders:[],conversations:[],view:viewed.view},chat);assert.deepEqual(pruned.view,{activeId:null,openFolders:[]});
 assert.throws(()=>validateLibrary({...library,view:{activeId:chat,openFolders:'invalid'}}));
 console.log('Return-state checks passed: selected conversation, expanded folders, intentional new chats and deleted-reference cleanup.');
+
+const uid=n=>String(n).padStart(8,'0')+'-1234-4123-8123-123456789abc';
+let pinLibrary={folders:[],conversations:Array.from({length:9},(_,n)=>({id:uid(n),title:'Chat '+n,folderId:null,messages:[{role:'user',content:'Question'},{role:'assistant',content:'Answer'}]}))};
+for(let n=0;n<8;n++)pinLibrary=toggleConversationPin(pinLibrary,uid(n));
+assert.equal(validateLibrary(pinLibrary).conversations.filter(c=>c.pinned).length,8);
+assert.throws(()=>toggleConversationPin(pinLibrary,uid(8)),/8 chats/);
+assert.throws(()=>validateLibrary({...pinLibrary,conversations:pinLibrary.conversations.map(c=>({...c,pinned:true}))}),/8 chats/);
+pinLibrary=toggleConversationPin(pinLibrary,uid(0));pinLibrary=toggleConversationPin(pinLibrary,uid(8));assert.equal(pinLibrary.conversations.filter(c=>c.pinned).length,8);
+const unpinnedBranch=branchConversation(pinLibrary.conversations[1],1,uid(10));assert.equal(unpinnedBranch.pinned,false);validateLibrary({...pinLibrary,conversations:[unpinnedBranch,...pinLibrary.conversations]});
+const created=createLibraryFolder(pinLibrary,folder);assert.equal(created.folders[0].name,'New folder');assert.ok(created.view.openFolders.includes(folder));
+const createdAgain=createLibraryFolder(created,uid(11));assert.equal(createdAgain.folders[1].name,'New folder 2');
+const moved=moveConversationToFolder(created,uid(1),folder);assert.equal(moved.conversations.find(c=>c.id===uid(1)).folderId,folder);assert.equal(moved.conversations.find(c=>c.id===uid(1)).pinned,true);
+const createdAndMoved=createLibraryFolder(createdAgain,uid(12),uid(1));assert.equal(createdAndMoved.folders[2].name,'New folder 3');assert.equal(createdAndMoved.conversations.find(c=>c.id===uid(1)).folderId,uid(12));
+assert.throws(()=>moveConversationToFolder(created,uid(1),uid(99)));
+console.log('Pin/folder checks passed: eight-pin cap, unpin/re-pin, unpinned branches, immediate unique folder names and direct folder moves.');
