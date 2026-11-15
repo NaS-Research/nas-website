@@ -2,6 +2,7 @@
 import {useEffect,useRef,useState} from 'react';
 import Link from 'next/link';
 import {BookmarkIcon,DocumentTextIcon} from '@heroicons/react/24/outline';
+import ModuleNotesPanel from './ModuleNotesPanel';
 import PharmacyToolMenu from '@/components/learn/PharmacyToolMenu';
 import {BookmarkIcon as SavedBookmarkIcon} from '@heroicons/react/24/solid';
 import {useArticleDockVisibility} from '@/components/research/ArticleDockVisibility';
@@ -45,8 +46,8 @@ export default function PersonalTools(){
     onClick={toggleBookmark}>
     {saved?<SavedBookmarkIcon aria-hidden="true"/>:<BookmarkIcon aria-hidden="true"/>}
    </button>
-   {isModule&&<button className="personal-tools-notes" type="button" aria-label="Notes and progress" title="Notes and progress" aria-expanded={open} onClick={()=>{if(toolsRef.current)toolsRef.current.open=false;setOpen(!open);}}><DocumentTextIcon aria-hidden="true"/><span>Notes</span></button>}
-   {open && <div className="personal-tools-panel"><strong>{item.title}</strong>
+   {isModule&&<button className="personal-tools-notes" type="button" aria-label="Notes and progress" title="Notes and progress" aria-expanded={open} onClick={()=>{if(toolsRef.current)toolsRef.current.open=false;setOpen(!open);}}><DocumentTextIcon aria-hidden="true"/></button>}
+   {open && !isModule && <div className="personal-tools-panel"><strong>{item.title}</strong>
     {record?.progress?.lastSection && <Link href={`${item.path}#${encodeURIComponent(record.progress.lastSection)}`}>Resume saved section ↗</Link>}
     {isModule&&<button disabled={member.status!=='ready'||member.saving} onClick={()=>member.save(item.path,'progress',{completed:!record?.progress?.completed})}>{record?.progress?.completed?'✓ Completed · Mark in progress':'Mark module complete'}</button>}
     <label>Note for<select value={section} disabled={dirty} onChange={e=>setSection(e.target.value)}><option value="">This item</option>{item.sections.map(id=><option key={id} value={id}>{id.replaceAll('-',' ')}</option>)}</select></label>
@@ -55,6 +56,7 @@ export default function PersonalTools(){
     <button type="button" onClick={()=>setOpen(false)}>Close notes</button>
     <p role="status">{member.message}</p>{member.status==='error'&&<button onClick={member.retry}>Reconnect</button>}
    </div>}
+   {isModule&&member.status==='ready'&&<ModuleNotesPanel key={`${member.userId}:${item.path}`} member={member} item={item} record={record} open={open} onClose={()=>setOpen(false)}/>}
    {!open && <span className={member.saveError||member.status==='error'?'personal-tools-status':'sr-only'} role="status">{member.message}</span>}
   </>}
   {isModule&&<PharmacyToolMenu embedded detailsRef={toolsRef} onOpen={()=>setOpen(false)}/>}

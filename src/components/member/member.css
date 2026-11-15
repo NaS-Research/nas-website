@@ -37,5 +37,33 @@ body aside.personal-tools--module[data-module-dock] .pharmacy-tool-menu--embedde
 body:has(.personal-tools--module) .pharmacy-tool-menu--standalone{display:none}
 @media(min-width:861px){.pharmacy-module-page .pharmacy-module-layout{grid-template-columns:minmax(12rem,17rem) minmax(0,1fr);gap:clamp(2.5rem,6vw,6rem)}}
 @media(max-width:760px){body aside.personal-tools.personal-tools--module[data-module-dock]{left:16px;bottom:96px}body aside.personal-tools--module[data-module-dock]>:is(button,a),body aside.personal-tools--module[data-module-dock] .pharmacy-tool-menu--embedded summary{font-size:11px;padding:0 8px}}
-@media(max-width:480px){.personal-tools--module .personal-tools-notes>span{display:none}.personal-tools--module .pharmacy-tool-menu--embedded summary .pharmacy-tools-chevron{display:none}}
+@media(max-width:480px){.personal-tools--module .personal-tools-notes>span{display:none}}
 @media(prefers-reduced-motion:reduce){.personal-tools--module .pharmacy-tool-menu--embedded summary .pharmacy-tools-chevron{transition:none}}
+
+/* Quiet, icon-only course controls with a single notes surface. */
+body aside.personal-tools--module[data-module-dock]>:is(button,a){width:40px;padding:0}
+body aside.personal-tools--module[data-module-dock] .pharmacy-tool-menu--embedded summary{padding:0 10px;gap:5px}
+body aside.personal-tools--module[data-module-dock] .pharmacy-tool-menu--embedded nav a{display:block;padding:13px 18px;border-bottom:0}
+body aside.personal-tools--module[data-module-dock] .pharmacy-tool-menu--embedded nav{padding:6px}
+body aside.personal-tools--module[data-module-dock] .pharmacy-tool-menu--embedded nav a{border-radius:10px}
+.personal-tools :is(summary):focus-visible{outline:2px solid #cab383;outline-offset:4px}
+.personal-tools .module-notes-panel[hidden]{display:none!important}
+body aside.personal-tools--module[data-module-dock]>.module-notes-panel{padding:20px;background:#151514;border:1px solid #ffffff1c;border-radius:20px}
+.module-notes-panel header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:16px}
+.module-notes-panel h2{margin:0;font-size:17px;font-weight:500;letter-spacing:-.02em;color:#eeeae2}
+.module-notes-panel header button{display:grid;place-items:center;width:32px;height:32px;border-radius:50%;color:#aaa}
+.module-notes-panel header button:hover{background:#ffffff0b;color:#fff}
+.module-notes-panel header svg{width:19px;height:19px}
+.module-notes-panel label.module-notes-editor{margin:0}
+.module-notes-panel .module-notes-editor textarea{margin:0;min-height:190px;border:1px solid #ffffff12;border-radius:12px;padding:14px;background:#0d0d0d;font-size:13px;line-height:1.7;color:#e5e3de}
+.personal-tools .module-notes-panel>.module-completion{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:18px 0 0;width:100%;min-height:34px;color:#c9c6bf;font-size:12px}
+.module-completion-track{display:flex;align-items:center;width:36px;height:22px;padding:3px;border-radius:20px;background:#ffffff15;transition:background .15s}
+.module-completion-track>span{display:grid;place-items:center;width:16px;height:16px;border-radius:50%;background:#aaa;transition:transform .15s}
+.module-completion[aria-checked=true] .module-completion-track{background:#b89a62}
+.module-completion[aria-checked=true] .module-completion-track>span{transform:translateX(14px);background:#eee6d6;color:#332a18}
+.module-completion-track svg{width:12px;height:12px}
+.module-notes-panel .module-notes-error{margin:14px 0 0;font-size:12px;color:#e7b5a2;line-height:1.6}
+.module-notes-error button{text-decoration:underline;text-underline-offset:3px}
+@media(prefers-reduced-motion:reduce){.module-completion-track,.module-completion-track>span{transition:none}}
+
+body .pharmacy-tool-menu nav a{grid-template-columns:1fr}

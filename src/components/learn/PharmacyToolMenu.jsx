@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useRef } from "react";
-import { Squares2X2Icon,ChevronUpIcon } from "@heroicons/react/24/outline";
+import { Squares2X2Icon,ChevronDownIcon } from "@heroicons/react/24/outline";
 import { useMember } from "@/components/member/MemberProvider";
 
 export default function PharmacyToolMenu({embedded=false,detailsRef,onOpen}) {
@@ -41,15 +41,15 @@ export default function PharmacyToolMenu({embedded=false,detailsRef,onOpen}) {
   if(!embedded&&isModule)return null;
   return (
 <details ref={menuRef} className={embedded?"pharmacy-tool-menu pharmacy-tool-menu--embedded":"pharmacy-tool-menu pharmacy-tool-menu--standalone"} onToggle={event=>{if(event.currentTarget.open)onOpen?.();}}>
-        <summary>
-          {embedded?<><Squares2X2Icon aria-hidden="true"/><strong>Tools</strong><ChevronUpIcon className="pharmacy-tools-chevron" aria-hidden="true"/></>:<><span>Learn</span><strong>Open tools</strong><i aria-hidden="true">+</i></>}
+        <summary aria-label={embedded?"Learning tools":undefined} title={embedded?"Learning tools":undefined}>
+          {embedded?<><Squares2X2Icon aria-hidden="true"/><ChevronDownIcon className="pharmacy-tools-chevron" aria-hidden="true"/></>:<><span>Learn</span><strong>Open tools</strong><i aria-hidden="true">+</i></>}
         </summary>
         <nav aria-label="Learning tools">
-          <Link href="/learn"><span>01</span>NaS Learn</Link>
-          <Link href="/learn/pharmacy/atlas"><span>02</span>Human Atlas</Link>
-          <Link href="/learn/pharmacy/drugs"><span>03</span>Drug library</Link>
-          <Link href="/learn/library"><span>04</span>Learning library</Link>
-          <Link href="/learn/pharmacy/review"><span>05</span>Knowledge review</Link>
+          <Link href="/learn/pharmacy/drugs">Drug library</Link>
+          <Link href="/learn/pharmacy/atlas">Human Atlas</Link>
+          <Link href="/learn/pharmacy/review">Knowledge review</Link>
+          <Link href="/learn/library">Learning library</Link>
+          <Link href="/learn">NaS Learn</Link>
         </nav>
       </details>
   );
