@@ -1,6 +1,6 @@
 /* Visible by default: no script, blocked script or unsupported selector => usable article. */
 html:has([data-computing-page]),html:has([data-computing-page]) body,[data-computing-page]{background:#000}
-html:has([data-computing-page]) :is(.nas-navbar,.personal-tools,.site-closing,.nas-skip-link),
+html:has([data-computing-page]) :is(.nas-navbar,.personal-tools,.nicole-launcher,.site-closing,.nas-skip-link),
 [data-computing-page]>:not([data-computing-visual]):not(script),
 [data-computing-visual] :is(figcaption,button){
  opacity:var(--nas-computing-page-opacity,1);
@@ -12,7 +12,7 @@ html:has([data-computing-page]) :is(.nas-navbar,.personal-tools,.site-closing,.n
 @keyframes nas-computing-reveal-safety-active{to{opacity:1}}
 @media(prefers-reduced-motion:reduce){
  html:has([data-computing-page]){--nas-computing-page-opacity:1!important;--nas-computing-page-transition:0s!important;--nas-computing-heading-rows:1fr!important;--nas-computing-stage-space:0px!important;--nas-computing-stage-transition:0s!important}
- html:has([data-computing-page]) :is(.nas-navbar,.personal-tools,.site-closing,.nas-skip-link),[data-computing-page]>:not([data-computing-visual]):not(script),[data-computing-visual] :is(figcaption,button){animation:none;opacity:1;transition:none}
+ html:has([data-computing-page]) :is(.nas-navbar,.personal-tools,.nicole-launcher,.site-closing,.nas-skip-link),[data-computing-page]>:not([data-computing-visual]):not(script),[data-computing-visual] :is(figcaption,button){animation:none;opacity:1;transition:none}
 }
 
 /* Keep the hidden heading at its natural height: the opening viewport is

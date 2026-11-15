@@ -4,6 +4,7 @@ import {createContext,useContext,useEffect,useId,useRef,useState} from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import {usePathname,useRouter} from 'next/navigation';
+import {useArticleDockVisibility} from '@/components/research/ArticleDockVisibility';
 import {useMember} from '@/components/member/MemberProvider';
 import {useNicoleLibrary} from './useNicoleLibrary';
 import {libraryName,emptyLibrary,branchConversation,conversationContext,searchConversations,conversationTitle,toggleConversationPin,createLibraryFolder,moveConversationToFolder} from '@/lib/nicole/library.mjs';
@@ -18,7 +19,7 @@ function Icon({name}){
 }
 export default function NicoleProvider({children}){
  const member=useMember();const pathname=usePathname();const router=useRouter();
- const library=useNicoleLibrary(member);
+ const library=useNicoleLibrary(member);const articleDocks=useArticleDockVisibility();
  const [sidebar,setSidebar]=useState(false);const [collapsed,setCollapsed]=useState(true);const [narrow,setNarrow]=useState(false);const [searchOpen,setSearchOpen]=useState(false);const [searchQuery,setSearchQuery]=useState('');
  const current=library.state.library.conversations.find(c=>c.id===library.state.activeId);
  const chat={owner:library.state.owner,messages:current?.messages||[]};
@@ -79,7 +80,7 @@ export default function NicoleProvider({children}){
  }
  const visibleLibrary=chat.owner===userId?library:{...library,state:{owner:null,library:emptyLibrary(),activeId:null,ready:false},profile:null,status:''};
  const value={library:visibleLibrary,sidebar,setSidebar,collapsed,narrow,toggleSidebar:()=>narrow?setSidebar(v=>!v):setCollapsed(v=>!v),closeSidebar:()=>narrow?setSidebar(false):setCollapsed(true),searchOpen,setSearchOpen,searchQuery,setSearchQuery,branch,current:chat.owner===userId?current:null,selectConversation:id=>{if(busy)return;library.select(id);setDraft('');setError('');setSidebar(false);setSearchOpen(false);setSearchQuery('');},messages:chat.owner===userId?chat.messages:[],open,busy,error,draft,setDraft,page,includePage,setIncludePage,userId,loading:member.status==='loading'||Boolean(userId&&!library.state.ready),send,stop,newChat,openPanel,closePanel};
- return <Context.Provider value={value}>{children}{!full&&<button className="nicole-launcher" aria-label="Ask Nicole" aria-expanded={open} aria-controls="nicole-panel" onClick={open?closePanel:openPanel}><Icon name="chat"/><span>Ask Nicole</span></button>}{open&&!full&&<aside id="nicole-panel" className="nicole-panel" aria-label="Nicole conversation" ref={panel}><ChatHeader panel/>{sidebar&&<Sidebar compact/>}<Conversation/><Composer/></aside>}{searchOpen&&<ConversationSearch/>}</Context.Provider>;
+ return <Context.Provider value={value}>{children}{!full&&<button className="nicole-launcher" data-article-dock-visible={articleDocks.article?articleDocks.visible:undefined} inert={articleDocks.article&&!articleDocks.visible} aria-hidden={articleDocks.article&&!articleDocks.visible} aria-label="Ask Nicole" aria-expanded={open} aria-controls="nicole-panel" onClick={open?closePanel:openPanel}><Icon name="chat"/><span>Ask Nicole</span></button>}{open&&!full&&<aside id="nicole-panel" className="nicole-panel" aria-label="Nicole conversation" ref={panel}><ChatHeader panel/>{sidebar&&<Sidebar compact/>}<Conversation/><Composer/></aside>}{searchOpen&&<ConversationSearch/>}</Context.Provider>;
 }
 function ChatHeader({panel=false}){
  const chat=useContext(Context);

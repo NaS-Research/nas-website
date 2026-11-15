@@ -1,3 +1,4 @@
+import ArticleDockVisibility from '@/components/research/ArticleDockVisibility';
 import ArticleVisitNavigation from '@/components/research/ArticleVisitNavigation';
 import {researchItems} from '@/data/researchLibrary';
 import {computingRevealBoot} from '@/lib/computingPageReveal.mjs';
@@ -122,12 +123,12 @@ export default function RootLayout({ children }) {
       <body className="bg-red-500 min-h-screen antialiased">
         <script id="computing-reveal-boot" dangerouslySetInnerHTML={{__html:computingRevealBoot}}/>
         <a className="nas-skip-link" href="#main-content">Skip to content</a>
-        <MemberProvider><NicoleProvider><Navbar authEnabled={authReady()} />
+        <MemberProvider><ArticleDockVisibility><NicoleProvider><Navbar authEnabled={authReady()} />
         <ArticleVisitNavigation paths={researchItems.map(item => `/research/${item.slug}`)} />
         <PageNavigationMotion />
         <main id="main-content" tabIndex={-1}>
           {children}
-        </main><PersonalTools /></NicoleProvider></MemberProvider>
+        </main><PersonalTools /></NicoleProvider></ArticleDockVisibility></MemberProvider>
       </body>
     </html>
   );

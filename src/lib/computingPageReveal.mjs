@@ -5,7 +5,7 @@ export function installComputingReveal(win, doc) {
   if (win.__nasComputingReveal) return win.__nasComputingReveal;
   let style, timer, safetyCycle = false, finished = false, amount = 0, reason = 'arrival-pending';
   const listeners = [];
-  let scrollFrame, visualStage, settleStage;
+  let scrollFrame, visualStage, settleStage, fadeUntil=0;
   const scrollListeners = [];
   function stopScroll(preservePosition = true) {
     if (scrollFrame !== undefined) win.cancelAnimationFrame(scrollFrame);
@@ -59,7 +59,7 @@ export function installComputingReveal(win, doc) {
     if (win.matchMedia('(prefers-reduced-motion: reduce)').matches) return null;
     style = doc.createElement('style');
     style.id = 'nas-computing-reveal-state';
-    style.textContent = ':root{--nas-computing-heading-rows:1fr;--nas-computing-stage-space:100svh;--nas-computing-stage-transition:0s;--nas-computing-heading-safety:nas-computing-heading-safety 0s 15s forwards;--nas-computing-stage-safety:nas-computing-stage-safety 0s 15s forwards;--nas-computing-page-opacity:0;--nas-computing-page-transition:0s;--nas-computing-page-safety:nas-computing-reveal-safety 0s 15s forwards}body{background:#000}.nas-navbar,.personal-tools,.nas-skip-link{opacity:var(--nas-computing-page-opacity,1);transition:opacity var(--nas-computing-page-transition,900ms cubic-bezier(.22,.61,.36,1));animation:var(--nas-computing-page-safety,none)}@keyframes nas-computing-reveal-safety{to{opacity:1}}@keyframes nas-computing-reveal-safety-active{to{opacity:1}}';
+    style.textContent = ':root{--nas-computing-heading-rows:1fr;--nas-computing-stage-space:100svh;--nas-computing-stage-transition:0s;--nas-computing-heading-safety:nas-computing-heading-safety 0s 15s forwards;--nas-computing-stage-safety:nas-computing-stage-safety 0s 15s forwards;--nas-computing-page-opacity:0;--nas-computing-page-transition:0s;--nas-computing-page-safety:nas-computing-reveal-safety 0s 15s forwards}body{background:#000}.nas-navbar,.personal-tools,.nicole-launcher,.nas-skip-link{opacity:var(--nas-computing-page-opacity,1);transition:opacity var(--nas-computing-page-transition,900ms cubic-bezier(.22,.61,.36,1));animation:var(--nas-computing-page-safety,none)}@keyframes nas-computing-reveal-safety{to{opacity:1}}@keyframes nas-computing-reveal-safety-active{to{opacity:1}}';
     doc.head.appendChild(style);
     const rule = style.sheet?.cssRules[0]?.style;
     if (!rule) { style.remove(); return null; }
@@ -73,7 +73,7 @@ export function installComputingReveal(win, doc) {
       const stage = why === 'arrival-complete' && !immediate && film ? {
         film, start: visualStage.getBoundingClientRect().height, end: film.getBoundingClientRect().height
       } : null;
-      finished = true; amount = 1; reason = why;
+      finished = true; amount = 1; reason = why;fadeUntil=immediate?0:win.performance.now()+2200;
       if (!immediate) {
         rule.setProperty('--nas-computing-page-transition', '2200ms ease-in-out');
         rule.setProperty('--nas-computing-stage-transition', '0s');
@@ -117,6 +117,7 @@ export function installComputingReveal(win, doc) {
       },
       finish,
       status() { return {finished, amount, reason}; },
+      isSettled() { return finished && scrollFrame===undefined && settleStage===undefined && win.performance.now()>=fadeUntil; },
       dispose() { stopScroll(false); finish('navigation'); style.remove(); if (win.__nasComputingReveal === api) delete win.__nasComputingReveal; }
     };
     win.__nasComputingReveal = api;
