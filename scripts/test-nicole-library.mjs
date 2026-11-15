@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {emptyLibrary,libraryName,validateLibrary,accountProfile} from '../src/lib/nicole/library.mjs';
+import {emptyLibrary,libraryName,validateLibrary,accountProfile,branchConversation,conversationContext,searchConversations} from '../src/lib/nicole/library.mjs';
 import {handleLibrary} from '../src/lib/nicole/library-handler.mjs';
 const folder='12345678-1234-4123-8123-123456789abc',chat='22345678-1234-4123-8123-123456789abc';
 const library={folders:[{id:folder,name:'Physiology'}],conversations:[{id:chat,title:'Cardiovascular study plan',folderId:folder,messages:[{role:'user',content:'Help me study'},{role:'assistant',content:'Let’s begin.'}]}]};
@@ -31,3 +31,15 @@ assert.equal((await handleLibrary(request(),{...config,authClient:async()=>({aut
 assert.equal((await handleLibrary(request(),{...config,authClient:async()=>({auth:{getUser:async()=>({data:{user:{id:'owner'}}})},rpc:async()=>({error:{message:'private database detail'}})})})).status,503);
 assert.equal((await handleLibrary(new Request('https://nasresearch.bio/api/nicole/library',{method:'PUT',headers:{origin:'https://nasresearch.bio','content-type':'application/json'},body:'x'.repeat(1600001)}),config)).status,413);
 console.log('Nicole library tests passed: private account reads, authenticated writes, folder ownership, names, payload bounds, stale revisions, storage failures and safe profile images.');
+
+const original={...library.conversations[0],messages:[{role:'user',content:'First question'},{role:'assistant',content:'First answer'},{role:'user',content:'Later question'},{role:'assistant',content:'Later answer'}]};
+const branched=branchConversation(original,1,'32345678-1234-4123-8123-123456789abc');
+assert.equal(branched.messages.length,2);assert.equal(branched.folderId,folder);assert.notEqual(branched.id,original.id);assert.match(branched.title,/Branch$/);
+branched.messages[0].content='Changed in branch';assert.equal(original.messages[0].content,'First question');assert.equal(original.messages.length,4);
+assert.throws(()=>branchConversation(original,2,chat));assert.throws(()=>branchConversation(original,99,chat));
+const longHistory=Array.from({length:40},(_,n)=>({role:n%2?'assistant':'user',content:'Message '+n}));
+const recent=conversationContext(longHistory);assert.equal(recent.length,18);assert.equal(recent.at(-1).content,'Message 39');assert.equal(longHistory.length,40);
+const large=conversationContext(Array.from({length:18},()=>({role:'user',content:'x'.repeat(12000)})));assert.equal(large.length,4);assert.equal(large.reduce((n,m)=>n+m.content.length,0),48000);
+validateLibrary({...library,conversations:[{...library.conversations[0],messages:longHistory}]});
+assert.equal(searchConversations(library,'cardiovascular').length,1);assert.equal(searchConversations(library,'HELP ME STUDY').length,1);assert.equal(searchConversations(library,'absent phrase').length,0);assert.equal(searchConversations(library,'  ').length,1);
+console.log('Response action checks passed: independent branches, selected reply boundaries, bounded model context, longer saved history and local title/message search.');

@@ -20,8 +20,8 @@ const sections = [
     id: "accounts",
     title: "Your NaS account",
     paragraphs: [
-      "You may sign in to a private NaS workspace with email and password or with Google. Keep your sign-in credentials secure, provide accurate information, and do not share another person's account or misrepresent an affiliation. A profile or affiliation does not establish verified researcher status or institutional endorsement.",
-      "Your saved resources, notes, and reading progress are for your own research and learning. Do not store patient information, confidential records, or material you do not have permission to provide. You retain rights in the notes you submit and permit NaS and its service providers to process them to operate your workspace.",
+      "You may sign in to a private NaS workspace with email and password or an available sign-in provider. Keep your sign-in credentials secure, provide accurate information, and do not share another person's account or misrepresent an affiliation. A profile or affiliation does not establish verified researcher status or institutional endorsement.",
+      "Your saved resources, notes, reading progress, and conversations are for your own research and learning. Do not store patient information, confidential records, or material you do not have permission to provide. You retain rights in the notes you submit and permit NaS and its service providers to process them to operate your workspace.",
       "You can request account deletion using the contact in our Privacy Policy. We may restrict access where needed to investigate misuse, protect accounts, or meet legal requirements.",
     ],
   },
@@ -44,9 +44,12 @@ const sections = [
   },
   {
     id: "nicole",
-    title: "Nicole development status",
+    title: "Using Nicole",
     paragraphs: [
-      "Nicole is in development. The public website does not currently offer a working Nicole chat service.",
+      "Nicole is an AI assistant powered by OpenAI for learning and research support. Responses are generated automatically, may be incomplete or inaccurate, and may include incorrect references. Verify important claims, citations, calculations, and recommendations against reliable sources. Nicole does not provide professional medical advice or make clinical decisions.",
+      "You are responsible for the messages and other material you submit and must have permission to provide them. Do not submit patient identifiers, confidential records, credentials, or other sensitive information. Your messages and selected public-page context are processed as described in our Privacy Policy. You retain any rights you have in your inputs and permit NaS and its service providers to process them to operate Nicole and save your conversations.",
+      "You can copy responses and create a separate branch of a conversation. A branch retains the conversation through the selected response; later messages in the original are not included. Saved history and the context Nicole receives are bounded, so she may not receive all earlier messages in a long conversation. Generated responses may resemble responses provided to others and may include material subject to third-party rights. Evaluate any rights and obligations that apply before publishing or reusing content.",
+      "Do not use Nicole for unlawful activity, bypass usage limits, impersonate a professional, or represent unverified output as established evidence or NaS institutional endorsement. We may apply usage limits, change features, or restrict access to protect the service. Nicole cannot be relied on for emergency or safety-critical decisions.",
     ],
   },
   {
@@ -140,7 +143,7 @@ export default function TermsPage() {
       eyebrow="Legal · NaS Research"
       title="Terms of Use"
       summary="The rules for using our public website, reading NaS publications, and interacting with our experimental research tools."
-      effectiveDate="October 19, 2026"
+      effectiveDate="November 14, 2026"
       sections={sections}
     />
   );

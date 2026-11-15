@@ -12,7 +12,7 @@ export function validateLibrary(value){
  const folders=value.folders.map(f=>({id:id(f?.id),name:libraryName(f?.name)}));const folderIds=new Set(folders.map(f=>f.id));
  const conversations=value.conversations.map(c=>{
   if(c?.folderId!==null&&!folderIds.has(c?.folderId))throw new Error('Choose a folder in your account.');
-  if(!Array.isArray(c.messages)||c.messages.length>20)throw new Error('Invalid conversation.');
+  if(!Array.isArray(c.messages)||c.messages.length>100)throw new Error('Invalid conversation.');
   let size=0;const messages=c.messages.map(m=>{if(!m||!['user','assistant'].includes(m.role)||typeof m.content!=='string'||m.content.length>12000)throw new Error('Invalid message.');size+=m.content.length;return {role:m.role,content:m.content};});
   if(size>60000)throw new Error('This conversation is too long.');
   return {id:id(c.id),title:libraryName(c.title),folderId:c.folderId,messages};
@@ -29,4 +29,19 @@ export function accountProfile(user){
   try{const url=new URL(raw);if(url.protocol==='https:'&&!url.username&&!url.password&&!url.port&&['lh3.googleusercontent.com','lh4.googleusercontent.com','lh5.googleusercontent.com','lh6.googleusercontent.com'].includes(url.hostname)&&url.href.length<2048){avatar=url.href;break;}}catch{}
  }
  return {name,avatar};
+}
+
+export function branchConversation(conversation,index,id){
+ if(!conversation||!Number.isInteger(index)||index<0||conversation.messages[index]?.role!=='assistant')throw new Error('Choose a Nicole response to branch from.');
+ return {...conversation,id,title:Array.from(conversation.title).slice(0,70).join('')+' · Branch',messages:conversation.messages.slice(0,index+1).map(message=>({...message}))};
+}
+// Bound model context independently from saved history; branching never calls the model.
+export function conversationContext(messages){
+ const recent=messages.slice(-18);let size=recent.reduce((total,m)=>total+m.content.length,0);
+ while(size>48000&&recent.length)size-=recent.shift().content.length;
+ return recent;
+}
+export function searchConversations(library,query){
+ const term=query.trim().toLocaleLowerCase();
+ return library.conversations.filter(c=>!term||c.title.toLocaleLowerCase().includes(term)||c.messages.some(m=>m.content.toLocaleLowerCase().includes(term)));
 }
