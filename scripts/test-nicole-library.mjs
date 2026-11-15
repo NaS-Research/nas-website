@@ -55,3 +55,7 @@ const oldLibrary={folders:[],conversations:[{id:chat,title:'Earlier conversation
 const upgraded=upgradeConversationTitles(oldLibrary);assert.equal(upgraded.conversations[0].title,'NaS research library');assert.equal(upgraded.conversations[1].title,'My exam notes');assert.equal(oldLibrary.conversations[0].title,'Earlier conversation');assert.equal(upgradeConversationTitles(upgraded),upgraded);
 const prefixQuestion='Help me build a study plan for cardiovascular physiology.';assert.equal(upgradeConversationTitles({folders:[],conversations:[{...oldLibrary.conversations[0],title:prefixQuestion,messages:[{role:'user',content:prefixQuestion}]}]}).conversations[0].title,'Cardiovascular physiology study plan');
 console.log('Topic naming passed: question topics, technical casing, bounded titles, default-name migration and custom-name preservation.');
+
+const explicitlyNamed={...oldLibrary.conversations[0],title:'New conversation',manualTitle:true};
+const manualLibrary=validateLibrary({folders:[],conversations:[explicitlyNamed]});assert.equal(manualLibrary.conversations[0].manualTitle,true);assert.equal(upgradeConversationTitles(manualLibrary),manualLibrary);
+console.log('Explicitly renamed conversations retain their chosen names across validation and automatic-title upgrades.');
