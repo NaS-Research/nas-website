@@ -1,7 +1,8 @@
 'use client';
 import {useEffect,useRef,useState} from 'react';
 import Link from 'next/link';
-import {BookmarkIcon} from '@heroicons/react/24/outline';
+import {BookmarkIcon,DocumentTextIcon} from '@heroicons/react/24/outline';
+import PharmacyToolMenu from '@/components/learn/PharmacyToolMenu';
 import {BookmarkIcon as SavedBookmarkIcon} from '@heroicons/react/24/solid';
 import {useArticleDockVisibility} from '@/components/research/ArticleDockVisibility';
 import {useMember} from './MemberProvider';
@@ -12,7 +13,7 @@ export default function PersonalTools(){
  const item=member.current?.path===member.pathname ? member.current : null;
  const isArticle=item?.type==='article'||item?.type==='paper';
  const isModule=item?.type==='module'&&member.pathname?.startsWith('/learn/');
- const [moduleBounds,setModuleBounds]=useState(null);
+ const toolsRef=useRef(null);
  const record=member.items.find(r=>r.path===item?.path);
  const [open,setOpen]=useState(false);const [section,setSection]=useState('');const [draft,setDraft]=useState('');const [dirty,setDirty]=useState(false);
  const last=useRef('');const saveRef=useRef(member.save);saveRef.current=member.save;
@@ -33,26 +34,18 @@ export default function PersonalTools(){
   },{rootMargin:'-15% 0px -55% 0px'});
   nodes.forEach(n=>observer.observe(n));return ()=>{observer.disconnect();window.removeEventListener('wheel',beginReading);window.removeEventListener('touchmove',beginReading);window.removeEventListener('keydown',beginReading);};
  },[member.status,item?.path]);
- useEffect(()=>{
-  if(!isModule){setModuleBounds(null);return;}
-  const content=document.querySelector('.pharmacy-module-content,.lesson-body');if(!content)return;
-  let frame;const measure=()=>{frame=null;const rect=content.getBoundingClientRect();setModuleBounds({center:rect.left+rect.width/2,width:Math.max(0,Math.min(rect.width-24,window.innerWidth-32))});};
-  const schedule=()=>{if(!frame)frame=requestAnimationFrame(measure);};
-  const observer=new ResizeObserver(schedule);observer.observe(content);if(content.parentElement)observer.observe(content.parentElement);window.addEventListener('resize',schedule);measure();
-  return()=>{cancelAnimationFrame(frame);observer.disconnect();window.removeEventListener('resize',schedule);};
- },[isModule,item?.path]);
- if(!item||(!isModule&&(!isArticle||!member.pathname?.startsWith('/research/')))||(isModule&&!moduleBounds))return null;
+ if(!item||(!isModule&&(!isArticle||!member.pathname?.startsWith('/research/'))))return null;
  async function saveNote(){if(await member.save(item.path,'note',{section,text:draft}))setDirty(false);}
  const saved=optimisticSaved??Boolean(record?.saved);
  async function toggleBookmark(){const operation=++bookmarkOperation.current;setOptimisticSaved(!saved);try{await member.save(item.path,'save',{saved:!saved});}finally{if(operation===bookmarkOperation.current)setOptimisticSaved(null);}}
- return <aside className={isModule?"personal-tools personal-tools--module":"personal-tools personal-tools--article"} data-module-dock={isModule||undefined} data-article-dock-visible={!isModule?articleDocks.visible:undefined} inert={!isModule&&!articleDocks.visible} aria-hidden={!isModule&&!articleDocks.visible} style={isModule?{'--module-dock-center':`${moduleBounds.center}px`,'--module-dock-max':`${moduleBounds.width}px`}:undefined} aria-label={isModule?"Module save, notes and progress":"Article bookmark"}>
-  {member.status==='guest'?<Link href={`/login?next=${encodeURIComponent(item.path)}`} aria-label={isModule?"Sign in to save module progress":"Sign in to bookmark this article"} title={isModule?"Sign in to save":"Sign in to bookmark"}>{isModule?'Sign in to save your place':<BookmarkIcon aria-hidden="true"/>}</Link>:<>
-   <button type="button" disabled={member.status!=='ready'||member.saving} aria-pressed={saved} aria-busy={member.saving}
+ return <aside className={isModule?"personal-tools personal-tools--module":"personal-tools personal-tools--article"} data-module-dock={isModule||undefined} data-article-dock-visible={!isModule?articleDocks.visible:undefined} inert={!isModule&&!articleDocks.visible} aria-hidden={!isModule&&!articleDocks.visible} aria-label={isModule?"Module controls":"Article bookmark"}>
+  {member.status==='guest'?<Link href={`/login?next=${encodeURIComponent(item.path)}`} aria-label={isModule?"Sign in to save module progress":"Sign in to bookmark this article"} title={isModule?"Sign in to save":"Sign in to bookmark"}><BookmarkIcon aria-hidden="true"/></Link>:<>
+   <button className="personal-tools-save" type="button" disabled={member.status!=='ready'||member.saving} aria-pressed={saved} aria-busy={member.saving}
     aria-label={isModule?(saved?'Remove saved module':'Save module for later'):(saved?'Remove article bookmark':'Bookmark this article')} title={isModule?(saved?'Remove saved module':'Save for later'):(saved?'Remove bookmark':'Bookmark article')}
     onClick={toggleBookmark}>
-    {isModule?(saved?'✓ Saved':'＋ Save for later'):(saved?<SavedBookmarkIcon aria-hidden="true"/>:<BookmarkIcon aria-hidden="true"/>)}
+    {saved?<SavedBookmarkIcon aria-hidden="true"/>:<BookmarkIcon aria-hidden="true"/>}
    </button>
-   {isModule&&<button type="button" aria-expanded={open} onClick={()=>setOpen(!open)}>Notes &amp; progress</button>}
+   {isModule&&<button className="personal-tools-notes" type="button" aria-label="Notes and progress" title="Notes and progress" aria-expanded={open} onClick={()=>{if(toolsRef.current)toolsRef.current.open=false;setOpen(!open);}}><DocumentTextIcon aria-hidden="true"/><span>Notes</span></button>}
    {open && <div className="personal-tools-panel"><strong>{item.title}</strong>
     {record?.progress?.lastSection && <Link href={`${item.path}#${encodeURIComponent(record.progress.lastSection)}`}>Resume saved section ↗</Link>}
     {isModule&&<button disabled={member.status!=='ready'||member.saving} onClick={()=>member.save(item.path,'progress',{completed:!record?.progress?.completed})}>{record?.progress?.completed?'✓ Completed · Mark in progress':'Mark module complete'}</button>}
@@ -64,5 +57,6 @@ export default function PersonalTools(){
    </div>}
    {!open && <span className={member.saveError||member.status==='error'?'personal-tools-status':'sr-only'} role="status">{member.message}</span>}
   </>}
+  {isModule&&<PharmacyToolMenu embedded detailsRef={toolsRef} onOpen={()=>setOpen(false)}/>}
  </aside>;
 }

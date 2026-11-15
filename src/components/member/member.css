@@ -20,12 +20,22 @@
 @media(max-width:760px){.personal-tools--article{left:16px;right:auto;bottom:96px}}
 @media(prefers-reduced-motion:reduce){.personal-tools--article > :is(button,a){transition:none}}
 
-/* Center course controls on the measured reading column, rather than the viewport. */
-body aside.personal-tools.personal-tools--module[data-module-dock]{position:fixed;top:auto;left:var(--module-dock-center);right:auto;bottom:92px;transform:translateX(-50%);margin:0;width:max-content;max-width:var(--module-dock-max);padding:10px 16px;gap:16px;justify-content:center;border-radius:16px;z-index:45}
-.personal-tools--module>button,.personal-tools--module>a{white-space:nowrap;min-height:23px}
+/* One course dock, opposite Ask Nicole. Popovers never change its footprint. */
+body aside.personal-tools.personal-tools--module[data-module-dock]{position:fixed;top:auto;left:20px;right:auto;bottom:92px;transform:none;margin:0;width:max-content;max-width:calc(100vw - 160px);padding:0 6px;gap:2px;flex-wrap:nowrap;min-height:43px;border:1px solid #79644466;border-radius:28px;z-index:51;background:#1b1915f5;color:#d9c8a7;box-shadow:0 4px 24px #0006;backdrop-filter:blur(16px)}
+body aside.personal-tools--module[data-module-dock]>:is(button,a),body aside.personal-tools--module[data-module-dock] .pharmacy-tool-menu--embedded summary{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:41px;padding:0 10px;border-radius:22px;white-space:nowrap;font-size:12px}
+.personal-tools--module> :is(button,a) svg,.personal-tools--module .pharmacy-tool-menu--embedded svg{width:18px;height:18px;flex-shrink:0}
 .personal-tools--module>button[aria-pressed=true]{color:var(--nas-gold-light)}
-body aside.personal-tools--module[data-module-dock]>.personal-tools-panel{position:absolute;top:auto;bottom:calc(100% + 12px);left:50%;right:auto;transform:translateX(-50%);width:360px;max-width:min(var(--module-dock-max),calc(100vw - 32px));max-height:65dvh;overflow:auto;flex-basis:auto}
-.personal-tools--module>.personal-tools-status{position:absolute;bottom:calc(100% + 10px);left:50%;transform:translateX(-50%);width:max-content;max-width:var(--module-dock-max);padding:10px 14px;background:#1b1915;border-radius:10px;font-size:11px;line-height:1.6}
+.personal-tools--module> :is(button,a):hover:not(:disabled),.personal-tools--module .pharmacy-tool-menu--embedded summary:hover{background:#2a251c}
+body aside.personal-tools--module[data-module-dock]>.personal-tools-panel{position:absolute;top:auto;bottom:calc(100% + 12px);left:0;right:auto;transform:none;width:360px;max-width:calc(100vw - 32px);max-height:min(65dvh,calc(100dvh - 200px));overflow:auto;flex-basis:auto;margin:0}
+.personal-tools--module>.personal-tools-status{position:absolute;bottom:calc(100% + 10px);left:0;width:max-content;max-width:calc(100vw - 32px);padding:10px 14px;background:#1b1915;border-radius:10px;font-size:11px;line-height:1.6}
+body aside.personal-tools--module[data-module-dock] .pharmacy-tool-menu--embedded{position:static;inset:auto;width:auto;max-width:none;margin:0;display:block;z-index:auto}
+body aside.personal-tools--module[data-module-dock] .pharmacy-tool-menu--embedded summary{border:0;background:none;box-shadow:none;backdrop-filter:none;margin:0;width:auto;color:inherit;list-style:none}
+body aside.personal-tools--module[data-module-dock] .pharmacy-tool-menu--embedded summary strong{font:inherit}
+.personal-tools--module .pharmacy-tool-menu--embedded summary .pharmacy-tools-chevron{width:12px;height:12px;transition:transform .18s}
+.personal-tools--module .pharmacy-tool-menu--embedded[open] summary .pharmacy-tools-chevron{transform:rotate(180deg)}
+body aside.personal-tools--module[data-module-dock] .pharmacy-tool-menu--embedded nav{position:absolute;left:0;right:auto;bottom:calc(100% + 12px);margin:0;width:280px;max-width:calc(100vw - 32px);max-height:65dvh;overflow:auto}
+body:has(.personal-tools--module) .pharmacy-tool-menu--standalone{display:none}
 @media(min-width:861px){.pharmacy-module-page .pharmacy-module-layout{grid-template-columns:minmax(12rem,17rem) minmax(0,1fr);gap:clamp(2.5rem,6vw,6rem)}}
-@media(min-width:861px) and (max-width:1100px){body aside.personal-tools.personal-tools--module[data-module-dock]{bottom:156px}}
-@media(max-width:860px){body aside.personal-tools.personal-tools--module[data-module-dock]{bottom:calc(16px + env(safe-area-inset-bottom));padding:10px 14px;gap:14px}}
+@media(max-width:760px){body aside.personal-tools.personal-tools--module[data-module-dock]{left:16px;bottom:96px}body aside.personal-tools--module[data-module-dock]>:is(button,a),body aside.personal-tools--module[data-module-dock] .pharmacy-tool-menu--embedded summary{font-size:11px;padding:0 8px}}
+@media(max-width:480px){.personal-tools--module .personal-tools-notes>span{display:none}.personal-tools--module .pharmacy-tool-menu--embedded summary .pharmacy-tools-chevron{display:none}}
+@media(prefers-reduced-motion:reduce){.personal-tools--module .pharmacy-tool-menu--embedded summary .pharmacy-tools-chevron{transition:none}}
