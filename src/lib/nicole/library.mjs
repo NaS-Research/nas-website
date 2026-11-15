@@ -17,7 +17,13 @@ export function validateLibrary(value){
   if(size>60000)throw new Error('This conversation is too long.');
   return {id:id(c.id),title:libraryName(c.title),folderId:c.folderId,messages,...(c.manualTitle===true?{manualTitle:true}:{})};
  });
- const library={folders,conversations};if(new TextEncoder().encode(JSON.stringify(library)).length>1500000)throw new Error('Your conversation library is full. Remove an old conversation to make room.');
+ const library={folders,conversations};
+ if(value.view!==undefined){
+  if(!value.view||typeof value.view!=='object'||Array.isArray(value.view)||!Array.isArray(value.view.openFolders)||value.view.openFolders.length>30)throw new Error('Invalid conversation view.');
+  const conversationIds=new Set(conversations.map(c=>c.id));
+  library.view={activeId:conversationIds.has(value.view.activeId)?value.view.activeId:null,openFolders:[...new Set(value.view.openFolders.filter(id=>folderIds.has(id)))]};
+ }
+ if(new TextEncoder().encode(JSON.stringify(library)).length>1500000)throw new Error('Your conversation library is full. Remove an old conversation to make room.');
  return library;
 }
 export function accountProfile(user){
@@ -75,4 +81,13 @@ export function upgradeConversationTitles(library){
   if(title===c.title)return c;changed=true;return {...c,title};
  });
  return changed?{...library,conversations}:library;
+}
+
+export function withLibraryView(library,activeId,openFolders=library.view?.openFolders||[]){
+ const checked=validateLibrary({...library,view:{activeId,openFolders}});return {...library,view:checked.view};
+}
+export function restoredConversation(library,cachedId){
+ const id=cachedId??library.view?.activeId;
+ if(library.conversations.some(c=>c.id===id))return id;
+ return library.view?null:library.conversations[0]?.id||null;
 }
