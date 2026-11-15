@@ -8,7 +8,6 @@ export default function PersonalTools(){
  const member=useMember();
  const item=member.current?.path===member.pathname ? member.current : null;
  const isArticle=item?.type==='article'||item?.type==='paper';
- const articleTools=member.authenticated && isArticle;
  const record=member.items.find(r=>r.path===item?.path);
  const [open,setOpen]=useState(false);const [section,setSection]=useState('');const [draft,setDraft]=useState('');const [dirty,setDirty]=useState(false);
  const last=useRef('');const saveRef=useRef(member.save);saveRef.current=member.save;
@@ -29,33 +28,25 @@ export default function PersonalTools(){
   },{rootMargin:'-15% 0px -55% 0px'});
   nodes.forEach(n=>observer.observe(n));return ()=>{observer.disconnect();window.removeEventListener('wheel',beginReading);window.removeEventListener('touchmove',beginReading);window.removeEventListener('keydown',beginReading);};
  },[member.status,item?.path]);
- if(!item)return null;
+ if(!item||!isArticle||!member.pathname?.startsWith('/research/'))return null;
  async function saveNote(){if(await member.save(item.path,'note',{section,text:draft}))setDirty(false);}
  const saved=Boolean(record?.saved);
- return <aside className={isArticle?'personal-tools personal-tools--article':'personal-tools'} aria-label="Your saved work">
-  {member.status==='guest'?<Link href="/login">{isArticle?'Sign in to save':'Sign in to save your place'} ↗</Link>:<>
+ return <aside className="personal-tools personal-tools--article" aria-label="Article bookmark">
+  {member.status==='guest'?<Link href={`/login?next=${encodeURIComponent(item.path)}`} aria-label="Sign in to bookmark this article" title="Sign in to bookmark"><BookmarkIcon aria-hidden="true"/></Link>:<>
    <button type="button" disabled={member.status!=='ready'||member.saving} aria-pressed={saved}
-    aria-label={articleTools?'Save for later':undefined}
-    title={articleTools?(saved?'Remove bookmark':'Save for later'):undefined}
+    aria-label={saved?'Remove article bookmark':'Bookmark this article'} title={saved?'Remove bookmark':'Bookmark article'}
     onClick={()=>member.save(item.path,'save',{saved:!saved})}>
-    {articleTools?(saved?<SavedBookmarkIcon aria-hidden="true"/>:<BookmarkIcon aria-hidden="true"/>):(saved?'✓ Saved':'＋ Save for later')}
+    {saved?<SavedBookmarkIcon aria-hidden="true"/>:<BookmarkIcon aria-hidden="true"/>}
    </button>
-   {articleTools
-    ? <Link href="/account"><span>Workspace</span><span aria-hidden="true">↗</span></Link>
-    : <>
-      <button type="button" aria-expanded={open} onClick={()=>setOpen(!open)}>Notes & progress</button>
-      <Link href="/account">Your workspace ↗</Link>
-     </>}
    {open && <div className="personal-tools-panel"><strong>{item.title}</strong>
     {record?.progress?.lastSection && <Link href={`${item.path}#${encodeURIComponent(record.progress.lastSection)}`}>Resume saved section ↗</Link>}
-    {item.type==='module' && <button disabled={member.status!=='ready'||member.saving} onClick={()=>member.save(item.path,'progress',{completed:!record?.progress?.completed})}>{record?.progress?.completed?'✓ Completed · Mark in progress':'Mark module complete'}</button>}
     <label>Note for<select value={section} disabled={dirty} onChange={e=>setSection(e.target.value)}><option value="">This item</option>{item.sections.map(id=><option key={id} value={id}>{id.replaceAll('-',' ')}</option>)}</select></label>
     <label>Private note<textarea value={draft} maxLength={5000} onChange={e=>{setDraft(e.target.value);setDirty(true);}} placeholder="What would you like to remember?" /></label>
     <button disabled={!dirty||member.saving||member.status!=='ready'} onClick={saveNote}>Save note</button>{dirty&&<small>Unsaved note. Save before leaving this page.</small>}
-    {articleTools&&<button type="button" onClick={()=>setOpen(false)}>Close notes</button>}
+    <button type="button" onClick={()=>setOpen(false)}>Close notes</button>
     <p role="status">{member.message}</p>{member.status==='error'&&<button onClick={member.retry}>Reconnect</button>}
    </div>}
-   {!open && <span className={articleTools&&!member.saveError&&member.status==='ready'?'sr-only':undefined} role="status">{member.message}</span>}
+   {!open && <span className={member.saveError||member.status==='error'?'personal-tools-status':'sr-only'} role="status">{member.message}</span>}
   </>}
  </aside>;
 }
