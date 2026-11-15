@@ -15,7 +15,7 @@ export function validateLibrary(value){
   if(!Array.isArray(c.messages)||c.messages.length>100)throw new Error('Invalid conversation.');
   let size=0;const messages=c.messages.map(m=>{if(!m||!['user','assistant'].includes(m.role)||typeof m.content!=='string'||m.content.length>12000)throw new Error('Invalid message.');size+=m.content.length;return {role:m.role,content:m.content};});
   if(size>60000)throw new Error('This conversation is too long.');
-  return {id:id(c.id),title:libraryName(c.title),folderId:c.folderId,messages};
+  return {id:id(c.id),title:libraryName(c.title),folderId:c.folderId,messages,...(c.manualTitle===true?{manualTitle:true}:{})};
  });
  const library={folders,conversations};if(new TextEncoder().encode(JSON.stringify(library)).length>1500000)throw new Error('Your conversation library is full. Remove an old conversation to make room.');
  return library;
@@ -70,7 +70,7 @@ export function upgradeConversationTitles(library){
  const conversations=library.conversations.map(c=>{
   const question=c.messages.find(m=>m.role==='user')?.content;if(!question)return c;
   const oldPrefix=Array.from(question).slice(0,64).join('');
-  const automatic=['Earlier conversation','New conversation','New chat'].includes(c.title)||c.title===oldPrefix||c.title===oldPrefix.trim().replace(/\s+/g,' ');
+  const automatic=!c.manualTitle&&(['Earlier conversation','New conversation','New chat'].includes(c.title)||c.title===oldPrefix||c.title===oldPrefix.trim().replace(/\s+/g,' '));
   const title=automatic?conversationTitle(question):c.title;
   if(title===c.title)return c;changed=true;return {...c,title};
  });
