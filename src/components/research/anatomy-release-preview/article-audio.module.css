@@ -242,13 +242,13 @@
   .wave i { transition: none; }
 }
 @media (min-width: 768px) and (max-width: 840px) {
-  :global(body):has(.dock) :global(.personal-tools:has(button)) {
+  :global(body):has(.dock) :global(:is(.personal-tools--article,.nicole-launcher)) {
     bottom: calc(8.5rem + env(safe-area-inset-bottom));
   }
 }
-@media (min-width: 768px) and (max-width: 1160px) {
-  :global(body):has(.dock) :global(.personal-tools:not(:has(button))) {
-    bottom: calc(8.5rem + env(safe-area-inset-bottom));
+@media (max-width: 767px) {
+  :global(body):has(.dock) :global(:is(.personal-tools--article,.nicole-launcher)) {
+    bottom: calc(1rem + env(safe-area-inset-bottom));
   }
 }
 

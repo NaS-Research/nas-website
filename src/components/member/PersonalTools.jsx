@@ -3,9 +3,12 @@ import {useEffect,useRef,useState} from 'react';
 import Link from 'next/link';
 import {BookmarkIcon} from '@heroicons/react/24/outline';
 import {BookmarkIcon as SavedBookmarkIcon} from '@heroicons/react/24/solid';
+import {useArticleDockVisibility} from '@/components/research/ArticleDockVisibility';
 import {useMember} from './MemberProvider';
 export default function PersonalTools(){
- const member=useMember();
+ const member=useMember();const articleDocks=useArticleDockVisibility();
+ const [optimisticSaved,setOptimisticSaved]=useState(null);const bookmarkOperation=useRef(0);
+ useEffect(()=>{bookmarkOperation.current++;setOptimisticSaved(null);return()=>{bookmarkOperation.current++;};},[member.pathname,member.userId,member.status]);
  const item=member.current?.path===member.pathname ? member.current : null;
  const isArticle=item?.type==='article'||item?.type==='paper';
  const isModule=item?.type==='module'&&member.pathname?.startsWith('/learn/');
@@ -40,12 +43,13 @@ export default function PersonalTools(){
  },[isModule,item?.path]);
  if(!item||(!isModule&&(!isArticle||!member.pathname?.startsWith('/research/')))||(isModule&&!moduleBounds))return null;
  async function saveNote(){if(await member.save(item.path,'note',{section,text:draft}))setDirty(false);}
- const saved=Boolean(record?.saved);
- return <aside className={isModule?"personal-tools personal-tools--module":"personal-tools personal-tools--article"} data-module-dock={isModule||undefined} style={isModule?{'--module-dock-center':`${moduleBounds.center}px`,'--module-dock-max':`${moduleBounds.width}px`}:undefined} aria-label={isModule?"Module save, notes and progress":"Article bookmark"}>
+ const saved=optimisticSaved??Boolean(record?.saved);
+ async function toggleBookmark(){const operation=++bookmarkOperation.current;setOptimisticSaved(!saved);try{await member.save(item.path,'save',{saved:!saved});}finally{if(operation===bookmarkOperation.current)setOptimisticSaved(null);}}
+ return <aside className={isModule?"personal-tools personal-tools--module":"personal-tools personal-tools--article"} data-module-dock={isModule||undefined} data-article-dock-visible={!isModule?articleDocks.visible:undefined} inert={!isModule&&!articleDocks.visible} aria-hidden={!isModule&&!articleDocks.visible} style={isModule?{'--module-dock-center':`${moduleBounds.center}px`,'--module-dock-max':`${moduleBounds.width}px`}:undefined} aria-label={isModule?"Module save, notes and progress":"Article bookmark"}>
   {member.status==='guest'?<Link href={`/login?next=${encodeURIComponent(item.path)}`} aria-label={isModule?"Sign in to save module progress":"Sign in to bookmark this article"} title={isModule?"Sign in to save":"Sign in to bookmark"}>{isModule?'Sign in to save your place':<BookmarkIcon aria-hidden="true"/>}</Link>:<>
-   <button type="button" disabled={member.status!=='ready'||member.saving} aria-pressed={saved}
+   <button type="button" disabled={member.status!=='ready'||member.saving} aria-pressed={saved} aria-busy={member.saving}
     aria-label={isModule?(saved?'Remove saved module':'Save module for later'):(saved?'Remove article bookmark':'Bookmark this article')} title={isModule?(saved?'Remove saved module':'Save for later'):(saved?'Remove bookmark':'Bookmark article')}
-    onClick={()=>member.save(item.path,'save',{saved:!saved})}>
+    onClick={toggleBookmark}>
     {isModule?(saved?'✓ Saved':'＋ Save for later'):(saved?<SavedBookmarkIcon aria-hidden="true"/>:<BookmarkIcon aria-hidden="true"/>)}
    </button>
    {isModule&&<button type="button" aria-expanded={open} onClick={()=>setOpen(!open)}>Notes &amp; progress</button>}

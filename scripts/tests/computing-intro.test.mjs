@@ -282,3 +282,9 @@ test('interruption clears stage ownership without moving the film; navigation ne
     reveal.dispose();
   }
 });
+
+test('article docks wait for the reveal fade and completion scroll to settle',()=>{
+ const env=page();const reveal=installComputingReveal(env.win,env.doc);env.win.scrollY=400;reveal.progress(1);
+ assert.equal(reveal.isSettled(),false);env.frame(2200);assert.equal(reveal.isSettled(),false);env.frame(2800);assert.equal(reveal.isSettled(),true);reveal.dispose();
+ const skipped=page();const immediate=installComputingReveal(skipped.win,skipped.doc);immediate.finish('interaction');assert.equal(immediate.isSettled(),true);immediate.dispose();
+});
