@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {emptyLibrary,libraryName,validateLibrary,accountProfile,branchConversation,conversationContext,searchConversations,conversationTitle,upgradeConversationTitles} from '../src/lib/nicole/library.mjs';
+import {emptyLibrary,libraryName,validateLibrary,accountProfile,branchConversation,conversationContext,searchConversations,conversationTitle,upgradeConversationTitles,withLibraryView,restoredConversation} from '../src/lib/nicole/library.mjs';
 import {handleLibrary} from '../src/lib/nicole/library-handler.mjs';
 const folder='12345678-1234-4123-8123-123456789abc',chat='22345678-1234-4123-8123-123456789abc';
 const library={folders:[{id:folder,name:'Physiology'}],conversations:[{id:chat,title:'Cardiovascular study plan',folderId:folder,messages:[{role:'user',content:'Help me study'},{role:'assistant',content:'Let’s begin.'}]}]};
@@ -59,3 +59,10 @@ console.log('Topic naming passed: question topics, technical casing, bounded tit
 const explicitlyNamed={...oldLibrary.conversations[0],title:'New conversation',manualTitle:true};
 const manualLibrary=validateLibrary({folders:[],conversations:[explicitlyNamed]});assert.equal(manualLibrary.conversations[0].manualTitle,true);assert.equal(upgradeConversationTitles(manualLibrary),manualLibrary);
 console.log('Explicitly renamed conversations retain their chosen names across validation and automatic-title upgrades.');
+
+const viewed=withLibraryView(library,chat,[folder]);assert.equal(viewed.view.activeId,chat);assert.deepEqual(viewed.view.openFolders,[folder]);assert.equal(viewed.conversations,library.conversations,'View changes retain message references and do not scroll the transcript.');
+assert.equal(restoredConversation(viewed),chat);assert.equal(restoredConversation(library),chat);
+assert.equal(restoredConversation(withLibraryView(library,null)),null,'An intentional new chat remains empty.');
+const pruned=withLibraryView({folders:[],conversations:[],view:viewed.view},chat);assert.deepEqual(pruned.view,{activeId:null,openFolders:[]});
+assert.throws(()=>validateLibrary({...library,view:{activeId:chat,openFolders:'invalid'}}));
+console.log('Return-state checks passed: selected conversation, expanded folders, intentional new chats and deleted-reference cleanup.');

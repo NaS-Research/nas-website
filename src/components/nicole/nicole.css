@@ -225,3 +225,19 @@
 .nicole-chat-action-dialog button:disabled{opacity:.35;cursor:default}
 .nicole-chat-action-dialog :is(button,input):focus-visible{outline:2px solid #c5a572;outline-offset:3px}
 @media(max-width:760px){.nicole-current-options{right:16px;top:14px}}
+
+/* Compact conversation rows and an unclipped action popover. */
+.nicole-history-row{min-height:40px;margin:2px 0;border-radius:11px;transition:background .15s ease}
+.nicole-history-row>button:first-child{font-size:13px;padding:11px 12px}
+.nicole-history-row.is-current{background:#292929}
+.nicole-row-options{display:flex;align-items:center;flex-shrink:0;margin-right:4px}
+.nicole-row-options>.nicole-row-menu{width:30px;height:30px;padding:6px!important;display:flex;align-items:center;justify-content:center;border-radius:8px}
+.nicole-row-menu svg{width:18px;height:18px}
+.nicole-row-options>.nicole-row-menu:hover,.nicole-row-options>.nicole-row-menu[aria-expanded=true]{background:#ffffff0b;color:#ddd!important}
+.nicole-options-menu{width:224px;padding:9px;border:1px solid #ffffff12;border-radius:17px;background:#242424;box-shadow:0 14px 45px #0009}
+.nicole-options-menu button{min-height:43px;font-size:14px;padding:11px 13px;border-radius:10px}
+.nicole-options-menu button:focus-visible{outline:2px solid #b89c71;outline-offset:-2px}
+.nicole-options-menu svg{width:18px;height:18px;color:#bdbdbd}
+.nicole-options-menu .nicole-delete-option svg{color:inherit}
+.nicole-chat-action-dialog select{width:100%;padding:12px;background:#151515;border:1px solid #555;border-radius:10px;color:#eee;font:inherit;font-size:14px}
+.nicole-folder-heading:not(:first-child){margin-top:22px}
