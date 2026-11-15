@@ -15,8 +15,9 @@ export function validateLibrary(value){
   if(!Array.isArray(c.messages)||c.messages.length>100)throw new Error('Invalid conversation.');
   let size=0;const messages=c.messages.map(m=>{if(!m||!['user','assistant'].includes(m.role)||typeof m.content!=='string'||m.content.length>12000)throw new Error('Invalid message.');size+=m.content.length;return {role:m.role,content:m.content};});
   if(size>60000)throw new Error('This conversation is too long.');
-  return {id:id(c.id),title:libraryName(c.title),folderId:c.folderId,messages,...(c.manualTitle===true?{manualTitle:true}:{})};
+  return {id:id(c.id),title:libraryName(c.title),folderId:c.folderId,messages,...(c.pinned===true?{pinned:true}:{}),...(c.manualTitle===true?{manualTitle:true}:{})};
  });
+ if(conversations.filter(c=>c.pinned).length>8)throw new Error('You can pin up to 8 chats. Unpin one first.');
  const library={folders,conversations};
  if(value.view!==undefined){
   if(!value.view||typeof value.view!=='object'||Array.isArray(value.view)||!Array.isArray(value.view.openFolders)||value.view.openFolders.length>30)throw new Error('Invalid conversation view.');
@@ -39,7 +40,7 @@ export function accountProfile(user){
 
 export function branchConversation(conversation,index,id){
  if(!conversation||!Number.isInteger(index)||index<0||conversation.messages[index]?.role!=='assistant')throw new Error('Choose a Nicole response to branch from.');
- return {...conversation,id,title:Array.from(conversation.title).slice(0,70).join('')+' · Branch',messages:conversation.messages.slice(0,index+1).map(message=>({...message}))};
+ return {...conversation,id,pinned:false,title:Array.from(conversation.title).slice(0,70).join('')+' · Branch',messages:conversation.messages.slice(0,index+1).map(message=>({...message}))};
 }
 // Bound model context independently from saved history; branching never calls the model.
 export function conversationContext(messages){
@@ -90,4 +91,16 @@ export function restoredConversation(library,cachedId){
  const id=cachedId??library.view?.activeId;
  if(library.conversations.some(c=>c.id===id))return id;
  return library.view?null:library.conversations[0]?.id||null;
+}
+
+export function toggleConversationPin(library,id){
+ if(!library.conversations.some(c=>c.id===id))throw new Error('Conversation not found.');
+ const next={...library,conversations:library.conversations.map(c=>c.id===id?{...c,pinned:!c.pinned}:c)};validateLibrary(next);return next;
+}
+export function createLibraryFolder(library,id,conversationId=null){
+ const names=new Set(library.folders.map(f=>f.name.toLocaleLowerCase()));let name='New folder',n=2;while(names.has(name.toLocaleLowerCase()))name='New folder '+n++;
+ const next={...library,folders:[...library.folders,{id,name}],conversations:conversationId?library.conversations.map(c=>c.id===conversationId?{...c,folderId:id}:c):library.conversations,view:{activeId:library.view?.activeId||null,openFolders:[...(library.view?.openFolders||[]),id]}};validateLibrary(next);return next;
+}
+export function moveConversationToFolder(library,id,folderId){
+ const next={...library,conversations:library.conversations.map(c=>c.id===id?{...c,folderId}:c),view:{activeId:library.view?.activeId||null,openFolders:folderId?[...new Set([...(library.view?.openFolders||[]),folderId])]:library.view?.openFolders||[]}};validateLibrary(next);return next;
 }
