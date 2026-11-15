@@ -45,3 +45,34 @@ export function searchConversations(library,query){
  const term=query.trim().toLocaleLowerCase();
  return library.conversations.filter(c=>!term||c.title.toLocaleLowerCase().includes(term)||c.messages.some(m=>m.content.toLocaleLowerCase().includes(term)));
 }
+
+export function conversationTitle(question){
+ let topic=typeof question==='string'?question.replace(/[\u0000-\u001f\u007f]/g,' ').trim().replace(/\s+/g,' '):'';
+ topic=topic.replace(/^(?:hi|hello|hey)[,!]?\s+/i,'');
+ topic=topic.replace(/^(?:(?:please\s+)?(?:can|could|would|will)\s+you\s+(?:please\s+)?|please\s+)/i,'');
+ topic=topic.replace(/^(?:help\s+me\s+)?(?:build|create|make|design|develop|put together)\s+(?:me\s+)?(?:a|an|the)\s+/i,'');
+ topic=topic.replace(/^(?:help\s+me\s+)?(?:find|explore|search for|learn about|understand|study(?!\s+plan\b)|review)\s+/i,'');
+ topic=topic.replace(/^(?:explain|describe|summarize|teach me|tell me about)\s+/i,'');
+ topic=topic.replace(/^(?:what (?:is|are)|how (?:does|do)|why (?:does|do))\s+/i,'');
+ topic=topic.replace(/^(?:a|an|the)\s+/i,'');
+ topic=topic.replace(/[.!?]+$/g,'').trim();
+ if(/^(?:a\s+)?study plan\s+(?:for|on|about)\s+/i.test(topic))topic=topic.replace(/^study plan\s+(?:for|on|about)\s+(.+)/i,'$1 study plan');
+ if(/^research in the nas library[.!?]*$/i.test(topic))topic='NaS research library';
+ topic=topic.replace(/[.!?]+$/g,'').trim();
+ const words=topic.split(' ').filter(Boolean);let title='';
+ for(const word of words.slice(0,8)){if(Array.from((title?title+' ':'')+word).length>54)break;title+=(title?' ':'')+word;}
+ if(!title)title=Array.from(topic).slice(0,54).join('');
+ if(!title)return 'New conversation';
+ return title[0].toLocaleUpperCase()+title.slice(1);
+}
+export function upgradeConversationTitles(library){
+ let changed=false;
+ const conversations=library.conversations.map(c=>{
+  const question=c.messages.find(m=>m.role==='user')?.content;if(!question)return c;
+  const oldPrefix=Array.from(question).slice(0,64).join('');
+  const automatic=['Earlier conversation','New conversation','New chat'].includes(c.title)||c.title===oldPrefix||c.title===oldPrefix.trim().replace(/\s+/g,' ');
+  const title=automatic?conversationTitle(question):c.title;
+  if(title===c.title)return c;changed=true;return {...c,title};
+ });
+ return changed?{...library,conversations}:library;
+}

@@ -1,11 +1,11 @@
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {webcrypto} from 'node:crypto';
-import {emptyLibrary,validateLibrary} from '../src/lib/nicole/library.mjs';
+import {emptyLibrary,validateLibrary,conversationTitle,upgradeConversationTitles} from '../src/lib/nicole/library.mjs';
 // Exercise the real storage hook with controlled React scheduling and network replies.
 // No browser, preview server, provider call, or production account data is used.
 const source=readFileSync(new URL('../src/components/nicole/useNicoleLibrary.js',import.meta.url),'utf8').replace(/^import .*;\n/gm,'').replace('export function useNicoleLibrary','function useNicoleLibrary');
-const factory=new Function('useState','useRef','useEffect','emptyLibrary','validateLibrary','fetch','sessionStorage','crypto','setTimeout','clearTimeout','window',source+'\nreturn useNicoleLibrary;');
+const factory=new Function('useState','useRef','useEffect','emptyLibrary','validateLibrary','conversationTitle','upgradeConversationTitles','fetch','sessionStorage','crypto','setTimeout','clearTimeout','window',source+'\nreturn useNicoleLibrary;');
 function harness(){
  const slots=[],effects=[],timers=new Map(),cache=new Map(),puts=[];let cursor=0,queued=false,timerId=0,value,remote=emptyLibrary(),revision=0;
  let member={status:'ready',userId:'owner'};
@@ -15,7 +15,7 @@ function harness(){
  function useEffect(effect,deps){const i=cursor++;const old=slots[i];if(!old||deps.some((d,n)=>!Object.is(d,old.deps[n]))){effects.push(()=>{old?.cleanup?.();slots[i]={deps,cleanup:effect()};});}}
  const storage={getItem:key=>cache.get(key)||null,setItem:(key,v)=>cache.set(key,v),removeItem:key=>cache.delete(key),key:i=>Array.from(cache.keys())[i],get length(){return cache.size;}};
  const fetch=async(url,options={})=>{if(options.method!=='PUT')return Response.json({userId:member.userId,library:remote,revision,profile:{name:'Maya Singh'}});return new Promise(resolve=>puts.push({body:JSON.parse(options.body),resolve:()=>{remote=JSON.parse(options.body).library;revision++;resolve(Response.json({revision}));}}));};
- const hook=factory(useState,useRef,useEffect,emptyLibrary,validateLibrary,fetch,storage,webcrypto,(fn)=>{const id=++timerId;timers.set(id,fn);return id;},id=>timers.delete(id),{confirm:()=>true});
+ const hook=factory(useState,useRef,useEffect,emptyLibrary,validateLibrary,conversationTitle,upgradeConversationTitles,fetch,storage,webcrypto,(fn)=>{const id=++timerId;timers.set(id,fn);return id;},id=>timers.delete(id),{confirm:()=>true});
  function render(){cursor=0;value=hook(member);const pending=effects.splice(0);pending.forEach(fn=>fn());}
  render();return {get value(){return value;},puts,cache,tick:()=>{const callbacks=Array.from(timers.values());timers.clear();callbacks.forEach(fn=>fn());},member:next=>{member=next;render();},remote:()=>remote};
 }

@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {emptyLibrary,libraryName,validateLibrary,accountProfile,branchConversation,conversationContext,searchConversations} from '../src/lib/nicole/library.mjs';
+import {emptyLibrary,libraryName,validateLibrary,accountProfile,branchConversation,conversationContext,searchConversations,conversationTitle,upgradeConversationTitles} from '../src/lib/nicole/library.mjs';
 import {handleLibrary} from '../src/lib/nicole/library-handler.mjs';
 const folder='12345678-1234-4123-8123-123456789abc',chat='22345678-1234-4123-8123-123456789abc';
 const library={folders:[{id:folder,name:'Physiology'}],conversations:[{id:chat,title:'Cardiovascular study plan',folderId:folder,messages:[{role:'user',content:'Help me study'},{role:'assistant',content:'Let’s begin.'}]}]};
@@ -43,3 +43,15 @@ const large=conversationContext(Array.from({length:18},()=>({role:'user',content
 validateLibrary({...library,conversations:[{...library.conversations[0],messages:longHistory}]});
 assert.equal(searchConversations(library,'cardiovascular').length,1);assert.equal(searchConversations(library,'HELP ME STUDY').length,1);assert.equal(searchConversations(library,'absent phrase').length,0);assert.equal(searchConversations(library,'  ').length,1);
 console.log('Response action checks passed: independent branches, selected reply boundaries, bounded model context, longer saved history and local title/message search.');
+
+assert.equal(conversationTitle('Help me build a study plan for cardiovascular physiology.'),'Cardiovascular physiology study plan');
+assert.equal(conversationTitle('Help me find research in the NaS library.'),'NaS research library');
+assert.equal(conversationTitle('Could you please explain the Frank–Starling mechanism?'),'Frank–Starling mechanism');
+assert.equal(conversationTitle('What are the differences between arteries and veins?'),'Differences between arteries and veins');
+assert.equal(conversationTitle('Explain PAM50 subtypes.'),'PAM50 subtypes');
+assert.equal(conversationTitle(''),'New conversation');
+assert.ok(Array.from(conversationTitle('x'.repeat(200))).length<=54);
+const oldLibrary={folders:[],conversations:[{id:chat,title:'Earlier conversation',folderId:null,messages:[{role:'user',content:'Help me find research in the NaS library.'}]},{id:'32345678-1234-4123-8123-123456789abc',title:'My exam notes',folderId:null,messages:[{role:'user',content:'Explain kidney function.'}]}]};
+const upgraded=upgradeConversationTitles(oldLibrary);assert.equal(upgraded.conversations[0].title,'NaS research library');assert.equal(upgraded.conversations[1].title,'My exam notes');assert.equal(oldLibrary.conversations[0].title,'Earlier conversation');assert.equal(upgradeConversationTitles(upgraded),upgraded);
+const prefixQuestion='Help me build a study plan for cardiovascular physiology.';assert.equal(upgradeConversationTitles({folders:[],conversations:[{...oldLibrary.conversations[0],title:prefixQuestion,messages:[{role:'user',content:prefixQuestion}]}]}).conversations[0].title,'Cardiovascular physiology study plan');
+console.log('Topic naming passed: question topics, technical casing, bounded titles, default-name migration and custom-name preservation.');
