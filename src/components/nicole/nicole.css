@@ -138,3 +138,54 @@
  .nicole-page .nicole-chatbar{padding-inline:22px}
 }
 @media(prefers-reduced-motion:reduce){.nicole-sidebar{transition:none!important}}
+
+/* Conversation controls are icons; account and storage labels stay out of the canvas. */
+.nicole-sidebar-top{justify-content:flex-end;min-height:38px;padding:0 4px 16px}
+.nicole-sidebar-top>div{display:flex;align-items:center;gap:5px}
+.nicole-sidebar-top button{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;color:#a8a8a8}
+.nicole-sidebar-top button:hover{background:#242424;color:#eee}
+.nicole-sidebar .nicole-sidebar-close{display:inline-flex}
+.nicole-history-scroll{margin-top:8px}
+.nicole-folder summary>svg{color:#a99575;width:18px;height:18px;flex-shrink:0}
+.nicole-account{margin-top:14px}
+.nicole-profile{min-height:56px}
+.nicole-profile strong{font-size:13px}
+.nicole-chat-main>.nicole-conversation{padding-top:32px}
+.nicole-response-actions{display:flex;align-items:center;gap:6px;margin:10px 0 0}
+.nicole-response-actions button{display:flex;align-items:center;justify-content:center;width:32px;height:32px;border:0;background:transparent;color:#969696;border-radius:8px}
+.nicole-response-actions button:hover:not(:disabled){background:#202020;color:#dedede}
+.nicole-response-actions button:disabled{opacity:.35;cursor:default}
+.nicole-response-actions svg{width:17px;height:17px}
+.nicole-nav-controls{display:flex;align-items:center;gap:4px}
+.nicole-nav-controls button{width:36px;height:36px;display:flex;align-items:center;justify-content:center;border:0;border-radius:9px;background:transparent;color:#a5a5a5;cursor:pointer}
+.nicole-nav-controls button:hover:not(:disabled){background:#1b1b1b;color:#eee}
+.nicole-nav-controls button:disabled{opacity:.35;cursor:default}
+.nicole-nav-controls svg{width:19px;height:19px}
+.nicole-search-dialog{width:min(600px,calc(100vw - 32px));max-height:min(720px,80dvh);padding:0;border:1px solid #ffffff17;border-radius:20px;margin:auto;background:#171717;color:#ddd;box-shadow:0 20px 100px #0009;overflow:hidden}
+.nicole-search-dialog::backdrop{background:#000a;backdrop-filter:blur(5px)}
+.nicole-search-surface{display:flex;flex-direction:column;max-height:min(720px,80dvh);padding:22px}
+.nicole-search-surface header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:20px}
+.nicole-search-surface h2{font-size:17px;font-weight:500;letter-spacing:-.02em;margin:0}
+.nicole-search-surface header button{background:transparent;border:0;color:#999;padding:7px;cursor:pointer;border-radius:8px}
+.nicole-search-surface header svg{width:18px;height:18px}
+.nicole-search-surface>label{display:flex;align-items:center;gap:10px;background:#222;border-radius:12px;padding:12px 15px}
+.nicole-search-surface>label>svg{width:18px;height:18px;flex-shrink:0;color:#888}
+.nicole-search-surface input{width:100%;min-width:0;background:transparent;border:0;outline:none;color:#eee;font:inherit;font-size:14px}
+.nicole-search-results{overflow-y:auto;min-height:100px;overscroll-behavior:contain;margin-top:14px;padding-top:3px;scrollbar-width:thin;scrollbar-color:#444 transparent}
+.nicole-search-results>button{width:100%;display:flex;align-items:flex-start;gap:13px;text-align:left;background:transparent;border:0;color:#ddd;border-radius:12px;padding:14px 10px;cursor:pointer}
+.nicole-search-results>button:hover:not(:disabled){background:#252525}
+.nicole-search-results>button:disabled{opacity:.45;cursor:default}
+.nicole-search-results svg{width:17px;height:17px;flex-shrink:0;color:#999;margin-top:3px}
+.nicole-search-results>button>span{min-width:0}
+.nicole-search-results strong{font-size:13px;font-weight:500;display:block;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}
+.nicole-search-results small{display:block;font-size:11px;color:#8d8d8d;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;margin-top:6px}
+.nicole-search-results>p{font-size:13px;color:#888;text-align:center;margin:30px 0}
+.nicole-search-dialog :is(button,input):focus-visible{outline:2px solid #c5a572;outline-offset:3px}
+@media(min-width:901px){
+ .nicole-page>.nicole-sidebar{overflow:hidden;transition:width .25s ease,padding .25s ease,opacity .2s ease;box-sizing:border-box}
+ .nicole-page--collapsed>.nicole-sidebar{width:0;padding-inline:0;opacity:0;visibility:hidden;pointer-events:none}
+}
+@media(max-width:760px){.nicole-nav-controls{gap:0}.nicole-nav-controls button{width:30px;height:34px}.nicole-chat-main>.nicole-conversation{padding-top:22px}.nicole-search-surface{padding:18px}}
+
+@media(max-width:600px){.nas-navbar--nicole .nas-nav-admin{display:none}}
+@media(max-width:480px){.nas-navbar--nicole .nas-nav-workspace{display:none}}
