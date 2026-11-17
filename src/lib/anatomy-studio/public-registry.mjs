@@ -26,10 +26,11 @@ const NOVEMBER_5_ADDITIONS_SHA256=Object.freeze({
 });
 export const PUBLIC_ADDITIONS_SHA256=Object.freeze({
  ...NOVEMBER_5_ADDITIONS_SHA256,
+ 'bronchial-tree':'3fe4ca52de8a4ab1a05d3287891c05b24df0100b7aaa2e070d8ad120e20167bb',
  'platelet-resting':'e8e5e937a06d16eb71c1f90ba8472530885a4888d3f63ab882fa67f071a2d8f7',
  'platelet-activated':'ec1dda33154a0d58d507afdbe313d5eed759a84795e83efdc6e8674a46b7ee44'
 });
 const additions=PRIVATE_STUDIO_MODELS.filter(asset=>PUBLIC_ADDITIONS_SHA256[asset.id]===asset.sourceSHA256).map(asset=>Object.freeze({...asset,deliveryScope:'nas-public-website',publicationApproved:true,rights:Object.freeze({...asset.rights,publicWebsiteUseAuthorized:true})}));
-if(originalNine.length!==9||additions.length!==6)throw Error('The public Studio model identities do not match this release.');
-export const PUBLIC_STUDIO_RELEASE=Object.freeze({version:'1.1.0',dateISO:'2026-11-05',addedModelIDs:Object.freeze(Object.keys(NOVEMBER_5_ADDITIONS_SHA256)),scientificValidationClaimed:false});
+if(originalNine.length!==9||additions.length!==7)throw Error('The public Studio model identities do not match this release.');
+export const PUBLIC_STUDIO_RELEASE=Object.freeze({version:'1.2.0',dateISO:'2026-11-17',addedModelIDs:Object.freeze(Object.keys(PUBLIC_ADDITIONS_SHA256)),scientificValidationClaimed:false});
 export const PUBLIC_STUDIO_ORGANS=Object.freeze(sortStudioModels([...originalNine,...additions]));
