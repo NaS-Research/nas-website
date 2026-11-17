@@ -1,3 +1,4 @@
+import {bronchialTree} from './bronchial-tree.mjs';
 import {ATELIER_ORGANS} from './registry.mjs';
 import {articleModelAssets} from '../anatomy-release-preview/interactive-model.mjs';
 import {resolveArticleDeliveryAsset} from '../anatomy-release-preview/delivery-tier.mjs';
@@ -61,4 +62,4 @@ const plateletOrder=new Map(platelets.map((model,index)=>[model.id,index]));
 const collator=new Intl.Collator('en',{sensitivity:'base',numeric:true});
 const sortLabel=model=>plateletOrder.has(model.id)?'Platelet':model.label;
 export function sortStudioModels(models){return [...models].sort((a,b)=>collator.compare(sortLabel(a),sortLabel(b))||(plateletOrder.get(a.id)??0)-(plateletOrder.get(b.id)??0)||a.id.localeCompare(b.id,'en'));}
-export const PRIVATE_STUDIO_MODELS=Object.freeze(sortStudioModels([...ATELIER_ORGANS,...reviewed,eosinophil,...platelets]));
+export const PRIVATE_STUDIO_MODELS=Object.freeze(sortStudioModels([...ATELIER_ORGANS,...reviewed,eosinophil,...platelets,bronchialTree]));
