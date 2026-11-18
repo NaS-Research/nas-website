@@ -252,3 +252,6 @@
 @media(max-width:599px){.nicole-folder-submenu .nicole-folder-back{display:flex;color:#aaa}}
 
 @media(max-width:599px){.nicole-options-menu:has(>.nicole-folder-submenu){padding:0;border:0;background:transparent;box-shadow:none}.nicole-options-menu:has(>.nicole-folder-submenu)>button{display:none}}
+
+/* The workspace form already indicates focus around the whole composer. */
+.nicole-entry form textarea:focus-visible { outline: none; }
