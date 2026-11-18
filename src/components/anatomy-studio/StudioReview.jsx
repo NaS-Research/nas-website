@@ -47,6 +47,11 @@ function Icon({name,size=20}) {
 export default function StudioReview({publicAccess=false}) {
  const catalog=publicAccess?PUBLIC_STUDIO_ORGANS:PRIVATE_STUDIO_MODELS;
  const [organId,setOrganId]=useState('heart');
+ useEffect(()=>{
+  if(!publicAccess)return;
+  const requested=new URLSearchParams(window.location.search).get('model');
+  if(requested&&PUBLIC_STUDIO_ORGANS.some(model=>model.id===requested))setOrganId(requested);
+ },[publicAccess]);
  const organ=catalog.find(item=>item.id===organId),info=ORGAN_INFO[organId]||organ.studioInfo;
  const [load,setLoad]=useState({status:'idle',message:'Preparing the explorer…'});
  const [selection,setSelection]=useState(initialSelection);

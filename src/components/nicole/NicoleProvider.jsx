@@ -70,7 +70,7 @@ export default function NicoleProvider({children}){
   try{
    const response=await fetch('/api/nicole',{method:'POST',headers:{'Content-Type':'application/json'},signal:controller.signal,body:JSON.stringify({userId:owner,question,messages:conversationContext(previous),contextPath:includePage?page?.path:null})});
    const answer=await response.json();if(!response.ok)throw new Error(answer.error||'Nicole couldn’t respond. Please try again.');
-   if(generation===sequence.current&&identity.current===owner){setChat({owner,messages:[...pending,{role:'assistant',content:answer.text}]},conversationId);if(answer.truncated)setError('This response reached its length limit. Ask Nicole to continue for more detail.');}
+   if(generation===sequence.current&&identity.current===owner){setChat({owner,messages:[...pending,{role:'assistant',content:answer.text}]},conversationId);if(answer.destination?.startsWith('/')&&!answer.destination.startsWith('//')&&!answer.destination.includes('\\\\')){setOpen(false);router.push(answer.destination);}if(answer.truncated)setError('This response reached its length limit. Ask Nicole to continue for more detail.');}
   }catch(e){if(generation===sequence.current&&identity.current===owner){setChat({owner,messages:previous},conversationId);setDraft(question);setError(e.name==='AbortError'?'Response stopped.':e.message);}}
   finally{if(generation===sequence.current){setBusy(false);active.current=null;}}
  }
@@ -95,7 +95,15 @@ function Inline({text}){
  const parts=text.split(/(\[[^\]\n]+\]\([^\s)]+\)|\*\*[^*\n]+\*\*|`[^`\n]+`)/g);
  return parts.map((part,i)=>{const link=part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);if(link){const href=safeHref(link[2]);return href?<a href={href} rel="noreferrer" key={i}>{link[1]}</a>:link[1];}if(part.startsWith('**')&&part.endsWith('**'))return <strong key={i}>{part.slice(2,-2)}</strong>;if(part.startsWith('`')&&part.endsWith('`'))return <code key={i}>{part.slice(1,-1)}</code>;return part;});
 }
-function Answer({text}){return <div className="nicole-answer">{text.split(/\n\s*\n/).map((paragraph,i)=>{if(/^#{1,4} /.test(paragraph))return <h3 key={i}><Inline text={paragraph.replace(/^#{1,4} /,'')}/></h3>;const lines=paragraph.split('\n');if(lines.every(line=>/^[-*] /.test(line)))return <ul key={i}>{lines.map((line,j)=><li key={j}><Inline text={line.slice(2)}/></li>)}</ul>;return <p key={i}><Inline text={paragraph}/></p>;})}</div>}
+function VideoPlayers({text}) {
+ const [playing,setPlaying]=useState(null);
+ const links=Array.from(text.matchAll(/\[([^\]\n]+)\]\(https:\/\/www\.youtube\.com\/watch\?v=([\w-]{11})\)/g));
+ const videos=new Map(links.map(([,label,id])=>[id,label]));
+ return [...videos].slice(0,3).map(([id,label])=>playing===id
+  ? <iframe key={id} title={label} className="nicole-video" src={'https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1'} allow="autoplay; encrypted-media; picture-in-picture" allowFullScreen/>
+  : <button className="nicole-video-play" type="button" key={id} onClick={()=>setPlaying(id)}>Play {label}</button>);
+}
+function Answer({text}){return <div className="nicole-answer">{text.split(/\n\s*\n/).map((paragraph,i)=>{if(/^#{1,4} /.test(paragraph))return <h3 key={i}><Inline text={paragraph.replace(/^#{1,4} /,'')}/></h3>;const lines=paragraph.split('\n');if(lines.every(line=>/^[-*] /.test(line)))return <ul key={i}>{lines.map((line,j)=><li key={j}><Inline text={line.slice(2)}/></li>)}</ul>;return <p key={i}><Inline text={paragraph}/></p>;})}<VideoPlayers text={text}/></div>}
 function Conversation(){
  const chat=useContext(Context);const log=useRef(null);
  useEffect(()=>{log.current?.scrollTo({top:log.current.scrollHeight,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});},[chat.messages,chat.busy]);
