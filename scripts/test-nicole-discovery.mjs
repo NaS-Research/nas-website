@@ -12,6 +12,8 @@ assert.match(matches[0].title,/cardiac|cardiovascular|heart/i);
 assert(!matches.some(row=>/account|admin|preview/.test(row.path)));
 const heart=models.find(row=>row.path.endsWith('=heart'));
 assert.equal(requestedDestination('Open the '+heart.title,rankResources(resources,'Open the '+heart.title)),heart.path);
+assert.equal(requestedDestination('Open the heart model or brain model',[heart,...models]),null);
+assert.equal(requestedDestination('Open the heart model',[heart,{...heart,path:'/learn/duplicate'}]),null);
 assert.equal(requestedDestination('Explain the '+heart.title,[heart]),null);
 assert.equal(requestedDestination('Open my admin dashboard',[heart]),null);
 assert.equal(groundLinks('[Invented](/private) and [Heart]('+heart.path+')',[heart]),'Invented and [Heart]('+heart.path+')');

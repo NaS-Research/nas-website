@@ -26,10 +26,13 @@ export function rankResources(rows, question, maximum=7) {
  return scored.filter(item=>item.score>0).sort((a,b)=>b.score-a.score||a.resource.title.localeCompare(b.resource.title)).slice(0,maximum).map(item=>item.resource);
 }
 export function requestedDestination(question,resources){
- if(!/^(?:please\s+)?(?:open|go to|navigate to|take me to|bring me to)\s+/i.test(question.trim())) return null;
- const query=normalizeSearch(question);
- const exact=resources.filter(row=>query.includes(normalizeSearch(row.title)) && row.path.startsWith('/'));
- return exact.sort((a,b)=>b.title.length-a.title.length)[0]?.path||null;
+ const command=question.trim().match(/^(?:please\s+)?(?:open|go to|navigate to|take me to|bring me to)\s+(.+)$/i);
+ if(!command)return null;
+ const target=normalizeSearch(command[1]).replace(/^(?:the|a|an) /,'').replace(/ please$/,'');
+ const paths=new Set(resources.filter(row=>normalizeSearch(row.title).replace(/^(?:the|a|an) /,'')===target).map(row=>row.path));
+ if(paths.size!==1)return null;
+ const [path]=paths;
+ return /^\/(?!\/)/.test(path)&&!path.includes('\\')?path:null;
 }
 export function groundLinks(text,resources,page){
  const allowed=new Set([...resources.map(row=>row.path),page?.path]);

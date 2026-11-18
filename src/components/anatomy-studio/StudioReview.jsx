@@ -1,4 +1,5 @@
 "use client";
+import {useSearchParams} from 'next/navigation';
 import {useCallback, useEffect, useMemo, useState, useRef} from 'react';
 import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js';
 import {MeshoptDecoder} from 'three/examples/jsm/libs/meshopt_decoder.module.js';
@@ -46,12 +47,12 @@ function Icon({name,size=20}) {
 }
 export default function StudioReview({publicAccess=false}) {
  const catalog=publicAccess?PUBLIC_STUDIO_ORGANS:PRIVATE_STUDIO_MODELS;
- const [organId,setOrganId]=useState('heart');
+ const modelParam=useSearchParams()?.get('model');
+ const initialModel=publicAccess&&PUBLIC_STUDIO_ORGANS.some(model=>model.id===modelParam)?modelParam:'heart';
+ const [organId,setOrganId]=useState(initialModel);
  useEffect(()=>{
-  if(!publicAccess)return;
-  const requested=new URLSearchParams(window.location.search).get('model');
-  if(requested&&PUBLIC_STUDIO_ORGANS.some(model=>model.id===requested))setOrganId(requested);
- },[publicAccess]);
+  if(publicAccess)setOrganId(initialModel);
+ },[initialModel,publicAccess]);
  const organ=catalog.find(item=>item.id===organId),info=ORGAN_INFO[organId]||organ.studioInfo;
  const [load,setLoad]=useState({status:'idle',message:'Preparing the explorer…'});
  const [selection,setSelection]=useState(initialSelection);

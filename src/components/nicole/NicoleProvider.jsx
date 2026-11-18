@@ -70,7 +70,7 @@ export default function NicoleProvider({children}){
   try{
    const response=await fetch('/api/nicole',{method:'POST',headers:{'Content-Type':'application/json'},signal:controller.signal,body:JSON.stringify({userId:owner,question,messages:conversationContext(previous),contextPath:includePage?page?.path:null})});
    const answer=await response.json();if(!response.ok)throw new Error(answer.error||'Nicole couldn’t respond. Please try again.');
-   if(generation===sequence.current&&identity.current===owner){setChat({owner,messages:[...pending,{role:'assistant',content:answer.text}]},conversationId);if(answer.destination?.startsWith('/')&&!answer.destination.startsWith('//')&&!answer.destination.includes('\\\\')){setOpen(false);router.push(answer.destination);}if(answer.truncated)setError('This response reached its length limit. Ask Nicole to continue for more detail.');}
+   if(generation===sequence.current&&identity.current===owner){setChat({owner,messages:[...pending,{role:'assistant',content:answer.text}]},conversationId);if(answer.destination?.startsWith('/')&&!answer.destination.startsWith('//')&&!answer.destination.includes('\\')){setOpen(false);router.push(answer.destination);}if(answer.truncated)setError('This response reached its length limit. Ask Nicole to continue for more detail.');}
   }catch(e){if(generation===sequence.current&&identity.current===owner){setChat({owner,messages:previous},conversationId);setDraft(question);setError(e.name==='AbortError'?'Response stopped.':e.message);}}
   finally{if(generation===sequence.current){setBusy(false);active.current=null;}}
  }
