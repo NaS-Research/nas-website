@@ -1,3 +1,4 @@
+import {groundLinks,requestedDestination} from './discovery.mjs';
 import {readNicoleBody} from './request.mjs';
 const respond=(body,status=200)=>Response.json(body,{status,headers:{'Cache-Control':'private, no-store','X-Content-Type-Options':'nosniff'}});
 export async function handleNicoleRequest(request,{originAllowed,authReady,authClient,key,contextFor,generate}){
@@ -12,7 +13,14 @@ export async function handleNicoleRequest(request,{originAllowed,authReady,authC
   const {data:allowed,error:limitError}=await client.rpc('consume_nicole_request');
   if(limitError)return respond({error:'Nicole is temporarily unavailable. Please try again later.'},503);
   if(!allowed)return respond({error:'You’ve reached the conversation allowance for now. Please return later.'},429);
-  const answer=await generate({key:key,userId:user.id,input,context:contextFor(input.contextPath,input.question),signal:AbortSignal.any([request.signal,AbortSignal.timeout(55000)])});
-  return respond(answer);
+  const context=await contextFor(input.contextPath,input.question,input.messages);
+  const resources=context.resources||[];
+  const destination=requestedDestination(input.question,resources);
+  if(destination){
+   const target=resources.find(item=>item.path===destination);
+   return respond({text:'Opening ['+target.title+']('+destination+').',destination});
+  }
+  const answer=await generate({key:key,userId:user.id,input,context,signal:AbortSignal.any([request.signal,AbortSignal.timeout(55000)])});
+  return respond({...answer,text:groundLinks(answer.text,resources,context.page)});
  }catch(error){return respond({error:error.name==='TimeoutError'?'Nicole took too long to respond. Please try again.':error.status?error.message:'Nicole couldn’t finish that response. Please try again.'},error.status||502);}
 }
